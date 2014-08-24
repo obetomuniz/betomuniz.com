@@ -1,0 +1,17 @@
+{
+  "name": "betomuniz.com",
+  "private": true,
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.2",
+    "metalsmith": "^0.2.3",
+    "metalsmith-collections": "^0.6.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.1.1",
+    "metalsmith-templates": "^0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-metalsmith": "0.0.1",
+    "matchdep": "^0.3.0"
+  }
+}
