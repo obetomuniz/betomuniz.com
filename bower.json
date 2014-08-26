@@ -1,0 +1,20 @@
+{
+  "name": "betomuniz.com",
+  "version": "1.0.2015",
+  "homepage": "http://betomuniz.com",
+  "authors": [
+    "Beto Muniz <contato@betomuniz.com>"
+  ],
+  "description": "My website.",
+  "main": "betomuniz.js",
+  "keywords": [
+    "website",
+    "betomuniz",
+    "blog"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "polymer": "~0.3.5"
+  }
+}
