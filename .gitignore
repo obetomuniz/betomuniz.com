@@ -111,3 +111,8 @@ dist/
 ### Sass ###
 .sass-cache
 
+### Custom ###
+
+public/
+sources/statics/javascripts/bm.tmp.js
+sources/statics/javascripts/vendors.js

@@ -1,3 +1,4 @@
 ---
 template: index.html
+url: /
 ---

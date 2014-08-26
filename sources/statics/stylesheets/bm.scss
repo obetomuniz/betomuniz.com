@@ -1,5 +1,12 @@
 @import "compass";
+@import "vendors/reset";
+@import "vendors/icons";
 
-body {
-  background-color: red;
-}
+@import "foundation/base";
+@import "foundation/header";
+
+@import "sections/home";
+
+@import "foundation/footer";
+
+@import "vendors/states";

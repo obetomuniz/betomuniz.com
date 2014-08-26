@@ -10,7 +10,9 @@ module.exports = function( grunt ) {
     copy: {
       components:{
           files: [
-            {expand: true, src: ['**'], cwd:'./sources/components/',dest: './public/components/'}
+            {expand: true, src: ['**'], cwd:'./sources/components/',dest: './public/components/'},
+            {expand: true, src: ['**'], cwd:'./sources/statics/fonts/',dest: './public/static/fonts/'},
+            {expand: true, src: ['**'], cwd:'./sources/statics/images/',dest: './public/static/images/'},
           ]
       }
     },
@@ -18,7 +20,7 @@ module.exports = function( grunt ) {
     metalsmith: {
       compile: {
         options: {
-          clean: true,
+          clean: false,
           metadata: {
             title: 'Beto Muniz',
             description: 'Meu site.'
@@ -29,9 +31,11 @@ module.exports = function( grunt ) {
               pattern: ':collection/:title'
             },
             'metalsmith-collections': {
-              articles: {
-                sortBy: 'date',
-                reverse:  true
+              blog: {
+                sortBy: 'date'
+              },
+              projects: {
+                sortBy: 'date'
               }
             },
             'metalsmith-templates': {
@@ -94,7 +98,7 @@ module.exports = function( grunt ) {
         options: {
           livereload: true
         },
-        files: ['./sources/statics/stylesheets/**/*'],
+        files: ['./sources/statics/stylesheets/**/*.scss'],
         tasks: [
           'compass:compile'
         ]

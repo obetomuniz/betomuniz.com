@@ -1,0 +1,218 @@
+/////////////////
+// Semantic.gs // for SCSS: http://sass-lang.com/
+/////////////////
+
+// Defaults which you can freely override
+$column-width: 60px;
+$gutter-width: 20px;
+$columns: 12;
+
+// Utility function — you should never need to modify this
+@function gridsystem-width($columns:$columns) {
+    @return ($column-width * $columns) + ($gutter-width * $columns);
+}
+
+// Set $total-width to 100% for a fluid layout
+$total-width: 100%;
+
+// Uncomment these two lines and the star-hack width/margin lines below to enable sub-pixel fix for IE6 & 7. See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
+// $min-width: 999999;
+// $correction: 0.5 / $min-width * 100;
+
+// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix() {
+    *zoom:1;
+
+    &:before,
+    &:after {
+        content:"";
+        display:table;
+    }
+    &:after {
+        clear:both;
+    }
+}
+
+
+//////////
+// GRID //
+//////////
+
+body {
+    width: 100%;
+    @include clearfix();
+}
+
+@mixin row($columns:$columns) {
+    display: block;
+    width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns));
+    margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1);
+    // *width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns))-$correction;
+    // *margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1)-$correction;
+    @include clearfix();
+}
+
+.row{
+    @include row();
+}
+
+@mixin column($x,$columns:$columns) {
+    display: inline;
+    float: left;
+    width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns));
+    margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+    // *width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns))-$correction;
+    // *margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns))-$correction;
+}
+
+
+@mixin push($offset:1) {
+    margin-left: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+}
+
+.push{
+    @include push();
+}
+
+@mixin pull($offset:1) {
+    margin-right: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+}
+
+.pull{
+    @include pull();
+}
+
+
+/* Simple Grid Style
+------------------------------------------------------------------------ */
+.alpha{
+  margin-left: 0;
+}
+.omega{
+  margin-right: 0;
+}
+
+.grid1{
+    @include column(1);
+}
+.grid2{
+    @include column(2);
+}
+.grid3{
+    @include column(3);
+}
+.grid4{
+    @include column(4);
+}
+.grid5{
+    @include column(5);
+}
+.grid6{
+    @include column(6);
+}
+.grid7{
+    @include column(7);
+}
+.grid8{
+    @include column(8);
+}
+.grid9{
+    @include column(9);
+}
+.grid10{
+    @include column(10);
+}
+.grid11{
+    @include column(11);
+}
+.grid12{
+    @include column(12);
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7,
+.grid8,
+.grid9,
+.grid10,
+.grid11,
+.grid12{
+    &.alpha{
+        margin-left: 0;
+    }
+    &.omega{
+        margin-right: 0;
+    }
+}
+
+.pull1{
+    @include pull(1);
+}
+.pull2{
+    @include pull(2);
+}
+.pull3{
+    @include pull(3);
+}
+.pull4{
+    @include pull(4);
+}
+.pull5{
+    @include pull(5);
+}
+.pull6{
+    @include pull(6);
+}
+.pull7{
+    @include pull(7);
+}
+.pull8{
+    @include pull(8);
+}
+.pull9{
+    @include pull(9);
+}
+.pull10{
+    @include pull(10);
+}
+.pull11{
+    @include pull(11);
+}
+
+.push1{
+    @include push(1);
+}
+.push2{
+    @include push(2);
+}
+.push3{
+    @include push(3);
+}
+.push4{
+    @include push(4);
+}
+.push5{
+    @include push(5);
+}
+.push6{
+    @include push(6);
+}
+.push7{
+    @include push(7);
+}
+.push8{
+    @include push(8);
+}
+.push9{
+    @include push(9);
+}
+.push10{
+    @include push(10);
+}
+.push11{
+    @include push(11);
+}

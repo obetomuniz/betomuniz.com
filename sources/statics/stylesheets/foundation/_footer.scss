@@ -1,0 +1,25 @@
+.page-footer{
+  margin-bottom: 120px;
+  .socials{
+    text-align: center;
+
+    li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
+    }
+    .social-item{
+      text-decoration: none;
+      color: #666;
+      font-size: 18px;
+      &:hover{
+        color: #CCC;
+      }
+      span{
+        display: inline-block;
+        width: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}

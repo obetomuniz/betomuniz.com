@@ -1,6 +1,7 @@
 ---
 title: My First Post
 date: 2012-08-20
+url: /blog/my-first-post/
 collection: blog
 template: blog/post.html
 ---

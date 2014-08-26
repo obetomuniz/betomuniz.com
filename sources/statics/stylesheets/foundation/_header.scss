@@ -1,0 +1,55 @@
+.page-header{
+  text-align: center;
+  padding-top: 60px;
+  h1{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 60px;
+    span{
+      width: 0;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &:before{
+      font-family: 'Courier New', serif;
+      display: inline-block;
+      vertical-align: middle;
+      content: '{';
+      color: #2C7CB7;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    &:after{
+      font-family: 'Courier New', serif;
+      display: inline-block;
+      vertical-align: middle;
+      content: '}';
+      color: #2C7CB7;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .photo{
+    margin-bottom: 45px;
+    img{
+      width: 80px;
+      height: auto;
+    }
+  }
+  .navigation{
+    margin-bottom: 65px;
+    li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
+    }
+    .navigation-item{
+      text-decoration: none;
+      color: #666;
+      &:hover, &.active{
+        color: #CCC;
+      }
+    }
+  }
+}
