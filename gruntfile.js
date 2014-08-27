@@ -133,4 +133,13 @@ module.exports = function( grunt ) {
       'concurrent'
   ]);
 
+  grunt.registerTask('build', [
+      'shell:compile',
+      'copy:components',
+      'compass:compile',
+      'concat:vendors',
+      'concat:compile',
+      'uglify:compile'
+  ]);
+
 };

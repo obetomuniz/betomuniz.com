@@ -18,9 +18,6 @@ var moment = require('moment');
 
 var metalsmith = Metalsmith(__dirname)
   .source('sources/content')
-  .metadata({
-    "sitename": "Beto Muniz"
-  })
   .destination('public')
   .use(drafts())
   .use(markdown())

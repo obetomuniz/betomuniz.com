@@ -95,7 +95,7 @@ $ nwbuild --run ./
 
 Se algo igual ou semelhante a imagem abaixo aparecer na sua tela, é porque tudo ocorreu bem.
 
-![](http://betomuniz.com/blog/content/images/2014/Aug/Screen_Shot_2014_08_16_at_10_53_21_PM.png )
+![](http://i.imgur.com/gUdiWXr.png )
 
 **BÔNUS (Windows/Mac OSX):** Para transformar sua aplicação num arquivo binário e executavél pelo seu sistema operacional, faça os seguintes passos:
 
