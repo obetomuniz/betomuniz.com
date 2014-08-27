@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
-
+  <title>{{ sitename }}</title>
   <meta charset="UTF-8">
   <meta name="description" content="{{ description }}">
-  <title>{{ title }}</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta property="og:title" content="{{ sitename }} - {{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.betomuniz.com">
+  <meta property="og:image" content="http://www.betomuniz.com/static/images/facebook-profile.png">
+  <meta property="og:site_name" content="{{ sitename }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="twitter:site" content="@obetomuniz">
+  <meta name="twitter:creator" content="@obetomuniz">
+  <link rel="publisher" href="https://plus.google.com/+betomuniz">
+  <link rel="author" href="https://plus.google.com/+betomuniz">
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/static/stylesheets/bm.css">
-
+  <script>
+    var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-31461010-1']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_setDomainName', 'betomuniz.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    (function(){var ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'http://www')+'.google-analytics.com/ga.js';
+        var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
+  </script>
 </head>
 <body>
 
-  <div class="home-container">
-
     <header class="page-header">
 
-      <h1><span>Beto Muniz</span></h1>
+      <h1><span>{{ sitename }}</span></h1>
 
-      <figure class="photo"><img src="/static/images/betomuniz.png" alt="Beto Muniz Picture" /></figure>
+      <figure class="photo"><img src="/static/images/betomuniz.png" alt="{{ sitename }} Picture" /></figure>
 
       <nav class="navigation">
         <ul>
           <li><a href="/" class="navigation-item active">About</a></li>
           <li><a href="/blog/" class="navigation-item">Blog</a></li>
-          <li><a href="#" class="navigation-item">Projects</a></li>
-          <li><a href="#" class="navigation-item">Talks</a></li>
+          <li><a href="/projects/" class="navigation-item">Projects</a></li>
+          <li><a href="https://speakerdeck.com/obetomuniz" target="_blank" class="navigation-item">Talks</a></li>
         </ul>
       </nav>
 
     </header>
 
-    <main class="page-main">
+    <main class="home-content container">
 
-      <p>
-        Hi,<br><br><br>
-        I'm <a href="https://plus.google.com/+betomuniz" target="_blank" rel="author">Beto Muniz</a>,<br><br><br>
-        <a href="https://en.wikipedia.org/wiki/Esp%C3%ADrito_Santo" target="_blank">Capixaba</a> and work as a <a href="http://f2em.com/" target="_blank">Front-End Engineer</a> at <a href="http://www.questrade.com/" target="_blank">Questrade</a>/<a href="http://augix.it/" target="_blank">Augix</a>.<br><br><br>
-        Inspired by the study of new technologies and the community, I'm always attuned to what is happening and willing to contribute to the community.<br><br><br>
-        I participate in open-source organizations, events and projects like <a href="http://acessibilidadeurbana.com.br/" target="_blank">Acessibilidade Urbana</a>, <a href="http://pt-br.learnlayout.com/" target="_blank">LearnLayout.com</a>, <a href="http://frontinterior.com.br/" target="_blank">FrontInterior</a>, <a href="https://plus.google.com/u/0/events/cpb2r51l7cj0p8lsspf6ucr8cm4" target="_blank">Google I / O Extended</a>, <a href="http://www.thedevelopersconference.com.br/tdc/2014/saopaulo/trilha-node-js" target="_blank">The Developers Conference</a>, <a href="http://www.meetup.com/Aplicativos-Hibridos-Meetup/events/196426862/" target="_blank">Hybrid Apps Meetup</a>, <a href="http://www.meetup.com/NodeBR-Sao-Paulo/" target="_blank">NodeJS São Paulo Meetup</a>, <a href="http://golang.org/" target="_blank">GoLangBr.org</a>, <a href="http://minasdev.org/" target="_blank">MinasDev.org</a> and <a href="http://webcomponents.org/" target="_blank">Webcomponents.org</a>.<br><br><br>
-        I live in <a href="https://goo.gl/maps/32bI2" target="_blank">São Paulo</a>, Brazil. And I love my job.
-      </p>
+        {{{contents}}}
 
     </main>
 
@@ -54,8 +68,6 @@
       </ul>
 
     </footer>
-
-  </div>
 
   <script src="/static/javascripts/bm.js" charset="utf-8"></script>
 </body>

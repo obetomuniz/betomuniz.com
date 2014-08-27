@@ -1,10 +1,101 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <title>My Blog</title>
+  <title>{{ sitename }} — {{ title }}</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="{{ description }}">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta property="og:title" content="{{ sitename }} - {{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.betomuniz.com">
+  <meta property="og:image" content="http://www.betomuniz.com/static/images/facebook-profile.png">
+  <meta property="og:site_name" content="{{ sitename }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="twitter:site" content="@obetomuniz">
+  <meta name="twitter:creator" content="@obetomuniz">
+  <link rel="publisher" href="https://plus.google.com/+betomuniz">
+  <link rel="author" href="https://plus.google.com/+betomuniz">
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/static/stylesheets/bm.css">
+  <script>
+    var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-31461010-1']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_setDomainName', 'betomuniz.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    (function(){var ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'http://www')+'.google-analytics.com/ga.js';
+        var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
+  </script>
 </head>
 <body>
-  <h1>{{ title }}</h1>
-  <time>{{ date }}</time>
-  {{{ contents }}}
+
+  <header class="page-header">
+
+    <h1><span>{{ sitename }}</span></h1>
+
+    <figure class="photo"><img src="/static/images/betomuniz.png" alt="{{ sitename }} Picture" /></figure>
+
+    <nav class="navigation">
+      <ul>
+        <li><a href="/" class="navigation-item">About</a></li>
+        <li><a href="/blog/" class="navigation-item">Blog</a></li>
+        <li><a href="/projects/" class="navigation-item">Projects</a></li>
+        <li><a href="https://speakerdeck.com/obetomuniz" target="_blank" class="navigation-item">Talks</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="post-page container">
+
+  <section class="post-header">
+    <small>Posted on <time>{{brDate date}}</time> by <a href="https://plus.google.com/+betomuniz" target="_blank" rel="author">{{ sitename }}</a></small>
+    <h1 class="post-title">
+      {{ title }}
+    </h1>
+  </section>
+
+  <main class="post-body">
+
+    {{{contents}}}
+
+  </main>
+
+  <section id="comments">
+   <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'obetomuniz'; // required: replace example with your forum shortname
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </section>
+
+  </div>
+
+  <footer class="page-footer container">
+
+    <ul class="socials">
+      <li><a href="mailto:contato@betomuniz.com" target="_blank" class="social-item icon-mail"><span>Email</span></a></li>
+      <li><a href="https://github.com/obetomuniz" target="_blank" class="social-item icon-github"><span>Github</span></a></li>
+      <li><a href="http://www.linkedin.com/in/obetomuniz" target="_blank" class="social-item icon-linkedin"><span>Linkedin</span></a></li>
+      <li><a href="https://twitter.com/obetomuniz" target="_blank" class="social-item icon-twitter"><span>Twitter</span></a></li>
+      <li><a href="/portfolio/" class="social-item icon-drawer"><span>Portfolio</span></a></li>
+    </ul>
+
+  </footer>
+
+  <script src="/static/javascripts/bm.js" charset="utf-8"></script>
 </body>
 </html>

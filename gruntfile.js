@@ -17,42 +17,17 @@ module.exports = function( grunt ) {
       }
     },
 
-    metalsmith: {
-      compile: {
-        options: {
-          clean: false,
-          metadata: {
-            title: 'Beto Muniz',
-            description: 'Meu site.'
-          },
-          plugins: {
-            'metalsmith-markdown': {},
-            'metalsmith-permalinks': {
-              pattern: ':collection/:title'
-            },
-            'metalsmith-collections': {
-              blog: {
-                sortBy: 'date'
-              },
-              projects: {
-                sortBy: 'date'
-              }
-            },
-            'metalsmith-templates': {
-              engine: 'handlebars',
-              directory: 'sources/templates'
-            }
-          }
-        },
-        src: 'sources/content',
-        dest: 'public'
-      }
+    shell: {
+        compile: {
+            command: 'node build.js'
+        }
     },
 
     concat: {
         vendors: {
           src: [
-              './sources/components/platform/platform.js'
+              './sources/components/platform/platform.js',
+              './sources/components/highlightjs/highlight.pack.js'
           ],
           dest: './sources/statics/javascripts/vendors.js'
         },
@@ -90,7 +65,7 @@ module.exports = function( grunt ) {
         },
         files: ['./sources/content/**/*', './sources/templates/**/*'],
         tasks: [
-          'metalsmith:compile',
+          'shell:compile',
           'copy:components'
         ]
       },
@@ -149,7 +124,7 @@ module.exports = function( grunt ) {
   });
 
   grunt.registerTask('default', [
-      'metalsmith:compile',
+      'shell:compile',
       'copy:components',
       'compass:compile',
       'concat:vendors',

@@ -114,5 +114,6 @@ dist/
 ### Custom ###
 
 public/
+sources/components/
 sources/statics/javascripts/bm.tmp.js
 sources/statics/javascripts/vendors.js
