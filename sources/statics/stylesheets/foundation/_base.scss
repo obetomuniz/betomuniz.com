@@ -8,7 +8,18 @@ body{
   font-family: 'Noto Sans', sans-serif;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .container{
     width: 400px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 400px) {
+  .container{
+      width: 270px;
+      margin: 0 auto;
+  }
 }

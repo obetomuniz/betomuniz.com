@@ -1,9 +1,11 @@
 ---
-title: My First Post
+current_title: Beto Muniz — My First Post
 date: 2012-08-20
 url: /blog/my-first-post/
 collection: blog
 draft: true
+description: Beto Muniz is a Front-End Engineer who lives in São Paulo, Brazil.
+keywords: beto,muniz, draft, beto muniz
 template: blog/post.html
 ---
 You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at `<your blog URL>/ghost/`. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!

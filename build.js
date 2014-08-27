@@ -8,6 +8,7 @@ var collections = require('metalsmith-collections');
 var templates = require('metalsmith-templates');
 var Handlebars = require('handlebars');
 var moment = require('moment');
+var fs = require('fs');
 
 
 
@@ -38,7 +39,13 @@ var metalsmith = Metalsmith(__dirname)
   }))
   .use(templates({
     engine: 'handlebars',
-    directory: 'sources/templates'
+    directory: 'sources/templates',
+    params: {
+        partials: {
+            footer: "partials/footer",
+            header: "partials/header"
+        }
+    }
   }))
   .build(function(err){
     if (err) throw err;
@@ -50,3 +57,10 @@ var metalsmith = Metalsmith(__dirname)
 Handlebars.registerHelper('brDate', function (ctx) {
   return moment(ctx).format('DD.MM.YYYY');
 });
+
+
+/**
+ * Partials.
+ */
+Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/sources/templates/partials/header.html').toString());
+Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/sources/templates/partials/footer.html').toString());

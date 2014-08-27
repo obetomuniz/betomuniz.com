@@ -1,6 +1,9 @@
 ---
 template: index.html
 url: /
+current_title: Beto Muniz
+description: Beto Muniz is a Front-End Engineer who lives in São Paulo, Brazil.
+keywords: beto, muniz, home, beto muniz, betomuniz
 ---
   Hi,
 

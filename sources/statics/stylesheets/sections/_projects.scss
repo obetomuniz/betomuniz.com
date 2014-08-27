@@ -66,3 +66,24 @@
         float: right;
     }
 }
+
+@media screen and (max-width: 400px) {
+  .projeto{
+    .projeto-thumb{
+        width: 50px;
+        height: 50px;
+    }
+    .projeto-desc{
+      display: none;
+    }
+    .projeto-title{
+      font-size: 18px;
+    }
+    .projeto-show{
+      font-size: 10px;
+    }
+    .projeto-infos{
+      padding: 6px 0;
+    }
+  }
+}

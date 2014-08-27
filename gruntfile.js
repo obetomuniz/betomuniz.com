@@ -27,6 +27,7 @@ module.exports = function( grunt ) {
         vendors: {
           src: [
               './sources/components/platform/platform.js',
+              './sources/components/polymer/polymer.js',
               './sources/components/highlightjs/highlight.pack.js'
           ],
           dest: './sources/statics/javascripts/vendors.js'
