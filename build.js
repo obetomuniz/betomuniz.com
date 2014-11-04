@@ -59,6 +59,11 @@ Handlebars.registerHelper('brDate', function (ctx) {
 });
 
 
+Handlebars.registerHelper('xmlDate', function (ctx) {
+  return moment(ctx).format('ddd, DD MMM YYYY HH:mm:ss ZZ');
+});
+
+
 /**
  * Partials.
  */

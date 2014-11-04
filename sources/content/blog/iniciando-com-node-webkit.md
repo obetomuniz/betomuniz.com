@@ -6,7 +6,7 @@ url: /blog/iniciando-com-node-webkit/
 collection: blog
 template: blog/post.html
 description:  Abordagem feita para iniciantes e interessados em aprender mais sobre Node Webkit.
-keywords: node-webkit, nodejs, webkit, javascript, iniciantes
+keywords: node-webkit, nodejs, webkit, javascript, iniciantes, tutorial
 ---
 "Antes tarde, do que nunca" já dizia a frase...
 

@@ -15,7 +15,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "polymer": "~0.3.5",
     "highlightjs": "~8.0.0"
   }
 }

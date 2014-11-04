@@ -6,6 +6,13 @@ module.exports = function( grunt ) {
 
   // Tasks configurations
   grunt.initConfig({
+    rename: {
+      main: {
+        files: [
+              {src: ['./public/blog/feed/index.html'], dest: './public/blog/feed/feed.xml'},
+            ]
+      }
+    },
 
     copy: {
       components:{
@@ -14,7 +21,20 @@ module.exports = function( grunt ) {
             {expand: true, src: ['**'], cwd:'./sources/statics/fonts/',dest: './public/static/fonts/'},
             {expand: true, src: ['**'], cwd:'./sources/statics/images/',dest: './public/static/images/'},
           ]
+      },
+      feed:{
+          files: [
+            {
+              expand: true, src: ['**'],
+              cwd:'./public/blog/feed/',
+              dest: './public/blog/'
+            }
+          ]
       }
+    },
+
+    clean: {
+      feed: ["./public/blog/feed/"]
     },
 
     shell: {
@@ -67,7 +87,10 @@ module.exports = function( grunt ) {
         files: ['./sources/content/**/*', './sources/templates/**/*'],
         tasks: [
           'shell:compile',
-          'copy:components'
+          'copy:components',
+          'rename:main',
+          'copy:feed',
+          'clean:feed'
         ]
       },
       styles: {
@@ -131,6 +154,9 @@ module.exports = function( grunt ) {
       'concat:vendors',
       'concat:compile',
       'uglify:compile',
+      'rename:main',
+      'copy:feed',
+      'clean:feed',
       'concurrent'
   ]);
 
@@ -140,7 +166,10 @@ module.exports = function( grunt ) {
       'compass:compile',
       'concat:vendors',
       'concat:compile',
-      'uglify:compile'
+      'uglify:compile',
+      'rename:main',
+      'copy:feed',
+      'clean:feed'
   ]);
 
 };

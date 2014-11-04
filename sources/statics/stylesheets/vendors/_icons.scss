@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:url('/static/fonts/icomoon.eot?-vb6f92');
-  src:url('/static/fonts/icomoon.eot?#iefix-vb6f92') format('embedded-opentype'),
-    url('/static/fonts/icomoon.woff?-vb6f92') format('woff'),
-    url('/static/fonts/icomoon.ttf?-vb6f92') format('truetype'),
-    url('/static/fonts/icomoon.svg?-vb6f92#icomoon') format('svg');
+  src:url('/static/fonts/icomoon.eot?y35ktx');
+  src:url('/static/fonts/icomoon.eot?#iefixy35ktx') format('embedded-opentype'),
+    url('/static/fonts/icomoon.woff?y35ktx') format('woff'),
+    url('/static/fonts/icomoon.ttf?y35ktx') format('truetype'),
+    url('/static/fonts/icomoon.svg?y35ktx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,18 +23,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-drawer:before {
-  content: "\e600";
+.icon-feed:before {
+  content: "\e605";
 }
-.icon-mail:before {
-  content: "\e601";
+.icon-linkedin:before {
+  content: "\e604";
+}
+.icon-drawer:before {
+  content: "\e603";
 }
 .icon-twitter:before {
   content: "\e602";
 }
-.icon-github:before {
-  content: "\e603";
+.icon-mail:before {
+  content: "\e601";
 }
-.icon-linkedin:before {
-  content: "\e604";
+.icon-github:before {
+  content: "\e600";
 }

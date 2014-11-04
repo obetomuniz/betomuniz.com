@@ -2,8 +2,7 @@
   text-align: center;
   padding-top: 60px;
   h1{
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     margin-bottom: 60px;
     span{
       width: 0;
@@ -32,10 +31,14 @@
   }
   .photo{
     margin-bottom: 45px;
-    display: block;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 40px;
+    width: 80px;
     img{
-      width: 80px;
+      width: 100%;
       height: auto;
+      display: block;
     }
   }
   .navigation{

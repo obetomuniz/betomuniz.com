@@ -2,7 +2,6 @@
 current_title: Beto Muniz — My First Post
 date: 2012-08-20
 url: /blog/my-first-post/
-collection: blog
 draft: true
 description: Beto Muniz is a Front-End Engineer who lives in São Paulo, Brazil.
 keywords: beto,muniz, draft, beto muniz
