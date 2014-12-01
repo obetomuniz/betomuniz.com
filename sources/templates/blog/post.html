@@ -5,7 +5,10 @@
   <section class="post-header">
     <small>Posted on <time>{{brDate date}}</time> by <a href="https://plus.google.com/+betomuniz" target="_blank" rel="author">Beto Muniz</a></small>
     <h1 class="post-title">
-      {{ title }}
+      {{ page_title }}
+      {{#if page_subtitle}}
+        <br>{{page_subtitle}}
+      {{/if}}
     </h1>
   </section>
 

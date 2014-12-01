@@ -1,5 +1,6 @@
 ---
 title: Iniciando com Node Webkit
+page_title: Iniciando com Node Webkit
 current_title: Beto Muniz — Iniciando com Node Webkit
 date: 2014-08-18
 url: /blog/iniciando-com-node-webkit/

@@ -1,5 +1,6 @@
 ---
 title: Desmistificando o Polymer
+page_title: Desmistificando o Polymer
 current_title: Beto Muniz — Desmistificando o Polymer
 date: 2014-09-16
 url: /blog/desmistificando-o-polymer/

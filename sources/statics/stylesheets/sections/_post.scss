@@ -19,6 +19,7 @@
       color: #2C7CB7;
       font-size: 30px;
       margin-bottom: 45px;
+      line-height: 40px;
     }
   }
   .post-body{
@@ -110,6 +111,11 @@
           border-bottom: 1px solid #ccc;
           margin-bottom: 25px;
           margin-top: 0;
+      }
+      .post-video {
+        width: 100%;
+        min-height: 350px;
+        margin-bottom: 25px;
       }
   }
 

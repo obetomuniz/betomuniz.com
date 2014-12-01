@@ -3,10 +3,10 @@
     <section class="posts container">
       <ul>
         {{#each collections.blog}}
-          {{#if title}}
+          {{#if page_title}}
             <li class="post">
                   <a href="{{url}}">
-                    <span># </span> <h3>{{title}}</h3> <span># </span>
+                    <span># </span> <h3>{{page_title}} {{#if page_subtitle}}{{page_subtitle}}{{/if}}</h3> <span># </span>
                   </a>
             </li>
           {{/if}}
