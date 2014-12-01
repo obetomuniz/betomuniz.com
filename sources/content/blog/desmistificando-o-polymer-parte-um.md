@@ -19,7 +19,7 @@ Antes de começar a falar sobre o Polymer, vale a pena esclarecer o principal as
 
 ## Web Components
 
-Para resumir de uma forma bem objetiva, visto que eu já tenho um post que fala sobre Web Components e que você pode conferir [aqui](http://localhost:3000/blog/web-components-hoje/).
+Para resumir de uma forma bem objetiva, visto que eu já tenho um post que fala sobre Web Components e que você pode conferir [aqui](http://betomuniz.com/blog/web-components-hoje/).
 Web Components nada mais é que um padrão guarda-chuva desenvolvido pela [W3C](http://www.w3.org/) e que propõe a solução de um problema não tão novo na web, que é o de Componentização.
 
 ### Legal! Mas qual o cenário atual desta forma de Componentização proposta pela W3C?
@@ -38,11 +38,11 @@ Vale a pena observar na tabela anterior dois problemas nítidos, **Safari** e **
 
 Dois exemplos clássicos são:
 
-![Salesforce](https://cldup.com/DsaaEFSm9O-2000x2000.png)
+[![Salesforce](https://cldup.com/DsaaEFSm9O-2000x2000.png)](https://developer.salesforce.com/blogs/developer-relations/2014/10/chart-components-google-polymer-force-com.html)
 
 E o Github:
 
-![Github](https://cldup.com/nBb-yGIiGw-2000x2000.png)
+[![Github](https://cldup.com/nBb-yGIiGw-2000x2000.png)](http://webcomponents.org/articles/interview-with-joshua-peek/)
 
 Mas depois de ler tudo que eu escrevi neste post até agora, é normal ficar assim...
 
@@ -55,6 +55,8 @@ Mas depois de ler tudo que eu escrevi neste post até agora, é normal ficar ass
 Para quem não sabe, polyfiils são coberturas de código para implementações nativas que não existam no browser corrente, ou seja, são *"emulações"* de funcionalidades para um desenvolvimento linear entre os browsers. Alguns exemplos de frameworks que usam bastante a técnica é jQuery, AngularJS, MomentJS entre outros, é dificil encontrar um bom framework atualmente que não utiliza-se de polyfills para dar suporte a todos os browsers...
 
 E essa é a deixa pro Polymer...
+
+![Desmistificando o Polymer](https://cldup.com/Sx6Ix2oKtt-3000x3000.png)
 
 ## O que é o Polymer?
 
