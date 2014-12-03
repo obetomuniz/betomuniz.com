@@ -7,7 +7,7 @@ date: 2014-11-16
 url: /blog/desmistificando-o-polymer-parte-1/
 collection: blog
 template: blog/post.html
-description:  XPTO
+description:  Primeiro post de uma série que visa desmistificar o Polymer.
 keywords: web-components, desmistificando, iniciando, tutorial, polymer
 ---
 
@@ -68,7 +68,7 @@ Para entender a realidade dessa *biblioteca*, temos que entender como ela funcio
 
 ## Polymer Layers
 
-As Polymer Layers basicamente são camadas de atuação do Polymer e para entender melhor, esta imagem ilustra o que estou dizendo, com apenas uma observação que atualmente o *platform.js*, mudou seu nome para *webcomponents.js em prol de um desacoplamento do Polymer e também para modularização do mesmo:
+As Polymer Layers basicamente são camadas de atuação do Polymer e para entender melhor, esta imagem ilustra o que estou dizendo, com apenas uma observação que atualmente o *platform.js*, mudou seu nome para *webcomponents.js* em prol de um desacoplamento do Polymer e também para modularização do mesmo:
 
 ![Polymer Layers](https://cldup.com/ioU7a7W9UC-3000x3000.png)
 
@@ -90,7 +90,7 @@ Mas tendo em mente que o Polymer já oferta um pacote interessante de elementos,
 
 ### E como isso acontece?
 
-Veja a imagem abaixo e tenha em mente que essa é a forma nativa de se criar Web Components, porém vale lembrar que utilizando-se dessa regra, você **não** entrega um Web Component para funcionar no Safari e nem no Internet Explorer, além de não poder utilizar-se de outros recursos que a web moderna oferece, como [Mutation Observers](https://www.polymer-project.org/docs/start/platform.html), [Web Animation API](https://www.polymer-project.org/platform/web-animations.html), [Pointer Events](https://www.polymer-project.org/docs/polymer/touch.html) entre outros.
+Veja a imagem abaixo e tenha em mente que essa é a forma nativa de se criar Web Components, porém vale lembrar que utilizando-se dessa regra, você **não** entrega um Web Component para funcionar no Safari e nem no Internet Explorer, além de não poder utilizar-se de outros recursos que a web moderna oferece, como [Mutation Observer](https://www.polymer-project.org/docs/start/platform.html), [Web Animation API](https://www.polymer-project.org/platform/web-animations.html), [Pointer Events](https://www.polymer-project.org/docs/polymer/touch.html) entre outros.
 
 ![Hello World utilizando-se da implementação nativa](https://cldup.com/DOsd6cyah8.thumb.png)
 
@@ -133,11 +133,11 @@ Também gostaria de deixar o link de uma videocast que fiz sobre o Polymer, onde
 
 Também deixo o link de um Codelab que dei no GDG-BH no evento [It's Hackademic with Polymer](http://itshackademic.com/):
 
-<iframe class="post-video" src="//www.youtube.com/embed/CwiTIYBUHTY?t=56m17s" frameborder="0" allowfullscreen></iframe>
+<iframe class="post-video" src="//www.youtube.com/embed/CwiTIYBUHTY?start=3377" frameborder="0" allowfullscreen></iframe>
 
-<!-- Mas isso não é tudo, como eu disse, está é uma série e para ler o próximo post, basta clicar [aqui](). -->
+Mas isso não é tudo, como eu disse, está é uma série e para ler o próximo post,  basta clicar [aqui](), pois lá eu exibo uma lista de fatores que colocam o Polymer em uma posição de vantagem com relação a outras tecnologias e também exibo o motivo de escolher o Polymer como principal meio para criação de Web Components.
 
-E é isso, espero que tenham gostado e qualquer dúvida sobre o assunto e/ou sugestão, basta deixar nos comentários. Por fim, deixo a seguinte mensagem:
+E é isso, pessoal espero que tenham gostado da leitura, mas qualquer dúvida sobre o assunto e/ou sugestão, deixe seu comentário, feedbacks sempre são bem-vindos. E por fim, deixo a seguinte mensagem:
 
 **Vamos componentizar!  o/**
 
