@@ -11,7 +11,7 @@ description: Segundo post de uma série que visa desmistificar o Polymer.
 keywords: web-components, desmistificando, iniciando, tutorial, polymer, parte, dois
 ---
 
-No primeira parte desta série, abordei [o que é o Polymer](http://betomuniz.com/blog/desmistificando-o-polymer-parte-1/), e lá mostro **o que ele é** e **como ele funciona**, mas não mencionei quais são os principais fatores para utilização e escolha do Polymer entre outras tecnologias presentes, e a partir de agora, este será o principal objetivo deste segundo post.
+No primeira parte desta série, abordei [o que é o Polymer](http://betomuniz.com/blog/desmistificando-o-polymer-parte-1/), e lá mostro **o que ele é** e **como ele funciona**, mas não mencionei quais são os principais fatores para utilização e escolha do Polymer entre outras tecnologias presentes, mas a partir de agora, este será o principal objetivo deste segundo post.
 
 ### Ok! Porque o Polymer?
 
@@ -19,7 +19,7 @@ O principal fator decisivo para escolha do Polymer como sua ferramenta para dese
 
 Este posicionamento, de trazer outros padrões, visando mais benefícios no desenvolvimento de Web Components Ricos, sem dúvidas, transparece a intenção dos envolvidos no desenvolvimento do Polymer em oferecer uma ferramenta integrada com o que há de melhor na web.
 
-Outro fator muito relevante, é a proposta de oferecer elementos prontos, pois isso é nitidamente uma forma de **exemplificar boas práticas no desenvolvimento web components**, como também, evitar que os desenvolvedores **reinventem a roda**, tendo assim mais agilidade, produtividade e o suporte a determinados componentes comumente utilizados.
+Outro fator muito relevante, é a proposta de oferecer elementos prontos, pois isso é nitidamente uma forma de **exemplificar boas práticas no desenvolvimento de web components**, como também, evitar que os desenvolvedores **reinventem a roda**, tendo assim mais agilidade, produtividade e o suporte a determinados componentes comumente utilizados.
 
 E para finalizar está introdução, outro ponto interessante de analisar, é relacionado aos profissionais envolvidos no desenvolvimento do Polymer, pois tais cabeças, são realmente competentes e estão dispostos a entregar para comunidade uma ferramenta performática e extremamente útil no desenvolvimento web moderno.
 
@@ -49,7 +49,7 @@ Para ilustrar alguns benefícios trazidos a nós pelo Polymer, entrego a seguint
 
 ### E por hoje é só pessoal....
 
-Como eu disse no ínicio deste post, eu apenas iria levantar pontos altos a levar em consideração na escolha do Polymer, mas não deixe por esperar, continue lendo a série, sendo assim, confira o próximo post, pois nele eu crio uma espécie de [Polymer FAQ (unofficial)](http://betomuniz.com/blog/desmistificando-o-polymer-parte-3/), que basicamente ilustra **o que o Polymer não é**.
+Como eu disse no ínicio deste post, eu apenas queria levantar pontos altos a levar em consideração na escolha do Polymer, mas não deixe por esperar, continue lendo a série, sendo assim, confira o próximo post, pois nele eu crio uma espécie de [Polymer FAQ (unofficial)](http://betomuniz.com/blog/desmistificando-o-polymer-parte-3/), que basicamente ilustra **o que o Polymer não é**.
 
 Mas com relação a este post, qualquer dúvida ou sugestão, não deixe de comentar.
 
