@@ -13,25 +13,25 @@ keywords: web-components, desmistificando, iniciando, tutorial, polymer, parte, 
 
 E enfim, chegamos ao terceiro post, porém se você não leu o [primeiro post](http://betomuniz.com/blog/desmistificando-o-polymer-parte-1/) e nem o [segundo post](http://betomuniz.com/blog/desmistificando-o-polymer-parte-2/), recomendo a leitura deles, pois assim você terá uma melhor absorção do que será abordado neste post...
 
- E a razão deste post, nada mais é que um esclarecimento de diversas dúvidas com relação ao que o Polymer oferece, e caso você tenha alguma a mais, sinta-se a vontade de colocar também nos comentários. Mas vamos lá, vamos ao FAQ.
+ E a razão deste post, nada mais é que um esclarecimento de diversas dúvidas com relação ao que o Polymer oferece, e caso você tenha alguma a mais, sinta-se a vontade de colocar também nos comentários. Mas vamos lá, vamos ao *FAX*.
 
 ## O Polymer é...
 
 ### ...apenas um polyfill?
 
-O Polymer tem sim o melhor polyfill para se trabalhar com Web Components nos browsers atuais, mas como já colocado em um post anterior, ele não é apenas um polyfill, o polyfill é apenas uma das camadas de atuação dele. E prova disso é o isolamento total do polyfill da biblioteca. Você por exemplo, pode usar o polyfill que o polymer usa e desenvolver seus Web Components de forma nativa, mas com a vantagem de fazer eles funcionarem no Safari e Internet Explorer.
+O Polymer tem sim o melhor polyfill para se trabalhar com Web Components nos browsers atuais, mas como já colocado em um post anterior, ele não é apenas um polyfill, o polyfill é apenas uma das camadas de atuação dele. E prova disso é o isolamento total do polyfill da biblioteca. Você por exemplo, pode usar o polyfill que o polymer usa para desenvolver seus Web Components de forma nativa, mas com a vantagem de fazer eles funcionarem no Safari e Internet Explorer.
 
 ### ...um framework killer?
 
-Não, na verdade o Polymer não é um framework em nenhuma de suas camadas de atuação, visto que o foco do Polymer é entregar um desenvolvimento mais linear, pragmático e rico de Web Components, ou seja, você poderá utilizar o Polymer com qualquer framework ou biblioteca, e por isso, ele não é nenhum assasino de frameworks ou bibliotecas.
+Não, na verdade o Polymer não é um framework em nenhuma de suas camadas de atuação, visto que o foco do Polymer é entregar um desenvolvimento linear, pragmático e rico de Web Components, ou seja, você poderá utilizar o Polymer com qualquer framework ou biblioteca, e por isso, ele não é nenhum assasino de frameworks ou bibliotecas.
 
 ### ...o próximo AngularJS?
 
 Não, a finalidade do Polymer, como eu disse anteriormente é para o desenvolvimento de Web Components e o AngularJS tem como propósito principal o desenvolvimento de Aplicações Ricas através da oferta de funcionalidades como: Services, Rotas, Models entre inúmeros outros recursos, mas nada impede a utilização do Polymer com Angular, visto que ambos tem propósito diferente e benefícios diferentes.
 
-### AngularJS Directives e EmberJS Components já atendem tudo que estes novos padrões pregam. Pra que usar Polymer para isso?
+### Angular Directives e Ember Components já atendem tudo que estes novos padrões pregam. Pra que usar Polymer para isso?
 
-Realmente a realidade de ambos recursos do Angular e do Ember respectivamente são semelhantes, mas não atendem o que os padrões abaixo do padrão Web Components oferecem, por exemplo quando o assunto é isolamento do componente, utilizando o Angular ou o Ember você tem isolamento apenas a nível de Framework e apenas do JavaScript, mas utilizando o Polymer, você isola CSS, HTML e JavScript a nível de browser, ou seja, segurança e isolamento de aplicação nativa para seu componente.
+Realmente a realidade de ambos recursos do AngularJS e do EmberJS respectivamente são semelhantes, mas não atendem o que os padrões abaixo do padrão Web Components oferecem, por exemplo quando o assunto é isolamento do componente, utilizando o Angular Directives ou o Ember Components você tem isolamento apenas a nível de Framework e apenas do JavaScript, mas utilizando o Polymer, você isola CSS, HTML e JavScript a nível de browser, ou seja, segurança e isolamento de aplicação nativa para seu componente.
 
 ### Ouvi elementos? Então o Polymer é o próximo Twitter Bootstrap?
 
@@ -54,5 +54,3 @@ E para não perder o custome:
 **Vamos componentizar!  o/**
 
 &#10017;
-
-### Referências:

@@ -142,5 +142,3 @@ E é isso, pessoal espero que tenham gostado da leitura, mas qualquer dúvida so
 **Vamos componentizar!  o/**
 
 &#10017;
-
-<!-- ### Referências: -->
