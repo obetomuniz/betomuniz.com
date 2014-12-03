@@ -2,16 +2,16 @@
 title: "Desmistificando o Polymer : Parte 3"
 page_title: "Desmistificando o Polymer:"
 page_subtitle: "Polymer FAQ (unoffical)"
-current_title: "Beto Muniz — Desmistificando o Polymer : Parte 3"
+current_title: "Beto Muniz — Desmistificando o Polymer : Polymer FAQ (unoffical)"
 date: 2014-11-18
 url: /blog/desmistificando-o-polymer-parte-3/
 collection: blog
 template: blog/post.html
 description: Terceiro post de uma série que visa desmistificar o Polymer.
-keywords: web-components, desmistificando, iniciando, tutorial, polymer
+keywords: web-components, desmistificando, iniciando, tutorial, polymer, parte, tres
 ---
 
-E enfim, chegamos ao terceiro post, porém se você não leu o [primeiro post]() e nem o [segundo post](), recomendo a leitura deles, pois assim você terá uma melhor absorção do que será abordado neste post...
+E enfim, chegamos ao terceiro post, porém se você não leu o [primeiro post](http://betomuniz.com/blog/desmistificando-o-polymer-parte-1/) e nem o [segundo post](http://betomuniz.com/blog/desmistificando-o-polymer-parte-2/), recomendo a leitura deles, pois assim você terá uma melhor absorção do que será abordado neste post...
 
  E a razão deste post, nada mais é que um esclarecimento de diversas dúvidas com relação ao que o Polymer oferece, e caso você tenha alguma a mais, sinta-se a vontade de colocar também nos comentários. Mas vamos lá, vamos ao FAQ.
 

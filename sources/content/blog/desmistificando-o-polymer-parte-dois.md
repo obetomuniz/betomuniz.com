@@ -2,13 +2,13 @@
 title: "Desmistificando o Polymer : Parte 2"
 page_title: "Desmistificando o Polymer:"
 page_subtitle: "Porque o Polymer?"
-current_title: "Beto Muniz — Desmistificando o Polymer : Parte 2"
+current_title: "Beto Muniz — Desmistificando o Polymer : Porque o Polymer?"
 date: 2014-11-17
 url: /blog/desmistificando-o-polymer-parte-2/
 collection: blog
 template: blog/post.html
 description: Segundo post de uma série que visa desmistificar o Polymer.
-keywords: web-components, desmistificando, iniciando, tutorial, polymer
+keywords: web-components, desmistificando, iniciando, tutorial, polymer, parte, dois
 ---
 
 No primeira parte desta série, abordei [o que é o Polymer](http://betomuniz.com/blog/desmistificando-o-polymer-parte-1/), e lá mostro **o que ele é** e **como ele funciona**, mas não mencionei quais são os principais fatores para utilização e escolha do Polymer entre outras tecnologias presentes, e a partir de agora, este será o principal objetivo deste segundo post.
@@ -25,7 +25,7 @@ E para finalizar está introdução, outro ponto interessante de analisar, é re
 
 ### Legal, mas é só isso? Gosto de listas :)
 
-Para ilustrar alguns benefícios trazidos a nós pelo Polymer, entrego a seguinte lista com relação aos "poderes" do Polymer, sendo assim, o Polymer é...
+Para ilustrar alguns benefícios trazidos a nós pelo Polymer, entrego a seguinte lista com relação aos "poderes" do Polymer, sendo assim, o Polymer é bom, porque é...
 
 **Produtivo**: O Polymer é extremamente produtivo, pois cria abstrações incríveis no desenvolvimento de componentes, além de fornecer componentes prontos;
 
@@ -49,7 +49,7 @@ Para ilustrar alguns benefícios trazidos a nós pelo Polymer, entrego a seguint
 
 ### E por hoje é só pessoal....
 
-Como eu disse no ínicio deste post, eu apenas iria levantar pontos altos a levar em consideração na escolha do Polymer, mas não deixe por esperar, continue lendo a série, sendo assim, confira o próximo post, pois nele eu crio uma espécie de [Polymer FAQ (unofficial)](), que basicamente ilustra **o que o Polymer não é**.
+Como eu disse no ínicio deste post, eu apenas iria levantar pontos altos a levar em consideração na escolha do Polymer, mas não deixe por esperar, continue lendo a série, sendo assim, confira o próximo post, pois nele eu crio uma espécie de [Polymer FAQ (unofficial)](http://betomuniz.com/blog/desmistificando-o-polymer-parte-3/), que basicamente ilustra **o que o Polymer não é**.
 
 Mas com relação a este post, qualquer dúvida ou sugestão, não deixe de comentar.
 
