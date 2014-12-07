@@ -42,6 +42,9 @@
     }
   }
   .navigation{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
     margin-bottom: 65px;
     li{
     display: inline-block;

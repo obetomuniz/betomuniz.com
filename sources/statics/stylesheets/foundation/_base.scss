@@ -6,6 +6,24 @@ html, body{
 
 body{
   font-family: 'Noto Sans', sans-serif;
+
+  &.pong-onplay {
+    overflow: hidden;
+    .pong {
+      opacity: 1;
+      visibility: visible;
+    }
+    .home-content,
+    .page-header,
+    .page-footer,
+    .portfolios,
+    .projects,
+    .posts,
+    .post-page {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
 }
 
 .wrapper {
