@@ -23,6 +23,7 @@
     "metalsmith-permalinks": "^0.1.1",
     "metalsmith-templates": "^0.1.0",
     "moment": "^2.8.2",
+    "moment-timezone": "^0.3.0",
     "open": "0.0.5"
   },
   "dependencies": {

@@ -32,6 +32,10 @@ var metalsmith = Metalsmith(__dirname)
     projects: {
       sortBy: 'date',
       reverse: true
+    },
+    talks: {
+      sortBy: 'date',
+      reverse: true
     }
   }))
   .use(templates({
@@ -55,11 +59,13 @@ Handlebars.registerHelper('brDate', function(ctx) {
   return moment(ctx).format('DD.MM.YYYY');
 });
 
-
 Handlebars.registerHelper('xmlDate', function(ctx) {
   return moment(ctx).format('ddd, DD MMM YYYY HH:mm:ss ZZ');
 });
 
+Handlebars.registerHelper('dateToStr', function(ctx) {
+  return moment(ctx).format("MMMM, DD");
+});
 
 /**
  * Partials.
