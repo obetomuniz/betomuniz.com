@@ -1,33 +1,24 @@
 {{> header }}
 
-    <section class="container">
-
-      <ul>
-        {{#each collections.talks}}
-          {{#if event}}
-            <li class="talk">
-                <div class="talk-thumb">
-                  <img src="{{event_logo}}" alt="Logo do {{event}}" title="Logo do {{event}}" class="talk-logo">
-                </div>
-                <div class="talk-infos">
-                  <h4 class="talk-info-event"><a href="{{event_url}}" target="_blank">{{event}}</a></h4>
-                  <ul>
-                    <li>
-                      <span class="talk-info--label">Date:</span> <time class="talk-info" datetime="{{dateToStr date}}">{{dateToStr date}}</time>
-                    </li>
-                    <li>
-                      <span class="talk-info--label">Location:</span> <address class="talk-info">{{location}}</address> {{#if location_url}}<small>(<a href="{{location_url}}">gmaps</a>)</small>{{/if}}
-                    </li>
-                    <li>
-                      <span class="talk-info--label">Presentation:</span> <span class="talk-info">{{talk}}</span> {{#if talk_url}}<small>(<a href="{{talk_url}}">slides</a>)</small>{{/if}}
-                    </li>
-                  </ul>
-                </div>
-            </li>
-          {{/if}}
-        {{/each}}
-      </ul>
-
-    </section>
+    <section id="talks" class="talks-container container"></section>
+    
+    <script type="text/o-template" id="talks-template">
+      <div class="talk">
+          <div class="talk-infos">
+            <h4 class="talk-info-event"><a href="\{{event_url}}" target="_blank">\{{event}}</a></h4>
+            <ul>
+              <li class="talk-info">
+                <span class="talk-info--label">Date:</span> <time class="talk-info--data" datetime="\{{date}}">\{{date}}</time>
+              </li>
+              <li class="talk-info">
+                <a class="talk-info--links" href="\{{location_url}}" target="_blank"><span class="talk-info--label">Location:</span> <address class="talk-info--data">\{{location}}</address> &raquo;</a>
+              </li>
+              <li class="talk-info">
+                <a class="talk-info--links" href="\{{talk_url}}" target="_blank"><span class="talk-info--label">Presentation:</span> <span class="talk-info--data">\{{talk}}</span> &raquo;</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </script>
 
 {{> footer }}

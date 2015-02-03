@@ -32,7 +32,7 @@ module.exports = function(grunt) {
           src: ['**'],
           cwd: './sources/statics/images/',
           dest: './public/static/images/'
-        }, ]
+        }]
       },
       feed: {
         files: [{
@@ -62,13 +62,15 @@ module.exports = function(grunt) {
         src: [
           './sources/components/platform/platform.js',
           './sources/components/polymer/polymer.js',
-          './sources/components/highlightjs/highlight.pack.js'
+          './sources/components/highlightjs/highlight.pack.js',
+          './sources/components/momentjs/min/moment.min.js'
         ],
         dest: './sources/statics/javascripts/vendors.js'
       },
       compile: {
         src: [
           './sources/statics/javascripts/vendors.js',
+          './sources/statics/javascripts/components/**/*',
           './sources/statics/javascripts/bm.js'
         ],
         dest: './sources/statics/javascripts/bm.tmp.js'

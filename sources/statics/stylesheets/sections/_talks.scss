@@ -1,6 +1,11 @@
+.talks-container {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+    margin-bottom: 85px;
+}
 .talk {
     display: block;
-    background-color: #f2f2f2;
     text-decoration: none;
     margin-bottom: 20px;
     overflow: hidden;
@@ -24,19 +29,37 @@
 .talk-infos {
     vertical-align: middle;
     display: inline-block;
-    padding: 0 0;
+    padding: 10px;
     height: auto;
     position: relative;
 }
-.talk-info-event a{
-    color: #2c7cb7;
-    font-size: 25px;
-    margin-bottom: 5px;
-    text-decoration: none;
+.talk-info {
+    font-size: 15px;
+    font-family: "Tahoma", sans-serif;
+    margin-bottom: 12px;
+    display: block;
+    color: #222;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.talk-info-event{
+    margin-bottom: 15px;
+    a {
+        color: #2c7cb7;
+        font-size: 30px;
+        margin-bottom: 5px;
+        text-decoration: none;
+    }
 }
 .talk-info--label {
-
+    font-size: 13px;
+    color: #222;
 }
-.talk-info {
+.talk-info--links{
+    color: #2c7cb7;
+    text-decoration: none;
+}
+.talk-info--data {
     display: inline;
 }

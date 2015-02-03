@@ -32,10 +32,6 @@ var metalsmith = Metalsmith(__dirname)
     projects: {
       sortBy: 'date',
       reverse: true
-    },
-    talks: {
-      sortBy: 'date',
-      reverse: true
     }
   }))
   .use(templates({
@@ -64,7 +60,11 @@ Handlebars.registerHelper('xmlDate', function(ctx) {
 });
 
 Handlebars.registerHelper('dateToStr', function(ctx) {
-  return moment(ctx).format("MMMM, DD");
+  return moment(ctx).format("YYYY • MMMM, DD");
+});
+
+Handlebars.registerHelper('specialTruncate', function(ctx) {
+  return (ctx.length > 28) ? ctx.substring(0, 15)+"..."+ctx.substring(ctx.length - 15, ctx.length) : ctx;
 });
 
 /**
