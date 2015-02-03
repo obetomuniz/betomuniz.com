@@ -16,6 +16,7 @@
   "private": true,
   "dependencies": {
     "highlightjs": "~8.0.0",
-    "momentjs": "~2.9.0"
+    "momentjs": "~2.9.0",
+    "handlebars": "~2.0.0"
   }
 }

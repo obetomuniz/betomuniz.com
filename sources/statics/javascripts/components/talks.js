@@ -3,46 +3,59 @@
  Get my Talks.
 */
 
-(function (win, moment) { 'use strict';
+(function (win, moment, hbs) { 'use strict';
 
-    function MyTalks(target) {
-        this.init('/static/data/talks.json', target);
+    function Talks() {
+        this.helpers();
+        this.init('https://rawgit.com/obetomuniz/betomuniz.com/master/data/talks.json');
     }
 
-    MyTalks.prototype = {
+    Talks.prototype = {
 
-        init: function (url, target) {
+        init: function (url) {
+            this.helpers();
+            this.bind(url);
+        },
+
+        bind: function (url) {
             var that = this;
             that.get(url, function(){
 
                 var res = JSON.parse(this.responseText),
-                    otemplate = new OTemplate(),
-                    content = [];
+                    sourcePresentOrFuture   = document.getElementById('talks-present-or-future').innerHTML,
+                    sourcePast   = document.getElementById('talks-past').innerHTML,
+                    templatePresentOrFuture = hbs.compile(sourcePresentOrFuture),
+                    templatePast = hbs.compile(sourcePast),
+                    target = document.getElementById('talks');
 
                 for (var i = 0; i < res.talks.length; i++) {
-                    content.push(otemplate.prepareTemplate(
-                          target+'-template', [
-                            {key: "date"},
-                            {key: "event"},
-                            {key: "event_url"},
-                            {key: "location"},
-                            {key: "location_url"},
-                            {key: "talk"},
-                            {key: "talk_url"}
-                           ], [
-                            that.dateToStr(res.talks[i].date),
-                            res.talks[i].event,
-                            res.talks[i].event_url,
-                            that.trunk(res.talks[i].location),
-                            res.talks[i].location_url,
-                            that.trunk(res.talks[i].talk),
-                            (res.talks[i].talk_url) ? res.talks[i].talk_url : false
-                          ]
-                        )
-                    );
+                    target.innerHTML += templatePresentOrFuture(res.talks[i]);
                 };
-                document.getElementById(target).innerHTML = content.join('');
 
+                for (var i = 0; i < res.talks.length; i++) {
+                   target.innerHTML += templatePast(res.talks[i]);
+                };
+
+            });
+        },
+
+        helpers: function () {
+
+            hbs.registerHelper('specialTruncate', function(ctx) {
+              return (ctx.length > 28) ? ctx.substring(0, 15)+"..."+ctx.substring(ctx.length - 20, ctx.length) : ctx;
+            });
+
+            hbs.registerHelper('dateToStr', function(ctx) {
+              return (moment(ctx).isValid()) ? moment(ctx).format("YYYY • MMMM, DD") : ctx;
+            });
+
+            hbs.registerHelper('isPresentOrFuture', function(ctx, options) {
+                var fnTrue=options.fn, fnFalse=options.inverse;
+                return (moment(ctx) >= moment() || !moment(ctx).isValid()) ? fnTrue(this) : fnFalse(this);
+            });
+            hbs.registerHelper('isPast', function(ctx, options) {
+                var fnTrue=options.fn, fnFalse=options.inverse;
+                return (moment(ctx) < moment() && moment(ctx).isValid()) ? fnTrue(this) : fnFalse(this);
             });
         },
 
@@ -51,17 +64,9 @@
           req.onload = callback;
           req.open("GET", url, true);
           req.send();
-        },
-        
-        dateToStr: function (ctx) {
-            return moment(ctx).format("YYYY • MMMM, DD");
-        },
-
-        trunk: function (ctx) {
-          return (ctx.length > 28) ? ctx.substring(0, 15)+"..."+ctx.substring(ctx.length - 15, ctx.length) : ctx;
         }
     };
 
-    window.MyTalks = MyTalks;
+    window.Talks = Talks;
 
-})(window, moment);
+})(window, moment, Handlebars);

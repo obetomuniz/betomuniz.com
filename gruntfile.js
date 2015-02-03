@@ -63,6 +63,7 @@ module.exports = function(grunt) {
           './sources/components/platform/platform.js',
           './sources/components/polymer/polymer.js',
           './sources/components/highlightjs/highlight.pack.js',
+          './sources/components/handlebars/handlebars.min.js',
           './sources/components/momentjs/min/moment.min.js'
         ],
         dest: './sources/statics/javascripts/vendors.js'

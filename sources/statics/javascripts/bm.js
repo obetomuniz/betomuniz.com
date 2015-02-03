@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  new MyTalks("talks");
-  setHighlight();
-  pongStart();
+    new Talks();
+    setHighlight();
+    pongStart();
 });

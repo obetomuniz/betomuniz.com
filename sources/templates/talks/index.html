@@ -2,23 +2,87 @@
 
     <section id="talks" class="talks-container container"></section>
     
-    <script type="text/o-template" id="talks-template">
-      <div class="talk">
-          <div class="talk-infos">
-            <h4 class="talk-info-event"><a href="\{{event_url}}" target="_blank">\{{event}}</a></h4>
-            <ul>
-              <li class="talk-info">
-                <span class="talk-info--label">Date:</span> <time class="talk-info--data" datetime="\{{date}}">\{{date}}</time>
-              </li>
-              <li class="talk-info">
-                <a class="talk-info--links" href="\{{location_url}}" target="_blank"><span class="talk-info--label">Location:</span> <address class="talk-info--data">\{{location}}</address> &raquo;</a>
-              </li>
-              <li class="talk-info">
-                <a class="talk-info--links" href="\{{talk_url}}" target="_blank"><span class="talk-info--label">Presentation:</span> <span class="talk-info--data">\{{talk}}</span> &raquo;</a>
-              </li>
-            </ul>
-          </div>
-      </div>
+    <script type="text/x-handlebars-template" id="talks-present-or-future">
+      \{{#isPresentOrFuture date}}
+        <div class="talk">
+            <div class="talk-infos">
+              <h4 class="talk-info-event"><a href="\{{event_url}}" target="_blank">\{{event}}</a></h4>
+              <ul>
+                \{{#if date}}
+                  <li class="talk-info">
+                      <span class="talk-info--label">Date:</span> <time class="talk-info--data talk-info--date">\{{dateToStr date}}</time>
+                  </li>
+                \{{/if}}
+                \{{#if location}}
+                  <li class="talk-info">
+                    \{{#if location_url}}
+                      <span class="talk-info--label">Location:</span> <a class="talk-info--links" href="\{{location_url}}" target="_blank"><address class="talk-info--data">\{{specialTruncate location}}</address> &raquo;</a>
+                    \{{else}}
+                      <span class="talk-info--label">Presentation:</span> <span class="talk-info--data">\{{specialTruncate location}}</span>
+                    \{{/if}}
+                  </li>
+                \{{/if}}
+                \{{#if talk}}
+                  <li class="talk-info">
+                    \{{#if talk_url}}
+                      <span class="talk-info--label">Presentation:</span> <a class="talk-info--links" href="\{{talk_url}}" target="_blank"><span class="talk-info--data">\{{specialTruncate talk}}</span> &raquo;</a>
+                    \{{else}}
+                      <span class="talk-info--label">Presentation:</span> <span class="talk-info--data">\{{specialTruncate talk}}</span>
+                    \{{/if}}
+                  </li>
+                \{{/if}}
+                \{{#if video_url}}
+                  <li class="talk-info">
+                    \{{#if video_url}}
+                      <span class="talk-info--label">Video:</span> <a class="talk-info--links" href="\{{video_url}}" target="_blank"><span class="talk-info--data">\{{specialTruncate talk}}</span> &raquo;</a>
+                    \{{/if}}
+                  </li>
+                \{{/if}}
+              </ul>
+            </div>
+        </div>
+      \{{/isPresentOrFuture}}
+    </script>
+    <script type="text/x-handlebars-template" id="talks-past">
+      \{{#isPast date}}
+        <div class="talk">
+            <div class="talk-infos">
+              <h4 class="talk-info-event"><a href="\{{event_url}}" target="_blank">\{{event}}</a></h4>
+              <ul>
+                \{{#if date}}
+                  <li class="talk-info">
+                      <span class="talk-info--label">Date:</span> <time class="talk-info--data talk-info--date">\{{dateToStr date}}</time>
+                  </li>
+                \{{/if}}
+                \{{#if location}}
+                  <li class="talk-info">
+                    \{{#if location_url}}
+                      <span class="talk-info--label">Location:</span> <a class="talk-info--links" href="\{{location_url}}" target="_blank"><address class="talk-info--data">\{{specialTruncate location}}</address> &raquo;</a>
+                    \{{else}}
+                      <span class="talk-info--label">Presentation:</span> <span class="talk-info--data">\{{specialTruncate location}}</span>
+                    \{{/if}}
+                  </li>
+                \{{/if}}
+                \{{#if talk}}
+                  <li class="talk-info">
+                    \{{#if talk_url}}
+                      <span class="talk-info--label">Presentation:</span> <a class="talk-info--links" href="\{{talk_url}}" target="_blank"><span class="talk-info--data">\{{specialTruncate talk}}</span> &raquo;</a>
+                    \{{else}}
+                      <span class="talk-info--label">Presentation:</span> <span class="talk-info--data">\{{specialTruncate talk}}</span>
+                    \{{/if}}
+                  </li>
+                \{{/if}}
+                \{{#if video_url}}
+                  <li class="talk-info">
+                    \{{#if video_url}}
+                      <span class="talk-info--label">Video:</span> <a class="talk-info--links" href="\{{video_url}}" target="_blank"><span class="talk-info--data">\{{specialTruncate talk}}</span> &raquo;</a>
+                    \{{/if}}
+                  </li>
+                \{{/if}}
+              </ul>
+            </div>
+        </div>
+      \{{/isPast}}
     </script>
 
 {{> footer }}
