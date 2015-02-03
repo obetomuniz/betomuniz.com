@@ -10,9 +10,6 @@ var Handlebars = require('handlebars');
 var moment = require('moment');
 var fs = require('fs');
 
-
-
-
 /**
  * Build.
  */
@@ -26,40 +23,40 @@ var metalsmith = Metalsmith(__dirname)
   .use(collections({
     blog: {
       sortBy: 'date',
-      reverse:  true
+      reverse: true
     },
     portfolio: {
-        sortBy: 'date',
-        reverse:  true
+      sortBy: 'date',
+      reverse: true
     },
     projects: {
       sortBy: 'date',
-      reverse:  true
+      reverse: true
     }
   }))
   .use(templates({
     engine: 'handlebars',
     directory: 'sources/templates',
     params: {
-        partials: {
-            footer: "partials/footer",
-            header: "partials/header"
-        }
+      partials: {
+        footer: "partials/footer",
+        header: "partials/header"
+      }
     }
   }))
-  .build(function(err){
+  .build(function(err) {
     if (err) throw err;
   });
 
 /**
  * Helpers.
  */
-Handlebars.registerHelper('brDate', function (ctx) {
+Handlebars.registerHelper('brDate', function(ctx) {
   return moment(ctx).format('DD.MM.YYYY');
 });
 
 
-Handlebars.registerHelper('xmlDate', function (ctx) {
+Handlebars.registerHelper('xmlDate', function(ctx) {
   return moment(ctx).format('ddd, DD MMM YYYY HH:mm:ss ZZ');
 });
 

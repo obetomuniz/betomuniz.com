@@ -1,4 +1,4 @@
-module.exports = function( grunt ) {
+module.exports = function(grunt) {
   'use strict';
 
   // autoload modules from package.json
@@ -8,28 +8,39 @@ module.exports = function( grunt ) {
   grunt.initConfig({
     rename: {
       main: {
-        files: [
-              {src: ['./public/blog/feed/index.html'], dest: './public/blog/feed/feed.xml'},
-            ]
+        files: [{
+          src: ['./public/blog/feed/index.html'],
+          dest: './public/blog/feed/feed.xml'
+        }, ]
       }
     },
 
     copy: {
-      components:{
-          files: [
-            {expand: true, src: ['**'], cwd:'./sources/components/',dest: './public/components/'},
-            {expand: true, src: ['**'], cwd:'./sources/statics/fonts/',dest: './public/static/fonts/'},
-            {expand: true, src: ['**'], cwd:'./sources/statics/images/',dest: './public/static/images/'},
-          ]
+      components: {
+        files: [{
+          expand: true,
+          src: ['**'],
+          cwd: './sources/components/',
+          dest: './public/components/'
+        }, {
+          expand: true,
+          src: ['**'],
+          cwd: './sources/statics/fonts/',
+          dest: './public/static/fonts/'
+        }, {
+          expand: true,
+          src: ['**'],
+          cwd: './sources/statics/images/',
+          dest: './public/static/images/'
+        }, ]
       },
-      feed:{
-          files: [
-            {
-              expand: true, src: ['**'],
-              cwd:'./public/blog/feed/',
-              dest: './public/blog/'
-            }
-          ]
+      feed: {
+        files: [{
+          expand: true,
+          src: ['**'],
+          cwd: './public/blog/feed/',
+          dest: './public/blog/'
+        }]
       }
     },
 
@@ -38,27 +49,27 @@ module.exports = function( grunt ) {
     },
 
     shell: {
-        compile: {
-            command: 'node build.js'
-        }
+      compile: {
+        command: 'node build.js'
+      }
     },
 
     concat: {
-        vendors: {
-          src: [
-              './sources/components/platform/platform.js',
-              './sources/components/polymer/polymer.js',
-              './sources/components/highlightjs/highlight.pack.js'
-          ],
-          dest: './sources/statics/javascripts/vendors.js'
-        },
-        compile: {
-          src: [
-              './sources/statics/javascripts/vendors.js',
-              './sources/statics/javascripts/bm.js'
-          ],
-          dest: './sources/statics/javascripts/bm.tmp.js'
-       }
+      vendors: {
+        src: [
+          './sources/components/platform/platform.js',
+          './sources/components/polymer/polymer.js',
+          './sources/components/highlightjs/highlight.pack.js'
+        ],
+        dest: './sources/statics/javascripts/vendors.js'
+      },
+      compile: {
+        src: [
+          './sources/statics/javascripts/vendors.js',
+          './sources/statics/javascripts/bm.js'
+        ],
+        dest: './sources/statics/javascripts/bm.tmp.js'
+      }
     },
 
     uglify: {
@@ -119,12 +130,12 @@ module.exports = function( grunt ) {
       dev: {
         script: 'betomuniz.js',
         options: {
-          callback: function (nodemon) {
-            nodemon.on('log', function (event) {
+          callback: function(nodemon) {
+            nodemon.on('log', function(event) {
               console.log(event.colour);
             });
 
-            nodemon.on('config:update', function () {
+            nodemon.on('config:update', function() {
               setTimeout(function() {
                 require('open')('http://localhost:3000');
               }, 1000);
@@ -137,39 +148,39 @@ module.exports = function( grunt ) {
     },
 
     concurrent: {
-        target: {
-            tasks: ['nodemon:dev', 'watch'],
-            options: {
-                logConcurrentOutput: true
-            }
+      target: {
+        tasks: ['nodemon:dev', 'watch'],
+        options: {
+          logConcurrentOutput: true
         }
+      }
     },
 
   });
 
   grunt.registerTask('default', [
-      'shell:compile',
-      'copy:components',
-      'compass:compile',
-      'concat:vendors',
-      'concat:compile',
-      'uglify:compile',
-      'rename:main',
-      'copy:feed',
-      'clean:feed',
-      'concurrent'
+    'shell:compile',
+    'copy:components',
+    'compass:compile',
+    'concat:vendors',
+    'concat:compile',
+    'uglify:compile',
+    'rename:main',
+    'copy:feed',
+    'clean:feed',
+    'concurrent'
   ]);
 
   grunt.registerTask('build', [
-      'shell:compile',
-      'copy:components',
-      'compass:compile',
-      'concat:vendors',
-      'concat:compile',
-      'uglify:compile',
-      'rename:main',
-      'copy:feed',
-      'clean:feed'
+    'shell:compile',
+    'copy:components',
+    'compass:compile',
+    'concat:vendors',
+    'concat:compile',
+    'uglify:compile',
+    'rename:main',
+    'copy:feed',
+    'clean:feed'
   ]);
 
 };

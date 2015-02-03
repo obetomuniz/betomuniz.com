@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
 
   setHighlight();
 
@@ -22,9 +22,11 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 });
 
-function setHighlight(){
+function setHighlight() {
   var code = document.querySelectorAll("pre code");
-  for(i = 0; i < code.length; i++){ hljs.highlightBlock(code[i]); }
+  for (i = 0; i < code.length; i++) {
+    hljs.highlightBlock(code[i]);
+  }
 }
 
 function Pong() {
@@ -32,8 +34,8 @@ function Pong() {
 
   this.player = function() {
     this.score = 0,
-    this.left = false,
-    this.right = false;
+      this.left = false,
+      this.right = false;
     this.paddle = {
       x: 0,
       y: 0,
@@ -44,15 +46,15 @@ function Pong() {
 
   this.init = function(selector) {
     _this.ctx = document.querySelector("#canvas").getContext("2d"),
-    _this.WIDTH = document.querySelector("#canvas").width,
-    _this.HEIGHT = document.querySelector("#canvas").height,
-    _this.gravity = 4,
-    _this.wind = 10,
-    _this.p1 = new _this.player(),
-    _this.p1.id = 1,
-    _this.p2 = new _this.player(),
-    _this.p2.id = 2,
-    _this.p2.paddle.x = (_this.WIDTH - 5);
+      _this.WIDTH = document.querySelector("#canvas").width,
+      _this.HEIGHT = document.querySelector("#canvas").height,
+      _this.gravity = 4,
+      _this.wind = 10,
+      _this.p1 = new _this.player(),
+      _this.p1.id = 1,
+      _this.p2 = new _this.player(),
+      _this.p2.id = 2,
+      _this.p2.paddle.x = (_this.WIDTH - 5);
 
     document.addEventListener('keydown', _this.onKeyDown);
     document.addEventListener('keyup', _this.onKeyUp);
@@ -98,7 +100,7 @@ function Pong() {
   }
 
   this.clear = function() {
-      _this.ctx.clearRect(0, 0, _this.WIDTH, _this.HEIGHT);
+    _this.ctx.clearRect(0, 0, _this.WIDTH, _this.HEIGHT);
   }
 
   this.bola = {
@@ -130,7 +132,7 @@ function Pong() {
     _this.P2(_this.p2.paddle.x, _this.p2.paddle.y, _this.p2.paddle.w, _this.p2.paddle.h);
 
     /* saida lateral */
-    if (_this.bola.y + _this.gravity > (_this.HEIGHT-14) || _this.bola.y + _this.gravity < 0) {
+    if (_this.bola.y + _this.gravity > (_this.HEIGHT - 14) || _this.bola.y + _this.gravity < 0) {
       _this.gravity = -_this.gravity;
     }
 
@@ -160,40 +162,40 @@ function Pong() {
       }
     }
 
-        _this.bola.y += _this.gravity;
-        _this.bola.x += _this.wind;
-    }
+    _this.bola.y += _this.gravity;
+    _this.bola.x += _this.wind;
+  }
 
-    _this.randomize = function(max) {
-      var n = Math.floor((Math.random() * 11) + 1);
-      if (Math.floor((Math.random() * 2)) > 0) {
-          return n;
-      } else {
-          return -n;
-      }
+  _this.randomize = function(max) {
+    var n = Math.floor((Math.random() * 11) + 1);
+    if (Math.floor((Math.random() * 2)) > 0) {
+      return n;
+    } else {
+      return -n;
     }
+  }
 
-    /* Keydown events */
-    _this.onKeyDown = function(evt) {
-      switch (evt.keyCode) {
-        /* seta direita */
-        case 40:
-          _this.p1.right = true;
-          break;
+  /* Keydown events */
+  _this.onKeyDown = function(evt) {
+    switch (evt.keyCode) {
+      /* seta direita */
+      case 40:
+        _this.p1.right = true;
+        break;
         /* seta esquerda */
-        case 38:
-          _this.p1.left = true;
-          break;
+      case 38:
+        _this.p1.left = true;
+        break;
         /* espaco */
-        case 32:
-          _this.play();
-          break;
-        case 27:
-          document.querySelector("body").classList.remove('pong-onplay');
-          break;
-      }
-
+      case 32:
+        _this.play();
+        break;
+      case 27:
+        document.querySelector("body").classList.remove('pong-onplay');
+        break;
     }
+
+  }
 
   /* Keyup events */
   _this.onKeyUp = function(evt) {
