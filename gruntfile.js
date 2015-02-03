@@ -49,6 +49,9 @@ module.exports = function(grunt) {
     },
 
     shell: {
+      bower: {
+        command: 'bower install'
+      },
       compile: {
         command: 'node build.js'
       }
@@ -159,6 +162,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [
+    'shell:bower',
     'shell:compile',
     'copy:components',
     'compass:compile',
@@ -172,6 +176,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'shell:bower',
     'shell:compile',
     'copy:components',
     'compass:compile',
