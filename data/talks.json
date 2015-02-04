@@ -9,13 +9,22 @@
             "talk": "Nodewebkit - Uma ferramenta que amplia suas fronteiras"
         },
         {
-            "date": "????-??-??",
+            "date": "2014-08-25",
             "event": "Google I/O Extended",
             "event_url": "https://plus.google.com/u/0/events/cpb2r51l7cj0p8lsspf6ucr8cm4",
             "location": "São Paulo, Brazil — Google",
             "location_url": "https://goo.gl/maps/C8hhF",
             "talk": "O poderoso AngularJS",
             "talk_url": "https://speakerdeck.com/obetomuniz/o-poderoso-angularjs"
+        },
+        {
+            "date": "2014-11-22",
+            "event": "DevFest SP 2014",
+            "event_url": "http://sp.devfest.com.br/",
+            "location": "São Paulo, Brazil — Centro de Convenções Rebouças",
+            "location_url": "https://goo.gl/maps/nYPWB",
+            "talk": "Desmistificando o Polymer",
+            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
         }
     ]    
 }
