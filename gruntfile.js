@@ -41,11 +41,36 @@ module.exports = function(grunt) {
           cwd: './public/blog/feed/',
           dest: './public/blog/'
         }]
+      },
+      dist: {
+        files: [{
+          expand: true,
+          src: ['**'],
+          cwd: './public/',
+          dest: './dist/public/'
+        },{
+          expand: true,
+          src: ['**'],
+          cwd: './node_modules/hapi/',
+          dest: './dist/node_modules/hapi/'
+        },{
+          expand: true,
+          src: ['**'],
+          cwd: './node_modules/moment/',
+          dest: './dist/node_modules/moment/'
+        },{
+          expand: true,
+          src: ['betomuniz.js', 'package.json'],
+          cwd: './',
+          dest: './dist/'
+        }]
       }
     },
 
     clean: {
-      feed: ["./public/blog/feed/"]
+      feed: ["./public/blog/feed/"],
+      dist: ["./public/", "./dist/"],
+      public: ["./public/", "./public/"]
     },
 
     shell: {
@@ -162,6 +187,22 @@ module.exports = function(grunt) {
       }
     },
 
+    rsync: {
+        options: {
+            args: ["--verbose"],
+            exclude: [".DS_Store"],
+            recursive: true
+        },
+        dist: {
+          options: {
+              src: "./dist/",
+              dest: "/var/www/betomuniz.com",
+              host: "root@162.243.11.136",
+              delete: true
+          }
+        }
+    }
+
   });
 
   grunt.registerTask('default', [
@@ -189,6 +230,24 @@ module.exports = function(grunt) {
     'rename:main',
     'copy:feed',
     'clean:feed'
+  ]);
+
+  grunt.registerTask('prod', [
+    'clean:dist',
+    'clean:public',
+    'shell:bower',
+    'shell:compile',
+    'copy:components',
+    'compass:compile',
+    'concat:vendors',
+    'concat:compile',
+    'uglify:compile',
+    'rename:main',
+    'copy:feed',
+    'clean:feed',
+    'copy:dist',
+    'rsync:dist',
+    'clean:dist'
   ]);
 
 };
