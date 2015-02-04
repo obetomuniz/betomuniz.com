@@ -1,6 +1,14 @@
 {
     "talks": [
         {
+            "date": "2015-01-24",
+            "event": "DevCastDay",
+            "event_url": "https://www.facebook.com/DevCast",
+            "location": "São Paulo, Brazil",
+            "talk": "WebApps com Web Components",
+            "talk_url": "https://speakerdeck.com/obetomuniz/webapps-com-web-components"
+        },
+        {
             "date": "2014-11-29",
             "event": "RuPy Brazil",
             "event_url": "http://rupy.com.br/",
@@ -20,10 +28,10 @@
         },
         {
             "date": "2014-11-15",
-            "event": "DEVDAY 2014",
-            "event_url": "http://devday.devisland.com/",
-            "location": "Belo Horizonte, Brazil —  School of Engineering, UFMG",
-            "location_url": "https://goo.gl/maps/eXE2T",
+            "event": "Front in Maceió 2014",
+            "event_url": "http://frontinmaceio.com.br/",
+            "location": "Maceió, Brazil — Auditorium of SENAI",
+            "location_url": "https://goo.gl/maps/nb1zH",
             "talk": "Web Components, A próxima revolução do desenvolvimento web",
             "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
         },
@@ -34,6 +42,15 @@
             "location": "Rio de Janeiro, Brazil — Rio Exchange Convention Center",
             "location_url": "https://goo.gl/maps/nlofu",
             "talk": "Desmistificando o Polymer",
+            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
+        },
+        {
+            "date": "2014-11-01",
+            "event": "DEVDAY 2014",
+            "event_url": "http://devday.devisland.com/",
+            "location": "Belo Horizonte, Brazil —  School of Engineering, UFMG",
+            "location_url": "https://goo.gl/maps/eXE2T",
+            "talk": "Web Components, A próxima revolução do desenvolvimento web",
             "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
         },
         {
