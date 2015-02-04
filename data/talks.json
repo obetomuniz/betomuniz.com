@@ -77,7 +77,7 @@
             "event_url": "http://www.thedevelopersconference.com.br/tdc/2014/saopaulo/trilha-node-js",
             "location": "São Paulo, Brazil — Anhembi Morumbi University",
             "location_url": "https://goo.gl/maps/MNrlg",
-            "talk": "Nodewebkit - Uma ferramenta que amplia suas fronteiras"
+            "talk": "Nodewebkit - Uma ferramenta que amplia suas fronteiras",
             "talk_url": "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit"
         },
         {
@@ -87,7 +87,8 @@
             "location": "São Paulo, Brazil — Google",
             "location_url": "https://goo.gl/maps/C8hhF",
             "talk": "O poderoso AngularJS",
-            "talk_url": "https://speakerdeck.com/obetomuniz/o-poderoso-angularjs"
+            "talk_url": "https://speakerdeck.com/obetomuniz/o-poderoso-angularjs",
+            "video_url": "http://youtu.be/MJaqfQMIRbY?list=UUTspylBf8iNobZHgwUD4PXA"
         },
         {
             "date": "2013-11-30",
