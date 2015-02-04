@@ -33,7 +33,7 @@
             "location": "Maceió, Brazil — Auditorium of SENAI",
             "location_url": "https://goo.gl/maps/nb1zH",
             "talk": "Web Components, A próxima revolução do desenvolvimento web",
-            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
+            "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
         },
         {
             "date": "2014-11-08",
@@ -51,7 +51,7 @@
             "location": "Belo Horizonte, Brazil —  School of Engineering, UFMG",
             "location_url": "https://goo.gl/maps/eXE2T",
             "talk": "Web Components, A próxima revolução do desenvolvimento web",
-            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
+            "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
         },
         {
             "date": "2014-09-27",
@@ -60,7 +60,16 @@
             "location": "Rio de Janeiro, Brazil — Veiga de Almeida University",
             "location_url": "https://goo.gl/maps/B4diC",
             "talk": "Web Components, A próxima revolução do desenvolvimento web",
-            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
+            "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
+        },
+        {
+            "date": "2014-08-30",
+            "event": "Frontinterior 2014",
+            "event_url": "http://www.frontinterior.com.br/",
+            "location": "Bauru, Brazil — Obeid Plaza Hotel",
+            "location_url": "https://goo.gl/maps/vd6mN",
+            "talk": "Web Components, A próxima revolução do desenvolvimento web",
+            "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
         },
         {
             "date": "2014-08-08",
@@ -69,6 +78,7 @@
             "location": "São Paulo, Brazil — Anhembi Morumbi University",
             "location_url": "https://goo.gl/maps/MNrlg",
             "talk": "Nodewebkit - Uma ferramenta que amplia suas fronteiras"
+            "talk_url": "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit"
         },
         {
             "date": "2014-06-25",
@@ -78,6 +88,23 @@
             "location_url": "https://goo.gl/maps/C8hhF",
             "talk": "O poderoso AngularJS",
             "talk_url": "https://speakerdeck.com/obetomuniz/o-poderoso-angularjs"
+        },
+        {
+            "date": "2013-11-30",
+            "event": "Dev in Company #2",
+            "event_url": "http://devincompany.org/",
+            "location": "Belo Horizonte, Brazil — JCHEBLY",
+            "location_url": "https://goo.gl/maps/7Umul",
+            "talk": "SASS e Compass - O CSS Ninja Workflow",
+            "talk_url": "https://speakerdeck.com/obetomuniz/sass-e-compass-o-css-ninja-workflow"
+        },
+        {
+            "date": "2014-09-28",
+            "event": "Dev in Company #1",
+            "event_url": "http://devincompany.org/",
+            "location": "Belo Horizonte, Brazil — RC Comunicação",
+            "location_url": "https://goo.gl/maps/sdN9K",
+            "talk": "Pré-processadores"
         }
     ]    
 }
