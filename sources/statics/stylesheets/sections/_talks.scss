@@ -2,14 +2,36 @@
     opacity: 1;
     visibility: visible;
     transition: all 0.5s ease;
-    margin-bottom: 85px;
+    margin-bottom: 60px;
 }
 .talk {
     display: block;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     overflow: hidden;
 }
+.talk-list {
+    &:first-child {
+        margin-bottom: 50px;
+    }
+    .talk-type {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #CDCDCD;
+        position: relative;
+        height: 20px;
+        margin-bottom: 50px;
+        color: #8E8E8E;
+        font-size: 20px;
+        span {
+            display: inline-block;
+            background-color: #F9F9F9;
+            position: relative;
+            padding: 10px;
+        }
+    }
+}
+
 .talk-thumb {
     width: 100px;
     height: 100px;

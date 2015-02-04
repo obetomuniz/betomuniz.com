@@ -6,20 +6,17 @@ html, body{
 
 body{
   font-family: 'Noto Sans', sans-serif;
-
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   &.pong-onplay {
     overflow: hidden;
     .pong {
       opacity: 1;
       visibility: visible;
     }
-    .home-content,
-    .page-header,
-    .page-footer,
-    .portfolios,
-    .projects,
-    .posts,
-    .post-page {
+    .header-content,
+    .section-content,
+    .footer-content {
       opacity: 0;
       visibility: hidden;
     }

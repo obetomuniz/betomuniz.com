@@ -185,7 +185,6 @@ function pongStart() {
     var konami = '38,38,40,40,37,39,37,39,66,65';
 
     document.addEventListener('keydown', function(e) {
-      e.preventDefault();
       teclas.push(e.keyCode);
       if (teclas.toString().indexOf(konami) >= 0) {
         var pong = new Pong();
