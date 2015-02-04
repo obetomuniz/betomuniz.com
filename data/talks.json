@@ -1,12 +1,22 @@
 {
     "talks": [
         {
-            "date": "2014-08-08",
-            "event": "The Developers Conferece",
-            "event_url": "http://www.thedevelopersconference.com.br/tdc/2014/saopaulo/trilha-node-js",
-            "location": "São Paulo, Brazil — Anhembi Morumbi University",
-            "location_url": "https://goo.gl/maps/MNrlg",
-            "talk": "Nodewebkit - Uma ferramenta que amplia suas fronteiras"
+            "date": "2014-11-22",
+            "event": "DevFest Sudeste 2014",
+            "event_url": "http://sudeste.devfest.com.br/",
+            "location": "São Paulo, Brazil — Centro de Convenções Rebouças",
+            "location_url": "https://goo.gl/maps/nYPWB",
+            "talk": "Desmistificando o Polymer",
+            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
+        },
+        {
+            "date": "2014-11-22",
+            "event": "DevFest SP 2014",
+            "event_url": "http://sp.devfest.com.br/",
+            "location": "São Paulo, Brazil — Centro de Convenções Rebouças",
+            "location_url": "https://goo.gl/maps/nYPWB",
+            "talk": "Desmistificando o Polymer",
+            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
         },
         {
             "date": "2014-08-25",
@@ -18,13 +28,12 @@
             "talk_url": "https://speakerdeck.com/obetomuniz/o-poderoso-angularjs"
         },
         {
-            "date": "2014-11-22",
-            "event": "DevFest SP 2014",
-            "event_url": "http://sp.devfest.com.br/",
-            "location": "São Paulo, Brazil — Centro de Convenções Rebouças",
-            "location_url": "https://goo.gl/maps/nYPWB",
-            "talk": "Desmistificando o Polymer",
-            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
+            "date": "2014-08-08",
+            "event": "The Developers Conferece",
+            "event_url": "http://www.thedevelopersconference.com.br/tdc/2014/saopaulo/trilha-node-js",
+            "location": "São Paulo, Brazil — Anhembi Morumbi University",
+            "location_url": "https://goo.gl/maps/MNrlg",
+            "talk": "Nodewebkit - Uma ferramenta que amplia suas fronteiras"
         }
     ]    
 }
