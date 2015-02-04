@@ -54,13 +54,13 @@
             "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
         },
         {
-            "date": "2014-08-25",
-            "event": "Google I/O Extended",
-            "event_url": "https://plus.google.com/u/0/events/cpb2r51l7cj0p8lsspf6ucr8cm4",
-            "location": "São Paulo, Brazil — Google",
-            "location_url": "https://goo.gl/maps/C8hhF",
-            "talk": "O poderoso AngularJS",
-            "talk_url": "https://speakerdeck.com/obetomuniz/o-poderoso-angularjs"
+            "date": "2014-09-27",
+            "event": "Front End Carioca",
+            "event_url": "http://frontendcarioca.com.br/",
+            "location": "Rio de Janeiro, Brazil — Veiga de Almeida University",
+            "location_url": "https://goo.gl/maps/B4diC",
+            "talk": "Web Components, A próxima revolução do desenvolvimento web",
+            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
         },
         {
             "date": "2014-08-08",
@@ -69,6 +69,15 @@
             "location": "São Paulo, Brazil — Anhembi Morumbi University",
             "location_url": "https://goo.gl/maps/MNrlg",
             "talk": "Nodewebkit - Uma ferramenta que amplia suas fronteiras"
+        },
+        {
+            "date": "2014-06-25",
+            "event": "Google I/O Extended",
+            "event_url": "https://plus.google.com/u/0/events/cpb2r51l7cj0p8lsspf6ucr8cm4",
+            "location": "São Paulo, Brazil — Google",
+            "location_url": "https://goo.gl/maps/C8hhF",
+            "talk": "O poderoso AngularJS",
+            "talk_url": "https://speakerdeck.com/obetomuniz/o-poderoso-angularjs"
         }
     ]    
 }
