@@ -12,16 +12,17 @@
             "date": "2014-11-29",
             "event": "RuPy Brazil",
             "event_url": "http://rupy.com.br/",
-            "location": "São José dos Campos, Brazil —  Faro Hotel",
+            "location": "São José dos Campos, Brazil — Faro Hotel",
             "location_url": "https://goo.gl/maps/KUyVE",
             "talk": "Web Components, A próxima revolução do desenvolvimento web",
-            "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
+            "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web",
+            "video_url": "http://youtu.be/RjPzxHum4Cg"
         },
         {
             "date": "2014-11-22",
             "event": "DevFest SP 2014",
             "event_url": "http://sp.devfest.com.br/",
-            "location": "São Paulo, Brazil —  Rebouças Convention Center",
+            "location": "São Paulo, Brazil — Rebouças Convention Center",
             "location_url": "https://goo.gl/maps/nYPWB",
             "talk": "Desmistificando o Polymer",
             "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
@@ -54,6 +55,15 @@
             "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
         },
         {
+            "date": "2014-10-11",
+            "event": "Meetup Golang",
+            "event_url": "http://www.meetup.com/golangbr/events/208994392/",
+            "location": "São Paulo, Brazil — IBTA",
+            "location_url": "https://goo.gl/maps/5Rf64",
+            "talk": "Martini. O 'Um' Framework Web para Go.",
+            "talk_url": "https://speakerdeck.com/obetomuniz/martini-o-um-framework-web-para-go"
+        },
+        {
             "date": "2014-09-27",
             "event": "Front End Carioca",
             "event_url": "http://frontendcarioca.com.br/",
@@ -84,7 +94,7 @@
             "date": "2014-06-25",
             "event": "Google I/O Extended",
             "event_url": "https://plus.google.com/u/0/events/cpb2r51l7cj0p8lsspf6ucr8cm4",
-            "location": "São Paulo, Brazil — Google",
+            "location": "São Paulo, Brazil — Google Brazil",
             "location_url": "https://goo.gl/maps/C8hhF",
             "talk": "O poderoso AngularJS",
             "talk_url": "https://speakerdeck.com/obetomuniz/o-poderoso-angularjs",
@@ -99,6 +109,13 @@
             "talk": "Ampliando suas fronteiras com Node-Webkit",
             "talk_url": "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit",
             "video_url": "http://youtu.be/Yjm4NVq0neA?t=3h43m39s"
+        },
+        {
+            "date": "2014-04-01",
+            "event": "Meetup Golang",
+            "location": "São Paulo, Brazil",
+            "talk": "Construindo um servidor web com Go",
+            "talk_url": "https://speakerdeck.com/obetomuniz/construindo-um-servidor-web-com-go"
         },
         {
             "date": "2014-03-22",
