@@ -91,6 +91,26 @@
             "video_url": "http://youtu.be/MJaqfQMIRbY?list=UUTspylBf8iNobZHgwUD4PXA"
         },
         {
+            "date": "2014-06-14",
+            "event": "Meetup NodeBR",
+            "event_url": "http://www.meetup.com/NodeBR-Sao-Paulo/events/185289862/",
+            "location": "São Paulo, Brazil — Lambda3",
+            "location_url": "https://goo.gl/maps/orFmT",
+            "talk": "Ampliando suas fronteiras com Node-Webkit",
+            "talk_url": "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit"
+            "video_url": "http://youtu.be/Yjm4NVq0neA?t=3h43m39s"
+        },
+        {
+            "date": "2014-03-22",
+            "event": "Meetup NodeBR",
+            "event_url": "http://www.meetup.com/NodeBR-Sao-Paulo/events/171262932/",
+            "location": "São Paulo, Brazil — Vizir Software Studio",
+            "location_url": "https://goo.gl/maps/orFmT",
+            "talk": "Express 4.0",
+            "talk_url": "https://speakerdeck.com/obetomuniz/express-4"
+            "video_url": "http://youtu.be/T7S90RX83dQ?t=16s"
+        },
+        {
             "date": "2013-11-30",
             "event": "Dev in Company #2",
             "event_url": "http://devincompany.org/",
@@ -100,7 +120,7 @@
             "talk_url": "https://speakerdeck.com/obetomuniz/sass-e-compass-o-css-ninja-workflow"
         },
         {
-            "date": "2014-09-28",
+            "date": "2013-09-28",
             "event": "Dev in Company #1",
             "event_url": "http://devincompany.org/",
             "location": "Belo Horizonte, Brazil — RC Comunicação",
