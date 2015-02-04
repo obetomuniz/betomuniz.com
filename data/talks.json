@@ -126,13 +126,6 @@
             "video_url": "http://youtu.be/Yjm4NVq0neA?t=3h43m39s"
         },
         {
-            "date": "2014-04-01",
-            "event": "Meetup Golang",
-            "location": "São Paulo, Brazil",
-            "talk": "Construindo um servidor web com Go",
-            "talk_url": "https://speakerdeck.com/obetomuniz/construindo-um-servidor-web-com-go"
-        },
-        {
             "date": "2014-03-22",
             "event": "Meetup NodeBR",
             "event_url": "http://www.meetup.com/NodeBR-Sao-Paulo/events/171262932/",
@@ -141,6 +134,13 @@
             "talk": "Express 4.0",
             "talk_url": "https://speakerdeck.com/obetomuniz/express-4",
             "video_url": "http://youtu.be/T7S90RX83dQ?t=16s"
+        },
+        {
+            "date": "2014-03-03",
+            "event": "Meetup Golang",
+            "location": "São Paulo, Brazil",
+            "talk": "Construindo um servidor web com Go",
+            "talk_url": "https://speakerdeck.com/obetomuniz/construindo-um-servidor-web-com-go"
         },
         {
             "date": "2013-11-30",
