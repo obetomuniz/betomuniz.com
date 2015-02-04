@@ -1,20 +1,38 @@
 {
     "talks": [
         {
-            "date": "2014-11-22",
-            "event": "DevFest Sudeste 2014",
-            "event_url": "http://sudeste.devfest.com.br/",
-            "location": "São Paulo, Brazil — Centro de Convenções Rebouças",
-            "location_url": "https://goo.gl/maps/nYPWB",
-            "talk": "Desmistificando o Polymer",
-            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
+            "date": "2014-11-29",
+            "event": "RuPy Brazil",
+            "event_url": "http://rupy.com.br/",
+            "location": "São José dos Campos, Brazil —  Faro Hotel",
+            "location_url": "https://goo.gl/maps/KUyVE",
+            "talk": "Web Components, A próxima revolução do desenvolvimento web",
+            "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
         },
         {
             "date": "2014-11-22",
             "event": "DevFest SP 2014",
             "event_url": "http://sp.devfest.com.br/",
-            "location": "São Paulo, Brazil — Centro de Convenções Rebouças",
+            "location": "São Paulo, Brazil —  Rebouças Convention Center",
             "location_url": "https://goo.gl/maps/nYPWB",
+            "talk": "Desmistificando o Polymer",
+            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
+        },
+        {
+            "date": "2014-11-15",
+            "event": "DEVDAY 2014",
+            "event_url": "http://devday.devisland.com/",
+            "location": "Belo Horizonte, Brazil —  School of Engineering, UFMG",
+            "location_url": "https://goo.gl/maps/eXE2T",
+            "talk": "Web Components, A próxima revolução do desenvolvimento web",
+            "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
+        },
+        {
+            "date": "2014-11-08",
+            "event": "DevFest Sudeste 2014",
+            "event_url": "http://sudeste.devfest.com.br/",
+            "location": "Rio de Janeiro, Brazil — Rio Exchange Convention Center",
+            "location_url": "https://goo.gl/maps/nlofu",
             "talk": "Desmistificando o Polymer",
             "talk_url": "https://speakerdeck.com/obetomuniz/desmistificando-o-polymer"
         },
