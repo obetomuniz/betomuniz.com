@@ -128,6 +128,7 @@
         {
             "date": "2014-05-03",
             "event": "Meetup Golang",
+            "event_url": "http://www.meetup.com/GDG-SP/events/175329372/",
             "location": "São Paulo, Brazil",
             "talk": "Construindo um servidor web com Go",
             "talk_url": "https://speakerdeck.com/obetomuniz/construindo-um-servidor-web-com-go"
