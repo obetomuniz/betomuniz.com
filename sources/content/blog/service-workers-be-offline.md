@@ -16,7 +16,7 @@ Offline... Um estado totalmente fora do propósito principal da web que é: Esta
 
 Partindo do próprio nome do conceito, a definição básica sugere um foco no estado Offline de qualquer funcionalidade ou etapa da aplicação, seja no ambiente de execução, planejamento, desenvolvimento entre outros aspectos para concepção de uma aplicação web ou não, pois o objetivo real com isso é que independente de como for a experiência criada, o produto final não irá perder seus estados funcionais e comunicativos com o usuário caso não exista conexão.
 
-![Google Chrome Offline Experience](http://i.imgur.com/clwc4Qw.gif)
+![Google Chrome Offline Experience](http://i.imgur.com/yJeIsSV.gif)
 
 ## Beleza, mas e esse Service Workers? Onde entra nisso?
 

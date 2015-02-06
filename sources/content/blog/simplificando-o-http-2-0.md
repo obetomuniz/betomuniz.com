@@ -24,7 +24,7 @@ Sendo bem objetivo, HTTP é a sigla para *HyperText Transfer Protocol*, e que po
 
 Mas melhor do que escrever, a imagem abaixo ilustra como funciona este fluxo de comunicação dos Web Clients e Web Servers, mais especificadamente **browsers** e **servidores**:
 
-![HTTP Flow](/blog/images/posts/2014-12-12/http-flow.png)
+![HTTP Flow](http://i.imgur.com/ulPdu9u.png)
 
 Bem simples, não é? E é isso que acontece a cada requisição feita pelas páginas que você navega.
 

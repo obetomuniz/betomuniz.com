@@ -12,7 +12,7 @@ keywords: beto muniz, devday, eventos, palestra, brasil, minas gerais, desenvolv
 
 No último sábado *[01/11/2014]*, fui em um evento sensacional em Minas Gerais e com um formato bem diferente, estive no [DevDay](http://devday.devisland.com/).
 
-![DevDay 2014](/blog/images/posts/2014-11-05/banner-devday.jpg)
+![DevDay 2014](http://i.imgur.com/rXnRdVA.jpg)
 
 
 ## E o que é o DevDay? ##
@@ -27,7 +27,7 @@ Tudo começou, quando no meio de julho deste ano, recebi um contato direto da or
 
 ## Agora sim, falando desta edição do evento... ##
 
-![DevDay 2014 | Palestra do Beto Muniz](/blog/images/posts/2014-11-05/beto-muniz-web-components.jpg)
+![DevDay 2014 | Palestra do Beto Muniz](http://i.imgur.com/ckSKDJd.jpg)
 
 Esta edição começou com uma MEGA HIPER BLASTER Keynote, orientada pelo [Alexandre Freire](https://twitter.com/freire_da_silva), que dispensa comentários, pois o cara é muito bom no que se diz respeito a apresentação e também no conteúdo que ele abordou, que foi: *Como não testar o seu projeto*. E esta para mim foi sem dúvidas a melhor palestra do evento.
 
