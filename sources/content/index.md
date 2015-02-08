@@ -10,7 +10,7 @@ Hi.
 
 I'm <a href="https://plus.google.com/+betomuniz" target="_blank" rel="author">Beto Muniz</a>,
 
-<a href="http://en.wikipedia.org/wiki/Minas_Gerais" target="_blank">Mineiro</a> and work as a Front End Engineer.
+<a href="http://en.wikipedia.org/wiki/Minas_Gerais" target="_blank">Mineiro</a> and work as a <a href="http://f2em.com/" target="_blank">Front End Engineer</a>.
 
 Inspired by the study of new technologies and the community, I'm always attuned to what is happening and willing to contribute to the community through [organizations](http://betomuniz.com/projects/), [events](http://betomuniz.com/talks/) and [projects](http://betomuniz.com/projects/).
 
