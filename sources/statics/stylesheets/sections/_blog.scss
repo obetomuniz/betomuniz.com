@@ -17,6 +17,7 @@
       &:hover{
         h3{
           color: #777;
+          text-decoration: underline;
         }
       }
     }
@@ -25,7 +26,6 @@
       vertical-align: middle;
       color: #222;
       margin-right: 5px;
-      max-width: 370px;
     }
     &:last-child {
       margin-bottom: 0;

@@ -5,15 +5,13 @@
   margin-bottom: 85px;
 }
 .projeto{
-    display: block;
-    background-color: #f2f2f2;
+    display: inline-block;
     text-decoration: none;
     margin-bottom: 20px;
     overflow: hidden;
     .projeto-thumb{
         width: 100px;
         height: 100px;
-        background-color: #F2F2F2;
         overflow: hidden;
         text-align: center;
         vertical-align: middle;
@@ -21,7 +19,7 @@
     }
     .project-default-icon{
         width: 80%;
-        height: 80%;
+        height: 75%;
         display: inline-block;
         opacity: 0.6;
         margin: 10% 0;

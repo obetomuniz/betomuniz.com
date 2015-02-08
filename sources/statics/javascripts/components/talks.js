@@ -47,7 +47,7 @@
         helpers: function () {
 
             hbs.registerHelper('specialTruncate', function(ctx) {
-              return (ctx.length > 28) ? ctx.substring(0, 15)+"..."+ctx.substring(ctx.length - 20, ctx.length) : ctx;
+              return (ctx.length > 60) ? ctx.substring(0, 30)+"..."+ctx.substring(ctx.length - 30, ctx.length) : ctx;
             });
 
             hbs.registerHelper('dateToStr', function(ctx) {
