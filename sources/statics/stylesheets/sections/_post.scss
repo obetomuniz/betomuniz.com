@@ -3,6 +3,8 @@
   visibility: visible;
   transition: all 0.5s ease;
   .post-header{
+    text-align: center;
+    margin-bottom: 65px;
     small, a{
       font-size: 10px;
       color: #BBB;
@@ -20,7 +22,6 @@
     h1{
       color: #2C7CB7;
       font-size: 30px;
-      margin-bottom: 45px;
       line-height: 40px;
     }
   }
