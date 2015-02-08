@@ -1,9 +1,10 @@
 .page-header{
   text-align: center;
-  padding-top: 60px;
+  padding-top: 65px;
+  margin-bottom: 65px;
   h1{
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     span{
       width: 0;
       overflow: hidden;
@@ -30,7 +31,7 @@
     }
   }
   .photo{
-    margin-bottom: 45px;
+    margin-bottom: 65px;
     display: inline-block;
     overflow: hidden;
     border-radius: 40px;
@@ -45,7 +46,6 @@
     opacity: 1;
     visibility: visible;
     transition: all 0.5s ease;
-    margin-bottom: 65px;
     li{
     display: inline-block;
     vertical-align: middle;
