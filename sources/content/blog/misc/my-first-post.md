@@ -4,7 +4,6 @@ page_title: My First Post
 current_title: Beto Muniz — My First Post
 date: 2012-08-20
 url: /blog/my-first-post/
-draft: true
 description: Beto Muniz is a Front-End Engineer who lives in São Paulo, Brazil.
 keywords: beto,muniz, draft, beto muniz
 template: blog/post.html
@@ -70,6 +69,8 @@ Throw 3 or more dashes down on any new line and you've got yourself a fancy new 
 
 There's one fantastic secret about Markdown. If you want, you can  write plain old HTML and it'll still work! Very flexible.
 
-<input type="text" placeholder="I'm an input field!" />
+<div class="post-container">
+    <input type="text" placeholder="I'm an input field!" />
+</div>
 
 That should be enough to get you started. Have fun - and let us know what you think :)

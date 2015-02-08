@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         files: [{
           src: ['./public/blog/feed/index.html'],
           dest: './public/blog/feed/feed.xml'
-        }, ]
+        }]
       }
     },
 
@@ -34,12 +34,17 @@ module.exports = function(grunt) {
           dest: './public/static/images/'
         }]
       },
-      feed: {
+      misc: {
         files: [{
           expand: true,
           src: ['**'],
           cwd: './public/blog/feed/',
           dest: './public/blog/'
+        },{
+          expand: true,
+          src: ['sitemap.xml', 'googleac7fd0fa4feb55aa.html', 'robots.txt'],
+          cwd: './sources/misc/',
+          dest: './public/'
         }]
       },
       dist: {
@@ -68,9 +73,12 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      feed: ["./public/blog/feed/"],
-      dist: ["./public/", "./dist/"],
-      public: ["./public/", "./public/"]
+      misc: ["./public/blog/feed/"],
+      dist: ["./dist/"],
+      public: ["./public/"],
+      external_posts: [
+        "./public/blog/em-um-relacionamento-s-rio-com-generators-front-end/"
+      ]
     },
 
     shell: {
@@ -131,8 +139,8 @@ module.exports = function(grunt) {
           'shell:compile',
           'copy:components',
           'rename:main',
-          'copy:feed',
-          'clean:feed'
+          'copy:misc',
+          'clean:misc'
         ]
       },
       styles: {
@@ -206,6 +214,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [
+    'clean:public',
     'shell:compile',
     'copy:components',
     'compass:compile',
@@ -213,12 +222,14 @@ module.exports = function(grunt) {
     'concat:compile',
     'uglify:compile',
     'rename:main',
-    'copy:feed',
-    'clean:feed',
+    'copy:misc',
+    'clean:misc',
+    'clean:external_posts',
     'concurrent'
   ]);
 
   grunt.registerTask('build', [
+    'clean:public',
     'shell:compile',
     'copy:components',
     'compass:compile',
@@ -226,8 +237,9 @@ module.exports = function(grunt) {
     'concat:compile',
     'uglify:compile',
     'rename:main',
-    'copy:feed',
-    'clean:feed'
+    'copy:misc',
+    'clean:misc',
+    'clean:external_posts'
   ]);
 
   grunt.registerTask('prod', [
@@ -241,10 +253,12 @@ module.exports = function(grunt) {
     'concat:compile',
     'uglify:compile',
     'rename:main',
-    'copy:feed',
-    'clean:feed',
+    'copy:misc',
+    'clean:misc',
+    'clean:external_posts',
     'copy:dist',
-    'rsync:dist',
+    'rsync:dist',    
+    'clean:public',
     'clean:dist'
   ]);
 

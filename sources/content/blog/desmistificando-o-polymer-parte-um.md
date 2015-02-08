@@ -129,11 +129,11 @@ E eu: [@obetomuniz](https://twitter.com/obetomuniz) :)
 
 Também gostaria de deixar o link de uma videocast que fiz sobre o Polymer, onde abordo praticamente tudo que direi nesta série, porém "ao vivo":
 
-<iframe class="post-video" src="//www.youtube.com/embed/Lf-n6d7hfPs" frameborder="0" allowfullscreen></iframe>
+<iframe class="post-video post-container" src="//www.youtube.com/embed/Lf-n6d7hfPs" frameborder="0" allowfullscreen></iframe>
 
 Também deixo o link de um Codelab que dei no GDG-BH no [It's Hackademic with Polymer](http://itshackademic.com/):
 
-<iframe class="post-video" src="//www.youtube.com/embed/CwiTIYBUHTY?start=3377" frameborder="0" allowfullscreen></iframe>
+<iframe class="post-video post-container" src="//www.youtube.com/embed/CwiTIYBUHTY?start=3377" frameborder="0" allowfullscreen></iframe>
 
 Mas isso não é tudo, como eu disse, esta é uma série e para ler o próximo post,  basta clicar [aqui](http://betomuniz.com/blog/desmistificando-o-polymer-parte-2/), pois lá exibo uma lista de fatores que colocam o Polymer em uma posição de vantagem com relação a outras tecnologias e também exibo o motivo de escolher o Polymer como principal meio para criação de Web Components.
 

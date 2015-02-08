@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://betomuniz.com/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/blog/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/projects/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/talks/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/blog/service-workers-be-offline/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/blog/simplificando-o-http-2-0/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/blog/desmistificando-o-polymer-parte-3/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/blog/desmistificando-o-polymer-parte-2/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/blog/desmistificando-o-polymer-parte-1/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/blog/devday-um-evento-de-desenvolvedores-para-desenvolvedores/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/blog/web-components-hoje/</loc>
+</url>
+<url>
+  <loc>http://betomuniz.com/blog/iniciando-com-node-webkit/</loc>
+</url>
+</urlset>

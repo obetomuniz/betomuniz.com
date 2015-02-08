@@ -105,6 +105,8 @@
           width: 100%;
           code{
             overflow-y: auto;
+            background-color: transparent;
+            padding: 0 0 25px 0;
           }
       }
       em{
@@ -122,9 +124,13 @@
           margin-top: 0;
       }
       .post-video {
-        width: 100%;
         min-height: 350px;
+      }
+
+      .post-container {
+        width: 100%;
         margin-bottom: 25px;
+        display: block;
       }
   }
 
@@ -135,126 +141,148 @@
 
 /*
 
-github.com style to HighlightCode
+Google Code style (c) Aahan Krish <geekpanth3r@gmail.com>
 
 */
 
 .hljs {
-  display: block; padding: 0.5em;
-  color: #333;
-  background: #f8f8f8
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: white;
+  color: black;
+  -webkit-text-size-adjust: none;
 }
 
 .hljs-comment,
-.hljs-template_comment,
-.diff .hljs-header,
 .hljs-javadoc {
-  color: #998;
-  font-style: italic
+  color: #800;
 }
 
 .hljs-keyword,
-.css .rule .hljs-keyword,
-.hljs-winutils,
-.javascript .hljs-title,
+.method,
+.hljs-list .hljs-keyword,
 .nginx .hljs-title,
-.hljs-subst,
+.hljs-tag .hljs-title,
+.setting .hljs-value,
+.hljs-winutils,
+.tex .hljs-command,
+.http .hljs-title,
 .hljs-request,
 .hljs-status {
-  color: #333;
-  font-weight: bold
+  color: #008;
 }
 
-.hljs-number,
-.hljs-hexcolor,
-.ruby .hljs-constant {
-  color: #099;
+.hljs-envvar,
+.tex .hljs-special {
+  color: #660;
 }
 
 .hljs-string,
 .hljs-tag .hljs-value,
-.hljs-phpdoc,
-.tex .hljs-formula {
-  color: #d14
+.hljs-cdata,
+.hljs-filter .hljs-argument,
+.hljs-attr_selector,
+.apache .hljs-cbracket,
+.hljs-date,
+.hljs-regexp,
+.coffeescript .hljs-attribute {
+  color: #080;
 }
 
-.hljs-title,
-.hljs-id,
-.coffeescript .hljs-params,
-.scss .hljs-preprocessor {
-  color: #900;
-  font-weight: bold
-}
-
-.javascript .hljs-title,
-.lisp .hljs-title,
-.clojure .hljs-title,
-.hljs-subst {
-  font-weight: normal
+.hljs-sub .hljs-identifier,
+.hljs-pi,
+.hljs-tag,
+.hljs-tag .hljs-keyword,
+.hljs-decorator,
+.ini .hljs-title,
+.hljs-shebang,
+.hljs-prompt,
+.hljs-hexcolor,
+.hljs-rules .hljs-value,
+.hljs-literal,
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-number,
+.css .hljs-function,
+.clojure .hljs-attribute {
+  color: #066;
 }
 
 .hljs-class .hljs-title,
-.haskell .hljs-type,
-.vhdl .hljs-literal,
-.tex .hljs-command {
-  color: #458;
-  font-weight: bold
-}
-
-.hljs-tag,
-.hljs-tag .hljs-title,
-.hljs-rules .hljs-property,
-.django .hljs-tag .hljs-keyword {
-  color: #000080;
-  font-weight: normal
-}
-
-.hljs-attribute,
-.hljs-variable,
-.lisp .hljs-body {
-  color: #008080
-}
-
-.hljs-regexp {
-  color: #009926
-}
-
-.hljs-symbol,
-.ruby .hljs-symbol .hljs-string,
-.lisp .hljs-keyword,
-.tex .hljs-special,
-.hljs-prompt {
-  color: #990073
-}
-
+.smalltalk .hljs-class,
+.hljs-javadoctag,
+.hljs-yardoctag,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.hljs-type,
+.hljs-typename,
+.hljs-tag .hljs-attribute,
+.hljs-doctype,
+.hljs-class .hljs-id,
 .hljs-built_in,
-.lisp .hljs-title,
-.clojure .hljs-built_in {
-  color: #0086b3
+.setting,
+.hljs-params,
+.hljs-variable {
+  color: #606;
+}
+
+.css .hljs-tag,
+.hljs-rules .hljs-property,
+.hljs-pseudo,
+.hljs-subst {
+  color: #000;
+}
+
+.css .hljs-class,
+.css .hljs-id {
+  color: #9b703f;
+}
+
+.hljs-value .hljs-important {
+  color: #ff7700;
+  font-weight: bold;
+}
+
+.hljs-rules .hljs-keyword {
+  color: #c5af75;
+}
+
+.hljs-annotation,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in {
+  color: #9b859d;
 }
 
 .hljs-preprocessor,
-.hljs-pragma,
-.hljs-pi,
-.hljs-doctype,
-.hljs-shebang,
-.hljs-cdata {
-  color: #999;
-  font-weight: bold
+.hljs-preprocessor *,
+.hljs-pragma {
+  color: #444;
 }
 
-.hljs-deletion {
-  background: #fdd
+.tex .hljs-formula {
+  background-color: #eee;
+  font-style: italic;
 }
 
-.hljs-addition {
-  background: #dfd
+.diff .hljs-header,
+.hljs-chunk {
+  color: #808080;
+  font-weight: bold;
 }
 
 .diff .hljs-change {
-  background: #0086b3
+  background-color: #bccff9;
 }
 
-.hljs-chunk {
-  color: #aaa
+.hljs-addition {
+  background-color: #baeeba;
+}
+
+.hljs-deletion {
+  background-color: #ffc8bd;
+}
+
+.hljs-comment .hljs-yardoctag {
+  font-weight: bold;
 }
