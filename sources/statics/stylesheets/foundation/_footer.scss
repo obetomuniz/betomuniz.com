@@ -1,5 +1,5 @@
 .page-footer{
-  margin-bottom: 65px;
+  margin-bottom: 50px;
   opacity: 1;
   visibility: visible;
   transition: all 0.5s ease;
@@ -14,7 +14,7 @@
     .social-item{
       text-decoration: none;
       color: #666;
-      font-size: 18px;
+      font-size: 15px;
       &:hover{
         color: #CCC;
       }
@@ -27,7 +27,7 @@
   }
   .konami-code {
     display: inline-block;
-    width: 145px;
+    width: 130px;
     img {
       width: 100%;
       height: auto;

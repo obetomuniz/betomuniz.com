@@ -228,7 +228,7 @@ module.exports = function(grunt) {
     'concurrent'
   ]);
 
-  grunt.registerTask('build', [
+  grunt.registerTask('b', [
     'clean:public',
     'shell:compile',
     'copy:components',
@@ -242,7 +242,7 @@ module.exports = function(grunt) {
     'clean:external_posts'
   ]);
 
-  grunt.registerTask('prod', [
+  grunt.registerTask('d', [
     'clean:dist',
     'clean:public',
     'shell:bower',
