@@ -1,6 +1,12 @@
 {
     "talks": [
         {
+            "date": "2015-03-30",
+            "event": "GDG DevFest Extended BH",
+            "location": "Belo Horizonte, Brazil",
+            "talk": "Not defined yet :]"
+        },
+        {
             "date": "2015-01-24",
             "event": "DevCastDay",
             "event_url": "https://www.facebook.com/DevCast",
