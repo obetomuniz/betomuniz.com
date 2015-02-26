@@ -27,7 +27,13 @@
     <script type="text/x-handlebars-template" id="talk-template">
       <div class="talk">
         <div class="talk-infos">
-          <h4 class="talk-info-event"><a href="\{{event_url}}" target="_blank">\{{event}}</a></h4>
+          <h4 class="talk-info-event">
+            \{{#if event_url}}
+              <a href="\{{event_url}}" target="_blank" class="talk-info-event--title talk-info-event--link">\{{event}}</a>
+            \{{else}}
+              <span class="talk-info-event--title">\{{event}}</span>
+            \{{/if}}
+          </h4>
           <ul>
             \{{#if date}}
               <li class="talk-info">
@@ -37,7 +43,7 @@
             \{{#if location}}
               <li class="talk-info">
                 \{{#if location_url}}
-                  <span class="talk-info--label">Location:</span> <a class="talk-info--links" href="\{{location_url}}" target="_blank"><address class="talk-info--data">\{{specialTruncate location}}</address> &raquo;</a>
+                  <span class="talk-info--label">Location:</span> <a class="talk-info--links talk-info--data" href="\{{location_url}}" target="_blank"><address>\{{specialTruncate location}}</address> &raquo;</a>
                 \{{else}}
                   <span class="talk-info--label">Location:</span> <span class="talk-info--data">\{{specialTruncate location}}</span>
                 \{{/if}}
@@ -46,7 +52,7 @@
             \{{#if talk}}
               <li class="talk-info">
                 \{{#if talk_url}}
-                  <span class="talk-info--label">Presentation:</span> <a class="talk-info--links" href="\{{talk_url}}" target="_blank"><span class="talk-info--data">\{{specialTruncate talk}}</span> &raquo;</a>
+                  <span class="talk-info--label">Presentation:</span> <a class="talk-info--links talk-info--data" href="\{{talk_url}}" target="_blank">\{{specialTruncate talk}} &raquo;</a>
                 \{{else}}
                   <span class="talk-info--label">Presentation:</span> <span class="talk-info--data">\{{specialTruncate talk}}</span>
                 \{{/if}}
@@ -55,7 +61,7 @@
             \{{#if video_url}}
               <li class="talk-info">
                 \{{#if video_url}}
-                  <span class="talk-info--label">Video:</span> <a class="talk-info--links" href="\{{video_url}}" target="_blank"><span class="talk-info--data">Youtube</span> &raquo;</a>
+                  <span class="talk-info--label">Video:</span> <a class="talk-info--links talk-info--data" href="\{{video_url}}" target="_blank">Youtube &raquo;</a>
                 \{{/if}}
               </li>
             \{{/if}}
