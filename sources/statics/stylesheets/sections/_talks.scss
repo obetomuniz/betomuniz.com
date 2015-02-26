@@ -67,26 +67,35 @@
 }
 .talk-info-event{
     margin-bottom: 15px;
-    a {
-        color: #2c7cb7;
-        font-size: 30px;
+    .talk-info-event--title {
+        font-size: 25px;
         margin-bottom: 5px;
+        text-decoration: none;
+        color: #222;
+    }
+    .talk-info-event--link {
+        color: #2C7CB7;
         text-decoration: none;
     }
 }
 .talk-info--label {
     font-size: 13px;
-    color: #222;
+    color: #666;
+    display: inline-block;
+    vertical-align: middle;
+}
+.talk-info--data {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    vertical-align: middle;
+    address {
+        display: inline;
+    }
 }
 .talk-info--links{
     color: #2c7cb7;
     text-decoration: none;
-}
-.talk-info--data {
-    display: inline;
-    font-size: 15px;
-    line-height: 15px;
-    vertical-align: middle;
 }
 .talk-info--date {
     font-size: 13px;
