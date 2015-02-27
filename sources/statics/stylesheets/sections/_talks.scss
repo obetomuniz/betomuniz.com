@@ -3,6 +3,21 @@
     visibility: visible;
     transition: all 0.5s ease;
     margin-bottom: 60px;
+    .loading {
+        display: block;
+        text-align: center;
+        color: #222;
+        font-size: 14px;
+        &:before {
+            margin-right: 7px;
+            top: 2px;
+            position: relative;
+            font-size: 16px;
+            -webkit-animation: spin 1s infinite linear;
+            -moz-animation: spin 1s infinite linear;
+            animation: spin 1s infinite linear;
+        }
+    }
 }
 .talk {
     display: block;
@@ -101,4 +116,19 @@
     font-size: 13px;
     vertical-align: middle;
     line-height: 14px;
+}
+
+// Spinner
+
+@-webkit-keyframes spin {
+    0%   {-webkit-transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
+@-moz-keyframes spin {
+    0%   {-webkit-transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
+@keyframes spin {
+    0%   {-webkit-transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg)}
 }
