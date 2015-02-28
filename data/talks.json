@@ -1,6 +1,14 @@
 {
     "talks": [
         {
+            "date": "2015-04-11",
+            "event": "Então você quer aprender Polymer?",
+            "event_url": "http://www.meetup.com/GDG-ABC/events/220824692/",
+            "location": "Hangout",
+            "location_url": "https://plus.google.com/hangouts/_/calendar/bWFyY29zcm9tZXJvMTFAZ21haWwuY29t.kglpuigh5v6nkl4aaep7ijog90?authuser=0",
+            "talk": "Not defined yet :]"
+        },
+        {
             "date": "2015-03-28",
             "event": "GDG DevFest Extended BH",
             "location": "Belo Horizonte, Brazil",
