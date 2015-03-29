@@ -1,18 +1,29 @@
 {
     "talks": [
         {
+            "date": "2015-06-13",
+            "event": "Então você quer aprender Polymer?",
+            "event_url": "http://belohorizonte.wordcamp.org/2015/",
+            "location": "Teatro Ney Soares",
+            "location_url": "http://belohorizonte.wordcamp.org/2015/local/",
+            "talk": "Comunidade. Abuse e use dela com moderação e inteligência."
+        },
+        {
             "date": "2015-04-11",
             "event": "Então você quer aprender Polymer?",
             "event_url": "http://www.meetup.com/GDG-ABC/events/220824692/",
             "location": "Hangout",
             "location_url": "https://plus.google.com/hangouts/_/calendar/bWFyY29zcm9tZXJvMTFAZ21haWwuY29t.kglpuigh5v6nkl4aaep7ijog90?authuser=0",
-            "talk": "Not defined yet :]"
+            "talk": "Polymer Elements: Tudo que você precisa saber para criar a web",
+            "talk_url": "https://speakerdeck.com/obetomuniz/polymer-elements-tudo-que-voce-precisa-saber-para-criar-a-web"
         },
         {
             "date": "2015-03-28",
             "event": "GDG DevFest Extended BH",
+            "event_url": "http://www.gdgbh.org/extended/",
             "location": "Belo Horizonte, Brazil",
-            "talk": "Not defined yet :]"
+            "talk": "Polymer Elements: Tudo que você precisa saber para criar a web",
+            "talk_url": "https://speakerdeck.com/obetomuniz/polymer-elements-tudo-que-voce-precisa-saber-para-criar-a-web
         },
         {
             "date": "2015-01-24",
