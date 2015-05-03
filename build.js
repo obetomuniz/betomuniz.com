@@ -6,9 +6,12 @@ var permalinks = require('metalsmith-permalinks');
 var permalinks = require('metalsmith-permalinks');
 var collections = require('metalsmith-collections');
 var templates = require('metalsmith-templates');
+var serve = require('metalsmith-serve');
+var watch = require('metalsmith-watch');
 var Handlebars = require('handlebars');
 var moment = require('moment');
 var fs = require('fs');
+var path = require('path');
 
 /**
  * Build.
@@ -48,10 +51,17 @@ var metalsmith = Metalsmith(__dirname)
       }
     }
   }))
+  .use(serve({
+      port: 9778,
+      verbose: true
+  }))
+  .use(watch({
+      pattern: '**/*',
+      livereload: true
+  }))
   .build(function(err) {
     if (err) throw err;
   });
-
 /**
  * Helpers.
  */

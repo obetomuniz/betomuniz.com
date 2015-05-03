@@ -52,14 +52,14 @@ current_title: Beto Muniz — Projects
 </li>
 
 <li>
-  <a href="http://devincompany.org/" target="_blank" class="projeto">
+  <a href="http://devincompany.in/" target="_blank" class="projeto">
     <div class="projeto-thumb inline-el">
       <img src="/static/images/projects/devincompany.png" class="project-custom-icon">
     </div>
     <div class="projeto-infos inline-el">
       <div class="projeto-about inline-el">
           <h4 class="projeto-title">Dev in Company</h4>
-          <p class="projeto-desc">devincompany.org</p>
+          <p class="projeto-desc">devincompany.in</p>
           <span class="projeto-show">Show Project...</span>
           </div>
     </div>

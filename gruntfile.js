@@ -204,7 +204,7 @@ module.exports = function(grunt) {
         dist: {
           options: {
               src: "./dist/",
-              dest: "/var/www/betomuniz.com",
+              dest: "/var/www/node/betomuniz.com",
               host: "root@162.243.11.136",
               delete: true
           }
