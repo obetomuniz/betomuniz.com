@@ -77,7 +77,8 @@ module.exports = function(grunt) {
       dist: ["./dist/"],
       public: ["./public/"],
       external_posts: [
-        "./public/blog/em-um-relacionamento-s-rio-com-generators-front-end/"
+        "./public/blog/em-um-relacionamento-s-rio-com-generators-front-end/",
+        "./public/blog/polymer-1-0-pronto-para-produ-o/"
       ]
     },
 
