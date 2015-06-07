@@ -51,14 +51,6 @@ var metalsmith = Metalsmith(__dirname)
       }
     }
   }))
-  .use(serve({
-      port: 9778,
-      verbose: true
-  }))
-  .use(watch({
-      pattern: '**/*',
-      livereload: true
-  }))
   .build(function(err) {
     if (err) throw err;
   });
