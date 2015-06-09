@@ -1,8 +1,8 @@
 ---
 title: "Desmistificando o Polymer : Parte 3"
 page_title: "Desmistificando o Polymer:"
-page_subtitle: "Polymer FAQ (unoffical)"
-current_title: "Beto Muniz — Desmistificando o Polymer : Polymer FAQ (unoffical)"
+page_subtitle: "Polymer FAQ (unofficial)"
+current_title: "Beto Muniz — Desmistificando o Polymer : Polymer FAQ (unofficial)"
 date: 2014-11-18
 url: /blog/desmistificando-o-polymer-parte-3/
 collection: blog
