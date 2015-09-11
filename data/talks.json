@@ -4,14 +4,14 @@
             "date": "2015-10-24",
             "event": "Devfest Sudeste",
             "event_url": "http://sudeste.devfest.com.br/",
-            "location": "CDL/BH",
+            "location": "Belo Horizonte, Brazil - CDL",
             "location_url": "https://goo.gl/maps/1iGTo",
             "talk": "A ascensão dos Web Components"
         },
         {
             "date": "2015-10-17",
             "event": "Undefined :D",
-            "location": "Zarb Solution",
+            "location": "Belo Horizonte, Brazil - Zarb Solution",
             "location_url": "https://goo.gl/maps/oWizO",
             "talk": "Undefined :D"
         },
@@ -19,7 +19,7 @@
             "date": "2015-08-26",
             "event": "SEMCOMP - Universidade de Itaúna",
             "event_url": "http://www.uit.br/site/",
-            "location": "Universidade de Itaúna",
+            "location": "Itaúna, Brazil - Universidade de Itaúna",
             "location_url": "https://goo.gl/maps/gouas",
             "talk": "Web Components, A próxima revolução do desenvolvimento web",
             "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
@@ -28,7 +28,7 @@
             "date": "2015-06-13",
             "event": "Wordcamp Belo Horizonte",
             "event_url": "http://belohorizonte.wordcamp.org/2015/",
-            "location": "Teatro Ney Soares",
+            "location": "Belo Horizonte, Brazil - Teatro Ney Soares",
             "location_url": "http://belohorizonte.wordcamp.org/2015/local/",
             "talk": "Comunidade. Abuse e use dela com moderação e inteligência.",
             "talk_url": "https://speakerdeck.com/obetomuniz/comunidade-abuse-e-use-dela-com-moderacao-e-inteligencia"
@@ -46,7 +46,8 @@
             "date": "2015-03-28",
             "event": "GDG DevFest Extended BH",
             "event_url": "http://www.gdgbh.org/extended/",
-            "location": "Belo Horizonte, Brazil",
+            "location": "Belo Horizonte, Brazil - UNA João Pinheiro",
+            "location_url": "https://goo.gl/maps/o6zrd",
             "talk": "Polymer Elements: Tudo que você precisa saber para criar a web",
             "talk_url": "https://speakerdeck.com/obetomuniz/polymer-elements-tudo-que-voce-precisa-saber-para-criar-a-web"
         },
