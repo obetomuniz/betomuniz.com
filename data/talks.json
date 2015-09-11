@@ -13,7 +13,15 @@
             "event": "Undefined :D",
             "location": "Belo Horizonte, Brazil - Zarb Solution",
             "location_url": "https://goo.gl/maps/oWizO",
-            "talk": "Undefined :D"
+            "talk": "RethinkDB & Node.js"
+        },
+        {
+            "date": "2015-09-22",
+            "event": "SEMCOMP - PUC Minas",
+            "event_url": "http://www.pucminas.br/betim/",
+            "location": "Belo Horizonte, Betim - PUC Minas",
+            "location_url": "https://goo.gl/maps/fYIfv",
+            "talk": "JavaScript e suas facetas"
         },
         {
             "date": "2015-08-26",
