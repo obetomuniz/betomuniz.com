@@ -1,14 +1,6 @@
 {
     "talks": [
         {
-            "date": "2015-10-24",
-            "event": "Devfest Sudeste",
-            "event_url": "http://sudeste.devfest.com.br/",
-            "location": "Belo Horizonte, Brazil - CDL",
-            "location_url": "https://goo.gl/maps/1iGTo",
-            "talk": "A ascensão dos Web Components"
-        },
-        {
             "date": "2015-10-17",
             "event": "Innovation Moment Belo Horizonte #1",
             "location": "Belo Horizonte, Brazil - Zarb Solution",
