@@ -1,11 +1,12 @@
 {
     "talks": [
         {
-            "date": "2015-10-17",
+            "date": "2016-30-04",
             "event": "Innovation Moment Belo Horizonte #1",
-            "location": "Belo Horizonte, Brazil - Zarb Solution",
-            "location_url": "https://goo.gl/maps/oWizO",
-            "talk": "RethinkDB & Node.js"
+            "event_url": "http://www.meetup.com/pt-BR/Innovation-Moment-Belo-Horizonte/events/229715465/",
+            "location": "Belo Horizonte, Brazil - ThoughtWorks",
+            "location_url": "https://goo.gl/maps/YTkXokaqqwK2",
+            "talk": "Workshop: React & Ionic 2"
         },
         {
             "date": "2015-09-22",
