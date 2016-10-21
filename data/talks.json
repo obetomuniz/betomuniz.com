@@ -1,20 +1,39 @@
 {
     "talks": [
         {
+            "date": "2016-12-10",
+            "event": "Front in POA 2016",
+            "event_url": "http://frontinpoa.com.br/2016/",
+            "location": "Porto Alegre, Rio Grande do Sul, Brazil - SENAC",
+            "location_url": "https://goo.gl/maps/dQuZbHoeyEE2",
+            "talk": "Remote Work! Less Stress, More Productivity.",
+            "talk_url": "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
+        },
+        {
+            "date": "2016-12-03",
+            "event": "Front in Aracaju 2016",
+            "event_url": "http://www.frontinaracaju.com.br/",
+            "location": "Aracaju, Sergipe, Brazil - Radisson Hotel",
+            "location_url": "https://goo.gl/maps/g5zzppiVfFH2",
+            "talk": "Remote Work! Less Stress, More Productivity.",
+            "talk_url": "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
+        },
+        {
+            "date": "2016-11-05",
+            "event": "GDG Devfest Belo Horizonte 2016",
+            "event_url": "http://devfestbh.com.br/",
+            "location": "Belo Horizonte, Brazil - Ouro Minas Palace Hotel",
+            "location_url": "https://goo.gl/maps/dgsqmbSNYg92",
+            "talk": "Remote Work! Less Stress, More Productivity.",
+            "talk_url": "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
+        },
+        {
             "date": "2016-04-30",
             "event": "Innovation Moment Belo Horizonte #1",
             "event_url": "http://www.meetup.com/pt-BR/Innovation-Moment-Belo-Horizonte/events/229715465/",
             "location": "Belo Horizonte, Brazil - ThoughtWorks",
             "location_url": "https://goo.gl/maps/YTkXokaqqwK2",
             "talk": "Workshop: React & Ionic 2"
-        },
-        {
-            "date": "2015-09-22",
-            "event": "SEMCOMP - PUC Minas",
-            "event_url": "http://www.pucminas.br/betim/",
-            "location": "Belo Horizonte, Betim - PUC Minas",
-            "location_url": "https://goo.gl/maps/fYIfv",
-            "talk": "JavaScript e suas facetas"
         },
         {
             "date": "2015-08-26",
