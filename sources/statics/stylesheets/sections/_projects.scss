@@ -2,9 +2,18 @@
   opacity: 1;
   visibility: visible;
   transition: all 0.5s ease;
+  .page-title {
+    text-align: center;
+    display: block;
+    margin-bottom: 49px;
+    color: #777;
+    line-height: 20px;
+    font-size: 16px;
+  }
 }
+
 .projeto{
-    display: inline-block;
+    display: block;
     text-decoration: none;
     margin-bottom: 20px;
     overflow: hidden;
@@ -32,6 +41,8 @@
         cursor: pointer;
     }
     .projeto-infos{
+        width: -webkit-calc(100% - 110px);
+        width: calc(100% - 110px);
         vertical-align: middle;
         display: inline-block;
         padding: 0 0;
@@ -42,6 +53,7 @@
         color: #2c7cb7;
         font-size: 25px;
         margin-bottom: 5px;
+        line-height: 30px;
     }
     .projeto-desc{
         color: #222;
@@ -67,7 +79,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   .projeto{
     .projeto-thumb{
         width: 50px;

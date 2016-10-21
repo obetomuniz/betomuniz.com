@@ -5,7 +5,7 @@
         {{#each collections.blog}}
           {{#if page_title}}
             <li class="post">
-              <a href="{{url}}" {{#if external}}target="_blank"{{/if}}>
+              <a href="{{url}}" {{#if external}}target="_blank" rel="noopener noreferrer"{{/if}}>
                 <h3>{{page_title}} {{#if page_subtitle}}{{page_subtitle}}{{/if}}</h3>
               </a>
             </li>
