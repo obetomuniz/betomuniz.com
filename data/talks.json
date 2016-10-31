@@ -36,7 +36,24 @@
             "talk": "React & Ionic 2"
         },
         {
-            "date": "2015-08-26",
+            "date": "2016-08-19",
+            "event": "SEMCOMP - UEMG Divinópolis",
+            "event_url": "http://www.funedi.edu.br/",
+            "location": "Divinópolis, Minas Gerais, Brazil - UEMG Divinópolis",
+            "location_url": "https://goo.gl/maps/YTkXokaqqwK2",
+            "talk": "Remote Work! Less Stress, More Productivity.",
+            "talk_url": "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
+        },
+        {
+            "date": "2016-09-06",
+            "event": "SEMCOMP - Unifor",
+            "event_url": "https://www.uniformg.edu.br/",
+            "location": "Formiga, Minas Gerais, Brazil - Unifor University",
+            "location_url": "https://goo.gl/maps/gujKj8kCWr12",
+            "talk": "React & Ionic 2"
+        },
+        {
+            "date": "2016-04-26",
             "event": "SEMCOMP - Universidade de Itaúna",
             "event_url": "http://www.uit.br/site/",
             "location": "Itaúna, Brazil - Universidade de Itaúna",
