@@ -11,7 +11,7 @@ current_title: Beto Muniz — Projects
 <li>
   <a href="http://webcomponents.org/" target="_blank" rel="noopener noreferrer" class="projeto">
     <div class="projeto-thumb inline-el">
-      <img src="http://webcomponents.org/img/logo.svg" class="project-custom-icon">
+      <img src="https://web-components-resources.appspot.com/static/logo.svg" class="project-custom-icon">
     </div>
     <div class="projeto-infos inline-el">
       <div class="projeto-about inline-el">
