@@ -17,7 +17,7 @@ Mas vamos ao que interessa…
 
 Neste post irei abordar uma API Web pouco falada e que surge para nos ajudar a trabalhar com compras online. Estou falando da **Payment Request API**.
 
-A Payment Request API soluciona um dos maiores problemas para a experiência do usuário quando é necessário envolvê-lo em processos de compras online, que no caso é o **Checkout**.
+A Payment Request API soluciona um dos maiores problemas para a experiência do usuário quando é necessário envolvê-lo em processos de compras online, no caso o **Checkout**.
 
 
 ![Exemplo grotesco de Checkout](https://cloud.githubusercontent.com/assets/1680157/22496270/88b6a584-e82f-11e6-8556-5e76d527a8de.gif)
@@ -28,7 +28,7 @@ E é exatamente neste cenário que a Payment Request API entra, pois ela propõe
 
 ## Então Payment Request API não é um novo meio de pagamento!?
 
-Isso mesmo, Payment Request API não vem para normalizar os meios de pagamentos ou ser uma gateway, a Payment Request API é apenas um meio intermediário que oferece uma interface de usuário rica e otimizada com componentes nativos do browser para facilitar o engajamento na coleta e disponibilização de dados do usuário, tais como número de cartão de crédito, endereço de entrega, email e muitos outros recursos que tem como finalidade melhorar a experiência, conversão e o engajamento do usuário, além de simplificar de alguma forma a integração do ambiente de vendas do lojista com os meios de pagamentos de terceiros.
+Isso mesmo, Payment Request API não vem para normalizar os meios de pagamentos ou ser uma gateway, a Payment Request API é apenas um intermediário que oferece uma interface de usuário rica e otimizada com componentes nativos do browser que facilitam o engajamento na coleta e disponibilização de dados do usuário, tais como o número de cartão de crédito, o endereço de entrega, o email e muitos outros recursos que tem como finalidade melhorar a experiência e a conversão do usuário, além de simplificar de alguma forma a integração do ambiente de vendas do lojista com os meios de pagamentos de terceiros.
 
 <iframe width="100%" class="post-video" src="https://www.youtube.com/embed/hmqZxP6iTpo" frameborder="0" allowfullscreen></iframe>
 ![](https://cloud.githubusercontent.com/assets/1680157/22496370/54aff258-e830-11e6-994e-42acd848e91c.png)
@@ -36,9 +36,9 @@ Isso mesmo, Payment Request API não vem para normalizar os meios de pagamentos 
 
 ## Legal! E qual é o suporte atual dessa API nos browsers?
 
-Bom, mesmo já sendo um padrão web, a Payment Request API ainda tem passado por algumas alterações em termos de especificação, mas devido ao seu objetivo ser bastante enriquecedor em termos de experiência de usuário, a mesma já está sendo implementada de forma bastante ativa e intensificada por browsers como Google Chrome, Microsoft Edge e Mozilla Firefox. No caso da Apple com o Safari, existe sim um interesse indireto, pois a Apple possui o Apple Pay JS, uma SDK proprietária de integração do Apple Pay com proposta muito similar ao Payment Request API, porém nada ainda muito promissor em termos de web standards, mas nada muito distante também.
+Bom, mesmo já sendo um padrão web, a Payment Request API ainda tem passado por algumas alterações em termos de especificação, mas devido ao seu objetivo ser bastante enriquecedor para a experiência do usuário, a mesma já está sendo implementada de forma bastante ativa e intensificada por browsers como Google Chrome, Microsoft Edge e Mozilla Firefox. No caso da Apple com o Safari, existe sim um interesse indireto, pois a Apple possui a Apple Pay JS, uma SDK proprietária de integração do Apple Pay com proposta muito similar a da Payment Request API, porém nada ainda muito promissor em termos de web standards, mas nada muito distante também.
 
-E por falar em "X’s Pay", tanto a Google como a Microsoft também estão muito focadas para que suas implementações da Payment Request API sejam flexíveis o bastante para que seja possível integrar a API com o Android Pay e Microsoft Wallet. Nas atuais implementações, é plenamente possível realizar tais integrações.
+E por falar em "X’s Pay", a Google e a Microsoft também estão muito focadas para que suas implementações da Payment Request API sejam flexíveis o bastante para que seja possível integrar a API com o Android Pay, Microsoft Wallet e outros métodos customizados de pagamento. Nas atuais implementações da API é plenamente possível realizar integrações com o Android Pay e Microsoft Wallet.
 
 Mas a pergunta que não quer calar mesmo é: Já podemos usar? E a resposta é SIM, pois mesmo ainda não sendo suportada totalmente (como várias outras APIs na plataforma web #vivacomisso), ainda assim é possível utilizar o recurso desde já, e para não deixar este post muito longo, segue um simples, mas poderoso code sample de como habilitar a funcionalidade:
 
@@ -75,7 +75,7 @@ if (!window.PaymentRequest) {
   });
 }
 ```
-Fácil não é? E para deixar mais claro, preparei um [demo](https://obetomuniz.github.io/paymentrequestapi-demo/) cheio de comentários que pode ser analisado [aqui](https://github.com/obetomuniz/paymentrequestapi-demo). Dá uma conferida nele depois de terminar de ler o post, pois adicionei várias outras possibilidades promovidas pela Payment Request API.
+Facinho não é? E para deixar mais claro, preparei um [demo](https://obetomuniz.github.io/paymentrequestapi-demo/) cheio de comentários que pode ser analisado [aqui](https://github.com/obetomuniz/paymentrequestapi-demo). Dá uma conferida nele depois de terminar de ler o post, pois adicionei várias outras possibilidades promovidas pela Payment Request API.
 
 ## FAQ e Curiosidades
 
@@ -104,7 +104,7 @@ Atualmente não.
 
 ### A implementação atual é a final?
 
-Talvez, porém existem shim’s que permitem utilizar a API desde já, e assim, mesmo que futuramente alguma grande mudança aconteça, ainda assim será possível continuar utilizando versões antigas da implementação até que sejam colocadas como `deprecated` pelos browsers.
+Talvez, porém existem shim’s que permitem utilizar a API desde já, e assim, mesmo que futuramente alguma grande mudança aconteça, ainda assim será possível continuar utilizando versões antigas da implementação até que sejam colocadas como `deprecated` e removidas pelos browsers.
 
 ### É possível configurar endereço de entrega e o tipo de frete?
 
