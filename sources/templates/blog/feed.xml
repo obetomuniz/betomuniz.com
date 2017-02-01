@@ -3,16 +3,16 @@
         <channel>
             <title>{{ current_title }}</title>
             <description>{{ description }}</description>
-            <link>http://betomuniz.com/blog/</link>
+            <link>https://betomuniz.com/blog/</link>
 
-            <atom:link href="http://betomuniz.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://betomuniz.com/blog/feed.xml" rel="self" type="application/rss+xml" />
             {{#each collections.blog}}
                 <item>
                     <title>{{ title }}</title>
                     <description>{{ description }}</description>
                     <pubDate>{{xmlDate date }}</pubDate>
-                    <link> {{#if external}}{{ url }}{{else}}http://betomuniz.com{{ url }}{{/if}}</link>
-                    <guid isPermaLink="true">{{#if external}}{{ url }}{{else}}http://betomuniz.com{{ url }}{{/if}}</guid>
+                    <link> {{#if external}}{{ url }}{{else}}https://betomuniz.com{{ url }}{{/if}}</link>
+                    <guid isPermaLink="true">{{#if external}}{{ url }}{{else}}https://betomuniz.com{{ url }}{{/if}}</guid>
                 </item>
             {{/each}}
     </channel>

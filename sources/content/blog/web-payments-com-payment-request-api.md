@@ -36,7 +36,9 @@ Isso mesmo, Payment Request API não vem para normalizar os meios de pagamentos 
 
 ## Legal! E qual é o suporte atual dessa API nos browsers?
 
-Bom, mesmo já sendo um padrão web, a Payment Request API ainda tem passado por algumas alterações em termos de especificação, mas devido ao seu objetivo ser bastante enriquecedor para a experiência do usuário, a mesma já está sendo implementada de forma bastante ativa e intensificada por browsers como Google Chrome, Microsoft Edge e Mozilla Firefox. No caso da Apple com o Safari, existe sim um interesse indireto, pois a Apple possui a Apple Pay JS, uma SDK proprietária de integração do Apple Pay com proposta muito similar a da Payment Request API, porém nada ainda muito promissor em termos de web standards, mas nada muito distante também.
+Bom, mesmo já sendo um padrão web, a Payment Request API ainda tem passado por algumas alterações em termos de especificação, mas devido ao seu objetivo ser bastante enriquecedor para a experiência do usuário, a mesma já está sendo implementada de forma bastante ativa e intensificada por browsers como Google Chrome, Microsoft Edge e Mozilla Firefox.
+
+No caso da Apple com o Safari, existe sim um interesse indireto, pois a Apple possui a Apple Pay JS, uma SDK proprietária de integração do Apple Pay com proposta muito similar a da Payment Request API, porém nada ainda muito promissor em termos de web standards, mas nada muito distante também.
 
 E por falar em "X’s Pay", a Google e a Microsoft também estão muito focadas para que suas implementações da Payment Request API sejam flexíveis o bastante para que seja possível integrar a API com o Android Pay, Microsoft Wallet e outros métodos customizados de pagamento. Nas atuais implementações da API é plenamente possível realizar integrações com o Android Pay e Microsoft Wallet.
 

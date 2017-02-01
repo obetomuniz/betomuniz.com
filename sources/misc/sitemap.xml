@@ -6,39 +6,42 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://betomuniz.com/</loc>
+  <loc>https://betomuniz.com/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/blog/</loc>
+  <loc>https://betomuniz.com/blog/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/projects/</loc>
+  <loc>https://betomuniz.com/projects/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/talks/</loc>
+  <loc>https://betomuniz.com/talks/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/blog/service-workers-be-offline/</loc>
+  <loc>https://betomuniz.com/blog/web-payments-com-payment-request-api/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/blog/simplificando-o-http-2-0/</loc>
+  <loc>https://betomuniz.com/blog/service-workers-be-offline/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/blog/desmistificando-o-polymer-parte-3/</loc>
+  <loc>https://betomuniz.com/blog/simplificando-o-http-2-0/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/blog/desmistificando-o-polymer-parte-2/</loc>
+  <loc>https://betomuniz.com/blog/desmistificando-o-polymer-parte-3/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/blog/desmistificando-o-polymer-parte-1/</loc>
+  <loc>https://betomuniz.com/blog/desmistificando-o-polymer-parte-2/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/blog/devday-um-evento-de-desenvolvedores-para-desenvolvedores/</loc>
+  <loc>https://betomuniz.com/blog/desmistificando-o-polymer-parte-1/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/blog/web-components-hoje/</loc>
+  <loc>https://betomuniz.com/blog/devday-um-evento-de-desenvolvedores-para-desenvolvedores/</loc>
 </url>
 <url>
-  <loc>http://betomuniz.com/blog/iniciando-com-node-webkit/</loc>
+  <loc>https://betomuniz.com/blog/web-components-hoje/</loc>
+</url>
+<url>
+  <loc>https://betomuniz.com/blog/iniciando-com-node-webkit/</loc>
 </url>
 </urlset>

@@ -19,7 +19,7 @@ Antes de começar a falar sobre o Polymer, vale a pena esclarecer o principal as
 
 ## Web Components
 
-Para resumir de uma forma bem objetiva, visto que eu já tenho um post que fala sobre Web Components e que você pode conferir [aqui](http://betomuniz.com/blog/web-components-hoje/).
+Para resumir de uma forma bem objetiva, visto que eu já tenho um post que fala sobre Web Components e que você pode conferir [aqui](https://betomuniz.com/blog/web-components-hoje/).
 Web Components nada mais é que um padrão guarda-chuva desenvolvido pela [W3C](http://www.w3.org/) e que propõe a solução de um problema não tão novo na web, que é o de Componentização.
 
 ### Legal! Mas qual o cenário atual desta forma de Componentização proposta pela W3C?
@@ -135,7 +135,7 @@ Também deixo o link de um Codelab que dei no GDG-BH no [It's Hackademic with Po
 
 <iframe class="post-video post-container" src="//www.youtube.com/embed/CwiTIYBUHTY?start=3377" frameborder="0" allowfullscreen></iframe>
 
-Mas isso não é tudo, como eu disse, esta é uma série e para ler o próximo post,  basta clicar [aqui](http://betomuniz.com/blog/desmistificando-o-polymer-parte-2/), pois lá exibo uma lista de fatores que colocam o Polymer em uma posição de vantagem com relação a outras tecnologias e também exibo o motivo de escolher o Polymer como principal meio para criação de Web Components.
+Mas isso não é tudo, como eu disse, esta é uma série e para ler o próximo post,  basta clicar [aqui](https://betomuniz.com/blog/desmistificando-o-polymer-parte-2/), pois lá exibo uma lista de fatores que colocam o Polymer em uma posição de vantagem com relação a outras tecnologias e também exibo o motivo de escolher o Polymer como principal meio para criação de Web Components.
 
 E é isso, pessoal espero que tenham gostado da leitura, mas qualquer dúvida sobre o assunto e/ou sugestão, deixe seu comentário, feedbacks sempre são bem vindos. E por fim, deixo a seguinte mensagem:
 

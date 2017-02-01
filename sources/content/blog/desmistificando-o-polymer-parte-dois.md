@@ -11,7 +11,7 @@ description: Segundo post de uma série que visa desmistificar o Polymer.
 keywords: web-components, desmistificando, iniciando, tutorial, polymer, parte, dois
 ---
 
-No primeira parte desta série, abordei [o que é o Polymer](http://betomuniz.com/blog/desmistificando-o-polymer-parte-1/), e lá mostro **o que ele é** e **como ele funciona**, mas não mencionei quais são os principais fatores para utilização e escolha do Polymer entre outras tecnologias presentes, mas a partir de agora, este será o principal objetivo deste segundo post.
+No primeira parte desta série, abordei [o que é o Polymer](https://betomuniz.com/blog/desmistificando-o-polymer-parte-1/), e lá mostro **o que ele é** e **como ele funciona**, mas não mencionei quais são os principais fatores para utilização e escolha do Polymer entre outras tecnologias presentes, mas a partir de agora, este será o principal objetivo deste segundo post.
 
 ### Ok! Porque o Polymer?
 
@@ -49,7 +49,7 @@ Para ilustrar alguns benefícios trazidos a nós pelo Polymer, entrego a seguint
 
 ### E por hoje é só pessoal....
 
-Como eu disse no ínicio deste post, eu apenas queria levantar pontos altos a levar em consideração na escolha do Polymer, mas não deixe por esperar, continue lendo a série, sendo assim, confira o próximo post, pois nele eu crio uma espécie de [Polymer FAQ (unofficial)](http://betomuniz.com/blog/desmistificando-o-polymer-parte-3/), que basicamente ilustra **o que o Polymer não é**.
+Como eu disse no ínicio deste post, eu apenas queria levantar pontos altos a levar em consideração na escolha do Polymer, mas não deixe por esperar, continue lendo a série, sendo assim, confira o próximo post, pois nele eu crio uma espécie de [Polymer FAQ (unofficial)](https://betomuniz.com/blog/desmistificando-o-polymer-parte-3/), que basicamente ilustra **o que o Polymer não é**.
 
 Mas com relação a este post, qualquer dúvida ou sugestão, não deixe de comentar.
 

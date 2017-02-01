@@ -12,6 +12,6 @@ I'm <a href="https://plus.google.com/+betomuniz" target="_blank" rel="author">Be
 
 <a href="http://f2em.com/" target="_blank" rel="noopener noreferrer">Front End Engineer</a> at <a href="https://www.toptal.com/" target="_blank" rel="noopener noreferrer">Toptal</a>.
 
-Inspired by the study of new technologies and the community, I'm always attuned to what is happening and willing to contribute to the community through [posts](http://betomuniz.com/blog/), [events](http://betomuniz.com/talks/) and [projects](http://betomuniz.com/projects/).
+Inspired by the study of new technologies and the community, I'm always attuned to what is happening and willing to contribute to the community through [posts](https://betomuniz.com/blog/), [events](https://betomuniz.com/talks/) and [projects](https://betomuniz.com/projects/).
 
 I live in <a href="https://goo.gl/maps/34swi" target="_blank" rel="noopener noreferrer">Belo Horizonte</a>, Brazil and I love my job.

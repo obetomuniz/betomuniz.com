@@ -11,7 +11,7 @@ description: Terceiro post de uma série que visa desmistificar o Polymer.
 keywords: web-components, desmistificando, iniciando, tutorial, polymer, parte, tres
 ---
 
-E enfim, chegamos ao terceiro post, porém se você não leu o [primeiro post](http://betomuniz.com/blog/desmistificando-o-polymer-parte-1/) e nem o [segundo post](http://betomuniz.com/blog/desmistificando-o-polymer-parte-2/), recomendo a leitura deles, pois assim você terá uma melhor absorção do que será abordado neste post...
+E enfim, chegamos ao terceiro post, porém se você não leu o [primeiro post](https://betomuniz.com/blog/desmistificando-o-polymer-parte-1/) e nem o [segundo post](https://betomuniz.com/blog/desmistificando-o-polymer-parte-2/), recomendo a leitura deles, pois assim você terá uma melhor absorção do que será abordado neste post...
 
  E a razão deste post, nada mais é que um esclarecimento de diversas dúvidas com relação ao que o Polymer oferece, e caso você tenha alguma a mais, sinta-se a vontade de colocar também nos comentários. Mas vamos lá, vamos ao *FAX*.
 
