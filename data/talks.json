@@ -1,5 +1,29 @@
 {
     "talks": [
+         {
+            "date": "2017-05-27",
+            "event": "Front in Salvador 2017",
+            "event_url": "http://frontinssa.com/",
+            "location": "Salvador, Bahia, Brazil",
+            "talk": "Web Underground",
+            "talk_url": "https://speakerdeck.com/obetomuniz/web-underground"
+        },
+        {
+            "date": "2017-05-17",
+            "event": "Google I/O 2017 Extended",
+            "event_url": "http://gdgbh.org/ioextended17/",
+            "location": "Belo Horizonte, Minas Gerais, Brazil - Google",
+            "talk": "Progressive Web App in Depth",
+            "talk_url": "https://speakerdeck.com/obetomuniz/progressive-web-apps-in-depth"
+        },
+        {
+            "date": "2016-03-30",
+            "event": "19º Encontro Locaweb Belo Horizonte",
+            "event_url": "http://eventos.locaweb.com.br/eventos-anteriores/19o-encontro-locaweb-belo-horizonte/",
+            "location": "Belo Horizonte, Minas Gerais, Brazil",
+            "talk": "Progressive Web App Experience",
+            "talk_url": "https://speakerdeck.com/obetomuniz/progressive-web-apps-in-depth"
+        },
         {
             "date": "2016-12-10",
             "event": "Front in POA 2016",
