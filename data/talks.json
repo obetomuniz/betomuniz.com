@@ -1,6 +1,13 @@
 {
     "talks": [
-         {
+        {
+            "date": "2017-09-23",
+            "event": "Front in BH 2k17",
+            "event_url": "https://frontinbh.com.br/",
+            "location": "Belo Horizonte, Minas Gerais, Brazil",
+            "talk": "Welcome to the future of the JavaScript e da Web"
+        },
+        {
             "date": "2017-05-27",
             "event": "Front in Salvador 2017",
             "event_url": "http://frontinssa.com/",
