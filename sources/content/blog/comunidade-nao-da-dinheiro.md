@@ -11,7 +11,7 @@ keywords: comunidade, minas gerais, minasdev, dev in company, toptal, google, go
 ---
 Olá pessoas! Pode sentar, porque que lá vem história....
 
-Nesse post quero tentar compartilhar um pouco do que aprendi até então, nessa vida maluca que temos.
+Nesse post* quero tentar compartilhar um pouco do que aprendi até então, nessa vida maluca que temos.
 
 Sendo assim, como naquela <a href="https://www.youtube.com/watch?v=6AbfJ-wvMPY" target="_blank">música</a>, nada aqui possuí outra base confiável além de minha própria experiência errante. E estando todos avisados disso, vamos nessa...
 
@@ -208,10 +208,12 @@ Enfim, a única coisa que ressalto é:
 
 <blockquote>Reconhecimento vem, mas é preciso ter paciência e saber reconhecê-lo, e acima disso, é preciso dedicação para merecê-lo.</blockquote>
 
-E era isso galera, espero que realmente vocês realmente tenham gostado e entendido a mensagem.
+E era isso galera, espero que vocês realmente tenham gostado e entendido a mensagem.
 
 BORA PARTICIPAR MAIS DA COMUNIDADE!
 
 <img src="https://user-images.githubusercontent.com/1680157/30825782-a1d85a2c-a20a-11e7-8305-58ecd83b3bbf.gif" style="width:100%" />
+
+**Este post foi baseado na talk <a href="https://speakerdeck.com/obetomuniz/comunidade-nao-da-dinheiro" target="_blank">"Comunidade não dá dinheiro"</a> que realizei no Front in BH 2017.*
 
 ▲
