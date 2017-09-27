@@ -214,6 +214,6 @@ BORA PARTICIPAR MAIS DA COMUNIDADE!
 
 <img src="https://user-images.githubusercontent.com/1680157/30825782-a1d85a2c-a20a-11e7-8305-58ecd83b3bbf.gif" style="width:100%" />
 
-**Este post foi baseado na talk <a href="https://speakerdeck.com/obetomuniz/comunidade-nao-da-dinheiro" target="_blank">"Comunidade não dá dinheiro"</a> que realizei no Front in BH 2017.*
+<small>**Este post foi baseado na talk <a href="https://speakerdeck.com/obetomuniz/comunidade-nao-da-dinheiro" target="_blank">"Comunidade não dá dinheiro"</a> que realizei no Front in BH 2017.*</small>
 
 ▲
