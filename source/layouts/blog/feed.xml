@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+        <channel>
+            <title>{{ document_title }}</title>
+            <description>{{ description }}</description>
+            <link>https://betomuniz.com/blog/</link>
+
+            <atom:link href="https://betomuniz.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+            {{#each collections.blog}}
+                <item>
+                    <title>{{ title }}</title>
+                    <description>{{ description }}</description>
+                    <pubDate>{{xmlDate date }}</pubDate>
+                    <link> {{#if external}}{{ url }}{{else}}https://betomuniz.com{{ url }}{{/if}}</link>
+                    <guid isPermaLink="true">{{#if external}}{{ url }}{{else}}https://betomuniz.com{{ url }}{{/if}}</guid>
+                </item>
+            {{/each}}
+    </channel>
+</rss>

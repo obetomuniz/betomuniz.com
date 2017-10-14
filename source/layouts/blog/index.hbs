@@ -1,0 +1,17 @@
+{{> header }}
+
+    <section class="blog">
+      <ul class="blog__list">
+        {{#each collections.blog}}
+          {{#if page_title}}
+            <li class="blog__post">
+              <a class="blog__item" href="{{url}}" {{#if external}}target="_blank" rel="noopener noreferrer"{{/if}}>
+                <h3 class="blog__item-link">{{page_title}} {{#if page_subtitle}}{{page_subtitle}}{{/if}}</h3>
+              </a>
+            </li>
+          {{/if}}
+        {{/each}}
+      </ul>
+    </section>
+
+{{> footer }}

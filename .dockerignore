@@ -1,0 +1,5 @@
+node_modules
+public
+.settings
+.project
+*.log

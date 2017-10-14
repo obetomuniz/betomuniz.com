@@ -1,0 +1,262 @@
+.post {
+  width: 550px;
+  margin: 0 auto;
+
+  &__header {
+    margin-bottom: 25px;
+  }
+
+  &__register {
+    font-size: .7rem;
+    color: #aaaaaa;
+    font-family: 'Tahoma', sans-serif;
+    display: block;
+    text-align: center;
+  }
+
+  &__register {
+    margin-bottom: 25px;
+  }
+
+  &__date {
+    display: inline;
+  }
+
+  &__reading-time {
+    color: #777777;
+  }
+
+  &__title {
+    color: #000000;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 1.9rem;
+  }
+
+  &__content {
+    margin-bottom: 25px;
+
+    p {
+      color: #333333;
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.8rem;
+      letter-spacing: .01rem;
+      margin-bottom: 25px;
+
+      code {
+        background: #eeeeee;
+        display: inline-block;
+        padding: 0 5px;
+        font-family: 'Courier New', serif;
+      }
+    }
+
+    small {
+      color: #333333;
+      display: block;
+      font-size: .7rem;
+      font-weight: 400;
+      line-height: 1.4rem;
+      letter-spacing: .01rem;
+    }
+
+    h1, h2, h3, h4 {
+      color: #000000;
+      line-height: 2.3rem;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: #777;
+      font-weight: bold;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 10px 6px -7px #999999;
+    }
+
+    ul, ol {
+      padding: 0 0 0 15px;
+      margin: 0 0 25px 15px;
+      font-size: .9rem;
+      color: #333333;
+      line-height: 1.2rem;
+
+      ul, ol {
+        margin-bottom: 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    ul {
+      list-style-type: circle;
+    }
+
+    blockquote {
+      margin: 0 0 25px 15px;
+      padding: 10px 0 10px 15px;
+      border-left: 3px solid #cccccc;
+      display: block;
+      font-style: italic;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    pre {
+      font-family: 'Courier New', serif !important;
+      font-size: .9rem;
+      margin-bottom: 25px;
+      width: 100%;
+      box-shadow: 0 10px 6px -8px #bbbbbb;
+      -webkit-font-smoothing: auto;
+      background-color: #282c34;
+      border-radius: 5px;
+      padding: 20px;
+
+      code {
+        overflow-y: auto;
+        background-color: transparent;
+        padding: 0;
+        line-height: 1.2rem;
+      }
+    }
+
+    em {
+      font-style: italic !important;
+    }
+
+    strong {
+      font-weight: bolder !important;
+    }
+
+    hr {
+      display: block;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #cccccc;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    .post-video {
+      min-height: 350px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 6px -8px #bbbbbb;
+    }
+  }
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #797c83;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75;
+}
+
+.hljs-literal {
+  color: #56b6c2;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #98c379;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}

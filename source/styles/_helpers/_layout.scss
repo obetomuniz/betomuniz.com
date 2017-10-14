@@ -1,0 +1,29 @@
+body {
+  background-color: #ffffff;
+  color: #222222;
+  font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.center {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.wrapper {
+  width: 765px;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5em 0;
+}

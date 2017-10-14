@@ -1,0 +1,29 @@
+{{> header }}
+
+    <section class="projects">
+      <ul class="projects__list">
+        {{#each projects}}
+          {{#if custom}}
+            <li class="project">
+              <h4 class="project__name"><a class="project__link" href="{{url}}" target="_blank" rel="noopener noreferrer">{{name}}</a></h4>
+              <div class="project__logo project__logo--custom-project">
+                <img src="{{image}}" alt="{{name}} Logo">
+              </div>
+            </li>
+          {{/if}}
+
+          {{#if github}}
+            <li class="project">
+              <h4 class="project__name"><a class="project__link" href="{{url}}" target="_blank" rel="noopener noreferrer">{{name}}</a></h4>
+              <div class="project__logo project__logo--github">
+                <svg>
+                  <use xlink:href="/assets/images/icons.svg#icon-github-octocat" />
+                </svg>
+              </div>
+            </li>
+          {{/if}}
+        {{/each}}
+      </ul>
+    </section>
+
+{{> footer }}
