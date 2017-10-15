@@ -123,3 +123,5 @@ gulp.task('default', ['clean-old-build', 'metalsmith', 'shell', 'scripts', 'styl
   gulp.watch(path.join('source/styles/**/*.scss'), ['styles', 'autoprefix', 'csso']);
   gulp.watch(path.join('source/images/**/*'), ['images']);
 });
+
+gulp.task('build', ['clean-old-build', 'metalsmith', 'shell', 'scripts', 'styles', 'autoprefix', 'csso', 'images']);
