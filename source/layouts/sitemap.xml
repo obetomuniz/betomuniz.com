@@ -5,21 +5,21 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<url>
-  <loc>https://betomuniz.com/</loc>
-</url>
-<url>
-  <loc>https://betomuniz.com/projects/</loc>
-</url>
-<url>
-  <loc>https://betomuniz.com/talks/</loc>
-</url>
+  <url>
+    <loc>https://betomuniz.com/</loc>
+  </url>
+  <url>
+    <loc>https://betomuniz.com/projects/</loc>
+  </url>
+  <url>
+    <loc>https://betomuniz.com/talks/</loc>
+  </url>
 {{#each collections.blog}}
-{{#if external}}
-{{else}}
-<url>
-  <loc>https://betomuniz.com{{ url }}</loc>
-</url>
-{{/if}}
+  {{#if external}}
+  {{else}}
+  <url>
+    <loc>https://betomuniz.com{{ url }}</loc>
+  </url>
+  {{/if}}
 {{/each}}
 </urlset>
