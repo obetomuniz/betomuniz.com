@@ -20,6 +20,7 @@
       }
     }
   }
+
   &__infos {
     display: flex;
     align-items: center;
@@ -29,10 +30,37 @@
   &__date,
   &__location {
     font-size: 13px;
-    color: #666;
+    color: #666666;
   }
 
   &__separator {
     margin: 0 6px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .talk {
+    margin-bottom: 25px;
+
+    &__name {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+    }
+
+    &__event,
+    &__date,
+    &__location {
+      font-size: .6rem;
+
+      &--hide {
+        display: none;
+      }
+    }
+
+    &__separator {
+      &--hide {
+        display: none;
+      }
+    }
   }
 }

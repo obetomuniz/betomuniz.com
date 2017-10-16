@@ -18,3 +18,16 @@
     }
   }
 }
+
+@media screen and (max-width: 440px) {
+  .blog {
+    &__post {
+      margin: 25px 0;
+    }
+
+    &__item-link {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}

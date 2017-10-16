@@ -2,8 +2,18 @@
   width: 550px;
   margin: 0 auto;
 
-  &__header {
-    margin-bottom: 25px;
+  &__title {
+    color: #000000;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: $default-post-margin-b;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 1.9rem;
   }
 
   &__register {
@@ -12,10 +22,7 @@
     font-family: 'Tahoma', sans-serif;
     display: block;
     text-align: center;
-  }
-
-  &__register {
-    margin-bottom: 25px;
+    margin-bottom: $default-post-margin-b;
   }
 
   &__date {
@@ -26,22 +33,8 @@
     color: #777777;
   }
 
-  &__title {
-    color: #000000;
-    font-size: 2.5rem;
-    line-height: 4rem;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 25px;
-  }
-
-  &__subtitle {
-    display: block;
-    font-size: 1.9rem;
-  }
-
   &__content {
-    margin-bottom: 25px;
+    margin-bottom: $default-post-margin-b;
 
     p {
       color: #333333;
@@ -50,7 +43,7 @@
       font-weight: 400;
       line-height: 1.8rem;
       letter-spacing: .01rem;
-      margin-bottom: 25px;
+      margin-bottom: $default-post-margin-b;
 
       code {
         background: #eeeeee;
@@ -74,7 +67,7 @@
       line-height: 2.3rem;
       font-family: 'Arial', sans-serif;
       font-weight: bold;
-      margin-bottom: 25px;
+      margin-bottom: $default-post-margin-b;
     }
 
     h2 {
@@ -90,7 +83,7 @@
     }
 
     a {
-      color: #777;
+      color: #777777;
       font-weight: bold;
     }
 
@@ -103,7 +96,7 @@
 
     ul, ol {
       padding: 0 0 0 15px;
-      margin: 0 0 25px 15px;
+      margin: 0 0 $default-post-margin-b 15px;
       font-size: .9rem;
       color: #333333;
       line-height: 1.2rem;
@@ -130,7 +123,7 @@
     }
 
     blockquote {
-      margin: 0 0 25px 15px;
+      margin: 0 0 $default-post-margin-b 15px;
       padding: 10px 0 10px 15px;
       border-left: 3px solid #cccccc;
       display: block;
@@ -144,7 +137,7 @@
     pre {
       font-family: 'Courier New', serif !important;
       font-size: .9rem;
-      margin-bottom: 25px;
+      margin-bottom: $default-post-margin-b;
       width: 100%;
       box-shadow: 0 10px 6px -8px #bbbbbb;
       -webkit-font-smoothing: auto;
@@ -174,12 +167,12 @@
       border: 0;
       border-bottom: 1px solid #cccccc;
       margin-top: 0;
-      margin-bottom: 25px;
+      margin-bottom: $default-post-margin-b;
     }
 
     .post-video {
       min-height: 350px;
-      margin-bottom: 25px;
+      margin-bottom: $default-post-margin-b;
       box-shadow: 0 10px 6px -8px #bbbbbb;
     }
   }
@@ -188,7 +181,7 @@
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
+  padding: .5em;
   color: #abb2bf;
 }
 
@@ -259,4 +252,88 @@
 
 .hljs-link {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 440px) {
+  .post {
+    width: 100%;
+
+    &__title {
+      font-size: 1.1rem;
+      line-height: 2rem;
+      margin-bottom: $default-post-margin-b-mobile;
+    }
+
+    &__subtitle {
+      font-size: 0.9rem;
+    }
+
+    &__register {
+      font-size: .5rem;
+      margin-bottom: $default-post-margin-b-mobile;
+    }
+
+    &__content {
+      margin-bottom: $default-post-margin-b-mobile;
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        letter-spacing: .02rem;
+        margin-bottom: $default-post-margin-b-mobile;
+      }
+
+      small {
+        font-size: .7rem;
+        line-height: 1.2rem;
+        letter-spacing: .02rem;
+      }
+
+      h1, h2, h3, h4 {
+        line-height: 2rem;
+        margin-bottom: $default-post-margin-b-mobile;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.7rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+      }
+
+      ul, ol {
+        padding: 0;
+        margin: 0 0 $default-post-margin-b-mobile 15px;
+        font-size: .7rem;
+        line-height: 1.5rem;
+      }
+
+      blockquote {
+        margin: 0 0 $default-post-margin-b-mobile 15px;
+      }
+
+      pre {
+        font-size: .7rem;
+        margin-bottom: $default-post-margin-b-mobile;
+        padding: 10px;
+
+        code {
+          line-height: 1rem;
+        }
+      }
+
+      hr {
+        margin-bottom: $default-post-margin-b-mobile;
+      }
+
+      .post-video {
+        margin-bottom: $default-post-margin-b-mobile;
+      }
+    }
+  }
 }

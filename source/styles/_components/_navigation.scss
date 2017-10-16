@@ -22,3 +22,15 @@
     }
   }
 }
+
+@media screen and (max-width: 440px) {
+  .navigation {
+    &__list {
+      width: 260px;
+    }
+
+    &__item {
+      width: 65px;
+    }
+  }
+}
