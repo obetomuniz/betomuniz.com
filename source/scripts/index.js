@@ -1,5 +1,5 @@
-import highlight from './highlight';
+import highlight from "./highlight";
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   highlight();
 });
