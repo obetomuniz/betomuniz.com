@@ -9,13 +9,8 @@
   "parserOptions": {
     "sourceType": "module"
   },
-  "plugins": [
-    "prettier"
-  ],
-  "extends": [
-    "prettier",
-    "prettier/standard"
-  ],
+  "plugins": ["prettier"],
+  "extends": ["prettier", "prettier/standard"],
   "rules": {
     "prettier/prettier": "error"
   }
