@@ -21,15 +21,18 @@
     "event_url": "http://gdgbh.org/ioextended17/",
     "location": "Belo Horizonte, Brazil",
     "talk": "Progressive Web App in Depth",
-    "talk_url": "https://speakerdeck.com/obetomuniz/progressive-web-apps-in-depth"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/progressive-web-apps-in-depth"
   },
   {
     "talk_date": "2016-03-30",
     "event": "19º Encontro Locaweb Belo Horizonte",
-    "event_url": "http://eventos.locaweb.com.br/eventos-anteriores/19o-encontro-locaweb-belo-horizonte/",
+    "event_url":
+      "http://eventos.locaweb.com.br/eventos-anteriores/19o-encontro-locaweb-belo-horizonte/",
     "location": "Belo Horizonte, Brazil",
     "talk": "Progressive Web App Experience",
-    "talk_url": "https://speakerdeck.com/obetomuniz/progressive-web-apps-in-depth"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/progressive-web-apps-in-depth"
   },
   {
     "talk_date": "2016-12-10",
@@ -38,7 +41,8 @@
     "location": "Porto Alegre, Brazil",
     "location_url": "https://goo.gl/maps/dQuZbHoeyEE2",
     "talk": "Remote Work! Less Stress, More Productivity.",
-    "talk_url": "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
   },
   {
     "talk_date": "2016-12-03",
@@ -47,7 +51,8 @@
     "location": "Aracaju, Brazil",
     "location_url": "https://goo.gl/maps/g5zzppiVfFH2",
     "talk": "Remote Work! Less Stress, More Productivity.",
-    "talk_url": "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
   },
   {
     "talk_date": "2016-11-05",
@@ -56,7 +61,8 @@
     "location": "Belo Horizonte, Brazil",
     "location_url": "https://goo.gl/maps/dgsqmbSNYg92",
     "talk": "Remote Work! Less Stress, More Productivity.",
-    "talk_url": "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
   },
   {
     "talk_date": "2016-09-06",
@@ -73,12 +79,14 @@
     "location": "Divinópolis, Brazil",
     "location_url": "https://goo.gl/maps/YTkXokaqqwK2",
     "talk": "Remote Work! Less Stress, More Productivity.",
-    "talk_url": "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/remote-work-less-stress-more-productivity"
   },
   {
     "talk_date": "2016-04-30",
     "event": "Innovation Moment Belo Horizonte #1",
-    "event_url": "http://www.meetup.com/pt-BR/Innovation-Moment-Belo-Horizonte/events/229715465/",
+    "event_url":
+      "http://www.meetup.com/pt-BR/Innovation-Moment-Belo-Horizonte/events/229715465/",
     "location": "Belo Horizonte, Brazil",
     "location_url": "https://goo.gl/maps/YTkXokaqqwK2",
     "talk": "React & Ionic 2"
@@ -90,7 +98,8 @@
     "location": "Itaúna, Brazil",
     "location_url": "https://goo.gl/maps/gouas",
     "talk": "Web Components, A próxima revolução do desenvolvimento web",
-    "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
   },
   {
     "talk_date": "2015-06-13",
@@ -99,16 +108,19 @@
     "location": "Belo Horizonte, Brazil",
     "location_url": "http://belohorizonte.wordcamp.org/2015/local/",
     "talk": "Comunidade. Abuse e use dela com moderação e inteligência.",
-    "talk_url": "https://speakerdeck.com/obetomuniz/comunidade-abuse-e-use-dela-com-moderacao-e-inteligencia"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/comunidade-abuse-e-use-dela-com-moderacao-e-inteligencia"
   },
   {
     "talk_date": "2015-04-11",
     "event": "Então você quer aprender Polymer?",
     "event_url": "http://www.meetup.com/GDG-ABC/events/220824692/",
     "location": "Hangout",
-    "location_url": "https://plus.google.com/hangouts/_/calendar/bWFyY29zcm9tZXJvMTFAZ21haWwuY29t.kglpuigh5v6nkl4aaep7ijog90?authuser=0",
+    "location_url":
+      "https://plus.google.com/hangouts/_/calendar/bWFyY29zcm9tZXJvMTFAZ21haWwuY29t.kglpuigh5v6nkl4aaep7ijog90?authuser=0",
     "talk": "Polymer Elements: Tudo que você precisa saber para criar a web",
-    "talk_url": "https://speakerdeck.com/obetomuniz/polymer-elements-tudo-que-voce-precisa-saber-para-criar-a-web"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/polymer-elements-tudo-que-voce-precisa-saber-para-criar-a-web"
   },
   {
     "talk_date": "2015-03-28",
@@ -117,7 +129,8 @@
     "location": "Belo Horizonte, Brazil",
     "location_url": "https://goo.gl/maps/o6zrd",
     "talk": "Polymer Elements: Tudo que você precisa saber para criar a web",
-    "talk_url": "https://speakerdeck.com/obetomuniz/polymer-elements-tudo-que-voce-precisa-saber-para-criar-a-web"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/polymer-elements-tudo-que-voce-precisa-saber-para-criar-a-web"
   },
   {
     "talk_date": "2015-01-24",
@@ -134,7 +147,8 @@
     "location": "São José dos Campos, Brazil",
     "location_url": "https://goo.gl/maps/KUyVE",
     "talk": "Web Components, A próxima revolução do desenvolvimento web",
-    "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web",
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web",
     "video_url": "http://youtu.be/RjPzxHum4Cg"
   },
   {
@@ -160,7 +174,8 @@
     "location": "Maceió, Brazil",
     "location_url": "https://goo.gl/maps/nb1zH",
     "talk": "Web Components, A próxima revolução do desenvolvimento web",
-    "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
   },
   {
     "talk_date": "2014-11-08",
@@ -178,7 +193,8 @@
     "location": "Belo Horizonte, Brazil",
     "location_url": "https://goo.gl/maps/eXE2T",
     "talk": "Web Components, A próxima revolução do desenvolvimento web",
-    "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
   },
   {
     "talk_date": "2014-10-11",
@@ -187,7 +203,8 @@
     "location": "São Paulo, Brazil",
     "location_url": "https://goo.gl/maps/5Rf64",
     "talk": "Martini. O 'Um' Framework Web para Go.",
-    "talk_url": "https://speakerdeck.com/obetomuniz/martini-o-um-framework-web-para-go"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/martini-o-um-framework-web-para-go"
   },
   {
     "talk_date": "2014-09-27",
@@ -196,7 +213,8 @@
     "location": "Rio de Janeiro, Brazil",
     "location_url": "https://goo.gl/maps/B4diC",
     "talk": "Web Components, A próxima revolução do desenvolvimento web",
-    "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
   },
   {
     "talk_date": "2014-08-30",
@@ -205,29 +223,35 @@
     "location": "Bauru, Brazil",
     "location_url": "https://goo.gl/maps/vd6mN",
     "talk": "Web Components, A próxima revolução do desenvolvimento web",
-    "talk_url": "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/web-components-a-proxima-revolucao-do-desenvolvimento-web"
   },
   {
     "talk_date": "2014-08-18",
     "event": "Meetup Hybrid Applications",
-    "event_url": "http://www.meetup.com/Aplicativos-Hibridos-Meetup/events/196426862/",
+    "event_url":
+      "http://www.meetup.com/Aplicativos-Hibridos-Meetup/events/196426862/",
     "location": "São Paulo, Brazi",
     "talk": "Node Webkit",
-    "talk_url": "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit"
   },
   {
     "talk_date": "2014-08-08",
     "event": "The Developers Conferece",
-    "event_url": "http://www.thedevelopersconference.com.br/tdc/2014/saopaulo/trilha-node-js",
+    "event_url":
+      "http://www.thedevelopersconference.com.br/tdc/2014/saopaulo/trilha-node-js",
     "location": "São Paulo, Brazil",
     "location_url": "https://goo.gl/maps/MNrlg",
     "talk": "Nodewebkit - Uma ferramenta que amplia suas fronteiras",
-    "talk_url": "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit"
   },
   {
     "talk_date": "2014-06-25",
     "event": "Google I/O Extended",
-    "event_url": "https://plus.google.com/u/0/events/cpb2r51l7cj0p8lsspf6ucr8cm4",
+    "event_url":
+      "https://plus.google.com/u/0/events/cpb2r51l7cj0p8lsspf6ucr8cm4",
     "location": "São Paulo, Brazil",
     "location_url": "https://goo.gl/maps/C8hhF",
     "talk": "O poderoso AngularJS",
@@ -241,7 +265,8 @@
     "location": "São Paulo, Brazil",
     "location_url": "https://goo.gl/maps/orFmT",
     "talk": "Ampliando suas fronteiras com Node-Webkit",
-    "talk_url": "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit",
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/ampliando-suas-fronteiras-com-node-webkit",
     "video_url": "http://youtu.be/Yjm4NVq0neA?t=3h43m39s"
   },
   {
@@ -250,7 +275,8 @@
     "event_url": "http://www.meetup.com/GDG-SP/events/175329372/",
     "location": "São Paulo, Brazil",
     "talk": "Construindo um servidor web com Go",
-    "talk_url": "https://speakerdeck.com/obetomuniz/construindo-um-servidor-web-com-go"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/construindo-um-servidor-web-com-go"
   },
   {
     "talk_date": "2014-03-22",
@@ -269,7 +295,8 @@
     "location": "Belo Horizonte, Brazil",
     "location_url": "https://goo.gl/maps/7Umul",
     "talk": "SASS e Compass - O CSS Ninja Workflow",
-    "talk_url": "https://speakerdeck.com/obetomuniz/sass-e-compass-o-css-ninja-workflow"
+    "talk_url":
+      "https://speakerdeck.com/obetomuniz/sass-e-compass-o-css-ninja-workflow"
   },
   {
     "talk_date": "2013-09-28",

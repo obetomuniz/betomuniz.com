@@ -1,17 +1,22 @@
 {
-  "parser": "babel-eslint",
   "env": {
     "browser": true,
-    "node": true,
-    "jest": true,
-    "es6": true
+    "es6": true,
+    "node": true
   },
   "parserOptions": {
     "sourceType": "module"
   },
   "plugins": ["prettier"],
-  "extends": ["prettier", "prettier/standard"],
+  "extends": ["prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "curly": ["error", "multi-line"],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 150,
+        "singleQuote": true
+      }
+    ]
   }
 }

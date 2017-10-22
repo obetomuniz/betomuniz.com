@@ -40,14 +40,16 @@
     "name": "LearnLayout.com",
     "short_url": "pt-br.learnlayout.com",
     "url": "http://pt-br.learnlayout.com",
-    "image": "https://user-images.githubusercontent.com/1680157/31467825-c3199490-aeb1-11e7-9b62-97d6377b4c3d.png",
+    "image":
+      "https://user-images.githubusercontent.com/1680157/31467825-c3199490-aeb1-11e7-9b62-97d6377b4c3d.png",
     "custom": true
   },
   {
     "name": "Minas Dev",
     "short_url": "minasdev.org",
     "url": "https://minasdev.org",
-    "image": "https://user-images.githubusercontent.com/1680157/31467826-c337baa6-aeb1-11e7-89da-d53cfc40bebd.png",
+    "image":
+      "https://user-images.githubusercontent.com/1680157/31467826-c337baa6-aeb1-11e7-89da-d53cfc40bebd.png",
     "custom": true
   },
   {
