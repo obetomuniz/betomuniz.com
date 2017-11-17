@@ -1,5 +1,3 @@
-# RESOURCES
+# betomuniz.com
 
-https://curatedseotools.com/
-https://zach.codes/frontend-development-with-docker/
-https://images.guide/
+My Personal Website
