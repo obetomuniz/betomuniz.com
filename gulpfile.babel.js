@@ -89,6 +89,7 @@ gulp.task('scripts', () => {
       gulpWebpack(
         {
           devtool: 'inline-source-map',
+          mode: 'production',
           output: {
             filename: 'index.js'
           },
