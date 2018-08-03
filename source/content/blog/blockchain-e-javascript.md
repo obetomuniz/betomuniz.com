@@ -6,7 +6,7 @@ date: 2018-08-04
 url: /blog/blockchain-e-javascript/
 collection: blog
 layout: blog/post.hbs
-description:  
+description: Saiba o estado atual da combinação promissora entre Blockchain e JavaScript.
 keywords: blockchain, javascript, ark, lisk, lsk, ethereum, web3js, truffle
 ---
 
@@ -74,9 +74,9 @@ Atualmente, o ecossistema passa por uma relevante mudança de arquitetura, e com
 
 Para não ficar um post muito longo, que fique claro que *Blockchain está para o JavaScript como o JavaScript está para Blockchain*. 
 
-E saiba que o mercado blockchain brasileiro já está utilizando, inclusive haverá utilização significativa nas eleições deste ano.
+E saiba que o mercado blockchain brasileiro já está aquecido, inclusive haverá utilização significativa nas eleições deste ano.
 
-Por fim, futuramente irei trazer mais posts sobre Lisk, ARK, Ethereum, dApps entre outras curiosidades relacionadas ao mundo das criptomoedas e blockchains.
+Por fim, futuramente irei trazer mais posts sobre Lisk, ARK, Ethereum, ÐApps entre outras curiosidades relacionadas ao mundo das criptomoedas e blockchains.
 
 ▲
 
