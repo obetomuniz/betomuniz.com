@@ -2,11 +2,11 @@
 title: "React Native and Spring Animations"
 page_title: "React Native and Spring Animations"
 document_title: Beto Muniz — React Native and Spring Animations
-date: 2018-08-07
+date: 2018-08-05
 url: /blog/react-native-and-spring-animations/
 collection: blog
 layout: blog/post.hbs
-description:  The current state of the React Native support spring-based animations.
+description:  The current state of the React Native support of spring-based animations.
 keywords: react, react native, spring, origami, rk4, dho, physics, motions, motion designs, animations
 ---
 
