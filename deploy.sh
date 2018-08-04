@@ -7,11 +7,14 @@ cd /var/www/betomuniz.com/
 git checkout --force master
 git pull
 
-echo "2. Install dependencies"
-npm install && npm run build
+echo "2. Stop Server "
+sudo pm2 stop 0
 
-echo "3. Restart Server"
-sudo pm2 restart betomuniz
+echo "3. Install dependencies and build"
+npm install && npm rebuild && npm run build
+
+echo "4. Restart Server"
+sudo pm2 restart 0
 
 echo 'Done!'
 
