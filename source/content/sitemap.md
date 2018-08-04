@@ -1,5 +1,5 @@
 ---
-layout: sitemap.xml
+layout: sitemap.hbs
 url: /sitemap.xml
 description: Sitemap of the Beto Muniz's site.
 keywords: beto, muniz, sitemap, beto muniz, betomuniz
