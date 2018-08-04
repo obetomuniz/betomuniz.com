@@ -10,19 +10,19 @@ description:  The current state of the React Native support spring-based animati
 keywords: react, react native, spring, origami, rk4, dho, physics, motions, motion designs, animations
 ---
 
-Physics-based motions are driven by force, and the Spring force defines the Spring Animation concept.
+Physics-based motions are driven by force, and the Spring behavior defines the Spring Animation concept.
 
-The primary goal of this post is to help developers to understand the concept layer under the hood of the current state of Spring Animations with React Native (and React at all).
+The primary goal of this article is to help developers to understand the concept under the hood of the current state of Spring Animations with React Native (and React at all).
 
-Also, this post helps your mobile team communication to make internal questions like **"how should we create and delivery spring-based motions designs that work well with React Native?"**
+Also, this article helps your mobile team communication to make internal questions like **"how should we create and delivery spring-based motions designs that work well with React Native?"**.
 
 Trust me. This type of question before starting the development will avoid a bunch of misconceptions and individual interpretations.
 
 ## To the Concepts...
 
-The first thing to keep in mind is that **Apple UIKit Spring Algorithm NOT is supported by React Native**. Yeah! This approach should be entirely ignored during the development.
+The first thing to keep in mind is that **Apple's UIKit Spring Algorithm NOT is supported by React Native**. Yeah! This approach should be entirely ignored during the development.
 
-> Check [this thread](https://twitter.com/andy_matuschak/status/566736015188963328) from an Ex-Apple guy to see the main aspect that the Community doesn't adopt the Apple UIKit Spring.
+> Check [this thread](https://twitter.com/andy_matuschak/status/566736015188963328) from an Ex-Apple guy to see the main aspect that the Community doesn't adopt the Apple UIKit Spring approach.
 
 With all being said, the spring-based animation algorithms commonly used by the React Native community are:
 
@@ -47,7 +47,7 @@ Check it out on this interactive [demo](http://chenglou.github.io/react-motion/d
 #### 4th order Runge-Kutta  (RK4) Spring Algorithm
 <img src="https://user-images.githubusercontent.com/1680157/43672498-794e1c92-9785-11e8-9a39-c3dec40afdfa.gif" style="box-shadow: none" />
 
-[RK4](http://lpsa.swarthmore.edu/NumInt/NumIntFourth.html) is natively supported in old React Native versions (before Origami/Rebound arrived) and a important industry standard which allows us to interpolate Tension, Friction, and Velocity.
+[RK4](http://lpsa.swarthmore.edu/NumInt/NumIntFourth.html) is natively supported in old React Native versions (before Origami/Rebound arrived) and an important industry standard which allows us to interpolate Tension, Friction, and Velocity.
 
 The most recommended libraries to apply this spring-based animation are [Framer.js](https://github.com/koenbok/Framer), [react-spring](https://github.com/drcmda/react-spring), and [rebound](https://github.com/facebook/rebound-js).
 
@@ -58,6 +58,10 @@ Check it out on this interactive [demo](http://stakes.github.io/framerplayground
 As you can see, the React Native support for spring-based animations is very fun and diverse, the current problem is the lousy support provided by the market of prototyping tools like Flinto, Framer, Principle, etc.
 
 Currently, the best choice is the [Origami Studio](https://origami.design/), but great times are coming for this scenario with [Super Nova](https://supernova.studio/) and [Framer X](https://framer.com/x/) that is React Native and React friendly respectively. Stay tuned.
+
+## Bonus
+
+Take a look at this [another article](https://betomuniz.com/blog/main-topics-to-care-about-before-including-motion-designs-in-your-react-native-application/) that I wrote to know more about animations approaches with React Native.
 
 ▲
 

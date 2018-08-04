@@ -26,13 +26,9 @@ Beyond of the Animated library, we also have [react-native-animatable](https://g
 
 And that is all about the approaches adopted and recommended by the community for programmatically apply animations in React Native apps.
 
-## Spring Animations
-
-This concept is very well supported by React Native and recommended by the community, check it out on [my post](https://betomuniz.com/blog/react-native-and-spring-animations/) regarding the React Native support for physics-based motions.
-
 ## Easing Functions
 
-![](https://user-images.githubusercontent.com/1680157/43663837-3ea0dfc4-9741-11e8-8732-a618f5ed8685.gif)
+<img src="https://user-images.githubusercontent.com/1680157/43663837-3ea0dfc4-9741-11e8-8732-a618f5ed8685.gif" style="width:100%;box-shadow: none" />
 
 Easing Functions provide control and performance for animations. For this end, React Native introduced, the Easing module.
 
@@ -42,7 +38,7 @@ You can learn more about Easing Functions on this [link](https://easings.net/).
 
 ## Shared Elements
 
-![](https://user-images.githubusercontent.com/1680157/43663826-35a5c600-9741-11e8-8f2f-5933e7f73dec.gif)
+<img src="https://user-images.githubusercontent.com/1680157/43663826-35a5c600-9741-11e8-8f2f-5933e7f73dec.gif" style="box-shadow: none" />
 
 The concept of Shared Elements create some definitions about how we should build reusable elements that not break the application flow. In the end, this kind of mentality allows us to make better choices for each aspect of our UI components.
 
@@ -88,13 +84,17 @@ When we are talking about the support of micro-interactions or elements with ric
 
 About micro-interactions, we have Lottie, that is the recommendation of the community for this end so far. Lottie is a fantastic library that renders After Effects animations natively. If you want to learn more about, check this [link](https://airbnb.design/lottie/).
 
-![](https://user-images.githubusercontent.com/1680157/43663806-2a756a06-9741-11e8-8e1f-eb6fed013152.gif)
+<img src="https://user-images.githubusercontent.com/1680157/43663806-2a756a06-9741-11e8-8e1f-eb6fed013152.gif" style="box-shadow: none" />
 
 About elements with rich interactions, we have the library [react-native-interactable](https://github.com/wix/react-native-interactable). 
 
-react-native-interactable is the best choice when you need to create custom user interactions, once it brings physics concepts, a stable API, performance, and control.
+`react-native-interactable` is the best choice when you need to create custom user interactions, once it brings physics concepts, a stable API, performance, and control.
 
-![](https://user-images.githubusercontent.com/1680157/43663790-1a5f63b0-9741-11e8-8caf-54efdfa7de46.gif)
+<img src="https://user-images.githubusercontent.com/1680157/43663790-1a5f63b0-9741-11e8-8caf-54efdfa7de46.gif" style="box-shadow: none" />
+
+## Spring Animations
+
+This concept is very well supported by React Native and recommended by the community, check it out on [my post](https://betomuniz.com/blog/react-native-and-spring-animations/) regarding the React Native support for physics-based motions.
 
 ## Conclusion
 React Native is going to be an excellent place to work with any animation concept, but we still have a long and painful journey to reach a stable, flexible, and scalable path on this concept.
