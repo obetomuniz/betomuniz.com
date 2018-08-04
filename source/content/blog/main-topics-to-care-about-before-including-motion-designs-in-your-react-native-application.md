@@ -26,6 +26,10 @@ Beyond of the Animated library, we also have [react-native-animatable](https://g
 
 And that is all about the approaches adopted and recommended by the community for programmatically apply animations in React Native apps.
 
+## Spring Animations
+
+This concept is very well supported by React Native and recommended by the community, check it out on [my post](https://betomuniz.com/blog/react-native-and-spring-animations/) regarding the React Native support for physics-based motions.
+
 ## Easing Functions
 
 ![](https://user-images.githubusercontent.com/1680157/43663837-3ea0dfc4-9741-11e8-8732-a618f5ed8685.gif)
