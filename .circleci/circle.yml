@@ -1,0 +1,28 @@
+version: 2
+jobs:
+  build:
+    machine:
+      node:
+        version: 8.7.0
+    working_directory: /var/www/betomuniz.com
+  deploy:
+    machine:
+      enabled: true
+    working_directory: /var/www/betomuniz.com
+    steps:
+      - checkout
+      - run:
+          name: Deploy to Digital Ocean
+          command: sh ./deploy.sh
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
