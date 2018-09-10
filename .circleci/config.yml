@@ -3,7 +3,6 @@ jobs:
   deploy:
     machine:
       enabled: true
-    working_directory: /var/www/betomuniz.com
     steps:
       - checkout
       - run:
