@@ -153,39 +153,37 @@ Mas porque estou falando do Paulo Pires? Outras pessoas fodas também ajudaram a
 
 Porque ele foi outro grande ator da comunidade que me incentivou a realizar um outro grande movimento na minha vida, que no caso, foi me mudar para São Paulo para morar e trabalhar.
 
-## São Paulo, Toptal, Google & Polônia
+## São Paulo, Trabalho Remoto, Google & Polônia
 
 Vejam só, talvez se não tivesse rolado o Dev in Company, talvez se o Dev in Company não tivesse projetado um ideal de uma comunidade melhor para Belo Horizonte e Minas Gerais, talvez se o Paulo não tivesse visto e acreditado nesse ideal, a gente talvez nunca teria se conhecido, e no fim das contas, nada disso teria acontecido.
 
 Okay, poderia ter acontecido de outras formas, mas essa foi a forma que aconteceu, e foi a melhor forma na minha opinião.
 
-E São Paulo foi uma ótima época pra minha vida, palestramos bastante por lá, criamos e ajudamos meetups locais, etc.
+E São Paulo foi uma ótima época pra minha vida, palestrei bastante por lá, criei e ajudei meetups locais, etc.
 
 E foi assim, por mais ou menos um ano e pouco, pois logo eu voltei pra Belo Horizonte e aqui estou desde então, mas nesse caso, porque voltar?
 
-Na real, foi por um interesse "pessoal", que no caso era a <a href="https://www.toptal.com/" target="_blank">Toptal</a>, empresa que trabalho hoje. Mas ai fica a pergunta, o que isso tem haver? O que tem haver aqui é justamente a Toptal.
+Na real, foi por um interesse "pessoal", que naquele momento era <a href="https://www.toptal.com/" target="_blank">Toptal</a>, mas principalmente trabalhar remotamente de um lugar que eu me sentia em casa. Mas ai fica a pergunta, o que isso tem haver? O que tem haver aqui é justamente a Toptal.
 
-![](https://user-images.githubusercontent.com/1680157/30827628-250baaec-a211-11e7-83ac-c3f8a154b9a3.png)
+Pois eu não conheci ela por acaso. Lembra do Luri 🔝? O cara que conheci em um evento e que juntos fizemos várias coisas juntos em Minas Gerais? Então, ele foi quem super indicou a Toptal pra mim, pois ele entrou nela primeiro. Sim, tudo se conecta, e fica evidente que a comunidade sempre se apresenta.
 
-Pois eu não conheci ela por acaso. Lembra do Luri 🔝? O cara que conheci em um evento e que juntos fizemos várias coisas juntos em Minas Gerais? Então, ele foi quem super vendeu a Toptal pra mim, pois ele entrou nela primeiro, e foi por aí que eu animei aplicar. Sim, tudo se conecta, e fica evidente que a comunidade sempre se apresenta.
-
-Mas como nem tudo são rosas, a parte ruim disso, é que eu voltei para Belo Horizonte, apliquei no processo da Toptal, que por sinal é bem rigoroso, e infelizmente fui reprovado.
+Mas como nem tudo são rosas, apliquei no processo da Toptal, que por sinal é bem rigoroso, e infelizmente fui reprovado.
 
 Pois é, meu plano meio que deu errado no início. No caso, fui reprovado na primeira etapa por conta do meu inglês, e foi aí que eu vi o quanto eu precisava estudar mais esse idioma.
 
-E estudei, muito, e como no caso do PHP e MySQL, eu estava querendo colocar em prática meus estudos, e foi neste momento de vida que um outro amigo que eu fiz graças a comunidade numa palestra que dei no <a href="https://frontinmaceio.com.br/" target="_blank">Front in Maceió</a> surgiu, o <a href="https://twitter.com/pragmaticivan" target="_blank">Ivan Santos</a>.
+E estudei muito, e como no caso do PHP e MySQL, eu estava querendo colocar em prática meus estudos, e foi neste momento de vida que um outro amigo que eu fiz graças a comunidade numa palestra que dei no <a href="https://frontinmaceio.com.br/" target="_blank">Front in Maceió</a> surgiu, o <a href="https://twitter.com/pragmaticivan" target="_blank">Ivan Santos</a>.
 
-Ele chegou até mim e disse que na empresa que ele trabalhava na Califórnia estavam contratando remotamente, acabei aceitando a proposta, fiz o processo deles, e no fim das contas, passei.
+Ele chegou até mim e disse que a empresa que ele trabalhava na Califórnia estava contratando, acabei aceitando a proposta, fiz o processo deles, e no fim das contas, passei.
 
-Eu fiquei um ano e pouco nessa empresa, pois meu foco era mesmo a Toptal.
-
-Depois desse tempo, novamente apliquei na Toptal. E consegui passar na primeira etapa, na segunda etapa, na terceira etapa, na quarta etapa…
+Eu fiquei um ano e pouco nessa empresa, e então apliquei novamente na Toptal. E dessa vez, finalmente, consegui passar em todas as etapas.
 
 <blockquote>Foi incrível! Superação pessoal mesmo.</blockquote>
 
-E neste ponto do post, estamos exatamente no meu atual estado de vida, mas não pense que a influência da comunidade sobre minha vida acabou…
+E neste ponto do post, estamos exatamente no meu atual estado de vida, apesar de não estar trabalhando atualmente com a Toptal, mas ter continuado trabalhando remotamente para empresas incríveis. 
 
-Pra fechar mesmo, recentemente eu me tornei um <a href="https://developers.google.com/experts/people/beto-muniz" target="_blank">Google Developer Expert</a>, após um processo da Google que avalia pessoas com contribuições ativas para a comunidade em determinadas áreas.
+Mas não pense que a influência da comunidade sobre minha vida acabou…
+
+Pra fechar mesmo, em 2016 eu me tornei um <a href="https://developers.google.com/experts/people/beto-muniz" target="_blank">Google Developer Expert</a>, após um processo da Google que avalia pessoas ativas na comunidade em determinadas áreas.
 
 E gente, por conta desse reconhecimento e também pelo que plantei pra comunidade, recentemente fui parar na Polônia, minha primeira viagem internacional e com tudo pago pela Google.
 
