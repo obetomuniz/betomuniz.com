@@ -2,7 +2,7 @@
 title: Web Payments com Payment Request API
 page_title: Web Payments com Payment Request API
 document_title: Beto Muniz — Web Payments com Payment Request API
-date: 2017-02-01
+date: 2018-05-19
 url: /blog/web-payments-com-payment-request-api/
 collection: blog
 layout: blog/post.hbs
