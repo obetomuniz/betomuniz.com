@@ -2,7 +2,7 @@
 title: "Flutter para desenvolvedores JavaScript e/ou React Native"
 page_title: "Flutter para desenvolvedores JavaScript e/ou React Native"
 document_title: Beto Muniz — Flutter para desenvolvedores JavaScript e/ou React Native
-date: 2019-01-16
+date: 2019-01-15
 url: /blog/flutter-para-desenvolvedores-javascript-e-ou-react-native/
 collection: blog
 layout: blog/post.hbs
@@ -41,7 +41,7 @@ E qual seria a opção de uma linguagem dinamicamente tipada? Linguagens estatic
 - Otimizações nativas, ou seja, não demandam nenhum trabalho adicional para entregar um bom código;
 - Segurança de dados, uma vez que a checagem é feita em tempo de compilação;
 - Debugging melhorado;
-- Linguagens extremamente verbosas, o que aumenta a curba de aprendizado e a produtividade no início.
+- Linguagens extremamente verbosas, o que aumenta a curva de aprendizado e a produtividade no início.
 
 > E por que este é um bom exemplo de problema que criamos para o JavaScript?
 
@@ -93,7 +93,7 @@ Bom, abaixo segue um resumão das justificativas dadas pelo time de desenvolvime
 - Dart possui otimizações para execução de animações e transições em 60fps entre outras dezenas de otimizações built-in e nativas;
 - Dart possui características de linguagens dinâmicas e estáticas;
 - Tree shaking real, ou seja, você não precisa adicionar nenhuma complexidade para carregar APENAS os recursos que precisa;
-- A implementação OOP é real através de classes e interfaces, e com funcionaldades adicionais;
+- A implementação OOP é real através de classes e interfaces, e com funcionalidades adicionais;
 - [Overload de operador](https://en.wikipedia.org/wiki/Operator_overloading);
 - Melhor uso de [Generics](http://blog.sethladd.com/2012/01/generics-in-dart-or-why-javascript.html);
 - Possui praticamente todas as features existentes no TypeScript, e claro, também compila para JavaScript. O que é importante, já que é possível [desenvolver para web usando Dart](https://webdev.dartlang.org/);
@@ -109,7 +109,7 @@ E nessa altura do post, agora é hora de assimilar o mundo JavaScript e/ou React
 
 [Flutter Widgets](https://flutterbyexample.com/flutter-widgets/) são blocos de código reutilizáveis, ou seja, são equivalentes aos React e/ou React Native Components. Sem mais, nem menos. Simples assim.
 
-Uma coisa importante de dizer, é que os Widgets estão para o Flutter, como a água está para o vinho, ou seja, Widgets são partes fundamentais para se compreender Flutter, existe inclusive uma afirmativa que "Widgets são tudo em Flutter", o que não deixa de ser verdade.
+Uma coisa importante de dizer, é que os Widgets estão para o Flutter, como a água está para o vinho, ou seja, Widgets são partes fundamentais para se compreender o Flutter, até existe uma afirmativa que diz que "Widgets são tudo em Flutter", o que não deixa de ser verdade.
 
 ### Stateless e Stateful Widgets
 
@@ -149,7 +149,7 @@ Através do suporte de compilação JIT da linguagem Dart, Flutter injeta altera
 
 ### Application State Management
 
-E outra coisa incrível no universo Flutter, é que a comunidade vai além do conceito Redux que o ecossitema React/React Native e JavaScript amplamente adota como praticamente um standard.
+E outra coisa incrível no universo Flutter, é que a comunidade vai além do conceito Redux que o ecossistema React/React Native e JavaScript amplamente adota como praticamente um standard.
 
 Com Flutter, podemos combinar Redux ou até mesmo considerar o uso de outras propostas, como por exemplo InheritedWidget, BLoC e Scoped Model.
 
@@ -159,7 +159,7 @@ Para mais detalhes, recomendo a leitura [deste artigo](https://medium.com/flutte
 
 Por padrão, Dart é executada em uma única thread, a não ser que o desenvolvedor utilize [Isolates](https://api.dartlang.org/stable/2.1.0/dart-isolate/dart-isolate-library.html).
 
-Um Isolate permite isolar e controlar parte específica do [event loop](https://webdev.dartlang.org/articles/performance/event-loop) do Dart, possibilitando assim aplicações [multithreading](https://en.wikipedia.org/wiki/Multithreading).
+Isolate permite o isolamento e o controle de parte específica do [event loop](https://webdev.dartlang.org/articles/performance/event-loop) do Dart, possibilitando assim aplicações [multithreading](https://en.wikipedia.org/wiki/Multithreading).
 
 Para um desenvolvedor JavaScript, Isolates é uma solução semelhante aos [Web Workers](https://developer.mozilla.org/pt-BR/docs/Web/API/Web_Workers_API) ou a [Looper](https://developer.android.com/reference/android/os/Looper) para quem tiver alguma familiaridade com desenvolvimento Android.
 
@@ -167,7 +167,7 @@ Para um desenvolvedor JavaScript, Isolates é uma solução semelhante aos [Web 
 
 Como desenvolvedor React Native, a primeira feature que busquei quando iniciei meus estudos relacionados ao Flutter foi como era resolvido a questão de Routing/Navigation, e acredite, apesar do `react-navigation` atualmente ter um certo grau de maturidade para esse problema crônico do React Native, o Flutter já tem em sua primeira versão um sistema extremamente poderoso, e que não deixa nada a desejar se comparado ao `react-navigation`.
 
-Ah! E é importante mencionar que além de ser um sistema de fácil compreensão, versatilidade e customização, é 100% NATIVO, o que trás muito mais performance e controle nas transições.
+Ah! E é importante mencionar que além de ser um sistema de fácil compreensão, versatilidade e customização, é 100% NATIVO, diferentemente do `react-navigation`, o que trás muito mais performance e controle nas transições.
 
 Sim, é minha feature preferida 🤣
 
