@@ -135,7 +135,7 @@ No caso do Stateful Widgets, podemos controlar quando o Widget é carregado, atu
 
 ### OEM, Material e Cupertino Widgets
 
-Uma das principais vantagens do Flutter é a [não utilização de OEM Widgets](https://medium.com/flutter-io/why-flutter-doesnt-use-oem-widgets-94746e812510), ou seja, seus Botões, Listas entre os outros widgets visuais ou não-visuais do seu [catálogo de Widgets](https://flutter.io/docs/development/ui/widgets) foram criados do zero, e por isso, são independentes da plataforma que estão sendo executados, o que no fim, oferece muito mais flexibilidade de customização.
+Uma das principais vantagens do Flutter é a [não utilização de OEM Widgets](https://medium.com/flutter-io/why-flutter-doesnt-use-oem-widgets-94746e812510), ou seja, seus Botões, Listas entre os outros widgets visuais ou não-visuais do seu [catálogo de Widgets](https://flutter.io/docs/development/ui/widgets) foram criados do zero, e por isso, são independentes da versão da plataforma e/ou da plataforma que estão sendo executados, o que no fim, oferece muito mais flexibilidade de customização.
 
 E isso também inclui os Material e Cupertino Widgets, que são widgets com interface baseada no [Material Design (Android)](https://flutter.io/docs/development/ui/widgets/material) ou [Cupertino Design (iOS)](https://flutter.io/docs/development/ui/widgets/cupertino). 
 
@@ -195,7 +195,7 @@ Estou confiante em apostar nele, ao meu risco, claro, mas o que posso recomendar
 
 Flutter não possui oficialmente um JSX, DSX ou similar (ainda) para ajudar na escrita do código, e infelizmente, as vezes nos perdemos em dezenas de `(((`, `{{{`, `}}}` e `)))` na hora de criar nossos Widgets, mas não existir tal recurso, força de forma implícita a modularização de código, gerando códigos mais performáticos e que seguem boas práticas como [D.R.Y.](https://pt.wikipedia.org/wiki/Don%27t_repeat_yourself) e [K.I.S.S.](https://pt.wikipedia.org/wiki/Keep_It_Simple). 
 
-A verdade é que só busquei esse recurso, por já ter trabalhado com React/React Native e depois de um tempo, não faz muita falta, é questão de gosto mesmo.
+A verdade é que só busquei esse recurso, por já ter trabalhado com React/React Native, mas depois de um tempo em contato com Dart, não faz muita falta, é questão de gosto mesmo.
 
 ▲
 
