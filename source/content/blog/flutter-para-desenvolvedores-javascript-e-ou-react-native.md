@@ -79,9 +79,9 @@ E a resposta é: **Não**, são soluções completamente diferentes.
 
 Tudo bem que de ambos prometem a mesma coisa, mas na prática, divergem na forma que solucionam o problema que se propuseram resolver.
 
-Enquanto o React Native aplica o conceito de [bridge](https://facebook.github.io/react-native/docs/communication-ios), Flutter elimina isso completamente, pois com Flutter você não depende de um "tradutor" entre o Reino Nativo e o Reino JavaScript. 
+Enquanto o React Native aplica o conceito de [bridge](https://facebook.github.io/react-native/docs/communication-ios) o tempo todo, [Flutter elimina isso completamente em produção](https://medium.com/inloopx/native-apps-with-flutter-and-react-native-8d300805b3c6) através da compilação AOT.
 
-A linguagem Dart através do framework Flutter irá realmente compilar código nativo para iOS e Android.
+Com Flutter você só depende de um "tradutor" entre o Reino Nativo e o Reino Dart no ambiente de desenvolvimento, e em benefício de features como Hot Reload entre outras funcionalidades de desenvolvimento em tempo real.
 
 ### E porque Flutter usa Dart?
 
