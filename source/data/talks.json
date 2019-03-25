@@ -1,5 +1,13 @@
 [
   {
+    "talk_date": "2018-11-24",
+    "event": "HubCon",
+    "event_url": "https://www.instagram.com/hubcon/",
+    "location": "Belo Horizonte, Brazil",
+    "talk": "Blockchain com JavaScript",
+    "talk_url": "https://speakerdeck.com/obetomuniz/blockchain-com-javascript"
+  },
+  {
     "talk_date": "2017-09-23",
     "event": "Front in BH 2k17",
     "event_url": "https://frontinbh.com.br/",
