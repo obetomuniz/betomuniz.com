@@ -12,53 +12,55 @@ keywords: cors, corb, corp, spectre, meltdown, csrf, web-sec, security
 ---
 Quem ai já teve problemas com CORS?
 
-Mais fácil perguntar quem nunca teve, né?... E apesar de realmente ser irritante certas vezes, ao ponto de nos forçar o uso da flag `--disable-web-security` para resolver algo rápido durante o desenvolvimento, CORS é um recurso muito poderoso.
+Mais fácil perguntar quem nunca teve, né? E apesar de ser irritante às vezes, ao ponto de nos forçar o uso da flag `--disable-web-security` para resolver algo rápido durante o desenvolvimento, CORS é um recurso muito poderoso.
 
-E pra clarificar para quem não conhece ainda o tal do CORS..
+Mas pra clarificar um pouco para quem não conhece ainda o tal do CORS...
 
 ## Cross-Origin Resource Sharing
 
-**CORS** é o acrônimo de Cross-Origin Resource Sharing, que por sua vez, é uma especificação que visa criar um ambiente lógico de segurança no que diz respeito ao modo que consumimos conteúdo da web.
+**CORS** é o acrônimo de Cross-Origin Resource Sharing, que por sua vez, é uma especificação que visa criar um ambiente lógico de segurança no que diz respeito ao modo que consumimos conteúdo da web via browsers.
 
 Mas além de CORS, existem algumas outras abordagens que adicionam camadas extras de segurança na forma em que o browser se comunica com os servidores.
 
-Mas antes de continuar...
+E antes de seguir para estas outras abordagens...
 
 #### Só mais um pouquinho de CORS
 
-A proposta principal do CORS é que ao receber uma requisição do browser, o servidor responderá uma informação via HTTP header, e tal informação, define exatamente como o browser irá validar a origem da requisição.
+A proposta principal do CORS é que ao receber uma requisição do browser, o servidor responderá uma informação via HTTP header, e tal informação, definirá exatamente como o browser validará a origem da requisição.
 
-Por exemplo, supondo que um servidor aceite requisições **apenas** do domínio **dominio.com**, o servidor precisa responder o header `Access-Control-Allow-Origin` com o valor `http://dominio.com`.
+Por exemplo, supondo que um servidor aceite requisições **apenas** do domínio **meusite.com**, o servidor precisará simplesmente responder em suas requições com o header `Access-Control-Allow-Origin` e o valor `http://meusite.com` para habilitar o CORS no browser com essa regra.
 
-Há também a possibilidade de informar para o browser que qualquer origem pode acessar determinados recursos ou todos os recursos de um servidor. E para isso basta utilizar o valor `*` no header `Access-Control-Allow-Origin`. Por sua conta em risco, claro, pois isso não é recomendado.
+Há também a possibilidade de informar para o browser que qualquer origem pode acessar determinados recursos ou todos os recursos de um servidor. E para isso basta utilizar o valor `*` no header `Access-Control-Allow-Origin` globalmente ou em requisições específicas.
 
-E parando por aqui de falar de C.O.R.S, já que não é o único foco do post, para quem quiser saber mais, recomendo ler o post "[Política de Cross-Origin](https://medium.com/@anacoimbrag/pol%C3%ADtica-de-cross-origin-40b9beecdeca?source=linkShare-fe26223710c8-1555374957&_branch_match_id=583336704622738831)" da [Ana Coimbra](https://twitter.com/anacoimbrag) que possui bastante informação sobre o assunto.
+Mas parando por aqui de falar de C.O.R.S, já que não é o único foco do post, para quem quiser saber mais, recomendo o post "[Política de Cross-Origin](https://medium.com/@anacoimbrag/pol%C3%ADtica-de-cross-origin-40b9beecdeca?source=linkShare-fe26223710c8-1555374957&_branch_match_id=583336704622738831)" da [Ana Coimbra](https://twitter.com/anacoimbrag). Tem bastante informação sobre o assunto lá.
 
 ## CORB
 
-Seguindo em frente, vou falar do **Cross-Origin Read Blocking**, que por sua vez, valida as requisições antes mesmo delas serem requisitadas pelo browser. Tudo isso apenas com base no *MIME type* da requisição.
+Seguindo no post, agora vou falar do **Cross-Origin Read Blocking**, que por definição, valida requisições do browser antes mesmo de serem requisitadas. Tudo isso utilizando o *MIME type* da requisição como regra de validação.
 
 Por exemplo, uma requisição do tipo **style** deve fornecer o *MIME type* **text/css**, caso contrário, será bloqueada.
 
-Para habilitar este recurso, o servidor deve enviar o header `X-Content-Type-Options` com o valor `nosniff`. A proposta visa solucionar ataques maliciosos como **CSRF**, **Meltdown** e **Spectre**.
+Para habilitar este recurso, o servidor deve enviar o header `X-Content-Type-Options` com o valor `nosniff`.
+
+Essa proposta visa ajudar na segurança contra ataques maliciosos do tipo **CSRF**, **Meltdown** e **Spectre**.
 
 ## CORP
 
-Sobre o **Cross-Origin Resource Policy**, saiba que ele é um complemento ao CORB e só funciona para requisições definidas como `no-cors`, ou seja, requisições explicitamente sem proteção garantida de CORS
+Sobre o **Cross-Origin Resource Policy**, saiba que ele é um complemento ao CORB e só funciona para requisições definidas como `no-cors`, ou seja, requisições explicitamente sem proteção garantida de CORS.
 
 Para habilitar esse *cross-origin checker*, o servidor deve enviar o header `Cross-Origin-Resource-Policy` com o valor `same-origin` ou `same-site`.
 
 Com este header declarado pelo servidor, o browser irá invalidar respectivamente requisições `no-cors` de domínios com origem ou esquema de url diferente da origem da requisição.
 
-A proposta visa solucionar ataques maliciosos como **Meltdown** e **Spectre**.
+E como a CORB, essa proposta também visa ajudar contra ataques maliciosos do tipo **Meltdown** e **Spectre**.
 
 ## Conclusão
 
-Por mais burocrático que seja adotar esse processo durante o desenvolvimento, o uso correto deles certamente garantirá boas horas de sono para você e todos do seu time em suas aplicações em produção.
+Por mais burocrático que seja adotar esses processos durante o ínicio do desenvolvimento, o uso deles certamente ajudará a garantir algumas horas de sono tranquilo para você e seu time nas suas aplicações em produção.
 
-Vale lembrar que estas soluções são efetivas, mas não perfeitas, pois um acesso inesperado e malicioso ao servidor também pode ser feito através de browsers antigos (inseguros), que não suportam CORS, CORB e/ou CORP, mas também via terminais, sendo assim, seu servidor deve ser autossuficiente contra acessos indesejados.
+Vale lembrar que estas soluções são efetivas, mas não perfeitas, pois um acesso inesperado e malicioso ao servidor também pode ser feito através de browsers antigos (inseguros) que não suportam CORS, CORB e/ou CORP e também via terminais. Sendo assim, seu servidor deve ser autossuficiente contra acessos indesejados.
 
-E é isso, espero que tenham gostado, e se gostou, deixa um comentário.
+E é isso pessoas, espero que tenham gostado, e se gostou, deixa um comentário.
 
 ### Referências
 
