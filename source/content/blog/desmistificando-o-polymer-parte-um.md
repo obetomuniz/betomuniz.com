@@ -4,6 +4,7 @@ page_title: "Desmistificando o Polymer:"
 page_subtitle: "Olá Polymer!"
 document_title: "Beto Muniz — Desmistificando o Polymer : Olá Polymer!"
 date: 2014-11-16
+slug: desmistificando-o-polymer-parte-1
 url: /blog/desmistificando-o-polymer-parte-1/
 collection: blog
 layout: blog/post.hbs

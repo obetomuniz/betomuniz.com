@@ -3,6 +3,7 @@ title: "Comunidade nao da dinheiro"
 page_title: "\"Comunidade não dá dinheiro\""
 document_title: Beto Muniz — "Comunidade não dá dinheiro"
 date: 2017-09-26
+slug: comunidade-nao-da-dinheiro
 url: /blog/comunidade-nao-da-dinheiro/
 collection: blog
 layout: blog/post.hbs

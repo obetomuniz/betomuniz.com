@@ -3,6 +3,7 @@ title: "Blockchain e JavaScript"
 page_title: "Blockchain e JavaScript"
 document_title: Beto Muniz — Blockchain e JavaScript
 date: 2018-08-04
+slug: blockchain-e-javascript
 url: /blog/blockchain-e-javascript/
 collection: blog
 layout: blog/post.hbs

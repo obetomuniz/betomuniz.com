@@ -3,6 +3,7 @@ title: Simplificando o HTTP 2.0
 page_title: Simplificando o HTTP 2.0
 document_title: Beto Muniz — Simplificando o HTTP 2.0
 date: 2014-12-12
+slug: simplificando-o-http-2-0
 url: /blog/simplificando-o-http-2-0/
 collection: blog
 layout: blog/post.hbs

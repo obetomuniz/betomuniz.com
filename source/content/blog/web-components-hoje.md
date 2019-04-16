@@ -3,6 +3,7 @@ title: Web Components! Hoje!
 page_title: Web Components! Hoje!
 document_title: Beto Muniz — Web Components! Hoje!
 date: 2014-09-16
+slug: web-components-hoje
 url: /blog/web-components-hoje/
 collection: blog
 layout: blog/post.hbs

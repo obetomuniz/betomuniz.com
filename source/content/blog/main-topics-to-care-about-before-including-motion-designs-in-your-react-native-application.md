@@ -3,6 +3,7 @@ title: "Main topics to care about before including Motion Designs in your React 
 page_title: "Main topics to care about before including Motion Designs in your React Native application"
 document_title: Beto Muniz — Main topics to care about before including Motion Designs in your React Native application
 date: 2018-05-15
+slug: main-topics-to-care-about-before-including-motion-designs-in-your-react-native-application
 url: /blog/main-topics-to-care-about-before-including-motion-designs-in-your-react-native-application/
 collection: blog
 layout: blog/post.hbs

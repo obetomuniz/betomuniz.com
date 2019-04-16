@@ -3,6 +3,7 @@ title: "DEVDAY - Um evento de desenvolvedores para desenvolvedores"
 page_title: "DEVDAY - Um evento de desenvolvedores para desenvolvedores"
 document_title: "Beto Muniz — DEVDAY: Um evento de desenvolvedores para desenvolvedores"
 date: 2014-11-05
+slug: devday-um-evento-de-desenvolvedores-para-desenvolvedores
 url: /blog/devday-um-evento-de-desenvolvedores-para-desenvolvedores/
 collection: blog
 layout: blog/post.hbs

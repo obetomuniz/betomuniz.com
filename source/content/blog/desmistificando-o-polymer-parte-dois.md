@@ -4,6 +4,7 @@ page_title: "Desmistificando o Polymer:"
 page_subtitle: "Porque o Polymer?"
 document_title: "Beto Muniz — Desmistificando o Polymer : Porque o Polymer?"
 date: 2014-11-17
+slug: desmistificando-o-polymer-parte-2
 url: /blog/desmistificando-o-polymer-parte-2/
 collection: blog
 layout: blog/post.hbs

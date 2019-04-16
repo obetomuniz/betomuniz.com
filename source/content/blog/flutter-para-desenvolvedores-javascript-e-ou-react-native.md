@@ -3,6 +3,7 @@ title: "Flutter para desenvolvedores JavaScript e/ou React Native"
 page_title: "Flutter para desenvolvedores JavaScript e/ou React Native"
 document_title: Beto Muniz — Flutter para desenvolvedores JavaScript e/ou React Native
 date: 2019-01-15
+slug: flutter-para-desenvolvedores-javascript-e-ou-react-native
 url: /blog/flutter-para-desenvolvedores-javascript-e-ou-react-native/
 collection: blog
 layout: blog/post.hbs

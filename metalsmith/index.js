@@ -19,7 +19,7 @@ export default function() {
       metaKeyReadingTime: 'readingTime',
       speed: 275
     }),
-    metalsmithPermalinks(':collection/:title'),
+    metalsmithPermalinks(':collection/:slug'),
     metalsmithCollections({
       blog: {
         sortBy: 'date',

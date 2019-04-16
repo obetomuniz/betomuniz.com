@@ -3,6 +3,7 @@ title: "React Native and Spring Animations"
 page_title: "React Native and Spring Animations"
 document_title: Beto Muniz — React Native and Spring Animations
 date: 2018-08-05
+slug: react-native-and-spring-animations
 url: /blog/react-native-and-spring-animations/
 collection: blog
 layout: blog/post.hbs

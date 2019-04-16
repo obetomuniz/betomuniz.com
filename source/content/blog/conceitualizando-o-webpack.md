@@ -3,6 +3,7 @@ title: Conceitualizando o webpack
 page_title: Conceitualizando o webpack
 document_title: Beto Muniz — Conceitualizando o webpack
 date: 2017-02-14
+slug: conceitualizando-o-webpack
 url: /blog/conceitualizando-o-webpack/
 collection: blog
 layout: blog/post.hbs

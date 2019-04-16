@@ -3,6 +3,7 @@ title: "Service Workers: Be Offline"
 page_title: "Service Workers: Be Offline"
 document_title: "Beto Muniz — Service Workers: Be Offline"
 date: 2015-01-07
+slug: service-workers-be-offline
 url: /blog/service-workers-be-offline/
 collection: blog
 layout: blog/post.hbs
