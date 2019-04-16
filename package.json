@@ -17,6 +17,7 @@
     "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "concurrently": "^3.6.1",
     "del": "^3.0.0",
     "detect-port": "^1.2.3",
