@@ -12,7 +12,7 @@ keywords: cors, corb, corp, spectre, meltdown, csrf, web-sec, security
 ---
 Quem ai já teve problemas com CORS?
 
-Mais fácil perguntar quem nunca teve, né? E apesar de ser irritante às vezes, ao ponto de nos forçar o uso da flag `--disable-web-security` para resolver coisas rápidas durante o desenvolvimento, CORS é um recurso muito poderoso.
+Mais fácil perguntar quem nunca teve, né? E apesar de ser irritante às vezes e nos forçar o uso da flag `--disable-web-security` para resolver coisas rápidas durante o desenvolvimento, CORS é um recurso muito poderoso.
 
 Mas pra clarificar um pouco para quem não conhece ainda o tal do CORS...
 
