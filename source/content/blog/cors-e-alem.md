@@ -28,7 +28,7 @@ E antes de seguir para estas outras abordagens...
 
 A proposta principal do CORS é que ao receber uma requisição do browser, o servidor responderá uma informação via HTTP header, e tal informação, definirá exatamente como o browser validará a origem da requisição.
 
-Por exemplo, supondo que um servidor aceite requisições **apenas** do domínio **meusite.com**, o servidor precisará simplesmente responder em suas requições com o header `Access-Control-Allow-Origin` e o valor `http://meusite.com` para habilitar o CORS no browser com essa regra.
+Por exemplo, supondo que um servidor aceite requisições **apenas** do domínio **meusite.com**, o servidor precisará simplesmente responder suas requições com o header `Access-Control-Allow-Origin` e o valor `http://meusite.com` para habilitar o CORS no browser com essa regra.
 
 Há também a possibilidade de informar para o browser que qualquer origem pode acessar determinados recursos ou todos os recursos de um servidor. E para isso basta utilizar o valor `*` no header `Access-Control-Allow-Origin` globalmente ou em requisições específicas.
 
@@ -36,7 +36,7 @@ Mas parando por aqui de falar de C.O.R.S, já que não é o único foco do post,
 
 ## CORB
 
-Seguindo no post, agora vou falar do **Cross-Origin Read Blocking**, que por definição, valida requisições do browser antes mesmo de serem requisitadas. Tudo isso utilizando o *MIME type* da requisição como regra de validação.
+Seguindo no post, agora vou falar do **Cross-Origin Read Blocking**, que por definição, valida requisições do browser antes mesmo de serem requisitadas no servidor. Tudo isso utilizando o *MIME type* da requisição como regra de validação.
 
 Por exemplo, uma requisição do tipo **style** deve fornecer o *MIME type* **text/css**, caso contrário, será bloqueada.
 
