@@ -7,8 +7,8 @@ cd /var/www/betomuniz.com/
 git checkout --force master
 git pull origin master
 
-echo "3. Install dependencies, build and run the server"
-npm install && npm rebuild && npm run build
+echo "3. Install dependencies and build"
+yarn install && yarn build
 
 echo 'Done!'
 

@@ -1,6 +1,6 @@
 import del from 'del';
 import fs from 'fs';
-import gulp from 'gulp';
+import { src, dest, series, watch } from 'gulp';
 import gulpAutoprefixer from 'gulp-autoprefixer';
 import gulpCSSO from 'gulp-csso';
 import gulpImagemin from 'gulp-imagemin';
@@ -15,24 +15,13 @@ import path from 'path';
 import webpack from 'webpack';
 import webpackPluginUglifyJS from 'uglifyjs-webpack-plugin';
 
-gulp.task('clean-old-build', () => {
-  return del.sync([path.join('public/**/*')]);
-});
+const cleanOldBuild = function(cb) {
+  del.sync([path.join('public/**/*')]);
+  cb();
+}
 
-gulp.task(
-  'shell',
-  ['metalsmith'],
-  gulpShell.task([
-    'mv ./public/blog/feed/index.html ./public/blog/feed.xml && rm -rf ./public/blog/feed/',
-    'mv ./public/sitemap/index.html ./public/sitemap.xml && rm -rf ./public/sitemap/',
-    'cp ./source/static/robots.txt ./public/robots.txt',
-    'cp ./source/static/googleac7fd0fa4feb55aa.html ./public/googleac7fd0fa4feb55aa.html'
-  ])
-);
-
-gulp.task('metalsmith', () => {
-  return gulp
-    .src(path.join('source/content/**/*.md'))
+const metalsmith = function() {
+  return src(path.join('source/content/**/*.md'))
     .pipe(
       gulpMetalsmith({
         use: metalsmithConfigs(),
@@ -42,49 +31,23 @@ gulp.task('metalsmith', () => {
         }
       })
     )
-    .pipe(gulp.dest(path.join('public')))
+    .pipe(dest(path.join('public')))
     .pipe(gulpLivereload());
-});
+}
 
-gulp.task('styles', () => {
-  return gulp
-    .src(path.join('source/styles/**/*.scss'))
-    .pipe(gulpSourcemaps.init())
-    .pipe(gulpSass({ outputStyle: 'compressed' }))
-    .pipe(gulpSourcemaps.write('.'))
-    .pipe(gulp.dest(path.join('public/assets/styles')))
-    .pipe(gulpLivereload());
-});
+const shell = function(cb) {
+  gulpShell.task([
+    'mv ./public/blog/feed/index.html ./public/blog/feed.xml && rm -rf ./public/blog/feed/',
+    'mv ./public/sitemap/index.html ./public/sitemap.xml && rm -rf ./public/sitemap/',
+    'cp ./source/static/robots.txt ./public/robots.txt',
+    'cp ./source/static/googleac7fd0fa4feb55aa.html ./public/googleac7fd0fa4feb55aa.html'
+  ])
 
-gulp.task('autoprefix', ['styles'], () => {
-  return gulp
-    .src(path.join('public/assets/styles/**/*.css'))
-    .pipe(gulpSourcemaps.init())
-    .pipe(gulpAutoprefixer())
-    .pipe(gulpSourcemaps.write('.'))
-    .pipe(gulp.dest(path.join('public/assets/styles')))
-    .pipe(gulpLivereload());
-});
+  cb();
+}
 
-gulp.task('csso', ['autoprefix'], () => {
-  return gulp
-    .src(path.join('public/assets/styles/**/*.css'))
-    .pipe(gulpSourcemaps.init())
-    .pipe(
-      gulpCSSO({
-        restructure: false,
-        sourceMap: true,
-        debug: true
-      })
-    )
-    .pipe(gulpSourcemaps.write('.'))
-    .pipe(gulp.dest(path.join('public/assets/styles')))
-    .pipe(gulpLivereload());
-});
-
-gulp.task('scripts', () => {
-  return gulp
-    .src(path.join('source/scripts/index.js'))
+const scripts = function(cb) {
+  return src(path.join('source/scripts/index.js'))
     .pipe(
       gulpWebpack(
         {
@@ -122,36 +85,74 @@ gulp.task('scripts', () => {
         webpack
       )
     )
-    .pipe(gulp.dest(path.join('public/assets/scripts')))
+    .pipe(dest(path.join('public/assets/scripts')))
     .pipe(gulpLivereload());
-});
+}
 
-gulp.task('images', () => {
-  return gulp
-    .src(path.join('source/images/**/*'))
-    .pipe(
-      gulpImagemin(
-        [
-          gulpImagemin.gifsicle(),
-          gulpImagemin.jpegtran(),
-          gulpImagemin.optipng(),
-          gulpImagemin.svgo({
-            plugins: [{ cleanupIDs: false }, { removeViewBox: false }, { minifyStyles: false }, { removeUselessDefs: false }]
-          })
-        ],
-        { verbose: true }
+const styles = function() {
+  return src(path.join('source/styles/**/*.scss'))
+    .pipe(gulpSourcemaps.init())
+    .pipe(gulpSass({ outputStyle: 'compressed' }))
+    .pipe(gulpSourcemaps.write('.'))
+    .pipe(dest(path.join('public/assets/styles')))
+    .pipe(gulpLivereload());
+}
+
+const autoprefix = function() {
+  return src(path.join('public/assets/styles/**/*.css'))
+    .pipe(gulpSourcemaps.init())
+    .pipe(gulpAutoprefixer())
+    .pipe(gulpSourcemaps.write('.'))
+    .pipe(dest(path.join('public/assets/styles')))
+    .pipe(gulpLivereload());
+}
+
+const csso = function() {
+  return src(path.join('public/assets/styles/**/*.css'))
+  .pipe(gulpSourcemaps.init())
+  .pipe(
+    gulpCSSO({
+      restructure: false,
+      sourceMap: true,
+      debug: true
+    })
+  )
+  .pipe(gulpSourcemaps.write('.'))
+  .pipe(dest(path.join('public/assets/styles')))
+  .pipe(gulpLivereload());
+}
+
+const images = function() {
+  return src(path.join('source/images/**/*'))
+      .pipe(
+        gulpImagemin(
+          [
+            gulpImagemin.gifsicle(),
+            gulpImagemin.jpegtran(),
+            gulpImagemin.optipng(),
+            gulpImagemin.svgo({
+              plugins: [{ cleanupIDs: false }, { removeViewBox: false }, { minifyStyles: false }, { removeUselessDefs: false }]
+            })
+          ],
+          { verbose: true }
+        )
       )
-    )
-    .pipe(gulp.dest(path.join('public/assets/images')))
-    .pipe(gulpLivereload());
-});
+      .pipe(dest(path.join('public/assets/images')))
+      .pipe(gulpLivereload());
+}
 
-gulp.task('default', ['clean-old-build', 'metalsmith', 'shell', 'scripts', 'styles', 'autoprefix', 'csso', 'images'], () => {
+const development = function(cb) {
   gulpLivereload.listen();
-  gulp.watch([path.join('source/content/**'), path.join('source/layouts/**/*.hbs'), path.join('source/data/**')], ['metalsmith', 'shell']);
-  gulp.watch(path.join('source/scripts/**/*.js'), ['scripts']);
-  gulp.watch(path.join('source/styles/**/*.scss'), ['styles', 'autoprefix', 'csso']);
-  gulp.watch(path.join('source/images/**/*'), ['images']);
-});
+  watch([path.join('source/content/**'), path.join('source/layouts/**/*.hbs'), path.join('source/data/**')], series(metalsmith, shell));
+  watch(path.join('source/scripts/**/*.js'), scripts);
+  watch(path.join('source/styles/**/*.scss'), series(styles, autoprefix, csso));
+  watch(path.join('source/images/**/*'), images);
+  cb();
+}
 
-gulp.task('build', ['clean-old-build', 'metalsmith', 'shell', 'scripts', 'styles', 'autoprefix', 'csso', 'images']);
+export const build = series(cleanOldBuild, metalsmith, shell, scripts, styles, autoprefix, csso, images);
+
+export default series(
+  series(cleanOldBuild, metalsmith, shell, scripts, styles, autoprefix, csso, images),
+  development
+);
