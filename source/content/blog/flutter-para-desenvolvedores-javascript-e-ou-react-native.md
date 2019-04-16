@@ -12,7 +12,7 @@ keywords: flutter, javascript, react native, dart, react, typescript
 ---
 ## O início
 
-Partindo de que já estamos em 2019 e de que mesmo estudando 24 horas por dia ainda não saberíamos de quase nada. 
+Partindo de que estamos em 2019 e de que mesmo estudando 24 horas por dia ainda não saberíamos de quase nada. 
 
 Este post visa quebrar preconceitos de quem ainda está em dúvida sobre investir tempo aprendendo Flutter (ou outra tecnologia).
 
