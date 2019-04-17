@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 40px;
+  padding: 0 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -16,12 +17,15 @@
     line-height: 2.5rem;
     color: #222222;
     font-weight: bold;
-    width: 700px;
 
     &:hover {
       color: #777777;
       text-decoration: underline;
     }
+  }
+
+  &__name {
+    flex: 1;
   }
 
   &__logo {
@@ -51,7 +55,6 @@
     &__link {
       font-size: 1.2rem;
       line-height: 1.5rem;
-      width: 245px;
     }
 
     &__logo {
