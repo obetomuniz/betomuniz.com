@@ -9,6 +9,12 @@
     "build": "./node_modules/.bin/gulp build",
     "test": "echo 123"
   },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "semi": true,
+    "bracketSpacing": true
+  },
   "license": "MIT",
   "author": "Beto Muniz <contato@betomuniz.com>",
   "devDependencies": {
