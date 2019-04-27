@@ -44,7 +44,7 @@ Toda via, já é possível experimentar a biblioteca WorkerDOM em conjunto com R
 
 Não irei desenvolver nenhuma demonstração prática, pois no repositório da biblioteca WorkerDOM existe uma variedade delas, porém destaco a [react-map](https://github.com/ampproject/worker-dom/tree/master/demo/react-map) e a [filtered-hydration](https://github.com/ampproject/worker-dom/tree/master/demo/filtered-hydration), pois respectivamente exemplificam a interoperabilidade com ferramentas atuais do mercado e com técnicas recomendadas pelo AMP Project.
 
-## Bonus: WorkerDOM vs VDOM
+## Bônus: WorkerDOM vs VDOM
 
 Como não é o foco do post, vou deixar um link nas referências sobre o que é **VDOM (Virtual DOM)**, mas como estamos falando sobre isolar o processamento de operações no DOM em instâncias independentes da _main thread_ do DOM, é comum confundir WorkerDOM e VDOM, porém no caso do WorkerDOM, mesmo isolando as operações DOM em _threads_ diferentes, as operações de manipulação do DOM continuarão acontecendo, ou seja, VDOM e WorkerDOM podem coexistir. E certamente é algo sem precedentes em termos de performance na manipulação do DOM.
 
