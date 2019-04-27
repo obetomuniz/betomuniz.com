@@ -46,7 +46,7 @@ Não irei desenvolver nenhuma demonstração prática, pois no repositório da b
 
 ## Bonus: WorkerDOM vs VDOM
 
-Como não é o foco do post, vou deixar um link nas referências sobre o que é **VDOM (Virtual DOM)**, mas como estamos falando sobre isolar o processamento de operações no DOM em instâncias independentes da _main thread_ do DOM, é comum confundir WorkerDOM e VDOM, porém no caso do WorkerDOM, mesmo isolando as operações DOM em _threads_ diferentes, as operações de manipulação do DOM continuarão acontecendo, ou seja, VDOM e WorkerDOM podem coexistir. E certamente é algo sem precedentes em termos de performance e manipulação do DOM.
+Como não é o foco do post, vou deixar um link nas referências sobre o que é **VDOM (Virtual DOM)**, mas como estamos falando sobre isolar o processamento de operações no DOM em instâncias independentes da _main thread_ do DOM, é comum confundir WorkerDOM e VDOM, porém no caso do WorkerDOM, mesmo isolando as operações DOM em _threads_ diferentes, as operações de manipulação do DOM continuarão acontecendo, ou seja, VDOM e WorkerDOM podem coexistir. E certamente é algo sem precedentes em termos de performance na manipulação do DOM.
 
 E era isso pessoas, espero que tenham gostado do post e do assunto. E se gostou, deixa um comentário.
 
