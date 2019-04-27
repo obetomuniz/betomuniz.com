@@ -3,7 +3,7 @@ title: 'WorkerDOM: O renascimento do AMP'
 page_title: 'WorkerDOM:'
 page_subtitle: 'O renascimento do AMP'
 document_title: 'Beto Muniz — WorkerDOM: O renascimento do AMP'
-date: 2019-04-30
+date: 2019-04-29
 slug: workerdom-o-renascimento-do-amp
 url: /blog/workerdom-o-renascimento-do-amp/
 collection: blog
