@@ -1,5 +1,6 @@
 import del from 'del';
 import fs from 'fs';
+import { exec } from 'child_process';
 import { src, dest, series, watch } from 'gulp';
 import gulpAutoprefixer from 'gulp-autoprefixer';
 import gulpCSSO from 'gulp-csso';
@@ -36,12 +37,17 @@ const metalsmith = function() {
 };
 
 const shell = function(cb) {
-  gulpShell.task([
+  const cmds = [
     'mv ./public/blog/feed/index.html ./public/blog/feed.xml && rm -rf ./public/blog/feed/',
     'mv ./public/sitemap/index.html ./public/sitemap.xml && rm -rf ./public/sitemap/',
     'cp ./source/static/robots.txt ./public/robots.txt',
+    'cp ./source/static/site.webmanifest ./public/site.webmanifest',
     'cp ./source/static/googleac7fd0fa4feb55aa.html ./public/googleac7fd0fa4feb55aa.html'
-  ]);
+  ];
+
+  for (let index = 0; index < cmds.length; index++) {
+    const element = exec(cmds[index]);
+  }
 
   cb();
 };
