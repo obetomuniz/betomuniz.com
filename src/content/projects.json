@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Minas Dev",
+    "url": "https://minasdev.org",
+    "image": "https://user-images.githubusercontent.com/1680157/31467826-c337baa6-aeb1-11e7-89da-d53cfc40bebd.png",
+    "manual": true
+  },
+  {
+    "name": "reeakt",
+    "url": "https://github.com/obetomuniz/reeakt",
+    "github": true
+  },
+  {
+    "name": "Tatooine",
+    "url": "https://github.com/obetomuniz/tatooine",
+    "github": true
+  },
+  {
+    "name": "Semantic Web Autocomplete for Atom",
+    "url": "https://github.com/obetomuniz/autocomplete-semantic-web",
+    "github": true
+  },
+  {
+    "name": "<number-format>",
+    "url": "http://obetomuniz.github.io/number-format",
+    "github": true
+  },
+  {
+    "name": "Awesome Web Components",
+    "url": "https://github.com/obetomuniz/awesome-webcomponents",
+    "github": true
+  },
+  {
+    "name": "WebComponents.org",
+    "url": "http://webcomponents.org/",
+    "image": "https://web-components-resources.appspot.com/static/logo.svg",
+    "manual": true
+  },
+  {
+    "name": "LearnLayout.com",
+    "url": "http://pt-br.learnlayout.com",
+    "image": "https://user-images.githubusercontent.com/1680157/31467825-c3199490-aeb1-11e7-9b62-97d6377b4c3d.png",
+    "manual": true
+  },
+  {
+    "name": "Slush Element",
+    "url": "https://github.com/webcomponents/slush-element",
+    "github": true
+  }
+]
