@@ -29,7 +29,11 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
+<<<<<<< HEAD
         context: {},
+=======
+        context: {}, // additional data can be passed via context
+>>>>>>> 791136439551363f364eaa27c232d5b9c21bf3b3
       })
     })
   })
