@@ -4,14 +4,14 @@ import PropTypes from "prop-types"
 import Header from "../header"
 import Footer from "../footer"
 
-import { GlobalStyle } from "./ui"
+import { GlobalStyle, Container } from "./ui"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <main>{children}</main>
+      <Header location={location} />
+      <Container>{children}</Container>
       <Footer />
     </>
   )

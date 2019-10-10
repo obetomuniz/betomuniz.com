@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   *,:after,:before{box-sizing:inherit}html{box-sizing:border-box}
@@ -17,4 +17,29 @@ export const GlobalStyle = createGlobalStyle`
   img{display:block;width:100%}
   body,h1,h2,h3,h4,h5,h6,p{margin:0;font-size:1rem;font-weight:400}
   body{line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-family: 'Noto Sans', sans-serif;}
+
+  body.center {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 440px) {
+    body.center {
+      min-height: auto;
+    }
+  }
+`
+
+export const Container = styled.div`
+  width: 765px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 440px) {
+    width: 300px;
+    padding: 0 10px;
+  }
 `

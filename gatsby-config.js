@@ -3,18 +3,20 @@ module.exports = {
   siteMetadata: {
     title: `Beto Muniz`,
     author: `@obetomuniz`,
+    url: `https://betomuniz.com`,
   },
   plugins: [
+    `gatsby-transformer-json`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: `${__dirname}/src/static/images`, // See below to configure properly
+          include: `${__dirname}/src/static/images`,
         },
       },
     },
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,7 +33,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/static/images/betomunizcom-icon.png`, // This path is relative to the root of the site.
+        icon: `src/static/images/betomunizcom-icon.png`,
       },
     },
     {
@@ -41,7 +43,31 @@ module.exports = {
         path: `${__dirname}/src/content/posts`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `obetomuniz`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-prismjs`, `gatsby-remark-reading-time`],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-31461010-1",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

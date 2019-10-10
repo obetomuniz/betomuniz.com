@@ -1,31 +1,48 @@
 import React from "react"
-import { Link } from "gatsby"
 
-const Header = () => (
-  <header>
-    <Link to="/">
-      <img
+import {
+  Container,
+  Photo,
+  PhotoImage,
+  Nav,
+  NavList,
+  NavListItem,
+  NavLink,
+} from "./ui"
+
+const Header = ({ location }) => (
+  <Container>
+    <Photo to="/">
+      <PhotoImage
         alt="Beto Muniz"
         src="https://www.gravatar.com/avatar/fff7258836f20ea66b061b49a51fe8dd?s=170"
       />
-    </Link>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">About</Link>
-        </li>
-        <li>
-          <Link to="/blog/">Blog</Link>
-        </li>
-        <li>
-          <Link to="/projects/">Projects</Link>
-        </li>
-        <li>
-          <Link to="/talks/">Talks</Link>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    </Photo>
+    <Nav>
+      <NavList>
+        <NavListItem>
+          <NavLink to="/" activeClassName={"active"}>
+            About
+          </NavLink>
+        </NavListItem>
+        <NavListItem>
+          <NavLink to="/blog/" activeClassName={"active"}>
+            Blog
+          </NavLink>
+        </NavListItem>
+        <NavListItem>
+          <NavLink to="/projects/" activeClassName={"active"}>
+            Projects
+          </NavLink>
+        </NavListItem>
+        <NavListItem>
+          <NavLink to="/talks/" activeClassName={"active"}>
+            Talks
+          </NavLink>
+        </NavListItem>
+      </NavList>
+    </Nav>
+  </Container>
 )
 
 export default Header

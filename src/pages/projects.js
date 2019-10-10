@@ -1,82 +1,40 @@
 import React from "react"
+import { graphql } from "gatsby"
 
-import { Layout, SEO } from "../components"
+import { Layout, SEO, ProjectList } from "../components"
 
-import projects from "../content/projects.json"
-
-const ProjectListItemManual = ({ name, url, image }) => {
+const ProjectsPage = ({
+  data: {
+    allProjectsJson: { edges },
+  },
+}) => {
   return (
-    <li>
-      <h4>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          {name}
-        </a>
-      </h4>
-      <div>
-        <img src={image} alt={`${name} Logo`} />
-      </div>
-    </li>
-  )
-}
-
-const ProjectListItemGithub = ({ name, url }) => {
-  return (
-    <li>
-      <h4>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          {name}
-        </a>
-      </h4>
-      <div>
-        <svg>
-          <use href="#github" />
-        </svg>
-      </div>
-    </li>
-  )
-}
-
-const ProjectList = ({ data }) => {
-  return (
-    <ul>
-      {data.map(({ manual, name, url, image }, index) => {
-        if (manual) {
-          return (
-            <ProjectListItemManual
-              key={`project-${index}`}
-              name={name}
-              url={url}
-              image={image}
-            />
-          )
-        }
-
-        return (
-          <ProjectListItemGithub
-            key={`project-${index}`}
-            name={name}
-            url={url}
-          />
-        )
-      })}
-    </ul>
-  )
-}
-
-const ProjectsPage = () => {
-  return (
-    <Layout>
+    <Layout location="/projects/">
       <SEO
         title="Projects"
-        description="Beto Muniz as a community contributor."
+        description="Beto Muniz as a community contributor and creator."
         keywords="beto, muniz, open source, projects, beto muniz, betomuniz"
       />
 
       <section>
-        <ProjectList data={projects} />
+        <ProjectList data={edges} />
       </section>
     </Layout>
   )
 }
 
 export default ProjectsPage
+
+export const pageQuery = graphql`
+  query {
+    allProjectsJson {
+      edges {
+        node {
+          name
+          url
+          image
+        }
+      }
+    }
+  }
+`
