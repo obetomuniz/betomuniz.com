@@ -61,11 +61,11 @@ export const NavListItem = styled.li`
 export const NavLink = styled(Link)`
   color: #777777;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 
   &:hover,
   &.active {
-    color: #000000;
+    color: darkblue;
     font-weight: 700;
   }
 `

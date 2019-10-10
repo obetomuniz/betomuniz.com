@@ -15,13 +15,13 @@ export const Container = styled.li`
 export const Name = styled.span`
   text-decoration: none;
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 2.2rem;
   color: #222222;
   font-weight: bold;
 
   &:hover {
-    color: ${({ as }) => (as === "a" ? "#777777" : "currentColor")};
+    color: ${({ as }) => (as === "a" ? "darkblue" : "currentColor")};
     text-decoration: ${({ as }) => (as === "a" ? "underline" : "none")};
   }
 

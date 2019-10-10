@@ -14,7 +14,7 @@ export const Container = styled.div`
 export const Header = styled.section``
 
 export const Title = styled.h1`
-  color: #000000;
+  color: darkblue;
   font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
@@ -65,7 +65,7 @@ export const Content = styled.main`
   p {
     color: #333333;
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 400;
     line-height: 1.8rem;
     letter-spacing: 0.01rem;
@@ -73,8 +73,9 @@ export const Content = styled.main`
 
     code {
       background: #eeeeee;
+      color: #333333;
       display: inline-block;
-      padding: 0 5px;
+      padding: 0 8px;
       font-family: "Courier New", serif;
     }
   }
@@ -92,9 +93,8 @@ export const Content = styled.main`
   h2,
   h3,
   h4 {
-    color: #000000;
+    color: darkblue;
     line-height: 2.3rem;
-    font-family: "Arial", sans-serif;
     font-weight: bold;
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
   }
@@ -117,9 +117,10 @@ export const Content = styled.main`
   }
 
   img {
+    border-radius: 5px;
     max-width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto ${UI.DEFAULT_POST_MARGIN_BOTTOM};
     box-shadow: 0 10px 6px -7px #999999;
   }
 
@@ -167,7 +168,7 @@ export const Content = styled.main`
 
   .gatsby-highlight {
     box-shadow: 0 10px 6px -8px #bbbbbb;
-    background-color: #282c34;
+    background-color: rgb(45, 45, 45);
     border-radius: 5px;
     padding: 20px;
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
@@ -245,6 +246,10 @@ export const Content = styled.main`
 
     h4 {
       font-size: 1.4rem;
+    }
+
+    img {
+      margin: 0 auto ${UI.DEFAULT_POST_MARGIN_BOTTOM_MOBILE};
     }
 
     ul,

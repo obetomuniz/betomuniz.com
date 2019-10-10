@@ -23,6 +23,7 @@ export const TextLink = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    color: #777777;
+    color: darkblue;
+    text-decoration: underline;
   }
 `

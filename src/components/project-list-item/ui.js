@@ -30,7 +30,7 @@ export const Name = styled.a`
   font-weight: bold;
 
   &:hover {
-    color: #777777;
+    color: darkblue;
     text-decoration: underline;
   }
 

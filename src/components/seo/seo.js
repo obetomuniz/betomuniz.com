@@ -80,12 +80,7 @@ function SEO({
           content: description,
         },
       ].concat(meta)}
-    >
-      <link
-        href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700"
-        rel="stylesheet"
-      ></link>
-    </Helmet>
+    ></Helmet>
   )
 }
 

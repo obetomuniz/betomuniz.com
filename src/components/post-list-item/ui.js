@@ -18,7 +18,7 @@ export const PostLink = styled.a`
   font-weight: bold;
 
   &:hover {
-    color: #777777;
+    color: darkblue;
     text-decoration: underline;
   }
 
