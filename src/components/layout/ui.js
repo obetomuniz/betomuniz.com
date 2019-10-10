@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components"
 
+import { UI } from "../../constants"
+
 export const GlobalStyle = createGlobalStyle`
   *,:after,:before{box-sizing:inherit}html{box-sizing:border-box}
   *{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent}
@@ -16,20 +18,28 @@ export const GlobalStyle = createGlobalStyle`
   svg{display:inline-flex}
   img{display:block;width:100%}
   body,h1,h2,h3,h4,h5,h6,p{margin:0;font-size:1rem;font-weight:400}
-  body{font-family: "Times New Roman", serif;line-height: 1;}
 
-  body.center {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    min-height: 600px;
-    align-items: center;
-    justify-content: center;
+  body{
+    font-family: ${UI.DEFAULT_SAN_SERIF_FONTS};
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+
+    &.center {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      min-height: 600px;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   @media screen and (max-width: 440px) {
-    body.center {
-      min-height: auto;
+    body{
+      &.center {
+        min-height: auto;
+      }
     }
   }
 `
