@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   svg{display:inline-flex}
   img{display:block;width:100%}
   body,h1,h2,h3,h4,h5,h6,p{margin:0;font-size:1rem;font-weight:400}
-  body{font-family: "Times New Roman", serif;line-height: 1; background-color: #f0f0f0;}
+  body{font-family: "Times New Roman", serif;line-height: 1;}
 
   body.center {
     display: flex;
