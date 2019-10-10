@@ -36,7 +36,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages",
+    "deploy": "gatsby build && touch public/.nojekyll && echo 'betomuniz.com' > public/CNAME && gh-pages -d public -b gh-pages",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
