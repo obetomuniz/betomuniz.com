@@ -4,6 +4,7 @@ date: "2018-08-04"
 path: "/blog/blockchain-e-javascript/"
 description: "Saiba o estado atual da combinação promissora entre Blockchain e JavaScript."
 keywords: "blockchain, javascript, ark, lisk, lsk, ethereum, web3js, truffle"
+category: "tech"
 ---
 
 Se você chegou neste post achando que iria aprender mais sobre [Bitcoin](https://pt.wikipedia.org/wiki/Bitcoin), [Ethereum](https://www.ethereum.org/), [Solidity](https://en.wikipedia.org/wiki/Solidity), [web3.js](https://github.com/ethereum/web3.js/) e todo o feijão com o arroz que já existe por aí. Sinto muito, mas você achou errado!
@@ -34,11 +35,11 @@ Compreendendo a aplicabilidade diversificada do blockchain como conceito, fica c
 
 Hoje em dia, arremetemos que para utilizarmos Blockchain com JavaScript, o único caminho viável é utilizando tecnologias como:
 
-  - Ethereum
-  - Solidity (E demais linguagens compiladas na EVM para Smart Contracts)
-  - web3.js
-  - [truffle](https://github.com/trufflesuite/truffle)
-  - ...
+- Ethereum
+- Solidity (E demais linguagens compiladas na EVM para Smart Contracts)
+- web3.js
+- [truffle](https://github.com/trufflesuite/truffle)
+- ...
 
 Porém isso é um grande equívoco, pois já existem tecnologias blockchain que almejam eliminar qualquer abstração entre **conceito** (Blockchain) e **utilização** (JavaScript).
 
@@ -58,6 +59,7 @@ Além disso, Lisk utiliza-se principalmente de um conceito chamado de [Sidechain
 Mas como nem tudo são rosas, um longo [roadmap](https://www.reddit.com/r/Lisk/comments/7fe4ux/lisk_development_roadmap/) até os 100% das operações precisará ser percorrido, porém até o fim deste ano de 2018 será lançado o suporte completo para [aplicações decentralizadas](https://livecoins.com.br/o-que-sao-dapps-e-qual-sua-importancia/) dentro do ecossistema Lisk.
 
 ## ARK
+
 <img src="https://user-images.githubusercontent.com/1680157/43661989-947f9234-973a-11e8-9571-ca50b2580764.png" style="box-shadow: none" />
 
 ARK é uma plataforma, que tem uma missão semelhante à Lisk, que é a de facilitar a adoção em massa de aplicações blockchain como solução conceitual de tecnologia, porém ela vai além do JavaScript, pois deseja gerar um ambiente flexível, adaptável e escalável para que qualquer linguagem **E** blockchain possa se comunicar.
@@ -66,15 +68,13 @@ A relação da ARK com JavaScript é criada através de um [client](https://gith
 
 Atualmente, o ecossistema passa por uma relevante mudança de arquitetura, e com o lançamento da ARK Core V2, será inclusive possível criar [Smart Contracts](https://en.wikipedia.org/wiki/Smart_contract) com JavaScript 🤩.
 
-#### E é isso... 
+#### E é isso...
 
-Para não deixar o post muito longo, que fique claro que *Blockchain está para o JavaScript como o JavaScript está para Blockchain*. 
+Para não deixar o post muito longo, que fique claro que _Blockchain está para o JavaScript como o JavaScript está para Blockchain_.
 
 E saiba que o mercado blockchain brasileiro está aquecido, e inclusive, haverá utilização significativa nas eleições deste ano.
 
 Por fim, futuramente irei trazer mais posts sobre Lisk, ARK, Ethereum, ÐApps e outras curiosidades relacionadas ao mundo das criptomoedas e blockchains.
-
-▲
 
 ### Referências:
 
@@ -83,3 +83,5 @@ Por fim, futuramente irei trazer mais posts sobre Lisk, ARK, Ethereum, ÐApps e 
 - [What is Bitcoin?](https://www.blockchain.com/learning-portal/bitcoin-faq)
 - [What is Ethereum?](https://www.blockchain.com/learning-portal/ether-basics)
 - [Como implementar Blockchain em JavaScript](https://tableless.com.br/como-implementar-blockchain-em-javascript/)
+
+▲

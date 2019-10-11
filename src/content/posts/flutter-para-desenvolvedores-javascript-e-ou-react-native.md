@@ -4,10 +4,12 @@ date: "2019-01-15"
 path: "/blog/flutter-para-desenvolvedores-javascript-e-ou-react-native/"
 description: "Um artigo sobre Flutter para desenvolvedores JavaScript e/ou React Native."
 keywords: "flutter, javascript, react native, dart, react, typescript"
+category: "tech"
 ---
+
 ## O início
 
-Partindo de que estamos em 2019 e de que mesmo estudando 24 horas por dia ainda não saberíamos de quase nada. 
+Partindo de que estamos em 2019 e de que mesmo estudando 24 horas por dia ainda não saberíamos de quase nada.
 
 Este post visa quebrar preconceitos de quem ainda está em dúvida sobre investir tempo aprendendo Flutter (ou outra tecnologia).
 
@@ -17,7 +19,7 @@ E pra compreender um pouco desse bloqueio mental (ou auto sabotagem de conhecime
 
 Para isso, precisamos reconhecer que mesmo o JavaScript sendo universal e onipresente, ele não é perfeito.
 
-> 😮  Por que o Beto está falando isso do meu precioso?
+> 😮 Por que o Beto está falando isso do meu precioso?
 
 Por que o JavaScript nem sempre consegue resolver os problemas que criamos para ele... Quer um exemplo? Tipos.
 
@@ -43,7 +45,7 @@ E qual seria a opção de uma linguagem dinamicamente tipada? Linguagens estatic
 
 Por que é cada vez mais considerado uma boa prática aplicar os benefícios de linguagens estaticamente tipadas no JavaScript.
 
-E entre as soluções mais famosas temos [TypeScript](https://www.typescriptlang.org/) e [Flow](https://flow.org/), mas podemos incluir [PureScript](http://www.purescript.org/) e [Reason](https://reasonml.github.io/), que vão pra outra direção, mas seguem a mesma visão: **Otimizar a entrega do JavaScript**. 
+E entre as soluções mais famosas temos [TypeScript](https://www.typescriptlang.org/) e [Flow](https://flow.org/), mas podemos incluir [PureScript](http://www.purescript.org/) e [Reason](https://reasonml.github.io/), que vão pra outra direção, mas seguem a mesma visão: **Otimizar a entrega do JavaScript**.
 
 E pelo bem ou pelo mal, estas soluções modificam completamente ou parcialmente o modo que escrevemos, trabalhamos e pensamos em JavaScript.
 
@@ -67,9 +69,9 @@ Sua proposta é escrever uma única base de código que poderá ser utilizada pa
 
 ### Flutter vs. React Native
 
-Beleza, agora que sabem o que é Flutter e sua proposta, para os que já conhecem React Native, sei que vão se perguntar: 
+Beleza, agora que sabem o que é Flutter e sua proposta, para os que já conhecem React Native, sei que vão se perguntar:
 
-> Então ele é igual ao React Native? 
+> Então ele é igual ao React Native?
 
 E a resposta é: **Não**, são soluções completamente diferentes.
 
@@ -117,7 +119,7 @@ Inclusive, é interessante colocar que no ecossistema Flutter, Stateless e State
 
 ### Método build
 
-O método `build` é o equivalente ao sistema de renderização de componentes React e/ou React Native. 
+O método `build` é o equivalente ao sistema de renderização de componentes React e/ou React Native.
 
 É ele quem possibilita carregar visualmente e/ou estruturalmente nossos Widgets.
 
@@ -133,7 +135,7 @@ No caso do Stateful Widgets, podemos controlar quando o Widget é carregado, atu
 
 Uma das principais vantagens do Flutter é a [não utilização de OEM Widgets](https://medium.com/flutter-io/why-flutter-doesnt-use-oem-widgets-94746e812510), ou seja, seus Botões, Listas entre os outros widgets visuais ou não-visuais do seu [catálogo de Widgets](https://flutter.io/docs/development/ui/widgets) foram criados do zero, e por isso, são independentes da versão da plataforma e/ou da plataforma que estão sendo executados, o que no fim, oferece muito mais flexibilidade de customização.
 
-E isso também inclui os Material e Cupertino Widgets, que são widgets com interface baseada no [Material Design (Android)](https://flutter.io/docs/development/ui/widgets/material) ou [Cupertino Design (iOS)](https://flutter.io/docs/development/ui/widgets/cupertino). 
+E isso também inclui os Material e Cupertino Widgets, que são widgets com interface baseada no [Material Design (Android)](https://flutter.io/docs/development/ui/widgets/material) ou [Cupertino Design (iOS)](https://flutter.io/docs/development/ui/widgets/cupertino).
 
 ### Hot Reload
 
@@ -189,10 +191,10 @@ Estou confiante em apostar nele, ao meu risco, claro, mas o que posso recomendar
 
 #### Bônus: JSX
 
-Flutter não possui oficialmente um JSX, DSX ou similar (ainda) para ajudar na escrita do código, e infelizmente, as vezes nos perdemos em dezenas de `(((`, `{{{`, `}}}` e `)))` na hora de criar nossos Widgets, mas não existir tal recurso, força de forma implícita a modularização de código, gerando códigos mais performáticos e que seguem boas práticas como [D.R.Y.](https://pt.wikipedia.org/wiki/Don%27t_repeat_yourself) e [K.I.S.S.](https://pt.wikipedia.org/wiki/Keep_It_Simple). 
+Flutter não possui oficialmente um JSX, DSX ou similar (ainda) para ajudar na escrita do código, e infelizmente, as vezes nos perdemos em dezenas de `(((`, `{{{`, `}}}` e `)))` na hora de criar nossos Widgets, mas não existir tal recurso, força de forma implícita a modularização de código, gerando códigos mais performáticos e que seguem boas práticas como [D.R.Y.](https://pt.wikipedia.org/wiki/Don%27t_repeat_yourself) e [K.I.S.S.](https://pt.wikipedia.org/wiki/Keep_It_Simple).
 
 A verdade é que só busquei esse recurso, por já ter trabalhado com React/React Native, mas depois de um tempo em contato com Dart, não faz muita falta, é questão de gosto mesmo.
 
-▲
-
 PS: Se gostou do post, deixe seu comentário ☺️.
+
+▲

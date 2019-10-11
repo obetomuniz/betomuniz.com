@@ -5,6 +5,7 @@ date: "2014-11-16"
 path: "/blog/desmistificando-o-polymer-parte-1/"
 description: "Primeiro post de uma série que visa desmistificar o Polymer."
 keywords: "web-components, desmistificando, iniciando, tutorial, polymer, parte, um"
+category: "tech"
 ---
 
 Antes de começar, queria salientar que este é um assunto que particularmente eu adoro, mas isso não importa muito pra ninguém e em segundo lugar, este post é apenas o primeiro de uma série de posts sobre o Polymer...então vamos ao que interessa...vamos **Desmistificar o Polymer**. :)

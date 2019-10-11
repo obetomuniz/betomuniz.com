@@ -4,6 +4,7 @@ date: "2018-05-19"
 path: "/blog/web-payments-com-payment-request-api/"
 description: "Abordagem sobre a Payment Request API. Uma API Web pouco falada que surge para otimizar a experiência dos usuários em compras online."
 keywords: "web, payments, payment request, api, javascript, chrome, firefox, edge, safari, google, microsoft, apple, android, ios"
+category: "tech"
 ---
 
 Fala galera! Para começar este post, gostaria de dizer que após um período sem postar muita coisa (nada), finalmente agora vou conseguir separar um tempinho para escrever mais, e tentarei de agora em diante postar mais sobre o que sinto vontade de compartilhar ou algo que estou estudando. Seja aqui no meu blog ou em qualquer outro lugar das interwebs da vida :)
@@ -127,8 +128,6 @@ Sim, grandes vendors como Groupon, Mobify, Shopify, WWF, WooCommerce, WP Engine,
 
 E é isso pessoal, curtiram o post ou tem algo para contribuir para o tema? Deixe seu comentário, é sempre bom receber feedbacks para poder orientar o rumo dos próximos posts.
 
-▲
-
 ### Referências:
 
 - [Eventbrite Tech Talk: New Payment Request API in Chrome](https://www.youtube.com/watch?v=jgJdpM-RaVw)
@@ -141,3 +140,5 @@ E é isso pessoal, curtiram o post ou tem algo para contribuir para o tema? Deix
 - [PaymentRequest.shippingAddress](https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/shippingAddress)
 - [Simpler web payments: Introducing the Payment Request API](https://blogs.windows.com/msedgedev/2016/12/15/payment-request-api-edge/#uCvMD0dsI7x0JFcu.97)
 - [Mobile Payments with the Payment Request API](https://mobiforge.com/design-development/mobile-payments-with-the-payment-request-api)
+
+▲

@@ -4,14 +4,16 @@ date: "2017-02-14"
 path: "/blog/conceitualizando-o-webpack/"
 description: "Abordagem conceitual do webpack, que apesar de ser uma ferramenta cada vez mais presente em nosso dia a dia, ainda é muito mistificada, e por isso, pouco compreendida."
 keywords: "web, webpack, conceito, javascript, react, vue, redux, bundler, task runners, build tools"
+category: "tech"
 ---
+
 Fala galera! Voltei :D E dessa vez para escrever sobre uma ferramenta que está cada vez mais presente em nosso dia a dia, mas que ainda é muito mistificada, e por isso, não muito compreendida.
 
 Portanto, o foco aqui será explicar da forma mais objetiva possível, o que afinal esse webpack tem de bom.
 
 ## Disclaimer
 
-**Este post não é outra demo *React + webpack* ou *Vue + webpack***.
+**Este post não é outra demo _React + webpack_ ou _Vue + webpack_**.
 
 Minha ideia aqui é compilar conteúdo genérico para quem quer realmente entender os conceitos e possibilidades atreladas ao webpack.
 
@@ -53,6 +55,7 @@ module.exports = {
   ]
 };
 ```
+
 Não deixe de observar bem o exemplo, pois é a partir dele que irei destrinchar os conceitos do webpack.
 
 ### Entry
@@ -79,7 +82,7 @@ Uma vez declarado o arquivo raiz na propriedade `entry`, permitindo assim que o 
 Veja abaixo um dos caminhos de configuração da propriedade `output`:
 
 ```javascript
-module.exports = {  
+module.exports = {
   ...
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -95,9 +98,9 @@ E como no caso da propriedade `entry`, **a propriedade `output` também é extre
 
 Após declarar a entrada e a saída do seu **bundle app** (arquivo gerado ao final do processo de bundle e que será utilizado em produção), agora é hora de definir como o webpack irá interpretar seus assets e quais assets você deseja empacotar.
 
-Para isso, primeiramente o webpack deve saber quais são os tipos de assets que você possui no  projeto (_.jsx, .html, .scss, .css, .jpg_, etc.), para que assim os loaders transformem estes assets em módulos legíveis para o webpack, fazendo que o mesmo consiga então adicioná-los ao grafo de dependências do sistema de bundling.
+Para isso, primeiramente o webpack deve saber quais são os tipos de assets que você possui no projeto (_.jsx, .html, .scss, .css, .jpg_, etc.), para que assim os loaders transformem estes assets em módulos legíveis para o webpack, fazendo que o mesmo consiga então adicioná-los ao grafo de dependências do sistema de bundling.
 
-Além disso, é importante dizer que **os loaders não irão atuar no código fonte do seu projeto**. Eles apenas irão ler o conteúdo deles,  *transformar* este conteúdo e retorná-lo em uma nova saída para o webpack, sem nenhuma alteração no original.
+Além disso, é importante dizer que **os loaders não irão atuar no código fonte do seu projeto**. Eles apenas irão ler o conteúdo deles, _transformar_ este conteúdo e retorná-lo em uma nova saída para o webpack, sem nenhuma alteração no original.
 
 E para dar continuidade a este conceito, veja o código abaixo:
 
@@ -127,13 +130,13 @@ Aspecto que define os arquivos que devem ser interpretados, transformados e envi
 
 **use**
 
-Aspecto  que define um ou mais loaders que serão utilizados para transformar o conteúdo do asset em um módulo e adicioná-lo ao grafo de dependência (que eventualmente será o seu bundle app).
+Aspecto que define um ou mais loaders que serão utilizados para transformar o conteúdo do asset em um módulo e adicioná-lo ao grafo de dependência (que eventualmente será o seu bundle app).
 
-E é isso, como no caso da propriedade `entry` e `output`, o conceito de loaders é extremamente poderoso e possui diversas formas de configuração. Veja  [este link](https://webpack.js.org/concepts/loaders/) e saiba mais.
+E é isso, como no caso da propriedade `entry` e `output`, o conceito de loaders é extremamente poderoso e possui diversas formas de configuração. Veja [este link](https://webpack.js.org/concepts/loaders/) e saiba mais.
 
 ### Plugins
 
-E por último, o mais importante dos core concepts do webpack, *Plugins*. Prepare-se para fritar o cérebro…🤣
+E por último, o mais importante dos core concepts do webpack, _Plugins_. Prepare-se para fritar o cérebro…🤣
 
 E acredite em mim, não estou sendo clichê quando digo isso, a pegadinha nesse conceito, é que o webpack em si, é apenas uma resultante do seu próprio sistema de plugins, ou seja, o webpack é uma variedade de plugins built-in para bundling que utilizam-se de um mesmo sistema de plugins conhecido como [tapable](https://github.com/webpack/tapable).
 
@@ -165,7 +168,7 @@ HMR é semelhante a uma técnica conhecida por nós como **live reload**.
 
 **A diferença é que o HMR** não recarrega toda a aplicação após cada alteração no código fonte, o HMR **irá recarregar apenas a parte afetada pela alteração**.
 
-E isso, é extremamente útil em alguns casos, como por exemplo se você estiver utilizando alguma ferramenta para controle do estado da aplicação, com o uso do HMR, você poderá manter o estado da aplicação, mesmo após alterações no código fonte, sem refresh da página e reinicialização do *application state*.
+E isso, é extremamente útil em alguns casos, como por exemplo se você estiver utilizando alguma ferramenta para controle do estado da aplicação, com o uso do HMR, você poderá manter o estado da aplicação, mesmo após alterações no código fonte, sem refresh da página e reinicialização do _application state_.
 
 ### Code Splitting
 
@@ -177,7 +180,7 @@ No caso do Code Splitting, o webpack **oferece a possibilidade de “dividir” 
 
 Mesmo que as vezes a palavra _hash_ cause receio e medo, uma vez que envolve criptografia, e isso arremete a complexidade de implementação, no caso do webpack a funcionalidade de **Asset Hashing** possui uma aplicação simples e objetiva.
 
-Utilizar a **Asset Hashing permite que através de algumas declarações** no arquivo de configuração do webpack, **você aplique no nome do arquivo gerado ao fim do processo de bundling uma hash**, ou seja, é possivel utilizar  `app.d82kas4so.js` ao invés de `app.js` em produção.
+Utilizar a **Asset Hashing permite que através de algumas declarações** no arquivo de configuração do webpack, **você aplique no nome do arquivo gerado ao fim do processo de bundling uma hash**, ou seja, é possivel utilizar `app.d82kas4so.js` ao invés de `app.js` em produção.
 
 Sendo assim, toda vez que o processo de bundling finalizar, o bundle app será gerado com uma hash diferente, o que em produção, forçará o _Client_ a limpar o cache sempre.
 
@@ -209,8 +212,6 @@ Mas é isso pessoal! Espero mesmo que tenham gostado e que eu tenha esclarecido 
 
 E se você curtiu e/ou tem mais algo para contribuir com o tema abordado, deixe seu comentário, pois é sempre bom receber feedbacks para melhorar os futuros posts.
 
-▲
-
 ### Referências:
 
 - [webpack.js.org](https://webpack.js.org/)
@@ -222,3 +223,5 @@ E se você curtiu e/ou tem mais algo para contribuir com o tema abordado, deixe 
 - [The Fine Art of the Webpack 2 Config](https://blog.flennik.com/the-fine-art-of-the-webpack-2-config-dc4d19d7f172?gi=5622712edbd2)
 - [Webpack Concepts](https://webpack.js.org/concepts/#components/sidebar/sidebar.jsx)
 - [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/)
+
+▲

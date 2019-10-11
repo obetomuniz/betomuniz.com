@@ -4,6 +4,7 @@ date: "2018-08-05"
 path: "/blog/react-native-and-spring-animations/"
 description: "The current state of the React Native support of spring-based animations."
 keywords: "react, react native, spring, origami, rk4, dho, physics, motions, motion designs, animations"
+category: "tech"
 ---
 
 Physics-based motions are driven by force, and the Spring behavior defines the Spring Animation concept.
@@ -23,6 +24,7 @@ The first thing to keep in mind is that **Apple's UIKit Spring Algorithm NOT is 
 With all being said, the spring-based animation algorithms commonly used by the React Native community are:
 
 #### Origami (Rebound) Spring Algorithm
+
 <img src="https://user-images.githubusercontent.com/1680157/43672456-b37c1636-9784-11e8-8573-3b56eadfbacf.gif" style="box-shadow: none" />
 
 [Origami](https://origami.design/) is a Facebook project, and the React Native support is native 🤯. The Origami is synced with the [Rebound](http://facebook.github.io/rebound/) model which allows us to interpolate Tension, Friction, Speed, and Bounciness.
@@ -32,6 +34,7 @@ The most recommended libraries to apply this spring-based animation are [React N
 Check it out on this interactive [demo](http://facebook.github.io/rebound/).
 
 #### Damped Harmonic Oscillator (DHO) Algorithm
+
 <img src="https://user-images.githubusercontent.com/1680157/43672497-792eeb06-9785-11e8-9d07-6864caddc848.gif" style="box-shadow: none" />
 
 [DHO](https://en.wikipedia.org/wiki/Harmonic_oscillator#Damped_harmonic_oscillator) is an analytical spring model which allows us to interpolate Stiffness, Damping, and Mass.
@@ -40,7 +43,8 @@ The most recommended libraries to apply this spring-based animation are [React N
 
 Check it out on this interactive [demo](http://chenglou.github.io/react-motion/demos/demo5-spring-parameters-chooser/).
 
-#### 4th order Runge-Kutta  (RK4) Spring Algorithm
+#### 4th order Runge-Kutta (RK4) Spring Algorithm
+
 <img src="https://user-images.githubusercontent.com/1680157/43672498-794e1c92-9785-11e8-9a39-c3dec40afdfa.gif" style="box-shadow: none" />
 
 [RK4](http://lpsa.swarthmore.edu/NumInt/NumIntFourth.html) is natively supported in old React Native versions (before Origami/Rebound arrived) and an important industry standard which allows us to interpolate Tension, Friction, and Velocity.
@@ -59,8 +63,6 @@ Currently, the best choice is the [Origami Studio](https://origami.design/), but
 
 Take a look at this [another article](https://betomuniz.com/blog/main-topics-to-care-about-before-including-motion-designs-in-your-react-native-application/) that I wrote to know more about animations approaches with React Native.
 
-▲
-
 ### Extra References
 
 - [Building an iOS app in React Native](https://medium.com/@vdg/building-an-ios-app-in-react-native-3db2f73fe878)
@@ -73,3 +75,5 @@ Take a look at this [another article](https://betomuniz.com/blog/main-topics-to-
 - [Playing with React Native Animations](https://hackernoon.com/playing-with-react-native-animations-d065e7e97391)
 - [twitter.com/Vjeux/status/997136061791854593](https://twitter.com/Vjeux/status/997136061791854593)
 - [Bridging React Native Back to its Roots](https://www.youtube.com/watch?v=aOWIJ4Mgb2k&feature=youtu.be)
+
+▲

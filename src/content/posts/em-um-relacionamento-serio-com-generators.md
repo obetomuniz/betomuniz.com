@@ -5,4 +5,5 @@ date: "2015-02-06"
 path: "https://tableless.com.br/em-um-relacionamento-serio-com-generators-front-end-parte-3/"
 keywords: "generators, front-end, slush"
 external: true
+category: "tech"
 ---

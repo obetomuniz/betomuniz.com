@@ -4,6 +4,7 @@ date: "2019-04-16"
 path: "/blog/cors-e-alem/"
 description: "Uma abordagem objetiva sobre CORS, CORB e CORP."
 keywords: "cors, corb, corp, spectre, meltdown, csrf, web-sec, security"
+category: "tech"
 ---
 
 Quem ai já teve problemas com CORS?

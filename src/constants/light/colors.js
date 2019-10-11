@@ -6,7 +6,7 @@ export const DEFAULT_LINK_COLOR_ACTIVE = "darkblue"
 export const DEFAULT_LINK_COLOR_HOVER = "darkblue"
 export const DEFAULT_BOX_SHADOW_COLOR = "#bbb"
 
-export const DEFAULT_PROJECT_GITHUB_COLOR = "#eee"
+export const DEFAULT_PROJECT_GITHUB_COLOR = "#000"
 
 export const DEFAULT_POST_TITLE_COLOR = "darkblue"
 export const DEFAULT_POST_TEXT_COLOR = "#000"

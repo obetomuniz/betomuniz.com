@@ -1,5 +1,5 @@
-import * as UI from "./dark/ui"
-import * as TYPO from "./dark/typo"
-import * as COLORS from "./dark/colors"
+import * as UI from "./light/ui"
+import * as TYPO from "./light/typo"
+import * as COLORS from "./light/colors"
 
 export { UI, TYPO, COLORS }

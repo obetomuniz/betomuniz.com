@@ -5,6 +5,7 @@ date: "2014-11-17"
 path: "/blog/desmistificando-o-polymer-parte-2/"
 description: "Segundo post de uma série que visa desmistificar o Polymer."
 keywords: "web-components, desmistificando, iniciando, tutorial, polymer, parte, dois"
+category: "tech"
 ---
 
 No primeira parte desta série, abordei [o que é o Polymer](https://betomuniz.com/blog/desmistificando-o-polymer-parte-1/), e lá mostro **o que ele é** e **como ele funciona**, mas não mencionei quais são os principais fatores para utilização e escolha do Polymer entre outras tecnologias presentes, mas a partir de agora, este será o principal objetivo deste segundo post.
@@ -31,7 +32,7 @@ Para ilustrar alguns benefícios trazidos a nós pelo Polymer, entrego a seguint
 
 **Reusável**: Uma herança direta dos padrões sob Web Components, é que desenvolver componentes com Polymer torna seu workflow extremamente reutilizável e desacoplado da camada da aplicação, possibilitando utilizar seu componente em diversos tipos de aplicação;
 
-**Interoperável**: Totalmente interoperável com outras tecnologias, visto que entrega ao desenvolvedor o papel de definir quando e onde utilizar-se do Polymer, além do que é totalmente *Frameworkless*;
+**Interoperável**: Totalmente interoperável com outras tecnologias, visto que entrega ao desenvolvedor o papel de definir quando e onde utilizar-se do Polymer, além do que é totalmente _Frameworkless_;
 
 **Acessível**: Por default, o Polymer entrega acessibilidade, devido ao seu acesso nativo ao DOM e a APIs de Acessibilidade, como a WAI-ARIA, isso realmente não é um problema pra ele;
 
@@ -51,6 +52,6 @@ Mas com relação a este post, qualquer dúvida ou sugestão, não deixe de come
 
 E como sempre, deixo a seguinte mensagem:
 
-**Vamos componentizar!  o/**
+**Vamos componentizar! o/**
 
 ▲

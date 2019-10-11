@@ -5,11 +5,12 @@ date: "2014-11-18"
 path: "/blog/desmistificando-o-polymer-parte-3/"
 description: "Terceiro post de uma série que visa desmistificar o Polymer."
 keywords: "web-components, desmistificando, iniciando, tutorial, polymer, parte, tres"
+category: "tech"
 ---
 
 E enfim, chegamos ao terceiro post, porém se você não leu o [primeiro post](https://betomuniz.com/blog/desmistificando-o-polymer-parte-1/) e nem o [segundo post](https://betomuniz.com/blog/desmistificando-o-polymer-parte-2/), recomendo a leitura deles, pois assim você terá uma melhor absorção do que será abordado neste post...
 
- E a razão deste post, nada mais é que um esclarecimento de diversas dúvidas com relação ao que o Polymer oferece, e caso você tenha alguma a mais, sinta-se a vontade de colocar também nos comentários. Mas vamos lá, vamos ao *FAX*.
+E a razão deste post, nada mais é que um esclarecimento de diversas dúvidas com relação ao que o Polymer oferece, e caso você tenha alguma a mais, sinta-se a vontade de colocar também nos comentários. Mas vamos lá, vamos ao _FAX_.
 
 ## O Polymer é...
 
@@ -47,6 +48,6 @@ E por hora, é isso... conto com você leitor para aumentar ainda mais esta list
 
 E para não perder o custome:
 
-**Vamos componentizar!  o/**
+**Vamos componentizar! o/**
 
 ▲

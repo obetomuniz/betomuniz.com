@@ -4,6 +4,7 @@ date: "2018-05-15"
 path: "/blog/main-topics-to-care-about-before-including-motion-designs-in-your-react-native-application/"
 description: "The pros and cons of the current state of the React Native support for advanced animation concepts."
 keywords: "react, react native, motions, motion designs, animations"
+category: "tech"
 ---
 
 ![](https://user-images.githubusercontent.com/1680157/43663839-4002e650-9741-11e8-802e-2707dd42356a.jpeg)
@@ -82,7 +83,7 @@ About micro-interactions, we have Lottie, that is the recommendation of the comm
 
 <img src="https://user-images.githubusercontent.com/1680157/43663806-2a756a06-9741-11e8-8e1f-eb6fed013152.gif" style="box-shadow: none" />
 
-About elements with rich interactions, we have the library [react-native-interactable](https://github.com/wix/react-native-interactable). 
+About elements with rich interactions, we have the library [react-native-interactable](https://github.com/wix/react-native-interactable).
 
 `react-native-interactable` is the best choice when you need to create custom user interactions, once it brings physics concepts, a stable API, performance, and control.
 
@@ -93,6 +94,7 @@ About elements with rich interactions, we have the library [react-native-interac
 This concept is very well supported by React Native and recommended by the community, check it out on [my post](https://betomuniz.com/blog/react-native-and-spring-animations/) regarding the React Native support for physics-based motions.
 
 ## Conclusion
+
 React Native is going to be an excellent place to work with any animation concept, but we still have a long and painful journey to reach a stable, flexible, and scalable path on this concept.
 
 My dream for the future of animations in the React Native ecosystem is to have the same options that we currently have in the web version of React. I do not know if someday we will reach this level, but we are in a powerful moment for this type of ecosystem, mainly with game changers in the market like Flutter, NativeScript, and Weex to build native apps with JavaScript.

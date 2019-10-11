@@ -1,14 +1,15 @@
 ---
-title: "\"Comunidade não dá dinheiro\""
+title: '"Comunidade não dá dinheiro"'
 date: "2017-09-26"
 path: "/blog/comunidade-nao-da-dinheiro/"
 description: "Neste post você verá que com dedicação, a comunidade pode oferecer muito mais do que dinheiro, ela pode mudar positivamente a sua vida por completo."
 keywords: "comunidade, minas gerais, minasdev, dev in company, toptal, google, google developer expert, polonia"
+category: "comunidade"
 ---
 
 Olá! Pode sentar, porque que lá vem história....
 
-Nesse post* quero tentar compartilhar um pouco do que aprendi até então, nessa vida maluca que temos.
+Nesse post\* quero tentar compartilhar um pouco do que aprendi até então, nessa vida maluca que temos.
 
 Sendo assim, como naquela <a href="https://www.youtube.com/watch?v=6AbfJ-wvMPY" target="_blank">música</a>, nada aqui possuí outra base confiável além de minha própria experiência errante. E estando todos avisados disso, vamos nessa...
 
@@ -62,7 +63,7 @@ E rolou, comecei o curso.
 
 Mesmo sendo uma decisão inocente, hoje eu sou extremamente feliz por tê-la feito, pois além de ter me trazido até então na minha vida, foi por essa decisão que eu conheci a nossa comunidade linda 😍.
 
-E assim, sei que muita gente é alérgica ao assunto "*técnico de informática*" em termos de competência profissional, pois sempre é trazido para a conversa um clima de guerra de egos, sobre faculdade e sobre qual é a melhor faculdade, sendo que no final das contas, a gente sabe:
+E assim, sei que muita gente é alérgica ao assunto "_técnico de informática_" em termos de competência profissional, pois sempre é trazido para a conversa um clima de guerra de egos, sobre faculdade e sobre qual é a melhor faculdade, sendo que no final das contas, a gente sabe:
 
 **O QUE IMPORTA É VOCÊ!**
 
@@ -88,7 +89,6 @@ E vendo esse movimento disruptivo das comunidades, meio que comecei a ver um pes
 
 Como por exemplo o pessoal do <a href="https://frontinbh.com.br/" target="_blank">Front in BH</a>, <a href="https://braziljs.org/" target="_blank">BrazilJS</a>, <a href="http://www.frontinsampa.com.br/" target="_blank">Front in Sampa</a>, <a href="https://twitter.com/maujor" target="_blank">Maujor</a>, <a href="https://twitter.com/zenorocha" target="_blank">Zeno Rocha</a>, <a href="https://twitter.com/bernarddeluna" target="_blank">Bernard</a>, <a href="https://twitter.com/jaydson" target="_blank">Jaydson</a> entre outros que eu realmente não conseguiria listar. E vendo isso eu pensei:
 
-
 <blockquote>Caaaaaara! Eu preciso conhecer e ajudar essa galera.</blockquote>
 
 Lembro até da primeira vez que chamei o Zeno pra conversar. Na verdade, eu cheguei pentelhando mesmo 😂, pedindo conselhos profissionais e pessoais, sei que eu te incomodava cara 😍 Mas desses nossos papos, o que eu ganhei foi uma grande amizade e um mega conselho:
@@ -107,7 +107,7 @@ O técnico infelizmente não criava muitos desafios, o mercado de onde eu morava
 
 Não foi uma decisão fácil e nem do dia pra noite, mas era a melhor decisão dado o meu contexto de vida, e por isso, hoje posso afirmar que 70% dos motivos da minha mudança para morar e trabalhar em Belo Horizonte em 2011, foi por causa da venda que a comunidade fazia. **#FICAADICAEMPRESAS**
 
-Era onde eu sentia que deveria estar.  
+Era onde eu sentia que deveria estar.
 
 Mas e ai, como foi chegar em Belo Horizonte? A comunidade era isso tudo mesmo? Infelizmente, não…
 
@@ -175,7 +175,7 @@ Eu fiquei um ano e pouco nessa empresa, e então apliquei novamente na Toptal. E
 
 <blockquote>Foi incrível! Superação pessoal mesmo.</blockquote>
 
-E neste ponto do post, estamos exatamente no meu atual estado de vida, apesar de não estar trabalhando atualmente com a Toptal, mas ter continuado trabalhando remotamente para empresas incríveis. 
+E neste ponto do post, estamos exatamente no meu atual estado de vida, apesar de não estar trabalhando atualmente com a Toptal, mas ter continuado trabalhando remotamente para empresas incríveis.
 
 Mas não pense que a influência da comunidade sobre minha vida acabou…
 
@@ -209,6 +209,6 @@ BORA PARTICIPAR MAIS DA COMUNIDADE!
 
 <img src="https://user-images.githubusercontent.com/1680157/30825782-a1d85a2c-a20a-11e7-8305-58ecd83b3bbf.gif" style="width:100%" />
 
-<small>**Este post foi baseado na talk <a href="https://speakerdeck.com/obetomuniz/comunidade-nao-da-dinheiro" target="_blank">"Comunidade não dá dinheiro"</a> que realizei no Front in BH 2017.*</small>
+<small>\*_Este post foi baseado na talk <a href="https://speakerdeck.com/obetomuniz/comunidade-nao-da-dinheiro" target="_blank">"Comunidade não dá dinheiro"</a> que realizei no Front in BH 2017._</small>
 
 ▲

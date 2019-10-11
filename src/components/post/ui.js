@@ -126,10 +126,7 @@ export const Content = styled.main`
     opacity: ${COLORS.DEFAULT_TEXT_OPACITY};
     font-weight: 700;
     word-break: break-word;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    text-decoration: underline;
   }
 
   img {
@@ -154,7 +151,7 @@ export const Content = styled.main`
     }
 
     li {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
 
       &:last-child {
         margin-bottom: 0;
