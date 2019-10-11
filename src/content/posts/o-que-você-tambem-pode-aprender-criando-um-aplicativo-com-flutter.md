@@ -7,7 +7,7 @@ keywords: "listtta, flutter, firebase, firestore"
 category: "tech"
 ---
 
-Neste artigo falo da minha experiência criando o [Listtta]() com [Flutter](), pois após o lançamento do mesmo, recebi diversas dúvidas sobre decisões tecnológicas que fiz, daí resolvi compilar num artigo algumas delas.
+Neste artigo falo da minha experiência criando o [Listtta](https://listtta.com/) com [Flutter](https://flutter.dev/), pois após o lançamento do mesmo, recebi diversas dúvidas sobre decisões tecnológicas que fiz, daí resolvi compilar num artigo algumas delas.
 
 E para dar contexto (merchanzin? 🤣), o que é o Listtta?
 
@@ -15,7 +15,7 @@ E para dar contexto (merchanzin? 🤣), o que é o Listtta?
 
 O Listtta é a materialização de uma ideia que tenho sobre otimizar o consumo de conteúdo do Twitter através de listas customizadas.
 
-Além disso, o Listtta foi um projeto piloto para mim, pois durante as fases de ideação, planejamento, rascunho, concepção e entrega, me possibilitou testar diversas [_soft skills_]() que desenvolvi por anos como desenvolvedor de software, ou seja, meu foco não era apenas código e produto.
+Além disso, o Listtta foi um projeto piloto para mim, pois durante as fases de ideação, planejamento, rascunho, concepção e entrega, me possibilitou testar diversas [_soft skills_](https://hackernoon.com/10-soft-skills-every-developer-needs-66f0cdcfd3f7) que desenvolvi por anos como desenvolvedor de software, ou seja, meu foco não era apenas código e produto.
 
 **Meu foco era aprendizado.**
 
@@ -25,7 +25,7 @@ Mas agora que você entendeu um pouco sobre o Listtta e o porque eu decidi criá
 
 Sendo prático, o Listtta utilizou bastante a API do Twitter, sendo essa a única base de conteúdo disponibilizada atualmente.
 
-E não apenas isso, utilizei também o [Firebase Auth]() para o fluxo de autenticação do aplicativo, e para o suporte de múltiplas contas do Twitter num único usuário do Listtta, utilizei o [Firestore]().
+E não apenas isso, utilizei também o [Firebase Auth](https://firebase.google.com/docs/auth) para o fluxo de autenticação do aplicativo, e para o suporte de múltiplas contas do Twitter num único usuário do Listtta, utilizei o [Firestore](https://firebase.google.com/docs/firestore).
 
 Mas a cereja do bolo, o Flutter e seu ecossistema, utilizei para conectar a regra de negócio numa interface amigável para uma experiência única de consumo de conteúdo.
 

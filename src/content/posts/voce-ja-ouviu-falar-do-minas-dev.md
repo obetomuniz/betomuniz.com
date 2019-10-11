@@ -4,10 +4,10 @@ date: "2019-09-25"
 path: "/blog/voce-ja-ouviu-falar-do-minas-dev/"
 description: "Conheça um pouco mais do Minas Dev e suas futuras iniciativas."
 keywords: "minas, dev, desenvolvedores, minas gerais, comunidade"
-category: comunidade
+category: "comunidade"
 ---
 
-Se você nunca ouviu falar do [Minas Dev](), ou apenas quiser saber mais, venha comigo neste post, vou explicar _tudin_.
+Se você nunca ouviu falar do [Minas Dev](https://minasdev.org/), ou apenas quiser saber mais, venha comigo neste post, vou explicar _tudin_.
 
 ## O Minas Dev
 
@@ -27,37 +27,37 @@ Durante anos de existência, o Minas Dev já ofereceu diversas atividades e tamb
 
 E hoje, por definição, somos uma comunidade independente e executamos nossas ações sem nicho tecnológico, linguagem ou empresa.
 
-Tudo que fazemos tem por princípio nosso [Manifesto]() e [Código de Conduta]().
+Tudo que fazemos tem por princípio nosso [Manifesto](https://github.com/minasdev/manifesto) e [Código de Conduta](https://github.com/minasdev/codigo-de-conduta).
 
 Portanto, nossas ações atualmente se baseiam em:
 
 #### Minas Dev Twitter
 
-Através da conta [@minasdev](), promovemos conteúdo de mineiros e/ou conteúdos que afetam a comunidade do Minas Dev de algum modo.
+Através da conta [@minasdev](https://twitter.com/minasdev), promovemos conteúdo de mineiros e/ou conteúdos que afetam a comunidade do Minas Dev de algum modo.
 
 Portanto, se você tem artigos, projetos open-source ou qualquer coisa que ache útil para a comunidade de Minas Gerais, não deixe compartilhar tais ações no Twitter e mencionar o @minasdev.
 
 #### Minas Dev Eventos
 
-Através do [minasdev.org](), listamos os principais eventos e meetups que acontecem em Minas Gerais.
+Através do [minasdev.org](https://minasdev.org/), listamos os principais eventos e meetups que acontecem em Minas Gerais.
 
-E se por algum motivo o evento que você vai ou organiza não está lá, por favor, [cadastre-o neste link]().
+E se por algum motivo o evento que você vai ou organiza não está lá, por favor, [cadastre-o neste link](https://github.com/minasdev/eventos/issues/new).
 
 #### Minas Dev Vagas
 
-No [minasdev.org/vagas]() listamos centenas de vagas de trabalho em diversas áreas, e principalmente, vagas de trabalho remoto.
+No [minasdev.org/vagas](https://minasdev.org/vagas) listamos centenas de vagas de trabalho em diversas áreas, e principalmente, vagas de trabalho remoto.
 
 Utilizamos os melhores indexadores de vagas para gerar a lista e temos um canal no nosso Slack chamado **#jobs**, que eventualmente também exibe suas vagas no **Minas Dev Vagas**.
 
 #### Minas Dev Slack
 
-Nossa central de comando, lá reunimos todos com interesse em estar engajados em uma comunidade de desenvolvimento séria e com o foco único e exclusivo de enriquecer profissionalmente cada membro.
+[Nossa central de comando](https://slack.minasdev.org/), lá reunimos todos com interesse em estar engajados em uma comunidade de desenvolvimento séria e com o foco único e exclusivo de enriquecer profissionalmente cada membro.
 
 Prezamos pela organização dos canais e respeito ao nosso Código de Conduta.
 
 #### Minas Dev Github
 
-Nosso repositório de projetos, sinta-se livre para contribuir por lá.
+[Nosso repositório de projetos](https://github.com/minasdev), sinta-se livre para contribuir por lá.
 
 ## Minas Dev e o futuro…
 
@@ -67,13 +67,15 @@ E o Minas Dev não para, há planos de médio e curto prazo. _SPOILER ALERT!!!_
 
 Depois de vários anos e pedidos, finalmente iremos executar nosso evento oficial.
 
-Utilizaremos o canal do [Meetup.com do Minas Dev]() para divulgar. Fique ligado!
+Utilizaremos o canal do [Meetup.com do Minas Dev](https://www.meetup.com/pt-BR/Minas_Dev/) para divulgar. Fique ligado!
 
 #### Minas Dev Newsletter
 
 Há planos de reativação da Newsletter do Minas Dev, que enquanto esteve no ar, foi muito elogiada.
 
 Precisamos apenas formatar melhor a forma de manutenção do projeto para torná-lo viável novamente.
+
+Se quiser ficar por dentro assim que ela sair, basta acessar o site do Minas Dev e se cadastrar.
 
 #### Minas Dev Slack v2
 

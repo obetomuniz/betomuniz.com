@@ -45,7 +45,7 @@ Já pensou em poder trazer as capacidades do Browser de manipulação do CSS e m
 
 E não se deixe enganar pela definição simples, pois tais capacidades vão desde a criação de propriedades customizadas de CSS até escrever blocos de lógica dentro CSS, indo bem além de que uma _CSS Variable_ ou uma função `calc` já nos permite atualmente.
 
-E para dar conceito, Houdini CSS é um conjunto de especificações desenvolvido por uma força de trabalho da W3C que visa corrigir limitações impostas no passado aos browsers devido a falta de segurança, más escolhas e incapacidades tecnológicas da época.
+E para dar conceito, [Houdini CSS](https://developer.mozilla.org/en-US/docs/Web/Houdini) é um conjunto de especificações desenvolvido por uma força de trabalho da W3C que visa corrigir limitações impostas no passado aos browsers devido a falta de segurança, más escolhas e incapacidades tecnológicas da época.
 
 Portanto, se hoje gastamos tempo definindo a melhor escolha para modularizar nosso código CSS, espere por discussões baseadas em onde iremos adicionar lógica de manipulação CSS.
 

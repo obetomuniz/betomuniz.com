@@ -57,7 +57,7 @@ Imagine o React ou o Android sem a comunidade deles, dificilmente ambas tecnolog
 
 #### Maturidade de Setor
 
-É um benefício indireto, mas uma comunidade e seus indivíduos tem o poder de mudar a cultura do seu mercado. Vi isso na prática com o [Minas Dev]() alguns anos atrás, e até hoje vejo o impacto.
+É um benefício indireto, mas uma comunidade e seus indivíduos tem o poder de mudar a cultura do seu mercado. Vi isso na prática com o [Minas Dev](https://minasdev.org/) alguns anos atrás, e até hoje vejo o impacto.
 
 > **Há ótimas oportunidades quando estamos unidos e nos ajudando por um objetivo comum.**
 
