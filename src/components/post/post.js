@@ -70,6 +70,8 @@ export const pageQuery = graphql`
         path
         title
         subtitle
+        description
+        keywords
       }
       fields {
         readingTime {

@@ -1,7 +1,7 @@
 ---
 title: "O que você pode aprender criando seu aplicativo com Flutter"
 date: "2019-10-09"
-path: "/blog/o-que-você-tambem-pode-aprender-criando-um-aplicativo-com-flutter/"
+path: "/blog/o-que-voce-tambem-pode-aprender-criando-um-aplicativo-com-flutter/"
 description: "Saiba mais o que eu aprendi criando um aplicativo com Flutter."
 keywords: "listtta, flutter, firebase, firestore"
 category: "tech"
