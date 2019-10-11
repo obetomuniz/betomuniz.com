@@ -1,19 +1,17 @@
 import styled from "styled-components"
 
-import { UI, COLORS } from "../../constants"
-
 export const Container = styled.footer`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: ${UI.DEFAULT_MARGIN} 0;
+  margin: var(--DEFAULT_MARGIN) 0;
 
   @media screen and (max-width: 440px) {
     padding: 0 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: ${UI.DEFAULT_MARGIN_MOBILE} 0;
+    margin: var(--DEFAULT_MARGIN_MOBILE) 0;
   }
 `
 
@@ -30,10 +28,10 @@ export const SocialsIcon = styled.svg`
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-  color: ${COLORS.DEFAULT_LINK_COLOR};
+  color: var(--DEFAULT_LINK_COLOR);
   transition: all 200ms linear;
 
   &:hover {
-    color: ${COLORS.DEFAULT_LINK_COLOR_HOVER};
+    color: var(--DEFAULT_LINK_COLOR_HOVER);
   }
 `

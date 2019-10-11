@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-import { TYPO, COLORS } from "../../constants"
-
 export const Container = styled.li`
   display: flex;
   align-items: center;
@@ -26,19 +24,19 @@ export const NameContainer = styled.h4`
 export const Name = styled.a`
   text-decoration: none;
   display: inline-block;
-  font-size: ${TYPO.DEFAULT_LIST_ITEM_LABEL_FONT_SIZE};
-  line-height: ${TYPO.DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT};
-  color: ${COLORS.DEFAULT_LINK_COLOR};
+  font-size: var(--DEFAULT_LIST_ITEM_LABEL_FONT_SIZE);
+  line-height: var(--DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT);
+  color: var(--DEFAULT_LINK_COLOR);
   font-weight: 700;
 
   &:hover {
-    color: ${COLORS.DEFAULT_LINK_COLOR_HOVER};
+    color: var(--DEFAULT_LINK_COLOR_HOVER);
     text-decoration: underline;
   }
 
   @media screen and (max-width: 440px) {
-    font-size: ${TYPO.DEFAULT_LIST_ITEM_LABEL_FONT_SIZE_MOBILE};
-    line-height: ${TYPO.DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT_MOBILE};
+    font-size: var(--DEFAULT_LIST_ITEM_LABEL_FONT_SIZE_MOBILE);
+    line-height: var(--DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT_MOBILE);
   }
 `
 
@@ -53,7 +51,7 @@ export const LogoContainer = styled.a`
     height: 40px;
     stroke: currentColor;
     fill: currentColor;
-    color: ${COLORS.DEFAULT_PROJECT_GITHUB_COLOR};
+    color: var(--DEFAULT_PROJECT_GITHUB_COLOR);
   }
 
   @media screen and (max-width: 440px) {

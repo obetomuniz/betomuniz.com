@@ -1,20 +1,18 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import { UI, TYPO, COLORS } from "../../constants"
-
 export const Container = styled.header`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: ${UI.DEFAULT_MARGIN} 0;
+  margin: var(--DEFAULT_MARGIN) 0;
 
   @media screen and (max-width: 440px) {
     padding: 0 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: ${UI.DEFAULT_MARGIN_MOBILE} 0;
+    margin: var(--DEFAULT_MARGIN_MOBILE) 0;
   }
 `
 
@@ -24,10 +22,10 @@ export const Photo = styled(Link)`
   width: 80px;
   display: block;
   border-radius: 100%;
-  margin-bottom: ${UI.DEFAULT_MARGIN};
+  margin-bottom: var(--DEFAULT_MARGIN);
 
   @media screen and (max-width: 440px) {
-    margin-bottom: ${UI.DEFAULT_MARGIN_MOBILE};
+    margin-bottom: var(--DEFAULT_MARGIN_MOBILE);
   }
 `
 
@@ -59,15 +57,15 @@ export const NavListItem = styled.li`
 `
 
 export const NavLink = styled(Link)`
-  color: ${COLORS.DEFAULT_LINK_COLOR};
-  opacity: ${COLORS.DEFAULT_TEXT_OPACITY};
+  color: var(--DEFAULT_LINK_COLOR);
+  opacity: var(--DEFAULT_TEXT_OPACITY);
   text-decoration: none;
-  font-size: ${TYPO.DEFAULT_NAV_ITEM_FONT_SIZE};
+  font-size: var(--DEFAULT_NAV_ITEM_FONT_SIZE);
 
   &:hover,
   &.active {
     opacity: 1;
-    color: ${COLORS.DEFAULT_LINK_COLOR_HOVER};
+    color: var(--DEFAULT_LINK_COLOR_HOVER);
     font-weight: 700;
   }
 `

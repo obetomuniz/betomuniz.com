@@ -60,8 +60,16 @@ function SEO({
           content: description,
         },
         {
+          property: `og:image`,
+          content: "https://betomuniz.com/icons/icon-512x512.png",
+        },
+        {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: `https://betomuniz.com/`,
         },
         {
           name: `twitter:card`,
