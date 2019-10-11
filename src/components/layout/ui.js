@@ -55,6 +55,11 @@ export const Container = styled.div`
   margin: 0 auto;
 
   @media screen and (max-width: 440px) {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  @media screen and (max-width: 320px) {
     width: 300px;
     padding: 0 10px;
   }
