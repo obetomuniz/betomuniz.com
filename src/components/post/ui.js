@@ -253,15 +253,15 @@ export const Content = styled.main`
     }
 
     h2 {
-      font-size: ${TYPO.DEFAULT_POST_H2_FONT_SIZE};
+      font-size: ${TYPO.DEFAULT_POST_H2_FONT_SIZE_MOBILE};
     }
 
     h3 {
-      font-size: ${TYPO.DEFAULT_POST_H3_FONT_SIZE};
+      font-size: ${TYPO.DEFAULT_POST_H3_FONT_SIZE_MOBILE};
     }
 
     h4 {
-      font-size: ${TYPO.DEFAULT_POST_H4_FONT_SIZE};
+      font-size: ${TYPO.DEFAULT_POST_H4_FONT_SIZE_MOBILE};
     }
 
     img {
