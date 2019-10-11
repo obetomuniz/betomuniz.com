@@ -26,11 +26,13 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: blogPostTemplate,
-        context: {},
-      })
+      if (node.frontmatter.path.startsWith("/blog/")) {
+        createPage({
+          path: node.frontmatter.path,
+          component: blogPostTemplate,
+          context: {},
+        })
+      }
     })
   })
 }
