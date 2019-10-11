@@ -7,7 +7,7 @@ keywords: "css, web, desenvolvimento, houdini"
 category: "tech"
 ---
 
-Vivemos tempos diferentes no desenvolvimento web, e sem definitivamente, o modo que escrevemos CSS hoje já não é como antigamente.
+Vivemos tempos diferentes no desenvolvimento web, e definitivamente, o modo que escrevemos CSS hoje já não é como antigamente.
 
 ## Quando era tudo mato…
 
@@ -15,7 +15,7 @@ Bons tempos aqueles em que as discussões sobre CSS eram apenas sobre como compa
 
 Hoje, com demandas mais complexas na web, torna-se mais complicado escolher o caminho correto para resolver as coisas.
 
-Seja para quem está iniciando ou já é experiente.
+Seja para quem está iniciando ou para quem já é experiente.
 
 ## Modernidades…
 
@@ -33,7 +33,7 @@ Os anos passaram, e hoje temos abordagens conceituais que reutilizam muito do qu
 
 No mercado existem três vertentes principais: _Scoped CSS_, _CSS Modules_ e _Styled Components_.
 
-E veja só, não estou falando de técnica A ou biblioteca B, muito menos que uma é melhor que a outra ou que apenas existem estas, estou falando apenas das que apresentam conceitos sólidos.
+E veja só, não estou falando de técnica A ou biblioteca B, muito menos que uma é melhor que a outra ou que apenas existem estas, estou citando apenas as que apresentam conceitos sólidos.
 
 E para além desses conceitos, há algo mais inovador surgindo e que promete dar um passo definitivo no suporte ao desenvolvimento dinâmico com CSS.
 
@@ -51,6 +51,6 @@ Portanto, se hoje gastamos tempo definindo a melhor escolha para modularizar nos
 
 ## Conclusão
 
-E com isso, encerro meu artigo, que em principio é uma reflexão de onde viemos e para onde vamos com CSS, pois mesmo que as especificações ainda estejam em definição, todas apresentam o passo necessário para o futuro do desenvolvimento CSS, e por consequência, para todo o desenvolvimento web.
+E com isso, encerro meu artigo, que em principio é uma reflexão de onde viemos e para onde vamos com CSS, pois mesmo que as especificações ainda estejam em definição, todas apresentam o passo necessário para o futuro do desenvolvimento CSS, e por consequência, para todo o desenvolvimento web. Sendo assim, fique atento quanto a isso.
 
 ▲
