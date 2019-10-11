@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { UI } from "../../constants"
+import { UI, COLORS } from "../../constants"
 
 export const Container = styled.footer`
   display: flex;
@@ -30,10 +30,10 @@ export const SocialsIcon = styled.svg`
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-  color: #777777;
+  color: ${COLORS.DEFAULT_LINK_COLOR};
   transition: all 200ms linear;
 
   &:hover {
-    color: #000000;
+    color: ${COLORS.DEFAULT_LINK_COLOR_HOVER};
   }
 `

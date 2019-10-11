@@ -14,6 +14,7 @@ export const Container = styled.div`
 export const Header = styled.section``
 
 export const Title = styled.h1`
+  font-family: ${TYPO.DEFAULT_POST_TITLE_FONT_FAMILY};
   color: ${COLORS.DEFAULT_POST_TITLE_COLOR};
   font-size: ${TYPO.DEFAULT_POST_TITLE_FONT_SIZE};
   line-height: ${TYPO.DEFAULT_POST_TITLE_LINE_HEIGHT};
@@ -29,6 +30,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.span`
+  font-family: ${TYPO.DEFAULT_POST_TITLE_FONT_FAMILY};
   font-size: ${TYPO.DEFAULT_POST_SUBTITLE_FONT_SIZE};
   display: block;
 
@@ -39,7 +41,7 @@ export const Subtitle = styled.span`
 
 export const Register = styled.small`
   font-size: ${TYPO.DEFAULT_POST_REGISTER_FONT_SIZE};
-  color: ${TYPO.DEFAULT_TEXT_COLOR};
+  color: ${COLORS.DEFAULT_TEXT_COLOR};
   font-family: "Tahoma", sans-serif;
   display: block;
   text-align: center;
@@ -52,7 +54,7 @@ export const Register = styled.small`
 `
 
 export const RegisterDate = styled.time`
-  opacity: 0.5;
+  opacity: 0.8;
 `
 
 export const RegisterReadingTime = styled.span`
@@ -92,6 +94,7 @@ export const Content = styled.main`
   h2,
   h3,
   h4 {
+    font-family: ${TYPO.DEFAULT_POST_TITLE_FONT_FAMILY};
     color: ${COLORS.DEFAULT_POST_TITLE_COLOR};
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
     line-height: ${TYPO.DEFAULT_POST_SECONDARY_TITLE_LINE_HEIGHT};
@@ -168,9 +171,10 @@ export const Content = styled.main`
   }
 
   blockquote {
+    color: ${COLORS.DEFAULT_POST_BLOCKQUOTE_TEXT_COLOR};
+    border-left: 3px solid ${COLORS.DEFAULT_BLOCKQUOTE_COLOR};
     margin: 0 0 ${UI.DEFAULT_POST_MARGIN_BOTTOM} 15px;
     padding: 10px 0 10px 15px;
-    border-left: 3px solid ${COLORS.DEFAULT_BLOCKQUOTE_COLOR};
     display: block;
     font-style: italic;
 
@@ -211,11 +215,11 @@ export const Content = styled.main`
 
   hr {
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
-    border-bottom: 1px solid ${COLORS.DEFAULT_POST_HR_COLOR};
     display: block;
     width: 100%;
     border: 0;
     margin-top: 0;
+    border-bottom: 1px solid ${COLORS.DEFAULT_POST_HR_COLOR};
   }
 
   .post-video {

@@ -49,7 +49,9 @@ export default function Template({ data }) {
           </Register>
         </Header>
         <Content dangerouslySetInnerHTML={{ __html: html }} />
-        {isBrowser && <Disqus config={disqusConfig} />}
+        <div id="disqus_thread">
+          {isBrowser && <Disqus config={disqusConfig} />}
+        </div>
       </Container>
     </Layout>
   )

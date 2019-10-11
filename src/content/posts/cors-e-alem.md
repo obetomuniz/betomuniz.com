@@ -5,6 +5,7 @@ path: "/blog/cors-e-alem/"
 description: "Uma abordagem objetiva sobre CORS, CORB e CORP."
 keywords: "cors, corb, corp, spectre, meltdown, csrf, web-sec, security"
 ---
+
 Quem ai já teve problemas com CORS?
 
 Mais fácil perguntar quem nunca teve, né? E apesar de ser irritante às vezes e nos forçar o uso da flag `--disable-web-security` para resolver coisas rápidas durante o desenvolvimento, CORS é um recurso muito poderoso.
@@ -21,7 +22,7 @@ E antes de seguir para estas outras abordagens...
 
 #### Só mais um pouquinho de CORS
 
-A proposta principal do CORS é que ao receber uma requisição do browser, o servidor responderá uma informação via *HTTP header*, e tal informação, definirá exatamente como o browser validará a origem da requisição.
+A proposta principal do CORS é que ao receber uma requisição do browser, o servidor responderá uma informação via _HTTP header_, e tal informação, definirá exatamente como o browser validará a origem da requisição.
 
 Por exemplo, supondo que um servidor aceite requisições **apenas** do domínio **meusite.com**, o servidor precisará simplesmente responder suas requições com o header `Access-Control-Allow-Origin` e o valor `http://meusite.com` para habilitar o CORS no browser com essa regra.
 
@@ -31,9 +32,9 @@ Mas parando por aqui de falar de CORS, já que não é o único foco do post, pa
 
 ## CORB
 
-Seguindo no post, agora vou falar do **Cross-Origin Read Blocking**, que por definição, valida requisições do browser antes mesmo de serem requisitadas no servidor. Tudo isso utilizando o *MIME type* da requisição como regra de validação.
+Seguindo no post, agora vou falar do **Cross-Origin Read Blocking**, que por definição, valida requisições do browser antes mesmo de serem requisitadas no servidor. Tudo isso utilizando o _MIME type_ da requisição como regra de validação.
 
-Por exemplo, uma requisição do tipo **style** deve fornecer o *MIME type* **text/css**, caso contrário, será bloqueada.
+Por exemplo, uma requisição do tipo **style** deve fornecer o _MIME type_ **text/css**, caso contrário, será bloqueada.
 
 Para habilitar este recurso, o servidor deve enviar sempre o header `X-Content-Type-Options` com o valor `nosniff`.
 
@@ -43,7 +44,7 @@ Essa proposta visa ajudar na segurança contra ataques maliciosos do tipo **CSRF
 
 Sobre o **Cross-Origin Resource Policy**, saiba que ele é um complemento ao CORB e só funciona para requisições definidas como `no-cors`, ou seja, requisições explicitamente sem proteção garantida de CORS.
 
-Para habilitar esse *cross-origin checker*, o servidor deve enviar o header `Cross-Origin-Resource-Policy` com o valor `same-origin` ou `same-site`.
+Para habilitar esse _cross-origin checker_, o servidor deve enviar o header `Cross-Origin-Resource-Policy` com o valor `same-origin` ou `same-site`.
 
 Com este header declarado pelo servidor, o browser irá invalidar respectivamente requisições `no-cors` de domínios com origem ou esquema de url diferente da origem da requisição.
 

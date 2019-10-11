@@ -24,7 +24,7 @@ export const Name = styled.span`
 
   &:hover {
     color: ${({ as }) =>
-      as === "a" ? COLORS.DEFAULT_LINK_COLOR_HOVER : "currentColor"};
+      as === "a" ? COLORS.DEFAULT_LINK_COLOR_HOVER : COLORS.DEFAULT_LINK_COLOR};
     text-decoration: ${({ as }) => (as === "a" ? "underline" : "none")};
   }
 
@@ -72,6 +72,7 @@ export const EventName = styled.p`
 
 export const Separator = styled.span`
   margin: 0 6px;
+  color: ${COLORS.DEFAULT_TEXT_COLOR};
 
   @media screen and (max-width: 440px) {
     display: ${({ hide }) => (hide ? "none" : "inline-block")};
