@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import { UI } from "../../constants"
+import { UI, TYPO, COLORS } from "../../constants"
 
 export const Container = styled.header`
   display: flex;
@@ -59,13 +59,15 @@ export const NavListItem = styled.li`
 `
 
 export const NavLink = styled(Link)`
-  color: #777777;
+  color: ${COLORS.DEFAULT_LINK_COLOR};
+  opacity: ${COLORS.DEFAULT_TEXT_OPACITY};
   text-decoration: none;
-  font-size: 1rem;
+  font-size: ${TYPO.DEFAULT_NAV_ITEM_FONT_SIZE};
 
   &:hover,
   &.active {
-    color: darkblue;
+    opacity: 1;
+    color: ${COLORS.DEFAULT_LINK_COLOR_HOVER};
     font-weight: 700;
   }
 `

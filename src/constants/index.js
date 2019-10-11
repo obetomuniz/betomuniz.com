@@ -1,4 +1,5 @@
 import * as UI from "./ui"
+import * as TYPO from "./typo"
 import * as COLORS from "./colors"
 
-export { UI, COLORS }
+export { UI, TYPO, COLORS }

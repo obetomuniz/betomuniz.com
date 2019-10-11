@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { UI } from "../../constants"
+import { UI, TYPO, COLORS } from "../../constants"
 
 export const Container = styled.div`
   width: 550px;
@@ -14,123 +14,136 @@ export const Container = styled.div`
 export const Header = styled.section``
 
 export const Title = styled.h1`
-  color: darkblue;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
-  font-weight: bold;
+  color: ${COLORS.DEFAULT_POST_TITLE_COLOR};
+  font-size: ${TYPO.DEFAULT_POST_TITLE_FONT_SIZE};
+  line-height: ${TYPO.DEFAULT_POST_TITLE_LINE_HEIGHT};
   margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
+  text-align: center;
+  font-weight: 700;
 
   @media screen and (max-width: 440px) {
-    font-size: 1.1rem;
-    line-height: 2rem;
+    font-size: ${TYPO.DEFAULT_POST_TITLE_FONT_SIZE_MOBILE};
+    line-height: ${TYPO.DEFAULT_POST_TITLE_LINE_HEIGHT_MOBILE};
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM_MOBILE};
   }
 `
 
 export const Subtitle = styled.span`
+  font-size: ${TYPO.DEFAULT_POST_SUBTITLE_FONT_SIZE};
   display: block;
-  font-size: 1.9rem;
 
   @media screen and (max-width: 440px) {
-    font-size: 0.9rem;
+    font-size: ${TYPO.DEFAULT_POST_SUBTITLE_FONT_SIZE_MOBILE};
   }
 `
 
 export const Register = styled.small`
-  font-size: 0.7rem;
-  color: #aaaaaa;
+  font-size: ${TYPO.DEFAULT_POST_REGISTER_FONT_SIZE};
+  color: ${TYPO.DEFAULT_TEXT_COLOR};
   font-family: "Tahoma", sans-serif;
   display: block;
   text-align: center;
   margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
 
   @media screen and (max-width: 440px) {
-    font-size: 0.5rem;
+    font-size: ${TYPO.DEFAULT_POST_REGISTER_FONT_SIZE_MOBILE};
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM_MOBILE};
   }
 `
 
 export const RegisterDate = styled.time`
-  display: inline;
+  opacity: 0.5;
 `
 
 export const RegisterReadingTime = styled.span`
-  color: #777;
+  opacity: ${COLORS.DEFAULT_TEXT_OPACITY};
 `
 
 export const Content = styled.main`
   margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
 
   p {
-    color: #333333;
-    display: block;
-    font-size: 1.15rem;
-    font-weight: 400;
-    line-height: 1.8rem;
-    letter-spacing: 0.01rem;
+    color: ${COLORS.DEFAULT_POST_TEXT_COLOR};
+    font-size: ${TYPO.DEFAULT_POST_TEXT_FONT_SIZE};
+    line-height: ${TYPO.DEFAULT_POST_TEXT_LINE_HEIGHT};
+    letter-spacing: ${COLORS.DEFAULT_POST_TEXT_LETTER_SPACING};
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
+    display: block;
+    font-weight: 400;
 
     code {
-      background: #eeeeee;
-      color: #333333;
+      background-color: ${COLORS.DEFAULT_POST_CODE_BACKGROUND_COLOR};
+      color: ${COLORS.DEFAULT_POST_CODE_TEXT_COLOR};
+      font-family: ${TYPO.DEFAULT_CODE_FONTS};
       display: inline-block;
       padding: 0 8px;
-      font-family: "Courier New", serif;
     }
   }
 
   small {
-    color: #333333;
+    color: ${COLORS.DEFAULT_POST_TEXT_COLOR};
+    font-size: ${TYPO.DEFAULT_POST_SMALL_TEXT_FONT_SIZE};
+    line-height: ${TYPO.DEFAULT_POST_SMALL_TEXT_LINE_HEIGHT};
+    letter-spacing: ${COLORS.DEFAULT_POST_TEXT_LETTER_SPACING};
     display: block;
-    font-size: 0.7rem;
     font-weight: 400;
-    line-height: 1.4rem;
-    letter-spacing: 0.01rem;
   }
 
-  h1,
   h2,
   h3,
   h4 {
-    color: darkblue;
-    line-height: 2.3rem;
-    font-weight: bold;
+    color: ${COLORS.DEFAULT_POST_TITLE_COLOR};
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
+    line-height: ${TYPO.DEFAULT_POST_SECONDARY_TITLE_LINE_HEIGHT};
+    font-weight: 700;
+
+    code {
+      background-color: ${COLORS.DEFAULT_POST_CODE_BACKGROUND_COLOR};
+      color: ${COLORS.DEFAULT_POST_CODE_TEXT_COLOR};
+      font-family: ${TYPO.DEFAULT_CODE_FONTS};
+      display: inline-block;
+      padding: 0 8px;
+    }
   }
 
   h2 {
-    font-size: 2.1rem;
+    font-size: ${TYPO.DEFAULT_POST_H2_FONT_SIZE};
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: ${TYPO.DEFAULT_POST_H3_FONT_SIZE};
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: ${TYPO.DEFAULT_POST_H4_FONT_SIZE};
   }
 
   a {
-    color: #777777;
-    font-weight: bold;
+    color: ${COLORS.DEFAULT_LINK_COLOR};
+    opacity: ${COLORS.DEFAULT_TEXT_OPACITY};
+    font-weight: 700;
+    word-break: break-word;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   img {
-    border-radius: 5px;
+    border-radius: ${UI.DEFAULT_BORDER_RADIUS};
     max-width: 100%;
     display: block;
     margin: 0 auto ${UI.DEFAULT_POST_MARGIN_BOTTOM};
-    box-shadow: 0 10px 6px -7px #999999;
+    box-shadow: 0 10px 6px -7px ${COLORS.DEFAULT_BOX_SHADOW_COLOR};
   }
 
   ul,
   ol {
-    padding: 0 0 0 15px;
     margin: 0 0 ${UI.DEFAULT_POST_MARGIN_BOTTOM} 15px;
-    font-size: 0.9rem;
-    color: #333333;
-    line-height: 1.2rem;
+    line-height: ${TYPO.DEFAULT_POST_LIST_ITEM_LINE_HEIGHT};
+    font-size: ${TYPO.DEFAULT_POST_LIST_ITEM_FONT_SIZE};
+    color: ${COLORS.DEFAULT_POST_LIST_ITEM_COLOR};
+    padding: 0 0 0 15px;
 
     ul,
     ol {
@@ -157,7 +170,7 @@ export const Content = styled.main`
   blockquote {
     margin: 0 0 ${UI.DEFAULT_POST_MARGIN_BOTTOM} 15px;
     padding: 10px 0 10px 15px;
-    border-left: 3px solid #cccccc;
+    border-left: 3px solid ${COLORS.DEFAULT_BLOCKQUOTE_COLOR};
     display: block;
     font-style: italic;
 
@@ -167,25 +180,24 @@ export const Content = styled.main`
   }
 
   .gatsby-highlight {
-    box-shadow: 0 10px 6px -8px #bbbbbb;
-    background-color: rgb(45, 45, 45);
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: ${UI.DEFAULT_BORDER_RADIUS};
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
+    background-color: ${COLORS.DEFAULT_POST_CODE_DEMO_BACKGROUND};
+    box-shadow: 0 10px 6px -8px ${COLORS.DEFAULT_BOX_SHADOW_COLOR};
+    padding: 20px;
   }
 
   pre {
-    font-size: 0.9rem;
+    font-size: ${TYPO.DEFAULT_POST_CODE_DEMO_FONT_SIZE};
     width: 100%;
-    -webkit-font-smoothing: auto;
     padding: 0;
     margin: 0;
 
     code {
+      line-height: ${TYPO.DEFAULT_POST_CODE_DEMO_LINE_HEIGHT};
       overflow-y: auto;
       background-color: transparent;
       padding: 0;
-      line-height: 1.2rem;
     }
   }
 
@@ -198,54 +210,54 @@ export const Content = styled.main`
   }
 
   hr {
+    margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
+    border-bottom: 1px solid ${COLORS.DEFAULT_POST_HR_COLOR};
     display: block;
     width: 100%;
     border: 0;
-    border-bottom: 1px solid #cccccc;
     margin-top: 0;
-    margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
   }
 
   .post-video {
-    min-height: 350px;
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM};
-    box-shadow: 0 10px 6px -8px #bbbbbb;
+    box-shadow: 0 10px 6px -8px ${COLORS.DEFAULT_BOX_SHADOW_COLOR};
+    min-height: 350px;
   }
 
   @media screen and (max-width: 440px) {
     margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM_MOBILE};
 
     p {
-      font-size: 0.9rem;
-      line-height: 1.2rem;
-      letter-spacing: 0.02rem;
+      font-size: ${TYPO.DEFAULT_POST_TEXT_FONT_SIZE_MOBILE};
+      line-height: ${TYPO.DEFAULT_POST_TEXT_LINE_HEIGHT_MOBILE};
+      letter-spacing: ${TYPO.DEFAULT_POST_TEXT_LETTER_SPACING_MOBILE};
       margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM_MOBILE};
     }
 
     small {
-      font-size: 0.7rem;
-      line-height: 1.2rem;
-      letter-spacing: 0.02rem;
+      font-size: ${TYPO.DEFAULT_POST_SMALL_TEXT_FONT_SIZE_MOBILE};
+      line-height: ${TYPO.DEFAULT_POST_SMALL_TEXT_LINE_HEIGHT_MOBILE};
+      letter-spacing: ${TYPO.DEFAULT_POST_TEXT_LETTER_SPACING_MOBILE};
     }
 
     h1,
     h2,
     h3,
     h4 {
-      line-height: 2rem;
+      line-height: ${TYPO.DEFAULT_POST_SECONDARY_TITLE_LINE_HEIGHT_MOBILE};
       margin-bottom: ${UI.DEFAULT_POST_MARGIN_BOTTOM_MOBILE};
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: ${TYPO.DEFAULT_POST_H2_FONT_SIZE};
     }
 
     h3 {
-      font-size: 1.7rem;
+      font-size: ${TYPO.DEFAULT_POST_H3_FONT_SIZE};
     }
 
     h4 {
-      font-size: 1.4rem;
+      font-size: ${TYPO.DEFAULT_POST_H4_FONT_SIZE};
     }
 
     img {
@@ -256,8 +268,8 @@ export const Content = styled.main`
     ol {
       padding: 0;
       margin: 0 0 ${UI.DEFAULT_POST_MARGIN_BOTTOM_MOBILE} 15px;
-      font-size: 0.7rem;
-      line-height: 1.5rem;
+      font-size: ${TYPO.DEFAULT_POST_LIST_ITEM_FONT_SIZE_MOBILE};
+      line-height: ${TYPO.DEFAULT_POST_LIST_ITEM_LINE_HEIGHT_MOBILE};
     }
 
     blockquote {
@@ -270,10 +282,10 @@ export const Content = styled.main`
     }
 
     pre {
-      font-size: 0.7rem;
+      font-size: ${TYPO.DEFAULT_POST_CODE_DEMO_FONT_SIZE_MOBILE};
 
       code {
-        line-height: 1rem;
+        line-height: ${TYPO.DEFAULT_POST_CODE_DEMO_LINE_HEIGHT_MOBILE};
       }
     }
 

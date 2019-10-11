@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-import { UI } from "../../constants"
+import { TYPO, COLORS } from "../../constants"
 
 export const GlobalStyle = createGlobalStyle`
   *,:after,:before{box-sizing:inherit}html{box-sizing:border-box}
@@ -20,10 +20,11 @@ export const GlobalStyle = createGlobalStyle`
   body,h1,h2,h3,h4,h5,h6,p{margin:0;font-size:1rem;font-weight:400}
 
   body{
-    font-family: ${UI.DEFAULT_SAN_SERIF_FONTS};
+    font-family: ${TYPO.DEFAULT_SAN_SERIF_FONTS};
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     line-height: 1;
+    background-color: ${COLORS.DEFAULT_BACKGROUND_COLOR};
 
     &.center {
       display: flex;
