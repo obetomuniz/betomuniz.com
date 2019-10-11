@@ -9,6 +9,7 @@ function SEO({
   lang,
   meta,
   title,
+  url,
   subtitle,
   bodyAttributes,
 }) {
@@ -69,7 +70,7 @@ function SEO({
         },
         {
           property: `og:url`,
-          content: `https://betomuniz.com/`,
+          content: url,
         },
         {
           name: `twitter:card`,
@@ -98,6 +99,7 @@ SEO.defaultProps = {
   description: ``,
   keywords: ``,
   title: ``,
+  url: ``,
   subtitle: ``,
   bodyAttributes: {},
 }
@@ -108,6 +110,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
+  url: PropTypes.string,
   subtitle: PropTypes.string,
   bodyAttributes: PropTypes.object,
 }

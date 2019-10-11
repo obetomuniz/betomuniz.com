@@ -8,6 +8,7 @@ const NotFoundPage = () => (
       title="404: Not Found"
       description="Beto Muniz is a Front-End Engineer who lives in Belo Horizonte, Brazil."
       keywords="beto, muniz, not found, beto muniz, betomuniz, obetomuniz, front-end, javascript, developer, engineer"
+      url="https://betomuniz.com"
     />
     <section>
       <h1>NOT FOUND</h1>

@@ -15,7 +15,6 @@ import {
 } from "./ui"
 
 export default function Template({ data }) {
-  const isBrowser = typeof window !== "undefined"
   let disqusConfig = {}
   const { site, markdownRemark } = data
   const {
@@ -23,11 +22,11 @@ export default function Template({ data }) {
     fields: { readingTime },
     html,
   } = markdownRemark
-  if (isBrowser) {
-    disqusConfig.url = `${site.siteMetadata.url + window.location.pathname}`
-    disqusConfig.identifier = path
-    disqusConfig.title = title
-  }
+
+  disqusConfig.url = `${site.siteMetadata.url + path}`
+  disqusConfig.identifier = path
+  disqusConfig.title = title
+
   return (
     <Layout location="/blog/">
       <SEO
@@ -35,6 +34,7 @@ export default function Template({ data }) {
         subtitle={subtitle}
         description={description}
         keywords={keywords}
+        url={disqusConfig.url}
       />
 
       <Container>
@@ -50,7 +50,7 @@ export default function Template({ data }) {
         </Header>
         <Content dangerouslySetInnerHTML={{ __html: html }} />
         <div id="disqus_thread">
-          {isBrowser && <Disqus config={disqusConfig} />}
+          <Disqus config={disqusConfig} />
         </div>
       </Container>
     </Layout>
