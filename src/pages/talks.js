@@ -16,9 +16,9 @@ const TalksPage = ({
         keywords="beto, muniz, speaker, talks, beto muniz, betomuniz"
       />
 
-      <section>
+      <main>
         <TalkList data={edges} />
-      </section>
+      </main>
     </Layout>
   )
 }

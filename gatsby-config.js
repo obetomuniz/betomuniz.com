@@ -24,18 +24,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/static/images/betomunizcom-icon.png`,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
@@ -67,8 +55,18 @@ module.exports = {
         trackingId: "UA-31461010-1",
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Beto Muniz's Website`,
+        short_name: `Beto Muniz`,
+        start_url: `/`,
+        background_color: `#1f1f1f`,
+        theme_color: `#1f1f1f`,
+        display: `minimal-ui`,
+        icon: `src/static/images/betomunizcom-icon.png`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }

@@ -16,9 +16,9 @@ const ProjectsPage = ({
         keywords="beto, muniz, open source, projects, beto muniz, betomuniz"
       />
 
-      <section>
+      <main>
         <ProjectList data={edges} />
-      </section>
+      </main>
     </Layout>
   )
 }

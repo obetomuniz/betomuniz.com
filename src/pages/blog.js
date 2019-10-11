@@ -16,9 +16,9 @@ const BlogPage = ({
         keywords="beto, muniz, blog, beto muniz, betomuniz"
       />
 
-      <section>
+      <main>
         <PostList data={edges} />
-      </section>
+      </main>
     </Layout>
   )
 }

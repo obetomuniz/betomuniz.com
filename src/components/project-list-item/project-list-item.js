@@ -15,7 +15,7 @@ const ProjectListItem = ({ name, url, image }) => {
           <Logo as="img" src={image} alt={`${name} Logo`} />
         ) : (
           <Logo as="svg">
-            <use href="#github" />
+            <use href="#github-2" />
           </Logo>
         )}
       </LogoContainer>

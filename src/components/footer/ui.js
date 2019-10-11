@@ -25,7 +25,7 @@ export const SocialsItem = styled.li``
 
 export const SocialsIcon = styled.svg`
   margin: 0 12px;
-  width: 1.1rem;
+  width: 1.15rem;
   height: 1.1rem;
   stroke-width: 0;
   stroke: currentColor;

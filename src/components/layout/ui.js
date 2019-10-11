@@ -21,7 +21,6 @@ export const GlobalStyle = createGlobalStyle`
 
   #disqus_thread a {
     color: ${COLORS.DEFAULT_LINK_COLOR_HOVER};
-
   }
 
   body{

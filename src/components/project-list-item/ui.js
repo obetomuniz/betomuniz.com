@@ -43,18 +43,29 @@ export const Name = styled.a`
 `
 
 export const LogoContainer = styled.a`
-  width: 42px;
-  height: 40px;
+  img {
+    width: 40px;
+    height: 40px;
+  }
 
   svg {
+    width: 42px;
+    height: 40px;
     stroke: currentColor;
     fill: currentColor;
     color: ${COLORS.DEFAULT_PROJECT_GITHUB_COLOR};
   }
 
   @media screen and (max-width: 440px) {
-    width: 27px;
-    height: 25px;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+
+    svg {
+      width: 27px;
+      height: 25px;
+    }
   }
 `
 
