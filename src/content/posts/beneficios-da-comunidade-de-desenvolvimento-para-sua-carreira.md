@@ -5,6 +5,7 @@ path: "/blog/beneficios-da-comunidade-de-desenvolvimento-para-sua-carreira/"
 description: "Saiba o quanto as comunidades de desenvolvimento podem ajudar você na sua carreira."
 keywords: "desenvolvedores, comunidades, comunidade, desenvolvimento, carreira"
 category: "comunidade"
+draft: true
 ---
 
 Resolvi escrever este post, pois acredito que fui extremamente privilegiado por ter encontrado pessoas incríveis durante minha carreira e que me apresentaram à Comunidade.

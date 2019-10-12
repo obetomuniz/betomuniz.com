@@ -5,6 +5,7 @@ path: "/blog/o-que-voce-tambem-pode-aprender-criando-um-aplicativo-com-flutter/"
 description: "Saiba mais o que eu aprendi criando um aplicativo com Flutter."
 keywords: "listtta, flutter, firebase, firestore"
 category: "tech"
+draft: true
 ---
 
 Neste artigo falo da minha experiência criando o [Listtta](https://listtta.com/) com [Flutter](https://flutter.dev/), pois após o lançamento do mesmo, recebi diversas dúvidas sobre decisões tecnológicas que fiz, daí resolvi compilar num artigo algumas delas.

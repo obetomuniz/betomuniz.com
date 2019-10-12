@@ -9,12 +9,14 @@ exports.createPages = ({ actions, graphql }) => {
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
+        filter: { frontmatter: { draft: { ne: true } } }
       ) {
         edges {
           node {
             frontmatter {
               path
+              external
+              draft
             }
           }
         }
@@ -25,14 +27,20 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      if (node.frontmatter.path.startsWith("/blog/")) {
-        createPage({
-          path: node.frontmatter.path,
-          component: blogPostTemplate,
-          context: {},
-        })
+    return result.data.allMarkdownRemark.edges.forEach(
+      ({
+        node: {
+          frontmatter: { path, external },
+        },
+      }) => {
+        if (!external) {
+          createPage({
+            path,
+            component: blogPostTemplate,
+            context: {},
+          })
+        }
       }
-    })
+    )
   })
 }
