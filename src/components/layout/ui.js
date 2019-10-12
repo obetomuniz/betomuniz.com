@@ -22,28 +22,30 @@ export const GlobalStyle = createGlobalStyle`
     color: var(--DEFAULT_LINK_COLOR_HOVER);
   }
 
+  #gatsby-focus-wrapper {
+    overflow: hidden;
+  }
+
   body{
     font-family: var(--DEFAULT_SAN_SERIF_FONTS);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     line-height: 1;
     background-color: var(--DEFAULT_BACKGROUND_COLOR);
+  }
 
-    &.center {
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-      min-height: 600px;
-      align-items: center;
-      justify-content: center;
-    }
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
   }
 
   @media screen and (max-width: 440px) {
-    body{
-      &.center {
-        min-height: auto;
-      }
+    .center-content {
+      min-height: auto;
     }
   }
 `

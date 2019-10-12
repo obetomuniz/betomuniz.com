@@ -12,7 +12,9 @@ export const Container = styled.header`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: var(--DEFAULT_MARGIN_MOBILE) 0;
+
+    margin: calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5) 0
+      calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
   }
 `
 
@@ -27,7 +29,7 @@ export const Photo = styled(Link)`
   box-shadow: 0 10px 6px -8px var(--DEFAULT_BOX_SHADOW_COLOR);
 
   @media screen and (max-width: 440px) {
-    margin-bottom: var(--DEFAULT_MARGIN_MOBILE);
+    margin-bottom: calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
   }
 `
 

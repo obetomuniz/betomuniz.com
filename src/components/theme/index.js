@@ -22,7 +22,7 @@ export const LightThemeStyle = createGlobalStyle`
 
     --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
     --DEFAULT_TECH_CATEGORY_COLOR: darkgreen;
-    --DEFAULT_DEV_LIFESTYLE_COLOR: goldenrod;
+    --DEFAULT_DEV_LIFESTYLE_CATEGORY_COLOR: goldenrod;
     --DEFAULT_REMOTE_WORK_CATEGORY_COLOR: dodgerblue;
 
     --DEFAULT_PROJECT_GITHUB_COLOR: #000;
@@ -45,7 +45,7 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_CODE_FONTS: "Courier New", serif;
 
     --DEFAULT_NAV_ITEM_FONT_SIZE: 1rem;
-    --DEFAULT_NAV_ITEM_TEXT_SHADOW: 1px 1px 1px #ddd;
+    --DEFAULT_NAV_ITEM_TEXT_SHADOW: 1px 0px 1px #ccc;
 
     --DEFAULT_ABOUT_FONT_SIZE: 1.5rem;
     --DEFAULT_ABOUT_FONT_SIZE_MOBILE: 1.09rem;
@@ -129,7 +129,7 @@ export const DarkThemeStyle = createGlobalStyle`
 
       --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
       --DEFAULT_TECH_CATEGORY_COLOR: limegreen;
-      --DEFAULT_DEV_LIFESTYLE_COLOR: gold;
+      --DEFAULT_DEV_LIFESTYLE_CATEGORY_COLOR: gold;
       --DEFAULT_REMOTE_WORK_CATEGORY_COLOR: deepskyblue;
       
       --DEFAULT_PROJECT_GITHUB_COLOR: #eee;

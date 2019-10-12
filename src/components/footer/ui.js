@@ -11,7 +11,8 @@ export const Container = styled.footer`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: var(--DEFAULT_MARGIN_MOBILE) 0;
+    margin: calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5) 0
+      calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
   }
 `
 
