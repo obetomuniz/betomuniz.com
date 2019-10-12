@@ -4,7 +4,7 @@ date: "2019-10-11"
 path: "/blog/voce-ja-ouviu-falar-do-minas-dev/"
 description: "Conheça um pouco mais do Minas Dev e suas futuras iniciativas."
 keywords: "minas, dev, desenvolvedores, minas gerais, comunidade"
-category: "comunidade"
+category: "community"
 ---
 
 Se você nunca ouviu falar do [Minas Dev](https://minasdev.org/), ou apenas quiser saber mais, venha comigo neste post, vou explicar _tudin_.

@@ -10,6 +10,11 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_POST_MARGIN_BOTTOM_MOBILE: 1.5rem;
 
     /* Colors */
+    --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
+    --DEFAULT_TECH_CATEGORY_COLOR: darkgreen;
+    --DEFAULT_DEV_LIFESTYLE_COLOR: goldenrod;
+    --DEFAULT_REMOTE_WORK_CATEGORY_COLOR: dodgerblue;
+
     --DEFAULT_BACKGROUND_COLOR: #fff;
     --DEFAULT_TEXT_OPACITY: 0.6;
     --DEFAULT_TEXT_COLOR: #000;
@@ -19,6 +24,8 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_BOX_SHADOW_COLOR: #bbb;
 
     --DEFAULT_PROJECT_GITHUB_COLOR: #000;
+      
+    --DEFAULT_DETAIL_COLOR: darkblue;
 
     --DEFAULT_POST_TITLE_COLOR: darkblue;
     --DEFAULT_POST_TEXT_COLOR: #000;
@@ -107,6 +114,11 @@ export const DarkThemeStyle = createGlobalStyle`
       --DEFAULT_POST_MARGIN_BOTTOM_MOBILE: 1.5rem;
 
       /* Colors */
+      --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
+      --DEFAULT_TECH_CATEGORY_COLOR: limegreen;
+      --DEFAULT_DEV_LIFESTYLE_COLOR: gold;
+      --DEFAULT_REMOTE_WORK_CATEGORY_COLOR: deepskyblue;
+
       --DEFAULT_BACKGROUND_COLOR: #1f1f1f;
       --DEFAULT_TEXT_OPACITY: 1;
       --DEFAULT_TEXT_COLOR: #fff;
@@ -114,8 +126,10 @@ export const DarkThemeStyle = createGlobalStyle`
       --DEFAULT_LINK_COLOR_ACTIVE: lightskyblue;
       --DEFAULT_LINK_COLOR_HOVER: lightskyblue;
       --DEFAULT_BOX_SHADOW_COLOR: #000;
-
+      
       --DEFAULT_PROJECT_GITHUB_COLOR: #eee;
+      
+      --DEFAULT_DETAIL_COLOR: lightblue;
 
       --DEFAULT_POST_TITLE_COLOR: lightskyblue;
       --DEFAULT_POST_TEXT_COLOR: #fff;

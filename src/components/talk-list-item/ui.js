@@ -41,7 +41,7 @@ export const EventInfos = styled.div`
 
 export const EventLocation = styled.address`
   font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
-  color: var(--DEFAULT_TEXT_COLOR);
+  color: var(--DEFAULT_DETAIL_COLOR);
   opacity: var(--DEFAULT_TEXT_OPACITY);
 
   @media screen and (max-width: 440px) {
@@ -52,7 +52,7 @@ export const EventLocation = styled.address`
 
 export const EventDate = styled.time`
   font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
-  color: var(--DEFAULT_TEXT_COLOR);
+  color: var(--DEFAULT_DETAIL_COLOR);
   opacity: var(--DEFAULT_TEXT_OPACITY);
 
   @media screen and (max-width: 440px) {
@@ -62,7 +62,7 @@ export const EventDate = styled.time`
 
 export const EventName = styled.p`
   font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
-  color: var(--DEFAULT_TEXT_COLOR);
+  color: var(--DEFAULT_DETAIL_COLOR);
   opacity: var(--DEFAULT_TEXT_OPACITY);
 
   @media screen and (max-width: 440px) {

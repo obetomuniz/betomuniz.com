@@ -27,3 +27,12 @@ export const PostLink = styled.a`
     line-height: var(--DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT_MOBILE);
   }
 `
+
+export const PostCategory = styled.p`
+  font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
+  color: var(${({ color }) => color});
+
+  @media screen and (max-width: 440px) {
+    font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
+  }
+`

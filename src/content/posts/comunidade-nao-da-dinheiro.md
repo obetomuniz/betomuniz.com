@@ -4,7 +4,7 @@ date: "2017-09-26"
 path: "/blog/comunidade-nao-da-dinheiro/"
 description: "Neste post você verá que com dedicação, a comunidade pode oferecer muito mais do que dinheiro, ela pode mudar positivamente a sua vida por completo."
 keywords: "comunidade, minas gerais, minasdev, dev in company, toptal, google, google developer expert, polonia"
-category: "comunidade"
+category: "community"
 ---
 
 Olá! Pode sentar, porque que lá vem história....
