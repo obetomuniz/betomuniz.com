@@ -11,6 +11,7 @@ import {
   Register,
   RegisterDate,
   RegisterReadingTime,
+  RegisterCategory,
   Content,
 } from "./ui"
 
@@ -18,7 +19,15 @@ export default function Template({ data }) {
   let disqusConfig = {}
   const { site, markdownRemark } = data
   const {
-    frontmatter: { path, title, subtitle, description, keywords, date },
+    frontmatter: {
+      path,
+      title,
+      subtitle,
+      description,
+      keywords,
+      date,
+      category,
+    },
     fields: { readingTime },
     html,
   } = markdownRemark
@@ -43,6 +52,12 @@ export default function Template({ data }) {
             {title} {subtitle && <Subtitle>{subtitle}</Subtitle>}
           </Title>
           <Register>
+            <RegisterCategory
+              color={`--DEFAULT_${category.toUpperCase()}_CATEGORY_COLOR`}
+            >
+              {category.replace("_", " ")}
+            </RegisterCategory>
+            {" • "}
             <RegisterDate>{date}</RegisterDate>
             {" • "}
             <RegisterReadingTime>{readingTime.text}</RegisterReadingTime>
@@ -72,6 +87,7 @@ export const pageQuery = graphql`
         subtitle
         description
         keywords
+        category
       }
       fields {
         readingTime {

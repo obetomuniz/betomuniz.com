@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link as GatsbyLink } from "gatsby"
 
-import { Container, PostLink, PostCategory } from "./ui"
+import { Container, Link, Category } from "./ui"
 
 const PostListItem = ({ external, path, title, subtitle, category }) => {
   let customTitle = title
@@ -12,19 +12,17 @@ const PostListItem = ({ external, path, title, subtitle, category }) => {
 
   return (
     <Container>
-      <PostCategory
-        color={`--DEFAULT_${category.toUpperCase()}_CATEGORY_COLOR`}
-      >
-        {category}
-      </PostCategory>
+      <Category color={`--DEFAULT_${category.toUpperCase()}_CATEGORY_COLOR`}>
+        {category.replace("_", " ")}
+      </Category>
       {external ? (
-        <PostLink as="a" href={path} target="_blank" rel="noopener noreferrer">
+        <Link as="a" href={path} target="_blank" rel="noopener noreferrer">
           {customTitle}
-        </PostLink>
+        </Link>
       ) : (
-        <PostLink as={Link} to={path}>
+        <Link as={GatsbyLink} to={path}>
           {customTitle}
-        </PostLink>
+        </Link>
       )}
     </Container>
   )

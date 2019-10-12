@@ -9,7 +9,17 @@ export const Container = styled.li`
   }
 `
 
-export const PostLink = styled.a`
+export const Category = styled.p`
+  font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
+  color: var(${({ color }) => color});
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
+
+  @media screen and (max-width: 440px) {
+    font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
+  }
+`
+
+export const Link = styled.a`
   text-decoration: none;
   display: inline-block;
   font-size: var(--DEFAULT_LIST_ITEM_LABEL_FONT_SIZE);
@@ -26,15 +36,5 @@ export const PostLink = styled.a`
   @media screen and (max-width: 440px) {
     font-size: var(--DEFAULT_LIST_ITEM_LABEL_FONT_SIZE_MOBILE);
     line-height: var(--DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT_MOBILE);
-  }
-`
-
-export const PostCategory = styled.p`
-  font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
-  color: var(${({ color }) => color});
-  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
-
-  @media screen and (max-width: 440px) {
-    font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
   }
 `

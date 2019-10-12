@@ -5,7 +5,10 @@ import { TalkListItem } from "../"
 const TalkList = ({ data }) => (
   <ul>
     {data.map(
-      ({ node: { talk, talk_url, location, talk_date, event } }, index) => (
+      (
+        { node: { talk, talk_url, location, talk_date, event, category } },
+        index
+      ) => (
         <TalkListItem
           key={`talk-${index}`}
           talk={talk}
@@ -13,6 +16,7 @@ const TalkList = ({ data }) => (
           location={location}
           date={talk_date}
           event={event}
+          category={category}
         />
       )
     )}

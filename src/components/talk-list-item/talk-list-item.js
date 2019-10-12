@@ -2,6 +2,7 @@ import React from "react"
 
 import {
   Container,
+  Category,
   Name,
   EventInfos,
   EventLocation,
@@ -10,8 +11,11 @@ import {
   Separator,
 } from "./ui"
 
-const TalkListItem = ({ talk, url, location, date, event }) => (
+const TalkListItem = ({ talk, url, location, date, event, category }) => (
   <Container>
+    <Category color={`--DEFAULT_${category.toUpperCase()}_CATEGORY_COLOR`}>
+      {category.replace("_", " ")}
+    </Category>
     <h4>
       {url ? (
         <Name as="a" href={url} target="_blank" rel="noopener noreferrer">

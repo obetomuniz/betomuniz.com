@@ -61,6 +61,16 @@ export const RegisterReadingTime = styled.span`
   opacity: var(--DEFAULT_TEXT_OPACITY);
 `
 
+export const RegisterCategory = styled.span`
+  font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
+  color: var(${({ color }) => color});
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
+
+  @media screen and (max-width: 440px) {
+    font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
+  }
+`
+
 export const Content = styled.main`
   margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
 
@@ -125,7 +135,6 @@ export const Content = styled.main`
   a {
     color: var(--DEFAULT_LINK_COLOR);
     opacity: var(--DEFAULT_TEXT_OPACITY);
-    text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
     font-weight: 700;
     word-break: break-word;
     text-decoration: underline;

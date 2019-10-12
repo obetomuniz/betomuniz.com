@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
 export const LightThemeStyle = createGlobalStyle`
-@media (prefers-color-scheme: light) {
   :root {
     /* UI */
     --DEFAULT_BORDER_RADIUS: 5px;
@@ -104,7 +103,7 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_POST_CODE_DEMO_FONT_SIZE_MOBILE: 0.7rem;
     --DEFAULT_POST_CODE_DEMO_LINE_HEIGHT: 1.2rem;
     --DEFAULT_POST_CODE_DEMO_LINE_HEIGHT_MOBILE: 1rem;
-  }}
+  }
 `
 
 export const DarkThemeStyle = createGlobalStyle`

@@ -12,6 +12,16 @@ export const Container = styled.li`
   }
 `
 
+export const Category = styled.p`
+  font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
+  color: var(${({ color }) => color});
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
+
+  @media screen and (max-width: 440px) {
+    font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
+  }
+`
+
 export const Name = styled.span`
   text-decoration: none;
   display: inline-block;
