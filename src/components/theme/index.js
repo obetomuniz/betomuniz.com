@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const LightThemeStyle = createGlobalStyle`
+@media (prefers-color-scheme: light) {
   :root {
     /* UI */
     --DEFAULT_BORDER_RADIUS: 5px;
@@ -10,11 +11,6 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_POST_MARGIN_BOTTOM_MOBILE: 1.5rem;
 
     /* Colors */
-    --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
-    --DEFAULT_TECH_CATEGORY_COLOR: darkgreen;
-    --DEFAULT_DEV_LIFESTYLE_COLOR: goldenrod;
-    --DEFAULT_REMOTE_WORK_CATEGORY_COLOR: dodgerblue;
-
     --DEFAULT_BACKGROUND_COLOR: #fff;
     --DEFAULT_TEXT_OPACITY: 0.6;
     --DEFAULT_TEXT_COLOR: #000;
@@ -22,6 +18,13 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_LINK_COLOR_ACTIVE: darkblue;
     --DEFAULT_LINK_COLOR_HOVER: darkblue;
     --DEFAULT_BOX_SHADOW_COLOR: #bbb;
+
+    --DEFAULT_HEADER_PHOTO_BORDER_COLOR: blueviolet;
+
+    --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
+    --DEFAULT_TECH_CATEGORY_COLOR: darkgreen;
+    --DEFAULT_DEV_LIFESTYLE_COLOR: goldenrod;
+    --DEFAULT_REMOTE_WORK_CATEGORY_COLOR: dodgerblue;
 
     --DEFAULT_PROJECT_GITHUB_COLOR: #000;
       
@@ -43,6 +46,7 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_CODE_FONTS: "Courier New", serif;
 
     --DEFAULT_NAV_ITEM_FONT_SIZE: 1rem;
+    --DEFAULT_NAV_ITEM_TEXT_SHADOW: 1px 1px 1px #ddd;
 
     --DEFAULT_ABOUT_FONT_SIZE: 1.5rem;
     --DEFAULT_ABOUT_FONT_SIZE_MOBILE: 1.09rem;
@@ -66,8 +70,8 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_POST_SUBTITLE_FONT_SIZE: 1.9rem;
     --DEFAULT_POST_SUBTITLE_FONT_SIZE_MOBILE: 0.9rem;
 
-    --DEFAULT_POST_REGISTER_FONT_SIZE: 0.7rem;
-    --DEFAULT_POST_REGISTER_FONT_SIZE_MOBILE: 0.5rem;
+    --DEFAULT_POST_REGISTER_FONT_SIZE: 0.8rem;
+    --DEFAULT_POST_REGISTER_FONT_SIZE_MOBILE: 0.7rem;
 
     --DEFAULT_POST_TEXT_LETTER_SPACING: 0.01rem;
     --DEFAULT_POST_TEXT_LETTER_SPACING_MOBILE: 0.02rem;
@@ -100,7 +104,7 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_POST_CODE_DEMO_FONT_SIZE_MOBILE: 0.7rem;
     --DEFAULT_POST_CODE_DEMO_LINE_HEIGHT: 1.2rem;
     --DEFAULT_POST_CODE_DEMO_LINE_HEIGHT_MOBILE: 1rem;
-  }
+  }}
 `
 
 export const DarkThemeStyle = createGlobalStyle`
@@ -114,11 +118,6 @@ export const DarkThemeStyle = createGlobalStyle`
       --DEFAULT_POST_MARGIN_BOTTOM_MOBILE: 1.5rem;
 
       /* Colors */
-      --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
-      --DEFAULT_TECH_CATEGORY_COLOR: limegreen;
-      --DEFAULT_DEV_LIFESTYLE_COLOR: gold;
-      --DEFAULT_REMOTE_WORK_CATEGORY_COLOR: deepskyblue;
-
       --DEFAULT_BACKGROUND_COLOR: #1f1f1f;
       --DEFAULT_TEXT_OPACITY: 1;
       --DEFAULT_TEXT_COLOR: #fff;
@@ -126,6 +125,13 @@ export const DarkThemeStyle = createGlobalStyle`
       --DEFAULT_LINK_COLOR_ACTIVE: lightskyblue;
       --DEFAULT_LINK_COLOR_HOVER: lightskyblue;
       --DEFAULT_BOX_SHADOW_COLOR: #000;
+
+      --DEFAULT_HEADER_PHOTO_BORDER_COLOR: darkviolet;
+
+      --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
+      --DEFAULT_TECH_CATEGORY_COLOR: limegreen;
+      --DEFAULT_DEV_LIFESTYLE_COLOR: gold;
+      --DEFAULT_REMOTE_WORK_CATEGORY_COLOR: deepskyblue;
       
       --DEFAULT_PROJECT_GITHUB_COLOR: #eee;
       
@@ -147,6 +153,7 @@ export const DarkThemeStyle = createGlobalStyle`
       --DEFAULT_CODE_FONTS: "Courier New", serif;
 
       --DEFAULT_NAV_ITEM_FONT_SIZE: 1rem;
+      --DEFAULT_NAV_ITEM_TEXT_SHADOW: 2px 2px 2px #000;
 
       --DEFAULT_ABOUT_FONT_SIZE: 1.5rem;
       --DEFAULT_ABOUT_FONT_SIZE_MOBILE: 1.09rem;
@@ -170,8 +177,8 @@ export const DarkThemeStyle = createGlobalStyle`
       --DEFAULT_POST_SUBTITLE_FONT_SIZE: 1.9rem;
       --DEFAULT_POST_SUBTITLE_FONT_SIZE_MOBILE: 1.1rem;
 
-      --DEFAULT_POST_REGISTER_FONT_SIZE: 0.7rem;
-      --DEFAULT_POST_REGISTER_FONT_SIZE_MOBILE: 0.5rem;
+      --DEFAULT_POST_REGISTER_FONT_SIZE: 0.8rem;
+      --DEFAULT_POST_REGISTER_FONT_SIZE_MOBILE: 0.7rem;
 
       --DEFAULT_POST_TEXT_LETTER_SPACING: 0.01rem;
       --DEFAULT_POST_TEXT_LETTER_SPACING_MOBILE: 0.02rem;

@@ -30,6 +30,9 @@ export const SocialsIcon = styled.svg`
   fill: currentColor;
   color: var(--DEFAULT_LINK_COLOR);
   transition: all 200ms linear;
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
+  -webkit-filter: drop-shadow(var(--DEFAULT_NAV_ITEM_TEXT_SHADOW));
+  filter: drop-shadow(var(--DEFAULT_NAV_ITEM_TEXT_SHADOW));
 
   &:hover {
     color: var(--DEFAULT_LINK_COLOR_HOVER);

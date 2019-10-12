@@ -16,6 +16,7 @@ export const PostLink = styled.a`
   line-height: var(--DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT);
   color: var(--DEFAULT_LINK_COLOR);
   font-weight: 700;
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   &:hover {
     color: var(--DEFAULT_LINK_COLOR_HOVER);
@@ -31,6 +32,7 @@ export const PostLink = styled.a`
 export const PostCategory = styled.p`
   font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
   color: var(${({ color }) => color});
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   @media screen and (max-width: 440px) {
     font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);

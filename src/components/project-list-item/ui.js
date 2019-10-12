@@ -27,6 +27,7 @@ export const Name = styled.a`
   font-size: var(--DEFAULT_LIST_ITEM_LABEL_FONT_SIZE);
   line-height: var(--DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT);
   color: var(--DEFAULT_LINK_COLOR);
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
   font-weight: 700;
 
   &:hover {

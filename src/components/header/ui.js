@@ -23,6 +23,8 @@ export const Photo = styled(Link)`
   display: block;
   border-radius: 100%;
   margin-bottom: var(--DEFAULT_MARGIN);
+  border: 2px solid var(--DEFAULT_HEADER_PHOTO_BORDER_COLOR);
+  box-shadow: 0 10px 6px -8px var(--DEFAULT_BOX_SHADOW_COLOR);
 
   @media screen and (max-width: 440px) {
     margin-bottom: var(--DEFAULT_MARGIN_MOBILE);
@@ -61,6 +63,7 @@ export const NavLink = styled(Link)`
   opacity: var(--DEFAULT_TEXT_OPACITY);
   text-decoration: none;
   font-size: var(--DEFAULT_NAV_ITEM_FONT_SIZE);
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   &:hover,
   &.active {

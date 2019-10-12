@@ -18,6 +18,7 @@ export const Name = styled.span`
   font-size: var(--DEFAULT_LIST_ITEM_LABEL_FONT_SIZE);
   line-height: var(--DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT);
   color: var(--DEFAULT_LINK_COLOR);
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
   font-weight: 700;
 
   &:hover {
@@ -43,6 +44,7 @@ export const EventLocation = styled.address`
   font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
   color: var(--DEFAULT_DETAIL_COLOR);
   opacity: var(--DEFAULT_TEXT_OPACITY);
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   @media screen and (max-width: 440px) {
     font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
@@ -54,6 +56,7 @@ export const EventDate = styled.time`
   font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
   color: var(--DEFAULT_DETAIL_COLOR);
   opacity: var(--DEFAULT_TEXT_OPACITY);
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   @media screen and (max-width: 440px) {
     font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
@@ -64,6 +67,7 @@ export const EventName = styled.p`
   font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
   color: var(--DEFAULT_DETAIL_COLOR);
   opacity: var(--DEFAULT_TEXT_OPACITY);
+  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   @media screen and (max-width: 440px) {
     font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
