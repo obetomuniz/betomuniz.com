@@ -6,4 +6,5 @@ path: https://tableless.com.br/polymer-1-0-pronto-para-producao/
 keywords: "polymer, pronto, produção"
 external: true
 category: "tech"
+lang: "pt"
 ---

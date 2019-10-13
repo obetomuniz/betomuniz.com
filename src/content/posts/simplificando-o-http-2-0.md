@@ -5,6 +5,7 @@ path: "/blog/simplificando-o-http-2-0/"
 description: "Abordagem sobre o que é o HTTP 2.0."
 keywords: "web, http2, http, protocol, html5, spdy"
 category: "tech"
+lang: "pt"
 ---
 
 Antes de começar o post, quero destacar que o assunto abordado nele é sem dúvidas um dos principais tópicos sobre o futuro da web, e por isso é imprescindível sua leitura, mas tenha em mente que isso não é tudo, ou seja, não deixe de buscar mais conteúdo sobre **HTTP 2.0** daqui pra frente.

@@ -5,6 +5,7 @@ path: "/blog/devday-um-evento-de-desenvolvedores-para-desenvolvedores/"
 description: "Overview sobre o que foi o DEVDAY 2014, um evento incrível de desenvolvedores para desenvolvedores."
 keywords: "beto muniz, devday, eventos, palestra, brasil, minas gerais, desenvolvimento, web components, minas dev"
 category: "community"
+lang: "pt"
 ---
 
 No último sábado _[01/11/2014]_, fui em um evento sensacional em Minas Gerais e com um formato bem diferente, estive no [DevDay](http://devday.devisland.com/).

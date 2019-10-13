@@ -42,6 +42,7 @@ export const pageQuery = graphql`
             subtitle
             external
             category
+            lang
           }
         }
       }

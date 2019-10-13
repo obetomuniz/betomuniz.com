@@ -5,6 +5,7 @@ path: "/blog/flutter-para-desenvolvedores-javascript-e-ou-react-native/"
 description: "Um artigo sobre Flutter para desenvolvedores JavaScript e/ou React Native."
 keywords: "flutter, javascript, react native, dart, react, typescript"
 category: "tech"
+lang: "pt"
 ---
 
 ## O início

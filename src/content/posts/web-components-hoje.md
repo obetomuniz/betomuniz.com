@@ -5,6 +5,7 @@ path: "/blog/web-components-hoje/"
 description: "Abordagem pessoal feita para quem deseja iniciar os estudos sobre o mundo que envolve Web Components. E feedback para se começar a estudar o assunto desde já!"
 keywords: "web, web-components, components, web, javascript, iniciantes"
 category: "tech"
+lang: "pt"
 ---
 
 ## TL;DR

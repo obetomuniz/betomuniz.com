@@ -6,6 +6,7 @@ path: "/blog/workerdom-o-renascimento-do-amp/"
 description: "Um artigo sobre as vantagens do uso conjunto de Accelerated Mobile Pages (AMP) e WorkerDOM."
 keywords: "workerdom, vdom, amp, multi-thread, single-thread, programação concorrente, web desenvolvimento"
 category: "tech"
+lang: "pt"
 ---
 
 Neste artigo você vai descobrir a relação de dois assuntos independentes, mas que se **complementam** dependendo da ótica que você abordá-los, **Accelerated Mobile Pages** e **WorkerDOM**.

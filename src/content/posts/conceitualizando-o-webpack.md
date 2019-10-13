@@ -5,6 +5,7 @@ path: "/blog/conceitualizando-o-webpack/"
 description: "Abordagem conceitual do webpack, que apesar de ser uma ferramenta cada vez mais presente em nosso dia a dia, ainda é muito mistificada, e por isso, pouco compreendida."
 keywords: "web, webpack, conceito, javascript, react, vue, redux, bundler, task runners, build tools"
 category: "tech"
+lang: "pt"
 ---
 
 Fala galera! Voltei :D E dessa vez para escrever sobre uma ferramenta que está cada vez mais presente em nosso dia a dia, mas que ainda é muito mistificada, e por isso, não muito compreendida.

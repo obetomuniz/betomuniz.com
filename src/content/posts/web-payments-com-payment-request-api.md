@@ -5,6 +5,7 @@ path: "/blog/web-payments-com-payment-request-api/"
 description: "Abordagem sobre a Payment Request API. Uma API Web pouco falada que surge para otimizar a experiência dos usuários em compras online."
 keywords: "web, payments, payment request, api, javascript, chrome, firefox, edge, safari, google, microsoft, apple, android, ios"
 category: "tech"
+lang: "pt"
 ---
 
 Fala galera! Para começar este post, gostaria de dizer que após um período sem postar muita coisa (nada), finalmente agora vou conseguir separar um tempinho para escrever mais, e tentarei de agora em diante postar mais sobre o que sinto vontade de compartilhar ou algo que estou estudando. Seja aqui no meu blog ou em qualquer outro lugar das interwebs da vida :)

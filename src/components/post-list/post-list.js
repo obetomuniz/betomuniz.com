@@ -9,7 +9,7 @@ const PostList = ({ data }) => {
         (
           {
             node: {
-              frontmatter: { external, path, title, subtitle, category },
+              frontmatter: { external, path, title, subtitle, category, lang },
             },
           },
           index
@@ -22,6 +22,7 @@ const PostList = ({ data }) => {
               title={title}
               subtitle={subtitle}
               category={category}
+              lang={lang}
             />
           )
         }

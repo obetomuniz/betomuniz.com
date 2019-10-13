@@ -6,6 +6,7 @@ description: "Conheça o Houdini CSS. A proposta que promete mudar tudo o que co
 keywords: "css, web, desenvolvimento, houdini"
 category: "tech"
 draft: true
+lang: "pt"
 ---
 
 Vivemos tempos diferentes no desenvolvimento web, e definitivamente, o modo que escrevemos CSS hoje já não é como antigamente.

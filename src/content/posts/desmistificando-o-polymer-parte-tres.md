@@ -6,6 +6,7 @@ path: "/blog/desmistificando-o-polymer-parte-3/"
 description: "Terceiro post de uma série que visa desmistificar o Polymer."
 keywords: "web-components, desmistificando, iniciando, tutorial, polymer, parte, tres"
 category: "tech"
+lang: "pt"
 ---
 
 E enfim, chegamos ao terceiro post, porém se você não leu o [primeiro post](https://betomuniz.com/blog/desmistificando-o-polymer-parte-1/) e nem o [segundo post](https://betomuniz.com/blog/desmistificando-o-polymer-parte-2/), recomendo a leitura deles, pois assim você terá uma melhor absorção do que será abordado neste post...

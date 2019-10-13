@@ -6,4 +6,5 @@ path: "https://tableless.com.br/em-um-relacionamento-serio-com-generators-front-
 keywords: "generators, front-end, slush"
 external: true
 category: "tech"
+lang: "pt"
 ---

@@ -5,6 +5,7 @@ path: "/blog/blockchain-e-javascript/"
 description: "Saiba o estado atual da combinação promissora entre Blockchain e JavaScript."
 keywords: "blockchain, javascript, ark, lisk, lsk, ethereum, web3js, truffle"
 category: "tech"
+lang: "pt"
 ---
 
 Se você chegou neste post achando que iria aprender mais sobre [Bitcoin](https://pt.wikipedia.org/wiki/Bitcoin), [Ethereum](https://www.ethereum.org/), [Solidity](https://en.wikipedia.org/wiki/Solidity), [web3.js](https://github.com/ethereum/web3.js/) e todo o feijão com o arroz que já existe por aí. Sinto muito, mas você achou errado!

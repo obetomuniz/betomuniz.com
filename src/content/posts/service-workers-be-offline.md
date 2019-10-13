@@ -5,6 +5,7 @@ path: "/blog/service-workers-be-offline/"
 description: "Abordagem sobre o que são Services Workers e quais os benefícios dessa tecnologia para nossa perspectiva de desenvolvimento web."
 keywords: "service workers, javascript, beto muniz, offline, offline first, user experience, ux"
 category: "tech"
+lang: "pt"
 ---
 
 Offline... Um estado totalmente fora do propósito principal da web que é: Estabelecer **comunicação** e estar **online** na grande rede mundial, mas partindo das seguintes perguntas: E se a conexão do usuário cair? Como se comunicar com o usuário de um sistema web sem a necessidade do browser? Como criar um elo entre o mundo Online e Offline para uma melhor experiência dos usuários? Enfim...Estes e outros inúmeros problemas surgiram com o decorrer da evolução da web, e é justamente para solucionar alguns destes problemas que foi criado o padrão **Service Workers**. E para entender melhor sobre o padrão, precisamos compreender a real necessidade de criar uma aplicação _Offline Friendly_, e para tal, precisamos entender o conceito **Offline First**.

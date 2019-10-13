@@ -14,6 +14,10 @@ export const Category = styled.p`
   color: var(${({ color }) => color});
   text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
+  span {
+    color: var(--DEFAULT_POST_LIST_ITEM_COLOR);
+  }
+
   @media screen and (max-width: 440px) {
     font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
   }

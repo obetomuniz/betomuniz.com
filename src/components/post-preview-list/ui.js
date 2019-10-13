@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const PostPreviewListWrapper = styled.div`
   margin-top: var(--DEFAULT_MARGIN);
+
   @media screen and (max-width: 440px) {
     margin-top: calc(var(--DEFAULT_MARGIN_MOBILE) / 2);
   }

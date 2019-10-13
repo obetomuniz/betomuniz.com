@@ -6,6 +6,7 @@ description: "Saiba o quanto as comunidades de desenvolvimento podem ajudar voc�
 keywords: "desenvolvedores, comunidades, comunidade, desenvolvimento, carreira"
 category: "community"
 draft: true
+lang: "pt"
 ---
 
 Resolvi escrever este post, pois acredito que fui extremamente privilegiado por ter encontrado pessoas incríveis durante minha carreira e que me apresentaram à Comunidade.

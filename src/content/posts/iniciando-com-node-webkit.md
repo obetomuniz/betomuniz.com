@@ -5,6 +5,7 @@ path: "/blog/iniciando-com-node-webkit/"
 description: "Abordagem feita para iniciantes e interessados em aprender mais sobre Node Webkit."
 keywords: "node-webkit, nodejs, webkit, javascript, iniciantes, tutorial"
 category: "tech"
+lang: "pt"
 ---
 
 "Antes tarde, do que nunca" já dizia a frase...
