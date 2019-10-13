@@ -1,31 +1,36 @@
 import React from "react"
 
-import { Layout, SEO, About } from "../components"
+import { Layout, SEO, About, PostPreviewList } from "../components"
+import { PostPreviewListWrapper } from "../components/post-preview-list/ui"
 
-const IndexPage = () => {
-  // const categories = {}
-  // let postPreviews = []
-  // for (let index = 0; index < edges.length; index++) {
-  //   const post = edges[index].node.frontmatter
-  //   if (!categories[post.category]) {
-  //     categories[post.category] = [post]
-  //   } else {
-  //     categories[post.category] = [...categories[post.category], post]
-  //   }
-  // }
-  // for (const key in categories) {
-  //   if (categories.hasOwnProperty(key)) {
-  //     const posts = categories[key]
-  //     postPreviews = [
-  //       <PostPreviewList
-  //         key={`post-preview-${key}`}
-  //         category={key}
-  //         data={posts}
-  //       />,
-  //       ...postPreviews,
-  //     ]
-  //   }
-  // }
+const IndexPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const categories = {}
+  let postPreviews = []
+  for (let index = 0; index < edges.length; index++) {
+    const post = edges[index].node.frontmatter
+    if (!categories[post.category]) {
+      categories[post.category] = [post]
+    } else {
+      categories[post.category] = [...categories[post.category], post]
+    }
+  }
+  for (const key in categories) {
+    if (categories.hasOwnProperty(key)) {
+      const posts = categories[key]
+      postPreviews = [
+        <PostPreviewList
+          key={`post-preview-${key}`}
+          category={key}
+          data={posts}
+        />,
+        ...postPreviews,
+      ]
+    }
+  }
 
   return (
     <Layout location="/" className={"center-content"}>
@@ -37,33 +42,33 @@ const IndexPage = () => {
 
       <About />
 
-      {/* <PostPreviewListWrapper>{postPreviews}</PostPreviewListWrapper> */}
+      <PostPreviewListWrapper>{postPreviews}</PostPreviewListWrapper>
     </Layout>
   )
 }
 
 export default IndexPage
 
-// export const pageQuery = graphql`
-//   query {
-//     allMarkdownRemark(
-//       sort: { order: DESC, fields: [frontmatter___date] }
-//       filter: { frontmatter: { draft: { ne: true } } }
-//     ) {
-//       edges {
-//         node {
-//           id
-//           excerpt(pruneLength: 250)
-//           frontmatter {
-//             date(formatString: "MMMM DD, YYYY")
-//             path
-//             title
-//             subtitle
-//             external
-//             category
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { draft: { ne: true } } }
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            subtitle
+            external
+            category
+          }
+        }
+      }
+    }
+  }
+`

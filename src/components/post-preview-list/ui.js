@@ -1,10 +1,9 @@
 import styled from "styled-components"
 
 export const PostPreviewListWrapper = styled.div`
-  display: flex;
-
+  margin-top: var(--DEFAULT_MARGIN);
   @media screen and (max-width: 440px) {
-    flex-direction: column;
+    margin-top: calc(var(--DEFAULT_MARGIN_MOBILE) / 2);
   }
 `
 

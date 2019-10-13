@@ -45,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @media screen and (max-width: 440px) {
     .center-content {
-      min-height: auto;
+      height: auto;
     }
   }
 `
