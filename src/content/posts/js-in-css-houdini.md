@@ -30,26 +30,53 @@ Com isso, hoje o mercado caminha com três vertentes principais:
 
 <a href="https://vue-loader-v14.vuejs.org/pt_BR/features/scoped-css.html" target="_blank" rel="noopener noreferrer">_Scoped CSS_</a>, <a href="https://github.com/css-modules/css-modules" target="_blank" rel="noopener noreferrer">_CSS Modules_</a> e <a href="https://itnext.io/thinking-in-styled-components-e230ea37c52c" target="_blank" rel="noopener noreferrer">_Styled Components_</a>.
 
-E veja só, não estou falando de técnica A ou biblioteca B, muito menos que uma é melhor do que a outra ou que existem apenas estas abordagens, estou citando apenas as que mais apresentam conceitos sólidos.
+E veja só, não estou falando de técnica A ou biblioteca B, muito menos que uma é melhor do que a outra ou que existem somente estas abordagens, estou apenas citando as com conceitos mais sólidos e aceitos.
 
-Mas para além desses conceitos, há algo mais inovador surgindo e que promete dar um passo definitivo no suporte ao desenvolvimento dinâmico com CSS.
+Mas para além destes conceitos, há algo mais inovador surgindo e que promete dar um passo definitivo no dinamismo do CSS.
 
 Estou falando do **CSS Houdini**.
 
 ## CSS Houdini
 
-Já pensou em poder ter a mesma capacidades do Browser de manipulação do CSS? É isso que o Houdini quer oferecer.
+Já pensou em poder ter a mesma capacidade do Browser de controle do CSS? É isso que o Houdini quer oferecer.
 
 E não se deixe enganar pela definição simples, pois o suporte vai desde a criação de propriedades para extender o CSS até a possibilidade de escrever blocos de lógica dentro so próprio CSS, indo bem além de que uma _CSS Variable_ ou uma função `calc()` faz atualmente.
 
-E para dar conceito, <a href="https://developer.mozilla.org/en-US/docs/Web/Houdini" target="_blank" rel="noopener noreferrer">CSS Houdini</a> é um conjunto de especificações desenvolvidas por uma força de trabalho da W3C que visa corrigir limitações impostas no passado aos browsers devido a falta de segurança, más escolhas e incapacidades tecnológicas da época.
+```css
+.el {
+  --color: cyan;
+  --multiplier: 0.24;
+  --pad: 30;
+  --slant: 20;
+  --background-canvas: (ctx, geom) => {
+    let multiplier = var(--multiplier);
+    let c = `var(--color)`;
+    let pad = var(--pad);
+    let slant = var(--slant);
+
+    ctx.moveTo(0, 0);
+    ctx.lineTo(pad + (geom.width - slant - pad) * multiplier, 0);
+    ctx.lineTo(pad + (geom.width - slant - pad) * multiplier + slant, geom.height);
+    ctx.lineTo(0, geom.height);
+    ctx.fillStyle = c;
+    ctx.fill();
+  };
+  background: paint(background-canvas);
+  transition: --multiplier .4s;
+}
+.el:hover {
+  --multiplier: 1;
+}
+```
+
+E para conceitualizar, <a href="https://developer.mozilla.org/en-US/docs/Web/Houdini" target="_blank" rel="noopener noreferrer">CSS Houdini</a> é um conjunto de especificações desenvolvidas por uma força de trabalho da W3C que visa corrigir limitações impostas ao CSS no passado pelos browsers devido a falta de segurança, más escolhas e incapacidades tecnológicas da época.
 
 Portanto, se hoje gastamos tempo definindo a melhor escolha para modularizar nosso código CSS, espere por discussões baseadas em onde iremos adicionar lógica de manipulação CSS.
 
-Ah! E se você quiser ver na prática e até mesmo utilizar as propostas do CSS Houdini, <a href="https://houdini.glitch.me/" target="_blank" rel="noopener noreferrer">acesse este link</a>.
+Ah! E se você quiser ver na prática e até saber como utilizar as propostas do CSS Houdini desde já, <a href="https://houdini.glitch.me/" target="_blank" rel="noopener noreferrer">acesse este link</a>.
 
 ## Conclusão
 
-E com isso, encerro essa reflexão de onde viemos e para onde vamos com o CSS, pois mesmo com as especificações do CSS Houdini ainda em definição, todas elas já apresentam o futuro concreto do CSS, e por consequência, do desenvolvimento web. Sendo assim, vamos ficar atentos nessa novidade.
+E com isso, encerro essa reflexão de onde viemos e para onde vamos com o CSS, pois mesmo com as especificações do CSS Houdini ainda em definição, todas visam apresentar um futuro concreto do CSS, e por consequência, do desenvolvimento web. Sendo assim, vamos ficar atentos nessa novidade.
 
 ▲
