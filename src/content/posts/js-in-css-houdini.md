@@ -1,6 +1,6 @@
 ---
 title: "JS-in-CSS: Houdini"
-date: "2019-10-14"
+date: "2019-10-16"
 path: "/blog/js-in-css-houdini/"
 description: "Conheça o CSS Houdini. A proposta que promete mudar tudo o que conhecemos sobre desenvolvimento CSS."
 keywords: "css, web, desenvolvimento, houdini"
