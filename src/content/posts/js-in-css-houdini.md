@@ -1,58 +1,57 @@
 ---
 title: "JS-in-CSS: Houdini"
-date: "2019-10-05"
+date: "2019-10-14"
 path: "/blog/js-in-css-houdini/"
-description: "Conheça o Houdini CSS. A proposta que promete mudar tudo o que conhecemos sobre desenvolvimento CSS."
+description: "Conheça o CSS Houdini. A proposta que promete mudar tudo o que conhecemos sobre desenvolvimento CSS."
 keywords: "css, web, desenvolvimento, houdini"
 category: "tech"
-draft: true
 lang: "pt"
 ---
 
-Vivemos tempos diferentes no desenvolvimento web, e definitivamente, o modo que escrevemos CSS hoje já não é como antigamente.
+![Marca do CSS Houdini](https://user-images.githubusercontent.com/1680157/66880657-384bbb00-ef9a-11e9-9461-5722979ab303.png)
 
-## Quando era tudo mato…
+Velhos tempos aqueles em que as discussões sobre CSS eram apenas sobre como compactar um arquivo `.css` ou sobre o uso de `!important`.
 
-Bons tempos aqueles em que as discussões sobre CSS eram apenas sobre como compactar um arquivo `.css` ou sobre o uso de `!important`.
-
-Hoje, com demandas mais complexas na web, torna-se mais complicado escolher o caminho correto para resolver as coisas.
+Hoje, com demandas mais complexas na web, torna-se cada vez mais complicado escolher o caminho correto para resolver as coisas.
 
 Seja para quem está iniciando ou para quem já é experiente.
 
-## Modernidades…
+## Dias passados...
 
-Com o sucesso da componentização na web através de conceitos propostos pelos _Web Components_, _React.js_, _Vue.js_, _Angular.js_ entre outros, é possível afirmar que hoje temos o mesmo raciocínio sobre como trabalhamos com CSS.
+Com o sucesso da componentização na web através dos conceitos propostos pelos _Web Components_, _React.js_, _Vue.js_, _Angular.js_ entre outros, é possível afirmar que hoje temos o mesmo raciocínio sobre como trabalhamos com CSS.
 
-Porém, devido a falta de dinâmica no CSS, somos limitados a apenas otimizar a semântica da escrita do mesmo.
+Até pouco tempo atrás, não faltavam palestras e artigos sobre _BEM_, _SMACSS_, _OOCSS_, _Atomic CSS_ entre outras.
 
-Anos atrás, o que não faltava eram palestras e artigos sobre _BEM_, _SMACSS_, _OOCSS_, _Atomic CSS_ entre outras, porém tais soluções pecavam, por limitações técnicas, em não trazer consigo propostas de melhoria na dinâmica do próprio CSS.
-
-Mas ainda assim vejo tudo aquilo como um presságio do que estava por vir no mundo do CSS e no que ele estava se tornando. Uma tecnologia robusta, inovadora e padronizada.
+E por mais que tais soluções trazem consigo ótimas ideias, por limitações técnicas, ainda falham em não trazer consigo melhorias na dinâmica do próprio CSS.
 
 ## Hoje…
 
-Os anos passaram, e hoje temos abordagens conceituais que reutilizam muito do que evoluímos sobre a escrita do CSS, mas que principalmente tentam dar passos para resolver a falta de dinâmica do CSS.
+O tempo passou, e evoluímos muito a forma de escrever CSS, principalmente tentando resolver essa falta de dinâmica do mesmo.
 
-No mercado existem três vertentes principais: _Scoped CSS_, _CSS Modules_ e _Styled Components_.
+Com isso, hoje o mercado caminha bastante para três vertentes principais:
 
-E veja só, não estou falando de técnica A ou biblioteca B, muito menos que uma é melhor que a outra ou que apenas existem estas, estou citando apenas as que apresentam conceitos sólidos.
+_Scoped CSS_, _CSS Modules_ e _Styled Components_.
 
-E para além desses conceitos, há algo mais inovador surgindo e que promete dar um passo definitivo no suporte ao desenvolvimento dinâmico com CSS.
+E veja só, não estou falando de técnica A ou biblioteca B, muito menos que uma é melhor do que a outra ou que existem apenas estas abordagens, estou citando apenas as que mais apresentam conceitos sólidos.
 
-E sim, estou falando do **Houdini**.
+Mas para além desses conceitos, há algo mais inovador surgindo e que promete dar um passo definitivo no suporte ao desenvolvimento dinâmico com CSS.
 
-## Houdini CSS
+Estou falando do **CSS Houdini**.
 
-Já pensou em poder trazer as capacidades do Browser de manipulação do CSS e muito mais para dentro do próprio CSS? Essa é a proposta do Houdini.
+## CSS Houdini
 
-E não se deixe enganar pela definição simples, pois tais capacidades vão desde a criação de propriedades customizadas de CSS até escrever blocos de lógica dentro CSS, indo bem além de que uma _CSS Variable_ ou uma função `calc` já nos permite atualmente.
+Já pensou em poder ter a mesma capacidades do Browser de manipulação do CSS? Essa é a proposta do Houdini.
 
-E para dar conceito, [Houdini CSS](https://developer.mozilla.org/en-US/docs/Web/Houdini) é um conjunto de especificações desenvolvido por uma força de trabalho da W3C que visa corrigir limitações impostas no passado aos browsers devido a falta de segurança, más escolhas e incapacidades tecnológicas da época.
+E não se deixe enganar pela definição simples, pois tais capacidades vão desde a criação de propriedades que permitem extender o CSS até a possibilidade de escrever blocos de lógica dentro so próprio CSS, indo bem além de que uma _CSS Variable_ ou uma função `calc()` faz atualmente.
+
+E para dar conceito, <a href="https://developer.mozilla.org/en-US/docs/Web/Houdini" target="_blank" rel="noopener noreferrer">CSS Houdini</a> é um conjunto de especificações desenvolvidas por uma força de trabalho da W3C que visa corrigir limitações impostas no passado aos browsers devido a falta de segurança, más escolhas e incapacidades tecnológicas da época.
 
 Portanto, se hoje gastamos tempo definindo a melhor escolha para modularizar nosso código CSS, espere por discussões baseadas em onde iremos adicionar lógica de manipulação CSS.
 
+Ah! E se você quiser ver na prática e até mesmo utilizar as propostas do CSS Houdini, <a href="https://houdini.glitch.me/" target="_blank" rel="noopener noreferrer">acesse este link</a>.
+
 ## Conclusão
 
-E com isso, encerro meu artigo, que em principio é uma reflexão de onde viemos e para onde vamos com CSS, pois mesmo que as especificações ainda estejam em definição, todas apresentam o passo necessário para o futuro do desenvolvimento CSS, e por consequência, para todo o desenvolvimento web. Sendo assim, fique atento quanto a isso.
+E com isso, encerro essa reflexão de onde viemos e para onde vamos com o CSS, pois mesmo com as especificações do CSS Houdini ainda em definição, todas já apresentam o futuro concreto do desenvolvimento CSS, e por consequência, do desenvolvimento web. Sendo assim, vamos ficar atentos nessa novidade.
 
 ▲
