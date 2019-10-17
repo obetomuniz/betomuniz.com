@@ -23,7 +23,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #gatsby-focus-wrapper {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
   }
 
   body{
@@ -35,12 +38,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .center-content {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    overflow-y: auto;
   }
 
   @media screen and (max-width: 440px) {
