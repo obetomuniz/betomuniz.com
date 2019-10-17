@@ -7,11 +7,11 @@ const PostPreviewList = ({ category, data }) => {
   return (
     <Container>
       <Category color={`--DEFAULT_${category.toUpperCase()}_CATEGORY_COLOR`}>
-        latest posts about {category.replace("_", " ")}
+        last post about {category.replace("_", " ")}
       </Category>
       <ul>
         {data
-          .slice(0, 3)
+          .slice(0, 1)
           .map(({ external, path, title, subtitle, category }, index) => {
             return (
               <PostPreviewListItem
