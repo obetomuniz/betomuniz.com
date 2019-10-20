@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import { Layout, SEO, About, PostPreviewList } from "../components"
 import { PostPreviewListWrapper } from "../components/post-preview-list/ui"
