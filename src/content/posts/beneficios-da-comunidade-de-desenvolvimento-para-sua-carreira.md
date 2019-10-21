@@ -5,13 +5,12 @@ path: "/blog/beneficios-da-comunidade-de-desenvolvimento-para-sua-carreira/"
 description: "Saiba o quanto as comunidades de desenvolvimento podem ajudar você na sua carreira."
 keywords: "desenvolvedores, comunidades, comunidade, desenvolvimento, carreira"
 category: "community"
-draft: true
 lang: "pt"
 ---
 
-Resolvi escrever este post, pois acredito que fui extremamente privilegiado por ter encontrado pessoas incríveis durante minha carreira e que me apresentaram à Comunidade.
+Acredito que fui extremamente privilegiado por ter encontrado pessoas incríveis durante minha carreira que me apresentaram à Comunidade.
 
-Portanto, espero de verdade também afetar você como fui afetado, e para isso, vou elucidar alguns benefícios de se estar presente na comunidade de desenvolvimento para sua carreira.
+Portanto, resolvi escrever este post, pois espero também impactar você como fui impactado, e para isso, irei abordar alguns dos benefícios da comunidade de desenvolvimento na nossa carreira.
 
 ## Mas primeiro…
 
@@ -25,49 +24,57 @@ Falando da comunidade de desenvolvimento, pois essa é a que mais afeto e mais m
 
 Há comunidades de PHP, JavaScript, React, Angular, Ruby, Rails, Arduino, Java, Mulheres na Tecnologia, etc.
 
-Mas porque tem gente que se uni por linguagens de programação, plataformas de desenvolvimento e/ou causas?
+Mas a pergunta que fica é: Porque tem gente que se reuni por linguagens de programação, plataformas de desenvolvimento e/ou causas na área de tecnologia?
 
 ## Benefícios da Comunidade
 
-A resposta é simples, porque isso trás ganhos coletivos para todos os envolvidos.
+Porque isso trás ganhos coletivos para todos os envolvidos.
 
 E destacando alguns deles.
 
 #### Networking
 
-Coloquei Networking primeiro propositalmente, pois sem dúvidas é o principal benefício quando nos envolvemos em comunidades. Você talvez nem me conhecia, mas agora conhece. Isso é mágico e acontece o tempo todo.
+Coloquei Networking em primeiro propositalmente, pois sem dúvidas é o principal benefício quando nos envolvemos em comunidades. Você talvez nem me conhecia, mas agora conhece. E pode contar comigo pra qualquer coisa que eu puder ajudar. Isso é mágico e acontece o tempo inteiro.
 
-Se não fosse minhas incursões nas comunidades, eu não iria conhecer nem a metade dos profissionais que conheço hoje no Brasil e fora dele.
+E por experiência própria, se não fosse minhas incursões nas comunidades, eu não iria conhecer nem a metade dos profissionais que conheço hoje no Brasil e fora dele.
 
 #### Conhecimento
 
 Técnico ou não, se envolver na comunidade faz você obter conhecimento o tempo todo.
 
-E acredite quando eu falo sobre conhecimento não técnico, pois ir num evento, por exemplo, faz você desenvolver habilidades de relações humanas únicas, apenas por estar alí. É incrível! Isso nos evoluí como indivíduos.
+E dê valor nesse conhecimento não técnico, pois ir num evento, não te oferece apenas conteúdo técnico, ir num evento faz você também desenvolver habilidades de relações humanas únicas, inclusive o Networking.
 
-#### Ser parte de uma grande Unidade de pessoas
+#### Ser parte de uma Unidade de pessoas
 
-Pois é, o paradoxo dasomunidades é que ao mesmo tempo que reduzem a individualidade quanto a próposito, promovem a unidade de pessoas, e tente entender o quanto que isso é fundamental para a nossa carreira.
+Pois é, o paradoxo das comunidades é que ao mesmo tempo que elas reduzem a individualidade quanto a próposito, promovem a unidade de pessoas.
 
-Uma comunidade sem meios de promover unidade tende a levar ao fracasso todos os envolvidos.
+Uma comunidade sem meios de promover sua unidade tende a levar ao fracasso todos os envolvidos.
 
 E ao contrário, uma comunidade unida se torna imbatível, já que suas entidades (tecnologia, membros, mercado, etc.) se tornam uma gigante força em razão dos mesmos resultados.
 
 #### Projeção
 
-Projeção de causa, projeção individual e/ou projeção tecnológica. Atividades em comunidade ajudam a própria comunidade se projetar e também projeta todos que ajudam a projetar uma comunidade.
+Projeção de causa, projeção individual e/ou projeção tecnológica. Atividades em comunidade ajudam a própria comunidade a se projetar e também projeta todos os que ajudam a projetar tal comunidade.
 
-Imagine o React ou o Android sem a comunidade deles, dificilmente ambas tecnologias e seus mercados estariam onde estão hoje.
+Imaginem o mercado do React e/ou do Android sem a comunidade deles, dificilmente ambos estariam onde estão hoje.
+
+#### Diversidade
+
+Outro fator interessante que se destaca ao estar envolvido com a comunidade é a diversidade que uma mesma comunidade pode comportar.
+
+O ganho dessa experiência para você enquanto profissional e pessoa é imensurável, pois ao fazer isso, você naturalmente expande a visão dos problemas que resolve.
 
 #### Maturidade de Setor
 
-É um benefício indireto, mas uma comunidade e seus indivíduos tem o poder de mudar a cultura do seu mercado. Vi isso na prática com o [Minas Dev](https://minasdev.org/) alguns anos atrás, e até hoje vejo o impacto.
+É um benefício indireto, mas uma comunidade e seus indivíduos tem o poder de mudar a cultura de um mercado por completo.
+
+Vi isso na prática com o [Minas Dev](https://minasdev.org/) alguns anos atrás, e até hoje vejo o impacto dele.
 
 > **Há ótimas oportunidades quando estamos unidos e nos ajudando por um objetivo comum.**
 
 ## Conclusão
 
-E é isso comunidade, acho que consegui compartilhar um pouco da minha perspectiva sobre alguns benefícios "tangíveis" das comunidades.
+E é isso aí comunidade, acho que consegui compilar um pouco minha perspectiva sobre benefícios das comunidades.
 
 E você? Acha que a comunidade trás benefícios pra sua carreira? Quais? Comenta aí sua opinião.
 
