@@ -24,7 +24,7 @@ Falando da comunidade de desenvolvimento, pois essa é a que mais afeto e mais m
 
 Há comunidades de PHP, JavaScript, React, Angular, Ruby, Rails, Arduino, Java, Mulheres na Tecnologia, etc.
 
-Mas a pergunta que fica é: Porque tem gente que se reuni por linguagens de programação, plataformas de desenvolvimento e/ou causas na área de tecnologia?
+Mas a pergunta que fica é: Porque tem gente que se reúne por linguagens de programação, plataformas de desenvolvimento e/ou causas na área de tecnologia?
 
 ## Benefícios da Comunidade
 
