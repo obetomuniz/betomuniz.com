@@ -2,7 +2,7 @@
 title: "Desenvolvedores(as): Quem disse que reinventar a roda é ruim?"
 date: "2019-11-08"
 path: "/blog/desenvolvedores-as-quem-disse-que-reinventar-a-roda-e-ruim/"
-description: "Neste artigo desconstruo, sob minha ótica, a falácia de que 'reinventar a roda' é o caminho errado para que exista inovação."
+description: "Neste artigo desconstruo, sob minha ótica, a falácia de que 'reinventar a roda' é um caminho errado para que exista aprendizado e inovação."
 keywords: "dev, lifestyle, inspiracao"
 category: "dev_lifestyle"
 lang: "pt"
@@ -12,11 +12,11 @@ lang: "pt"
 
 Ultimamente tenho escutado muito as frases:
 
-> “Nossa, mais outra lib JavaScript pra componentes!? 🤦‍♂️”.
+> “Nossa, mais outra biblioteca JavaScript pra componentes!? 🤦‍♂️”.
 
-> “As empresas A e B não inovam mais! 🤦‍♂️”.
+> “Nossa, as empresas A e B não inovam mais! 🤦‍♂️”.
 
-E não ignorando que o mundo precisa de inovação e nem dando carta branca para galera copiar as coisas dos outros, fato é que grande parte das “inovações” atuais, são apenas melhorias de soluções que já existiam ou existem. Isso aconteceu com a roda, com _smartphones_, com relógios, com o computador, etc.
+E não ignorando que o mundo precisa de inovação e nem dando carta branca para galera copiar as coisas dos outros, fato é que grande parte das “inovações” atuais, são apenas melhorias ou revisões de soluções que já existem. Isso aconteceu com a roda, com _smartphones_, com relógios, com o computador entre outros.
 
 Portanto, ser relutante quanto a prática da reprodução, é o mesmo que dizer para um artesão que o mesmo não deve criar "jarras de barro", pois o conceito "jarras de barro" já existe, e apenas por isso, ele deve criar outro conceito para continuar evoluindo o ofício.
 
@@ -24,17 +24,17 @@ Mas se colocando na perspectiva do artesão, cada jarra de barro será única, e
 
 ## Reinvente a roda
 
-Agora que dei minhas motivações, posso afirmar: Não tenham medo de reinventar a roda.
+E agora que dei minhas motivações, posso afirmar tranquilamente: Não tenham medo de reinventar a roda.
 
-Não se sintam inibidos pela obsessiva cultura da inovação atual, que quando interpretada erroneamente, tem apenas como resultante a redução do entusiasmo de quem as vezes só queria experimentar conceitos existentes, e que potencialmente, durante essas experimentações, poderiam derivar novos conceitos, que por fim, iram gerar inovação.
+Não se sintam inibidos pela obsessiva cultura da inovação atual, que quando interpretada erroneamente, tem apenas como resultante a redução do entusiasmo de quem as vezes só queria experimentar conceitos existentes, que potencialmente, durante essas experimentações, poderiam até derivar novos conceitos, que por fim, iram gerar a inovação.
 
-## Mas porque reinventar a roda é um bom caminho?
+## Mas porque reinventar a roda é um bom caminho de aprendizado e evolução profissional?
 
-Sendo um desenvolver experiente ou não, a prática dos fundamentos deve ou deveria ser parte de sua rotina, e o que é melhor do que praticar usando uma ideia já validada?
+Sendo um desenvolver experiente ou não, a prática dos fundamentos deve ou deveria ser parte de sua rotina, e o que é melhor pra praticar do que usando uma ideia já validada?
 
 Quer criar um framework JavaScript do zero usando outro como base? Vá em frente 👍. Quer criar um novo sistema operacional usando apenas CSS? Vá em frente 🤯. Quer criar um aplicativo de padaria para vendê-lo? Vá em frente 👍.
 
-O importante nisso tudo é movimentar-se adiante. Sair da inércia e fazer o que desejar.
+O importante nisso é movimentar-se adiante. Sair da inércia e fazer o que desejar.
 
 ## Conclusão
 
