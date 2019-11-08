@@ -57,3 +57,5 @@ E só pra concluir, definir receitas de como ser um bom profissional é sempre q
 Minha ideia aqui não é ditar regras, mas sim compartilhar um pouco do que aprendi nos meus 5 anos trabalhando remotamente, e também, desmistificar mais o assunto, mostrando que há caminhos para se seguir e ter uma boa adaptação para quem quer trabalhar assim.
 
 E você, o que pensa sobre trabalho remoto? O que pensa ser importante para um bom trabalhador remoto? Deixa um comentário.
+
+▲
