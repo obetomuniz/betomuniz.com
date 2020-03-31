@@ -8,7 +8,7 @@ category: "dev_lifestyle"
 lang: "pt"
 ---
 
-Olá, bem vindo ao meu segundo post sobre vida profissional, deixe um feedback, pois pretendo trazer mais posts assim no futuro.
+Olá, bem-vindo ao meu post, nele irei falar um pouco sobre gestão de tempo, e vou compartilhar um pouco da minha experiência resolvendo isso na minha vida. Espero que goste.
 
 **Disclaimer**: O conteúdo proposto usa apenas o meu contexto como referência, tente adaptá-lo para suas necessidades, pois cada um de nós temos contextos diferentes de trabalho e de vida.
 
