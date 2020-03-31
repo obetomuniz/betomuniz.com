@@ -46,8 +46,8 @@ Tenho família, faço atividades físicas, tenho um trabalho, tenho uma comunida
 
 Com base nestes parâmetros específicos da minha vida, o que eu podia fazer era definir uma rotina de atividades principais. E o resultado foi esse:
 
-<a href="https://user-images.githubusercontent.com/1680157/78034048-977d6c00-733d-11ea-824f-827a4305d1c5.png" target="_blank" rel="noopener noreferrer">
-<img src="https://user-images.githubusercontent.com/1680157/78034048-977d6c00-733d-11ea-824f-827a4305d1c5.png" alt="Minha Agenda no Google Calendar" />
+<a href="https://user-images.githubusercontent.com/1680157/78036525-c8ab6b80-7340-11ea-84c3-2319879e77dd.png" target="_blank" rel="noopener noreferrer">
+<img src="https://user-images.githubusercontent.com/1680157/78036525-c8ab6b80-7340-11ea-84c3-2319879e77dd.png" alt="Minha Agenda no Google Calendar" />
 </a>
 
 Como podem ver, um calendário com componentes de tempo. 🤯 (_Pra quem me conhece sabe o tanto que eu gosto de componentes. Acho que extrapolei dessa vez_ 😂)
