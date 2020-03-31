@@ -1,7 +1,7 @@
 ---
 title: "Não desperdice seu tempo. Organize sua agenda."
 date: "2020-03-31"
-path: "/blog/nao-disperdice-seu-tempo-organize-sua-agenda/"
+path: "/blog/nao-desperdice-seu-tempo-organize-sua-agenda/"
 description: "Neste artigo exemplifico através de um processo de gestão de tempo que eu mesmo defini para mim utilizando o Google Calendar como você também pode otimizar o seu tempo através de hábitos simples."
 keywords: "dev, lifestyle, agenda, calendar"
 category: "dev_lifestyle"
