@@ -33,16 +33,21 @@ E por fim, a escolha do Flutter e do seu ecossistema me possibilitou conectar to
 
 ## E o que aprendi sobre o Flutter neste projeto?
 
-Bom, não consigo levantar todos os pontos fortes que experimentei apenas num artigo, mas destacando os _top 3_ da minha experiência:
+Bom, não consigo levantar todos os pontos fortes que experimentei apenas num artigo, mas destacando os _top 6_ da minha experiência:
 
-- Entrega para Android e iOS plenamente viável. 99% do código é compartilhado entre as duas plataformas.
-- Curva de aprendizado do Dart é muito baixa. Sim, foi meu maior receio no início, mas para mim, que já tenho contato com JavaScript, TypeScript, e já trabalhei com React Native para criação de apps _cross-platform_, a adaptação foi questão de uma semana ou menos.
-- Indução natural as boas práticas de desenvolvimento, pois mesmo que algumas pessoas não gostem de vícios de linguagem em consequência do uso da linguagem Dart, aplicar fortemente modularização no seus widgets resolverá estes problemas, o que inclusive, por consequência, trará ganhos para manutenção e performance do projeto.
+1. Entrega para Android e iOS plenamente viável. No Listtta, 99% do código é compartilhado entre as duas plataformas.
+2. Curva de aprendizado do Dart é muito baixa. Sim, foi meu maior receio no início, mas para mim, que já tenho contato com JavaScript, TypeScript, e já trabalhei com React Native para criação de apps _cross-platform_, a adaptação foi questão de uma semana ou menos.
+3. Indução natural a boas práticas de desenvolvimento. Mesmo que algumas pessoas não gostem de vícios de linguagem em consequência do uso da linguagem Dart, o Flutter incentiva fortemente a modularização na criação dos seus widgets, o que inclusive, por consequência, trará ganhos para manutenção e performance do projeto.
+4. Um ecossistema de comunidade extremamente ativo, estruturado e colaborativo. No Listtta estou utilizando pacotes como [shared_preferences](https://pub.dev/packages/shared_preferences) e [video_player](https://pub.dev/packages/video_player) para me ajudar na gestão de local storage e execução de vídeos respectivamente.
+5. Widgets built-in extremamente completos, flexíveis e poderosos. O que reduz drasticamente a necessidade de uso de projetos de terceiros defasados OU projetos que existem apenas para resolver problemas que a própria plataforma deveria resolver (polyfills/extensões). Tem tudo lá 😀
+6. Facilidade para gerenciamento de dados na aplicação. No Listtta, usei o método proposto pelo [provider](https://pub.dev/packages/provider), por ser recomendação da Google, e claro, por resolver 100% os problemas do projeto. Inclusive, para quem já trabalhou com React vai sentir mais familiaridade com esse package, pois usa um Design Pattern semelhante ao Context API para lidar com dados.
+
+Enfim, estes são os pontos que eu mais gostei ao trabalhar com o Flutter na criação do Listtta.
 
 ## E no fim das contas, deu certo a experiência?
 
 Com toda certeza, fui plenamente suportado pelas decisões técnicas que tomei, tal como, pelo planejamento que defini. Afinal, o Listtta está ai operante faz 8 meses.
 
-Mas esse é só o começo, quero tirar mais ideias do papel, e claro, dado a atual matudidade do framework, certamente utilizarei o Flutter para isso.
+Mas esse é só o começo, quero tirar mais ideias do papel, e claro, dado a atual maturidade do framework, certamente utilizarei o Flutter para isso.
 
 ▲
