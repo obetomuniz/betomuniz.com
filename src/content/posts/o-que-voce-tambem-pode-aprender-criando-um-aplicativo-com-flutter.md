@@ -29,21 +29,19 @@ Sendo prático, o Listtta usa bastante da API do Twitter, sendo essa a única ba
 
 E não apenas isso, utilizei também o [Firebase Auth](https://firebase.google.com/docs/auth) e o [Firestore](https://firebase.google.com/docs/firestore) para o fluxo de autenticação do aplicativo, pois possuem excelente integração com o Flutter.
 
-E por fim, a escolha Flutter e seu ecossistema me possibilitou conectar toda a regra de negócio numa interface amigável com experiência única de consumo.
+E por fim, a escolha do Flutter e do seu ecossistema me possibilitou conectar toda a regra de negócio numa interface amigável com experiência única de consumo.
 
 ## E o que aprendi sobre o Flutter neste projeto?
 
-Bom, não consigo levantar todos os pontos fortes que experimentei apenas num artigo, mas destacando os _top 3_ pontos fortes dessa minha experiência:
+Bom, não consigo levantar todos os pontos fortes que experimentei apenas num artigo, mas destacando os _top 3_ da minha experiência:
 
 - Entrega para Android e iOS plenamente viável. 99% do código é compartilhado entre as duas plataformas.
-- Curva de aprendizado do Dart é muito baixa. Sim, foi meu maior receio no início, mas para mim, que já tenho contato com JavaScrip, TypeScript, e já trabalhei com React Native para criação de apps _cross-platform_, a adaptação foi questão de uma semana ou menos.
-- Indução natural as boas práticas de desenvolvimento, pois mesmo que algumas pessoas não gostem de vícios de linguagem em consequência do uso da linguagem Dart, aplicar fortemente modularização no seus widgets resolverá estes problemas, tal como trará ganhos para manutenção e performance do projeto.
+- Curva de aprendizado do Dart é muito baixa. Sim, foi meu maior receio no início, mas para mim, que já tenho contato com JavaScript, TypeScript, e já trabalhei com React Native para criação de apps _cross-platform_, a adaptação foi questão de uma semana ou menos.
+- Indução natural as boas práticas de desenvolvimento, pois mesmo que algumas pessoas não gostem de vícios de linguagem em consequência do uso da linguagem Dart, aplicar fortemente modularização no seus widgets resolverá estes problemas, o que inclusive, por consequência, trará ganhos para manutenção e performance do projeto.
 
-E sim, sei que você quer mais 🧛‍♂️, e por isso te convido a acompanhar o blog e/ou comentar qual desses pontos você gostaria que eu me aprofundasse e/ou até mesmo sugerir outros temas sobre o Flutter.
+## E no fim das contas, deu certo a experiência?
 
-## Mas e aí? Deu certo a experiência?
-
-Com toda certeza, fui plenamente suportado pelas decisões técnicas que tomei, tal como, pelo planejamento que defini. Afinal, o Listtta está ai operante há 8 meses sem maiores problemas.
+Com toda certeza, fui plenamente suportado pelas decisões técnicas que tomei, tal como, pelo planejamento que defini. Afinal, o Listtta está ai operante faz 8 meses.
 
 Mas esse é só o começo, quero tirar mais ideias do papel, e claro, dado a atual matudidade do framework, certamente utilizarei o Flutter para isso.
 
