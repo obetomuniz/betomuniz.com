@@ -4,13 +4,12 @@ import PropTypes from "prop-types"
 import Header from "../header"
 import Footer from "../footer"
 
-import { DarkThemeStyle, LightThemeStyle } from "../theme"
+import { LightThemeStyle } from "../theme"
 import { GlobalStyle, Container } from "./ui"
 
 const Layout = ({ children, location, className }) => {
   return (
     <>
-      <DarkThemeStyle />
       <LightThemeStyle />
       <GlobalStyle />
       <div className={className}>

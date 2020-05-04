@@ -1,7 +1,6 @@
 import React from "react"
 import { Link as GatsbyLink } from "gatsby"
 
-import getFlag from "../../services/getFlags"
 import { Container, Link, Category } from "./ui"
 
 const PostListItem = ({ external, path, title, subtitle, category, lang }) => {
@@ -14,7 +13,7 @@ const PostListItem = ({ external, path, title, subtitle, category, lang }) => {
   return (
     <Container>
       <Category color={`--DEFAULT_${category.toUpperCase()}_CATEGORY_COLOR`}>
-        {category.replace("_", " ")} <span>·</span> {getFlag(lang)}
+        {category.replace("_", " ")}
       </Category>
       {external ? (
         <Link as="a" href={path} target="_blank" rel="noopener noreferrer">
