@@ -6,7 +6,6 @@ import {
   Name,
   EventInfos,
   EventLocation,
-  EventDate,
   EventName,
   Separator,
 } from "./ui"
@@ -27,9 +26,7 @@ const TalkListItem = ({ talk, url, location, date, event, category }) => (
     </h4>
     <EventInfos>
       <EventLocation hide>{location}</EventLocation>
-      <Separator hide>•</Separator>
-      <EventDate>{date}</EventDate>
-      <Separator>•</Separator>
+      <Separator hide>ᐧ</Separator>
       <EventName>{event}</EventName>
     </EventInfos>
   </Container>
