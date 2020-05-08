@@ -57,9 +57,9 @@ export default function Template({ data }) {
             >
               {category.replace("_", " ")}
             </RegisterCategory>
-            {" • "}
+            {" ᐧ "}
             <RegisterDate>{date}</RegisterDate>
-            {" • "}
+            {" ᐧ "}
             <RegisterReadingTime>{readingTime.text}</RegisterReadingTime>
           </Register>
         </Header>
@@ -81,7 +81,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY")
         path
         title
         subtitle
