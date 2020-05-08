@@ -10,7 +10,7 @@
   },
   {
     "talk_date": "2017-09-23",
-    "event": "Front in BH 2k17",
+    "event": "Front in BH",
     "event_url": "https://frontinbh.com.br/",
     "location": "Belo Horizonte, Brazil",
     "talk": "\"Comunidade não dá dinheiro\"",
@@ -19,7 +19,7 @@
   },
   {
     "talk_date": "2017-05-27",
-    "event": "Front in Salvador 2017",
+    "event": "Front in Salvador",
     "event_url": "http://frontinssa.com/",
     "location": "Salvador, Brazil",
     "talk": "Web Underground",
@@ -28,7 +28,7 @@
   },
   {
     "talk_date": "2017-05-17",
-    "event": "Google I/O 2017 Extended",
+    "event": "Google I/O Extended",
     "event_url": "http://gdgbh.org/ioextended17/",
     "location": "Belo Horizonte, Brazil",
     "talk": "Progressive Web App in Depth",
@@ -46,7 +46,7 @@
   },
   {
     "talk_date": "2016-12-10",
-    "event": "Front in POA 2016",
+    "event": "Front in POA",
     "event_url": "http://frontinpoa.com.br/2016/",
     "location": "Porto Alegre, Brazil",
     "location_url": "https://goo.gl/maps/dQuZbHoeyEE2",
@@ -56,7 +56,7 @@
   },
   {
     "talk_date": "2016-12-03",
-    "event": "Front in Aracaju 2016",
+    "event": "Front in Aracaju",
     "event_url": "http://www.frontinaracaju.com.br/",
     "location": "Aracaju, Brazil",
     "location_url": "https://goo.gl/maps/g5zzppiVfFH2",
@@ -66,7 +66,7 @@
   },
   {
     "talk_date": "2016-11-05",
-    "event": "GDG Devfest Belo Horizonte 2016",
+    "event": "GDG Devfest Belo Horizonte",
     "event_url": "http://devfestbh.com.br/",
     "location": "Belo Horizonte, Brazil",
     "location_url": "https://goo.gl/maps/dgsqmbSNYg92",
