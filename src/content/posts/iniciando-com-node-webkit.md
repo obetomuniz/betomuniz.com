@@ -44,7 +44,7 @@ Para tal, vamos utilizar o pacote **[node-webkit-builder](https://github.com/mll
 
 **1)** Partindo do principio que você tem o NodeJS e o NPM instalados, para instalr o _node-webkit-builder_ em nosso ambiente, digite o seguinte comando no terminal:
 
-```sh
+```bash
 $ [sudo] npm install node-webkit-builder -g
 ```
 
@@ -72,8 +72,9 @@ No arquivo _index.html_ coloque o seguinte código:
     <h1>Hello World!</h1>
     We are using node.js
     <script>
-      document.write(process.version)</script
-    >.
+      document.write(process.version)
+    </script>
+    .
   </body>
 </html>
 ```
@@ -95,7 +96,7 @@ No arquivo _package.json_ coloque o seguinte código:
 
 **3)** E por fim, dentro do diretório _hello-world_, execute o seguinte comando no terminal:
 
-```sh
+```bash
 $ nwbuild --run ./
 ```
 
@@ -107,7 +108,7 @@ Se algo igual ou semelhante a imagem abaixo aparecer na sua tela, é porque tudo
 
 **1)** Ainda no diretório _hello-world_, digite o seguinte comando:
 
-```sh
+```bash
 $ nwbuild -p osx,win ./
 ```
 
