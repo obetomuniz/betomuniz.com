@@ -17,7 +17,6 @@ export const Title = styled.h1`
   font-size: var(--DEFAULT_POST_TITLE_FONT_SIZE);
   line-height: var(--DEFAULT_POST_TITLE_LINE_HEIGHT);
   margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
-  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
   text-align: center;
   font-weight: 700;
 
@@ -42,7 +41,6 @@ export const Register = styled.small`
   font-size: var(--DEFAULT_POST_REGISTER_FONT_SIZE);
   color: var(--DEFAULT_TEXT_COLOR);
   margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
-  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
   font-family: "Tahoma", sans-serif;
   display: block;
   text-align: center;
@@ -64,7 +62,6 @@ export const RegisterReadingTime = styled.span`
 export const RegisterCategory = styled.span`
   font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
   color: var(${({ color }) => color});
-  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   @media screen and (max-width: 440px) {
     font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE_MOBILE);
@@ -108,7 +105,6 @@ export const Content = styled.main`
     color: var(--DEFAULT_POST_TITLE_COLOR);
     margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
     line-height: var(--DEFAULT_POST_SECONDARY_TITLE_LINE_HEIGHT);
-    text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
     font-weight: 700;
 
     code {

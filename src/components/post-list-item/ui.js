@@ -12,7 +12,6 @@ export const Container = styled.li`
 export const Category = styled.p`
   font-size: var(--DEFAULT_LIST_ITEM_DETAIL_FONT_SIZE);
   color: var(${({ color }) => color});
-  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   span {
     color: var(--DEFAULT_POST_LIST_ITEM_COLOR);
@@ -30,7 +29,6 @@ export const Link = styled.a`
   line-height: var(--DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT);
   color: var(--DEFAULT_LINK_COLOR);
   font-weight: 700;
-  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   &:hover {
     color: var(--DEFAULT_LINK_COLOR_HOVER);

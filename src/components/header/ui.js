@@ -65,7 +65,6 @@ export const NavLink = styled(Link)`
   opacity: var(--DEFAULT_TEXT_OPACITY);
   text-decoration: none;
   font-size: var(--DEFAULT_NAV_ITEM_FONT_SIZE);
-  text-shadow: var(--DEFAULT_NAV_ITEM_TEXT_SHADOW);
 
   &:hover,
   &.active {
