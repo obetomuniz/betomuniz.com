@@ -1,7 +1,7 @@
 ---
 title: "Web Vitals"
-subtitle: "Como está a saúde da Web?"
-date: "2020-06-01"
+subtitle: "Como está a saúde da web?"
+date: "2020-05-31"
 path: "/blog/web-vitals-como-esta-a-saude-da-web/"
 description: "Neste artigo abordo o Web Vitals, uma nova recomendação Google para otimização de experiência de usuário e performance web"
 keywords: "web performance, web vitals, lcp, fid, cls, performance, ux"
