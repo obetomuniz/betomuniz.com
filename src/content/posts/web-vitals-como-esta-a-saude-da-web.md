@@ -9,7 +9,7 @@ category: "tech"
 lang: "pt"
 ---
 
-<img src="https://user-images.githubusercontent.com/1680157/83339302-e9416480-a2a2-11ea-9baa-b0807eef0c23.png" style="box-shadow: none;" />
+<img src="https://user-images.githubusercontent.com/1680157/83339876-44298a80-a2a8-11ea-833d-c067d59d3f4d.png" style="box-shadow: none;" />
 
 Fala galera! Bora falar um pouco de performance web? Ou melhor, vamos falar **MAIS** sobre performance web?
 
