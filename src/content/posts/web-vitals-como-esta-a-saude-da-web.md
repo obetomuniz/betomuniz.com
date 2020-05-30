@@ -57,7 +57,7 @@ Portanto, quando ela trás algo novo sobre isso, é extremamente importante obse
 
 Web Vitals é uma iniciativa da Google que busca retomar o discurso simplificado e unificado sobre recomendações de boas práticas de desenvolvimento web, principalmente no contexto que melhorará a experiência do usuário ao utilizar a web: Performance.
 
-E para atingir esse objetivo, Web Vitals introduz ** Core Web Vitals**, que são recomendações críticas baseadas no contexto de demandas da web atual e na experiência do próprio usuário.
+E para atingir esse objetivo, Web Vitals introduz **Core Web Vitals**, que são recomendações críticas baseadas no contexto de demandas da web atual e na experiência do próprio usuário.
 
 ### Core Web Vitals
 
@@ -83,7 +83,7 @@ Quem aí nunca entrou em um site e do nada, durante a navegação, mil e um pop-
 
 ## Mas… Devemos adotar Web Vitals?
 
-Devemos, pois cada dado refletido negativamente nas métricas do Web Vitals estão impactando negativamente também na experiência dos nossos usuários, ou seja, vamos fazer essa adoção por eles.
+**Devemos**, pois cada dado refletido negativamente nas métricas do Web Vitals estão impactando negativamente também na experiência dos nossos usuários, ou seja, vamos fazer essa adoção por eles.
 
 Isso sem contar que já é sabido que a não adoção irá impactar nos [resultados de buscas](https://venturebeat.com/2020/05/28/google-search-ranking-factor-web-vitals-2021/), e que [performance ruim](https://twitter.com/addyosmani/status/1263983302181969920?s=21), será refletida negativamente na [experiência do usuário dentro do Chrome](https://techcrunch.com/2019/11/11/google-chrome-to-identify-and-label-slow-websites/).
 
