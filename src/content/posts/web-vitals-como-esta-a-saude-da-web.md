@@ -4,7 +4,7 @@ subtitle: "Como está a saúde da web?"
 date: "2020-05-31"
 path: "/blog/web-vitals-como-esta-a-saude-da-web/"
 description: "Neste artigo abordo o Web Vitals, uma nova recomendação Google para otimização de experiência de usuário e performance web"
-keywords: "web performance, web vitals, lcp, fid, cls, performance, ux"
+keywords: "web performance, web vitals, lcp, fid, cls, performance, ux, google"
 category: "tech"
 lang: "pt"
 ---
@@ -43,7 +43,7 @@ E foi nesse cenário inovador e caótico da adoção do HTML5 que movimentos pr�
 
 E vale incluir nesse período a popularização de ferramentas como [GruntJS](https://gruntjs.com/), [GulpJS](https://gulpjs.com/) entre outros que ajudaram bastante na adoção de técnicas de otimização de performance.
 
-Outro importante destaque naquele período, foi a atuação de empresas como **Apple** (nem parece mais a mesma ☹️), Mozilla e Google para promover mais a performance na web, com a finalidade entregar melhores soluções.
+Outro importante destaque naquele período, foi a atuação de empresas como **Apple** (nem parece mais a mesma ☹️), **Mozilla** e **Google** para promover mais performance na web com a finalidade entregar melhores experiências _#morteaoflash_.
 
 ## Google
 
@@ -51,21 +51,21 @@ E extendendo as menções do esforço da Google sobre performance na plataforma 
 
 AMP, Lighthouse, Pagespeed Insights, Chrome DevTools, CrUX Dashboard são apenas algumas das iniciativas promovidas pela Google nesse sentido.
 
-Portanto, quando ela trás algo novo sobre isso, é extremamente importante observar e considerar, pois o conhecimento adquirido em pesquisa e endossado por ela, além de beneficiar ela mesma no processo, acaba beneficiando todos, e isso não é diferente do **Web Vitals**.
+Portanto, quando ela trás algo novo sobre isso, é extremamente importante observar e considerar, pois o conhecimento adquirido em pesquisa endossado por ela, além de beneficiar ela mesma no processo, acaba beneficiando todos nós, e isso não é diferente do **Web Vitals**.
 
 ## Web Vitals
 
-Web Vitals é uma iniciativa da Google que busca retomar o discurso simplificado e unificado sobre recomendações de boas práticas de desenvolvimento web, e em um contexto que melhora e muito a experiência do usuário ao utilizar a web: Performance.
+Web Vitals é uma iniciativa da Google que busca retomar o discurso simplificado e unificado sobre recomendações de boas práticas de desenvolvimento web, e dentro de um contexto que melhora e muito a experiência do usuário ao utilizar a web: Performance.
 
-E para atingir esse objetivo, Web Vitals introduz **Core Web Vitals**, que são recomendações críticas dada as atuais demandas da web e na experiência do próprio usuário.
+E para atingir esse objetivo, Web Vitals introduz **Core Web Vitals**, que são recomendações baseadas nas atuais demandas de experiência de usuário da web.
 
 ### Core Web Vitals
 
-O que é importante destacar sobre este _subset_ de recomendações do Web Vitals, é sua natureza mutável, ou seja, será revisado sempre a fim de refletir a melhor experiência segura, performática e funcional pro usuário.
+O que é importante destacar sobre este _subset_ de recomendações do Web Vitals, é sua natureza mutável, ou seja, será revisado sempre a fim de refletir as melhores recomendações para um experiência segura, performática e funcional pro usuário.
 
-Métricas utilizadas anteriormente ou que vierem a surgir, não deixam de ser recomendadas, o Core Web Vitals, apenas coloca um holofote nas métricas que mais refletem a experiência de usuário no mundo real.
+Métricas utilizadas anteriormente ou que vierem a surgir em paralelo, não deixam de ser recomendadas, o Core Web Vitals, apenas coloca o holofote nas métricas que mais refletem a experiência de usuário no mundo real.
 
-E só pra elucidar as recomendações do Core Web Vitals atuais, temos:
+E pra elucidar as recomendações atuais do Core Web Vitals, temos:
 
 #### Largest Contentful Paint (LCP)
 
@@ -85,9 +85,9 @@ Quem aí nunca entrou em um site e do nada, durante a navegação, mil e um pop-
 
 ## Mas… Devemos adotar Web Vitals?
 
-**Devemos**, pois cada dado refletido negativamente nas métricas do Web Vitals estão impactando negativamente também a experiência dos nossos usuários, ou seja, a adoção é necessária por eles.
+**Devemos**, pois cada dado refletido negativamente nas métricas do Web Vitals estão impactando negativamente também a experiência dos usuários, ou seja, a adoção é necessária por eles.
 
-Isso sem contar que já é sabido que não adotar essas práticas poderá sim impactar [resultados de buscas](https://venturebeat.com/2020/05/28/google-search-ranking-factor-web-vitals-2021/), e que [performance ruim](https://twitter.com/addyosmani/status/1263983302181969920?s=21) séra refletida negativamente na [experiência do usuário dentro do Chrome](https://techcrunch.com/2019/11/11/google-chrome-to-identify-and-label-slow-websites/).
+Isso sem contar que já é sabido que não adotar essas práticas poderá impactar seu site nos [resultados de buscas](https://venturebeat.com/2020/05/28/google-search-ranking-factor-web-vitals-2021/), e que [performance ruim](https://twitter.com/addyosmani/status/1263983302181969920?s=21) séra refletida negativamente na [experiência do usuário dentro do Chrome](https://techcrunch.com/2019/11/11/google-chrome-to-identify-and-label-slow-websites/).
 
 ## Conclusão
 
