@@ -55,13 +55,13 @@ Portanto, quando ela trás algo novo sobre isso, é extremamente importante obse
 
 ## Web Vitals
 
-Web Vitals é uma iniciativa da Google que busca retomar o discurso simplificado e unificado sobre recomendações de boas práticas de desenvolvimento web, principalmente no contexto que melhorará a experiência do usuário ao utilizar a web: Performance.
+Web Vitals é uma iniciativa da Google que busca retomar o discurso simplificado e unificado sobre recomendações de boas práticas de desenvolvimento web, e em um contexto que melhora e muito a experiência do usuário ao utilizar a web: Performance.
 
-E para atingir esse objetivo, Web Vitals introduz **Core Web Vitals**, que são recomendações críticas baseadas no contexto de demandas da web atual e na experiência do próprio usuário.
+E para atingir esse objetivo, Web Vitals introduz **Core Web Vitals**, que são recomendações críticas dada as atuais demandas da web e na experiência do próprio usuário.
 
 ### Core Web Vitals
 
-O que é importante destacar sobre este _subset_ de recomendações do Web Vitals, é sua natureza mutável, ou seja, será revisado sempre a fim de refletir demandas críticas numa experiência segura, performática e funcional do usuário.
+O que é importante destacar sobre este _subset_ de recomendações do Web Vitals, é sua natureza mutável, ou seja, será revisado sempre a fim de refletir a melhor experiência segura, performática e funcional pro usuário.
 
 Métricas utilizadas anteriormente ou que vierem a surgir, não deixam de ser recomendadas, o Core Web Vitals, apenas coloca um holofote nas métricas que mais refletem a experiência de usuário no mundo real.
 
@@ -69,11 +69,13 @@ E só pra elucidar as recomendações do Core Web Vitals atuais, temos:
 
 #### Largest Contentful Paint (LCP)
 
-A LCP gera métricas relativas ao carregamento da página web, ou seja, para essa métrica o que importa é o que acontece entre os primeiros segundos da requisição de um site até o carregamento completo do mesmo.
+A LCP gera métricas relativas ao carregamento da página web, ou seja, para essa métrica o que importa é o que acontece entre os primeiros segundos da requisição de um site até o carregamento inicial do mesmo.
 
 #### First Input Delay (FID)
 
-A FID é uma métrica que observa a interatividade do usuário com sua página. Por exemplo, quanto tempo leva para o usuário poder clickar em um link e isso reagir, e ou, quanto tempo demora até que alguma atividade passiva interaja com ele via JavaScript de forma assincrona.
+A FID é uma métrica que observa a interatividade do usuário com sua página.
+
+Por exemplo, quanto tempo leva para o usuário poder clickar em um link e isso reagir ou quanto tempo demora até que alguma atividade assíncrona interaja com ele via JavaScript.
 
 #### Cumulative Layout Shift (CLS)
 
@@ -83,9 +85,9 @@ Quem aí nunca entrou em um site e do nada, durante a navegação, mil e um pop-
 
 ## Mas… Devemos adotar Web Vitals?
 
-**Devemos**, pois cada dado refletido negativamente nas métricas do Web Vitals estão impactando negativamente também na experiência dos nossos usuários, ou seja, vamos fazer essa adoção por eles.
+**Devemos**, pois cada dado refletido negativamente nas métricas do Web Vitals estão impactando negativamente também a experiência dos nossos usuários, ou seja, a adoção é necessária por eles.
 
-Isso sem contar que já é sabido que a não adoção irá impactar nos [resultados de buscas](https://venturebeat.com/2020/05/28/google-search-ranking-factor-web-vitals-2021/), e que [performance ruim](https://twitter.com/addyosmani/status/1263983302181969920?s=21), será refletida negativamente na [experiência do usuário dentro do Chrome](https://techcrunch.com/2019/11/11/google-chrome-to-identify-and-label-slow-websites/).
+Isso sem contar que já é sabido que não adotar essas práticas poderá sim impactar [resultados de buscas](https://venturebeat.com/2020/05/28/google-search-ranking-factor-web-vitals-2021/), e que [performance ruim](https://twitter.com/addyosmani/status/1263983302181969920?s=21) séra refletida negativamente na [experiência do usuário dentro do Chrome](https://techcrunch.com/2019/11/11/google-chrome-to-identify-and-label-slow-websites/).
 
 ## Conclusão
 
