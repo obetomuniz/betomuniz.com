@@ -6334,10 +6334,10 @@ gatsby-page-utils@^0.2.9:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-disqus@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.1.6.tgz#14783227752a21b4e1a7ef65a9792541c26115ce"
-  integrity sha512-e9WmJBpzMSMd7RECEC0vCTAP/5HT3YhTvQUl32lYwoZspdpeRh9YX/sDu9uCeZiVPM8HhjdZWw+9K1PloJ+Heg==
+gatsby-plugin-disqus@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.2.0.tgz#8579e33b983d6de957390aef5445c99e8cb38af5"
+  integrity sha512-1Vgifach9KOCTKWmOESHbGDEAVxLwg7uJZbSyohQzBqqDzfnl42SOWJhIPCOCAtKi1GcqU4JIQiWBZmN1V0Zlg==
 
 gatsby-plugin-google-analytics@^2.3.2:
   version "2.3.2"
