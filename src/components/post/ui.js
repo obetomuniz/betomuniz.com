@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
+export const Container = styled.article`
   width: 550px;
   margin: 0 auto;
 
@@ -68,7 +68,7 @@ export const RegisterCategory = styled.span`
   }
 `
 
-export const Content = styled.article`
+export const Content = styled.div`
   margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
 
   p {
@@ -304,5 +304,14 @@ export const Content = styled.article`
     .post-video {
       margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM_MOBILE);
     }
+  }
+`
+
+export const DisqusContainer = styled.div`
+  width: 550px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 440px) {
+    width: 100%;
   }
 `

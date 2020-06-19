@@ -13,6 +13,7 @@ import {
   RegisterReadingTime,
   RegisterCategory,
   Content,
+  DisqusContainer,
 } from "./ui"
 
 export default function Template({ data }) {
@@ -64,10 +65,10 @@ export default function Template({ data }) {
           </Register>
         </Header>
         <Content dangerouslySetInnerHTML={{ __html: html }} />
-        <div id="disqus_thread">
-          <Disqus config={disqusConfig} />
-        </div>
       </Container>
+      <DisqusContainer id="disqus_thread">
+        <Disqus config={disqusConfig} />
+      </DisqusContainer>
     </Layout>
   )
 }
