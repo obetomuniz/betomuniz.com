@@ -68,7 +68,7 @@ export const RegisterCategory = styled.span`
   }
 `
 
-export const Content = styled.main`
+export const Content = styled.article`
   margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
 
   p {
