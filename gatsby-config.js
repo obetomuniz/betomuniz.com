@@ -3,6 +3,7 @@ module.exports = {
     title: `Beto Muniz`,
     author: `@obetomuniz`,
     url: `https://betomuniz.com`,
+    description: `Beto Muniz is a Front-End Engineer who lives in Belo Horizonte, Brazil.`,
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -68,5 +69,68 @@ module.exports = {
       },
     },
     `gatsby-plugin-remove-serviceworker`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                url
+                siteUrl: url
+                site_url: url
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map((edge) => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
+                  guid: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
+                  title: `${edge.node.frontmatter.title}${
+                    edge.node.frontmatter.subtitle
+                      ? `: ${edge.node.frontmatter.subtitle}`
+                      : ""
+                  }`,
+                })
+              })
+            },
+            query: `
+              query {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] }
+                  filter: { frontmatter: { draft: { ne: true } } }
+                ) {
+                  edges {
+                    node {
+                      id
+                      excerpt(pruneLength: 250)
+                      frontmatter {
+                        date(formatString: "MMMM DD, YYYY")
+                        path
+                        title
+                        subtitle
+                        external
+                        category
+                        lang
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/blog/feed.xml",
+            match: "^/blog/",
+          },
+        ],
+      },
+    },
   ],
 }
