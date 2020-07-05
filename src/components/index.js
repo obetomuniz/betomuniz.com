@@ -7,6 +7,8 @@ import PostPreviewList from "./post-preview-list"
 import PostPreviewListItem from "./post-preview-list-item"
 import PostList from "./post-list"
 import PostListItem from "./post-list-item"
+import DropList from "./drop-list"
+import DropListItem from "./drop-list-item"
 import ProjectList from "./project-list"
 import ProjectListItem from "./project-list-item"
 import TalkList from "./talk-list"
@@ -22,6 +24,8 @@ export {
   PostPreviewListItem,
   PostList,
   PostListItem,
+  DropList,
+  DropListItem,
   ProjectList,
   ProjectListItem,
   TalkList,

@@ -42,9 +42,41 @@ export const GlobalStyle = createGlobalStyle`
     overflow-y: auto;
   }
 
+  .drop {
+    border-radius: 8px;
+    border: 1px solid var(--DEFAULT_POST_TEXT_COLOR);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .drop:last-child, .drop p:last-child {
+    margin-bottom: 0;
+  }
+
+  .default_mb {
+    margin-bottom: 30px;
+  }
+
   @media screen and (max-width: 440px) {
     .center-content {
       height: auto;
+    }
+    
+    .drop {
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .default_mb {
+      margin-bottom: 20px;
+    }
+
+    center {
+      text-align: left;
+    }
+
+    .center-original-content {
+      text-align: center;
     }
   }
 `

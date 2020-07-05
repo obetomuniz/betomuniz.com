@@ -3,6 +3,7 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const blogPostTemplate = path.resolve(`src/components/post/post.js`)
+  const dropTemplate = path.resolve(`src/components/drop/drop.js`)
 
   return graphql(`
     {
@@ -16,12 +17,13 @@ exports.createPages = ({ actions, graphql }) => {
               path
               external
               draft
+              drops
             }
           }
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
@@ -29,13 +31,14 @@ exports.createPages = ({ actions, graphql }) => {
     return result.data.allMarkdownRemark.edges.forEach(
       ({
         node: {
-          frontmatter: { path, external },
+          frontmatter: { path, external, drops },
         },
       }) => {
         if (!external) {
+          const component = drops ? dropTemplate : blogPostTemplate
           createPage({
             path,
-            component: blogPostTemplate,
+            component,
             context: {},
           })
         }

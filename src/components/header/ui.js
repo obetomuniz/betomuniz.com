@@ -38,26 +38,26 @@ export const PhotoImage = styled.img`
   width: 100%;
 `
 
-export const Nav = styled.nav``
+export const Nav = styled.nav`
+  @media screen and (max-width: 440px) {
+    width: 90%;
+  }
+`
 
 export const NavList = styled.ul`
   align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0 15px;
+  width: 400px;
 
   @media screen and (max-width: 440px) {
-    width: 260px;
+    width: 100%;
   }
 `
 
 export const NavListItem = styled.li`
-  width: 70px;
   text-align: center;
-
-  @media screen and (max-width: 440px) {
-    width: 65px;
-  }
 `
 
 export const NavLink = styled(Link)`
@@ -71,5 +71,9 @@ export const NavLink = styled(Link)`
     opacity: 1;
     color: var(--DEFAULT_LINK_COLOR_HOVER);
     font-weight: 700;
+  }
+
+  @media screen and (max-width: 440px) {
+    font-size: 14px;
   }
 `

@@ -32,6 +32,11 @@ const Header = ({ location }) => {
             </NavLink>
           </NavListItem>
           <NavListItem>
+            <NavLink to="/drops/" activeClassName={"active"}>
+              Drops
+            </NavLink>
+          </NavListItem>
+          <NavListItem>
             <NavLink to="/projects/" activeClassName={"active"}>
               Projects
             </NavLink>

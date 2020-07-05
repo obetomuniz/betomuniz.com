@@ -15,6 +15,8 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-styled-components": "^3.3.4",
+    "gatsby-plugin-twitter": "^2.3.9",
+    "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-prismjs": "^3.5.4",
     "gatsby-remark-reading-time": "^1.0.1",
     "gatsby-source-filesystem": "^2.3.12",
@@ -42,6 +44,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
+    "clean": "gatsby clean",
     "serve": "gatsby serve"
   },
   "repository": {

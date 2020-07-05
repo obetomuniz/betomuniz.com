@@ -1,29 +1,28 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Layout, SEO, PostList } from "../components"
+import { Layout, SEO, DropList } from "../components"
 
-const BlogPage = ({
+const DropsPage = ({
   data: {
     allMarkdownRemark: { edges },
   },
 }) => {
   return (
-    <Layout location="/blog/">
+    <Layout location="/drops/">
       <SEO
-        title="Blog"
-        description="Beto Muniz as a writer."
-        keywords="beto, muniz, blog, beto muniz, betomuniz"
-        url="https://betomuniz.com/blog/"
+        title="Drops"
+        description="Beto Muniz's Content Drops - The fast way to track Beto's knowledge."
+        keywords="beto, muniz, drops, content, beto muniz, betomuniz"
+        url="https://betomuniz.com/drops/"
       />
-
       <main>
-        <PostList data={edges} />
+        <DropList data={edges} />
       </main>
     </Layout>
   )
 }
-export default BlogPage
+export default DropsPage
 
 export const pageQuery = graphql`
   query {

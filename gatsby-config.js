@@ -6,6 +6,7 @@ module.exports = {
     description: `Beto Muniz is a Front-End Engineer who lives in Belo Horizonte, Brazil.`,
   },
   plugins: [
+    `gatsby-plugin-twitter`,
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
@@ -34,6 +35,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `drops`,
+        path: `${__dirname}/src/content/drops`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `json`,
         path: `${__dirname}/src/content`,
       },
@@ -47,7 +55,17 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-prismjs`, `gatsby-remark-reading-time`],
+        plugins: [
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: "100%",
+              height: 500,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-reading-time`,
+        ],
       },
     },
     {
@@ -88,19 +106,27 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map((edge) => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
-                  guid: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
-                  title: `${edge.node.frontmatter.title}${
-                    edge.node.frontmatter.subtitle
-                      ? `: ${edge.node.frontmatter.subtitle}`
-                      : ""
-                  }`,
+              return allMarkdownRemark.edges
+                .map((edge) => {
+                  return Object.assign({}, edge.node.frontmatter, {
+                    description: edge.node.excerpt,
+                    date: edge.node.frontmatter.date,
+                    url: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
+                    guid: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
+                    title: `${edge.node.frontmatter.title}${
+                      edge.node.frontmatter.subtitle
+                        ? `: ${edge.node.frontmatter.subtitle}`
+                        : ""
+                    }`,
+                  })
                 })
-              })
+                .filter((edge) => {
+                  return (
+                    edge.node &&
+                    edge.node.frontmatter &&
+                    !edge.node.frontmatter.drops
+                  )
+                })
             },
             query: `
               query {
@@ -120,6 +146,7 @@ module.exports = {
                         external
                         category
                         lang
+                        drops
                       }
                     }
                   }

@@ -1,8 +1,8 @@
 import React from "react"
 
-import { PostListItem } from "../"
+import { DropListItem } from "../"
 
-const PostList = ({ data }) => {
+const DropList = ({ data }) => {
   return (
     <ul>
       {data.map(
@@ -22,13 +22,12 @@ const PostList = ({ data }) => {
           },
           index
         ) => {
-          if (drops) {
+          if (!drops) {
             return null
           }
-
           return (
-            <PostListItem
-              key={`post-${index}`}
+            <DropListItem
+              key={`drop-${index}`}
               external={external}
               path={path}
               title={title}
@@ -43,4 +42,4 @@ const PostList = ({ data }) => {
   )
 }
 
-export default PostList
+export default DropList
