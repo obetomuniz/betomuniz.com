@@ -30,7 +30,9 @@ Resolvendo um “bug” no meu site, lembrei q...
 }
 ```
 
-<video class="post-video" style="margin-bottom: 0;" src="https://video.twimg.com/tweet_video/Ea5_ou1XgAAeAz8.mp4" width="100%" controls autoplay loop playsinline></video>
+<div class="default_mb">
+<video class="post-video" style="min-height: auto; margin-bottom: 0;" src="https://video.twimg.com/tweet_video/Ea5_ou1XgAAeAz8.mp4" width="100%" controls autoplay loop playsinline></video>
+</div>
 
 <center class="center-original-content">
 <a href="https://twitter.com/obetomuniz/status/1274097486068678656" target="_blank" rel="noopener noreferrer">See original content</a>
