@@ -15,7 +15,7 @@ Simplesmente apaixonado com a funcionalidade pra debugging de contraste do [@Chr
 
 Mais sobre a ferramenta Dedo indicador apontando para a direita 👉 [web.dev/color-contrast](https://web.dev/color-contrast)
 
-<video class="post-video" style="margin-bottom: 0;" src="https://video.twimg.com/tweet_video/EazqJzbWAAAaWxy.mp4" width="100%" autoplay loop playsinline></video>
+<video class="post-video" style="margin-bottom: 0;" src="https://video.twimg.com/tweet_video/EazqJzbWAAAaWxy.mp4" width="100%" controls autoplay loop playsinline></video>
 
 <center class="center-original-content">
 <a href="https://twitter.com/obetomuniz/status/1273650385564164104" target="_blank" rel="noopener noreferrer">See original content</a>

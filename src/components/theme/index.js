@@ -39,6 +39,8 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_POST_CODE_DEMO_BACKGROUND: rgb(45, 45, 45);
     --DEFAULT_POST_HR_COLOR: #ccc;
 
+    --DEFAULT_DROP_BORDER_COLOR: #ccc;
+
     /* Typo */
     --DEFAULT_SERIF_FONTS: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
     --DEFAULT_SAN_SERIF_FONTS: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;

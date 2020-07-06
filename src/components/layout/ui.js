@@ -44,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .drop {
     border-radius: 8px;
-    border: 1px solid var(--DEFAULT_POST_TEXT_COLOR);
+    border: 1px solid var(--DEFAULT_DROP_BORDER_COLOR);
     padding: 30px;
     margin-bottom: 30px;
   }
