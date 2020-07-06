@@ -22,7 +22,7 @@ drops: true
 </div>
 
 <center class="center-original-content">
-<a href="https://twitter.com/i/status/1277956549110104064" target="_blank" rel="noopener noreferrer">See original content</a>
+<a href="https://twitter.com/i/status/1280105944236593154" target="_blank" rel="noopener noreferrer">See original content</a>
 </center>
 
 </div>
