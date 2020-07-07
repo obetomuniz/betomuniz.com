@@ -13,7 +13,7 @@ drops: true
 
 ↔️ Conhecem a propriedade #CSS `object-fit`?
 
-👍 Com ela é possível obter o mesmo comportamento da propriedade `background-size` com os valores `cover` ou `contain` e muito mais em elementos <img>, <video> e/ou <source>.
+👍 Com ela é possível obter o mesmo comportamento da propriedade `background-size` com os valores `cover` ou `contain` e muito mais em elementos `<img>`, `<video>` e/ou `<source>`.
 
 🌸 Bem legal, né?
 
