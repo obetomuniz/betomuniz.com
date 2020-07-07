@@ -1,8 +1,8 @@
 ---
-title: "CSS Tips: object-fit"
+title: "Dica CSS: object-fit"
 date: "2020-07-07"
-path: "/drops/css-tips-object-fit/"
-description: "Neste drop comento sobre a propriedade css object-fit e seu comportamento."
+path: "/drops/dica-css-object-fit/"
+description: "Neste drop comento sobre a propriedade CSS object-fit e seu comportamento."
 keywords: "css, tips, object-fit, image, video, source"
 category: "tech"
 lang: "pt"

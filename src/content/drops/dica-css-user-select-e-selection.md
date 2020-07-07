@@ -1,7 +1,7 @@
 ---
-title: "CSS Tips: user-select e selection"
+title: "Dica CSS: user-select e selection"
 date: "2020-06-19"
-path: "/drops/css-tips-user-select-e-selection/"
+path: "/drops/dica-css-user-select-e-selection/"
 description: "Já ouviu falar dos recursos ::selection e user-select no CSS? Confira esse drop."
 keywords: "css, user-select, selection, dicas, tips"
 category: "tech"
