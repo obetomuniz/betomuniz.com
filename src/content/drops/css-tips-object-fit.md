@@ -1,9 +1,9 @@
 ---
-title: "CSS Tip: object-fit"
-date: "2020-07-06"
-path: "/drops/css-tip-object-fit/"
+title: "CSS Tips: object-fit"
+date: "2020-07-07"
+path: "/drops/css-tips-object-fit/"
 description: "Neste drop comento sobre a propriedade css object-fit e seu comportamento."
-keywords: "chrome, css css overview, devtools"
+keywords: "css, tips, object-fit, image, video, source"
 category: "tech"
 lang: "pt"
 drops: true
