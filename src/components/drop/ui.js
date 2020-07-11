@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.article`
   width: 550px;
-  margin: 0 auto;
+  margin: 0 auto var(--DEFAULT_MARGIN);
 
   @media screen and (max-width: 440px) {
     width: 100%;
@@ -300,14 +300,5 @@ export const Content = styled.div`
     .post-video {
       margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM_MOBILE);
     }
-  }
-`
-
-export const DisqusContainer = styled.div`
-  width: 550px;
-  margin: 0 auto;
-
-  @media screen and (max-width: 440px) {
-    width: 100%;
   }
 `

@@ -2,6 +2,7 @@ import Layout from "./layout"
 import SEO from "./seo"
 import Header from "./header"
 import Footer from "./footer"
+import Newsletter from "./newsletter"
 import About from "./about"
 import PostPreviewList from "./post-preview-list"
 import PostPreviewListItem from "./post-preview-list-item"
@@ -19,6 +20,7 @@ export {
   SEO,
   Header,
   Footer,
+  Newsletter,
   About,
   PostPreviewList,
   PostPreviewListItem,

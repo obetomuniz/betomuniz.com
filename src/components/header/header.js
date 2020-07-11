@@ -10,7 +10,7 @@ import {
   NavLink,
 } from "./ui"
 
-const Header = ({ location }) => {
+const Header = () => {
   return (
     <Container>
       <Photo to="/">

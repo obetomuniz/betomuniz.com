@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Disqus } from "gatsby-plugin-disqus"
 
-import { Layout, SEO } from "../"
+import { Layout, SEO, Newsletter } from "../"
 import {
   Container,
   Header,
@@ -13,11 +12,9 @@ import {
   RegisterReadingTime,
   RegisterCategory,
   Content,
-  DisqusContainer,
 } from "./ui"
 
 export default function Template({ data }) {
-  let disqusConfig = {}
   const { site, markdownRemark } = data
   const {
     frontmatter: {
@@ -33,10 +30,6 @@ export default function Template({ data }) {
     html,
   } = markdownRemark
 
-  disqusConfig.url = `${site.siteMetadata.url + path}`
-  disqusConfig.identifier = path
-  disqusConfig.title = title
-
   return (
     <Layout location="/blog/">
       <SEO
@@ -44,7 +37,7 @@ export default function Template({ data }) {
         subtitle={subtitle}
         description={description}
         keywords={keywords}
-        url={disqusConfig.url}
+        url={`${site.siteMetadata.url + path}`}
       />
 
       <Container>
@@ -66,9 +59,8 @@ export default function Template({ data }) {
         </Header>
         <Content dangerouslySetInnerHTML={{ __html: html }} />
       </Container>
-      <DisqusContainer id="disqus_thread">
-        <Disqus config={disqusConfig} />
-      </DisqusContainer>
+
+      <Newsletter />
     </Layout>
   )
 }

@@ -15,10 +15,16 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_TEXT_COLOR: #000;
     --DEFAULT_LINK_COLOR: #000;
     --DEFAULT_LINK_COLOR_ACTIVE: #000;
-    --DEFAULT_LINK_COLOR_HOVER: #000;
+    --DEFAULT_LINK_COLOR_HOVER: rebeccapurple;
     --DEFAULT_BOX_SHADOW_COLOR: #bbb;
 
-    --DEFAULT_HEADER_PHOTO_BORDER_COLOR: blueviolet;
+    --DEFAULT_HEADER_PHOTO_BORDER_COLOR: rebeccapurple;
+
+    --DEFAULT_SOCIAL_THEME: rebeccapurple;
+
+    --DEFAULT_NEWSLETTER_THEME: rebeccapurple;
+    --DEFAULT_NEWSLETTER_PLACEHOLDER: rebeccapurple;
+    --DEFAULT_NEWSLETTER_BUTTON_TEXT: #fff;
 
     --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
     --DEFAULT_TECH_CATEGORY_COLOR: darkgreen;
@@ -29,7 +35,7 @@ export const LightThemeStyle = createGlobalStyle`
       
     --DEFAULT_DETAIL_COLOR: #000;
 
-    --DEFAULT_POST_TITLE_COLOR: #000;
+    --DEFAULT_POST_TITLE_COLOR: rebeccapurple;
     --DEFAULT_POST_TEXT_COLOR: #000;
     --DEFAULT_POST_CODE_BACKGROUND_COLOR: #eee;
     --DEFAULT_POST_CODE_TEXT_COLOR: #000;
@@ -128,6 +134,12 @@ export const DarkThemeStyle = createGlobalStyle`
       --DEFAULT_BOX_SHADOW_COLOR: #000;
 
       --DEFAULT_HEADER_PHOTO_BORDER_COLOR: darkviolet;
+
+      --DEFAULT_SOCIAL_THEME: rebeccapurple;
+
+      --DEFAULT_NEWSLETTER_THEME: darkviolet;
+      --DEFAULT_NEWSLETTER_PLACEHOLDER: darkviolet;
+      --DEFAULT_NEWSLETTER_BUTTON_TEXT: #fff;
 
       --DEFAULT_COMMUNITY_CATEGORY_COLOR: deeppink;
       --DEFAULT_TECH_CATEGORY_COLOR: limegreen;

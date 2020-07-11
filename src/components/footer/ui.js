@@ -4,7 +4,7 @@ export const Container = styled.footer`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: var(--DEFAULT_MARGIN) 0;
+  margin: 0 0 var(--DEFAULT_MARGIN);
 
   @media screen and (max-width: 440px) {
     padding: 0 10px;
@@ -29,7 +29,7 @@ export const SocialsIcon = styled.svg`
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-  color: var(--DEFAULT_LINK_COLOR);
+  color: var(--DEFAULT_SOCIAL_THEME);
   transition: all 200ms linear;
 
   &:hover {
