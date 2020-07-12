@@ -1,8 +1,10 @@
 import React from "react"
 
+import { ScreenReaderContent } from "../"
 import { Container, Form, Input, Button } from "./ui"
 
-const Newsletter = () => {
+const Newsletter = ({ label }) => {
+  const textLabel = label || "Receba meus conteúdos no seu email"
   return (
     <Container>
       <Form
@@ -11,11 +13,14 @@ const Newsletter = () => {
         target="_blank"
         novalidate
       >
+        <ScreenReaderContent as={"label"} htmlFor="email-newsletter-input">
+          {textLabel}
+        </ScreenReaderContent>
         <Input
+          id="email-newsletter-input"
           type="email"
-          value=""
           name="EMAIL"
-          placeholder="Receba conteúdos como este no seu email"
+          placeholder={textLabel}
         />
         <Button>CADASTRAR</Button>
       </Form>

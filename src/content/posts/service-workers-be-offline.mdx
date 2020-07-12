@@ -20,7 +20,7 @@ Partindo do próprio nome do conceito, a definição básica sugere um foco no e
 
 Service Workers é um tipo de Web Worker, que por sua vez é uma execução em background, ou seja, fora do runtime da aplicação, que inclui funcionalidades para se trabalhar com recursos Offline, mesmo que a etapa deste processo se inicie pelo meio Online.
 
-**Beleza, mas isso não é nada diferente do que eu encontraria lendo a especificação. E por isso...**<br>
+**Beleza, mas isso não é nada diferente do que eu encontraria lendo a especificação. E por isso...**<br/>
 
 Prefiro definir o Service Workers, como um guarda-chuva de funcionalidades, que facilitam o trabalho Offline através de recursos como: background sync, push notifications, cacheamento de requisições e segurança na implementação. Mas não vamos deixar isso pra lá, porque não falar um pouco de alguns dos conceitos sob esse guarda-chuva, não é?
 
@@ -48,8 +48,8 @@ Para utilização dos Service Workers foi criada uma API para que os browsers po
 
 ## Lifecycle dos Service Workers
 
-**install**: Evento disparado no momento de registro do algoritmo de aplicação do Service Worker no navegador.<br>
-**activate**: Evento disparado quando já existe ou o worker for ativo.<br>
+**install**: Evento disparado no momento de registro do algoritmo de aplicação do Service Worker no navegador.<br/>
+**activate**: Evento disparado quando já existe ou o worker for ativo.<br/>
 **fetch**: Evento disparado como requisição, este evento retorna um _Response Object_ que pode ser capturado por um Objeto de cacheamento e manipulado.
 
 ## Mas melhor do que falar...
@@ -62,14 +62,14 @@ Primeiramente, a detecção de suporte da funcionalidade pelo browser corrente e
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
     .register("/sw.js")
-    .then(function(registration) {
+    .then(function (registration) {
       // Registro realizado com sucesso (NOTA: Observe que declaro um arquivo chamado sw.js, ele é onde colocaremos as notações do nosso Service Workers)
       console.log(
         "O ServiceWorker foi registrado com escopo: ",
         registration.scope
       )
     })
-    .catch(function(err) {
+    .catch(function (err) {
       // O registro falhou :(
       console.log("O registro do ServiceWorker falhou com o erro: ", err)
     })
@@ -82,14 +82,14 @@ No arquivo _sw.js_ é definido o nome do Service Worker, o que será cacheado em
 var CACHE_NAME = "my-site-cache-v1"
 var urlsToCache = ["/index.html", "/styles/main.css", "/script/main.js"]
 
-self.addEventListener("install", function(event) {
+self.addEventListener("install", function (event) {
   event.waitUntil(
     /* Este método estende o evento ONINSTALL e aplica um estado ao evento chamado ONINSTALLING */
     caches
       .open(
         CACHE_NAME
       ) /* O objeto caches é criado com um namespace e retorna uma Promise */
-      .then(function(cache) {
+      .then(function (cache) {
         console.log("Cache aberto")
         return cache.addAll(
           urlsToCache

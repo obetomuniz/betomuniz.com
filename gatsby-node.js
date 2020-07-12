@@ -7,7 +7,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(
+      allMdx(
         sort: { order: DESC, fields: [frontmatter___date] }
         filter: { frontmatter: { draft: { ne: true } } }
       ) {
@@ -28,7 +28,7 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    return result.data.allMarkdownRemark.edges.forEach(
+    return result.data.allMdx.edges.forEach(
       ({
         node: {
           frontmatter: { path, external, drops },

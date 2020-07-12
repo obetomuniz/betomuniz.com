@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Beto Muniz`,
     author: `@obetomuniz`,
-    url: `https://betomuniz.com`,
+    siteUrl: `https://betomuniz.com`,
     description: `Beto Muniz is a Front-End Engineer who lives in Belo Horizonte, Brazil.`,
   },
   plugins: [
@@ -14,7 +14,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: `${__dirname}/src/static/images`,
+          include: `${__dirname}/src/assets/vectors`,
         },
       },
     },
@@ -47,9 +47,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [".mdx", ".md"],
+        gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-embed-youtube",
             options: {
@@ -57,7 +58,6 @@ module.exports = {
               height: 500,
             },
           },
-          `gatsby-remark-prismjs`,
           `gatsby-remark-reading-time`,
         ],
       },
@@ -73,16 +73,24 @@ module.exports = {
       options: {
         name: `Beto Muniz's Website`,
         short_name: `Beto Muniz`,
-        start_url: `/`,
-        background_color: `#1f1f1f`,
-        theme_color: `#1f1f1f`,
+        start_url: `.`,
+        background_color: `#664399`,
+        theme_color: `#664399`,
         display: `minimal-ui`,
         icon: `src/static/images/betomunizcom-icon.png`,
       },
     },
     `gatsby-plugin-remove-serviceworker`,
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://betomuniz.com",
+        sitemap: "https://betomuniz.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: ["/"] }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed-mdx`,
       options: {
         query: `
           {
@@ -90,17 +98,18 @@ module.exports = {
               siteMetadata {
                 title
                 description
-                url
-                siteUrl: url
-                site_url: url
+                siteUrl
               }
             }
           }
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges
+                .filter((edge) => {
+                  return edge.node && edge.node.frontmatter
+                })
                 .map((edge) => {
                   return Object.assign({}, edge.node.frontmatter, {
                     description: edge.node.excerpt,
@@ -114,17 +123,10 @@ module.exports = {
                     }`,
                   })
                 })
-                .filter((edge) => {
-                  return (
-                    edge.node &&
-                    edge.node.frontmatter &&
-                    !edge.node.frontmatter.drops
-                  )
-                })
             },
             query: `
               query {
-                allMarkdownRemark(
+                allMdx(
                   sort: { order: DESC, fields: [frontmatter___date] }
                   filter: { frontmatter: { draft: { ne: true } } }
                 ) {
@@ -133,7 +135,7 @@ module.exports = {
                       id
                       excerpt(pruneLength: 250)
                       frontmatter {
-                        date(formatString: "MMMM DD, YYYY")
+                        date
                         path
                         title
                         subtitle
@@ -147,9 +149,39 @@ module.exports = {
                 }
               }
             `,
-            output: "/blog/feed.xml",
+            output: "/rss.xml",
+            title: "RSS Feed do Beto Muniz",
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        exclude: [`/blog/*`, `/drops/*`, `/projects/*`, `/talks/*`],
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+      }`,
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.nodes.map((node) => {
+            return {
+              url: `${site.siteMetadata.siteUrl}${node.path}`,
+              changefreq: `weekly`,
+              priority: 1.0,
+            }
+          }),
       },
     },
   ],

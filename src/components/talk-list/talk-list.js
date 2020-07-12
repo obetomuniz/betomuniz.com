@@ -1,9 +1,10 @@
 import React from "react"
 
 import { TalkListItem } from "../"
+import { Container } from "./ui"
 
 const TalkList = ({ data }) => (
-  <ul>
+  <Container>
     {data.map(
       (
         { node: { talk, talk_url, location, talk_date, event, category } },
@@ -20,7 +21,7 @@ const TalkList = ({ data }) => (
         />
       )
     )}
-  </ul>
+  </Container>
 )
 
 export default TalkList

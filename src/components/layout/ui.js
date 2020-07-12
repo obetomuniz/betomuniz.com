@@ -43,10 +43,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .drop {
-    border-radius: 8px;
-    border: 1px solid var(--DEFAULT_DROP_BORDER_COLOR);
-    padding: 30px;
-    margin-bottom: 30px;
+
   }
 
   .drop:last-child, .drop p:last-child {
@@ -84,6 +81,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
   width: 765px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media screen and (max-width: 440px) {
     width: 100%;

@@ -1,7 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import { Layout, SEO, Newsletter } from "../"
+import { Layout, SEO, Code, Share } from "../"
 import {
   Container,
   Header,
@@ -13,8 +15,13 @@ import {
   Content,
 } from "./ui"
 
+const components = {
+  pre: (props) => <code {...props} />,
+  code: Code,
+}
+
 export default function Template({ data }) {
-  const { site, markdownRemark } = data
+  const { site, mdx } = data
   const {
     frontmatter: {
       path,
@@ -25,14 +32,9 @@ export default function Template({ data }) {
       date,
       category,
     },
-    html,
-  } = markdownRemark
-
-  const dropStyles = `
-    <style type="text/css">
-
-    </style>
-  `
+    body,
+  } = mdx
+  const dropUrl = `${site.siteMetadata.siteUrl + path}`
 
   return (
     <Layout location="/blog/">
@@ -41,9 +43,10 @@ export default function Template({ data }) {
         subtitle={subtitle}
         description={description}
         keywords={keywords}
-        url={`${site.siteMetadata.url + path}`}
+        url={dropUrl}
       />
 
+      <Share url={dropUrl} text="Olha esse drop do @obetomuniz 👇" />
       <Container>
         <Header>
           <Title>
@@ -59,10 +62,12 @@ export default function Template({ data }) {
             <RegisterDate>{date}</RegisterDate>
           </Register>
         </Header>
-        <Content dangerouslySetInnerHTML={{ __html: `${dropStyles}${html}` }} />
+        <Content>
+          <MDXProvider components={components}>
+            <MDXRenderer>{body}</MDXRenderer>
+          </MDXProvider>
+        </Content>
       </Container>
-
-      <Newsletter />
     </Layout>
   )
 }
@@ -70,11 +75,11 @@ export const pageQuery = graphql`
   query($path: String!) {
     site {
       siteMetadata {
-        url
+        siteUrl
       }
     }
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+    mdx(frontmatter: { path: { eq: $path } }) {
+      body
       frontmatter {
         date(formatString: "YYYY")
         path

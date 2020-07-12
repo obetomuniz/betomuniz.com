@@ -1,8 +1,12 @@
 import Layout from "./layout"
 import SEO from "./seo"
-import Header from "./header"
-import Footer from "./footer"
+import ScreenReaderContent from "./screen-reader-content"
 import Newsletter from "./newsletter"
+import Header from "./header"
+import Code from "./code"
+import Footer from "./footer"
+import Socials from "./socials"
+import Share from "./share"
 import About from "./about"
 import PostPreviewList from "./post-preview-list"
 import PostPreviewListItem from "./post-preview-list-item"
@@ -18,9 +22,13 @@ import TalkListItem from "./talk-list-item"
 export {
   Layout,
   SEO,
+  ScreenReaderContent,
   Header,
+  Code,
   Footer,
   Newsletter,
+  Socials,
+  Share,
   About,
   PostPreviewList,
   PostPreviewListItem,

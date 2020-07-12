@@ -7,15 +7,21 @@ import Footer from "../footer"
 import { LightThemeStyle } from "../theme"
 import { GlobalStyle, Container } from "./ui"
 
-const Layout = ({ children, location, className }) => {
+const Layout = ({
+  children,
+  location,
+  className,
+  hideSocialsOnHeader,
+  footerNewsletterLabel,
+}) => {
   return (
     <>
       <LightThemeStyle />
       <GlobalStyle />
       <div className={className}>
-        <Header location={location} />
+        <Header location={location} hideSocialsOnHeader={hideSocialsOnHeader} />
         <Container>{children}</Container>
-        <Footer />
+        <Footer footerNewsletterLabel={footerNewsletterLabel} />
       </div>
     </>
   )

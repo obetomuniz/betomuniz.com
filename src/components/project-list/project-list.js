@@ -1,10 +1,11 @@
 import React from "react"
 
 import { ProjectListItem } from "../"
+import { Container } from "./ui"
 
 const ProjectList = ({ data }) => {
   return (
-    <ul>
+    <Container>
       {data.map(({ node: { name, url, image } }, index) => {
         return (
           <ProjectListItem
@@ -15,7 +16,7 @@ const ProjectList = ({ data }) => {
           />
         )
       })}
-    </ul>
+    </Container>
   )
 }
 

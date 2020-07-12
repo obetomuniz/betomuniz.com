@@ -1,7 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import { Layout, SEO, Newsletter } from "../"
+import { Layout, SEO, Code, Share } from "../"
 import {
   Container,
   Header,
@@ -14,8 +16,13 @@ import {
   Content,
 } from "./ui"
 
+const components = {
+  pre: (props) => <code {...props} />,
+  code: Code,
+}
+
 export default function Template({ data }) {
-  const { site, markdownRemark } = data
+  const { site, mdx } = data
   const {
     frontmatter: {
       path,
@@ -26,9 +33,10 @@ export default function Template({ data }) {
       date,
       category,
     },
-    fields: { readingTime },
-    html,
-  } = markdownRemark
+    timeToRead,
+    body,
+  } = mdx
+  const postUrl = `${site.siteMetadata.siteUrl + path}`
 
   return (
     <Layout location="/blog/">
@@ -37,9 +45,10 @@ export default function Template({ data }) {
         subtitle={subtitle}
         description={description}
         keywords={keywords}
-        url={`${site.siteMetadata.url + path}`}
+        url={postUrl}
       />
 
+      <Share url={postUrl} text="Olha esse artigo do @obetomuniz 👇" />
       <Container>
         <Header>
           <Title>
@@ -54,13 +63,15 @@ export default function Template({ data }) {
             {" ᐧ "}
             <RegisterDate>{date}</RegisterDate>
             {" ᐧ "}
-            <RegisterReadingTime>{readingTime.text}</RegisterReadingTime>
+            <RegisterReadingTime>{`${timeToRead}m`}</RegisterReadingTime>
           </Register>
         </Header>
-        <Content dangerouslySetInnerHTML={{ __html: html }} />
+        <Content>
+          <MDXProvider components={components}>
+            <MDXRenderer>{body}</MDXRenderer>
+          </MDXProvider>
+        </Content>
       </Container>
-
-      <Newsletter />
     </Layout>
   )
 }
@@ -68,11 +79,12 @@ export const pageQuery = graphql`
   query($path: String!) {
     site {
       siteMetadata {
-        url
+        siteUrl
       }
     }
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+    mdx(frontmatter: { path: { eq: $path } }) {
+      body
+      timeToRead
       frontmatter {
         date(formatString: "YYYY")
         path
@@ -81,11 +93,6 @@ export const pageQuery = graphql`
         description
         keywords
         category
-      }
-      fields {
-        readingTime {
-          text
-        }
       }
     }
   }

@@ -1,10 +1,11 @@
 import React from "react"
 
 import { DropListItem } from "../"
+import { Container } from "./ui"
 
 const DropList = ({ data }) => {
   return (
-    <ul>
+    <Container>
       {data.map(
         (
           {
@@ -38,7 +39,7 @@ const DropList = ({ data }) => {
           )
         }
       )}
-    </ul>
+    </Container>
   )
 }
 

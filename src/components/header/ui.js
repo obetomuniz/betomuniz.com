@@ -77,3 +77,11 @@ export const NavLink = styled(Link)`
     font-size: 14px;
   }
 `
+
+export const SocialsContainer = styled.div`
+  margin-top: var(--DEFAULT_MARGIN);
+
+  @media screen and (max-width: 440px) {
+    margin-top: calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
+  }
+`

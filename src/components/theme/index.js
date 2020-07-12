@@ -9,6 +9,11 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_POST_MARGIN_BOTTOM: 1.8rem;
     --DEFAULT_POST_MARGIN_BOTTOM_MOBILE: 1.5rem;
 
+    --DEFAULT_LIST_ITEM_MARGIN: 2.5rem;
+    --DEFAULT_LIST_ITEM_MARGIN_MOBILE: 1.5rem;
+    --DEFAULT_PAGE_LIST_MARGIN: calc((var(--DEFAULT_MARGIN) - var(--DEFAULT_LIST_ITEM_MARGIN)) + var(--DEFAULT_LIST_ITEM_MARGIN));
+    --DEFAULT_PAGE_LIST_MARGIN_MOBILE: calc(((var(--DEFAULT_MARGIN_MOBILE) - var(--DEFAULT_LIST_ITEM_MARGIN_MOBILE)) + var(--DEFAULT_LIST_ITEM_MARGIN_MOBILE)) / 1.5);
+        
     /* Colors */
     --DEFAULT_BACKGROUND_COLOR: #fff;
     --DEFAULT_TEXT_OPACITY: 0.6;
@@ -21,6 +26,8 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_HEADER_PHOTO_BORDER_COLOR: rebeccapurple;
 
     --DEFAULT_SOCIAL_THEME: rebeccapurple;
+
+    --DEFAULT_SHARE_THEME: rebeccapurple;
 
     --DEFAULT_NEWSLETTER_THEME: rebeccapurple;
     --DEFAULT_NEWSLETTER_PLACEHOLDER: rebeccapurple;
@@ -56,9 +63,9 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_NAV_ITEM_TEXT_SHADOW: 1px 0px 1px #ccc;
 
     --DEFAULT_ABOUT_FONT_SIZE: 1.5rem;
-    --DEFAULT_ABOUT_FONT_SIZE_MOBILE: 1.09rem;
-    --DEFAULT_ABOUT_LINE_HEIGHT: 2.5rem;
-    --DEFAULT_ABOUT_LINE_HEIGHT_MOBILE: 1.5rem;
+    --DEFAULT_ABOUT_FONT_SIZE_MOBILE: 0.7rem;
+    --DEFAULT_ABOUT_LINE_HEIGHT: 2.8rem;
+    --DEFAULT_ABOUT_LINE_HEIGHT_MOBILE: 1.2rem;
 
     --DEFAULT_LIST_ITEM_LABEL_FONT_SIZE: 1.5rem;
     --DEFAULT_LIST_ITEM_LABEL_FONT_SIZE_MOBILE: 1rem;

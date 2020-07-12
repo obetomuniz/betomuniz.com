@@ -1,10 +1,11 @@
 import React from "react"
 
 import { PostListItem } from "../"
+import { Container } from "./ui"
 
 const PostList = ({ data }) => {
   return (
-    <ul>
+    <Container>
       {data.map(
         (
           {
@@ -39,7 +40,7 @@ const PostList = ({ data }) => {
           )
         }
       )}
-    </ul>
+    </Container>
   )
 }
 

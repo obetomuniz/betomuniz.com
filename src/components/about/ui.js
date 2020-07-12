@@ -1,7 +1,13 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-export const Container = styled.main``
+export const Container = styled.main`
+  margin-bottom: var(--DEFAULT_MARGIN);
+
+  @media screen and (max-width: 440px) {
+    margin-bottom: calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
+  }
+`
 
 export const Text = styled.p`
   color: var(--DEFAULT_TEXT_COLOR);

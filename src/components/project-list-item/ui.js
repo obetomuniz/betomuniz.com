@@ -5,15 +5,14 @@ export const Container = styled.li`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 40px;
-  padding: 0 20px;
+  margin: var(--DEFAULT_LIST_ITEM_MARGIN) 0;
 
-  &:last-child {
-    margin-bottom: 0;
+  &:first-child {
+    margin-top: 0;
   }
 
   @media screen and (max-width: 440px) {
-    margin-bottom: 25px;
+    margin: var(--DEFAULT_LIST_ITEM_MARGIN_MOBILE) 0;
   }
 `
 

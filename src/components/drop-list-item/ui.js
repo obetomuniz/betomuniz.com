@@ -2,10 +2,14 @@ import styled from "styled-components"
 
 export const Container = styled.li`
   display: block;
-  margin: 40px 0;
+  margin: var(--DEFAULT_LIST_ITEM_MARGIN) 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   @media screen and (max-width: 440px) {
-    margin: 25px 0;
+    margin: var(--DEFAULT_LIST_ITEM_MARGIN_MOBILE) 0;
   }
 `
 

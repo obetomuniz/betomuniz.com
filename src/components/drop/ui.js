@@ -5,6 +5,7 @@ export const Container = styled.article`
   margin: 0 auto var(--DEFAULT_MARGIN);
 
   @media screen and (max-width: 440px) {
+    margin: 0 auto calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
     width: 100%;
   }
 `
@@ -19,6 +20,7 @@ export const Title = styled.h1`
   margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
   text-align: center;
   font-weight: 700;
+  margin-top: -15px;
 
   @media screen and (max-width: 440px) {
     font-size: var(--DEFAULT_POST_TITLE_FONT_SIZE_MOBILE);
@@ -65,7 +67,13 @@ export const RegisterCategory = styled.span`
 `
 
 export const Content = styled.div`
-  margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
+  code pre[class*="language-"] {
+    margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
+    padding: 8px 10px;
+    display: block;
+    border-radius: var(--DEFAULT_BORDER_RADIUS);
+    box-shadow: 0 10px 6px -7px var(--DEFAULT_BOX_SHADOW_COLOR);
+  }
 
   p {
     color: var(--DEFAULT_POST_TEXT_COLOR);
@@ -229,8 +237,6 @@ export const Content = styled.div`
   }
 
   @media screen and (max-width: 440px) {
-    margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM_MOBILE);
-
     p {
       font-size: var(--DEFAULT_POST_TEXT_FONT_SIZE_MOBILE);
       line-height: var(--DEFAULT_POST_TEXT_LINE_HEIGHT_MOBILE);

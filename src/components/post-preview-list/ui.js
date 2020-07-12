@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const PostPreviewListWrapper = styled.div`
-  margin-top: var(--DEFAULT_MARGIN);
+  margin-bottom: var(--DEFAULT_MARGIN);
 
   @media screen and (max-width: 440px) {
-    margin-top: calc(var(--DEFAULT_MARGIN_MOBILE) / 2);
+    margin-bottom: calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
   }
 `
 

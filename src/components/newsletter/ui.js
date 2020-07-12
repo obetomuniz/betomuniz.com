@@ -3,7 +3,12 @@ import styled from "styled-components"
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  margin: 0 auto var(--DEFAULT_MARGIN);
+
+  @media screen and (max-width: 440px) {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 calc(10% - 10px);
+  }
 `
 
 export const Form = styled.form`
@@ -13,6 +18,7 @@ export const Form = styled.form`
 
   @media screen and (max-width: 440px) {
     width: 100%;
+    flex-direction: column;
   }
 `
 
@@ -26,6 +32,8 @@ export const Input = styled.input`
   border: 1px solid var(--DEFAULT_NEWSLETTER_THEME);
   flex: 1;
   text-align: center;
+  display: block;
+  height: 40px;
 
   ::-webkit-input-placeholder {
     color: var(--DEFAULT_NEWSLETTER_THEME);
@@ -38,6 +46,11 @@ export const Input = styled.input`
   }
   :-moz-placeholder {
     color: var(--DEFAULT_NEWSLETTER_THEME);
+  }
+
+  @media screen and (max-width: 440px) {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 `
 
@@ -54,4 +67,9 @@ export const Button = styled.button`
   font-weight: 600;
   font-size: 1rem;
   width: 155px;
+
+  @media screen and (max-width: 440px) {
+    width: 100%;
+    height: 40px;
+  }
 `
