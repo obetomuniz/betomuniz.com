@@ -91,6 +91,24 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        disableOnDev: true,
+        reportOnly: false,
+        mergeScriptHashes: true,
+        mergeStyleHashes: true,
+        mergeDefaultDirectives: true,
+        directives: {
+          "script-src": "'self' https: www.google-analytics.com",
+          "style-src": "",
+          "media-src": "'self' https: twimg.com",
+          "frame-src": "'self' https: twitter.com",
+          "img-src":
+            "'self' data: https: www.google-analytics.com github.com gravatar.com githubusercontent.com",
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-feed-mdx`,
       options: {
         query: `
