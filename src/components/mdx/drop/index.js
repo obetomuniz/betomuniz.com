@@ -7,7 +7,6 @@ const Drop = ({ children, src }) => {
   return (
     <Container>
       {children}
-
       <OriginalContentLink
         href={`https://twitter.com/i/status/${src}`}
         target="_blank"
