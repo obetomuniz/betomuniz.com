@@ -1,11 +1,12 @@
 import styled from "styled-components"
+import { Share } from "../"
 
 export const Container = styled.article`
   width: 550px;
   margin: 0 auto var(--DEFAULT_MARGIN);
 
   @media screen and (max-width: 440px) {
-    margin: 0 auto calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
+    margin: 0;
     width: 100%;
   }
 `
@@ -305,6 +306,46 @@ export const Content = styled.div`
 
     .post-video {
       margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM_MOBILE);
+    }
+  }
+`
+
+export const DesktopShare = styled(Share)`
+  @media screen and (max-width: 440px) {
+    display: none;
+  }
+`
+
+export const MobileShare = styled(Share)`
+  display: none;
+
+  @media screen and (max-width: 440px) {
+    border-top: 1px solid var(--DEFAULT_SHARE_THEME);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    background: #fff;
+    float: none;
+    margin: 0 auto 0;
+    flex-wrap: wrap;
+    padding: calc(var(--DEFAULT_MARGIN_MOBILE) / 2) 0
+      calc(var(--DEFAULT_MARGIN_MOBILE) / 2);
+
+    li {
+      margin: 0 12px;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    li:first-child {
+      flex: 1;
+      flex-basis: 100%;
+      text-align: center;
+      margin: 0 0 20px 0;
     }
   }
 `

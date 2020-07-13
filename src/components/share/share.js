@@ -22,9 +22,9 @@ const shareModal = (url, winWidth, winHeight) => {
   }
 }
 
-const Share = ({ text, url }) => {
+const Share = ({ text, url, className }) => {
   return (
-    <Container>
+    <Container className={className}>
       <ShareLabel>{"Share"}</ShareLabel>
       <ShareItem color="#1da1f2">
         <ShareItemButton

@@ -8,10 +8,6 @@ export const Container = styled.ul`
   float: right;
   top: var(--DEFAULT_MARGIN);
   margin-top: 15px;
-
-  @media screen and (max-width: 440px) {
-    display: none;
-  }
 `
 
 export const ShareLabel = styled.li`

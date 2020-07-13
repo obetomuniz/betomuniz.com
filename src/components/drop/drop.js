@@ -2,8 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { ArticleJsonLd } from "gatsby-plugin-next-seo"
 
-import { Layout, SEO, Code, Share } from "../"
+import { Layout, SEO, Code } from "../"
 import {
   Container,
   Header,
@@ -13,6 +14,8 @@ import {
   RegisterDate,
   RegisterCategory,
   Content,
+  DesktopShare,
+  MobileShare,
 } from "./ui"
 
 const components = {
@@ -30,6 +33,7 @@ export default function Template({ data }) {
       description,
       keywords,
       date,
+      datePublished,
       category,
     },
     body,
@@ -45,8 +49,21 @@ export default function Template({ data }) {
         keywords={keywords}
         url={dropUrl}
       />
+      <ArticleJsonLd
+        url={dropUrl}
+        headline={`${title}${subtitle ? `: ${subtitle}` : ""}`}
+        images={["https://betomuniz.com/icons/icon-512x512.png"]}
+        datePublished={datePublished}
+        authorName="Beto Muniz"
+        publisherName="Beto Muniz Blog"
+        publisherLogo="https://betomuniz.com/icons/icon-512x512.png"
+        description={description}
+        overrides={{
+          "@type": "BlogPosting",
+        }}
+      />
 
-      <Share url={dropUrl} text="Olha esse drop do @obetomuniz 👇" />
+      <DesktopShare url={dropUrl} text="Olha esse drop do @obetomuniz 👇" />
       <Container>
         <Header>
           <Title>
@@ -68,6 +85,7 @@ export default function Template({ data }) {
           </MDXProvider>
         </Content>
       </Container>
+      <MobileShare url={dropUrl} text="Olha esse artigo do @obetomuniz 👇" />
     </Layout>
   )
 }
@@ -82,6 +100,7 @@ export const pageQuery = graphql`
       body
       frontmatter {
         date(formatString: "YYYY")
+        datePublished: date
         path
         title
         subtitle

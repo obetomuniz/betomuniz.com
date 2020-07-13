@@ -36,6 +36,14 @@ export const Photo = styled(Link)`
 export const PhotoImage = styled.img`
   height: 100%;
   width: 100%;
+  transform: scale3d(1, 1, 1);
+  filter: hue-rotate(300deg);
+  transition: all 0.5s ease-in;
+
+  &:hover,
+  &:focus {
+    filter: hue-rotate(0);
+  }
 `
 
 export const Nav = styled.nav`

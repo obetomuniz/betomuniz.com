@@ -62,7 +62,7 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_NAV_ITEM_FONT_SIZE: 1rem;
     --DEFAULT_NAV_ITEM_TEXT_SHADOW: 1px 0px 1px #ccc;
 
-    --DEFAULT_ABOUT_FONT_SIZE: 1.5rem;
+    --DEFAULT_ABOUT_FONT_SIZE: 1.45rem;
     --DEFAULT_ABOUT_FONT_SIZE_MOBILE: 0.7rem;
     --DEFAULT_ABOUT_LINE_HEIGHT: 2.8rem;
     --DEFAULT_ABOUT_LINE_HEIGHT_MOBILE: 1.2rem;

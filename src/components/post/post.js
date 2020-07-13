@@ -2,8 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { ArticleJsonLd } from "gatsby-plugin-next-seo"
 
-import { Layout, SEO, Code, Share } from "../"
+import { Layout, SEO, Code } from "../"
 import {
   Container,
   Header,
@@ -14,6 +15,8 @@ import {
   RegisterReadingTime,
   RegisterCategory,
   Content,
+  DesktopShare,
+  MobileShare,
 } from "./ui"
 
 const components = {
@@ -25,6 +28,7 @@ export default function Template({ data }) {
   const { site, mdx } = data
   const {
     frontmatter: {
+      datePublished,
       path,
       title,
       subtitle,
@@ -47,8 +51,21 @@ export default function Template({ data }) {
         keywords={keywords}
         url={postUrl}
       />
+      <ArticleJsonLd
+        url={postUrl}
+        headline={`${title}${subtitle ? `: ${subtitle}` : ""}`}
+        images={["https://betomuniz.com/icons/icon-512x512.png"]}
+        datePublished={datePublished}
+        authorName="Beto Muniz"
+        publisherName="Beto Muniz Blog"
+        publisherLogo="https://betomuniz.com/icons/icon-512x512.png"
+        description={description}
+        overrides={{
+          "@type": "BlogPosting",
+        }}
+      />
 
-      <Share url={postUrl} text="Olha esse artigo do @obetomuniz 👇" />
+      <DesktopShare url={postUrl} text="Olha esse artigo do @obetomuniz 👇" />
       <Container>
         <Header>
           <Title>
@@ -72,6 +89,7 @@ export default function Template({ data }) {
           </MDXProvider>
         </Content>
       </Container>
+      <MobileShare url={postUrl} text="Olha esse artigo do @obetomuniz 👇" />
     </Layout>
   )
 }
@@ -82,11 +100,13 @@ export const pageQuery = graphql`
         siteUrl
       }
     }
+
     mdx(frontmatter: { path: { eq: $path } }) {
       body
       timeToRead
       frontmatter {
         date(formatString: "YYYY")
+        datePublished: date
         path
         title
         subtitle

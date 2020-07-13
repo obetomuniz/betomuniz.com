@@ -3,21 +3,20 @@ import styled from "styled-components"
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  width: 100%;
 
   @media screen and (max-width: 440px) {
-    width: 100%;
     flex-direction: column;
     padding: 0 calc(10% - 10px);
   }
 `
 
 export const Form = styled.form`
-  width: 550px;
+  width: 100%;
   display: flex;
   justify-content: center;
 
   @media screen and (max-width: 440px) {
-    width: 100%;
     flex-direction: column;
   }
 `

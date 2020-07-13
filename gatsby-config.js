@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-next-seo`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
