@@ -12,7 +12,7 @@ export const Container = styled.div`
   }
 `
 export const OriginalContentLink = styled.a`
-  text-align: center;
-  width: 100%;
   display: block;
+  margin: 0 auto;
+  width: 25px;
 `

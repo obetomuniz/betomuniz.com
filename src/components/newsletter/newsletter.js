@@ -4,7 +4,7 @@ import { ScreenReaderContent } from "../"
 import { Container, Form, Input, Button } from "./ui"
 
 const Newsletter = ({ label }) => {
-  const textLabel = label || "Cadastre-se e receba meus conteúdos no email"
+  const textLabel = label || "Receba meus conteúdos no email"
   return (
     <Container>
       <Form

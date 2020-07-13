@@ -1,5 +1,7 @@
 import React from "react"
 
+import GitHubLogoIcon from "../../assets/vectors/icon-github.svg"
+
 import { Container, NameContainer, Name, LogoContainer, Logo } from "./ui"
 
 const ProjectListItem = ({ name, url, image }) => {
@@ -17,13 +19,11 @@ const ProjectListItem = ({ name, url, image }) => {
             as="img"
             src={image}
             alt={`${name} Logo`}
-            height="40"
-            width="40"
+            height="40px"
+            width="40px"
           />
         ) : (
-          <Logo as="svg">
-            <use href="#github-2" />
-          </Logo>
+          <GitHubLogoIcon />
         )}
       </LogoContainer>
     </Container>

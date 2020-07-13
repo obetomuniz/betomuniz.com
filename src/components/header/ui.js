@@ -24,6 +24,7 @@ export const Photo = styled(Link)`
   width: 80px;
   display: block;
   border-radius: 100%;
+  overflow: hidden;
   margin-bottom: var(--DEFAULT_MARGIN);
   border: 2px solid var(--DEFAULT_HEADER_PHOTO_BORDER_COLOR);
   box-shadow: 0 10px 6px -8px var(--DEFAULT_BOX_SHADOW_COLOR);
@@ -36,6 +37,8 @@ export const Photo = styled(Link)`
 export const PhotoImage = styled.img`
   height: 100%;
   width: 100%;
+  border-radius: 100%;
+  overflow: hidden;
   transform: scale3d(1, 1, 1);
   filter: hue-rotate(300deg);
   transition: all 0.5s ease-in;

@@ -85,7 +85,11 @@ export default function Template({ data }) {
           </MDXProvider>
         </Content>
       </Container>
-      <MobileShare url={dropUrl} text="Olha esse artigo do @obetomuniz 👇" />
+      <MobileShare
+        url={dropUrl}
+        ctaText={"Share It!"}
+        text="Olha esse artigo do @obetomuniz 👇"
+      />
     </Layout>
   )
 }

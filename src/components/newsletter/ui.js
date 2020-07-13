@@ -3,11 +3,13 @@ import styled from "styled-components"
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 550px;
+  margin: 0 auto;
 
   @media screen and (max-width: 440px) {
     flex-direction: column;
     padding: 0 calc(10% - 10px);
+    width: 100%;
   }
 `
 

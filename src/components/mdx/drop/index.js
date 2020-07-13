@@ -1,4 +1,6 @@
 import React from "react"
+import RedirectIcon from "../../../assets/vectors/icon-redirect.svg"
+import { ScreenReaderContent } from "../../"
 import { Container, OriginalContentLink } from "./ui"
 
 const Drop = ({ children, src }) => {
@@ -11,7 +13,8 @@ const Drop = ({ children, src }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        See original content
+        <ScreenReaderContent>{"See original content"}</ScreenReaderContent>
+        <RedirectIcon />
       </OriginalContentLink>
     </Container>
   )

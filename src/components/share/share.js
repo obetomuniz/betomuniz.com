@@ -22,10 +22,10 @@ const shareModal = (url, winWidth, winHeight) => {
   }
 }
 
-const Share = ({ text, url, className }) => {
+const Share = ({ ctaText, text, url, className }) => {
   return (
     <Container className={className}>
-      <ShareLabel>{"Share"}</ShareLabel>
+      <ShareLabel>{ctaText || "Share"}</ShareLabel>
       <ShareItem color="#1da1f2">
         <ShareItemButton
           title="Compartilhe no Twitter"
