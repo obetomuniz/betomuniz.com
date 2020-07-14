@@ -7,7 +7,7 @@ const About = () => (
   <Container>
     <Text>
       {"I'm Beto Muniz, a Front-End Engineer who lives in"}
-      <ScreenReaderContent>Belo Horizonte,</ScreenReaderContent>
+      <ScreenReaderContent as={"span"}>Belo Horizonte,</ScreenReaderContent>
       {" Brazil."}
       <br />
       {
