@@ -1,17 +1,32 @@
 import React from "react"
 
+import { ScreenReaderContent } from "../"
 import { Container, Text, TextLink } from "./ui"
 
 const About = () => (
   <Container>
     <Text>
-      Hi! I'm Beto Muniz , Brazilian and Front-End Engineer.
+      {"I'm Beto Muniz, a Front-End Engineer who lives in"}
+      <ScreenReaderContent>Belo Horizonte,</ScreenReaderContent>
+      {" Brazil."}
       <br />
-      I'm inspired by the study of new technologies, the community, and always
-      attuned to what is happening and willing to contribute to the community
-      via <TextLink to="/blog/">posts</TextLink>,{" "}
-      <TextLink to="/projects/">projects</TextLink>, and{" "}
-      <TextLink to="/talks/">talks</TextLink>.
+      {
+        "Inspired by web technologies, I am always contributing to the community using "
+      }
+      <TextLink to="/blog/">{"posts"}</TextLink>
+      {", "}
+      <TextLink
+        href="https://www.youtube.com/c/betomuniz"
+        target="_blank"
+        rel="noopener noreferrer"
+        as={"a"}
+      >
+        {"videos"}
+      </TextLink>
+      {", "}
+      <TextLink to="/projects/">{"projects"}</TextLink>
+      {", and "}
+      <TextLink to="/talks/">{"talks"}</TextLink>.
     </Text>
   </Container>
 )

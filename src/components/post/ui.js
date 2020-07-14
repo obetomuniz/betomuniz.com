@@ -96,6 +96,10 @@ export const Content = styled.div`
       display: inline-block;
       padding: 0 8px;
     }
+
+    &:first-of-type:first-letter {
+      font-size: var(--DEFAULT_FIRST_LETTER);
+    }
   }
 
   small {
@@ -247,6 +251,10 @@ export const Content = styled.div`
       line-height: var(--DEFAULT_POST_TEXT_LINE_HEIGHT_MOBILE);
       letter-spacing: var(--DEFAULT_POST_TEXT_LETTER_SPACING_MOBILE);
       margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM_MOBILE);
+
+      &:first-of-type:first-letter {
+        font-size: var(--DEFAULT_FIRST_LETTER_MOBILE);
+      }
     }
 
     small {

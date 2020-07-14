@@ -58,6 +58,9 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_SERIF_FONTS: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
     --DEFAULT_SAN_SERIF_FONTS: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     --DEFAULT_CODE_FONTS: "Courier New", serif;
+    
+    --DEFAULT_FIRST_LETTER: 2rem;
+    --DEFAULT_FIRST_LETTER_MOBILE: 1.1rem;
 
     --DEFAULT_NAV_ITEM_FONT_SIZE: 1rem;
     --DEFAULT_NAV_ITEM_TEXT_SHADOW: 1px 0px 1px #ccc;
@@ -68,7 +71,7 @@ export const LightThemeStyle = createGlobalStyle`
     --DEFAULT_ABOUT_LINE_HEIGHT_MOBILE: 1.2rem;
 
     --DEFAULT_LIST_ITEM_LABEL_FONT_SIZE: 1.5rem;
-    --DEFAULT_LIST_ITEM_LABEL_FONT_SIZE_MOBILE: 0.8rem;
+    --DEFAULT_LIST_ITEM_LABEL_FONT_SIZE_MOBILE: 1.1rem;
     --DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT: 2.5rem;
     --DEFAULT_LIST_ITEM_LABEL_LINE_HEIGHT_MOBILE: 1.5rem;
 
@@ -77,12 +80,12 @@ export const LightThemeStyle = createGlobalStyle`
 
     --DEFAULT_POST_TITLE_FONT_FAMILY: var(--DEFAULT_SAN_SERIF_FONTS);
     --DEFAULT_POST_TITLE_FONT_SIZE: 2.5rem;
-    --DEFAULT_POST_TITLE_FONT_SIZE_MOBILE: 1.1rem;
+    --DEFAULT_POST_TITLE_FONT_SIZE_MOBILE: 2rem;
     --DEFAULT_POST_TITLE_LINE_HEIGHT: 4rem;
-    --DEFAULT_POST_TITLE_LINE_HEIGHT_MOBILE: 2rem;
+    --DEFAULT_POST_TITLE_LINE_HEIGHT_MOBILE: 2.5rem;
 
     --DEFAULT_POST_SUBTITLE_FONT_SIZE: 1.9rem;
-    --DEFAULT_POST_SUBTITLE_FONT_SIZE_MOBILE: 0.9rem;
+    --DEFAULT_POST_SUBTITLE_FONT_SIZE_MOBILE: 1.1rem;
 
     --DEFAULT_POST_REGISTER_FONT_SIZE: 0.8rem;
     --DEFAULT_POST_REGISTER_FONT_SIZE_MOBILE: 0.7rem;

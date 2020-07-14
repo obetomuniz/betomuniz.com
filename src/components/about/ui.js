@@ -16,9 +16,17 @@ export const Text = styled.p`
   font-size: var(--DEFAULT_ABOUT_FONT_SIZE);
   line-height: var(--DEFAULT_ABOUT_LINE_HEIGHT);
 
+  &:first-letter {
+    font-size: var(--DEFAULT_FIRST_LETTER);
+  }
+
   @media screen and (max-width: 440px) {
     font-size: var(--DEFAULT_ABOUT_FONT_SIZE_MOBILE);
     line-height: var(--DEFAULT_ABOUT_LINE_HEIGHT_MOBILE);
+
+    &:first-letter {
+      font-size: var(--DEFAULT_FIRST_LETTER_MOBILE);
+    }
   }
 `
 
