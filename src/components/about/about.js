@@ -11,7 +11,7 @@ const About = () => (
       {" Brazil."}
       <br />
       {
-        "Inspired by web technologies, I am always contributing to the community using "
+        "Inspired by web technologies, I am always contributing to the community with "
       }
       <TextLink to="/blog/">{"posts"}</TextLink>
       {", "}
