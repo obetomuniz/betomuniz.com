@@ -63,7 +63,7 @@ const glitch2 = keyframes`
     opacity: 0;
   }
   7% {
-    filter: hue-rotate(300deg);
+    filter: hue-rotate(240deg);
     transform: translate3d(-2px, -3px, 0);
     opacity: 0.5;
   }
@@ -78,7 +78,7 @@ const glitch2 = keyframes`
     opacity: 0;
   }
   30% {
-    filter: hue-rotate(300deg);
+    filter: hue-rotate(240deg);
     transform: translate3d(-5px, -2px, 0);
     opacity: 0.5;
   }
@@ -93,7 +93,7 @@ const glitch2 = keyframes`
     opacity: 0;
   }
   55% {
-    filter: hue-rotate(300deg);
+    filter: hue-rotate(240deg);
     transform: translate3d(-5px, -1px, 0);
     opacity: 0.5;
   }
@@ -108,7 +108,7 @@ const glitch2 = keyframes`
     opacity: 0;
   }
   75% {
-    filter: hue-rotate(300deg);
+    filter: hue-rotate(240deg);
     transform: translate3d(-2px, -6px, 0);
     opacity: 0.5;
   }
@@ -130,7 +130,7 @@ const glitch3 = keyframes`
     opacity: 0;
   }
   7% {
-    filter: hue-rotate(150deg);
+    filter: hue-rotate(60deg);
     transform: translate3d(2px, 3px, 0);
     opacity: 0.5;
   }
@@ -145,7 +145,7 @@ const glitch3 = keyframes`
     opacity: 0;
   }
   30% {
-    filter: hue-rotate(150deg);
+    filter: hue-rotate(60deg);
     transform: translate3d(5px, 2px, 0);
     opacity: 0.5;
   }
@@ -160,7 +160,7 @@ const glitch3 = keyframes`
     opacity: 0;
   }
   55% {
-    filter: hue-rotate(150deg);
+    filter: hue-rotate(60deg);
     transform: translate3d(5px, 1px, 0);
     opacity: 0.5;
   }
@@ -175,7 +175,7 @@ const glitch3 = keyframes`
     opacity: 0;
   }
   75% {
-    filter: hue-rotate(150deg);
+    filter: hue-rotate(60deg);
     transform: translate3d(2px, 6px, 0);
     opacity: 0.5;
   }
