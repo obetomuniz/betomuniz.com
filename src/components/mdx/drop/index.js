@@ -1,22 +1,8 @@
 import React from "react"
-import RedirectIcon from "../../../assets/vectors/icon-redirect.svg"
-import { ScreenReaderContent } from "../../"
-import { Container, OriginalContentLink } from "./ui"
+import { Container } from "./ui"
 
-const Drop = ({ children, src }) => {
-  return (
-    <Container>
-      {children}
-      <OriginalContentLink
-        href={`https://twitter.com/i/status/${src}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <ScreenReaderContent>{"See original content"}</ScreenReaderContent>
-        <RedirectIcon />
-      </OriginalContentLink>
-    </Container>
-  )
+const Drop = ({ children }) => {
+  return <Container>{children}</Container>
 }
 
 export default Drop

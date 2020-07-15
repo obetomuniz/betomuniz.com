@@ -131,10 +131,14 @@ module.exports = {
                 })
                 .map((edge) => {
                   return Object.assign({}, edge.node.frontmatter, {
-                    description: edge.node.excerpt,
+                    description: edge.node.frontmatter.description,
                     date: edge.node.frontmatter.date,
                     url: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
-                    guid: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
+                    guid: `${
+                      edge.node.frontmatter.external
+                        ? ""
+                        : site.siteMetadata.siteUrl
+                    }${edge.node.frontmatter.path}`,
                     title: `${edge.node.frontmatter.title}${
                       edge.node.frontmatter.subtitle
                         ? `: ${edge.node.frontmatter.subtitle}`
@@ -151,16 +155,13 @@ module.exports = {
                 ) {
                   edges {
                     node {
-                      id
-                      excerpt(pruneLength: 250)
                       frontmatter {
                         date
                         path
                         title
                         subtitle
                         external
-                        category
-                        lang
+                        description
                         drops
                       }
                     }
