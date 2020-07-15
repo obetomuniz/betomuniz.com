@@ -144,6 +144,9 @@ module.exports = {
                         ? `: ${edge.node.frontmatter.subtitle}`
                         : ""
                     }`,
+                    custom_elements: [
+                      { featured: edge.node.frontmatter.featured },
+                    ],
                   })
                 })
             },
@@ -163,6 +166,7 @@ module.exports = {
                         external
                         description
                         drops
+                        featured
                       }
                     }
                   }
