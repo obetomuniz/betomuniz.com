@@ -47,13 +47,13 @@
   "license": "MIT",
   "scripts": {
     "deploy": "gatsby build && touch public/.nojekyll && echo 'betomuniz.com' > public/CNAME && gh-pages -d public -b gh-pages",
-    "prod": "gatsby clean && gatsby build && gatsby serve",
+    "prod": "gatsby clean && gatsby build && gatsby serve -p 9001",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md,mdx}\"",
     "start": "npm run develop",
     "clean": "gatsby clean",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve -p 9001"
   },
   "repository": {
     "type": "git",

@@ -99,8 +99,10 @@ module.exports = {
     //     mergeStyleHashes: true,
     //     mergeDefaultDirectives: true,
     //     directives: {
+    //       "base-uri": "none",
     //       "script-src": "'self' https: www.google-analytics.com",
-    //       "style-src": "",
+    //       "style-src":
+    //         "'self' 'sha256-mnEgE2KXZSGfyUZaYFP39cTWca/dJuvGfVeRiWXNXUA=' 'sha256-IfeRq+Iz94Ubo1LFvj68u0xhCbbK4qB1g/ka0swuX2Q=' 'unsafe-hashes'",
     //       "media-src": "'self' https: twimg.com",
     //       "frame-src": "'self' https: twitter.com",
     //       "img-src":

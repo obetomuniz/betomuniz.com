@@ -70,10 +70,9 @@ export const RegisterCategory = styled.span`
 export const Content = styled.div`
   code pre[class*="language-"] {
     margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
-    padding: 8px 10px;
+    padding: 20px;
     display: block;
-    border-radius: var(--DEFAULT_BORDER_RADIUS);
-    box-shadow: 0 10px 6px -7px var(--DEFAULT_BOX_SHADOW_COLOR);
+    border-radius: 15px;
   }
 
   p {
@@ -142,11 +141,12 @@ export const Content = styled.div`
   }
 
   img {
-    border-radius: var(--DEFAULT_BORDER_RADIUS);
     max-width: 100%;
     display: block;
     margin: 0 auto var(--DEFAULT_POST_MARGIN_BOTTOM);
-    box-shadow: 0 10px 6px -7px var(--DEFAULT_BOX_SHADOW_COLOR);
+
+    border-radius: 15px;
+    border: 1px solid var(--DEFAULT_DROP_BORDER_COLOR);
   }
 
   ul,
@@ -233,7 +233,7 @@ export const Content = styled.div`
 
   .post-video {
     margin-bottom: var(--DEFAULT_POST_MARGIN_BOTTOM);
-    box-shadow: 0 10px 6px -8px var(--DEFAULT_BOX_SHADOW_COLOR);
+    border: 1px solid var(--DEFAULT_DROP_BORDER_COLOR);
     min-height: 350px;
   }
 
