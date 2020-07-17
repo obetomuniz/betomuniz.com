@@ -78,6 +78,7 @@ export const Content = styled.div`
     display: block;
     border-radius: var(--DEFAULT_BORDER_RADIUS);
     box-shadow: 0 10px 6px -7px var(--DEFAULT_BOX_SHADOW_COLOR);
+    overflow-y: auto;
   }
 
   p {

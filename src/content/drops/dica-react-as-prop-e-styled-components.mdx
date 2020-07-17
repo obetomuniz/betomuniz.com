@@ -1,0 +1,41 @@
+---
+title: 'Dica React: "as" prop e styled-components'
+subtitle: "Progressive Web Apps"
+date: "2020-07-17"
+path: "/drops/dica-react-as-prop-e-styled-components/"
+description: "Neste drop contextualizo Progressive Web Apps com relação ao seu propósito de utilização."
+keywords: "progressive web apps, pwa"
+category: "tech"
+lang: "pt"
+drops: true
+---
+
+import { Drop } from "../../components/mdx"
+
+<Drop>
+
+🗣 Sabia que é possível alterar a tag de um componente criado com a biblioteca **styled-components** sem perder estilos ou ter que criar outro componente?
+
+👉 Basta usar a propriedade `as`, bem assim ó: 👇
+
+```jsx
+import styled from 'styled-components'
+
+const TextoEstilizado = styled.p`
+  {/* Estilos CSS do seu componente de texto */}
+`
+
+const App = () => (
+  <TextoEstilizado as="span">
+    Meu Texto
+  </TextoEstilizado >
+)
+```
+
+🎨 No caso, o componente `TextoEstilizado` originalmente declarado como `p` passará a ser renderizado com um `span`.
+
+👉 Isso é muito útil pra manter a semântica de mercação em alguns casos.
+
+😜 Legal, né?
+
+</Drop>

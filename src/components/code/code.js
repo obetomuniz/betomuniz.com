@@ -1,6 +1,7 @@
 // src/components/CodeBlock.jsx
 import React from "react"
 import Highlight, { defaultProps } from "prism-react-renderer"
+import dracula from "prism-react-renderer/themes/dracula"
 
 export default ({ children, className }) => {
   const language = className.replace(/language-/, "") || ""
@@ -8,9 +9,9 @@ export default ({ children, className }) => {
   return (
     <Highlight
       {...defaultProps}
-      code={children}
+      code={children.trim()}
       language={language}
-      theme={undefined}
+      theme={dracula}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre className={className} style={{ ...style }}>
