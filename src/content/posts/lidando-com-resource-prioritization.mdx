@@ -1,0 +1,64 @@
+---
+title: "Lidando com Resource Prioritization"
+date: "2020-07-22"
+path: "/blog/lidando-com-resource-prioritization/"
+description: ""
+keywords: ""
+category: "tech"
+lang: "pt"
+draft: true
+---
+
+E se pudessemos controlar o momento exato de download de um recurso da nossa aplicação?
+
+E se pudessemos carregar previamente recursos que possivelmente serão utilizados com tecnologias nativas?
+
+E se pudessemos conectar nossa aplicação com CDNs ou provedores para agilizar a resolução de DNS?
+
+Se respondeu SIM para alguma dessas perguntas, vem comigo neste artigo sobre "**Resource Prioritization**" pra juntos desmistificarmos essas perguntas com tecnologia.
+
+## Resource Priori...o que?
+
+E pra começar, vamos considerar que Resource Prioritization na web atualmente é baseado em três pilares:
+
+#### Conectividade
+
+Os fundamentos atuais que abordam conectividade visam ajudar o browser agilizar a comunicação entre ele e os servidores de recursos.
+
+#### Disponiblidade
+
+Toda requisição que não explora as capacidades de Resource Prioritization atuais acaba "obrigando" o client (browser) a processar os recursos de uma aplicação todas as vezes que é feita
+
+#### Performance
+
+Resolvendo a disponibilidade e a conectividade dos recursos para uma aplicação web atual, ao lidar com as tecnologias relacionadas a Resource Prioritization mais fácil se torna atingir bons resultados de performance em aplicações, pois a entrega se torna menos complexa e instantanea.
+
+Com isso em mente, a pergunta que fica é, como resolvemos estes aspectos de Resource Prioritization nas nossas aplicações?
+
+## preload, prefetch, preconnect e prerender
+
+#### preload
+
+```html
+<link rel="preload" as="style" href="critical.css" />
+```
+
+#### prefetch
+
+```html
+<link rel="prefetch" href="page-2.html" />
+```
+
+#### preconnect (dns-prefetch)
+
+```html
+<link rel="preconnect" href="https://example.com" />
+```
+
+#### prerender
+
+```html
+<link rel="prerender" href="https://example.com" />
+```
+
+▲

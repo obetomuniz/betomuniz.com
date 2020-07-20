@@ -1,0 +1,36 @@
+---
+title: "Dica CSS"
+subtitle: "position: sticky"
+date: "2020-07-26"
+path: "/drops/dica-css-position-sticky/"
+description: "Neste drop falo sobre a declaração CSS position: sticky para manter elementos fixos relativos à barra de rolagem."
+keywords: "webhint, devtools, code, chrome, mozilla, edge, extensions, extensão"
+category: "tech"
+lang: "pt"
+drops: true
+featured: "https://user-images.githubusercontent.com/1680157/87885417-3bbe1800-c9ec-11ea-9648-8b9ca2fb9f1c.gif"
+draft: true
+---
+
+import { Drop, A } from "../../components/mdx"
+
+<Drop>
+
+👉 `position: sticky` é uma declaração CSS que nos permite manter elementos fixos no layout ao rolar a página de forma relativa à posição da barra de rolagem.
+
+🔄 O offset que torna o elemento fixo ou relativo, é definido usando as propriedades `top`, `bottom`, `left` e `right`.
+
+```css
+.sticky-element {
+  position: sticky;
+  top: 0;
+}
+```
+
+💡 No exemplo, estou usando `position: sticky` para manter a seção `Share` fixa, e `top` para usar o movimento **top -> down** da barra de rolagem.
+
+![](https://user-images.githubusercontent.com/1680157/87885417-3bbe1800-c9ec-11ea-9648-8b9ca2fb9f1c.gif)
+
+😉 Bem simples, né?
+
+</Drop>

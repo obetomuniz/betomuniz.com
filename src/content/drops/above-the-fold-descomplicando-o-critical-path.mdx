@@ -1,0 +1,27 @@
+---
+title: "Above-The-Fold"
+subtitle: "Descomplicando o Critical Path"
+date: "2020-07-30"
+path: "/drops/above-the-fold-descomplicando-o-critical-path/"
+description: "Neste drop falo da técnica Above-The-Fold e dou exemplo da importancia em adotá-la."
+keywords: "css, critical, path, above-the-fold"
+category: "tech"
+lang: "pt"
+drops: true
+featured: ""
+draft: true
+---
+
+import { Drop, A } from "../../components/mdx"
+
+<Drop>
+
+📁 A técnica _Above-The-Fold_ consiste na extração de declarações CSS críticas para renderização do layout que será inicialmente visto durante o carregamento inicial de uma página web.
+
+⏬ Declarações não críticas são então deixadas num outro contexto (geralmente um arquivo `.css` diferente do principal) para carregamento assíncrono.
+
+⏳ Com isso, o browser não tem que esperar que downloads de arquivos CSS externos terminem para renderização do layout vista pelo usuário.
+
+⏱ Essa técnica é essencial para otimizar o índice <A href="https://web.dev/first-contentful-paint">First Content Paint</A> da página.
+
+</Drop>
