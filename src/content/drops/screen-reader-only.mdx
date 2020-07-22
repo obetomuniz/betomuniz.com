@@ -1,14 +1,13 @@
 ---
 title: "Screen Reader Only"
-subtitle: "Otimize a legibilidade do seu site com CSS"
-date: "2020-07-23"
+subtitle: "Otimização para Leitores de Tela com CSS"
+date: "2020-07-22"
 path: "/drops/screen-reader-only/"
-description: "Neste drop falo da técnica Screen Reader Only, que visa otimizar o suporte das suas aplicações web para leitores de tela."
+description: "Neste drop falo da técnica Screen Reader Only, que visa otimizar o suporte das nossas aplicações web para leitores de tela utilizando apenas CSS."
 keywords: "sro, screen reader only, webaim, accessibility"
 category: "tech"
 lang: "pt"
 drops: true
-draft: true
 featured: ""
 ---
 
@@ -18,14 +17,12 @@ import { Drop, A } from "../../components/mdx"
 
 🗣 Screen Reader Only (SRO) é uma técnica utilizada para criação de contextos adicionais via textos que somente leitores de telas irão interpretar.
 
-😀 O legal é que podemos atingir o objetivo proposto apenas com CSS.
-
 <p>
   👉{" "}
   <A href="https://webaim.org/techniques/css/invisiblecontent/#offscreen">
     De acordo com a WebAIM
   </A>
-  , basta criarmos a seguinte declaração CSS para posterior reutilização:
+  , só precisamos criar a seguinte declaração CSS para posterior reutilização:
 </p>
 
 ```css
@@ -39,31 +36,31 @@ import { Drop, A } from "../../components/mdx"
 }
 ```
 
-🤯 E pra exemplificar, imagine botões de Login visualmente fáceis de escolher entre Google, Facebook ou Twitter, porém textualmente não utilizam nenhuma palavra que os dê significado.
+🤯 E pra exemplificar, imagine links de Login visualmente fáceis de escolher entre Google, Facebook ou Twitter, porém textualmente não utilizam impossíveis, pois não possuem palavras que os dê significado.
 
-![Lista de Botões de Login](https://user-images.githubusercontent.com/1680157/87884573-71133780-c9e5-11ea-9357-a2976375ec4d.png)
+![Lista de Links de Login](https://user-images.githubusercontent.com/1680157/87884573-71133780-c9e5-11ea-9357-a2976375ec4d.png)
 
-😌 Pra diferenciá-los em leitores de telas através da técnica SRO, faríamos algo parecido com o código abaixo:
+😌 E é ai que entra o SRO pra diferenciá-los, pelo menos em leitores de telas. Bastaria fazer algo parecido com o código abaixo:
 
 ```html
 <ul>
   <li>
-    <button>
-      <i class="google-logo" aria-hidden="true" />
+    <a href="...">
+      <i class="google" aria-hidden="true" />
       <span class="sr-only">Login com Google</span>
-    </button>
+    </a>
   </li>
   <li>
-    <button>
-      <i class="facebook-logo" aria-hidden="true" />
+    <a href="...">
+      <i class="facebook" aria-hidden="true" />
       <span class="sr-only">Login com Facebook</span>
-    </button>
+    </a>
   </li>
   <li>
-    <button>
-      <i class="twitter-logo" aria-hidden="true" />
+    <a href="...">
+      <i class="twitter" aria-hidden="true" />
       <span class="sr-only">Login com Twitter</span>
-    </button>
+    </a>
   </li>
 </ul>
 ```
