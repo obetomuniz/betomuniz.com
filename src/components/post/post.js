@@ -20,11 +20,65 @@ import {
 } from "./ui"
 
 const components = {
-  pre: (props) => <code {...props} />,
   code: Code,
+  pre: (props) => <code {...props} />,
 }
 
-export default function Template({ data }) {
+const ContentComponent = ({ children, isCMS }) => {
+  return isCMS ? (
+    <Content>{children}</Content>
+  ) : (
+    <Content>
+      <MDXProvider components={components}>
+        <MDXRenderer>{children}</MDXRenderer>
+      </MDXProvider>
+    </Content>
+  )
+}
+
+export const PostTemplate = ({ data }) => {
+  const {
+    content,
+    title,
+    subtitle,
+    datePublished,
+    category,
+    timeToRead,
+    isCMS,
+  } = data
+
+  return (
+    <Container>
+      <Header>
+        <Title>
+          {title} {subtitle && <Subtitle>{subtitle}</Subtitle>}
+        </Title>
+        <Register>
+          {category && (
+            <>
+              <RegisterCategory
+                color={`--DEFAULT_${category.toUpperCase()}_CATEGORY_COLOR`}
+              >
+                {category.replace("_", " ")}
+              </RegisterCategory>
+              {" ᐧ "}
+            </>
+          )}
+          {/* <RegisterDate>{datePublished}</RegisterDate> */}
+          {timeToRead && (
+            <>
+              {" ᐧ "}
+              <RegisterReadingTime>{`${timeToRead}m`}</RegisterReadingTime>
+            </>
+          )}
+        </Register>
+      </Header>
+      <ContentComponent isCMS={isCMS}>{content}</ContentComponent>
+    </Container>
+  )
+}
+
+export default function Post({ data }) {
   const { site, mdx } = data
   const {
     frontmatter: {
@@ -41,7 +95,6 @@ export default function Template({ data }) {
     body,
   } = mdx
   const postUrl = `${site.siteMetadata.siteUrl + path}`
-
   return (
     <Layout location="/blog/">
       <SEO
@@ -64,31 +117,18 @@ export default function Template({ data }) {
           "@type": "BlogPosting",
         }}
       />
-
       <DesktopShare url={postUrl} text="Olha esse artigo do @obetomuniz 👇" />
-      <Container>
-        <Header>
-          <Title>
-            {title} {subtitle && <Subtitle>{subtitle}</Subtitle>}
-          </Title>
-          <Register>
-            <RegisterCategory
-              color={`--DEFAULT_${category.toUpperCase()}_CATEGORY_COLOR`}
-            >
-              {category.replace("_", " ")}
-            </RegisterCategory>
-            {" ᐧ "}
-            <RegisterDate>{date}</RegisterDate>
-            {" ᐧ "}
-            <RegisterReadingTime>{`${timeToRead}m`}</RegisterReadingTime>
-          </Register>
-        </Header>
-        <Content>
-          <MDXProvider components={components}>
-            <MDXRenderer>{body}</MDXRenderer>
-          </MDXProvider>
-        </Content>
-      </Container>
+      <PostTemplate
+        data={{
+          content: body,
+          title,
+          subtitle,
+          datePublished,
+          category,
+          timeToRead,
+        }}
+      />
+
       <MobileShare
         url={postUrl}
         ctaText={"Share It!"}

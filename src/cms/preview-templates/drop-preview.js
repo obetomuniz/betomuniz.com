@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { PostTemplate } from "../../components/post/post"
+import { DropTemplate } from "../../components/drop/drop"
 
 const Container = styled.div`
   margin: 40px auto;
@@ -21,7 +21,7 @@ const PostPreview = ({ entry, widgetFor }) => {
   }
   return (
     <Container>
-      <PostTemplate data={data} />
+      <DropTemplate data={data} />
     </Container>
   )
 }

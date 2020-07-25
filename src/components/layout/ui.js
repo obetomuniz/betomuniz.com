@@ -19,10 +19,6 @@ export const GlobalStyle = createGlobalStyle`
   img{display:block;width:100%}
   body,h1,h2,h3,h4,h5,h6,p{margin:0;font-size:1rem;font-weight:400}
 
-  #disqus_thread a {
-    color: var(--DEFAULT_LINK_COLOR_HOVER);
-  }
-
   #gatsby-focus-wrapper {
     display: flex;
     flex-direction: column;
