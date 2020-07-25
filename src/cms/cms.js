@@ -24,10 +24,10 @@ CMS.registerWidget(
     components: {
       code: Code,
       pre: (props) => <code {...props} />,
+      a: (props) => <A {...props} />,
     },
     scope: {
       Drop,
-      A,
       Video,
       Tweet,
     },
