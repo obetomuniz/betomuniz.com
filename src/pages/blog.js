@@ -8,7 +8,6 @@ const BlogPage = ({
     allMdx: { edges },
   },
 }) => {
-  console.log(edges)
   return (
     <Layout location="/blog/">
       <SEO
@@ -18,7 +17,9 @@ const BlogPage = ({
         url="https://betomuniz.com/blog/"
       />
 
-      <main>{/* <PostList data={edges} /> */}</main>
+      <main>
+        <PostList data={edges} />
+      </main>
     </Layout>
   )
 }
@@ -35,6 +36,11 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
+            subtitle
+            description
+            category
+            lang
+            slug
           }
         }
       }

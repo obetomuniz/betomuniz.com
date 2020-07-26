@@ -37,8 +37,6 @@ export const pageQuery = graphql`
             title
             subtitle
             description
-            date(formatString: "MMMM DD, YYYY")
-            keywords
             category
             lang
             slug

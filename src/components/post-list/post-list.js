@@ -10,28 +10,16 @@ const PostList = ({ data }) => {
         (
           {
             node: {
-              frontmatter: {
-                external,
-                path,
-                title,
-                subtitle,
-                category,
-                lang,
-                drops,
-              },
+              frontmatter: { external, slug, title, subtitle, category, lang },
             },
           },
           index
         ) => {
-          if (drops) {
-            return null
-          }
-
           return (
             <PostListItem
               key={`post-${index}`}
               external={external}
-              path={path}
+              slug={`/blog/${slug}`}
               title={title}
               subtitle={subtitle}
               category={category}

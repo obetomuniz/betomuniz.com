@@ -64,7 +64,7 @@ export const PostTemplate = ({ data }) => {
               {" ᐧ "}
             </>
           )}
-          {/* <RegisterDate>{datePublished}</RegisterDate> */}
+          <RegisterDate>{new Date(datePublished).getFullYear()}</RegisterDate>
           {timeToRead && (
             <>
               {" ᐧ "}
@@ -78,20 +78,16 @@ export const PostTemplate = ({ data }) => {
   )
 }
 
-export default function Post({ data }) {
-  const { site, mdx } = data
+export default function Post({ data: { site, mdx }, path }) {
   const {
     frontmatter: {
-      datePublished,
-      path,
       title,
       subtitle,
       description,
       keywords,
-      date,
       category,
+      datePublished,
     },
-    timeToRead,
     body,
   } = mdx
   // const postUrl = `${site.siteMetadata.siteUrl + path}`
@@ -139,18 +135,24 @@ export default function Post({ data }) {
   )
 }
 export const pageQuery = graphql`
-  query {
+  query($id: String) {
     site {
       siteMetadata {
         siteUrl
       }
     }
-
-    mdx {
+    mdx(frontmatter: { slug: { eq: $id } }) {
       body
       timeToRead
       frontmatter {
         title
+        subtitle
+        description
+        datePublished: date
+        keywords
+        category
+        lang
+        slug
       }
     }
   }

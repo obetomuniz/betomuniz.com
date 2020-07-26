@@ -55,7 +55,7 @@ export const DropTemplate = ({ data }) => {
               {" ᐧ "}
             </>
           )}
-          {/* {datePublished && <RegisterDate>{datePublished}</RegisterDate>} */}
+          <RegisterDate>{new Date(datePublished).getFullYear()}</RegisterDate>
         </Register>
       </Header>
       <ContentComponent isCMS={isCMS}>{content}</ContentComponent>
@@ -133,7 +133,6 @@ export const pageQuery = graphql`
         title
         subtitle
         description
-        date(formatString: "MMMM DD, YYYY")
         datePublished: date
         keywords
         category

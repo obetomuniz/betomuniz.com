@@ -11,6 +11,7 @@ exports.createPages = ({ actions, graphql }) => {
         filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       ) {
         edges {
+          id
           node {
             frontmatter {
               slug
