@@ -27,21 +27,21 @@ export default DropsPage
 export const pageQuery = graphql`
   query {
     allMdx(
+      filter: { frontmatter: { templateKey: { eq: "drop-post" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { draft: { ne: true } } }
     ) {
       edges {
         node {
           id
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
             title
             subtitle
-            external
+            description
+            date(formatString: "MMMM DD, YYYY")
+            keywords
             category
             lang
-            drops
+            slug
           }
         }
       }

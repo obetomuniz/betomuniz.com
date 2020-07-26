@@ -9,29 +9,30 @@ const IndexPage = ({
     allMdx: { edges },
   },
 }) => {
-  const categories = {}
-  let postPreviews = []
-  for (let index = 0; index < edges.length; index++) {
-    const post = edges[index].node.frontmatter
-    if (!categories[post.category]) {
-      categories[post.category] = [post]
-    } else {
-      categories[post.category] = [...categories[post.category], post]
-    }
-  }
-  for (const key in categories) {
-    if (categories.hasOwnProperty(key)) {
-      const posts = categories[key]
-      postPreviews = [
-        <PostPreviewList
-          key={`post-preview-${key}`}
-          category={key}
-          data={posts}
-        />,
-        ...postPreviews,
-      ]
-    }
-  }
+  console.log(edges)
+  // const categories = {}
+  // let postPreviews = []
+  // for (let index = 0; index < edges.length; index++) {
+  //   const post = edges[index].node.frontmatter
+  //   if (!categories[post.category]) {
+  //     categories[post.category] = [post]
+  //   } else {
+  //     categories[post.category] = [...categories[post.category], post]
+  //   }
+  // }
+  // for (const key in categories) {
+  //   if (categories.hasOwnProperty(key)) {
+  //     const posts = categories[key]
+  //     postPreviews = [
+  //       <PostPreviewList
+  //         key={`post-preview-${key}`}
+  //         category={key}
+  //         data={posts}
+  //       />,
+  //       ...postPreviews,
+  //     ]
+  //   }
+  // }
 
   return (
     <Layout location="/" className={"center-content"}>
@@ -43,7 +44,7 @@ const IndexPage = ({
 
       <About />
 
-      <PostPreviewListWrapper>{postPreviews}</PostPreviewListWrapper>
+      {/* <PostPreviewListWrapper>{postPreviews}</PostPreviewListWrapper> */}
     </Layout>
   )
 }
@@ -52,20 +53,12 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    allMdx(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { draft: { ne: true } } }
-    ) {
+    allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
             title
-            subtitle
-            external
-            category
           }
         }
       }

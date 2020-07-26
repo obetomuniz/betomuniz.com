@@ -10,27 +10,16 @@ const DropList = ({ data }) => {
         (
           {
             node: {
-              frontmatter: {
-                external,
-                path,
-                title,
-                subtitle,
-                category,
-                lang,
-                drops,
-              },
+              frontmatter: { external, slug, title, subtitle, category, lang },
             },
           },
           index
         ) => {
-          if (!drops) {
-            return null
-          }
           return (
             <DropListItem
               key={`drop-${index}`}
               external={external}
-              path={path}
+              slug={`/drops/${slug}`}
               title={title}
               subtitle={subtitle}
               category={category}

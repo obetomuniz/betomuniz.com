@@ -94,10 +94,11 @@ export default function Post({ data }) {
     timeToRead,
     body,
   } = mdx
-  const postUrl = `${site.siteMetadata.siteUrl + path}`
+  // const postUrl = `${site.siteMetadata.siteUrl + path}`
+  console.log(title)
   return (
     <Layout location="/blog/">
-      <SEO
+      {/* <SEO
         title={title}
         subtitle={subtitle}
         description={description}
@@ -133,30 +134,23 @@ export default function Post({ data }) {
         url={postUrl}
         ctaText={"Share It!"}
         text="Olha esse artigo do @obetomuniz 👇"
-      />
+      /> */}
     </Layout>
   )
 }
 export const pageQuery = graphql`
-  query($path: String!) {
+  query {
     site {
       siteMetadata {
         siteUrl
       }
     }
 
-    mdx(frontmatter: { path: { eq: $path } }) {
+    mdx {
       body
       timeToRead
       frontmatter {
-        date(formatString: "YYYY")
-        datePublished: date
-        path
         title
-        subtitle
-        description
-        keywords
-        category
       }
     }
   }

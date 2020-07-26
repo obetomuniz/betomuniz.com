@@ -63,26 +63,17 @@ export const DropTemplate = ({ data }) => {
   )
 }
 
-export default function Drop({ data }) {
-  const { site, mdx } = data
-  const {
-    frontmatter: {
-      path,
-      title,
-      subtitle,
-      description,
-      keywords,
-      date,
-      datePublished,
-      category,
-    },
-    body,
-  } = mdx
-  const dropUrl = `${site.siteMetadata.siteUrl + path}`
-
+export default function Drop(props) {
+  // const { site, mdx } = data
+  // const {
+  //   frontmatter: { title },
+  //   body,
+  // } = mdx
+  // const dropUrl = `${site.siteMetadata.siteUrl + path}`
+  console.log(props)
   return (
     <Layout location="/blog/">
-      <SEO
+      {/* <SEO
         title={title}
         subtitle={subtitle}
         description={description}
@@ -120,7 +111,7 @@ export default function Drop({ data }) {
         url={dropUrl}
         ctaText={"Share It!"}
         text="Olha esse drop de conteúdo do @obetomuniz 👇"
-      />
+      /> */}
     </Layout>
   )
 }
@@ -131,17 +122,10 @@ export const pageQuery = graphql`
         siteUrl
       }
     }
-    mdx(frontmatter: { path: { eq: $path } }) {
+    mdx(frontmatter: { slug: { eq: $path } }) {
       body
       frontmatter {
-        date(formatString: "YYYY")
-        datePublished: date
-        path
         title
-        subtitle
-        description
-        keywords
-        category
       }
     }
   }

@@ -21,7 +21,7 @@ collections:
     label: "Blog"
     folder: "src/content/posts"
     create: true
-    slug: "{{fields.slug}}"
+    slug: "blog/{{fields.slug}}"
     preview_path: "blog/{{fields.slug}}"
     fields:
       - {
@@ -60,7 +60,7 @@ collections:
     label: "Drops"
     folder: "src/content/drops"
     create: true
-    slug: "{{fields.slug}}"
+    slug: "drops/{{fields.slug}}"
     preview_path: "drops/{{fields.slug}}"
     fields:
       - {

@@ -110,106 +110,107 @@ module.exports = {
     //     },
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-feed-mdx`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges
-                .filter((edge) => {
-                  return edge.node && edge.node.frontmatter
-                })
-                .map((edge) => {
-                  return Object.assign({}, edge.node.frontmatter, {
-                    description: edge.node.frontmatter.description,
-                    date: edge.node.frontmatter.date,
-                    url: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
-                    guid: `${
-                      edge.node.frontmatter.external
-                        ? ""
-                        : site.siteMetadata.siteUrl
-                    }${edge.node.frontmatter.path}`,
-                    title: `${edge.node.frontmatter.title}${
-                      edge.node.frontmatter.subtitle
-                        ? `: ${edge.node.frontmatter.subtitle}`
-                        : ""
-                    }`,
-                    custom_elements: [
-                      { featured: edge.node.frontmatter.featured },
-                    ],
-                  })
-                })
-            },
-            query: `
-              query {
-                allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] }
-                  filter: { frontmatter: { draft: { ne: true } } }
-                ) {
-                  edges {
-                    node {
-                      frontmatter {
-                        date
-                        path
-                        title
-                        subtitle
-                        external
-                        description
-                        drops
-                        featured
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/rss.xml",
-            title: "RSS Feed do Beto Muniz",
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        output: `/sitemap.xml`,
-        exclude: [`/blog/*`, `/drops/*`, `/projects/*`, `/talks/*`],
-        query: `
-        {
-          site {
-            siteMetadata {
-              siteUrl
-            }
-          }
+    // RSS FEED
+    // {
+    //   resolve: `gatsby-plugin-feed-mdx`,
+    //   options: {
+    //     query: `
+    //       {
+    //         site {
+    //           siteMetadata {
+    //             title
+    //             description
+    //             siteUrl
+    //           }
+    //         }
+    //       }
+    //     `,
+    //     feeds: [
+    //       {
+    //         serialize: ({ query: { site, allMdx } }) => {
+    //           return allMdx.edges
+    //             .filter((edge) => {
+    //               return edge.node && edge.node.frontmatter
+    //             })
+    //             .map((edge) => {
+    //               return Object.assign({}, edge.node.frontmatter, {
+    //                 description: edge.node.frontmatter.description,
+    //                 date: edge.node.frontmatter.date,
+    //                 url: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.path}`,
+    //                 guid: `${
+    //                   edge.node.frontmatter.external
+    //                     ? ""
+    //                     : site.siteMetadata.siteUrl
+    //                 }${edge.node.frontmatter.path}`,
+    //                 title: `${edge.node.frontmatter.title}${
+    //                   edge.node.frontmatter.subtitle
+    //                     ? `: ${edge.node.frontmatter.subtitle}`
+    //                     : ""
+    //                 }`,
+    //                 custom_elements: [
+    //                   { featured: edge.node.frontmatter.featured },
+    //                 ],
+    //               })
+    //             })
+    //         },
+    //         query: `
+    //           query {
+    //             allMdx(
+    //               sort: { order: DESC, fields: [frontmatter___date] }
+    //             ) {
+    //               edges {
+    //                 node {
+    //                   frontmatter {
+    //                     date
+    //                     path
+    //                     title
+    //                     subtitle
+    //                     external
+    //                     description
+    //                     drops
+    //                     featured
+    //                   }
+    //                 }
+    //               }
+    //             }
+    //           }
+    //         `,
+    //         output: "/rss.xml",
+    //         title: "RSS Feed do Beto Muniz",
+    //       },
+    //     ],
+    //   },
+    // },
+    // Sitemap
+    // {
+    //   resolve: `gatsby-plugin-sitemap`,
+    //   options: {
+    //     output: `/sitemap.xml`,
+    //     exclude: [`/blog/*`, `/drops/*`, `/projects/*`, `/talks/*`],
+    //     query: `
+    //     {
+    //       site {
+    //         siteMetadata {
+    //           siteUrl
+    //         }
+    //       }
 
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-      }`,
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.nodes.map((node) => {
-            return {
-              url: `${site.siteMetadata.siteUrl}${node.path}`,
-              changefreq: `weekly`,
-              priority: 1.0,
-            }
-          }),
-      },
-    },
+    //       allSitePage {
+    //         nodes {
+    //           path
+    //         }
+    //       }
+    //   }`,
+    //     serialize: ({ site, allSitePage }) =>
+    //       allSitePage.nodes.map((node) => {
+    //         return {
+    //           url: `${site.siteMetadata.siteUrl}${node.path}`,
+    //           changefreq: `weekly`,
+    //           priority: 1.0,
+    //         }
+    //       }),
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-netlify-cms",
       options: {

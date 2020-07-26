@@ -7,13 +7,24 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
+      posts: allMdx(
+        filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      ) {
         edges {
           node {
             frontmatter {
-              path
-              external
-              drops
+              slug
+            }
+          }
+        }
+      }
+      drops: allMdx(
+        filter: { frontmatter: { templateKey: { eq: "drop-post" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
             }
           }
         }
@@ -24,21 +35,18 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    return result.data.allMdx.edges.forEach(
-      ({
-        node: {
-          frontmatter: { path, external, drops },
-        },
-      }) => {
-        if (!external) {
-          const component = drops ? dropTemplate : blogPostTemplate
-          createPage({
-            path,
-            component,
-            context: {},
-          })
-        }
-      }
-    )
+    result.data.posts.edges.forEach(({ node }) => {
+      createPage({
+        path: `/blog/${node.frontmatter.slug}`,
+        component: blogPostTemplate,
+      })
+    })
+
+    return result.data.drops.edges.forEach(({ node }) => {
+      createPage({
+        path: `/drops/${node.frontmatter.slug}`,
+        component: dropTemplate,
+      })
+    })
   })
 }

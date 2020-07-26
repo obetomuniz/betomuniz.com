@@ -3,7 +3,7 @@ import { Link as GatsbyLink } from "gatsby"
 
 import { Container, Link, Category } from "./ui"
 
-const DropListItem = ({ external, path, title, subtitle, category }) => {
+const DropListItem = ({ external, slug, title, subtitle, category }) => {
   let customTitle = title
 
   if (subtitle) {
@@ -16,11 +16,11 @@ const DropListItem = ({ external, path, title, subtitle, category }) => {
         {category.replace("_", " ")}
       </Category>
       {external ? (
-        <Link as="a" href={path} target="_blank" rel="noopener noreferrer">
+        <Link as="a" href={slug} target="_blank" rel="noopener noreferrer">
           {customTitle}
         </Link>
       ) : (
-        <Link as={GatsbyLink} to={path}>
+        <Link as={GatsbyLink} to={slug}>
           {customTitle}
         </Link>
       )}

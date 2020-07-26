@@ -8,6 +8,7 @@ const BlogPage = ({
     allMdx: { edges },
   },
 }) => {
+  console.log(edges)
   return (
     <Layout location="/blog/">
       <SEO
@@ -17,9 +18,7 @@ const BlogPage = ({
         url="https://betomuniz.com/blog/"
       />
 
-      <main>
-        <PostList data={edges} />
-      </main>
+      <main>{/* <PostList data={edges} /> */}</main>
     </Layout>
   )
 }
@@ -28,21 +27,14 @@ export default BlogPage
 export const pageQuery = graphql`
   query {
     allMdx(
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { draft: { ne: true } } }
     ) {
       edges {
         node {
           id
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
             title
-            subtitle
-            external
-            category
-            lang
-            drops
           }
         }
       }
