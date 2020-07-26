@@ -88,17 +88,18 @@ export default function Post({ data: { site, mdx }, path }) {
       category,
       datePublished,
     },
+    timeToRead,
     body,
   } = mdx
-  // const postUrl = `${site.siteMetadata.siteUrl + path}`
-  console.log(title)
+  const postUrl = `${site.siteMetadata.siteUrl + path}`
+
   return (
     <Layout location="/blog/">
-      {/* <SEO
+      <SEO
         title={title}
         subtitle={subtitle}
         description={description}
-        keywords={keywords}
+        keywords={keywords.join(",")}
         url={postUrl}
       />
       <ArticleJsonLd
@@ -130,7 +131,7 @@ export default function Post({ data: { site, mdx }, path }) {
         url={postUrl}
         ctaText={"Share It!"}
         text="Olha esse artigo do @obetomuniz 👇"
-      /> */}
+      />
     </Layout>
   )
 }

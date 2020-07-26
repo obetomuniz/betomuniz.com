@@ -1,15 +1,15 @@
 import React from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 
-import { Layout, SEO, About, PostPreviewList } from "../components"
-import { PostPreviewListWrapper } from "../components/post-preview-list/ui"
+import { Layout, SEO, About } from "../components"
+// import { PostPreviewListWrapper } from "../components/post-preview-list/ui"
 
-const IndexPage = ({
-  data: {
-    allMdx: { edges },
-  },
-}) => {
-  console.log(edges)
+const IndexPage = () => {
+  // const {
+  //   data: {
+  //     allMdx: { edges },
+  //   },
+  // } = props
   // const categories = {}
   // let postPreviews = []
   // for (let index = 0; index < edges.length; index++) {
@@ -51,17 +51,17 @@ const IndexPage = ({
 
 export default IndexPage
 
-export const pageQuery = graphql`
-  query {
-    allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
+//       edges {
+//         node {
+//           id
+//           frontmatter {
+//             title
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
