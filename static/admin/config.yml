@@ -17,8 +17,8 @@ public_folder: /uploads/
 media_library:
   name: cloudinary
   config:
-    cloud_name: ${{ secrets.CLOUDINARY_API_KEY }}
-    api_key: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+    cloud_name: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+    api_key: ${{ secrets.CLOUDINARY_API_KEY }}
     multiple: true
     - fetch_format: auto
       quality: auto
