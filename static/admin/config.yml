@@ -17,8 +17,13 @@ public_folder: /uploads/
 media_library:
   name: cloudinary
   config:
-    cloud_name: "beto-muniz"
-    api_key: "179553548989144"
+    cloud_name: ${{ secrets.CLOUDINARY_API_KEY }}
+    api_key: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+    multiple: true
+    - fetch_format: auto
+      quality: auto
+      width: 400
+      crop: scale
 
 collections:
   - name: "blog"
