@@ -27,9 +27,11 @@ const ContentComponent = ({ children, isCMS }) => {
   return isCMS ? (
     <Content>{children}</Content>
   ) : (
-    <MDXProvider components={components}>
-      <MDXRenderer>{children}</MDXRenderer>
-    </MDXProvider>
+    <Content>
+      <MDXProvider components={components}>
+        <MDXRenderer>{children}</MDXRenderer>
+      </MDXProvider>
+    </Content>
   )
 }
 

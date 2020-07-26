@@ -9,6 +9,8 @@ backend:
     uploadMedia: "[skip ci] Upload “{{path}}”"
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
+publish_mode: editorial_workflow
+
 media_folder: static/uploads/
 public_folder: /uploads/
 
@@ -17,9 +19,10 @@ collections:
     extension: "mdx"
     format: "frontmatter"
     label: "Blog"
-    folder: "src/pages/blog"
+    folder: "src/cms/pages/blog"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
+    preview_path: "blog/{{fields.slug}}"
     fields:
       - {
           label: "Template Key",
@@ -27,21 +30,38 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          pattern:
+            [
+              "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+              "A slug can have no spaces or special characters",
+            ],
+        }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - {
+          label: "Subtitle",
+          name: "subtitle",
+          widget: "string",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "mdx" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Keywords", name: "keywords", widget: "list" }
       - { label: "Category", name: "category", widget: "string" }
+      - { label: "Language", name: "lang", widget: "string" }
   - name: "drops"
     extension: "mdx"
     format: "frontmatter"
     label: "Drops"
-    folder: "src/pages/drops"
+    folder: "src/cms/pages/drops"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
+    preview_path: "drops/{{fields.slug}}"
     fields:
       - {
           label: "Template Key",
@@ -49,11 +69,32 @@ collections:
           widget: "hidden",
           default: "drop-post",
         }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          pattern:
+            [
+              "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+              "A slug can have no spaces or special characters",
+            ],
+        }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - {
+          label: "Subtitle",
+          name: "subtitle",
+          widget: "string",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "mdx" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - {
+          label: "Featured Image",
+          name: "featuredimage",
+          widget: image,
+          required: false,
+        }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Keywords", name: "keywords", widget: "list" }
       - { label: "Category", name: "category", widget: "string" }
+      - { label: "Language", name: "lang", widget: "string" }
