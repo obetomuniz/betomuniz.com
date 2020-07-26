@@ -7,16 +7,12 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMdx(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { draft: { ne: true } } }
-      ) {
+      allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             frontmatter {
               path
               external
-              draft
               drops
             }
           }

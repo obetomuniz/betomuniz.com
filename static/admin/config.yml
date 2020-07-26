@@ -19,7 +19,7 @@ collections:
     extension: "mdx"
     format: "frontmatter"
     label: "Blog"
-    folder: "src/cms/pages/blog"
+    folder: "content/posts"
     create: true
     slug: "{{fields.slug}}"
     preview_path: "blog/{{fields.slug}}"
@@ -58,7 +58,7 @@ collections:
     extension: "mdx"
     format: "frontmatter"
     label: "Drops"
-    folder: "src/cms/pages/drops"
+    folder: "content/drops"
     create: true
     slug: "{{fields.slug}}"
     preview_path: "drops/{{fields.slug}}"

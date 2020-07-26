@@ -2,8 +2,5 @@
 package.json
 package-lock.json
 public
-src/content/drops/texto-gradiente-via-css.mdx
-src/content/drops/dica-react-as-prop-e-styled-components.mdx
-src/content/drops/otimizando-fontes-customizadas-com-local.mdx
-
+src/content
 
