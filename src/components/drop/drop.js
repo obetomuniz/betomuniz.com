@@ -55,7 +55,7 @@ export const DropTemplate = ({ data }) => {
               {" ᐧ "}
             </>
           )}
-          {/* <RegisterDate>{datePublished}</RegisterDate> */}
+          {/* {datePublished && <RegisterDate>{datePublished}</RegisterDate>} */}
         </Register>
       </Header>
       <ContentComponent isCMS={isCMS}>{content}</ContentComponent>
@@ -63,21 +63,26 @@ export const DropTemplate = ({ data }) => {
   )
 }
 
-export default function Drop(props) {
-  // const { site, mdx } = data
-  // const {
-  //   frontmatter: { title },
-  //   body,
-  // } = mdx
-  // const dropUrl = `${site.siteMetadata.siteUrl + path}`
-  console.log(props)
+export default function Drop({ data: { site, mdx }, path }) {
+  const {
+    frontmatter: {
+      title,
+      subtitle,
+      description,
+      keywords,
+      category,
+      datePublished,
+    },
+    body,
+  } = mdx
+  const dropUrl = `${site.siteMetadata.siteUrl + path}`
   return (
     <Layout location="/blog/">
-      {/* <SEO
+      <SEO
         title={title}
         subtitle={subtitle}
         description={description}
-        keywords={keywords}
+        keywords={keywords.join(",")}
         url={dropUrl}
       />
       <ArticleJsonLd
@@ -111,21 +116,29 @@ export default function Drop(props) {
         url={dropUrl}
         ctaText={"Share It!"}
         text="Olha esse drop de conteúdo do @obetomuniz 👇"
-      /> */}
+      />
     </Layout>
   )
 }
 export const pageQuery = graphql`
-  query($path: String!) {
+  query($id: String) {
     site {
       siteMetadata {
         siteUrl
       }
     }
-    mdx(frontmatter: { slug: { eq: $path } }) {
+    mdx(frontmatter: { slug: { eq: $id } }) {
       body
       frontmatter {
         title
+        subtitle
+        description
+        date(formatString: "MMMM DD, YYYY")
+        datePublished: date
+        keywords
+        category
+        lang
+        slug
       }
     }
   }

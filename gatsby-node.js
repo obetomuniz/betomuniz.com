@@ -23,6 +23,7 @@ exports.createPages = ({ actions, graphql }) => {
       ) {
         edges {
           node {
+            id
             frontmatter {
               slug
             }
@@ -39,6 +40,9 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: `/blog/${node.frontmatter.slug}`,
         component: blogPostTemplate,
+        context: {
+          id: node.frontmatter.slug,
+        },
       })
     })
 
@@ -46,6 +50,9 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: `/drops/${node.frontmatter.slug}`,
         component: dropTemplate,
+        context: {
+          id: node.frontmatter.slug,
+        },
       })
     })
   })
