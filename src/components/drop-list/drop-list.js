@@ -10,7 +10,15 @@ const DropList = ({ data }) => {
         (
           {
             node: {
-              frontmatter: { external, slug, title, subtitle, category, lang },
+              frontmatter: {
+                external,
+                externalLink,
+                slug,
+                title,
+                subtitle,
+                category,
+                lang,
+              },
             },
           },
           index
@@ -19,7 +27,7 @@ const DropList = ({ data }) => {
             <DropListItem
               key={`drop-${index}`}
               external={external}
-              slug={`/drops/${slug}`}
+              slug={external ? externalLink : `/drops/${slug}`}
               title={title}
               subtitle={subtitle}
               category={category}

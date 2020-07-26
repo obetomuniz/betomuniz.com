@@ -49,11 +49,24 @@ collections:
         }
       - { label: "Body", name: "body", widget: "mdx" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Featured", name: "featured", widget: image }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Keywords", name: "keywords", widget: "list" }
       - { label: "Category", name: "category", widget: "string" }
       - { label: "Language", name: "lang", widget: "string" }
+      - {
+          label: "External?",
+          name: "external",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - {
+          label: "External Link",
+          name: "externalLink",
+          widget: "string",
+          required: false,
+        }
   - name: "drops"
     extension: "mdx"
     format: "frontmatter"
@@ -88,13 +101,21 @@ collections:
         }
       - { label: "Body", name: "body", widget: "mdx" }
       - { label: "Description", name: "description", widget: "text" }
-      - {
-          label: "Featured Image",
-          name: "featuredimage",
-          widget: image,
-          required: false,
-        }
+      - { label: "Featured", name: "featured", widget: image, required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Keywords", name: "keywords", widget: "list" }
       - { label: "Category", name: "category", widget: "string" }
       - { label: "Language", name: "lang", widget: "string" }
+      - {
+          label: "Is External?",
+          name: "external",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - {
+          label: "External Link",
+          name: "externalLink",
+          widget: "string",
+          required: false,
+        }

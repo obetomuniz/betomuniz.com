@@ -10,7 +10,15 @@ const PostList = ({ data }) => {
         (
           {
             node: {
-              frontmatter: { external, slug, title, subtitle, category, lang },
+              frontmatter: {
+                external,
+                externalLink,
+                slug,
+                title,
+                subtitle,
+                category,
+                lang,
+              },
             },
           },
           index
@@ -19,7 +27,7 @@ const PostList = ({ data }) => {
             <PostListItem
               key={`post-${index}`}
               external={external}
-              slug={`/blog/${slug}`}
+              slug={external ? externalLink : `/blog/${slug}`}
               title={title}
               subtitle={subtitle}
               category={category}

@@ -40,6 +40,8 @@ export const pageQuery = graphql`
             category
             lang
             slug
+            external
+            externalLink
           }
         }
       }

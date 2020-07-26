@@ -1,4 +1,5 @@
 const path = require(`path`)
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -38,23 +39,27 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     result.data.posts.edges.forEach(({ node }) => {
-      createPage({
-        path: `/blog/${node.frontmatter.slug}`,
-        component: blogPostTemplate,
-        context: {
-          id: node.frontmatter.slug,
-        },
-      })
+      if (!node.frontmatter.external) {
+        createPage({
+          path: `/blog/${node.frontmatter.slug}`,
+          component: blogPostTemplate,
+          context: {
+            id: node.frontmatter.slug,
+          },
+        })
+      }
     })
 
     return result.data.drops.edges.forEach(({ node }) => {
-      createPage({
-        path: `/drops/${node.frontmatter.slug}`,
-        component: dropTemplate,
-        context: {
-          id: node.frontmatter.slug,
-        },
-      })
+      if (!node.frontmatter.external) {
+        createPage({
+          path: `/drops/${node.frontmatter.slug}`,
+          component: dropTemplate,
+          context: {
+            id: node.frontmatter.slug,
+          },
+        })
+      }
     })
   })
 }

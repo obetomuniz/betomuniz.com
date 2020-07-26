@@ -8,6 +8,14 @@ const Container = styled.div`
 `
 
 const PostPreview = ({ entry, widgetFor }) => {
+  const isExternal = entry.getIn(["data", "external"])
+  if (isExternal) {
+    return (
+      <Container>
+        <h1>External Link. No preview provided.</h1>
+      </Container>
+    )
+  }
   const keywords = entry.getIn(["data", "tags"])
   const data = {
     content: widgetFor("body"),
