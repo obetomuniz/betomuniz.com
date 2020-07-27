@@ -152,13 +152,13 @@ module.exports = {
                     url,
                     guid: url,
                     title,
-                    custom_elements: [
-                      {
-                        ...(edge.node.frontmatter.featured && {
-                          featured: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.featured}`,
-                        }),
-                      },
-                    ],
+                    // custom_elements: [
+                    //   {
+                    //     ...(edge.node.frontmatter.featured && {
+                    //       featured: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.featured}`,
+                    //     }),
+                    //   },
+                    // ],
                   })
                 })
             },

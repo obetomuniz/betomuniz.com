@@ -1,0 +1,38 @@
+---
+title: "Dica CSS: user-select e selection"
+date: 2020-06-19T20:02:45.080Z
+slug: dica-css-user-select-e-selection
+description: "Já ouviu falar dos recursos ::selection e user-select no CSS? Confira esse drop."
+category: "tech"
+lang: pt
+keywords:
+  - keyword
+external: false
+---
+
+import { Drop, Video } from "../../components/mdx"
+
+<Drop>
+
+Resolvendo um “bug” no meu site, lembrei q...
+
+🤯 A declaração CSS abaixo permite "desabilitar" a seleção de texto via teclado e mouse de um site
+
+```css
+* {
+  user-select: none;
+}
+```
+
+🤩 Já essa outra permite decorar a seleção de texto
+
+```css
+*::selection {
+  color: white;
+  background: blueviolet;
+}
+```
+
+<Video src="https://video.twimg.com/tweet_video/Ea5_ou1XgAAeAz8.mp4" />
+
+</Drop>
