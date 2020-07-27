@@ -8,12 +8,12 @@ backend:
     delete: "Delete {{collection}} “{{slug}}”"
     uploadMedia: "[skip ci] Upload “{{path}}”"
     deleteMedia: "[skip ci] Delete “{{path}}”"
-
 publish_mode: editorial_workflow
-
 media_folder: static/uploads/
 public_folder: /uploads/
-
+site_url: https://betomuniz.com
+display_url: https://betomuniz.com
+locale: "pt_BR"
 media_library:
   name: cloudinary
   config:
@@ -22,7 +22,6 @@ media_library:
     multiple: true
     default_transformations:
       - - fetch_format: auto
-
 collections:
   - name: "blog"
     extension: "mdx"
