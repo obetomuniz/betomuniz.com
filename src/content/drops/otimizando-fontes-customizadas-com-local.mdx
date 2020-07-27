@@ -1,0 +1,36 @@
+---
+templateKey: drop-post
+slug: otimizando-fontes-customizadas-com-local
+title: Otimizando Fontes Customizadas com local()
+description: Neste drop abordo uma funcionalidade CSS bem interessante na hora
+  de declarar fontes customizadas e que pode ajudar no tempo de carregamento do
+  seu site.
+date: 2020-07-27T05:41:38.722Z
+keywords:
+  - web fonts
+  - font-face
+  - local
+  - performance
+category: tech
+lang: pt
+external: false
+---
+
+import { Drop } from "../../components/mdx"
+
+<Drop>
+
+👉 Utilize **SEMPRE** `local()` ao declarar o `src` da `@font-face`.
+
+😉 Assim você otimiza o carregamento da página ao evitar downloads extras **CASO** as fontes utilizadas estejam instaladas no seu dispositivo do usuário.
+
+```css
+@font-face {
+  font-family: 'AmazingFont';
+  src: local('AmazingFont'),
+       url('AmazingFont.woff2'),
+       url('AmazingFont.woff');
+}
+```
+
+</Drop>
