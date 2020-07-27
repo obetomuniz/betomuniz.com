@@ -1,0 +1,43 @@
+---
+templateKey: drop-post
+slug: verificacao-de-dados-com-object-constructor
+title: Verificação de dados com Object Constructor
+description: Neste drop falo sobre o Object Constructor e como ele pode ser útil
+  na verificação dos tipos de dados com JavaScript.
+date: 2020-07-27T15:14:42.334Z
+keywords:
+  - javascript
+  - data typing
+  - typing
+  - types
+  - tipos
+  - dados
+  - tipagem
+category: tech
+lang: pt
+external: false
+---
+import { Drop } from "../../components/mdx"
+
+<Drop>
+
+👉 Verificar o tipo do valor de uma váriavel com JavaScript nem sempre é fácil, e entre os vários caminhos possíveis, podemos utilizar o seguinte 👇
+
+```javascript
+const mySet = new Set([1,2,3])
+mySet.constructor === Set // true
+
+const myText = 'Text'
+myText.constructor === String // true
+
+const myNumber = 1
+myNumber.constructor === Number // true
+
+...
+```
+
+📖 Nessa abordagem, exploramos o [Object Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor) do valor originalmente atribuído.
+
+😋 Bacana, né?
+
+</Drop>
