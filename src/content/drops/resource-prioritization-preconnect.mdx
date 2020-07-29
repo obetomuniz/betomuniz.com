@@ -23,7 +23,7 @@ import { Drop } from '../../components/mdx';
 
 <Drop>
 
-👉  Dentre as vantagens de utilizar técnicas de Resource Priorization uma que se destaca é a diretiva `preconnect`.
+👉  Das inúmeras vantagens de utilizar técnicas de **Resource Priorization** uma que se destaca é a diretiva `preconnect`.
 
 ```html
 <link
@@ -32,12 +32,10 @@ import { Drop } from '../../components/mdx';
 />
 ```
 
-Com a `preconnect` antecipar e definir ao Browser quais conexões HTTP ele deve resolver o [DNS](https://pt.wikipedia.org/wiki/Sistema_de_Nomes_de_Dom%C3%ADnio), [TLS](https://pt.wikipedia.org/wiki/Transport_Layer_Security) e [TCP](https://pt.wikipedia.org/wiki/Transmission_Control_Protocol) antes de qualquer outra.
+Com a `preconnect` podemos antecipar e definir quais conexões HTTP o **Browser** deve resolver o [DNS](https://pt.wikipedia.org/wiki/Sistema_de_Nomes_de_Dom%C3%ADnio), [TLS](https://pt.wikipedia.org/wiki/Transport_Layer_Security) e [TCP](https://pt.wikipedia.org/wiki/Transmission_Control_Protocol) antes de qualquer outra, visando melhorar a experiência de performance do usuário. 
 
-Sendo assim, `preconnect` agiliza três processos fundamentais, mas relativamente pesados de conectividade e segurança, visando melhorar a experiência de performance do usuário do seu site. 
+Um bom exemplo de uso é configurar no `href` da diretiva o domínio do [CDN](https://pt.wikipedia.org/wiki/Rede_de_fornecimento_de_conte%C3%BAdo) que sua aplicação web utiliza ou domínios de possíveis conexões HTTP geradas por interação do usuário.
 
-Um bom exemplo de uso é configurar no `href` o domínio do serviço [CDN](https://pt.wikipedia.org/wiki/Rede_de_fornecimento_de_conte%C3%BAdo) que você utiliza ou domínios de conexões HTTP geradas por interação do usuário.
-
-![Demonstração](https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1595986542/Untitled_ozmnv5.png)
+![Demonstração](https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1595987779/Untitled_kamkbz.png)
 
 </Drop>
