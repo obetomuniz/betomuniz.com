@@ -72,10 +72,11 @@ export default function Drop({ data: { site, mdx }, path }) {
       keywords,
       category,
       datePublished,
+      slug,
     },
     body,
   } = mdx
-  const dropUrl = `${site.siteMetadata.siteUrl + path}`
+  const dropUrl = `${site.siteMetadata.siteUrl}/drops/${slug}`
   return (
     <Layout location="/blog/">
       <SEO

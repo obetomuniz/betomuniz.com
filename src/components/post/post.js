@@ -87,11 +87,12 @@ export default function Post({ data: { site, mdx }, path }) {
       keywords,
       category,
       datePublished,
+      slug,
     },
     timeToRead,
     body,
   } = mdx
-  const postUrl = `${site.siteMetadata.siteUrl + path}`
+  const postUrl = `${site.siteMetadata.siteUrl}/blog/${slug}`
 
   return (
     <Layout location="/blog/">
