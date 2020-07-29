@@ -1,0 +1,44 @@
+---
+templateKey: drop-post
+slug: resource-prioritization-prerender
+title: Resource Prioritization
+subtitle: prerender
+description: Neste drop falo um pouco da diretiva "prerender" para Resource
+  Prioritization,que apesar de ter o uso indicado com moderação, pode sim trazer
+  benefícios aos nossos usuários.
+date: 2020-07-30T00:00:11.575Z
+keywords:
+  - resource
+  - hints
+  - prioritization
+  - prerender
+  - web
+  - html
+  - desenvolvimento web
+  - webdevelopment
+category: tech
+lang: pt
+external: false
+---
+import { Drop } from '../../components/mdx'
+
+<Drop>
+
+💬 Nem sempre controlamos como carregamos uma página web, mas tecnologias como a diretiva `prerender` prometem resolver problema.
+
+```html
+<link 
+  rel="prerender"
+  href="https://meusite.com/dashboard"
+/>
+```
+
+🗣 Nessa abordagem de **priorização de recursos**, podemos **pré carregar documentos web no cache** e otimizar acessos posteriores às páginas. 
+
+🆕 É literalmente como carregar a URL no `href` do exemplo acima numa nova aba virtual. 
+
+🚨 E como **grandes poderes trazem grandes bugs**, EVITE aplicar `prerender` em telas pouco utilizadas.
+
+⚠️ Aliás, mesmo `prerender` sendo [especificação web](https://www.w3.org/TR/resource-hints/#prerender), o **suporte é baixo** e existem [discussões](https://groups.google.com/a/chromium.org/g/blink-dev/c/0nSxuuv9bBw) para combiná-la com outras abordagens para **Resource Prioritization**, então acompanhe essas discussões se decidir usar.
+
+</Drop>
