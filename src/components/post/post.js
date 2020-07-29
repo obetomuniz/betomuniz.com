@@ -5,6 +5,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { ArticleJsonLd } from "gatsby-plugin-next-seo"
 
 import { Layout, SEO, Code } from "../"
+import { A } from "../mdx"
 import {
   Container,
   Header,
@@ -22,6 +23,7 @@ import {
 const components = {
   code: Code,
   pre: (props) => <code {...props} />,
+  a: (props) => <A {...props} />,
 }
 
 const ContentComponent = ({ children, isCMS }) => {
