@@ -1,0 +1,43 @@
+---
+templateKey: drop-post
+slug: resource-prioritization-preconnect
+title: Resource Prioritization
+subtitle: preconnect
+description: 'Neste drop sobre Resource Prioritization falo da diretiva
+  "preconnect" e como ela nos ajuda a melhorar a experiência de performance em
+  aplicações web resolvendo DNS, TLS e  TCP. '
+date: 2020-07-29T00:48:46.578Z
+keywords:
+  - resource
+  - prioritization
+  - prefetch
+  - performance
+  - dns
+  - tls
+  - tcp
+category: tech
+lang: pt
+external: false
+---
+import { Drop } from '../../components/mdx';
+
+<Drop>
+
+👉  Dentre as vantagens de utilizar técnicas de Resource Priorization uma que se destaca é a diretiva `preconnect`.
+
+```html
+<link
+  rel="preconnect"
+  href="https://cdn.exemplo.com"
+/>
+```
+
+Com a `preconnect` antecipar e definir ao Browser quais conexões HTTP ele deve resolver o [DNS](https://pt.wikipedia.org/wiki/Sistema_de_Nomes_de_Dom%C3%ADnio), [TLS](https://pt.wikipedia.org/wiki/Transport_Layer_Security) e [TCP](https://pt.wikipedia.org/wiki/Transmission_Control_Protocol) antes de qualquer outra.
+
+Sendo assim, `preconnect` agiliza três processos fundamentais, mas relativamente pesados de conectividade e segurança, visando melhorar a experiência de performance do usuário do seu site. 
+
+Um bom exemplo de uso é configurar no `href` o domínio do serviço [CDN](https://pt.wikipedia.org/wiki/Rede_de_fornecimento_de_conte%C3%BAdo) que você utiliza ou domínios de conexões HTTP geradas por interação do usuário.
+
+![Demonstração](https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1595986542/Untitled_ozmnv5.png)
+
+</Drop>
