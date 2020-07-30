@@ -3,7 +3,9 @@ templateKey: drop-post
 slug: resource-prioritization-prefetch
 title: Resource Prioritization
 subtitle: prefetch
-description: "123"
+description: Neste drop falo como a diretiva "prefetch" nos possibilita informar
+  ao Browser recursos interessantes de baixa prioridade para download paralelo
+  com recursos mais prioritários.
 date: 2020-07-30T02:34:12.522Z
 keywords:
   - resource
@@ -13,4 +15,17 @@ category: tech
 lang: pt
 external: false
 ---
-1123
+🤯 A diretiva `prefetch` nos permite informar ao Browser  recursos interessantes em nossas aplicações, mas que podem ser baixados em paralelo com recursos mais prioritários caso não atrapalhe o download deles.
+
+😋 `prefetch` cria oportunidades pra otimização de performance.
+
+```html
+<link
+  rel="prefetch"
+  as="font"
+  type="font/woff2"
+  href="icones-dentro-do-dropdown.woff2"
+/>
+```
+
+
