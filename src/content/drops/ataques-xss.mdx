@@ -1,0 +1,54 @@
+---
+templateKey: drop-post
+slug: ataques-xss
+title: Ataques XSS
+subtitle: ""
+description: Neste drop abordo como os três tipos de ataques XSS funcionam e o
+  que eles podem fazer.
+featured:
+  - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1596425211/Social_pnx1ei.png
+date: 2020-08-03T03:20:38.964Z
+keywords:
+  - xss
+  - cybersec
+  - websec
+  - security
+  - stored
+  - reflected
+  - dom
+  - cross-site scripting
+category: tech
+lang: pt
+external: false
+---
+import { Drop } from '../../components/mdx'
+
+<Drop>
+
+🕷 Conhecer o funcionamento de **ataques Cross-Site Scripting (XSS)** é necessário para entender como vulnerabilidades em nossas aplicações web executam códigos maliciosos através do browser para obter dados sensíveis dos usuários. 
+
+</Drop>
+
+<Drop>
+
+📝 **Reflected XSS**
+
+👉 Este tipo de ataque XSS utiliza parâmetros da URL ou dados enviados via POST em formulários para injetar e executar scripts maliciosos. 
+
+</Drop>
+
+<Drop>
+
+📝 **Stored XSS**
+
+👉 Acontece quando códigos maliciosos são persistidos pelo atacante no lado do servidor de uma aplicação e são executados pelo usuário (vítima) quando o mesmo acessa a aplicação infectada.
+
+</Drop>
+
+<Drop>
+
+📝 **DOM XSS**
+
+👉 Este tipo de ataque acontece quando a aplicação manipula o DOM de forma incorreta, e assim permite que algum script enviado via parâmetro na URL use essa brecha para injetar código malicioso.
+
+</Drop>
