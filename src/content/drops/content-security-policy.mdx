@@ -5,7 +5,7 @@ title: Content Security Policy
 description: Neste drop falo sobre o header HTTP Content Security Policy e como
   ele pode nos proteger contra ataques XSS.
 featured:
-  - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1596427689/csp_mvtpjb.png
+  - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1596509354/Social_nftbvw.png
 date: 2020-08-04T04:03:58.711Z
 keywords:
   - csp
@@ -24,5 +24,12 @@ import { Drop } from '../../components/mdx'
 🕷 Esse recurso é eficiente contra ataques **cross-site script (XSS)**
 
 👏 Adote CSP e evite as diretivas **unsafe-inline** ou **unsafe-eval**
+
+```html
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; img-src https:; ..."
+/>
+```
 
 </Drop>
