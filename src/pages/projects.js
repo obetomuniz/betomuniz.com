@@ -15,6 +15,7 @@ const ProjectsPage = ({
         description="Beto Muniz as a community contributor and creator."
         keywords="beto, muniz, open source, projects, beto muniz, betomuniz"
         url="https://betomuniz.com/projects/"
+        isPage
       />
 
       <main>

@@ -15,6 +15,7 @@ const DropsPage = ({
         description="Beto Muniz's Content Drops - The fast way to track Beto's knowledge."
         keywords="beto, muniz, drops, content, beto muniz, betomuniz"
         url="https://betomuniz.com/drops/"
+        isPage
       />
       <main>
         <DropList data={edges} />

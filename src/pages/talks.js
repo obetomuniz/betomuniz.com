@@ -15,6 +15,7 @@ const TalksPage = ({
         description="Beto Muniz as a speaker."
         keywords="beto, muniz, speaker, talks, beto muniz, betomuniz"
         url="https://betomuniz.com/talks/"
+        isPage
       />
 
       <main>

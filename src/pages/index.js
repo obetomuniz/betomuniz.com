@@ -40,6 +40,7 @@ const IndexPage = () => {
         description="Beto Muniz is a Front-End Engineer who lives in Belo Horizonte, Brazil."
         keywords="beto, muniz, home, beto muniz, betomuniz, obetomuniz, front-end, javascript, developer, engineer"
         url="https://betomuniz.com/"
+        isHome
       />
 
       <About />

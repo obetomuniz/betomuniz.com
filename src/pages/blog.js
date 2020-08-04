@@ -15,6 +15,7 @@ const BlogPage = ({
         description="Beto Muniz as a writer."
         keywords="beto, muniz, blog, beto muniz, betomuniz"
         url="https://betomuniz.com/blog/"
+        isPage
       />
 
       <main>

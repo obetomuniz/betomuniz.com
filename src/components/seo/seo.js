@@ -11,6 +11,8 @@ function SEO({
   title,
   url,
   subtitle,
+  isPage,
+  isHome,
   bodyAttributes,
 }) {
   const {
@@ -28,12 +30,16 @@ function SEO({
     `
   )
 
-  let customTitle = title
-    ? `${siteMetadata.title} — ${title}`
-    : siteMetadata.title
+  let customTitle = ""
 
-  if (subtitle) {
-    customTitle = `${customTitle}: ${subtitle}`
+  if (isPage) {
+    customTitle = `${title} | ${siteMetadata.title}`
+  } else if (isHome) {
+    customTitle = siteMetadata.title
+  } else {
+    customTitle = subtitle
+      ? `${title}: ${subtitle} | ${siteMetadata.title}`
+      : `${title} | ${siteMetadata.title}`
   }
 
   return (
@@ -102,6 +108,8 @@ SEO.defaultProps = {
   url: ``,
   subtitle: ``,
   bodyAttributes: {},
+  isPage: false,
+  isHome: false,
 }
 
 SEO.propTypes = {
@@ -113,6 +121,8 @@ SEO.propTypes = {
   url: PropTypes.string,
   subtitle: PropTypes.string,
   bodyAttributes: PropTypes.object,
+  isPage: PropTypes.bool,
+  isHome: PropTypes.bool,
 }
 
 export default SEO
