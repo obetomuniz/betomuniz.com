@@ -1,0 +1,27 @@
+---
+templateKey: drop-post
+slug: cookies-e-ataques-xss
+title: Cookies e Ataques XSS
+description: Neste drop falo sobre como proteger seu site de Cookies mal
+  configurados para evitar Ataques XSS.
+featured: ""
+date: 2020-08-07T04:20:02.732Z
+keywords:
+  - samesite
+  - httponly
+  - cookies
+  - cybersec
+  - xss
+category: tech
+lang: pt
+external: false
+---
+import { Drop } from '../../components/mdx'
+
+<Drop>
+
+🍪 Se mal configurados, Cookies permitem [Ataques XSS](https://betomuniz.com/drops/ataques-xss).
+
+👍 Configure o **header HTTP Set-Cookie** com `Secure` para aceitar cookies somente via HTTPS, `SameSite` para controlar o contexto de utilização e `httpOnly` para não permitir acessá-los no Browser com **document.cookie**.
+
+</Drop>
