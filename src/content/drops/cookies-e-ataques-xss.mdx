@@ -20,8 +20,8 @@ import { Drop } from '../../components/mdx'
 
 <Drop>
 
-🍪 Cookies no seu site, se mal configurados, abrem brechas de segurança para ataques [cross-site scripting (XSS)](https://betomuniz.com/drops/ataques-xss).
+🍪 Se mal configurados, Cookies permitem [Ataques XSS](https://betomuniz.com/drops/ataques-xss).
 
-💬 Use sempre as diretivas `SameSite` e `httpOnly` (entre outras dependendo do caso) no header HTTP `Set-Cookie` para limitar a exploração de vulnerabilidades associadas aos Cookies. 
+👍 Configure o **header HTTP Set-Cookie** com `Secure` para aceitar cookies somente via HTTPS, `SameSite` para controlar o contexto de utilização e `httpOnly` para não permitir acessá-los no Browser com **document.cookie**.
 
 </Drop>
