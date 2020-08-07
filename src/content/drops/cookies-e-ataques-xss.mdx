@@ -22,6 +22,12 @@ import { Drop } from '../../components/mdx'
 
 🍪 Se mal configurados, Cookies permitem [Ataques XSS](https://betomuniz.com/drops/ataques-xss).
 
-👍 Configure o **header HTTP Set-Cookie** com `Secure` para aceitar cookies somente via HTTPS, `SameSite` para controlar o contexto de utilização e `httpOnly` para não permitir acessá-los no Browser com **document.cookie**.
+🔒 Para cada Cookie na aplicação, use o **header HTTP Set-Cookie** com: 
+
+👉 `Secure` para aceitá-lo somente via HTTPS.
+
+👉 `httpOnly` para não listá-lo no Browser via **document.cookie**.
+
+👉 `SameSite` para limitar o contexto de uso dele.
 
 </Drop>
