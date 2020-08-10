@@ -20,4 +20,8 @@ export const Container = styled.footer`
 
 export const Copyright = styled.small`
   font-size: 0.7rem;
+
+  a {
+    font-weight: bold;
+  }
 `

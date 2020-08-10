@@ -8,8 +8,8 @@ const Footer = ({ footerNewsletterLabel }) => (
     <Newsletter label={footerNewsletterLabel} />
 
     <Copyright>
-      &copy; {new Date().getFullYear()}{" "}
-      <a href="https://betomuniz.com">Beto Muniz</a>. All rights reserved.
+      Copyright <a href="https://betomuniz.com">Beto Muniz</a> &copy; 2010-
+      {new Date().getFullYear()} . All rights reserved.
     </Copyright>
   </Container>
 )
