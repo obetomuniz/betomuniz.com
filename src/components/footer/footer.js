@@ -9,7 +9,7 @@ const Footer = ({ footerNewsletterLabel }) => (
 
     <Copyright>
       Copyright <a href="https://betomuniz.com">Beto Muniz</a>
-      &copy; 2010-{new Date().getFullYear()}. All rights reserved.
+      {` © 2010-${new Date().getFullYear()}. All rights reserved.`}
     </Copyright>
   </Container>
 )
