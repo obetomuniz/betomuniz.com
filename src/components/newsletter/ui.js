@@ -4,12 +4,13 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 550px;
-  margin: 0 auto;
+  margin: 0 auto var(--DEFAULT_MARGIN);
 
   @media screen and (max-width: 440px) {
     flex-direction: column;
     padding: 0 calc(10% - 10px);
     width: 100%;
+    margin: 0 auto calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
   }
 `
 

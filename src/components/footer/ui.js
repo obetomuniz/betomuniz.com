@@ -17,3 +17,7 @@ export const Container = styled.footer`
     margin: 0 0 calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
   }
 `
+
+export const Copyright = styled.small`
+  font-size: 0.7rem;
+`
