@@ -1,19 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({
   description,
   keywords,
   lang,
-  meta,
   title,
   url,
   subtitle,
+  featured,
   isPage,
   isHome,
-  bodyAttributes,
 }) {
   const {
     site: { siteMetadata },
@@ -43,71 +42,47 @@ function SEO({
   }
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      bodyAttributes={bodyAttributes}
+    <GatsbySeo
+      language={lang}
       title={customTitle}
-      meta={[
-        {
-          name: `keywords`,
-          content: keywords,
+      description={description}
+      canonical={url}
+      twitter={{
+        cartType: "summary_large_image",
+        site: "@obetomuniz",
+        handle: "@obetomuniz",
+      }}
+      openGraph={{
+        url,
+        type: "website",
+        title: customTitle,
+        description,
+        images: featured
+          ? featured.map((img) => ({
+              url: img ? img : "https://betomuniz.com/icons/icon-512x512.png",
+            }))
+          : [{ url: "https://betomuniz.com/icons/icon-512x512.png" }],
+        locale: "pt_BR",
+        site_name: "Beto Muniz",
+        profile: {
+          firstName: "Beto",
+          lastName: "Muniz",
+          username: "obetomuniz",
+          gender: "male",
         },
-        {
-          name: `description`,
-          content: description,
-        },
-        {
-          property: `og:title`,
-          content: customTitle,
-        },
-        {
-          property: `og:description`,
-          content: description,
-        },
-        {
-          property: `og:image`,
-          content: "https://betomuniz.com/icons/icon-512x512.png",
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `og:url`,
-          content: url,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: customTitle,
-        },
-        {
-          name: `twitter:description`,
-          content: description,
-        },
-      ].concat(meta)}
+      }}
+      metaTags={[{ name: "keywords", content: keywords }]}
     />
   )
 }
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: [],
   description: ``,
   keywords: ``,
   title: ``,
   url: ``,
   subtitle: ``,
-  bodyAttributes: {},
   isPage: false,
   isHome: false,
 }
@@ -116,11 +91,10 @@ SEO.propTypes = {
   description: PropTypes.string,
   keywords: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
   url: PropTypes.string,
   subtitle: PropTypes.string,
-  bodyAttributes: PropTypes.object,
+  featured: PropTypes.array,
   isPage: PropTypes.bool,
   isHome: PropTypes.bool,
 }

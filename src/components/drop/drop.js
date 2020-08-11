@@ -75,6 +75,7 @@ export default function Drop({ data: { site, mdx }, path }) {
       category,
       datePublished,
       slug,
+      featured,
     },
     body,
   } = mdx
@@ -87,6 +88,7 @@ export default function Drop({ data: { site, mdx }, path }) {
         description={description}
         keywords={keywords.join(",")}
         url={dropUrl}
+        featured={featured}
       />
       <ArticleJsonLd
         url={dropUrl}
@@ -141,6 +143,7 @@ export const pageQuery = graphql`
         category
         lang
         slug
+        featured
       }
     }
   }

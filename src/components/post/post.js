@@ -90,6 +90,7 @@ export default function Post({ data: { site, mdx }, path }) {
       category,
       datePublished,
       slug,
+      featured,
     },
     timeToRead,
     body,
@@ -104,6 +105,7 @@ export default function Post({ data: { site, mdx }, path }) {
         description={description}
         keywords={keywords.join(",")}
         url={postUrl}
+        featured={featured}
       />
       <ArticleJsonLd
         url={postUrl}
@@ -157,6 +159,7 @@ export const pageQuery = graphql`
         category
         lang
         slug
+        featured
       }
     }
   }
