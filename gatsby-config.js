@@ -50,10 +50,6 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [".mdx", ".md"],
-        defaultLayouts: {
-          ["drop-post"]: require.resolve("./src/components/drop/drop.js"),
-          ["blog-post"]: require.resolve("./src/components/post/post.js"),
-        },
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-embed-youtube",
@@ -93,26 +89,26 @@ module.exports = {
         policy: [{ userAgent: "*", allow: ["/"] }],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-csp`,
-    //   options: {
-    //     disableOnDev: true,
-    //     reportOnly: false,
-    //     mergeScriptHashes: true,
-    //     mergeStyleHashes: true,
-    //     mergeDefaultDirectives: true,
-    //     directives: {
-    //       "base-uri": "none",
-    //       "script-src": "'self' https: www.google-analytics.com",
-    //       "style-src":
-    //         "'self' 'unsafe-hashes' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA=' 'sha256-o4LYhp5wtluJ8/NWUV2vi+r5AxmP8X2zEvYHCpji+kI='",
-    //       "media-src": "'self' https: twimg.com",
-    //       "frame-src": "'self' https: twitter.com",
-    //       "img-src":
-    //         "'self' data: https: www.google-analytics.com github.com gravatar.com githubusercontent.com res.cloudinary.com",
-    //     },
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        disableOnDev: true,
+        reportOnly: false,
+        mergeScriptHashes: true,
+        mergeStyleHashes: true,
+        mergeDefaultDirectives: true,
+        directives: {
+          "base-uri": "none",
+          "script-src": "'self' https: www.google-analytics.com 'unsafe-eval'",
+          "style-src":
+            "'self' 'unsafe-hashes' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA=' 'sha256-o4LYhp5wtluJ8/NWUV2vi+r5AxmP8X2zEvYHCpji+kI='",
+          "media-src": "'self' https: twimg.com",
+          "frame-src": "'self' https: twitter.com",
+          "img-src":
+            "'self' data: https: www.google-analytics.com github.com gravatar.com githubusercontent.com res.cloudinary.com",
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-feed-mdx`,
       options: {
