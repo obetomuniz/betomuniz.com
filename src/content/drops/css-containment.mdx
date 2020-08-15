@@ -1,0 +1,38 @@
+---
+templateKey: drop-post
+slug: css-containment
+title: CSS Containment
+description: Neste drop abordo a técnica CSS de Containment que visa otimizar a
+  renderização de elementos na página ignorando elementos já renderizados.
+featured:
+  - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1597535335/Text_Image_2_g8vdoj.jpg
+date: 2020-08-15T23:42:11.580Z
+keywords:
+  - css
+  - contain
+  - containment
+category: tech
+lang: pt
+external: false
+---
+import { Drop } from '../../components/mdx'
+
+<Drop>
+
+📦 A propriedade CSS `contain` permite informar ao Browser partes do layout que podem ser otimizadas e como elas podem ser otimizadas.
+
+🤯 Útil para garantir processamento de elementos inseridos dinamicamente.
+
+😋 Útil para evitar repaint desnecessários de partes já renderizadas.
+
+```css
+contain: none;
+contain: strict;
+contain: content;
+contain: size;
+contain: layout;
+contain: style;
+contain: paint;
+```
+
+</Drop>
