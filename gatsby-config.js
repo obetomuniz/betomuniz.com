@@ -28,13 +28,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `${__dirname}/src/content/posts`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `drops`,
         path: `${__dirname}/src/content/drops`,
       },
@@ -132,10 +125,7 @@ module.exports = {
                 })
                 .map((edge) => {
                   const isExternal = edge.node.frontmatter.external
-                  const prefix =
-                    edge.node.frontmatter.templateKey === "blog-post"
-                      ? "/blog/"
-                      : "/drops/"
+                  const prefix = "/drops/"
                   const title = `${edge.node.frontmatter.title}${
                     edge.node.frontmatter.subtitle
                       ? `: ${edge.node.frontmatter.subtitle}`
@@ -191,7 +181,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        exclude: [`/blog/*`, `/drops/*`, `/projects/*`, `/talks/*`],
+        exclude: [`/drops/*`, `/projects/*`, `/talks/*`],
         query: `
         {
           site {

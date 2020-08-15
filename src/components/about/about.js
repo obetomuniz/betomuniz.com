@@ -13,7 +13,7 @@ const About = () => (
       {
         "Inspired by web technologies, I am always contributing to the community with "
       }
-      <TextLink to="/blog/">{"posts"}</TextLink>
+      <TextLink to="/drops/">{"drops"}</TextLink>
       {", "}
       <TextLink
         href="https://www.youtube.com/c/betomuniz"

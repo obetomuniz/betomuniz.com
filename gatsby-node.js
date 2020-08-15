@@ -3,23 +3,10 @@ const path = require(`path`)
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve(`src/components/post/post.js`)
   const dropTemplate = path.resolve(`src/components/drop/drop.js`)
 
   return graphql(`
     {
-      posts: allMdx(
-        filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-      ) {
-        edges {
-          node {
-            id
-            frontmatter {
-              slug
-            }
-          }
-        }
-      }
       drops: allMdx(
         filter: { frontmatter: { templateKey: { eq: "drop-post" } } }
       ) {
@@ -37,18 +24,6 @@ exports.createPages = ({ actions, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
-
-    result.data.posts.edges.forEach(({ node }) => {
-      if (!node.frontmatter.external) {
-        createPage({
-          path: `/blog/${node.frontmatter.slug}`,
-          component: blogPostTemplate,
-          context: {
-            id: node.frontmatter.slug,
-          },
-        })
-      }
-    })
 
     return result.data.drops.edges.forEach(({ node }) => {
       if (!node.frontmatter.external) {

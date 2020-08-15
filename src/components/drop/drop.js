@@ -81,7 +81,7 @@ export default function Drop({ data: { site, mdx }, path }) {
   } = mdx
   const dropUrl = `${site.siteMetadata.siteUrl}/drops/${slug}`
   return (
-    <Layout location="/blog/">
+    <Layout location="/drops/">
       <SEO
         title={title}
         subtitle={subtitle}
@@ -96,7 +96,7 @@ export default function Drop({ data: { site, mdx }, path }) {
         images={["https://betomuniz.com/icons/icon-512x512.png"]}
         datePublished={datePublished}
         authorName="Beto Muniz"
-        publisherName="Beto Muniz Blog"
+        publisherName="Beto Muniz"
         publisherLogo="https://betomuniz.com/icons/icon-512x512.png"
         description={description}
         overrides={{

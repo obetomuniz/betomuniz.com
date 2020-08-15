@@ -6,12 +6,10 @@ import cloudinary from "netlify-cms-media-library-cloudinary"
 import Code from "../components/code/code"
 import { Drop, A, Video, Tweet } from "../components/mdx"
 import withStyledComponents from "./hooks/withStyledComponents"
-import PostPreview from "./preview-templates/post-preview"
 import DropPreview from "./preview-templates/drop-preview"
 
 CMS.registerMediaLibrary(cloudinary)
 
-CMS.registerPreviewTemplate("blog", withStyledComponents(PostPreview))
 CMS.registerPreviewTemplate("drops", withStyledComponents(DropPreview))
 
 CMS.registerWidget(

@@ -10,8 +10,6 @@ import Share from "./share"
 import About from "./about"
 import PostPreviewList from "./post-preview-list"
 import PostPreviewListItem from "./post-preview-list-item"
-import PostList from "./post-list"
-import PostListItem from "./post-list-item"
 import DropList from "./drop-list"
 import DropListItem from "./drop-list-item"
 import ProjectList from "./project-list"
@@ -32,8 +30,6 @@ export {
   About,
   PostPreviewList,
   PostPreviewListItem,
-  PostList,
-  PostListItem,
   DropList,
   DropListItem,
   ProjectList,

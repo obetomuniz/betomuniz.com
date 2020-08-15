@@ -12,7 +12,7 @@ import {
   SocialsContainer,
 } from "./ui"
 
-const Header = ({ hideSocialsOnHeader }) => {
+const Header = ({ location, hideSocialsOnHeader }) => {
   return (
     <Container>
       <Photo to="/">
@@ -32,12 +32,11 @@ const Header = ({ hideSocialsOnHeader }) => {
             </NavLink>
           </NavListItem>
           <NavListItem>
-            <NavLink to="/blog/" activeClassName={"active"}>
-              Blog
-            </NavLink>
-          </NavListItem>
-          <NavListItem>
-            <NavLink to="/drops/" activeClassName={"active"}>
+            <NavLink
+              to="/drops/"
+              className={location === "/drops/" && "active"}
+              activeClassName={"active"}
+            >
               Drops
             </NavLink>
           </NavListItem>
