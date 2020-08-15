@@ -35,11 +35,11 @@ Por exemplo, supondo que um servidor aceite requisições **apenas** do domínio
 
 Há também a possibilidade de informar para o browser que qualquer origem pode acessar determinados recursos ou todos os recursos de um servidor. E para isso basta utilizar o valor `*` no header `Access-Control-Allow-Origin` globalmente ou em requisições específicas.
 
-Mas parando por aqui de falar de CORS, já que não é o único foco do post, para quem quiser saber mais, recomendo o post "[Política de Cross-Origin](https://medium.com/@anacoimbrag/pol%C3%ADtica-de-cross-origin-40b9beecdeca?source=linkShare-fe26223710c8-1555374957&_branch_match_id=583336704622738831)" da [Ana Coimbra](https://twitter.com/anacoimbrag). Tem bastante informação sobre o assunto lá.
+Mas parando por aqui de falar de CORS, já que não é o único foco do drop, para quem quiser saber mais, recomendo o post "[Política de Cross-Origin](https://medium.com/@anacoimbrag/pol%C3%ADtica-de-cross-origin-40b9beecdeca?source=linkShare-fe26223710c8-1555374957&_branch_match_id=583336704622738831)" da [Ana Coimbra](https://twitter.com/anacoimbrag). Tem bastante informação sobre o assunto lá.
 
 ## CORB
 
-Seguindo no post, agora vou falar do **Cross-Origin Read Blocking**, que por definição, valida requisições do browser antes mesmo de serem requisitadas no servidor. Tudo isso utilizando o _MIME type_ da requisição como regra de validação.
+Seguindo no drop, agora vou falar do **Cross-Origin Read Blocking**, que por definição, valida requisições do browser antes mesmo de serem requisitadas no servidor. Tudo isso utilizando o _MIME type_ da requisição como regra de validação.
 
 Por exemplo, uma requisição do tipo **style** deve fornecer o _MIME type_ **text/css**, caso contrário, será bloqueada.
 

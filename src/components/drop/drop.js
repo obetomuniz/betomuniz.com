@@ -5,7 +5,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { ArticleJsonLd } from "gatsby-plugin-next-seo"
 
 import { Layout, SEO, Code } from "../"
-import { A } from "../mdx"
+import { A, Drop as DropComponent } from "../mdx"
 import {
   Container,
   Header,
@@ -32,6 +32,17 @@ const ContentComponent = ({ children, isCMS }) => {
     <Content>
       <MDXProvider components={components}>
         <MDXRenderer>{children}</MDXRenderer>
+        <DropComponent>
+          <p>
+            💧 Gostou desse drop? <strong>Compartilhe-o.</strong> 🤩
+          </p>
+          <p>
+            {
+              "E para receber meus conteúdos assim que eu publicar, me segue lá no "
+            }
+            <A href="https://bit.ly/betomuniz-drops">Telegram</A> 😋
+          </p>
+        </DropComponent>
       </MDXProvider>
     </Content>
   )
@@ -103,7 +114,6 @@ export default function Drop({ data: { site, mdx }, path }) {
           "@type": "BlogPosting",
         }}
       />
-
       <DesktopShare
         url={dropUrl}
         text="Olha esse drop de conteúdo do @obetomuniz 👇"
