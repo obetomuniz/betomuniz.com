@@ -48,7 +48,7 @@ function SEO({
       description={description}
       canonical={url}
       twitter={{
-        cartType: "summary",
+        cartType: "summary_large_image",
         site: "@obetomuniz",
         handle: "@obetomuniz",
       }}
