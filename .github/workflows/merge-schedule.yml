@@ -6,7 +6,7 @@ on:
       - edited
       - synchronize
   schedule:
-    - cron: 0 7 * * *
+    - cron: 30 14 * * *
 
 jobs:
   merge_schedule:
