@@ -57,11 +57,12 @@ function SEO({
         type: "website",
         title: customTitle,
         description,
-        images: featured
-          ? featured.map((img) => ({
-              url: img ? img : "https://betomuniz.com/icons/icon-512x512.png",
-            }))
-          : [{ url: "https://betomuniz.com/icons/icon-512x512.png" }],
+        images:
+          featured && featured.length
+            ? featured.map((img) => ({
+                url: img ? img : "https://betomuniz.com/icons/icon-512x512.png",
+              }))
+            : [{ url: "https://betomuniz.com/icons/icon-512x512.png" }],
         locale: "pt_BR",
         site_name: "Beto Muniz",
         profile: {

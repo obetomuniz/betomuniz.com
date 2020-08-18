@@ -114,10 +114,7 @@ export default function Drop({ data: { site, mdx }, path }) {
           "@type": "BlogPosting",
         }}
       />
-      <DesktopShare
-        url={dropUrl}
-        text="Olha esse drop de conteúdo do @obetomuniz 👇"
-      />
+      <DesktopShare title={title} url={dropUrl} hashtags={keywords} />
       <DropTemplate
         data={{
           content: body,
@@ -128,9 +125,10 @@ export default function Drop({ data: { site, mdx }, path }) {
         }}
       />
       <MobileShare
-        url={dropUrl}
         ctaText={"Share It!"}
-        text="Olha esse drop de conteúdo do @obetomuniz 👇"
+        title={title}
+        url={dropUrl}
+        hashtags={keywords}
       />
     </Layout>
   )

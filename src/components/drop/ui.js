@@ -322,7 +322,6 @@ export const MobileShare = styled(Share)`
   @media screen and (max-width: 440px) {
     position: relative;
     top: auto;
-    border-top: 1px solid var(--DEFAULT_SHARE_THEME);
     display: flex;
     flex-direction: row;
     align-items: center;
