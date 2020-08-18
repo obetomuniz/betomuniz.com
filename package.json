@@ -36,7 +36,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.9.0",
     "react-helmet-async": "^1.0.6",
-    "share-api-polyfill": "^1.0.18",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {

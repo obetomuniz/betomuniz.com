@@ -10,25 +10,44 @@ export const Container = styled.ul`
   margin-top: 15px;
 `
 
-export const ShareLabel = styled.button`
-  color: white;
-  background-color: var(--DEFAULT_SHARE_THEME);
+export const ShareLabel = styled.li`
+  color: var(--DEFAULT_LINK_COLOR);
+  opacity: var(--DEFAULT_TEXT_OPACITY);
   text-decoration: none;
   font-size: calc(var(--DEFAULT_NAV_ITEM_FONT_SIZE) / 1.2);
-  border-radius: 7px;
-  text-align: center;
+`
+
+export const ShareItem = styled.li`
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin: 12px 0 0;
+  svg {
+    stroke-width: 0;
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+    fill: currentColor;
+    color: var(--DEFAULT_SHARE_THEME);
+    transition: all 100ms linear;
+    &:hover {
+      color: ${({ color }) => color || "var(--DEFAULT_SHARE_THEME)"};
+    }
+  }
+`
+
+export const ShareItemButton = styled.button`
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
   border: 0;
-  text-transform: uppercase;
-  padding: 10px;
-  transform: rotate(45deg) scale3d(1, 1, 1) translateZ(0);
-  transition: all 200ms ease;
+  line-height: 0;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
-
-  &:hover {
-    transform: rotate(0) scale3d(1.3, 1.3, 1) translateZ(0);
-  }
-
-  @media screen and (max-width: 440px) {
-    transform: rotate(0) scale3d(1, 1, 1) translateZ(0);
-  }
+  outline: 0;
 `

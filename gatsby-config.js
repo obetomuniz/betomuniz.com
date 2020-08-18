@@ -94,7 +94,7 @@ module.exports = {
           "base-uri": "none",
           "script-src": "'self' https: www.google-analytics.com 'unsafe-eval'",
           "style-src":
-            "'self' 'unsafe-hashes' 'sha256-GOLoLgOfYkJ3+xGw8UdbDGcSRhoBGDf7A9tMxLus/mk=' 'sha256-cT+L30ErxvfLjqGYNyhsEpIBzzCrKU28IQECstmUG7I=' 'sha256-NL4tpV2Z+eJ9abfg5Ml+YoDQnYSOkv2G9H9HtzPl0u4=' 'sha256-G0pLd9RFrRh1zTEZTIAfczSFTkW3VVEtTiei5y5jlgk=' 'sha256-YdFQYChVXoZALj7I4zuMQavnwn1SWjgjJ3i7FS5+M5A=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA=' 'sha256-o4LYhp5wtluJ8/NWUV2vi+r5AxmP8X2zEvYHCpji+kI='",
+            "'self' 'unsafe-hashes' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA=' 'sha256-o4LYhp5wtluJ8/NWUV2vi+r5AxmP8X2zEvYHCpji+kI='",
           "media-src": "'self' https: twimg.com",
           "frame-src": "'self' https: twitter.com",
           "img-src":
