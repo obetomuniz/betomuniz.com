@@ -1,0 +1,6 @@
+## This rule redirects to my Telegram Channel
+[[redirects]]
+  from = "/telegram"
+  to = "https://t.me/obetomuniz_drops"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect

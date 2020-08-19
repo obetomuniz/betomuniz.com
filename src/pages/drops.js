@@ -12,7 +12,7 @@ const DropsPage = ({
     <Layout location="/drops/">
       <SEO
         title="Drops"
-        description="Beto Muniz's Content Drops - The fast way to track Beto's knowledge."
+        description="The fast way to track Beto's knowledge."
         keywords="beto, muniz, drops, content, beto muniz, betomuniz"
         url="https://betomuniz.com/drops/"
         isPage
