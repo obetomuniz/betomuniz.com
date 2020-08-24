@@ -1,16 +1,24 @@
 import React from "react"
-import { Container } from "./ui"
+import { A } from "../"
+import { Wrapper, Container, Caption } from "./ui"
 
-const Video = ({ src }) => {
+const Video = ({ src, author, authorURL }) => {
   return (
-    <Container
-      src={src}
-      width="100%"
-      controls
-      autoplay
-      loop
-      playsinline
-    ></Container>
+    <Wrapper>
+      <Container
+        src={src}
+        width="100%"
+        controls
+        autoplay
+        loop
+        playsinline
+      ></Container>
+      {author && authorURL && (
+        <Caption>
+          Video from <A href={authorURL}>{author}</A>
+        </Caption>
+      )}
+    </Wrapper>
   )
 }
 
