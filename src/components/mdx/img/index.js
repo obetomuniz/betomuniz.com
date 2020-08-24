@@ -2,7 +2,7 @@ import React from "react"
 import { A } from "../"
 import { Container } from "./ui"
 
-const Video = ({ src, author, authorURL, alt = "" }) => {
+const Img = ({ src, author, authorURL, alt = "" }) => {
   return (
     <Container>
       <img src={src} alt={alt} />
@@ -15,4 +15,4 @@ const Video = ({ src, author, authorURL, alt = "" }) => {
   )
 }
 
-export default Video
+export default Img
