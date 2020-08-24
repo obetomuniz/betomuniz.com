@@ -1,0 +1,33 @@
+---
+templateKey: drop-post
+slug: bigint-no-javascript
+title: BigInt no JavaScript
+description: Neste drop falo um pouco sobre como funciona BigInt's no JavaScript
+  e o porque são úteis.
+featured:
+  - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598238776/Text_1_jj5zju.jpg
+date: 2020-08-24T03:00:22.958Z
+keywords:
+  - bigint
+  - javascript
+  - web
+category: tech
+lang: pt
+external: false
+---
+import { Drop } from '../../components/mdx'
+
+<Drop>
+
+🔢 **BigInt** no JavaScript é um modelo nativo de **representação** de números inteiros maiores que 64bits (e.g `Number.MAX_SAFE_INTERGER`), pois números acima dessa capacidade de armazenamento não podem ser armazenados via JavaScript.
+
+👉 **BigInt** podem ser definidos adicionando um `n` no fim de um número (e.g. `10n`) ou através de `BigInt(10)`.
+
+😋  **BigInt's** são bastante úteis, principalmente ao se trabalhar com números grandes e que requerem máxima precisão.
+
+```javascript
+const bigInt = 10n
+const anotherBigInt = BigInt(10)
+```
+
+</Drop>
