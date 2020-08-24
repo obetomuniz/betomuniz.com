@@ -8,7 +8,7 @@ const Img = ({ src, author, authorURL, alt = "" }) => {
       <img src={src} alt={alt} />
       {author && authorURL && (
         <figcaption>
-          Image from <A href={authorURL}>{author}</A>
+          Fonte: <A href={authorURL}>{author}</A>
         </figcaption>
       )}
     </Container>

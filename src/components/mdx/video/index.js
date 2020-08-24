@@ -15,7 +15,7 @@ const Video = ({ src, author, authorURL }) => {
       ></Container>
       {author && authorURL && (
         <Caption>
-          Video from <A href={authorURL}>{author}</A>
+          Fonte: <A href={authorURL}>{author}</A>
         </Caption>
       )}
     </Wrapper>
