@@ -4,7 +4,7 @@ import { MdxControl, setupPreview } from "netlify-cms-widget-mdx"
 import cloudinary from "netlify-cms-media-library-cloudinary"
 
 import Code from "../components/code/code"
-import { Drop, A, Video, Tweet } from "../components/mdx"
+import { Drop, A, Video, Img, Tweet } from "../components/mdx"
 import withStyledComponents from "./hooks/withStyledComponents"
 import DropPreview from "./preview-templates/drop-preview"
 
@@ -24,6 +24,7 @@ CMS.registerWidget(
     scope: {
       Drop,
       Video,
+      Img,
       Tweet,
     },
     mdPlugins: [],
