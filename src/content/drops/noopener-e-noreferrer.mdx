@@ -1,0 +1,39 @@
+---
+templateKey: drop-post
+slug: noopener-e-noreferrer
+title: noopener e noreferrer
+description: Neste drop falo da utilidade das diretivas noopener e noreferrer no
+  combate contra ataques Phishing.
+featured:
+  - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598382624/Text_Image_gwwcfi.jpg
+date: 2020-09-01T18:56:06.775Z
+keywords:
+  - phishing
+  - web
+  - segurança
+  - cybersec
+category: tech
+lang: pt
+external: false
+---
+import { Drop } from '../../components/mdx'
+
+<Drop>
+
+👉 Ao criar links nos seus sites que utilizam o atributo `target="_blank"`, adicione sempre o atributo `rel="noopener noreferrer"`.
+
+🐿 **noopener** remove o contexto do objeto `window.opener.location` durante a navegação de um site para o outro para evitar que o site de destino tenha acesso a dados sensíveis.
+
+🤓 **noreferrer** remove o contexto do header Referrer enviado pelo Browser durante a navegação de um site para o outro.
+
+```html
+<a 
+  target="_blank"
+  rel="noopener noreferrer"
+  href="https://..."
+>
+  Seu Link
+</a>
+```
+
+</Drop>
