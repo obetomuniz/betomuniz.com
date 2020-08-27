@@ -99,6 +99,7 @@ module.exports = {
           "frame-src": "'self' https: twitter.com",
           "img-src":
             "'self' data: https: www.google-analytics.com github.com gravatar.com githubusercontent.com res.cloudinary.com",
+          "form-action": "'self' https:",
         },
       },
     },
