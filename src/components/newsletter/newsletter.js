@@ -22,7 +22,7 @@ const Newsletter = ({ label }) => {
           name="EMAIL"
           placeholder={textLabel}
         />
-        <Button>CADASTRAR</Button>
+        <Button type="submit">CADASTRAR</Button>
       </Form>
     </Container>
   )
