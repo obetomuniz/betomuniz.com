@@ -176,6 +176,8 @@ module.exports = {
                         title
                         subtitle
                         description
+                        informaldesc
+                        audiencecall
                       }
                     }
                   }
