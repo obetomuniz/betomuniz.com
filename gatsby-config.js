@@ -142,13 +142,20 @@ module.exports = {
                     url,
                     guid: url,
                     title,
-                    // custom_elements: [
-                    //   {
-                    //     ...(edge.node.frontmatter.featured && {
-                    //       featured: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.featured}`,
-                    //     }),
-                    //   },
-                    // ],
+                    custom_elements: [
+                      {
+                        // ...(edge.node.frontmatter.featured && {
+                        //   featured: `${site.siteMetadata.siteUrl}${edge.node.frontmatter.featured}`,
+                        // }),
+                        audiencecall: edge.node.frontmatter.audiencecall
+                          ? edge.node.frontmatter.audiencecall
+                          : "",
+                        informaldescription: edge.node.frontmatter
+                          .informaldescription
+                          ? edge.node.frontmatter.informaldescription
+                          : "",
+                      },
+                    ],
                   })
                 })
             },

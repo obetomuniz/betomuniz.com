@@ -38,6 +38,13 @@ collections:
           widget: "hidden",
           default: "drop-post",
         }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Subtitle",
+          name: "subtitle",
+          widget: "string",
+          required: false,
+        }
       - {
           label: "Slug",
           name: "slug",
@@ -48,18 +55,17 @@ collections:
               "A slug can have no spaces or special characters",
             ],
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Subtitle",
-          name: "subtitle",
-          widget: "string",
-          required: false,
-        }
       - { label: "Body", name: "body", widget: "mdx" }
+      - { label: "Featured", name: "featured", widget: image }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured", name: "featured", widget: image, required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Keywords", name: "keywords", widget: "list" }
+      - { label: "Audience Call", name: "audiencecall", widget: "string" }
+      - {
+          label: "Informal Description",
+          name: "informaldescription",
+          widget: "text",
+        }
       - { label: "Category", name: "category", widget: "string" }
       - { label: "Language", name: "lang", widget: "string" }
       - {
