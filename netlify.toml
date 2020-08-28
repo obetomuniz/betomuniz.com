@@ -4,3 +4,10 @@
   to = "https://t.me/obetomuniz_drops"
   status = 301
   force = true # COMMENT: ensure that we always redirect
+
+## This rule redirects to my Newsletter 
+[[redirects]]
+  from = "/newsletter"
+  to = "https://betomuniz.us10.list-manage.com/subscribe/post?u=272246eec42af04685103c358&id=ab6499fbe1"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
