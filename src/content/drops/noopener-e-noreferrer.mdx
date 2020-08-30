@@ -1,17 +1,25 @@
 ---
 templateKey: drop-post
-slug: noopener-e-noreferrer
 title: noopener e noreferrer
-description: Neste drop falo da utilidade das diretivas noopener e noreferrer no
-  combate contra ataques Phishing.
+slug: noopener-e-noreferrer
 featured:
   - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598382624/Text_Image_gwwcfi.jpg
+description: Neste drop falo da utilidade das diretivas noopener e noreferrer no
+  combate contra ataques Phishing.
 date: 2020-09-01T18:56:06.775Z
 keywords:
   - phishing
   - web
   - segurança
   - cybersec
+audiencecall: Fala pessoal, beleza?
+informaldesc: >-
+  ⚡️ No drop de hoje falei sobre dois recursos super simples de usar, mas
+  poderosos para manter a segurança da navegabilidade dos links em nossos
+  sites. 
+
+
+  🎩 E vocês? Aplicam *rel="noopener noreferrer"* nos links dos seus sites? Leia o drop e entenda o porque deveria.
 category: tech
 lang: pt
 external: false
@@ -20,11 +28,11 @@ import { Drop } from '../../components/mdx'
 
 <Drop>
 
-👉 Ao criar links nos seus sites que utilizam o atributo `target="_blank"`, adicione sempre o atributo `rel="noopener noreferrer"`.
+👉 Ao criar links nos seus sites que utilizam o atributo `target="_blank"`, use sempre a declaração `rel="noopener noreferrer"`.
 
-🐿 **noopener** remove o contexto do objeto `window.opener.location` durante a navegação de um site para o outro para evitar que o site de destino tenha acesso a dados sensíveis.
+🐿 **noopener** remove o contexto do objeto `window.opener.location` durante a navegação de um site para o outro para evitar que o site de destino tenha acesso a dados sensíveis do site de origem.
 
-🤓 **noreferrer** remove o contexto do header Referrer enviado pelo Browser durante a navegação de um site para o outro.
+🤓 **noreferrer** remove o contexto do [header Referrer](https://betomuniz.com/drops/referrer-policy) enviado pelo Browser durante a navegação de um site para o outro.
 
 ```html
 <a 
@@ -35,5 +43,7 @@ import { Drop } from '../../components/mdx'
   Seu Link
 </a>
 ```
+
+😋 Super simples, mas super útil. Use esses recursos sem moderação.
 
 </Drop>
