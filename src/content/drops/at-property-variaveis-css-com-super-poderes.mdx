@@ -33,6 +33,17 @@ import { Drop } from '../../components/mdx'
   syntax: '<color>';
   initial-value: magenta;
 }
+
+
+body {
+ /* Fallback necessário para browsers que não dão suporte. */
+ --colorPrimary: magenta; 
+}
+
+.text {
+ color: var(--colorPrimary);
+}
+
 ```
 
 ⚡️ Como visto na definição da API, com `@property` podemos ir além de *strings*, pois podemos também configurar o tipo do dado contido na propriedade CSS customizada através do campo **syntax** e também predefinir valores através do campo  **initial-value**.
