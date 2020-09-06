@@ -11,3 +11,45 @@
   to = "https://betomuniz.us10.list-manage.com/subscribe/post?u=272246eec42af04685103c358&id=ab6499fbe1"
   status = 301
   force = true # COMMENT: ensure that we always redirect
+
+## This rule redirects to my YouTube 
+[[redirects]]
+  from = "/youtube"
+  to = "https://www.youtube.com/c/betomuniz"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+## This rule redirects to my Instagram 
+[[redirects]]
+  from = "/instagram"
+  to = "https://www.instagram.com/obetomuniz/"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+## This rule redirects to my GitHub 
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/obetomuniz"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+## This rule redirects to my LinkedIn 
+[[redirects]]
+  from = "/linkedin"
+  to = "https://www.linkedin.com/in/obetomuniz"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+## This rule redirects to my TikTok 
+[[redirects]]
+  from = "/tiktok"
+  to = "https://www.tiktok.com/@obetomuniz"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+## This rule redirects to my Twitter 
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/twitter"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
