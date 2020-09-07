@@ -25,11 +25,15 @@ import { Drop } from '../../components/mdx'
 
 <Drop>
 
-💥 Com o advento de algumas [abordagens multi-threading do JavaScript](), um problema comum desse tipo de cenário surgiu, as _race conditions_.
+💥 Com o advento de algumas [abordagens multi-threading do JavaScript](https://betomuniz.com/drops/sharedarraybuffer-no-javascript), um problema comum desse tipo de cenário surgiu, as _race conditions_.
 
 👉 **race conditions** basicamente são resoluções desordenadas de operações paralelas, que por sua vez, necessitam ser ordenadas para correto funcionamento, em geral, dependentes entre si. 
 
-⚡️ O objeto **Atomics** surge no JavaScript justamente para nos permitir controlar a ordem que queremos que operações paralelas sejam resolvidas.  
+⚡️ O objeto **Atomics** surge no JavaScript justamente para nos permitir controlar a ordem que queremos que operações paralelas sejam resolvidas e assim garantir a intergidade dos dados resultantes.  
+
+😋 Outro uso interessante é a possibilidade de controle direto da alocação de memória para a thread principal do JavaScript.
+
+🎩 No exemplo abaixo da biblioteca [sleep-synchronously](https://github.com/sindresorhus/sleep-synchronously/blob/master/index.js#L4), qualquer operação JavaScript será imediatamente pausada por 1 segundo aguardando a resolução da declaração `Atomics.wait`. 
 
 ```javascript
 // ... 
@@ -44,10 +48,8 @@ Atomics.wait(
 // ... 
 ```
 
-🎩 Nesse exemplo da biblioteca [sleep-synchronously](https://github.com/sindresorhus/sleep-synchronously/blob/master/index.js#L4), qualquer operação JavaScript será imediatamente pausada por 1 segundo até que `Atomics.wait` seja resolvida. 
+👨‍💻 Esse tipo de uso pode ser útil durante a escrita de testes. 
 
-👨‍💻 Esse recurso pode ser bastante útil em durante a escrita de testes. 
-
-👨‍🎨 Muito legal, né?
+👨‍🎨 Muito legal essas "novas" possibilidades do JavaScript, né?
 
 </Drop>
