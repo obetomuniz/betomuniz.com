@@ -31,9 +31,7 @@ import { Drop } from '../../components/mdx'
 
 ⚡️ O objeto **Atomics** surge no JavaScript justamente para nos permitir controlar a ordem que queremos que operações paralelas sejam resolvidas e assim garantir a intergidade dos dados resultantes.  
 
-😋 Outro uso interessante é a possibilidade de controle direto da alocação de memória para a thread principal do JavaScript.
-
-🎩 No exemplo abaixo da biblioteca [sleep-synchronously](https://github.com/sindresorhus/sleep-synchronously/blob/master/index.js#L4), qualquer operação JavaScript será imediatamente pausada por 1 segundo aguardando a resolução da declaração `Atomics.wait`. 
+🎩 No exemplo abaixo da biblioteca [sleep-synchronously](https://github.com/sindresorhus/sleep-synchronously/blob/master/index.js#L4), qualquer operação que estiver acontecendo em paralelo será imediatamente pausada por 1 segundo aguardando a resolução da declaração `Atomics.wait`. 
 
 ```javascript
 // ... 
@@ -50,6 +48,6 @@ Atomics.wait(
 
 👨‍💻 Esse tipo de uso pode ser útil durante a escrita de testes. 
 
-👨‍🎨 Muito legal essas "novas" possibilidades do JavaScript, né?
+👨‍🎨 Sensacional isso, né?
 
 </Drop>
