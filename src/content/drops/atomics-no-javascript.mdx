@@ -29,7 +29,7 @@ import { Drop } from '../../components/mdx'
 
 👉 **race conditions** basicamente são resoluções desordenadas de operações paralelas, que por sua vez, necessitam ser ordenadas para correto funcionamento. 
 
-⚡️ O objeto **Atomics** surge no JavaScript justamente para nos permitir controlar a ordem que queremos que operações paralelas sejam resolvidas e assim garantir a intergidade dos dados resultantes.  
+⚡️ O objeto **Atomics** surge no JavaScript justamente para nos permitir controlar a ordem que queremos que operações paralelas sejam resolvidas e assim garantir a integridade dos dados resultantes.  
 
 🎩 No exemplo abaixo da biblioteca [sleep-synchronously](https://github.com/sindresorhus/sleep-synchronously/blob/master/index.js#L4), qualquer operação que estiver acontecendo em paralelo será imediatamente pausada por 1 segundo aguardando a resolução da declaração `Atomics.wait`. 
 
