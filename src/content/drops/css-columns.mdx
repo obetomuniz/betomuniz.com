@@ -1,0 +1,52 @@
+---
+templateKey: drop-post
+title: CSS Columns
+slug: css-columns
+featured:
+  - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1600174782/Titulo_Image_Site_lgvpvb.jpg
+description: Neste drop falei sobre CSS Columns, um recurso muito pouco falado,
+  mas muito útil na diagramação de textos.
+date: 2020-09-15T12:34:51.838Z
+keywords:
+  - css
+  - texts
+  - columns
+  - textos
+audiencecall: Faala galera, beleza?
+informaldesc: 🖍 No drop de hoje falei sobre o conjunto de propriedades CSS
+  Columns, um recurso bem legal para quando a gente lida muito com textos
+  longos. Espero que gostem.
+category: tech
+lang: pt
+external: false
+---
+import { Drop, Video } from '../../components/mdx';
+
+<Drop>
+
+⚡️ A propriedade `columns` do CSS permite diagramar o fluxo de textos em colunas. 
+
+🎩 A propriedade `columns` aceita configurar a **largura mínima** de cada coluna e o **número esperado de colunas**.
+
+```css
+.texto {
+ columns: 100px 3;
+}
+```
+
+🗣 Outra forma de definir CSS Columns, é através do conjunt de propriedade `column-*`.
+
+```css
+.texto {
+ column-gap: 100px;
+ column-count: 3;
+ column-rule: 4px double #663399;
+}
+```
+
+
+<Video src="https://res.cloudinary.com/beto-muniz/video/upload/v1600174990/Kapture_2020-09-15_at_09.54.22_gywzye.mp4" />
+
+👨‍🎨 Bacana, né?
+
+</Drop>
