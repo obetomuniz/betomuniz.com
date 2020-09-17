@@ -4,8 +4,9 @@ title: Operadores Bitwise Shift no JavaScript
 slug: operadores-bitwise-shift-no-javascript
 featured:
   - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1600178580/Titulo_Image_Site_1_twky3b.jpg
-description: Neste drop abordo de forma objetiva o que são e como se comportam
-  Operadores Bitwise Shift.
+description: Neste drop abordo de forma breve o que são e como se comportam
+  Operadores Bitwise Shift, um tema relativamente denso, mas extremamente
+  interessante de se conhecer dentro do JavaScript
 date: 2020-09-17T13:04:25.598Z
 keywords:
   - bitwise
@@ -16,9 +17,10 @@ keywords:
   - left
   - zero
 audiencecall: E aí gente, beleza?
-informaldesc: 💥 No drop de hoje compilei e expliquei o que são e como se
-  comportam *Operadores Bitwise Shift* no JavaScript. Apesar de ser um assunto
-  bem denso, teórico e sem grandes casos de uso, acredito que ficou beeem legal.
+informaldesc: 💥 No drop de hoje compilei ao máximo e expliquei o que são e como
+  se comportam *Operadores Bitwise Shift* no JavaScript. Apesar de ser um
+  assunto relativamente denso e teórico, acredito que ficou beeem legal. Espero
+  que gostem, e fica à dica para se aprofundarem mais nisso caso se interessem.
 category: tech
 lang: pt
 external: false
@@ -41,7 +43,7 @@ import { Drop } from '../../components/mdx'
 
 <Drop>
 
-`<<` ou _Left Shift_ recebe `x` e `y` para `x << y`. Enquanto `x` é o número inteiro a ser processado, `y` é o número de bits a ser deslocado a partir da esquerda.
+`<<` ou _Left Shift_ recebe `x` e `y` para `x << y`. Enquanto `x` é o número inteiro a ser processado, `y` é o número de bits a ser deslocado a partir da esquerda para direita.
 
 ```text
 170 << 3
@@ -61,7 +63,7 @@ Exemplo retirado de <wbr /><a href="https://blog.logrocket.com/interesting-use-c
 
 <Drop>
 
-`>>` ou _Right Shift_ recebe `x` e `y` para `x >> y`. Enquanto `x` é o número inteiro a ser processado, `y` é o número de bits a ser deslocado a partir da direita.
+`>>` ou _Right Shift_ recebe `x` e `y` para `x >> y`. Enquanto `x` é o número inteiro a ser processado, `y` é o número de bits a ser deslocado a partir da direita para esquerda.
 
 ```text
 170 >> 3
@@ -83,7 +85,7 @@ Exemplo retirado de <wbr /><a href="https://blog.logrocket.com/interesting-use-c
 
 `>>>`ou _Zero-Fill Right Shift_ é semelhante a `>>`, com a diferença que sempre irá popular `0` na definição esquerda do bit, `>>` pode ser `0` ou `1`. 
 
-`>>>` recebe `x` e `y` para `x >>> y`. Enquanto `x` é o número inteiro a ser processado, `y` é o número de bits a ser deslocado a partir da direita.
+`>>>` recebe `x` e `y` para `x >>> y`. Enquanto `x` é o número inteiro a ser processado, `y` é o número de bits a ser deslocado a partir da direita para esquerda.
 
 ```text
 170 >>> 3
