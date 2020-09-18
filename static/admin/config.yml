@@ -57,7 +57,12 @@ collections:
         }
       - { label: "Body", name: "body", widget: "mdx" }
       - { label: "Featured", name: "featured", widget: image }
-      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          pattern: ["^.{2,140}$", "Should have more than 140 characters"],
+        }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Keywords", name: "keywords", widget: "list" }
       - { label: "Audience Call", name: "audiencecall", widget: "string" }

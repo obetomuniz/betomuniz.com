@@ -3,9 +3,10 @@ import LinkedInIcon from "../../assets/vectors/icon-linkedin.svg"
 import TwitterIcon from "../../assets/vectors/icon-twitter.svg"
 import EmailIcon from "../../assets/vectors/icon-email.svg"
 import GitHubIcon from "../../assets/vectors/icon-github.svg"
-import RSSIcon from "../../assets/vectors/icon-rss.svg"
+// import RSSIcon from "../../assets/vectors/icon-rss.svg"
 import TelegramIcon from "../../assets/vectors/icon-telegram.svg"
 import YouTubeIcon from "../../assets/vectors/icon-youtube.svg"
+import InstagramIcon from "../../assets/vectors/icon-instagram.svg"
 import { Container, SocialsItem, SocialsItemLink } from "./ui"
 
 const Socials = () => (
@@ -28,6 +29,16 @@ const Socials = () => (
         rel="noopener noreferrer"
       >
         <YouTubeIcon />
+      </SocialsItemLink>
+    </SocialsItem>
+    <SocialsItem color="#C13584">
+      <SocialsItemLink
+        title="Beto Muniz Instagram"
+        href="https://instagram.com/obetomuniz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <InstagramIcon />
       </SocialsItemLink>
     </SocialsItem>
     <SocialsItem color="#0077b5">
@@ -58,11 +69,6 @@ const Socials = () => (
         rel="noopener noreferrer"
       >
         <GitHubIcon />
-      </SocialsItemLink>
-    </SocialsItem>
-    <SocialsItem color="orange">
-      <SocialsItemLink title="Beto Muniz RSS" href="/rss.xml">
-        <RSSIcon />
       </SocialsItemLink>
     </SocialsItem>
     <SocialsItem color="dimgrey">
