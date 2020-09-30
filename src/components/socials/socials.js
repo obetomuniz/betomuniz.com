@@ -14,7 +14,7 @@ const Socials = () => (
     <SocialsItem color="#32afed">
       <SocialsItemLink
         title="Beto Muniz Telegram"
-        href="https://t.me/obetomuniz_drops"
+        href="https://t.me/obetomuniz"
         target="_blank"
         rel="noopener noreferrer"
       >
