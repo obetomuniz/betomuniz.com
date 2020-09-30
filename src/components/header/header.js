@@ -41,6 +41,15 @@ const Header = ({ location, hideSocialsOnHeader }) => {
             </NavLink>
           </NavListItem>
           <NavListItem>
+            <NavLink
+              to="/videos/"
+              className={location === "/videos/" && "active"}
+              activeClassName={"active"}
+            >
+              Videos
+            </NavLink>
+          </NavListItem>
+          <NavListItem>
             <NavLink to="/projects/" activeClassName={"active"}>
               Projects
             </NavLink>

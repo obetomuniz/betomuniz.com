@@ -263,7 +263,7 @@ export const Nav = styled.nav`
 export const NavList = styled.ul`
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0 15px;
   width: 400px;
 
