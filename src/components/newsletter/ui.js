@@ -75,3 +75,16 @@ export const Button = styled.button`
     height: 40px;
   }
 `
+
+export const SubmittedMessage = styled.p`
+  color: var(--DEFAULT_NEWSLETTER_THEME);
+  font-size: 1rem;
+  padding: 10px;
+  height: 40px;
+  text-align: center;
+
+  @media screen and (max-width: 440px) {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+`
