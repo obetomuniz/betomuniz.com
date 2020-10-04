@@ -27,7 +27,7 @@ const Newsletter = ({ label }) => {
   return (
     <Container>
       {!isSubmitted ? (
-        <Form method="post" novalidate onSubmit={handleOnSubmit}>
+        <Form method="post" novalidate>
           <ScreenReaderContent as={"label"} htmlFor="email-newsletter-input">
             {textLabel}
           </ScreenReaderContent>
@@ -38,7 +38,9 @@ const Newsletter = ({ label }) => {
             placeholder={textLabel}
             onChange={({ target: { value } }) => setEmail(value)}
           />
-          <Button type="submit">CADASTRAR</Button>
+          <Button type="button" onClick={handleOnSubmit}>
+            CADASTRAR
+          </Button>
         </Form>
       ) : (
         <SubmittedMessage>Cadastro realizado com sucesso!</SubmittedMessage>
