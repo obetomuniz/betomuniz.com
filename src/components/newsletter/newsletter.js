@@ -10,14 +10,16 @@ const Newsletter = ({ label }) => {
   const handleOnSubmit = useCallback(
     async (event) => {
       event.preventDefault()
-      await fetch(
-        "https://hook.integromat.com/cohe83p5inxqalyax5do0wr2w59alg5y",
-        {
-          method: "post",
-          body: email,
-        }
-      )
-      setIsSubmitted(true)
+      if (email) {
+        await fetch(
+          "https://hook.integromat.com/cohe83p5inxqalyax5do0wr2w59alg5y",
+          {
+            method: "post",
+            body: email,
+          }
+        )
+        setIsSubmitted(true)
+      }
     },
     [email]
   )
