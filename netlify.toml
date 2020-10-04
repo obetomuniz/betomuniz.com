@@ -8,7 +8,7 @@
 ## This rule redirects to my Newsletter 
 [[redirects]]
   from = "/newsletter"
-  to = "https://betomuniz.us10.list-manage.com/subscribe/post?u=272246eec42af04685103c358&id=ab6499fbe1"
+  to = "https://landing.mailerlite.com/webforms/landing/y9t5l3"
   status = 301
   force = true # COMMENT: ensure that we always redirect
 
@@ -49,7 +49,7 @@
 
 ## This rule redirects to my Twitter 
 [[redirects]]
-  from = "/github"
+  from = "/twitter"
   to = "https://github.com/twitter"
   status = 301
   force = true # COMMENT: ensure that we always redirect
