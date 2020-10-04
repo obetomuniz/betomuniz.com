@@ -50,6 +50,6 @@
 ## This rule redirects to my Twitter 
 [[redirects]]
   from = "/twitter"
-  to = "https://github.com/twitter"
+  to = "https://twitter.com/obetomuniz"
   status = 301
   force = true # COMMENT: ensure that we always redirect
