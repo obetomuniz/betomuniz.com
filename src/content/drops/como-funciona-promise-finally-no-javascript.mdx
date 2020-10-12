@@ -38,18 +38,6 @@ fetch('https://...')
   .finally(() => { loading = false })
 ```
 
-💡 Antes desse recurso, era preciso um **reflect** para alcançar um objetivo semelhante.
-
-```javascript
-const reflect = promise => promise
-   .then(
-     v => (
-       {v, status: "fulfilled" }),
-       e => ({e, status: "rejected" }
-     )
-   );
-```
-
 😉 Legal, né?
 
 </Drop>
