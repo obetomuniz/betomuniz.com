@@ -16,8 +16,6 @@ import ProjectList from "./project-list"
 import ProjectListItem from "./project-list-item"
 import TalkList from "./talk-list"
 import TalkListItem from "./talk-list-item"
-import VideoList from "./video-list"
-import VideoListItem from "./video-list-item"
 
 export {
   Layout,
@@ -38,6 +36,4 @@ export {
   ProjectListItem,
   TalkList,
   TalkListItem,
-  VideoList,
-  VideoListItem,
 }

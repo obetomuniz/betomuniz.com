@@ -42,9 +42,10 @@ const Header = ({ location, hideSocialsOnHeader }) => {
           </NavListItem>
           <NavListItem>
             <NavLink
-              to="/videos/"
-              className={location === "/videos/" && "active"}
-              activeClassName={"active"}
+              title="Beto Muniz YouTube"
+              href="https://www.youtube.com/c/betomuniz"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Videos
             </NavLink>
