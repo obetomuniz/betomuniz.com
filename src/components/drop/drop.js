@@ -40,7 +40,7 @@ const ContentComponent = ({ children, isCMS }) => {
             {
               "E para receber meus conteúdos assim que eu publicar, me segue lá no "
             }
-            <A href="https://bit.ly/betomuniz-drops">Telegram</A> 😋
+            <A href="https://beto.im/telegram">Telegram</A> 😋
           </p>
         </DropComponent>
       </MDXProvider>
