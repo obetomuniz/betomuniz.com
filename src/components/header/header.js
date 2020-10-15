@@ -24,7 +24,7 @@ const Header = ({ location, hideSocialsOnHeader }) => {
           height="80"
         />
       </Photo>
-      <Nav>
+      {/* <Nav>
         <NavList>
           <NavListItem>
             <NavLink to="/" activeClassName={"active"}>
@@ -61,7 +61,7 @@ const Header = ({ location, hideSocialsOnHeader }) => {
             </NavLink>
           </NavListItem>
         </NavList>
-      </Nav>
+      </Nav> */}
       {!hideSocialsOnHeader && (
         <SocialsContainer>
           <Socials />

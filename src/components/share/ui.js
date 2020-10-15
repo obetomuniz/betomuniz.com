@@ -45,9 +45,10 @@ export const ShareItemButton = styled.button`
   background-color: transparent;
   border: 0;
   line-height: 0;
-  border-radius: 0;
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   cursor: pointer;
   outline: 0;
+  box-shadow: 2px 2px 0 1px rgba(0, 0, 0, 1);
 `

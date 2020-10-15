@@ -30,12 +30,12 @@ export const Input = styled.input`
   font-size: 1rem;
   padding: 10px;
   margin-right: 10px;
-  border-radius: 5px;
   border: 1px solid var(--DEFAULT_NEWSLETTER_THEME);
   flex: 1;
   text-align: center;
   display: block;
   height: 40px;
+  box-shadow: 4px 4px 0 1px rgba(0, 0, 0, 1);
 
   ::-webkit-input-placeholder {
     color: var(--DEFAULT_NEWSLETTER_THEME);
@@ -64,11 +64,11 @@ export const Button = styled.button`
   line-height: 0;
   display: block;
   cursor: pointer;
-  border-radius: 5px;
   color: var(--DEFAULT_NEWSLETTER_BUTTON_TEXT);
   font-weight: 600;
   font-size: 1rem;
   width: 155px;
+  box-shadow: 4px 4px 0 1px rgba(0, 0, 0, 1);
 
   @media screen and (max-width: 440px) {
     width: 100%;

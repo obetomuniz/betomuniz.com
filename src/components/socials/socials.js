@@ -11,16 +11,6 @@ import { Container, SocialsItem, SocialsItemLink } from "./ui"
 
 const Socials = () => (
   <Container>
-    <SocialsItem color="#32afed">
-      <SocialsItemLink
-        title="Beto Muniz Telegram"
-        href="https://t.me/obetomuniz"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <TelegramIcon />
-      </SocialsItemLink>
-    </SocialsItem>
     <SocialsItem color="#f00">
       <SocialsItemLink
         title="Beto Muniz YouTube"
@@ -51,7 +41,17 @@ const Socials = () => (
         <LinkedInIcon />
       </SocialsItemLink>
     </SocialsItem>
-    <SocialsItem color="#1da1f2">
+    <SocialsItem color="#32afed">
+      <SocialsItemLink
+        title="Beto Muniz Telegram"
+        href="https://t.me/obetomuniz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <TelegramIcon />
+      </SocialsItemLink>
+    </SocialsItem>
+    {/* <SocialsItem color="#1da1f2">
       <SocialsItemLink
         title="Beto Muniz Twitter"
         href="https://twitter.com/obetomuniz"
@@ -60,8 +60,8 @@ const Socials = () => (
       >
         <TwitterIcon />
       </SocialsItemLink>
-    </SocialsItem>
-    <SocialsItem color="#24292e">
+    </SocialsItem> */}
+    {/* <SocialsItem color="#24292e">
       <SocialsItemLink
         title="Beto Muniz GitHub"
         href="https://github.com/obetomuniz"
@@ -70,7 +70,7 @@ const Socials = () => (
       >
         <GitHubIcon />
       </SocialsItemLink>
-    </SocialsItem>
+    </SocialsItem> */}
     <SocialsItem color="dimgrey">
       <SocialsItemLink
         title="Beto Muniz Email"

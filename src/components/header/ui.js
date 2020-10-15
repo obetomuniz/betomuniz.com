@@ -213,7 +213,7 @@ export const PhotoImage = styled.img`
   width: 100%;
   border-radius: 100%;
   overflow: hidden;
-  animation: ${glitch1} 10s infinite linear;
+  /* animation: ${glitch1} 10s infinite linear; */
   border: 2px solid var(--DEFAULT_HEADER_PHOTO_BORDER_COLOR);
   z-index: 2;
 `
@@ -224,10 +224,10 @@ export const Photo = styled(Link)`
   display: block;
   border-radius: 100%;
   position: relative;
-  margin-bottom: var(--DEFAULT_MARGIN);
-  box-shadow: 0 10px 6px -8px var(--DEFAULT_BOX_SHADOW_COLOR);
+  /* box-shadow: 0 10px 6px -8px var(--DEFAULT_BOX_SHADOW_COLOR); */
+  box-shadow: 3px 3px 0 1px rgba(0, 0, 0, 1);
 
-  &::before,
+  /* &::before,
   &::after {
     background-image: url("https://www.gravatar.com/avatar/fff7258836f20ea66b061b49a51fe8dd?s=170");
     background-size: cover;
@@ -243,15 +243,11 @@ export const Photo = styled(Link)`
     border: 2px solid var(--DEFAULT_HEADER_PHOTO_BORDER_COLOR);
     z-index: 2;
     content: "";
-  }
+  } */
 
-  &::after {
+  /* &::after {
     animation: ${glitch3} 10s infinite linear;
-  }
-
-  @media screen and (max-width: 440px) {
-    margin-bottom: calc(var(--DEFAULT_MARGIN_MOBILE) / 1.5);
-  }
+  } */
 `
 
 export const Nav = styled.nav`

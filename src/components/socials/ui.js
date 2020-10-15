@@ -6,11 +6,14 @@ export const Container = styled.ul`
 
 export const SocialsItem = styled.li`
   display: inline-block;
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin: 0;
   padding: 0;
   margin: 0 12px;
+  box-shadow: 2px 2px 0 1px rgba(0, 0, 0, 1);
+  border-radius: 100%;
+
   svg {
     stroke-width: 0;
     width: 100%;
