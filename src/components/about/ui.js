@@ -12,6 +12,7 @@ export const Container = styled.main`
 `
 
 export const Text = styled.p`
+  text-align: center;
   color: var(--DEFAULT_TEXT_COLOR);
   font-size: var(--DEFAULT_ABOUT_FONT_SIZE);
   line-height: var(--DEFAULT_ABOUT_LINE_HEIGHT);
@@ -21,7 +22,7 @@ export const Text = styled.p`
   }
 
   @media screen and (max-width: 440px) {
-    font-size: var(--DEFAULT_ABOUT_FONT_SIZE_MOBILE);
+    font-size: 0.65rem;
     line-height: var(--DEFAULT_ABOUT_LINE_HEIGHT_MOBILE);
 
     &:first-letter {

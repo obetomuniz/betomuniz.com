@@ -1,12 +1,10 @@
 import React from "react"
 import LinkedInIcon from "../../assets/vectors/icon-linkedin.svg"
 import TwitterIcon from "../../assets/vectors/icon-twitter.svg"
-import EmailIcon from "../../assets/vectors/icon-email.svg"
-import GitHubIcon from "../../assets/vectors/icon-github.svg"
-// import RSSIcon from "../../assets/vectors/icon-rss.svg"
 import TelegramIcon from "../../assets/vectors/icon-telegram.svg"
 import YouTubeIcon from "../../assets/vectors/icon-youtube.svg"
 import InstagramIcon from "../../assets/vectors/icon-instagram.svg"
+import TwitchIcon from "../../assets/vectors/icon-twitch.svg"
 import { Container, SocialsItem, SocialsItemLink } from "./ui"
 
 const Socials = () => (
@@ -31,7 +29,17 @@ const Socials = () => (
         <InstagramIcon />
       </SocialsItemLink>
     </SocialsItem>
-    <SocialsItem color="#0077b5">
+    <SocialsItem color="#a970ff">
+      <SocialsItemLink
+        title="Beto Muniz Twitch"
+        href="https://www.twitch.tv/obetomuniz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <TwitchIcon />
+      </SocialsItemLink>
+    </SocialsItem>
+    {/*<SocialsItem color="#0077b5">
       <SocialsItemLink
         title="Beto Muniz Linkedin"
         href="https://www.linkedin.com/in/obetomuniz"
@@ -40,7 +48,7 @@ const Socials = () => (
       >
         <LinkedInIcon />
       </SocialsItemLink>
-    </SocialsItem>
+    </SocialsItem> */}
     <SocialsItem color="#32afed">
       <SocialsItemLink
         title="Beto Muniz Telegram"
@@ -51,7 +59,7 @@ const Socials = () => (
         <TelegramIcon />
       </SocialsItemLink>
     </SocialsItem>
-    {/* <SocialsItem color="#1da1f2">
+    {/*<SocialsItem color="#1da1f2">
       <SocialsItemLink
         title="Beto Muniz Twitter"
         href="https://twitter.com/obetomuniz"
@@ -60,8 +68,8 @@ const Socials = () => (
       >
         <TwitterIcon />
       </SocialsItemLink>
-    </SocialsItem> */}
-    {/* <SocialsItem color="#24292e">
+    </SocialsItem>
+     <SocialsItem color="#24292e">
       <SocialsItemLink
         title="Beto Muniz GitHub"
         href="https://github.com/obetomuniz"
@@ -71,14 +79,6 @@ const Socials = () => (
         <GitHubIcon />
       </SocialsItemLink>
     </SocialsItem> */}
-    <SocialsItem color="dimgrey">
-      <SocialsItemLink
-        title="Beto Muniz Email"
-        href="mailto:contato@betomuniz.com"
-      >
-        <EmailIcon />
-      </SocialsItemLink>
-    </SocialsItem>
   </Container>
 )
 
