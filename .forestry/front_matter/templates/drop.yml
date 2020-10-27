@@ -1,4 +1,20 @@
 ---
 label: Drop
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+    min: 20
+    max: 120
+  label: Title
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
