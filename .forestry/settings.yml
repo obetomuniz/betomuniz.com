@@ -5,6 +5,9 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: content/drops
+  label: Drops
+- type: document
   path: ''
   label: Home
 upload_dir: ''

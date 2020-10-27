@@ -1,14 +1,11 @@
 ---
 label: Drop
 hide_body: false
-display_field: title
 fields:
 - name: title
   type: text
   config:
     required: false
-    min: 20
-    max: 120
   label: Title
 - name: content
   type: textarea
