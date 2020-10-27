@@ -1,0 +1,52 @@
+---
+templateKey: drop-post
+title: BarcodeDetector API
+subtitle: ""
+slug: barcodedetector-api
+featured:
+  - https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1603810338/Titulo_Image_dvpi73.jpg
+description: Neste Drop falo sobre o suporte e funcionamento da BarcodeDetector API.
+date: 2020-10-30T13:00:20.287Z
+keywords:
+  - barcode
+  - código de barras
+  - shape detection api
+  - web
+audiencecall: Fala devs, beleza?
+informaldesc: " 📶 Explorando ainda mais a *Shape Detection API*, no Drop de
+  hoje falei sobre a *BarcodeDetector API*, que por sua vez é uma API que nos
+  ajuda a extrair dados de QR Codes, Código de Barras. "
+category: tech
+lang: pt
+external: false
+---
+import { Drop } from '../../components/mdx'
+
+<Drop>
+
+⚡️ O padrão **BarcodeDetector API** foi criado para possibilitar a leitura de **QR Codes e Código de Barras** na web.
+
+⚛️ Para código de barras (ou padrões 1D), os formatos suportados são: **EAN-13, EAN-8, UPC-A, UPC-E, Code-39, Code-93, Code-128, ITF, e Codabar**.
+
+⚛️ E para padrões 2D, os formatos suportados são: **QR Code, Data Matrix, PDF-417, e AZTEC**.
+
+🤯 Uma curiosidade é que a API também faz o parsing automático quando possível de dados como Telefone, URL, vCards, e-mails, geolocalização entre outros.
+
+```javascript
+const barcodeDetector = new BarcodeDetector({
+  formats: [
+    'code_128',
+    'code_39',
+    'qr_code',
+    ...
+  ]
+});
+
+const barcodes = await barcodeDetector.detect(img);
+```
+
+ 👉 E apesar dessa API já ser suportada no [Chrome e no Edge,](https://caniuse.com/mdn-api_barcodedetector) vale acompanhar a evolução dela em outros browsers antes de adotá-la sem polyfills. 
+
+😋 Interessante, né? 
+
+</Drop>
