@@ -4,9 +4,13 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
+- type: directory
   path: content/drops
   label: Drops
+  create: documents
+  match: "**/*"
+  templates:
+  - drop
 upload_dir: ''
 public_path: ''
 front_matter_path: ''
