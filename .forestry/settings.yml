@@ -7,9 +7,6 @@ sections:
 - type: document
   path: content/drops
   label: Drops
-- type: document
-  path: ''
-  label: Home
 upload_dir: ''
 public_path: ''
 front_matter_path: ''
