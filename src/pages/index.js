@@ -43,10 +43,10 @@ const Home = (props) => {
 };
 
 export async function getStaticProps() {
-  const content = await import(`../content/pages/home.md`);
-  const data = matter(content.default);
+  const pageContent = await import(`../content/pages/home.md`);
+  const page = matter(pageContent.default).data;
   return {
-    props: { page: { ...data.data } },
+    props: { page },
   };
 }
 
