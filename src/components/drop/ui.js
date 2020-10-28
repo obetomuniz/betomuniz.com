@@ -4,15 +4,15 @@ import { rem } from "polished";
 export const Title = styled.h1`
   font-family: var(--FONT_FAMILY);
   color: var(--PRIMARY_COLOR);
-  font-size: ${rem("40px")};
-  line-height: ${rem("64px")};
+  font-size: ${rem("46px")};
+  line-height: ${rem("70px")};
   text-align: center;
   font-weight: 700;
-  margin-bottom: calc(var(--HORIZONTAL_MARGIN) / 3);
+  margin-bottom: calc(var(--HORIZONTAL_MARGIN) / 3.5);
 
   @media screen and (max-width: 550px) {
-    font-size: ${rem("32px")};
-    line-height: ${rem("40px")};
+    font-size: ${rem("38px")};
+    line-height: ${rem("46px")};
   }
 `;
 
@@ -53,6 +53,11 @@ const commonArticleStyles = css`
 `;
 
 export const Article = styled.article`
+  border: ${rem("1px")} solid var(--BORDER_COLOR);
+  border-radius: ${rem("5px")};
+  padding: var(--LINE_BREAK_SPACE) var(--LINE_BREAK_SPACE) 0
+    var(--LINE_BREAK_SPACE);
+
   /* Titles */
   h2 {
     color: var(--BLACK_COLOR);
@@ -175,6 +180,15 @@ export const Article = styled.article`
   > pre {
     margin: 0 0 var(--LINE_BREAK_SPACE) 0 !important;
     border-radius: ${rem("5px")} !important;
+  }
+
+  @media screen and (max-width: 550px) {
+    border: 0;
+    border-top: ${rem("1px")} solid var(--BORDER_COLOR);
+    border-bottom: ${rem("1px")} solid var(--BORDER_COLOR);
+    border-radius: 0;
+    padding: var(--HORIZONTAL_MARGIN) 0
+      calc(var(--HORIZONTAL_MARGIN) - var(--LINE_BREAK_SPACE));
   }
 `;
 export const Metadata = styled.small`

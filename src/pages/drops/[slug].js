@@ -2,8 +2,8 @@ import glob from "glob";
 import { NextSeo } from "next-seo";
 import matter from "gray-matter";
 
-import { Container } from "../../styles/pages/drop";
-import { Layout, Drop } from "../../components";
+import { Container, SocialsContainer } from "../../styles/pages/drop";
+import { Layout, Socials, Drop } from "../../components";
 
 const DropPage = (props) => {
   const {
@@ -13,6 +13,11 @@ const DropPage = (props) => {
     },
     slug,
   } = props;
+  const socials = () => (
+    <SocialsContainer>
+      <Socials />
+    </SocialsContainer>
+  );
 
   let customTitle = title;
 
@@ -29,7 +34,7 @@ const DropPage = (props) => {
         keywords={keywords.join(", ")}
       />
 
-      <Layout>
+      <Layout socials={socials}>
         <Container>
           <Drop content={content} metadata={props.page.data} />
         </Container>

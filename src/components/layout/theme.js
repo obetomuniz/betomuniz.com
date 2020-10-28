@@ -27,6 +27,7 @@ export default createGlobalStyle`
     --WHITE_COLOR: white;
     --BLACK_COLOR: #22212C;
     --BLACK_SHADOW_COLOR: black;
+    --BORDER_COLOR: #ddd;
 
         /* Layout */
     --HORIZONTAL_MARGIN: 5rem;
