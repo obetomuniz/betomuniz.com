@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/content/pages/home.md
   label: Home
-  read_only: false
 - type: directory
   path: src/content/drops
   label: Drops
