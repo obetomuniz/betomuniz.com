@@ -35,7 +35,8 @@ fields:
     required: true
     date_format: DD/MM/YYYY
     time_format: ''
-    display_utc: false
+    display_utc: true
+    export_format: YYYY-MM-DD h:mm A ZZ
   default: now
 - name: drop_featured
   type: file
