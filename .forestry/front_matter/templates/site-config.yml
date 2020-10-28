@@ -1,4 +1,27 @@
 ---
 label: Site Config
 hide_body: true
-fields: []
+fields:
+- name: google_analytics_id
+  type: text
+  config:
+    required: false
+  label: Google Analytics ID
+- name: site_url
+  type: text
+  config:
+    required: false
+  label: Site URL
+  default: https://betomuniz.com
+- name: author_name
+  type: text
+  config:
+    required: false
+  label: Author Name
+  default: Beto Muniz
+- name: author_username
+  type: text
+  config:
+    required: false
+  label: Author Username
+  default: obetomuniz
