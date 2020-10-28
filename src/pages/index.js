@@ -41,7 +41,7 @@ const Home = (props) => {
 
       <Layout containerAs="main">
         <Container>
-          <ReactMarkdown children={content} />
+          <ReactMarkdown allowDangerousHtml children={content} />
         </Container>
       </Layout>
     </>
