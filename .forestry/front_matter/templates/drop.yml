@@ -6,19 +6,27 @@ fields:
   type: text
   config:
     required: true
+    min: 1
+    max: 60
   label: Title
 - name: drop_subtitle
   type: text
   config:
     required: false
-    min: 5
-    max: 120
+    min: 1
+    max: 60
   label: Subtitle
-- name: drop_featured
-  type: file
+- name: drop_description
+  type: textarea
+  default: ''
   config:
-    maxSize: 64
-  label: Featured
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 155
+    min: 1
+  label: Description
 - name: drop_publish_date
   type: datetime
   label: Publish Date
@@ -29,6 +37,11 @@ fields:
     time_format: ''
     display_utc: false
   default: now
+- name: drop_featured
+  type: file
+  config:
+    maxSize: 64
+  label: Featured
 - name: drop_keywords
   type: tag_list
   default: []
