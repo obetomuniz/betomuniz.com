@@ -2,14 +2,14 @@
 label: Landing Page
 hide_body: true
 fields:
-- name: landing_page_title
+- name: title
   type: text
   config:
     required: true
     min: 1
     max: 60
   label: Title
-- name: landing_page_description
+- name: description
   type: textarea
   default: ''
   config:
@@ -20,7 +20,7 @@ fields:
     min: 1
     max: 155
   label: Description
-- name: landing_page_content
+- name: content
   type: textarea
   default: ''
   config:
@@ -29,12 +29,12 @@ fields:
     schema:
       format: markdown
   label: Content
-- name: landing_page_keywords
+- name: keywords
   type: tag_list
   default: []
   label: Keywords
   description: Up to 5
-- name: landing_page_canonical
+- name: canonical
   type: text
   config:
     required: false
