@@ -1,13 +1,14 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "betomuniz.com",
+  "version": "4.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "deploy": "next build && next export"
+    "dev": "next dev src",
+    "build": "next build src",
+    "start": "next start src",
+    "export": "next export src",
+    "deploy": "npm run build && npm run export",
+    "forestry-preview": "next src -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
     "next": "9.5.3",
