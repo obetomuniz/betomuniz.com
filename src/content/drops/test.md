@@ -8,7 +8,7 @@ language: pt
 title: Test
 subtitle: Test
 description: A new test
-featured: "/v1603811465/Titulo_Image_uyo7rz.jpg"
+featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1603811465/Titulo_Image_uyo7rz.jpg
 
 ---
 # title
@@ -47,7 +47,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet feugiat su
 * Item
 * ~~Item~~
 
-![](/v1603851526/Screen_Shot_2020-10-27_at_11.50.02_nedpsd.png)
+![](https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1603811465/Titulo_Image_uyo7rz.jpg)
 
 [Link]()
 
