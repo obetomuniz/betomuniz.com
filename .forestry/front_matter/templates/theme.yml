@@ -8,5 +8,3 @@ fields:
   config:
     required: false
     color_format: Hex
-pages:
-- src/content/theme.md

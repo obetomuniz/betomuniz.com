@@ -17,10 +17,10 @@ sections:
   path: src/content/pages/home.md
   label: Home
 - type: heading
-  label: Site
+  label: Config
 - type: document
   path: src/metadata/site.json
-  label: Config
+  label: Site
 - type: document
   path: src/metadata/theme.json
   label: Theme

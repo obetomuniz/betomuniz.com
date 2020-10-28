@@ -31,5 +31,3 @@ fields:
     required: false
   label: Gravatar
   default: https://www.gravatar.com/avatar/fff7258836f20ea66b061b49a51fe8dd?s=170
-pages:
-- src/content/config.md
