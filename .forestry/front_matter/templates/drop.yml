@@ -46,6 +46,7 @@ fields:
   type: tag_list
   default: []
   label: Keywords
+  description: Up to 5
 - name: drop_category
   type: select
   default: tech
