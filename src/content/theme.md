@@ -1,0 +1,4 @@
+---
+theme_primary_color: "#663399"
+
+---
