@@ -1,15 +1,29 @@
 import { NextSeo } from "next-seo";
 import matter from "gray-matter";
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import ReactMarkdown from "react-markdown";
+import { rem } from "polished";
 
-const GlobalStyle = createGlobalStyle`
- h1 {
-   font-size: 4rem;
- }
-`;
+import { Layout } from "../components";
+
 const Container = styled.div`
   text-align: center;
+  width: 550px;
+  margin: 0 auto;
+  p {
+    font-size: ${rem("18px")};
+    line-height: 2.8rem;
+
+    &:first-child {
+      &:first-letter {
+        font-size: ${rem("32px")};
+      }
+    }
+  }
+
+  a {
+    font-weight: bold;
+  }
 `;
 
 const Home = (props) => {
@@ -25,10 +39,11 @@ const Home = (props) => {
         keywords={keywords.join(", ")}
       />
 
-      <Container>
-        <GlobalStyle />
-        <ReactMarkdown children={content} />
-      </Container>
+      <Layout containerAs="main">
+        <Container>
+          <ReactMarkdown children={content} />
+        </Container>
+      </Layout>
     </>
   );
 };
