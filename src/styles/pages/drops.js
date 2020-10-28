@@ -13,32 +13,12 @@ export const SocialsContainer = styled.div`
   }
 `;
 
-export const Container = styled.main`
-  text-align: center;
+export const Container = styled.section`
   width: 550px;
   margin: 0 auto;
-  p {
-    font-size: ${rem("18px")};
-    line-height: ${rem("44px")};
-
-    &:first-child {
-      &:first-letter {
-        font-size: ${rem("32px")};
-      }
-    }
-  }
-
-  a {
-    font-weight: bold;
-  }
 
   @media screen and (max-width: 550px) {
     width: 100%;
-
-    p {
-      font-size: ${rem("16px")};
-      line-height: ${rem("30px")};
-    }
   }
 `;
 
