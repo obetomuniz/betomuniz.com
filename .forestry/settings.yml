@@ -5,6 +5,9 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: src/content/config.md
+  label: Config
+- type: document
   path: src/content/pages/home.md
   label: Home
 - type: directory
