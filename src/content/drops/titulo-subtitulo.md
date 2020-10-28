@@ -12,5 +12,6 @@ drop_title: Titulo
 drop_subtitle: Subtitulo
 drop_description: Descrição
 drop_featured: "/v1603851526/Screen_Shot_2020-10-27_at_11.50.02_nedpsd.png"
+drop_draft: true
 
 ---
