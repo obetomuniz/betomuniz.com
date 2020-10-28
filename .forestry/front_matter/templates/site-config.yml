@@ -20,13 +20,6 @@ fields:
     required: false
   label: Site Username
   default: obetomuniz
-- name: config_primary_color
-  type: color
-  label: Primary Color
-  config:
-    required: false
-    color_format: Hex
-  default: "#663399"
 - name: config_google_analytics_id
   type: text
   config:
