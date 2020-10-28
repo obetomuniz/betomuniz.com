@@ -2,25 +2,25 @@
 label: Drop
 hide_body: false
 fields:
-- name: drop_draft
+- name: draft
   type: boolean
   label: Draft
   default: true
-- name: drop_title
+- name: title
   type: text
   config:
     required: true
     min: 1
     max: 60
   label: Title
-- name: drop_subtitle
+- name: subtitle
   type: text
   config:
     required: false
     min: 1
     max: 60
   label: Subtitle
-- name: drop_description
+- name: description
   type: textarea
   default: ''
   config:
@@ -31,7 +31,7 @@ fields:
     max: 155
     min: 1
   label: Description
-- name: drop_publish_date
+- name: publish_date
   type: datetime
   label: Publish Date
   description: ''
@@ -42,17 +42,17 @@ fields:
     display_utc: true
     export_format: YYYY-MM-DD h:mm A ZZ
   default: now
-- name: drop_featured
+- name: featured
   type: file
   config:
     maxSize: 64
   label: Featured
-- name: drop_keywords
+- name: keywords
   type: tag_list
   default: []
   label: Keywords
   description: Up to 5
-- name: drop_category
+- name: category
   type: select
   default: tech
   config:
@@ -68,7 +68,7 @@ fields:
       file: 
       path: 
   label: Category
-- name: drop_language
+- name: language
   type: select
   default: pt
   config:
