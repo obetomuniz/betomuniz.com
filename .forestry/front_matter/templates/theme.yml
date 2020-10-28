@@ -1,8 +1,8 @@
 ---
-label: Theme
+label: Theme Config
 hide_body: true
 fields:
-- name: theme_primary_color
+- name: primary_color
   type: color
   label: Primary Color
   config:
