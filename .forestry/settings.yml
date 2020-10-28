@@ -4,12 +4,8 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: src/content/config.md
-  label: Config
-- type: document
-  path: src/content/pages/home.md
-  label: Home
+- type: heading
+  label: Content
 - type: directory
   path: src/content/drops
   label: Drops
@@ -17,6 +13,18 @@ sections:
   match: "**/*"
   templates:
   - drop
+- type: document
+  path: src/content/pages/home.md
+  label: Home
+- type: heading
+  label: Site
+- type: document
+  path: src/content/config.md
+  label: Config
+- type: document
+  path: src/content/theme.md
+  label: Theme
+  match: "**/*"
 upload_dir: ''
 public_path: ''
 front_matter_path: ''
