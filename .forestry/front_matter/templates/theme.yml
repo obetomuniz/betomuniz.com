@@ -1,6 +1,6 @@
 ---
 label: Theme
-hide_body: false
+hide_body: true
 fields:
 - name: theme_primary_color
   type: color
