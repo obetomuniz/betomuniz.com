@@ -7,11 +7,12 @@ import {
   Container,
   NewsletterContainer,
 } from "../../styles/pages/drops";
-import { Socials, Layout, Newsletter } from "../../components";
+import { Socials, Layout, Newsletter, SimpleFeed } from "../../components";
 
 const Drops = (props) => {
   const {
     page: { title, description, keywords, canonical },
+    drops,
   } = props;
   const socials = () => (
     <SocialsContainer>
@@ -34,7 +35,9 @@ const Drops = (props) => {
       />
 
       <Layout socials={socials} bottomNewsletter={bottomNewsletter}>
-        <Container>Drops!</Container>
+        <Container>
+          <SimpleFeed feed={drops} />
+        </Container>
       </Layout>
     </>
   );
