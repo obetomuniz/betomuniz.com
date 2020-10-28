@@ -27,7 +27,7 @@ drop_draft: true
 
 ###### title
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet feugiat suscipit. In non velit turpis. **Donec placerat** dui sed nisl molestie, non laoreet felis porta. _Interdum et_ \~\~malesuada\~\~ fames ac ante ipsum primis in faucibus. Integer fermentum ex sed enim accumsan, et [hendrerit]() sem viverra. Maecenas non dui eget ante blandit gravida finibus et lorem.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet feugiat suscipit. In non velit turpis. **Donec placerat** dui sed nisl molestie, non laoreet felis porta. _Interdum et_ ~~malesuada~~ fames ac ante ipsum primis in faucibus. Integer fermentum ex sed enim accumsan, et [hendrerit]() sem viverra. Maecenas non dui eget ante blandit gravida finibus et lorem.
 
 ```javascript
 const bottomNewsletter = () => (
@@ -37,12 +37,13 @@ const bottomNewsletter = () => (
 );
 ```
 
-> Lorem ipsum [dolor]() sit amet, consectetur adipiscing elit.
+> Lorem ipsum [dolor]() sit amet, ~~consectetur~~ adipiscing elit.
 
 1. **Item 1**
 2. [Item 2 ]()
 3. _Item 3_
 4. Item 4
+5. ~~Item 5~~
 
 ***
 
@@ -50,6 +51,7 @@ const bottomNewsletter = () => (
 * _Item_
 * [Item]()
 * Item
+* ~~Item~~
 
 ![](/v1603851526/Screen_Shot_2020-10-27_at_11.50.02_nedpsd.png)
 

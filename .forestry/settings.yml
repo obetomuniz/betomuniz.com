@@ -15,7 +15,11 @@ sections:
   - drop
 - type: document
   path: src/content/pages/home.md
-  label: Home
+  label: Home Page
+- type: document
+  path: src/content/pages/drops.md
+  label: Drops Page
+  match: "**/*"
 - type: heading
   label: Config
 - type: document
