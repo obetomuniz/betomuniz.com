@@ -5,7 +5,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 550px;
 
   @media screen and (max-width: 550px) {
     flex-direction: column;

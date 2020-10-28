@@ -3,7 +3,7 @@ import { NextSeo } from "next-seo";
 import matter from "gray-matter";
 
 import { Container } from "../../styles/pages/drop";
-import { Drop } from "../../components";
+import { Layout, Drop } from "../../components";
 
 const DropPage = (props) => {
   const {
@@ -29,9 +29,11 @@ const DropPage = (props) => {
         keywords={keywords.join(", ")}
       />
 
-      <Container>
-        <Drop content={content} />
-      </Container>
+      <Layout>
+        <Container>
+          <Drop content={content} />
+        </Container>
+      </Layout>
     </>
   );
 };

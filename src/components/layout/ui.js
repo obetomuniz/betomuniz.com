@@ -49,9 +49,7 @@ export const NormalizedStyles = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  width: 765px;
   margin: var(--HORIZONTAL_MARGIN) auto;
-  padding: 0 20px;
 
   @media screen and (max-width: 550px) {
     width: 100%;

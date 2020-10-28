@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  width: 765px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -26,6 +25,7 @@ export const Photo = styled.a`
   border-radius: 100%;
   position: relative;
   box-shadow: 3px 3px 0 1px var(--BLACK_SHADOW_COLOR);
+  cursor: pointer;
 `;
 
 export const PhotoImage = styled.img`

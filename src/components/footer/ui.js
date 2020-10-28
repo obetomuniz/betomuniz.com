@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { rem } from "polished";
 
 export const Container = styled.footer`
-  width: 765px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
