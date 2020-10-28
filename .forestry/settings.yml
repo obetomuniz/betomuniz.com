@@ -19,10 +19,10 @@ sections:
 - type: heading
   label: Site
 - type: document
-  path: src/content/config.md
+  path: src/metadata/site.json
   label: Config
 - type: document
-  path: src/content/theme.md
+  path: src/metadata/theme.json
   label: Theme
 upload_dir: ''
 public_path: ''
