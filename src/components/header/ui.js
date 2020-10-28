@@ -8,7 +8,7 @@ export const Container = styled.header`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 550px) {
     width: 100%;
     padding: 0 10%;
   }
@@ -25,7 +25,7 @@ export const Photo = styled.a`
   display: block;
   border-radius: 100%;
   position: relative;
-  box-shadow: 3px 3px 0 1px var(--BLACK_COLOR);
+  box-shadow: 3px 3px 0 1px var(--BLACK_SHADOW_COLOR);
 `;
 
 export const PhotoImage = styled.img`

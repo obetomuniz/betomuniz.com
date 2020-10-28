@@ -22,7 +22,7 @@ export const NormalizedStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     background-color: var(--BACKGROUND_COLOR);
-    font-family: var(--SAN_SERIF_FONTS);
+    font-family: var(--FONT_FAMILY);
   }
   #__next {
     display: flex;
@@ -30,6 +30,11 @@ export const NormalizedStyles = createGlobalStyle`
     min-height: 100vh;
     -webkit-box-pack: center;
     justify-content: center;
+    padding: var(--HORIZONTAL_MARGIN) 0;
+    
+    @media screen and (max-width: 550px) {
+      padding: var(--HORIZONTAL_MARGIN_MOBILE) 0;
+    }
   }
   .sro {
     position: absolute;
@@ -45,11 +50,12 @@ export const NormalizedStyles = createGlobalStyle`
 
 export const Container = styled.div`
   width: 765px;
-  margin: 0 auto;
-  padding: var(--HORIZONTAL_MARGIN) 20px;
+  margin: var(--HORIZONTAL_MARGIN) auto;
+  padding: 0 20px;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 550px) {
     width: 100%;
+    margin: var(--HORIZONTAL_MARGIN_MOBILE) auto;
     padding: 0 10%;
   }
 

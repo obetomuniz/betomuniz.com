@@ -1,6 +1,6 @@
 import { Container, Photo, PhotoImage } from "./ui";
 
-const Header = () => {
+const Header = ({ children }) => {
   return (
     <Container>
       <Photo to="/">
@@ -12,6 +12,8 @@ const Header = () => {
           height="80"
         />
       </Photo>
+
+      {children}
     </Container>
   );
 };

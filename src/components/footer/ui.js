@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { rem } from "polished";
 
 export const Container = styled.footer`
   width: 765px;
@@ -8,7 +9,7 @@ export const Container = styled.footer`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 550px) {
     width: 100%;
     padding: 0 10%;
   }
@@ -20,8 +21,12 @@ export const Container = styled.footer`
 `;
 
 export const Copyright = styled.small`
-  font-size: 0.7rem;
+  font-size: ${rem("12px")};
   a {
     font-weight: bold;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: ${rem("10px")};
   }
 `;

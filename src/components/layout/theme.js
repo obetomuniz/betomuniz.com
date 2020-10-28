@@ -3,16 +3,10 @@ import { rgba } from "polished";
 
 export default createGlobalStyle`
   :root {
-    /* Layout */
-    --HORIZONTAL_MARGIN: 5rem;
-    --HORIZONTAL_MARGIN_MOBILE: 3rem;
-
-    /* Typo */
-    --SAN_SERIF_FONTS: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-
     /* Colors */
     --BACKGROUND_COLOR: white;
     --PRIMARY_COLOR: rebeccapurple;
+    --SECONDARY_COLOR: #9900FF;
     --TITLE_COLOR: rebeccapurple;
     --TEXT_COLOR: black;
     --lINK_COLOR: ${rgba("black", 0.4)};
@@ -28,6 +22,16 @@ export default createGlobalStyle`
     --INSTAGRAM_COLOR: #c13584;
     --YOUTUBE_COLOR: red;
     --PURPLE_NEON_COLOR: blueviolet;
-    --BLACK_COLOR: black;
+    --WHITE_COLOR: white;
+    --BLACK_COLOR: #22212C;
+    --BLACK_SHADOW_COLOR: black;
+
+        /* Layout */
+    --HORIZONTAL_MARGIN: 5rem;
+    --HORIZONTAL_MARGIN_MOBILE: 3rem;
+
+    /* Typo */
+    --FONT_FAMILY: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+
   }
 `;

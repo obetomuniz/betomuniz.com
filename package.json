@@ -13,6 +13,7 @@
   "dependencies": {
     "gray-matter": "^4.0.2",
     "next": "9.5.3",
+    "next-images": "^1.6.2",
     "next-seo": "^4.14.0",
     "polished": "^4.0.3",
     "raw-loader": "^4.0.2",
@@ -22,6 +23,7 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.1",
     "babel-plugin-styled-components": "^1.11.1"
   }
 }
