@@ -4,7 +4,7 @@ const Drops = () => {
   return (
     <div>
       <Head>
-        <title>Beto Muniz</title>
+        <title>Drops | Beto Muniz</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
