@@ -27,20 +27,24 @@ drop_draft: true
 
 ###### title
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet feugiat suscipit. In non velit turpis. **Donec placerat** dui sed nisl molestie, non laoreet felis porta. _Interdum et_ malesuada fames ac ante ipsum primis in faucibus. Integer fermentum ex sed enim accumsan, et [hendrerit]() sem viverra. Maecenas non dui eget ante blandit gravida finibus et lorem.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet feugiat suscipit. In non velit turpis. **Donec placerat** dui sed nisl molestie, non laoreet felis porta. _Interdum et_ \~\~malesuada\~\~ fames ac ante ipsum primis in faucibus. Integer fermentum ex sed enim accumsan, et [hendrerit]() sem viverra. Maecenas non dui eget ante blandit gravida finibus et lorem.
 
-      const bottomNewsletter = () => (
-        <NewsletterContainer>
-          <Newsletter />
-        </NewsletterContainer>
-      );
+```javascript
+const bottomNewsletter = () => (
+  <NewsletterContainer>
+    <Newsletter />
+  </NewsletterContainer>
+);
+```
 
-> Lorem ipsum [dolor]() sit amet, consectetur adipiscing elit. 
+> Lorem ipsum [dolor]() sit amet, consectetur adipiscing elit.
 
 1. **Item 1**
 2. [Item 2 ]()
 3. _Item 3_
 4. Item 4
+
+***
 
 * **Item**
 * _Item_
