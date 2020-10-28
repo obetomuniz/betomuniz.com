@@ -28,7 +28,7 @@ sections:
   path: src/metadata/theme.json
   label: Theme
 upload_dir: ''
-public_path: ''
+public_path: https://res.cloudinary.com/beto-muniz/image/upload/f_auto
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
