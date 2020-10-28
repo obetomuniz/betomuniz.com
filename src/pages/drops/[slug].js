@@ -37,7 +37,7 @@ export async function getStaticProps({ params: { slug } }) {
   const content = await import(`../../content/drops/${slug}.md`);
   const data = matter(content.default);
   return {
-    props: { ...data },
+    props: { page: { ...data } },
   };
 }
 

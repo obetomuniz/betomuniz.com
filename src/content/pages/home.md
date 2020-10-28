@@ -1,17 +1,16 @@
 ---
-landing_page_title: Beto Muniz
-landing_page_content: |-
+title: Beto Muniz
+content: |-
   I'm Beto Muniz, a Front-End Engineer who lives in Belo Horizonte, Brazil.
 
   Inspired by web technologies, I am always contributing to the community with [**texts**](https://betomuniz.com/drops/), [**videos**](https://www.youtube.com/c/betomuniz), [**projects**](https://github.com/obetomuniz), and [**talks**](https://speakerdeck.com/obetomuniz/).
-landing_page_description: Beto Muniz is a Front-End Engineer who lives in Belo Horizonte,
+description: Beto Muniz is a Front-End Engineer who lives in Belo Horizonte,
   Brazil.
-landing_page_keywords:
-- beto muniz
-- frontend
-- engineer
-- belo horizonte
-- web developer
-landing_page_canonical: https://betomuniz.com
-
+keywords:
+  - beto muniz
+  - frontend
+  - engineer
+  - belo horizonte
+  - web developer
+canonical: https://betomuniz.com
 ---
