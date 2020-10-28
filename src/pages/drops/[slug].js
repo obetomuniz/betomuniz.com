@@ -1,4 +1,8 @@
+import glob from "glob";
 import Head from "next/head";
+import matter from "gray-matter";
+
+const CONTENT_PATH = `src/content/drops`;
 
 const Drop = () => {
   return (
@@ -15,15 +19,26 @@ const Drop = () => {
   );
 };
 
-// Drop.getInitialProps = async function (ctx) {
-//   const { slug } = ctx.query;
-//   const content = await import(`../../posts/${slug}.md`);
-//   const config = await import(`../../data/config.json`);
-//   const data = matter(content.default);
-//   return {
-//     siteTitle: config.title,
-//     ...data,
-//   };
-// };
+export async function getStaticPaths() {
+  const files = glob.sync(`${CONTENT_PATH}/**/*.md`);
+  const slugs = files.map((file) =>
+    file.replace(`${CONTENT_PATH}/`, "").replace(`.md`, "")
+  );
+  const paths = slugs.map((slug) => {
+    return { params: { slug } };
+  });
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params: { slug } }) {
+  const content = await import(`../../content/drops/${slug}.md`);
+  const data = matter(content.default);
+  return {
+    props: { ...data },
+  };
+}
 
 export default Drop;
