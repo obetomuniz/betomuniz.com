@@ -8,7 +8,6 @@ export const SocialsContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 550px) {
-    margin: var(--HORIZONTAL_MARGIN_MOBILE) auto 0;
     width: 100%;
   }
 `;
@@ -47,7 +46,6 @@ export const NewsletterContainer = styled.div`
   margin: 0 auto var(--HORIZONTAL_MARGIN);
 
   @media screen and (max-width: 550px) {
-    margin: 0 auto var(--HORIZONTAL_MARGIN_MOBILE);
     width: 100%;
   }
 `;

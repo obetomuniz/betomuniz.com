@@ -10,7 +10,7 @@ export const Container = styled.li`
   }
 
   @media screen and (max-width: 550px) {
-    margin: calc(var(--HORIZONTAL_MARGIN_MOBILE) / 2.5) 0 0;
+    margin: 1.2rem 0 0;
   }
 `;
 

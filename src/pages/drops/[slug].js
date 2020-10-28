@@ -31,7 +31,7 @@ const DropPage = (props) => {
 
       <Layout>
         <Container>
-          <Drop content={content} />
+          <Drop content={content} metadata={props.page.data} />
         </Container>
       </Layout>
     </>

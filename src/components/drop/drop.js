@@ -1,8 +1,16 @@
-import { Container } from "./ui";
 import ReactMarkdown from "react-markdown/with-html";
 import gfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+
+import {
+  Title,
+  Subtitle,
+  Metadata,
+  Category,
+  PublishDate,
+  Article,
+} from "./ui";
 
 const renderers = {
   code: ({ language, value }) => {
@@ -12,16 +20,32 @@ const renderers = {
   },
 };
 
-const Drop = ({ content }) => {
+const Drop = ({ content, metadata }) => {
+  console.log(metadata);
+  const { title, subtitle, category, publish_date } = metadata;
   return (
-    <Container>
-      <ReactMarkdown
-        renderers={renderers}
-        plugins={[gfm]}
-        allowDangerousHtml
-        children={content}
-      />
-    </Container>
+    <>
+      <Title>
+        {title} {subtitle && <Subtitle>{subtitle}</Subtitle>}
+      </Title>
+
+      <Metadata>
+        <Category color={`--CATEGORY_${category.toUpperCase()}_COLOR`}>
+          {category}
+        </Category>
+        {" ᐧ "}
+        <PublishDate>{new Date(publish_date).getUTCFullYear()}</PublishDate>
+      </Metadata>
+
+      <Article>
+        <ReactMarkdown
+          renderers={renderers}
+          plugins={[gfm]}
+          allowDangerousHtml
+          children={content}
+        />
+      </Article>
+    </>
   );
 };
 

@@ -31,10 +31,6 @@ export const NormalizedStyles = createGlobalStyle`
     -webkit-box-pack: center;
     justify-content: center;
     padding: var(--HORIZONTAL_MARGIN) 0;
-    
-    @media screen and (max-width: 550px) {
-      padding: var(--HORIZONTAL_MARGIN_MOBILE) 0;
-    }
   }
   .sro {
     position: absolute;
@@ -53,7 +49,6 @@ export const Container = styled.div`
 
   @media screen and (max-width: 550px) {
     width: 100%;
-    margin: var(--HORIZONTAL_MARGIN_MOBILE) auto;
     padding: 0 10%;
   }
 
