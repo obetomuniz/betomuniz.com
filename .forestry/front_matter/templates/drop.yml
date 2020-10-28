@@ -83,4 +83,5 @@ fields:
       path: 
   label: Language
 pages:
+- src/content/drops/test.md
 - src/content/drops/titulo-subtitulo.md
