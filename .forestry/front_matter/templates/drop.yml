@@ -78,3 +78,5 @@ fields:
       file: 
       path: 
   label: Language
+pages:
+- src/content/drops/titulo-subtitulo.md
