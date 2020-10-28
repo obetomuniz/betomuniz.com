@@ -2,30 +2,30 @@
 label: Site Config
 hide_body: true
 fields:
-- name: config_site_name
+- name: site_name
   type: text
   config:
     required: false
   label: Site Name
   default: Beto Muniz
-- name: config_site_url
+- name: site_url
   type: text
   config:
     required: false
   label: Site URL
   default: https://betomuniz.com
-- name: config_site_username
+- name: site_username
   type: text
   config:
     required: false
   label: Site Username
   default: obetomuniz
-- name: config_google_analytics_id
+- name: google_analytics_id
   type: text
   config:
     required: false
   label: Google Analytics ID
-- name: config_gravatar
+- name: gravatar
   type: text
   config:
     required: false
