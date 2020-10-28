@@ -1,21 +1,38 @@
 import glob from "glob";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import matter from "gray-matter";
 
-const CONTENT_PATH = `src/content/drops`;
+import { Container } from "../../styles/pages/drop";
+import { Drop } from "../../components";
 
-const Drop = () => {
+const DropPage = (props) => {
+  const {
+    page: {
+      content,
+      data: { title, subtitle, description, keywords },
+    },
+    slug,
+  } = props;
+
+  let customTitle = title;
+
+  if (subtitle) {
+    customTitle = `${customTitle}: ${subtitle}`;
+  }
+
   return (
-    <div>
-      <Head>
-        <title>Drop | Beto Muniz</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <NextSeo
+        title={customTitle}
+        description={description}
+        canonical={`https://betomuniz.com/drops/${slug}`}
+        keywords={keywords.join(", ")}
+      />
 
-      <main>
-        <h1>Drop Page!</h1>
-      </main>
-    </div>
+      <Container>
+        <Drop content={content} />
+      </Container>
+    </>
   );
 };
 
@@ -36,10 +53,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const content = await import(`../../content/drops/${slug}.md`);
-  const data = matter(content.default);
+  const page = matter(content.default);
+  delete page.orig;
   return {
-    props: { page: { ...data } },
+    props: { page, slug },
   };
 }
 
-export default Drop;
+export default DropPage;

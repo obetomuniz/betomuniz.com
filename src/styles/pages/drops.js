@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { rem } from "polished";
 
 export const SocialsContainer = styled.div`
   width: 550px;
