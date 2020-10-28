@@ -40,4 +40,5 @@ fields:
     required: false
   label: Canonical
 pages:
+- src/content/pages/drops.md
 - src/content/pages/home.md
