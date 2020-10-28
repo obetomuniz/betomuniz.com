@@ -13,7 +13,7 @@ export const SocialsContainer = styled.div`
   }
 `;
 
-export const About = styled.main`
+export const Container = styled.main`
   text-align: center;
   width: 550px;
   margin: 0 auto;

@@ -4,16 +4,14 @@ import matter from "gray-matter";
 
 import {
   SocialsContainer,
-  About,
+  Container,
   NewsletterContainer,
 } from "../../styles/pages/drops";
 import { Socials, Layout, Newsletter } from "../../components";
 
-const CONTENT_PATH = `src/content/drops`;
-
 const Drops = (props) => {
   const {
-    page: { title, description, keywords, canonical, content },
+    page: { title, description, keywords, canonical },
   } = props;
   const socials = () => (
     <SocialsContainer>
@@ -36,15 +34,14 @@ const Drops = (props) => {
       />
 
       <Layout socials={socials} bottomNewsletter={bottomNewsletter}>
-        <About>
-          <ReactMarkdown allowDangerousHtml children={content} />
-        </About>
+        <Container>Drops!</Container>
       </Layout>
     </>
   );
 };
 
 export async function getStaticProps() {
+  const CONTENT_PATH = `src/content/drops`;
   const pageContent = await import(`../../content/pages/drops.md`);
   const page = matter(pageContent.default).data;
   const dropFiles = glob.sync(`${CONTENT_PATH}/**/*.md`);

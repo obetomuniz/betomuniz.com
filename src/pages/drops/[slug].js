@@ -20,6 +20,7 @@ const Drop = () => {
 };
 
 export async function getStaticPaths() {
+  const CONTENT_PATH = `src/content/drops`;
   const files = glob.sync(`${CONTENT_PATH}/**/*.md`);
   const slugs = files.map((file) =>
     file.replace(`${CONTENT_PATH}/`, "").replace(`.md`, "")
