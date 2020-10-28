@@ -1,4 +1,10 @@
 ---
 label: Theme
 hide_body: false
-fields: []
+fields:
+- name: theme_primary_color
+  type: color
+  label: Primary Color
+  config:
+    required: false
+    color_format: Hex
