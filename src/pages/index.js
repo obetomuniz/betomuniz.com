@@ -1,6 +1,7 @@
 import { NextSeo } from "next-seo";
 import matter from "gray-matter";
 import styled, { createGlobalStyle } from "styled-components";
+import ReactMarkdown from "react-markdown";
 
 const GlobalStyle = createGlobalStyle`
  h1 {
@@ -11,15 +12,22 @@ const Container = styled.div`
   text-align: center;
 `;
 
-const Home = ({ page }) => {
-  console.log(page);
+const Home = (props) => {
+  const {
+    page: { title, description, keywords, canonical, content },
+  } = props;
   return (
     <>
-      <NextSeo title="Beto Muniz" />
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords.join(", ")}
+      />
 
       <Container>
         <GlobalStyle />
-        <h1>Hello, world!</h1>
+        <ReactMarkdown children={content} />
       </Container>
     </>
   );
