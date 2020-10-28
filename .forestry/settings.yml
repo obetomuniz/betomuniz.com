@@ -4,8 +4,12 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: src/content/pages/home.md
+  label: Home
+  match: "**/*"
 - type: directory
-  path: content/drops
+  path: src/content/drops
   label: Drops
   create: documents
   match: "**/*"

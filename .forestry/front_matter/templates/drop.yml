@@ -2,19 +2,64 @@
 label: Drop
 hide_body: false
 fields:
-- name: title
+- name: drop_title
   type: text
   config:
     required: true
   label: Title
-- name: content
-  type: textarea
-  default: ''
+- name: drop_subtitle
+  type: text
+  config:
+    required: false
+    min: 5
+    max: 120
+  label: Subtitle
+- name: drop_featured
+  type: file
+  config:
+    maxSize: 64
+  label: Featured
+- name: drop_publish_date
+  type: datetime
+  label: Publish Date
+  description: ''
   config:
     required: true
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Content
-pages:
-- content/drops/testing.md
+    date_format: DD/MM/YYYY
+    time_format: ''
+    display_utc: false
+  default: now
+- name: drop_keywords
+  type: tag_list
+  default: []
+  label: Keywords
+- name: drop_category
+  type: select
+  default: tech
+  config:
+    required: true
+    options:
+    - tech
+    - dev_lifestyle
+    - remote_work
+    - community
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: drop_language
+  type: select
+  default: pt
+  config:
+    required: false
+    options:
+    - pt
+    - en
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Language
