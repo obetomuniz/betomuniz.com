@@ -6,6 +6,7 @@ import Newsletter from "./newsletter/newsletter";
 import SimpleFeed from "./simple-feed/simple-feed";
 import SimpleFeedItem from "./simple-feed-item/simple-feed-item";
 import Drop from "./drop/drop";
+import DropCTACard from "./drop-cta-card/drop-cta-card";
 
 export {
   Layout,
@@ -16,4 +17,5 @@ export {
   SimpleFeed,
   SimpleFeedItem,
   Drop,
+  DropCTACard,
 };

@@ -30,7 +30,6 @@ export const NormalizedStyles = createGlobalStyle`
     min-height: 100vh;
     -webkit-box-pack: center;
     justify-content: center;
-    padding: var(--HORIZONTAL_MARGIN) 0;
   }
   .sro {
     position: absolute;
@@ -45,15 +44,10 @@ export const NormalizedStyles = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  margin: var(--HORIZONTAL_MARGIN) auto;
+  margin: 0 auto var(--HORIZONTAL_MARGIN);
 
   @media screen and (max-width: 550px) {
     width: 100%;
-    padding: 0 10%;
-  }
-
-  @media screen and (max-width: 320px) {
-    width: 300px;
-    padding: 0 10px;
+    padding: 0 4%;
   }
 `;

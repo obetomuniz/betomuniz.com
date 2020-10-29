@@ -31,7 +31,7 @@ const Drop = ({ content, metadata }) => {
 
       <Metadata>
         <Category color={`--CATEGORY_${category.toUpperCase()}_COLOR`}>
-          {category}
+          {category.replace("_", " ")}
         </Category>
         {" ᐧ "}
         <PublishDate>{new Date(publish_date).getUTCFullYear()}</PublishDate>

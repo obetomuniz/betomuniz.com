@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  margin: 0 auto;
+  margin: var(--HORIZONTAL_MARGIN) auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@ export const Container = styled.header`
 
   @media screen and (max-width: 550px) {
     width: 100%;
-    padding: 0 10%;
+    padding: 0 4%;
   }
 
   @media screen and (max-width: 320px) {

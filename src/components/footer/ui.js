@@ -3,19 +3,14 @@ import { rem } from "polished";
 
 export const Container = styled.footer`
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px var(--HORIZONTAL_MARGIN);
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media screen and (max-width: 550px) {
     width: 100%;
-    padding: 0 10%;
-  }
-
-  @media screen and (max-width: 320px) {
-    width: 300px;
-    padding: 0 10px;
+    padding: 0 4% var(--HORIZONTAL_MARGIN);
   }
 `;
 

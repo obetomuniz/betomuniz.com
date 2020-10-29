@@ -5,25 +5,16 @@ import matter from "gray-matter";
 import {
   SocialsContainer,
   Container,
+  StickyContainer,
   NewsletterContainer,
 } from "../../styles/pages/drops";
-import { Socials, Layout, Newsletter, SimpleFeed } from "../../components";
+import { Socials, Layout, SimpleFeed, Newsletter } from "../../components";
 
 const Drops = (props) => {
   const {
     page: { title, description, keywords, canonical },
     drops,
   } = props;
-  const socials = () => (
-    <SocialsContainer>
-      <Socials />
-    </SocialsContainer>
-  );
-  const bottomNewsletter = () => (
-    <NewsletterContainer>
-      <Newsletter />
-    </NewsletterContainer>
-  );
 
   return (
     <>
@@ -33,12 +24,21 @@ const Drops = (props) => {
         canonical={canonical}
         keywords={keywords.join(", ")}
       />
+      <SocialsContainer>
+        <Socials />
+      </SocialsContainer>
 
-      <Layout socials={socials} bottomNewsletter={bottomNewsletter}>
+      <Layout hideHeader>
         <Container>
           <SimpleFeed feed={drops} />
         </Container>
       </Layout>
+
+      <StickyContainer>
+        <NewsletterContainer>
+          <Newsletter />
+        </NewsletterContainer>
+      </StickyContainer>
     </>
   );
 };

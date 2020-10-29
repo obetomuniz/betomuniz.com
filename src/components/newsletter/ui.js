@@ -53,6 +53,7 @@ export const Input = styled.input`
     margin: 0 10px 10px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    box-shadow: none;
   }
 `;
 
@@ -80,6 +81,7 @@ export const Button = styled.button`
     margin: 0 auto;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    box-shadow: none;
   }
 `;
 

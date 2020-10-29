@@ -33,7 +33,7 @@ const Home = (props) => {
         keywords={keywords.join(", ")}
       />
 
-      <Layout socials={socials} bottomNewsletter={bottomNewsletter}>
+      <Layout showPhoto socials={socials} bottomNewsletter={bottomNewsletter}>
         <About>
           <ReactMarkdown allowDangerousHtml children={content} />
         </About>

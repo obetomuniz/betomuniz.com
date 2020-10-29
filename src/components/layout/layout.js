@@ -8,12 +8,13 @@ const Layout = ({
   containerAs = "div",
   socials,
   bottomNewsletter,
+  hideHeader,
 }) => {
   return (
     <>
       <Theme />
       <NormalizedStyles />
-      <Header>{socials && socials()}</Header>
+      {!hideHeader && <Header>{socials && socials()}</Header>}
       <Container as={containerAs}>{children}</Container>
       {bottomNewsletter && bottomNewsletter()}
       <Footer />

@@ -2,8 +2,19 @@ import glob from "glob";
 import { NextSeo } from "next-seo";
 import matter from "gray-matter";
 
-import { Container, SocialsContainer } from "../../styles/pages/drop";
-import { Layout, Socials, Drop } from "../../components";
+import {
+  StickyContainer,
+  NewsletterContainer,
+  SocialsContainer,
+  Container,
+} from "../../styles/pages/drop";
+import {
+  Layout,
+  Drop,
+  Socials,
+  Newsletter,
+  DropCTACard,
+} from "../../components";
 
 const DropPage = (props) => {
   const {
@@ -13,11 +24,6 @@ const DropPage = (props) => {
     },
     slug,
   } = props;
-  const socials = () => (
-    <SocialsContainer>
-      <Socials />
-    </SocialsContainer>
-  );
 
   let customTitle = title;
 
@@ -33,12 +39,20 @@ const DropPage = (props) => {
         canonical={`https://betomuniz.com/drops/${slug}`}
         keywords={keywords.join(", ")}
       />
-
-      <Layout socials={socials}>
+      <SocialsContainer>
+        <Socials />
+      </SocialsContainer>
+      <Layout hideHeader>
         <Container>
           <Drop content={content} metadata={props.page.data} />
         </Container>
+        <DropCTACard />
       </Layout>
+      <StickyContainer>
+        <NewsletterContainer>
+          <Newsletter />
+        </NewsletterContainer>
+      </StickyContainer>
     </>
   );
 };
