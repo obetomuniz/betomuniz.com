@@ -31,5 +31,10 @@ fields:
     required: false
   label: Gravatar
   default: https://www.gravatar.com/avatar/fff7258836f20ea66b061b49a51fe8dd?s=170
+- name: media_public_path
+  type: text
+  config:
+    required: false
+  label: Media Public Path
 pages:
 - src/metadata/site.json

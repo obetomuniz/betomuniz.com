@@ -1,5 +1,5 @@
 ---
-title: Beto Muniz
+title: Home
 content: |-
   I'm Beto Muniz, a Front-End Engineer who lives in <span className="sro">Belo Horizonte,</span> Brazil.
 
