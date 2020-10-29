@@ -49,6 +49,7 @@ export const SocialsItem = styled.li`
   margin: 0 ${rem("12px")};
   border-radius: 100%;
   opacity: ${({ animated }) => (animated ? "0" : "1")};
+  will-change: opacity, transform;
 
   &:nth-child(2) {
     animation: ${({ animated }) =>
@@ -133,6 +134,7 @@ export const PhotoContainer = styled.li`
   margin: ${rem("-5px")} auto;
   width: ${rem("50px")};
   height: ${rem("50px")};
+  will-change: opacity, transform;
   animation: ${({ animated }) =>
     animated
       ? css`

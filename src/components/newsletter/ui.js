@@ -79,8 +79,7 @@ export const Button = styled.button`
     width: calc(100% - 20px);
     height: 40px;
     margin: 0 auto;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 0;
     box-shadow: none;
   }
 `;
