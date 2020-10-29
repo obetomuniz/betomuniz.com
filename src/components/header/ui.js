@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  margin: var(--HORIZONTAL_MARGIN) auto;
+  margin: var(--HORIZONTAL_MARGIN) auto 0;
   padding: 0 20px;
   display: flex;
   flex-direction: column;

@@ -15,7 +15,7 @@ export const SocialsContainer = styled.div`
 export const About = styled.main`
   text-align: center;
   width: 550px;
-  margin: 0 auto;
+  margin: var(--HORIZONTAL_MARGIN) auto 0;
   p {
     font-size: ${rem("18px")};
     line-height: ${rem("44px")};

@@ -16,6 +16,12 @@ const Drops = (props) => {
     drops,
   } = props;
 
+  const socials = () => (
+    <SocialsContainer>
+      <Socials />
+    </SocialsContainer>
+  );
+
   return (
     <>
       <NextSeo
@@ -24,11 +30,8 @@ const Drops = (props) => {
         canonical={canonical}
         keywords={keywords.join(", ")}
       />
-      <SocialsContainer>
-        <Socials animated />
-      </SocialsContainer>
 
-      <Layout hideHeader>
+      <Layout showPhoto socials={socials}>
         <Container>
           <SimpleFeed feed={drops} />
         </Container>

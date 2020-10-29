@@ -24,6 +24,11 @@ const DropPage = (props) => {
     },
     slug,
   } = props;
+  const socials = () => (
+    <SocialsContainer>
+      <Socials />
+    </SocialsContainer>
+  );
 
   let customTitle = title;
 
@@ -39,10 +44,8 @@ const DropPage = (props) => {
         canonical={`https://betomuniz.com/drops/${slug}`}
         keywords={keywords.join(", ")}
       />
-      <SocialsContainer>
-        <Socials animated />
-      </SocialsContainer>
-      <Layout hideHeader>
+
+      <Layout showPhoto socials={socials}>
         <Container>
           <Drop content={content} metadata={props.page.data} />
         </Container>
