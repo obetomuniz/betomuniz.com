@@ -21,7 +21,6 @@ const renderers = {
 };
 
 const Drop = ({ content, metadata }) => {
-  console.log(metadata);
   const { title, subtitle, category, publish_date } = metadata;
   return (
     <>

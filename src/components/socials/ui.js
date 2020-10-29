@@ -20,25 +20,25 @@ const fadeIn = keyframes`
 
 const slideLeft = keyframes`
   0% { 
-    transform: translate3d(30px,0,0);
+    transform: translate3d(30px,0,0) scale3d(.1,.1,.1); 
   }
   50% {
-    transform: translate3d(30px,0,0);
+    transform: translate3d(30px,0,0) scale3d(.6,.6,.6); 
   }
   100% { 
-    transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0) scale3d(1,1,1); 
   }
 `;
 
 const slideRight = keyframes`
   0% { 
-    transform: translate3d(-30px,0,0);
+    transform: scale3d(.1,.1,.1) translate3d(-30px,0,0);
   }
   50% {
-    transform: translate3d(-30px,0,0);
+    transform: translate3d(-30px,0,0) scale3d(.6,.6,.6); 
   }
   100% { 
-    transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0) scale3d(1,1,1); 
   }
 `;
 
