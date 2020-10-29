@@ -55,8 +55,8 @@ export const SocialsItem = styled.li`
     animation: ${({ animated }) =>
       animated
         ? css`
-            ${fadeIn} 1.5s ease-out forwards 150ms,
-      ${slideLeft} 1.5s ease-in-out forwards 150ms
+            ${fadeIn} 500ms ease-out forwards 1150ms,
+      ${slideLeft} 500ms ease-in-out forwards 1150ms
           `
         : "none"};
   }
@@ -65,8 +65,8 @@ export const SocialsItem = styled.li`
     animation: ${({ animated }) =>
       animated
         ? css`
-            ${fadeIn} 1.5s ease-out forwards,
-      ${slideLeft} 1.5s ease-in-out forwards
+            ${fadeIn} 500ms ease-out forwards 1s,
+      ${slideLeft} 500ms ease-in-out forwards 1s
           `
         : "none"};
   }
@@ -75,8 +75,8 @@ export const SocialsItem = styled.li`
     animation: ${({ animated }) =>
       animated
         ? css`
-            ${fadeIn} 1.5s ease-out forwards,
-      ${slideRight} 1.5s ease-in-out forwards
+            ${fadeIn} 500ms ease-out forwards 1s,
+      ${slideRight} 500ms ease-in-out forwards 1s
           `
         : "none"};
   }
@@ -85,8 +85,8 @@ export const SocialsItem = styled.li`
     animation: ${({ animated }) =>
       animated
         ? css`
-            ${fadeIn} 1.5s ease-out forwards 150ms,
-      ${slideRight} 1.5s ease-in-out forwards 150ms
+            ${fadeIn} 500ms ease-out forwards 1150ms,
+      ${slideRight} 500ms ease-in-out forwards 1150ms
           `
         : "none"};
   }
@@ -138,7 +138,7 @@ export const PhotoContainer = styled.li`
   animation: ${({ animated }) =>
     animated
       ? css`
-          ${zoomOut} 1.5s ease-out forwards
+          ${zoomOut} 1.6s ease-out forwards
         `
       : "none"};
   opacity: 0;
