@@ -1,3 +1,4 @@
+import Head from "./head/head";
 import Layout from "./layout/layout";
 import Header from "./header/header";
 import Footer from "./footer/footer";
@@ -9,6 +10,7 @@ import Drop from "./drop/drop";
 import DropCTACard from "./drop-cta-card/drop-cta-card";
 
 export {
+  Head,
   Layout,
   Header,
   Footer,

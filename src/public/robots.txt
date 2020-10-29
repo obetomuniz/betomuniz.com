@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://betomuniz.com/sitemap.xml
+Host: https://betomuniz.com

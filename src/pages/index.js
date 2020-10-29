@@ -1,4 +1,3 @@
-import { NextSeo } from "next-seo";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown/with-html";
 
@@ -7,7 +6,8 @@ import {
   About,
   NewsletterContainer,
 } from "../styles/pages/home";
-import { Socials, Layout, Newsletter } from "../components";
+import { createTitle } from "../helpers";
+import { Head, Socials, Layout, Newsletter } from "../components";
 
 const Home = (props) => {
   const {
@@ -23,14 +23,15 @@ const Home = (props) => {
       <Newsletter />
     </NewsletterContainer>
   );
+  const pageTitle = createTitle(title);
 
   return (
     <>
-      <NextSeo
-        title={title}
+      <Head
+        title={pageTitle}
         description={description}
-        canonical={canonical}
-        keywords={keywords.join(", ")}
+        url={canonical}
+        keywords={keywords}
       />
 
       <Layout showPhoto socials={socials} bottomNewsletter={bottomNewsletter}>
@@ -50,8 +51,8 @@ export async function getStaticProps() {
   };
 }
 
-// export const config = {
-//   unstable_runtimeJS: false,
-// };
+export const config = {
+  unstable_runtimeJS: false,
+};
 
 export default Home;

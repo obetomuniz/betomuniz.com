@@ -1,6 +1,7 @@
 import glob from "glob";
-import { NextSeo } from "next-seo";
+import { BlogJsonLd } from "next-seo";
 import matter from "gray-matter";
+import { site_name } from "../../metadata/site.json";
 
 import {
   SocialsContainer,
@@ -8,7 +9,14 @@ import {
   StickyContainer,
   NewsletterContainer,
 } from "../../styles/pages/drops";
-import { Socials, Layout, SimpleFeed, Newsletter } from "../../components";
+import { createTitle } from "../../helpers";
+import {
+  Head,
+  Socials,
+  Layout,
+  SimpleFeed,
+  Newsletter,
+} from "../../components";
 
 const Drops = (props) => {
   const {
@@ -21,14 +29,25 @@ const Drops = (props) => {
       <Socials />
     </SocialsContainer>
   );
+  const pageTitle = createTitle(title);
 
   return (
     <>
-      <NextSeo
-        title={title}
+      <Head
+        title={pageTitle}
         description={description}
-        canonical={canonical}
-        keywords={keywords.join(", ")}
+        url={canonical}
+        keywords={keywords}
+      />
+
+      <BlogJsonLd
+        url={canonical}
+        title={pageTitle}
+        images={["https://betomuniz.com/site-thumb.jpg"]}
+        datePublished={new Date().toISOString()}
+        dateModified={new Date().toISOString()}
+        authorName={site_name}
+        description={description}
       />
 
       <Layout showPhoto socials={socials}>
@@ -68,5 +87,9 @@ export async function getStaticProps() {
     props: { page, drops },
   };
 }
+
+export const config = {
+  unstable_runtimeJS: false,
+};
 
 export default Drops;

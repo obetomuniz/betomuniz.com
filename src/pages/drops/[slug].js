@@ -1,6 +1,8 @@
 import glob from "glob";
-import { NextSeo } from "next-seo";
+import { ArticleJsonLd } from "next-seo";
 import matter from "gray-matter";
+
+import { site_name } from "../../metadata/site.json";
 
 import {
   StickyContainer,
@@ -8,7 +10,9 @@ import {
   SocialsContainer,
   Container,
 } from "../../styles/pages/drop";
+import { createTitle } from "../../helpers";
 import {
+  Head,
   Layout,
   Drop,
   Socials,
@@ -20,29 +24,43 @@ const DropPage = (props) => {
   const {
     page: {
       content,
-      data: { title, subtitle, description, keywords },
+      data: { title, subtitle, description, keywords, publish_date, featured },
     },
     slug,
   } = props;
+  const canonical = `https://betomuniz.com/drops/${slug}`;
+  const titleSuffix = " | Drops | Beto Muniz";
   const socials = () => (
     <SocialsContainer>
       <Socials />
     </SocialsContainer>
   );
 
-  let customTitle = title;
-
-  if (subtitle) {
-    customTitle = `${customTitle}: ${subtitle}`;
-  }
+  const pageTitle = createTitle(title, {
+    subtitle,
+    suffix: titleSuffix,
+  });
 
   return (
     <>
-      <NextSeo
-        title={customTitle}
+      <Head
+        title={pageTitle}
         description={description}
-        canonical={`https://betomuniz.com/drops/${slug}`}
-        keywords={keywords.join(", ")}
+        url={canonical}
+        keywords={keywords}
+        thumbnail={featured}
+      />
+
+      <ArticleJsonLd
+        url={canonical}
+        title={pageTitle.replace(titleSuffix, "")}
+        images={[featured]}
+        datePublished={new Date(publish_date).toISOString()}
+        dateModified={new Date(publish_date).toISOString()}
+        authorName={[site_name]}
+        publisherName={site_name}
+        publisherLogo="https://betomuniz.com/site-thumb.jpg"
+        description={description}
       />
 
       <Layout showPhoto socials={socials}>
@@ -83,5 +101,9 @@ export async function getStaticProps({ params: { slug } }) {
     props: { page, slug },
   };
 }
+
+export const config = {
+  unstable_runtimeJS: false,
+};
 
 export default DropPage;
