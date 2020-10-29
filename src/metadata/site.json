@@ -3,5 +3,6 @@
   "site_url": "https://betomuniz.com",
   "site_username": "obetomuniz",
   "gravatar": "https://www.gravatar.com/avatar/fff7258836f20ea66b061b49a51fe8dd?s=170",
-  "google_analytics_id": "UA-31461010-1"
+  "google_analytics_id": "UA-31461010-1",
+  "media_public_path": "https://res.cloudinary.com/beto-muniz/image/upload/f_auto"
 }
