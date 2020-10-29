@@ -40,7 +40,7 @@ const DropPage = (props) => {
         keywords={keywords.join(", ")}
       />
       <SocialsContainer>
-        <Socials />
+        <Socials animated />
       </SocialsContainer>
       <Layout hideHeader>
         <Container>

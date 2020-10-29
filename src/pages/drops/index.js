@@ -25,7 +25,7 @@ const Drops = (props) => {
         keywords={keywords.join(", ")}
       />
       <SocialsContainer>
-        <Socials />
+        <Socials animated />
       </SocialsContainer>
 
       <Layout hideHeader>

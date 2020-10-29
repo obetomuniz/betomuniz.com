@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { rem } from "polished";
 
 export const Container = styled.ul`
@@ -6,13 +6,90 @@ export const Container = styled.ul`
   flex-direction: row;
 `;
 
+const fadeIn = keyframes`
+  0% { 
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+`;
+
+const slideLeft = keyframes`
+  0% { 
+    transform: translate3d(30px,0,0);
+  }
+  50% {
+    transform: translate3d(30px,0,0);
+  }
+  100% { 
+    transform: translate3d(0,0,0);
+  }
+`;
+
+const slideRight = keyframes`
+  0% { 
+    transform: translate3d(-30px,0,0);
+  }
+  50% {
+    transform: translate3d(-30px,0,0);
+  }
+  100% { 
+    transform: translate3d(0,0,0);
+  }
+`;
+
 export const SocialsItem = styled.li`
   width: ${rem("40px")};
   height: ${rem("40px")};
-  margin: 0;
   padding: 0;
   margin: 0 ${rem("12px")};
   border-radius: 100%;
+  opacity: ${({ animated }) => (animated ? "0" : "1")};
+
+  &:nth-child(2) {
+    animation: ${({ animated }) =>
+      animated
+        ? css`
+            ${fadeIn} 1.5s ease-out forwards 150ms,
+      ${slideLeft} 1.5s ease-in-out forwards 150ms
+          `
+        : "none"};
+  }
+
+  &:nth-child(3) {
+    animation: ${({ animated }) =>
+      animated
+        ? css`
+            ${fadeIn} 1.5s ease-out forwards,
+      ${slideLeft} 1.5s ease-in-out forwards
+          `
+        : "none"};
+  }
+
+  &:nth-child(4) {
+    animation: ${({ animated }) =>
+      animated
+        ? css`
+            ${fadeIn} 1.5s ease-out forwards,
+      ${slideRight} 1.5s ease-in-out forwards
+          `
+        : "none"};
+  }
+
+  &:nth-child(5) {
+    animation: ${({ animated }) =>
+      animated
+        ? css`
+            ${fadeIn} 1.5s ease-out forwards 150ms,
+      ${slideRight} 1.5s ease-in-out forwards 150ms
+          `
+        : "none"};
+  }
+
   svg {
     stroke-width: 0;
     width: 100%;
@@ -31,4 +108,55 @@ export const SocialsItem = styled.li`
 
 export const SocialsItemLink = styled.a`
   display: block;
+`;
+
+const zoomOut = keyframes`
+  0% { 
+    transform: scale3d(.1,.1,.1); 
+    opacity: 0;
+  }
+  75% {
+    opacity: 1; 
+    transform: scale3d(1, 1, 1);
+  }
+  100% { 
+    opacity: 0;
+    transform: scale3d(2.5,2.5,2.5); 
+  }
+`;
+
+export const PhotoContainer = styled.li`
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: ${rem("-5px")} auto;
+  width: ${rem("50px")};
+  height: ${rem("50px")};
+  animation: ${({ animated }) =>
+    animated
+      ? css`
+          ${zoomOut} 1.5s ease-out forwards
+        `
+      : "none"};
+  opacity: 0;
+  display: ${({ animated }) => (animated ? "block" : "none")};
+  transform: ${({ animated }) =>
+    animated ? "scale3d(0.1, 0.1, 0.1)" : "none"};
+`;
+
+export const Photo = styled.picture`
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 3px 3px 0 1px var(--BLACK_SHADOW_COLOR);
+`;
+
+export const PhotoImage = styled.img`
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  overflow: hidden;
 `;
