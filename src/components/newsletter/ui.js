@@ -36,7 +36,6 @@ export const Input = styled.input`
   text-align: center;
   display: block;
   height: 40px;
-  box-shadow: 4px 4px 0 1px var(--BLACK_SHADOW_COLOR);
   ::-webkit-input-placeholder {
     color: var(--PRIMARY_COLOR);
   }
@@ -70,7 +69,6 @@ export const Button = styled.button`
   font-weight: 600;
   font-size: ${rem("16px")};
   width: 155px;
-  box-shadow: 4px 4px 0 1px var(--BLACK_SHADOW_COLOR);
   &:hover {
     background-color: var(--SECONDARY_COLOR);
   }

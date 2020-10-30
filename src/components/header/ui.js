@@ -24,7 +24,6 @@ export const Photo = styled.a`
   display: block;
   border-radius: 100%;
   position: relative;
-  box-shadow: 3px 3px 0 1px var(--BLACK_SHADOW_COLOR);
   cursor: pointer;
 `;
 

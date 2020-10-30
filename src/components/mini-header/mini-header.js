@@ -51,6 +51,7 @@ const MiniHeader = ({ scrollRef, shareData }) => {
       aria-hidden="true"
       style={{
         transform: sticky ? "translate3d(0, 0, 0)" : "translate3d(0, -100%, 0)",
+        opacity: sticky ? 1 : 0,
       }}
     >
       <InnerContainer>

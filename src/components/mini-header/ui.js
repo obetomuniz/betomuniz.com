@@ -10,8 +10,8 @@ export const Container = styled.div`
   position: sticky;
   left: 0;
   top: 0;
-  transition: transform 400ms ease-in;
-  will-change: transform;
+  transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+  will-change: transform, opacity;
   margin-top: ${rem("-40px")};
 `;
 export const InnerContainer = styled.div`
@@ -36,7 +36,6 @@ export const Photo = styled.a`
   position: relative;
   cursor: pointer;
   margin-top: -1px;
-  box-shadow: 1px 1px 0 1px var(--BLACK_SHADOW_COLOR);
 
   @media screen and (max-width: 550px) {
     margin-top: 0;
@@ -60,7 +59,6 @@ export const ShareButton = styled.button`
   border-radius: ${rem("100px")};
   color: var(--WHITE_COLOR);
   padding: ${rem("5px")} ${rem("10px")};
-  box-shadow: 1px 1px 0 1px var(--BLACK_SHADOW_COLOR);
   left: 50%;
   transform: translateX(-50%);
   margin: -1px auto 0;
@@ -100,14 +98,13 @@ export const SocialsItem = styled.li`
     color: ${({ color }) => `var(${color})`};
     transition: all 100ms linear;
     border-radius: 100%;
-    box-shadow: 1px 1px 0 1px var(--BLACK_SHADOW_COLOR);
+    box-shadow: 0 0 0 1px var(--SECONDARY_COLOR);
     &:hover {
       color: var(--SECONDARY_COLOR);
     }
 
     @media screen and (max-width: 550px) {
       box-shadow: none;
-      box-shadow: 0 0 0 1px var(--PRIMARY_COLOR);
     }
   }
 
