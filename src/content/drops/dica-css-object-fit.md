@@ -20,4 +20,6 @@ language: pt
 
 🌸 Bem legal, né?
 
-<!-- <Video src="https://video.twimg.com/ext_tw_video/1280468354235609088/pu/vid/510x720/AcJ0i0uSBsNlEdDZ.mp4?tag=10" /> -->
+```video
+https://video.twimg.com/ext_tw_video/1280468354235609088/pu/vid/510x720/AcJ0i0uSBsNlEdDZ.mp4?tag=10
+```

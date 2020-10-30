@@ -25,10 +25,14 @@ informaldesc: 🎩 No drop de hoje falei da tag `<br>` e `<wbr>`. Inclusive, a t
 
 👉 A tag `<br>` adiciona uma quebra de linha.
 
-<!-- <Video src="https://res.cloudinary.com/beto-muniz/video/upload/v1599781628/Kapture_2020-09-10_at_20.45.33_mvyirt.mp4" /> -->
+```video
+https://res.cloudinary.com/beto-muniz/video/upload/v1599781628/Kapture_2020-09-10_at_20.45.33_mvyirt.mp4
+```
 
 👉 Já a tag `<wbr>`, também adiciona quebras de linha, mas apenas quando há necessidade de acordo com o tamanho da tela ou do elemento em que o texto está inserido.
 
-<!-- <Video src="https://res.cloudinary.com/beto-muniz/video/upload/v1599781628/Kapture_2020-09-10_at_20.44.40_un1bk6.mp4" /> -->
+```video
+https://res.cloudinary.com/beto-muniz/video/upload/v1599781628/Kapture_2020-09-10_at_20.44.40_un1bk6.mp4
+```
 
 😍 Legal, né?

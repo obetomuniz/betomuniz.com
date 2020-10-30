@@ -13,4 +13,6 @@ language: pt
 
 💡 AMPs não são intrínsecas a uma ferramenta ou domínio, pode-se alcançar os mesmos resultados apenas seguindo as recomendações.
 
-<!-- <Video src="https://video.twimg.com/ext_tw_video/1281197689594658816/pu/vid/886x618/O8uVtNf-grJ-PVAU.mp4?tag=10" /> -->
+```video
+https://video.twimg.com/ext_tw_video/1281197689594658816/pu/vid/886x618/O8uVtNf-grJ-PVAU.mp4?tag=10
+```

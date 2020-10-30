@@ -10,4 +10,6 @@ keywords:
 
 Quer saber o que é AMP? 👇
 
-`youtube:https://www.youtube.com/embed/IAvf-rkzNck`
+```youtube
+IAvf-rkzNck
+```

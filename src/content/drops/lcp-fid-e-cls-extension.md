@@ -13,4 +13,6 @@ language: pt
 
 LCP, FID e CLS não precisam ser apenas siglas legais 🤣 Bora instalar a extensão e começar a avaliar elas em nossos apps/sites. Usuários agradecem 🌸
 
-<!-- <Tweet src="https://twitter.com/addyosmani/status/1272438696936116224?ref_src=twsrc%5Etfw" /> -->
+```tweet
+https://twitter.com/addyosmani/status/1272438696936116224?ref_src=twsrc%5Etfw
+```

@@ -20,7 +20,9 @@ language: pt
 
 👉 Para isso, basta entrar na aba **Sources** do **DevTools do Chrome** e então na aba **Snippets**.
 
-<!-- <Video src="https://res.cloudinary.com/beto-muniz/video/upload/v1599424911/Kapture_2020-09-06_at_17.25.22_gb4x95.mp4" /> -->
+```video
+https://res.cloudinary.com/beto-muniz/video/upload/v1599424911/Kapture_2020-09-06_at_17.25.22_gb4x95.mp4
+```
 
 😋 No exemplo, para executar da aba **Console**, eu aperto no teclado as teclas `COMMAND (CTRL no Windows) + SHIFT + P` dentro do DevTools e digito `!` no prompt que aparece e então escrevo `cl`.
 

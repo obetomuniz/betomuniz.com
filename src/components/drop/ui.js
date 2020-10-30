@@ -130,13 +130,6 @@ export const Article = styled.article`
 
     ${commonArticleStyles}
 
-    > img {
-      border-radius: ${rem("5px")};
-      overflow: hidden;
-      margin: 0 0 var(--LINE_BREAK_SPACE) 0;
-      border: ${rem("1px")} solid var(--lINK_COLOR);
-    }
-
     @media screen and (max-width: 550px) {
       font-size: ${rem("14px")};
       line-height: ${rem("20px")};

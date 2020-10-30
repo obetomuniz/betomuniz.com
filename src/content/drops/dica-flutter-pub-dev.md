@@ -23,4 +23,6 @@ language: pt
 
 👉 Ah! O site está de cara nova e com novas funcionalidades, confere lá 👇
 
-<!-- <Tweet src="https://twitter.com/FlutterDev/status/1283423701438836736?ref_src=twsrc%5Etfw" /> -->
+```tweet
+https://twitter.com/FlutterDev/status/1283423701438836736?ref_src=twsrc%5Etfw
+```

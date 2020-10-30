@@ -19,4 +19,6 @@ informaldesc:
 
 ⚡️ Folks! The public Beta version of "Web Stories for WordPress" is out. A project that I was involved in the last months. Pls give your feedbacks.
 
-<!-- <Tweet src="https://twitter.com/pbakaus/status/1278357702121381888?ref_src=twsrc%5Etfw" /> -->
+```tweet
+https://twitter.com/pbakaus/status/1278357702121381888?ref_src=twsrc%5Etfw
+```

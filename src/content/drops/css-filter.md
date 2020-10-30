@@ -26,4 +26,6 @@ language: pt
 
 💡 Inclusive, muita gente usa CSS Filter pra gerar temas dark. Legal, né?
 
-<!-- <Video src="https://video.twimg.com/ext_tw_video/1283009605866594308/pu/vid/534x392/oxdoLFbQ8u8JxAsV.mp4?tag=10" /> -->
+```video
+https://video.twimg.com/ext_tw_video/1283009605866594308/pu/vid/534x392/oxdoLFbQ8u8JxAsV.mp4?tag=10
+```

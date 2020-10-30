@@ -23,8 +23,7 @@ language: pt
 
 ➕ Ou qualquer uma que use a CSSStyleSheet API
 
-<!-- <Video
-  src="https://developers.google.com/web/updates/images/2020/06/css-in-js.mp4"
-  author="web.dev"
-  authorURL="https://web.dev"
-/> -->
+```video
+https://developers.google.com/web/updates/images/2020/06/css-in-js.mp4
+web.dev - https://web.dev
+```

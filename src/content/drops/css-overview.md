@@ -16,4 +16,6 @@ language: pt
 
 💡 Isso pode ser muito útil pra montar temas, validar Style Guides e evitar aplicação de cores incorretas. Gostei, viu?
 
-<!-- <Video src="https://video.twimg.com/ext_tw_video/1280105926851207170/pu/vid/1124x720/x51QDVhd3cTIir-d.mp4?tag=10" /> -->
+```video
+https://video.twimg.com/ext_tw_video/1280105926851207170/pu/vid/1124x720/x51QDVhd3cTIir-d.mp4?tag=10
+```

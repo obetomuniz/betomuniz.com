@@ -15,8 +15,12 @@ Simplesmente apaixonado com a funcionalidade pra debugging de contraste do [@Chr
 
 Mais sobre a ferramenta 👉 [web.dev/color-contrast](https://web.dev/color-contrast)
 
-<!-- <Video src="https://video.twimg.com/tweet_video/EazqJzbWAAAaWxy.mp4" /> -->
+```video
+https://video.twimg.com/tweet_video/EazqJzbWAAAaWxy.mp4
+```
 
 🤩 E recentemente, mais uma melhoria foi feita, agora podemos corrigir problemas de contraste com um click 👇
 
-<!-- <Tweet src="https://twitter.com/argyleink/status/1296472539175227400?ref_src=twsrc%5Etfw" /> -->
+```tweet
+https://twitter.com/argyleink/status/1296472539175227400?ref_src=twsrc%5Etfw
+```

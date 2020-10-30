@@ -13,4 +13,6 @@ keywords:
 
 Vejo cada vez mais a adoção dessa abordagem. E vendo esse app, não dá pra negar que esse "futuro" pode ser mesmo incrível...
 
-<!-- <Tweet src="https://twitter.com/playdotjs/status/1264970990746062849?ref_src=twsrc%5Etfw" /> -->
+```tweet
+https://twitter.com/playdotjs/status/1264970990746062849?ref_src=twsrc%5Etfw
+```

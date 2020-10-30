@@ -11,4 +11,6 @@ language: pt
 
 Nossa, olha essa integração perfeita do [@CodePen](https://twitter.com/CodePen) com [@FlutterDev](https://twitter.com/FlutterDev) 🥰
 
-<!-- <Tweet src="https://twitter.com/googledevbr/status/1277588009114796033?ref_src=twsrc%5Etfw" /> -->
+```tweet
+https://twitter.com/googledevbr/status/1277588009114796033?ref_src=twsrc%5Etfw
+```

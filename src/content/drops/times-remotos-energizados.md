@@ -11,4 +11,6 @@ keywords:
 
 Quer saber como manter times remotos motivados e energizados? 👇👇👇
 
-`youtube:https://www.youtube.com/embed/1qXE5cpSBLI`
+```youtube
+1qXE5cpSBLI
+```

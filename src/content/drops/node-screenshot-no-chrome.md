@@ -15,4 +15,6 @@ keywords:
 
 🗣 Geralmente uso a extensão da [@nimbuswebinc](https://twitter.com/nimbuswebinc) para screenshots complexas, mas fazer isso por nodes e em tempo de desenvolvimento é muito bom tbm.
 
-<!-- <Video src="https://video.twimg.com/ext_tw_video/1280170909073055746/pu/vid/1128x720/xL9dQKe6C2iHb0JA.mp4?tag=10" /> -->
+```video
+https://video.twimg.com/ext_tw_video/1280170909073055746/pu/vid/1128x720/xL9dQKe6C2iHb0JA.mp4?tag=10
+```

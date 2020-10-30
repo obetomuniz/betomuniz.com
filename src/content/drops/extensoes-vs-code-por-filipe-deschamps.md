@@ -22,4 +22,6 @@ language: pt
 
 Está incrivelmente _incrível_ 👇
 
-`youtube:https://www.youtube.com/embed/FCC2GbStmfc`
+```youtube
+FCC2GbStmfc
+```

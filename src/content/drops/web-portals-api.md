@@ -25,7 +25,10 @@ informaldesc: 🚪 E pra fechar a semana, hoje falei da *Web Portals API*, uma W
 
 ⤬ **Web Portals** estão sempre no contexto _top-level_ do browser, possuem navegabilidade independente e somente podem ser acessados via `postMessage`.
 
-<!-- <Video src="https://res.cloudinary.com/beto-muniz/video/upload/v1598241780/portals_vp9_cdkfvx.mp4" author="Adam Argyle" authorURL="https://web.dev/hands-on-portals/" /> -->
+```video
+https://res.cloudinary.com/beto-muniz/video/upload/v1598241780/portals_vp9_cdkfvx.mp4
+Adam Argyle - https://web.dev/hands-on-portals
+```
 
 👆 Como visto acima, **Web Portals permitem o carregamento prévio de conteúdo e transição animada na navegação entre páginas.**
 

@@ -31,6 +31,8 @@ language: pt
 }
 ```
 
-<!-- <Video src="https://video.twimg.com/tweet_video/Ea5_ou1XgAAeAz8.mp4" /> -->
+```video
+https://video.twimg.com/tweet_video/Ea5_ou1XgAAeAz8.mp4
+```
 
 🎩 CSS é incrível, né?

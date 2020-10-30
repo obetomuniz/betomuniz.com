@@ -14,6 +14,8 @@ language: pt
 
 ⚡️ Sou apaixonado pela versatilidade que conteúdos criados em [MDX](https://mdxjs.com/) oferecem, e pensando nisso, após lutar bastante com o [Netlify CMS](https://www.netlifycms.org/), consegui deixar ele do jeitinho que eu queria, suportando MDX.
 
-<!-- <Video src="https://res.cloudinary.com/beto-muniz/video/upload/v1597375425/Kapture_2020-08-14_at_0.22.35_gknmpk.mp4" /> -->
+```video
+https://res.cloudinary.com/beto-muniz/video/upload/v1597375425/Kapture_2020-08-14_at_0.22.35_gknmpk.mp4
+```
 
 😋 Ficou legal, né?

@@ -19,4 +19,6 @@ Pois a [@SpaceX](https://twitter.com/SpaceX) fez esse dia chegar com o Falcon 9
 
 Mais sobre esse uso 👉 [zdnet.com/article/from-eart...](https://zdnet.com/article/from-earth-to-orbit-with-linux-and-spacex/)
 
-<!-- <Tweet src="https://twitter.com/mrdoob/status/1276911757945004032?ref_src=twsrc%5Etfw" /> -->
+```tweet
+https://twitter.com/mrdoob/status/1276911757945004032?ref_src=twsrc%5Etfw
+```

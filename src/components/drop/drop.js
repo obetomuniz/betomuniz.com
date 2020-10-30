@@ -5,6 +5,7 @@ import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { format, parse } from "date-fns";
 import { ptBR } from "date-fns/locale";
 
+import { A, Img, Tweet, Video, YouTube } from "./components";
 import {
   Title,
   Subtitle,
@@ -16,10 +17,22 @@ import {
 
 const renderers = {
   code: ({ language, value }) => {
+    if (language === "tweet") {
+      return <Tweet src={value} />;
+    }
+    if (language === "video") {
+      return <Video src={value} />;
+    }
+    if (language === "youtube") {
+      return <YouTube src={value} />;
+    }
+
     return (
       <SyntaxHighlighter style={dracula} language={language} children={value} />
     );
   },
+  link: (props) => <A {...props} />,
+  image: (props) => <Img {...props} />,
 };
 
 const Drop = ({ content, metadata }) => {

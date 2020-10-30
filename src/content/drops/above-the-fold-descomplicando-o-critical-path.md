@@ -22,8 +22,4 @@ language: pt
 
 ⏱ Essa técnica é essencial para otimizar o índice [First Content Paint](https://web.dev/first-contentful-paint) das nossas páginas web.
 
-<!-- <Img
-  src="https://user-images.githubusercontent.com/1680157/88011717-7314ed80-caee-11ea-99c2-16caf15a715b.jpg"
-  author="Web Performance in Action book"
-  authorURL="https://livebook.manning.com/book/web-performance-in-action/chapter-4"
-/> -->
+!["Alt Text"](https://user-images.githubusercontent.com/1680157/88011717-7314ed80-caee-11ea-99c2-16caf15a715b.jpg "Beto Muniz - https://livebook.manning.com/book/web-performance-in-action/chapter-4")

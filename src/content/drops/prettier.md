@@ -32,6 +32,8 @@ informaldesc: E no Drop de hoje falei sobre o Prettier, um code formatter bem
 
 💥 Interessante também dizer é sua alta gama de suporte em IDEs e Editores de Código como VS Code, Atom, VIM, etc.
 
-<!-- <Video src="https://res.cloudinary.com/beto-muniz/video/upload/v1599427300/Kapture_2020-09-06_at_18.05.00_weoa4h.mp4" /> -->
+```video
+https://res.cloudinary.com/beto-muniz/video/upload/v1599427300/Kapture_2020-09-06_at_18.05.00_weoa4h.mp4
+```
 
 🗣 E aí? Bora usar essa ferramenta nos seus projetos?

@@ -39,6 +39,8 @@ informaldesc: 🖍 No drop de hoje falei sobre o conjunto de propriedades CSS
 }
 ```
 
-<!-- <Video src="https://res.cloudinary.com/beto-muniz/video/upload/v1600174990/Kapture_2020-09-15_at_09.54.22_gywzye.mp4" /> -->
+```video
+https://res.cloudinary.com/beto-muniz/video/upload/v1600174990/Kapture_2020-09-15_at_09.54.22_gywzye.mp4
+```
 
 👨‍🎨 Bacana, né?

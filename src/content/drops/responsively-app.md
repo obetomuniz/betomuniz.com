@@ -26,4 +26,6 @@ O [@ResponsivelyApp](https://twitter.com/ResponsivelyApp) ajuda no desenvolvimen
 
 ➕ ...
 
-<!-- <Video src="https://video.twimg.com/ext_tw_video/1278722154683564033/pu/vid/1252x718/wSWdy78VpIMvAVIp.mp4?tag=10" /> -->
+```video
+https://video.twimg.com/ext_tw_video/1278722154683564033/pu/vid/1252x718/wSWdy78VpIMvAVIp.mp4?tag=10
+```
