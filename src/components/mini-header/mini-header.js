@@ -23,6 +23,7 @@ const MiniHeader = ({ scrollRef, shareData }) => {
     if (navigator.share) {
       try {
         await navigator.share(shareData);
+        throw Error("Done!");
       } catch {}
     } else {
       alert(
