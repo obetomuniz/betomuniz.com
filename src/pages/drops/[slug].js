@@ -105,8 +105,4 @@ export async function getStaticProps({ params: { slug } }) {
   };
 }
 
-export const config = {
-  unstable_runtimeJS: false,
-};
-
 export default DropPage;
