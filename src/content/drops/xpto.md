@@ -1,7 +1,8 @@
 ---
 draft: true
 publish_date: 2020-10-29 10:32 PM -0300
-keywords: []
+keywords:
+- adm
 category: tech
 language: pt
 title: XPto
