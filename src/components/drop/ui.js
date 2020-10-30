@@ -4,8 +4,8 @@ import { rem } from "polished";
 export const Title = styled.h1`
   font-family: var(--FONT_FAMILY);
   color: var(--PRIMARY_COLOR);
-  font-size: ${rem("46px")};
-  line-height: ${rem("70px")};
+  font-size: ${rem("40px")};
+  line-height: ${rem("60px")};
   text-align: center;
   font-weight: 700;
   margin-bottom: calc(var(--HORIZONTAL_MARGIN) / 3.5);
@@ -18,7 +18,8 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.span`
   display: block;
-  font-size: ${rem("30px")};
+  font-size: ${rem("28px")};
+  line-height: ${rem("54px")};
 
   @media screen and (max-width: 550px) {
     font-size: ${rem("18px")};
@@ -61,62 +62,62 @@ export const Article = styled.article`
   /* Titles */
   h2 {
     color: var(--BLACK_COLOR);
-    font-size: ${rem("48px")};
-    line-height: ${rem("60px")};
-    font-weight: 700;
-    margin: 0 0 var(--LINE_BREAK_SPACE) 0;
-
-    @media screen and (max-width: 550px) {
-      font-size: ${rem("29px")};
-      line-height: ${rem("35px")};
-    }
-  }
-  h3 {
-    color: var(--BLACK_COLOR);
-    font-size: ${rem("42px")};
+    font-size: ${rem("32px")};
     line-height: ${rem("54px")};
     font-weight: 700;
     margin: 0 0 var(--LINE_BREAK_SPACE) 0;
 
     @media screen and (max-width: 550px) {
-      font-size: ${rem("26px")};
-      line-height: ${rem("32px")};
+      font-size: ${rem("24px")};
+      line-height: ${rem("36px")};
+    }
+  }
+  h3 {
+    color: var(--BLACK_COLOR);
+    font-size: ${rem("28px")};
+    line-height: ${rem("56px")};
+    font-weight: 700;
+    margin: 0 0 var(--LINE_BREAK_SPACE) 0;
+
+    @media screen and (max-width: 550px) {
+      font-size: ${rem("18px")};
+      line-height: ${rem("28px")};
     }
   }
   h4 {
     color: var(--BLACK_COLOR);
-    font-size: ${rem("36px")};
-    line-height: ${rem("48px")};
-    font-weight: 700;
-    margin: 0 0 var(--LINE_BREAK_SPACE) 0;
-
-    @media screen and (max-width: 550px) {
-      font-size: ${rem("23px")};
-      line-height: ${rem("29px")};
-    }
-  }
-  h5 {
-    color: var(--BLACK_COLOR);
-    font-size: ${rem("30px")};
-    line-height: ${rem("42px")};
-    font-weight: 700;
-    margin: 0 0 var(--LINE_BREAK_SPACE) 0;
-
-    @media screen and (max-width: 550px) {
-      font-size: ${rem("20px")};
-      line-height: ${rem("26px")};
-    }
-  }
-  h6 {
-    color: var(--BLACK_COLOR);
-    font-size: ${rem("24px")};
+    font-size: ${rem("28px")};
     line-height: ${rem("36px")};
     font-weight: 700;
     margin: 0 0 var(--LINE_BREAK_SPACE) 0;
 
     @media screen and (max-width: 550px) {
-      font-size: ${rem("17px")};
-      line-height: ${rem("23px")};
+      font-size: ${rem("16px")};
+      line-height: ${rem("28px")};
+    }
+  }
+  h5 {
+    color: var(--BLACK_COLOR);
+    font-size: ${rem("24px")};
+    line-height: ${rem("38px")};
+    font-weight: 700;
+    margin: 0 0 var(--LINE_BREAK_SPACE) 0;
+
+    @media screen and (max-width: 550px) {
+      font-size: ${rem("14px")};
+      line-height: ${rem("20px")};
+    }
+  }
+  h6 {
+    color: var(--BLACK_COLOR);
+    font-size: ${rem("18px")};
+    line-height: ${rem("30px")};
+    font-weight: 700;
+    margin: 0 0 var(--LINE_BREAK_SPACE) 0;
+
+    @media screen and (max-width: 550px) {
+      font-size: ${rem("14px")};
+      line-height: ${rem("20px")};
     }
   }
 
