@@ -20,10 +20,14 @@ import {
 const MiniHeader = ({ scrollRef, shareData }) => {
   const [sticky, setSticky] = useState(false);
   const handleShare = useCallback(async () => {
-    try {
-      await navigator.share(shareData);
-    } catch {
-      alert("Este browser ainda não possui Web Share API :/");
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch {}
+    } else {
+      alert(
+        "Ish! Este browser ainda não suporta a Web Share API.\n\nPoderia compartilhar manualmente? 🤗"
+      );
     }
   }, [shareData]);
 
