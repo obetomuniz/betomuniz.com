@@ -24,7 +24,7 @@ export const StickyContainer = styled.div`
   position: sticky;
   bottom: 0;
   width: 100%;
-  padding: ${rem("30px")} 0;
+  padding: ${rem("20px")} 0;
   background-color: var(--WHITE_COLOR);
   border-top: 1px solid var(--PRIMARY_COLOR);
 

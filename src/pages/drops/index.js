@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import glob from "glob";
 import { BlogJsonLd } from "next-seo";
 import matter from "gray-matter";
@@ -12,6 +13,7 @@ import {
 import { createTitle } from "../../helpers";
 import {
   Head,
+  MiniHeader,
   Socials,
   Layout,
   SimpleFeed,
@@ -23,6 +25,7 @@ const Drops = (props) => {
     page: { title, description, keywords, canonical },
     drops,
   } = props;
+  const scrollRef = useRef(null);
 
   const socials = () => (
     <SocialsContainer>
@@ -49,6 +52,8 @@ const Drops = (props) => {
         authorName={site_name}
         description={description}
       />
+
+      <MiniHeader scrollRef={scrollRef} />
 
       <Layout showPhoto socials={socials}>
         <Container>

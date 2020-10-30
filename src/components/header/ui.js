@@ -34,5 +34,3 @@ export const PhotoImage = styled.img`
   border-radius: 100%;
   overflow: hidden;
 `;
-
-export const SocialsContainer = styled.div``;

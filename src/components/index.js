@@ -1,6 +1,7 @@
 import Head from "./head/head";
 import Layout from "./layout/layout";
 import Header from "./header/header";
+import MiniHeader from "./mini-header/mini-header";
 import Footer from "./footer/footer";
 import Socials from "./socials/socials";
 import Newsletter from "./newsletter/newsletter";
@@ -13,6 +14,7 @@ export {
   Head,
   Layout,
   Header,
+  MiniHeader,
   Footer,
   Socials,
   Newsletter,

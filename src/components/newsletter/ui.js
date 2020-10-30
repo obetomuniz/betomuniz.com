@@ -51,8 +51,7 @@ export const Input = styled.input`
   }
   @media screen and (max-width: 550px) {
     margin: 0 10px 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 20px;
     box-shadow: none;
   }
 `;
@@ -79,7 +78,7 @@ export const Button = styled.button`
     width: calc(100% - 20px);
     height: 40px;
     margin: 0 auto;
-    border-radius: 0;
+    border-radius: 20px;
     box-shadow: none;
   }
 `;

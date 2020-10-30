@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import glob from "glob";
 import { ArticleJsonLd } from "next-seo";
 import matter from "gray-matter";
@@ -13,6 +14,7 @@ import {
 import { createTitle } from "../../helpers";
 import {
   Head,
+  MiniHeader,
   Layout,
   Drop,
   Socials,
@@ -28,6 +30,7 @@ const DropPage = (props) => {
     },
     slug,
   } = props;
+  const scrollRef = useRef(null);
   const canonical = `https://betomuniz.com/drops/${slug}`;
   const titleSuffix = " | Drops | Beto Muniz";
   const socials = () => (
@@ -62,8 +65,8 @@ const DropPage = (props) => {
         publisherLogo="https://betomuniz.com/site-thumb.jpg"
         description={description}
       />
-
-      <Layout showPhoto socials={socials}>
+      <MiniHeader scrollRef={scrollRef} />
+      <Layout ref={scrollRef} showPhoto socials={socials}>
         <Container>
           <Drop content={content} metadata={props.page.data} />
         </Container>

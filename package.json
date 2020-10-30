@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev src",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start src",
     "export": "next export",
     "deploy": "npm run build && npm run export",
@@ -15,6 +16,7 @@
     "next": "9.5.3",
     "next-images": "^1.6.2",
     "next-seo": "^4.14.0",
+    "next-sitemap": "^1.2.20",
     "polished": "^4.0.3",
     "raw-loader": "^4.0.2",
     "react": "16.13.1",
