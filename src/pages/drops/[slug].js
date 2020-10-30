@@ -2,6 +2,7 @@ import { useRef } from "react";
 import glob from "glob";
 import { ArticleJsonLd } from "next-seo";
 import matter from "gray-matter";
+import { formatISO, parse } from "date-fns";
 
 import { site_name } from "../../metadata/site.json";
 
@@ -43,7 +44,11 @@ const DropPage = (props) => {
     subtitle,
     suffix: titleSuffix,
   });
-
+  const dateNormalized = parse(
+    publish_date,
+    "yyyy-MM-dd h:mm a xxxx",
+    new Date()
+  );
   return (
     <>
       <Head
@@ -53,19 +58,25 @@ const DropPage = (props) => {
         keywords={keywords}
         thumbnail={featured}
       />
-
       <ArticleJsonLd
         url={canonical}
         title={pageTitle.replace(titleSuffix, "")}
         images={[featured]}
-        datePublished={new Date(publish_date).toISOString()}
-        dateModified={new Date(publish_date).toISOString()}
+        datePublished={formatISO(dateNormalized)}
+        dateModified={formatISO(dateNormalized)}
         authorName={[site_name]}
         publisherName={site_name}
         publisherLogo="https://betomuniz.com/site-thumb.jpg"
         description={description}
       />
-      <MiniHeader scrollRef={miniHeaderRef} />
+      <MiniHeader
+        scrollRef={miniHeaderRef}
+        shareData={{
+          url: canonical,
+          title: pageTitle,
+          text: `Olha esse conteúdo do @obetomuniz 👇 ${canonical}`,
+        }}
+      />
       <Layout ref={miniHeaderRef} showPhoto socials={socials}>
         <Container>
           <Drop content={content} metadata={props.page.data} />

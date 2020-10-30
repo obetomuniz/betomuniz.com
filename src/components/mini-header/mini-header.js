@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 
 import TelegramIcon from "../../assets/vectors/icon-telegram.svg";
@@ -17,8 +17,15 @@ import {
   SocialsItemLink,
 } from "./ui";
 
-const MiniHeader = ({ scrollRef }) => {
+const MiniHeader = ({ scrollRef, shareData }) => {
   const [sticky, setSticky] = useState(false);
+  const handleShare = useCallback(async () => {
+    try {
+      await navigator.share(shareData);
+    } catch {
+      alert("Este browser ainda não possui Web Share API :/");
+    }
+  }, [shareData]);
 
   const handleScroll = () => {
     if (scrollRef.current) {
@@ -54,7 +61,7 @@ const MiniHeader = ({ scrollRef }) => {
           </Photo>
         </Link>
 
-        <ShareButton>Compartilhar</ShareButton>
+        <ShareButton onClick={handleShare}>Compartilhar</ShareButton>
 
         <Socials>
           <SocialsItem color="--YOUTUBE_COLOR">

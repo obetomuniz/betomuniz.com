@@ -2,6 +2,8 @@ import { useRef } from "react";
 import glob from "glob";
 import { BlogJsonLd } from "next-seo";
 import matter from "gray-matter";
+import { formatISO } from "date-fns";
+
 import { site_name } from "../../metadata/site.json";
 
 import {
@@ -47,13 +49,20 @@ const Drops = (props) => {
         url={canonical}
         title={pageTitle}
         images={["https://betomuniz.com/site-thumb.jpg"]}
-        datePublished={new Date().toISOString()}
-        dateModified={new Date().toISOString()}
+        datePublished={formatISO(new Date())}
+        dateModified={formatISO(new Date())}
         authorName={site_name}
         description={description}
       />
 
-      <MiniHeader scrollRef={miniHeaderRef} />
+      <MiniHeader
+        scrollRef={miniHeaderRef}
+        shareData={{
+          url: canonical,
+          title: pageTitle,
+          text: `Olha esses conteúdos do @obetomuniz 👇 ${canonical}`,
+        }}
+      />
 
       <Layout ref={miniHeaderRef} showPhoto socials={socials}>
         <Container>

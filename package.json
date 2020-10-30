@@ -12,6 +12,7 @@
     "forestry-preview": "next src -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
+    "date-fns": "^2.16.1",
     "gray-matter": "^4.0.2",
     "next": "9.5.3",
     "next-images": "^1.6.2",

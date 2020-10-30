@@ -2,6 +2,8 @@ import ReactMarkdown from "react-markdown/with-html";
 import gfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { format, parse } from "date-fns";
+import { ptBR } from "date-fns/locale";
 
 import {
   Title,
@@ -22,6 +24,11 @@ const renderers = {
 
 const Drop = ({ content, metadata }) => {
   const { title, subtitle, category, publish_date } = metadata;
+  const dateNormalized = parse(
+    publish_date,
+    "yyyy-MM-dd h:mm a xxxx",
+    new Date()
+  );
   return (
     <>
       <Title>
@@ -33,7 +40,9 @@ const Drop = ({ content, metadata }) => {
           {category.replace("_", " ")}
         </Category>
         {" ᐧ "}
-        <PublishDate>{new Date(publish_date).getUTCFullYear()}</PublishDate>
+        <PublishDate>
+          {format(dateNormalized, "dd ᐧ MMM ᐧ yyyy", { locale: ptBR })}
+        </PublishDate>
       </Metadata>
 
       <Article>

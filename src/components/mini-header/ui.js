@@ -21,6 +21,7 @@ export const InnerContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   @media screen and (max-width: 550px) {
     width: 100%;
@@ -36,6 +37,11 @@ export const Photo = styled.a`
   cursor: pointer;
   margin-top: -1px;
   box-shadow: 1px 1px 0 1px var(--BLACK_SHADOW_COLOR);
+
+  @media screen and (max-width: 550px) {
+    margin-top: 0;
+    box-shadow: none;
+  }
 `;
 
 export const PhotoImage = styled.img`
@@ -47,15 +53,16 @@ export const PhotoImage = styled.img`
 
 export const ShareButton = styled.button`
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  display: block;
   border: 0;
   background-color: var(--PRIMARY_COLOR);
   border-radius: ${rem("100px")};
   color: var(--WHITE_COLOR);
   padding: ${rem("5px")} ${rem("10px")};
   box-shadow: 1px 1px 0 1px var(--BLACK_SHADOW_COLOR);
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   margin: -1px auto 0;
   font-family: var(--FONT_FAMILY);
   font-size: ${rem("12px")};
@@ -66,6 +73,8 @@ export const ShareButton = styled.button`
 
   @media screen and (max-width: 550px) {
     font-size: ${rem("10px")};
+    margin: 0 auto;
+    box-shadow: none;
   }
 `;
 
@@ -95,6 +104,15 @@ export const SocialsItem = styled.li`
     &:hover {
       color: var(--SECONDARY_COLOR);
     }
+
+    @media screen and (max-width: 550px) {
+      box-shadow: none;
+      box-shadow: 0 0 0 1px var(--PRIMARY_COLOR);
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    margin-top: 0;
   }
 `;
 
