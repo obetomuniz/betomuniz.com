@@ -25,7 +25,7 @@ const Drops = (props) => {
     page: { title, description, keywords, canonical },
     drops,
   } = props;
-  const scrollRef = useRef(null);
+  const miniHeaderRef = useRef(null);
 
   const socials = () => (
     <SocialsContainer>
@@ -53,9 +53,9 @@ const Drops = (props) => {
         description={description}
       />
 
-      <MiniHeader scrollRef={scrollRef} />
+      <MiniHeader scrollRef={miniHeaderRef} />
 
-      <Layout showPhoto socials={socials}>
+      <Layout ref={miniHeaderRef} showPhoto socials={socials}>
         <Container>
           <SimpleFeed feed={drops} />
         </Container>

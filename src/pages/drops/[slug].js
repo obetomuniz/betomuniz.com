@@ -30,7 +30,7 @@ const DropPage = (props) => {
     },
     slug,
   } = props;
-  const scrollRef = useRef(null);
+  const miniHeaderRef = useRef(null);
   const canonical = `https://betomuniz.com/drops/${slug}`;
   const titleSuffix = " | Drops | Beto Muniz";
   const socials = () => (
@@ -65,8 +65,8 @@ const DropPage = (props) => {
         publisherLogo="https://betomuniz.com/site-thumb.jpg"
         description={description}
       />
-      <MiniHeader scrollRef={scrollRef} />
-      <Layout ref={scrollRef} showPhoto socials={socials}>
+      <MiniHeader scrollRef={miniHeaderRef} />
+      <Layout ref={miniHeaderRef} showPhoto socials={socials}>
         <Container>
           <Drop content={content} metadata={props.page.data} />
         </Container>
