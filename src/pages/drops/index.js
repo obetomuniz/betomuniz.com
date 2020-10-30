@@ -1,3 +1,4 @@
+import fs from "fs";
 import { useRef } from "react";
 import glob from "glob";
 import { BlogJsonLd } from "next-seo";
@@ -5,6 +6,7 @@ import matter from "gray-matter";
 import { formatISO, parse, compareDesc } from "date-fns";
 
 import { site_name } from "../../metadata/site.json";
+import { createRSS, createSitemapXML } from "../../helpers";
 
 import {
   SocialsContainer,
@@ -98,12 +100,38 @@ export async function getStaticProps() {
     })
   );
 
-  drops = drops.sort((a, b) => {
-    const aDate = parse(a.publish_date, "yyyy-MM-dd h:mm a xxxx", new Date());
-    const bDate = parse(b.publish_date, "yyyy-MM-dd h:mm a xxxx", new Date());
+  drops = drops
+    .sort((a, b) => {
+      const aDate = parse(a.publish_date, "yyyy-MM-dd h:mm a xxxx", new Date());
+      const bDate = parse(b.publish_date, "yyyy-MM-dd h:mm a xxxx", new Date());
 
-    return compareDesc(aDate, bDate);
-  });
+      return compareDesc(aDate, bDate);
+    })
+    .filter(({ data: { draft } }) => !draft);
+
+  // Create RSS
+  fs.writeFileSync(
+    "./src/public/rss.xml",
+    createRSS(
+      drops.map(({ publish_date, slug, data }) => ({
+        date: publish_date,
+        slug,
+        title: data.title,
+        description: data.description,
+      }))
+    )
+  );
+
+  // Create Sitemap
+  fs.writeFileSync(
+    "./src/public/sitemap.xml",
+    createSitemapXML(
+      drops.map(({ publish_date, slug }) => ({
+        date: publish_date,
+        slug,
+      }))
+    )
+  );
 
   return {
     props: { page, drops },

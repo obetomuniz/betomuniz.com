@@ -12,7 +12,7 @@ const Head = ({
   url,
   keywords,
   og,
-  thumbnail = "https://betomuniz.com/site-thumb.jpg",
+  thumbnail,
   children,
 }) => {
   return (
@@ -40,6 +40,12 @@ const Head = ({
           }}
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Beto Muniz's RSS"
+          href="https://betomuniz.com/rss.xml"
+        />
         {children}
       </NextHead>
       <NextSeo
@@ -53,7 +59,9 @@ const Head = ({
           title: title,
           locale: "pt_BR",
           description,
-          images: [{ url: thumbnail }],
+          images: [
+            { url: thumbnail || "https://betomuniz.com/site-thumb.jpg" },
+          ],
           site_name,
           profile: {
             firstName: site_name.split(" ")[0],
