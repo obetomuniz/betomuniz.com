@@ -84,6 +84,7 @@ fields:
   label: Language
 pages:
 - src/content/drops/aaa.md
+- src/content/drops/asasdasd.md
 - src/content/drops/asdasd.md
 - src/content/drops/ddd.md
 - src/content/drops/test.md
