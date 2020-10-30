@@ -1,7 +1,7 @@
 ---
 title: LCP, FID e CLS Extension
 description: Neste drop compartilho uma extensão bem legal para medir LCP, FID e CLS.
-publish_date: 2019-06-15 2:17 AM +0000
+publish_date: 2020-06-15 2:17 AM +0000
 keywords:
   - lcp
   - fid

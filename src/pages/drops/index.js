@@ -2,7 +2,7 @@ import { useRef } from "react";
 import glob from "glob";
 import { BlogJsonLd } from "next-seo";
 import matter from "gray-matter";
-import { formatISO } from "date-fns";
+import { formatISO, parse, compareDesc } from "date-fns";
 
 import { site_name } from "../../metadata/site.json";
 
@@ -84,18 +84,26 @@ export async function getStaticProps() {
   const pageContent = await import(`../../content/pages/drops.md`);
   const page = matter(pageContent.default).data;
   const dropFiles = glob.sync(`${CONTENT_PATH}/**/*.md`);
-  const drops = await Promise.all(
+  let drops = await Promise.all(
     dropFiles.map(async (dropFile) => {
       const dropSlug = dropFile
         .replace(`${CONTENT_PATH}/`, "")
         .replace(`.md`, "");
       const drop = await import(`../../content/drops/${dropSlug}.md`);
       return {
+        publish_date: matter(drop.default).data.publish_date,
         slug: dropSlug,
         data: matter(drop.default).data,
       };
     })
   );
+
+  drops = drops.sort((a, b) => {
+    const aDate = parse(a.publish_date, "yyyy-MM-dd h:mm a xxxx", new Date());
+    const bDate = parse(b.publish_date, "yyyy-MM-dd h:mm a xxxx", new Date());
+
+    return compareDesc(aDate, bDate);
+  });
 
   return {
     props: { page, drops },

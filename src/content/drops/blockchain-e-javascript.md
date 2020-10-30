@@ -1,6 +1,6 @@
 ---
 title: "Blockchain e JavaScript"
-publish_date: 2020-08-04 2:17 AM +0000
+publish_date: 2018-08-04 2:17 AM +0000
 description: "Saiba o estado atual da combinação promissora entre Blockchain e JavaScript."
 category: tech
 language: pt
@@ -53,8 +53,8 @@ E ao olhar para o grande mercado, atualmente existem dois grandes players invest
 ## Lisk
 
 <img
-  src="https://user-images.githubusercontent.com/1680157/43661987-94609988-973a-11e8-9756-6d725695eda6.png"
-  style={{ boxShadow: "none" }}
+src="https://user-images.githubusercontent.com/1680157/43661987-94609988-973a-11e8-9756-6d725695eda6.png"
+style={{ boxShadow: "none" }}
 />
 Lisk é uma implementação blockchain 100% escrita em JavaScript e voltada para o suporte
 nativo da linguagem.
@@ -68,8 +68,8 @@ Mas como nem tudo são rosas, um longo [roadmap](https://www.reddit.com/r/Lisk/c
 ## ARK
 
 <img
-  src="https://user-images.githubusercontent.com/1680157/43661989-947f9234-973a-11e8-9571-ca50b2580764.png"
-  style={{ boxShadow: "none" }}
+src="https://user-images.githubusercontent.com/1680157/43661989-947f9234-973a-11e8-9571-ca50b2580764.png"
+style={{ boxShadow: "none" }}
 />
 
 ARK é uma plataforma, que tem uma missão semelhante à Lisk, que é a de facilitar a adoção em massa de aplicações blockchain como solução conceitual de tecnologia, porém ela vai além do JavaScript, pois deseja gerar um ambiente flexível, adaptável e escalável para que qualquer linguagem **E** blockchain possa se comunicar.

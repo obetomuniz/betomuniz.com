@@ -1,6 +1,6 @@
 ---
 title: "Desenvolvedores(as): Quem disse que reinventar a roda é ruim?"
-publish_date: 2020-11-08 2:17 AM +0000
+publish_date: 2019-11-08 2:17 AM +0000
 description: "Neste drop desconstruo, sob minha ótica, a falácia de que 'reinventar a roda' é um caminho errado para que exista aprendizado e inovação."
 category: dev_lifestyle
 language: pt

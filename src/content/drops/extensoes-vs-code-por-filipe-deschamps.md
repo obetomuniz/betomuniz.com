@@ -5,7 +5,7 @@ description: Você usa VS Code? Se sim, então leia este drop, pois nele tem um
   vídeo do Indomável @FilipeDeschamps citando várias extensões incríveis para
   melhorar nossa produtividade ao usar esse editor lindo e maravilhoso. Está
   incrível!
-publish_date: 2015-07-16 2:17 AM +0000
+publish_date: 2020-07-16 2:17 AM +0000
 keywords:
   - extensions
   - extensão
