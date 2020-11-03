@@ -82,6 +82,16 @@ const Head = ({
           site: `@${site_username}`,
           cardType: "summary_large_image",
         }}
+        additionalMetaTags={[
+          {
+            name: "theme-color",
+            content: "#663399",
+          },
+          {
+            name: "application-name",
+            content: "NextSeo",
+          },
+        ]}
       />
     </>
   );

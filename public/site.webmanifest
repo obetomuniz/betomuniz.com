@@ -1,6 +1,7 @@
 {
   "name": "Beto Muniz",
   "short_name": "Beto Muniz",
+  "start_url": "https://betomuniz.com/",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",

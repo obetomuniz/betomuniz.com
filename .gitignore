@@ -9,8 +9,8 @@
 /coverage
 
 # dev
-/src/public/sitemap.xml
-/src/public/rss.xml
+/public/sitemap.xml
+/public/rss.xml
 
 # next.js
 /.next/

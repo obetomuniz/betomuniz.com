@@ -111,7 +111,7 @@ export async function getStaticProps() {
 
   // Create RSS
   fs.writeFileSync(
-    "./src/public/rss.xml",
+    "./public/rss.xml",
     createRSS(
       drops.map(({ publish_date, slug, data }) => ({
         date: publish_date,
@@ -124,7 +124,7 @@ export async function getStaticProps() {
 
   // Create Sitemap
   fs.writeFileSync(
-    "./src/public/sitemap.xml",
+    "./public/sitemap.xml",
     createSitemapXML(
       drops.map(({ publish_date, slug }) => ({
         date: publish_date,
