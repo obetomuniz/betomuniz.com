@@ -15,7 +15,7 @@ const DEFAULT_HEADERS = [
   },
   {
     key: "Referrer-Policy",
-    value: "origin",
+    value: "same-origin",
   },
 ];
 
