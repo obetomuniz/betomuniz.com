@@ -25,6 +25,12 @@ const Head = ({
         />
         <link rel="icon" href="/icons/favicon.ico" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+        <link
+          href={`https://www.googletagmanager.com/gtag/js?id=${google_analytics_id}`}
+          rel="preload"
+          as="script"
+        />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${google_analytics_id}`}
