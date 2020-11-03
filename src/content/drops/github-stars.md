@@ -1,5 +1,5 @@
 ---
-publish_date: 2020-08-07 2:17 AM +0000
+date: 2020-08-07 2:17 AM +0000
 title: GitHub Stars
 description: Neste drop falo sobre o novo programa do GitHub para ajudar quem
   gera impacto para a comunidade.

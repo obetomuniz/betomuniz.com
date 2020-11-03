@@ -1,6 +1,6 @@
 ---
 title: "Service Workers: Be Offline"
-publish_date: 2015-01-07 2:17 AM +0000
+date: 2015-01-07 2:17 AM +0000
 description: "Abordagem sobre o que são Services Workers e quais os benefícios dessa tecnologia para nossa perspectiva de desenvolvimento web."
 category: tech
 language: pt

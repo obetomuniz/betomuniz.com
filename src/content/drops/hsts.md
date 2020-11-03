@@ -4,7 +4,7 @@ description: Neste drop abordei o header HTTP Strict-Transport-Security e como
   ele pode nos ajudar contra ataques man-in-the-middle em nossos sites e
   aplicações web.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1597080246/hsts_lsr1fz.jpg
-publish_date: 2020-08-12 2:17 AM +0000
+date: 2020-08-12 2:17 AM +0000
 keywords:
   - hsts
   - man-in-the-middle

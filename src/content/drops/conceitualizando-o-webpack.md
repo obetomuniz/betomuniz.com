@@ -1,6 +1,6 @@
 ---
 title: "Conceitualizando o webpack"
-publish_date: 2017-02-14 2:17 AM +0000
+date: 2017-02-14 2:17 AM +0000
 description: "Abordagem conceitual do webpack, que apesar de ser uma ferramenta cada vez mais presente em nosso dia a dia, ainda é muito mistificada, e por isso, pouco compreendida."
 category: tech
 language: pt

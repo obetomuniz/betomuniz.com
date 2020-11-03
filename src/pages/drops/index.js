@@ -93,7 +93,7 @@ export async function getStaticProps() {
         .replace(`.md`, "");
       const drop = await import(`../../content/drops/${dropSlug}.md`);
       return {
-        publish_date: matter(drop.default).data.publish_date,
+        date: matter(drop.default).data.date,
         slug: dropSlug,
         data: matter(drop.default).data,
       };
@@ -102,8 +102,8 @@ export async function getStaticProps() {
 
   drops = drops
     .sort((a, b) => {
-      const aDate = parse(a.publish_date, "yyyy-MM-dd h:mm a xxxx", new Date());
-      const bDate = parse(b.publish_date, "yyyy-MM-dd h:mm a xxxx", new Date());
+      const aDate = parse(a.date, "yyyy-MM-dd h:mm a xxxx", new Date());
+      const bDate = parse(b.date, "yyyy-MM-dd h:mm a xxxx", new Date());
 
       return compareDesc(aDate, bDate);
     })
@@ -113,8 +113,8 @@ export async function getStaticProps() {
   fs.writeFileSync(
     "./public/rss.xml",
     createRSS(
-      drops.map(({ publish_date, slug, data }) => ({
-        date: publish_date,
+      drops.map(({ date, slug, data }) => ({
+        date: date,
         slug,
         title: data.title,
         description: data.description,
@@ -126,8 +126,8 @@ export async function getStaticProps() {
   fs.writeFileSync(
     "./public/sitemap.xml",
     createSitemapXML(
-      drops.map(({ publish_date, slug }) => ({
-        date: publish_date,
+      drops.map(({ date, slug }) => ({
+        date: date,
         slug,
       }))
     )

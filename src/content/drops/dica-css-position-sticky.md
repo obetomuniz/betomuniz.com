@@ -3,7 +3,7 @@ title: Dica CSS
 subtitle: "position: sticky"
 description: "Neste drop abordo a declaração CSS `position: sticky` e falo como
   ela possibilita manter elementos fixos relativos à barra de rolagem."
-publish_date: 2020-07-23 2:17 AM +0000
+date: 2020-07-23 2:17 AM +0000
 keywords:
   - css
   - ui

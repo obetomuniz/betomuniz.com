@@ -3,7 +3,7 @@ title: BigInt no JavaScript
 description: Neste drop falo um pouco sobre como funciona BigInt's no JavaScript
   e o porque são úteis.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598238776/Text_1_jj5zju.jpg
-publish_date: 2020-08-25 2:17 AM +0000
+date: 2020-08-25 2:17 AM +0000
 keywords:
   - bigint
   - javascript

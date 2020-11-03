@@ -2,7 +2,7 @@
 title: JavaScript no Espaço
 description: JavaScript, uma linguagem criada em 10 dias que está rodando no
   Falcon 9, um foguete da SpaceX.
-publish_date: 2020-06-28 2:17 AM +0000
+date: 2020-06-28 2:17 AM +0000
 keywords:
   - javascript
   - everywhere

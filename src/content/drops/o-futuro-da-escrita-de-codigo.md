@@ -1,6 +1,6 @@
 ---
 title: "O futuro do modo que escrevemos código"
-publish_date: 2020-06-27 2:17 AM +0000
+date: 2020-06-27 2:17 AM +0000
 description: "Um breve pensamento sobre como será o futuro da escrita de código."
 category: "dev_lifestyle"
 language: pt

@@ -1,6 +1,6 @@
 ---
 title: "Responsively App"
-publish_date: 2020-07-02 2:17 AM +0000
+date: 2020-07-02 2:17 AM +0000
 description: "Neste drop compartilho uma aplicação bem legal para desenvolvimento web responsivo."
 category: "tech"
 language: pt

@@ -3,7 +3,7 @@ title: Subsource Integrity
 description: Neste drop abordo como e o porque devemos adotar verificações
   Subsource Integrity em nossos scripts externos.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1597032330/Text_Image_lkn2xs.jpg
-publish_date: 2020-08-10 2:17 AM +0000
+date: 2020-08-10 2:17 AM +0000
 keywords:
   - subsource
   - integrity

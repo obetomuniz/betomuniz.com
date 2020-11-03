@@ -3,7 +3,7 @@ title: Dica CSS
 subtitle: user-select e selection
 description: Já ouviu falar dos recursos ::selection e user-select no CSS?
   Confira esse drop.
-publish_date: 2020-06-19 2:17 AM +0000
+date: 2020-06-19 2:17 AM +0000
 keywords:
   - css
   - user-select

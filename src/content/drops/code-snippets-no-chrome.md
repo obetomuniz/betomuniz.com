@@ -2,7 +2,7 @@
 title: Code Snippets no Chrome
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1599425326/Titulo_axuixj.jpg
 description: "Neste drop falo sobre o recurso de Snippets que o Chrome oferece. "
-publish_date: 2020-09-09 2:17 AM +0000
+date: 2020-09-09 2:17 AM +0000
 keywords:
   - chrome
   - snippets

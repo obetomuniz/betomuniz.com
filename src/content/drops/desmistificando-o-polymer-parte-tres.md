@@ -1,7 +1,7 @@
 ---
 title: "Desmistificando o Polymer"
 subtitle: "Polymer FAQ (unofficial)"
-publish_date: 2014-11-18 2:17 AM +0000
+date: 2014-11-18 2:17 AM +0000
 description: "Terceiro drop de uma série que visa desmistificar o Polymer."
 category: tech
 language: pt

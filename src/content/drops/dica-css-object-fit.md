@@ -2,7 +2,7 @@
 title: Dica CSS
 subtitle: object-fit
 description: Neste drop comento sobre a propriedade CSS object-fit e seu comportamento.
-publish_date: 2020-07-07 2:17 AM +0000
+date: 2020-07-07 2:17 AM +0000
 keywords:
   - css
   - tips

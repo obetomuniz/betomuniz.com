@@ -1,7 +1,7 @@
 ---
 title: CodePen e Flutter
 description: Neste drop compartilho o recém lançamento da integração Flutter no CodePen.
-publish_date: 2020-06-30 2:17 AM +0000
+date: 2020-06-30 2:17 AM +0000
 keywords:
   - flutter
   - codepen

@@ -3,7 +3,7 @@ title: Resource Prioritization
 description: Nesse drop de conteúdo abordo conceitualmente a importância do uso
   da técnica Resource Prioritization e o que ela nos permite fazer.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598383187/Text_jjzz1v.jpg
-publish_date: 2020-07-28 2:17 AM +0000
+date: 2020-07-28 2:17 AM +0000
 keywords:
   - resource
   - prioritization

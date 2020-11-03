@@ -1,6 +1,6 @@
 ---
 title: "Iniciando com Node Webkit"
-publish_date: 2014-08-18 2:17 AM +0000
+date: 2014-08-18 2:17 AM +0000
 description: "Abordagem feita para iniciantes e interessados em aprender mais sobre Node Webkit."
 category: tech
 language: pt

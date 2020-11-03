@@ -1,6 +1,6 @@
 ---
 title: "Observações sobre Map, Set, Object e Array no JavaScript"
-publish_date: 2020-07-13 2:17 AM +0000
+date: 2020-07-13 2:17 AM +0000
 description: "Neste drop dou algumas observações relacionadas ao Map, Set, Object e Array como estrutura de dados do JavaScript."
 category: "tech"
 language: pt

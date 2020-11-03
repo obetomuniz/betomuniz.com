@@ -4,7 +4,7 @@ description: Neste drop falo da propriedade globalThis, que permite acessar
   diretamente o objeto global de aplicações JavaScript de maneira segura e
   confiável.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598233382/globalthis_hvwp97.jpg
-publish_date: 2020-08-25 2:17 AM +0000
+date: 2020-08-25 2:17 AM +0000
 keywords:
   - javascript
   - global

@@ -1,6 +1,6 @@
 ---
 title: "Benefícios da comunidade de desenvolvimento para sua carreira"
-publish_date: 2019-10-23 2:17 AM +0000
+date: 2019-10-23 2:17 AM +0000
 description: "Saiba o quanto as comunidades de desenvolvimento podem ajudar você na sua carreira."
 category: "community"
 language: pt

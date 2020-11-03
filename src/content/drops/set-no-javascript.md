@@ -1,6 +1,6 @@
 ---
 title: "Set no JavaScript"
-publish_date: 2020-07-13 2:17 AM +0000
+date: 2020-07-13 2:17 AM +0000
 description: "Neste drop listo algumas características fundamentais do objeto Set no JavaScript."
 category: "tech"
 language: pt

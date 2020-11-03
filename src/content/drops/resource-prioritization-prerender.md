@@ -4,7 +4,7 @@ subtitle: prerender
 description: Neste drop falo um pouco da diretiva "prerender" para Resource
   Prioritization,que apesar de ter o uso indicado com moderação, pode sim trazer
   benefícios aos nossos usuários.
-publish_date: 2020-07-30 2:17 AM +0000
+date: 2020-07-30 2:17 AM +0000
 keywords:
   - resource
   - hints

@@ -3,7 +3,7 @@ title: Resource Prioritization
 subtitle: preload
 description: Neste drop falo sobre como a diretiva "preload" da especificação
   Resource Prioritization funciona e quando é mais recomendado utilizá-la
-publish_date: 2020-08-01 2:17 AM +0000
+date: 2020-08-01 2:17 AM +0000
 keywords:
   - resource
   - prioritization

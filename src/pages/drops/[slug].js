@@ -27,16 +27,7 @@ const DropPage = (props) => {
   const {
     page: {
       content,
-      data: {
-        title,
-        subtitle,
-        description,
-        keywords,
-        publish_date,
-        featured,
-        prev_link,
-        next_link,
-      },
+      data: { title, subtitle, description, keywords, date, featured },
     },
     slug,
   } = props;
@@ -53,11 +44,7 @@ const DropPage = (props) => {
     subtitle,
     suffix: titleSuffix,
   });
-  const dateNormalized = parse(
-    publish_date,
-    "yyyy-MM-dd h:mm a xxxx",
-    new Date()
-  );
+  const dateNormalized = parse(date, "yyyy-MM-dd h:mm a xxxx", new Date());
   return (
     <>
       <Head

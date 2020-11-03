@@ -1,7 +1,7 @@
 ---
 title: Novidades do Safari 14
 description: Neste drop listo as principais novidades para mim no Safari 14.
-publish_date: 2020-06-24 2:17 AM +0000
+date: 2020-06-24 2:17 AM +0000
 keywords:
   - safari
   - news

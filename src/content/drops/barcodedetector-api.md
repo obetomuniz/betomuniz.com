@@ -3,7 +3,7 @@ title: BarcodeDetector API
 subtitle: ""
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1603811465/Titulo_Image_uyo7rz.jpg
 description: Neste Drop falo sobre o suporte e funcionamento da BarcodeDetector API.
-publish_date: 2020-10-30 2:17 AM +0000
+date: 2020-10-30 2:17 AM +0000
 keywords:
   - barcode
   - código de barras

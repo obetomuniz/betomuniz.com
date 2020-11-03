@@ -1,6 +1,6 @@
 ---
 title: "tooling.report"
-publish_date: 2020-07-15 2:17 AM +0000
+date: 2020-07-15 2:17 AM +0000
 description: "Conhece o tooling.report? Confira este drop e saiba como o serviço pode ajudar você na escolha entre Webpack, Rollup, Parcel e Browserify."
 category: "tech"
 language: pt

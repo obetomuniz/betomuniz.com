@@ -1,6 +1,6 @@
 ---
 title: "Flutter para desenvolvedores JavaScript e/ou React Native"
-publish_date: 2019-01-15 2:17 AM +0000
+date: 2019-01-15 2:17 AM +0000
 description: "Um drop sobre Flutter para desenvolvedores JavaScript e/ou React Native."
 category: tech
 language: pt

@@ -1,6 +1,6 @@
 ---
 title: "CORS e além"
-publish_date: 2019-04-16 2:17 AM +0000
+date: 2019-04-16 2:17 AM +0000
 description: "Uma abordagem objetiva sobre CORS, CORB e CORP."
 category: tech
 language: pt

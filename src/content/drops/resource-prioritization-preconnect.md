@@ -4,7 +4,7 @@ subtitle: preconnect
 description: 'Neste drop sobre Resource Prioritization falo da diretiva
   "preconnect" e como ela nos ajuda a melhorar a experiência de performance em
   aplicações web resolvendo DNS, TLS e  TCP. '
-publish_date: 2020-07-30 2:17 AM +0000
+date: 2020-07-30 2:17 AM +0000
 keywords:
   - resource
   - prioritization

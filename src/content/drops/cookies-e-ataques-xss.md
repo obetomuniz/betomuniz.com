@@ -2,7 +2,7 @@
 title: Cookies e Ataques XSS
 description: Neste drop falo sobre como proteger seu site de Cookies mal
   configurados para evitar Ataques XSS.
-publish_date: 2020-08-07 2:17 AM +0000
+date: 2020-08-07 2:17 AM +0000
 keywords:
   - samesite
   - httponly

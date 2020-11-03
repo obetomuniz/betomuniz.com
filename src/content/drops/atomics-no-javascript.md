@@ -4,7 +4,7 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1599422987/
 description: Neste drop falo sobre o objeto Atomics, um recurso bem útil para
   controlar race conditions ao se trabalhar com abordagens possíveis de
   multi-threading do JavaScript.
-publish_date: 2020-09-08 2:17 AM +0000
+date: 2020-09-08 2:17 AM +0000
 keywords:
   - multi-threading
   - javascript

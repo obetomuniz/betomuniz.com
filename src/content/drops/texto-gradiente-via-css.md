@@ -1,6 +1,6 @@
 ---
 title: "Texto Gradiente via CSS"
-publish_date: 2020-07-16 2:17 AM +0000
+date: 2020-07-16 2:17 AM +0000
 description: "Neste drop demonstro como obter Texto Gradiente usando apenas 3 propriedades CSS. É muito simples mesmo! Confere lá."
 category: "tech"
 language: pt

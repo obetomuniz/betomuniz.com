@@ -2,7 +2,7 @@
 title: LGPD
 description: Um drop-aviso sobre a Lei Geral de Proteção de Dados.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1597080246/lgpd_hpeap3.jpg
-publish_date: 2020-08-10 2:17 AM +0000
+date: 2020-08-10 2:17 AM +0000
 keywords:
   - lei
   - lgpd

@@ -1,6 +1,6 @@
 ---
 title: "JS-in-CSS: Houdini"
-publish_date: 2019-10-16 2:17 AM +0000
+date: 2019-10-16 2:17 AM +0000
 description: "Conheça o CSS Houdini. A proposta que promete mudar tudo o que conhecemos sobre desenvolvimento CSS."
 category: tech
 language: pt
@@ -29,26 +29,26 @@ O tempo passou, e evoluímos ainda mais a forma de escrever CSS, focando inclusi
 Com isso, hoje o mercado caminha com três vertentes principais:
 
 <a
-  href="https://vue-loader-v14.vuejs.org/pt_BR/features/scoped-css.html"
-  target="_blank"
-  rel="noopener noreferrer"
+href="https://vue-loader-v14.vuejs.org/pt_BR/features/scoped-css.html"
+target="\_blank"
+rel="noopener noreferrer"
+
+> _Scoped CSS_
+> </a>
+> , <a
+> href="https://github.com/css-modules/css-modules"
+> target="\_blank"
+> rel="noopener noreferrer"
 >
-  _Scoped CSS_
-</a>
-, <a
-  href="https://github.com/css-modules/css-modules"
-  target="_blank"
-  rel="noopener noreferrer"
+> _CSS Modules_
+> </a> e <a
+> href="https://itnext.io/thinking-in-styled-components-e230ea37c52c"
+> target="\_blank"
+> rel="noopener noreferrer"
 >
-  _CSS Modules_
-</a> e <a
-  href="https://itnext.io/thinking-in-styled-components-e230ea37c52c"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  _Styled Components_
-</a>
-.
+> _Styled Components_
+> </a>
+> .
 
 E veja só, não estou falando de técnica A ou biblioteca B, muito menos que uma é melhor do que a outra ou que existem somente estas abordagens, estou apenas citando as com conceitos mais sólidos e aceitos.
 

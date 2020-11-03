@@ -3,7 +3,7 @@ title: Referrer-Policy
 description: Neste drop falo como o header Referrer-Policy nos ajuda a proteger
   a integridade de dados de nossos usuários durante a navegação web.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1597534767/Text_Image_1_avqitj.jpg
-publish_date: 2020-08-20 2:17 AM +0000
+date: 2020-08-20 2:17 AM +0000
 keywords:
   - referrer
   - security

@@ -3,7 +3,7 @@ title: Content Security Policy
 description: Neste drop falo sobre o header HTTP Content Security Policy e como
   ele pode nos proteger contra ataques XSS.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1596509354/Social_nftbvw.png
-publish_date: 2020-08-04 2:17 AM +0000
+date: 2020-08-04 2:17 AM +0000
 keywords:
   - csp
   - xss

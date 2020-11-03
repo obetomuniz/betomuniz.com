@@ -4,7 +4,7 @@ subtitle: Automatizando testes de acessibilidade.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598820824/Text_1_c6pylv.jpg
 description: Neste drop abordo a Pa11y, uma ferramenta que visa ajudar o
   desenvolvedor a criar testes para aplicações e sites acessíveis.
-publish_date: 2020-09-03 2:17 AM +0000
+date: 2020-09-03 2:17 AM +0000
 keywords:
   - a11y
   - acessibilidade

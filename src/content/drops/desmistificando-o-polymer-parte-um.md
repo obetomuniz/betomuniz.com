@@ -1,7 +1,7 @@
 ---
 title: "Desmistificando o Polymer"
 subtitle: "Olá Polymer!"
-publish_date: 2014-11-16 2:17 AM +0000
+date: 2014-11-16 2:17 AM +0000
 description: "Primeiro drop de uma série que visa desmistificar o Polymer."
 category: tech
 language: pt

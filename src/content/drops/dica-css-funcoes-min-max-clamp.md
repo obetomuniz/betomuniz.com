@@ -3,7 +3,7 @@ title: Dica CSS
 subtitle: min(), max() e clamp()
 description: Neste drop falo de três funções CSS muito úteis para o
   desenvolvimento web responsivo/adaptativo.
-publish_date: 2020-07-08 2:17 AM +0000
+date: 2020-07-08 2:17 AM +0000
 keywords:
   - css
   - dicas
@@ -31,7 +31,6 @@ language: pt
 
 <Drop>
 
-
 🗣 A função CSS `max()` retorna o **MAIOR** valor declarado.
 
 📱 Numa viewport **768px** de largura:
@@ -45,7 +44,6 @@ language: pt
 🗣 `max()` é muito útil pra controlar o valor **MÍNIMO** desejado.
 
 <Drop>
-
 
 🗣 A função CSS `clamp()` retorna o valor **DENTRO DE UM LIMITE** mínimo e máximo.
 

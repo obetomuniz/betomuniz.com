@@ -1,6 +1,6 @@
 ---
 title: Simplificando o HTTP 2.0
-publish_date: 2014-12-12 2:17 AM +0000
+date: 2014-12-12 2:17 AM +0000
 description: "Abordagem sobre o que é o HTTP 2.0."
 category: tech
 language: pt

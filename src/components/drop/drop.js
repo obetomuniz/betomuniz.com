@@ -36,12 +36,8 @@ const renderers = {
 };
 
 const Drop = ({ content, metadata }) => {
-  const { title, subtitle, category, publish_date } = metadata;
-  const dateNormalized = parse(
-    publish_date,
-    "yyyy-MM-dd h:mm a xxxx",
-    new Date()
-  );
+  const { title, subtitle, category, date } = metadata;
+  const dateNormalized = parse(date, "yyyy-MM-dd h:mm a xxxx", new Date());
   return (
     <>
       <Title>

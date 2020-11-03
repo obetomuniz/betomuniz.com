@@ -1,7 +1,7 @@
 ---
 title: Accelerated Mobile Pages
 description: Neste drop abordo as capacidades das Accelerated Mobile Pages.
-publish_date: 2020-07-10 2:17 AM +0000
+date: 2020-07-10 2:17 AM +0000
 keywords:
   - accelerated mobile pages
   - amp

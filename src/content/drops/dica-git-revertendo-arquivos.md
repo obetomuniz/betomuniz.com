@@ -2,7 +2,7 @@
 title: Dica Git
 subtitle: Revertendo Arquivos
 description: Neste drop dou uma dica sobre como reverter versões de ARQUIVOS usando Git.
-publish_date: 2020-07-10 2:17 AM +0000
+date: 2020-07-10 2:17 AM +0000
 keywords:
   - git
   - checkout

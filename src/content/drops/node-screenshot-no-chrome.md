@@ -1,6 +1,6 @@
 ---
 title: "Node Screenshot no Chrome"
-publish_date: 2020-07-06 2:17 AM +0000
+date: 2020-07-06 2:17 AM +0000
 description: "Neste drop compartilho a nova funcionalidade do Chrome para Screenshots de Nodes do DOM."
 category: "tech"
 language: pt

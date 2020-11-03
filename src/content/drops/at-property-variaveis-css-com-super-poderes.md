@@ -4,7 +4,7 @@ subtitle: Variáveis CSS com super poderes
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598822450/Text_Image_wyx6s0.jpg
 description: Neste drop falo sobre a nova definição CSS @property que visa
   extender o uso das atuais CSS Variables.
-publish_date: 2020-09-04 2:17 AM +0000
+date: 2020-09-04 2:17 AM +0000
 keywords:
   - css
   - property

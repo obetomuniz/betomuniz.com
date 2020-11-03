@@ -2,7 +2,7 @@
 title: GitHub Profile
 description: Já viu a nova funcionalidade do GitHub que permite customizar a
   homepage do seu perfil de usuário? Então confere ela neste drop.
-publish_date: 2020-07-16 2:17 AM +0000
+date: 2020-07-16 2:17 AM +0000
 keywords:
   - github
   - profile

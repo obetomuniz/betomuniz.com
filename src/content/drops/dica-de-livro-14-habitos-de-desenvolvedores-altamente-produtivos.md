@@ -3,7 +3,7 @@ title: Dica de Livro
 subtitle: 14 Hábitos de Desenvolvedores Altamente Produtivos
 description: Quer aprender a ser um desenvolvedor melhor com @zenorocha e várias
   outras referências do mercado? Confira este drop e saiba como.
-publish_date: 2020-07-16 2:17 AM +0000
+date: 2020-07-16 2:17 AM +0000
 keywords:
   - livro
   - zeno

@@ -1,6 +1,6 @@
 ---
 title: "Blockchain e JavaScript"
-publish_date: 2018-08-04 2:17 AM +0000
+date: 2018-08-04 2:17 AM +0000
 description: "Saiba o estado atual da combinação promissora entre Blockchain e JavaScript."
 category: tech
 language: pt

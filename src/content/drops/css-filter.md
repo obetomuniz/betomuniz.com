@@ -2,7 +2,7 @@
 title: CSS Filter
 description: Neste drop falo sobre a CSS Filter e como ela pode ser
   interessantes para manipulação de imagens até tematizações completas.
-publish_date: 2020-07-14 2:17 AM +0000
+date: 2020-07-14 2:17 AM +0000
 keywords:
   - css
   - filter

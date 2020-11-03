@@ -3,7 +3,7 @@ title: Netlify CMS e MDX
 description: "Neste drop falo da combinação perfeita entre Netlify CMS com MDX e
   mostro um pouco como utilizo os dois no meu site. "
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1597541752/nmdx_yc6coz.jpg
-publish_date: 2020-08-21 2:17 AM +0000
+date: 2020-08-21 2:17 AM +0000
 keywords:
   - mdx
   - netlify

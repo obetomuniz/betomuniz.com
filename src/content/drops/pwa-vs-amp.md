@@ -1,6 +1,6 @@
 ---
 title: "PWA vs AMP"
-publish_date: 2020-07-09 2:17 AM +0000
+date: 2020-07-09 2:17 AM +0000
 description: "Neste drop falo da possibilidade de combinar PWAs e AMPs para melhores resultados em ambas soluções."
 category: "tech"
 language: pt

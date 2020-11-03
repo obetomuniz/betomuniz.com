@@ -1,7 +1,7 @@
 ---
 title: SSG e SSR
 description: Neste drop abordo brevemente SSG e SSR.
-publish_date: 2020-06-17 2:17 AM +0000
+date: 2020-06-17 2:17 AM +0000
 keywords:
   - ssg
   - ssr

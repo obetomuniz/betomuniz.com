@@ -3,7 +3,7 @@ title: SharedArrayBuffer no JavaScript
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1599421768/Titulo_Image_ayoywv.jpg
 description: Neste drop abordo o objeto SharedArrayBuffer, um recurso que aplica
   características de multi-threading ao ambiente de desenvolvimento JavaScript.
-publish_date: 2020-09-07 2:17 AM +0000
+date: 2020-09-07 2:17 AM +0000
 keywords:
   - javascript
   - multi-threading

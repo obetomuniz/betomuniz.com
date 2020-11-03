@@ -1,5 +1,5 @@
 ---
-publish_date: 2020-07-01 2:17 AM +0000
+date: 2020-07-01 2:17 AM +0000
 keywords:
   - web stories
   - amp

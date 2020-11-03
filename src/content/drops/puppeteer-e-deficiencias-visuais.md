@@ -1,6 +1,6 @@
 ---
 title: "Puppeteer e Deficiências Visuais"
-publish_date: 2020-05-29 2:17 AM +0000
+date: 2020-05-29 2:17 AM +0000
 description: "Neste drop compartilho o mais novo suporte do Puppeteer para deficiências visuais."
 category: "tech"
 language: pt

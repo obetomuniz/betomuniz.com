@@ -1,7 +1,7 @@
 ---
 title: CSS Overview no DevTools
 description: Neste drop falo sobre a CSS Overview Tab no DevTools.
-publish_date: 2020-07-06 2:17 AM +0000
+date: 2020-07-06 2:17 AM +0000
 keywords:
   - chrome
   - css overview

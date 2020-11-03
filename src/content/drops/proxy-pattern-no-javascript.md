@@ -3,7 +3,7 @@ title: Proxy Pattern no JavaScript
 description: Neste drop abordo o objeto Proxy, um modelo nativo para trabalhamos
   com o Proxy Pattern no JavaScript
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598235427/proxy_hctzmt.jpg
-publish_date: 2020-08-27 2:17 AM +0000
+date: 2020-08-27 2:17 AM +0000
 keywords:
   - proxy
   - pattern

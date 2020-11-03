@@ -1,7 +1,7 @@
 ---
 title: LQIP
 description: Já ouviu falar LQIP? Confira esse drop e saiba mais.
-publish_date: 2020-06-25 2:17 AM +0000
+date: 2020-06-25 2:17 AM +0000
 keywords:
   - lqip
   - low quality image placeholders

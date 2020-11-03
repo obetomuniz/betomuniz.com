@@ -3,7 +3,7 @@ title: noopener e noreferrer
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1598382624/Text_Image_gwwcfi.jpg
 description: Neste drop falo da utilidade das diretivas noopener e noreferrer no
   combate contra ataques Phishing.
-publish_date: 2020-09-01 2:17 AM +0000
+date: 2020-09-01 2:17 AM +0000
 keywords:
   - phishing
   - web

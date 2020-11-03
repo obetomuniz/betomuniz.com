@@ -3,7 +3,7 @@ title: Dica Flutter
 subtitle: pub.dev
 description: Tem interesse em aprender Flutter ou Dart? Confira este drop e
   saiba como funciona o package repository deles.
-publish_date: 2020-07-16 2:17 AM +0000
+date: 2020-07-16 2:17 AM +0000
 keywords:
   - flutter
   - pub.dev

@@ -4,7 +4,7 @@ subtitle: Descomplicando o Critical Path
 description: Neste drop falo sobre a técnica Above-The-Fold e a importância em
   adotá-la para otimização do carregamento de nossas páginas web.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1595814845/Edh9qQ8XgAAAIPT_vamkdi.jpg
-publish_date: 2020-07-22 2:17 AM +0000
+date: 2020-07-22 2:17 AM +0000
 keywords:
   - css
   - critical

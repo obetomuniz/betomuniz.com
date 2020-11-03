@@ -2,7 +2,7 @@
 title: Editando CSS-in-JS no Chrome 85
 description: Um drop bem legal sobre o novo suporte do Chrome para edição de
   estilos CSS-in-JS.
-publish_date: 2020-06-25 2:17 AM +0000
+date: 2020-06-25 2:17 AM +0000
 keywords:
   - chrome
   - "85"

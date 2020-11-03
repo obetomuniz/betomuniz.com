@@ -3,7 +3,7 @@ title: Screen Reader Only
 subtitle: Otimização para Leitores de Tela com CSS
 description: Neste drop falo da técnica Screen Reader Only, que visa otimizar o
   suporte das nossas aplicações web para leitores de tela utilizando apenas CSS.
-publish_date: 2020-07-22 2:17 AM +0000
+date: 2020-07-22 2:17 AM +0000
 keywords:
   - sro
   - a11y
@@ -16,13 +16,11 @@ language: pt
 
 <p>
 
-
 👉 [De acordo com a
 WebAIM](https://webaim.org/techniques/css/invisiblecontent/#offscreen) , só
 precisamos criar a seguinte declaração CSS para posterior reutilização:
 
 </p>
-
 
 ```css
 .sr-only {

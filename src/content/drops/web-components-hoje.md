@@ -1,5 +1,5 @@
 ---
-publish_date: 2014-10-25 2:17 AM +0000
+date: 2014-10-25 2:17 AM +0000
 keywords:
   - web components
 category: tech

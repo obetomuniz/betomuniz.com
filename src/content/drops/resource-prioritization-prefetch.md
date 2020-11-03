@@ -4,7 +4,7 @@ subtitle: prefetch
 description: Neste drop falo como a diretiva "prefetch" nos possibilita informar
   ao Browser recursos interessantes de baixa prioridade para download paralelo
   com recursos mais prioritários.
-publish_date: 2020-07-31 2:17 AM +0000
+date: 2020-07-31 2:17 AM +0000
 keywords:
   - resource
   - prioritization

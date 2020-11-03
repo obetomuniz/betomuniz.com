@@ -1,6 +1,6 @@
 ---
 title: "Não desperdice seu tempo. Organize sua agenda."
-publish_date: 2020-03-31 2:17 AM +0000
+date: 2020-03-31 2:17 AM +0000
 description: "Neste drop compartilho um processo de gestão de tempo que eu mesmo defini utilizando o Google Calendar e hábitos simples."
 category: dev_lifestyle
 language: pt
@@ -49,14 +49,16 @@ Tenho família, faço atividades físicas, tenho um trabalho, tenho uma comunida
 Com base nestes parâmetros específicos da minha vida, o que eu podia fazer era definir uma rotina de atividades principais. E o resultado foi esse:
 
 <a
-  href="https://user-images.githubusercontent.com/1680157/78036525-c8ab6b80-7340-11ea-84c3-2319879e77dd.png"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <img
+href="https://user-images.githubusercontent.com/1680157/78036525-c8ab6b80-7340-11ea-84c3-2319879e77dd.png"
+target="\_blank"
+rel="noopener noreferrer"
+
+> <img
+
     src="https://user-images.githubusercontent.com/1680157/78036525-c8ab6b80-7340-11ea-84c3-2319879e77dd.png"
     alt="Minha Agenda no Google Calendar"
-  />
+
+/>
 </a>
 
 Como podem ver, um calendário com componentes de tempo. 🤯 (_Pra quem me conhece sabe o tanto que eu gosto de componentes. Acho que extrapolei dessa vez_ 😂)

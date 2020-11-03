@@ -1,7 +1,7 @@
 ---
 title: "Autogestão e Comunicação"
 subtitle: "Os segredos do bom profissional remoto"
-publish_date: 2019-11-03 2:17 AM +0000
+date: 2019-11-03 2:17 AM +0000
 description: "Um drop sobre aprendizados que obtive trabalhando remotamente e dicas de como se adaptar bem neste modelo de trabalho"
 category: remote_work
 language: pt

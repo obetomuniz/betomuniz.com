@@ -1,7 +1,7 @@
 ---
 title: "WorkerDOM"
 subtitle: "O renascimento do AMP"
-publish_date: 2019-04-29 2:17 AM +0000
+date: 2019-04-29 2:17 AM +0000
 xdescription: "Um drop sobre as vantagens do uso conjunto de Accelerated Mobile Pages (AMP) e WorkerDOM."
 category: tech
 language: pt

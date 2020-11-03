@@ -2,7 +2,7 @@
 title: Text Fragments no Chrome
 description: Neste drop falo a nova funcionalidade do Chrome de criar Links
   usando textos de uma página web.
-publish_date: 2020-06-18 2:17 AM +0000
+date: 2020-06-18 2:17 AM +0000
 keywords:
   - text fragments
   - google chrome

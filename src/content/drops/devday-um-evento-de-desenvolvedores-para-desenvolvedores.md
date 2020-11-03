@@ -1,6 +1,6 @@
 ---
 title: "DEVDAY - Um evento de desenvolvedores para desenvolvedores"
-publish_date: 2014-11-05 2:17 AM +0000
+date: 2014-11-05 2:17 AM +0000
 description: "Overview sobre o que foi o DEVDAY 2014, um evento incrível de desenvolvedores para desenvolvedores."
 category: "community"
 language: pt

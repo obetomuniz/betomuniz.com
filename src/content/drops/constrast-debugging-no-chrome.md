@@ -1,7 +1,7 @@
 ---
 title: Contrast Debugging no Chrome
 description: Neste drop falo sobre a nova ferramenta de Contrast Debugging no Chrome.
-publish_date: 2020-06-18 2:17 AM +0000
+date: 2020-06-18 2:17 AM +0000
 keywords:
   - constrast
   - devtools

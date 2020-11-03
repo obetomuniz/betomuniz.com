@@ -1,7 +1,7 @@
 ---
 title: "Desmistificando o Polymer"
 subtitle: "Porque o Polymer?"
-publish_date: 2014-11-17 2:17 AM +0000
+date: 2014-11-17 2:17 AM +0000
 description: "Segundo drop de uma série que visa desmistificar o Polymer."
 category: tech
 language: pt

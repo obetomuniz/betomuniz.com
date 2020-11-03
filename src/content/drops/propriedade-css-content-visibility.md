@@ -4,7 +4,7 @@ subtitle: content-visibility
 description: Neste drop falo como a propriedade CSS content-visibility ajuda o
   browser informando a ele o que deve ser renderizado no carregamento da página.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1597536383/cv_kbmfdc.jpg
-publish_date: 2020-08-19 2:17 AM +0000
+date: 2020-08-19 2:17 AM +0000
 keywords:
   - css
   - above-the-fold

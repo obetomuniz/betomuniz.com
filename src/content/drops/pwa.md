@@ -1,6 +1,6 @@
 ---
 title: "Progressive Web Apps"
-publish_date: 2020-07-09 2:17 AM +0000
+date: 2020-07-09 2:17 AM +0000
 description: "Neste drop contextualizo Progressive Web Apps com relação ao seu propósito de utilização."
 category: "tech"
 language: pt
