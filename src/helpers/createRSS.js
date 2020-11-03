@@ -7,8 +7,9 @@ const createRssItem = ({ slug, title, description, date }) => `
       <pubDate>${date}</pubDate>
     </item>`;
 
-const createRSS = (items) => `
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+const createRSS = (
+  items
+) => `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Beto Muniz Drops</title>
     <link>https://betomuniz.com/drops</link>
