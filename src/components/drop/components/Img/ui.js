@@ -12,7 +12,7 @@ export const Container = styled.span`
     width: 100%;
     border-radius: ${rem("5px")};
     overflow: hidden;
-    border: ${rem("1px")} solid var(--lINK_COLOR);
+    border: ${rem("1px")} solid var(--LINK_COLOR);
   }
 `;
 

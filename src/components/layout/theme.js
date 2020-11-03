@@ -9,7 +9,7 @@ export default createGlobalStyle`
     --SECONDARY_COLOR: #9900FF;
     --TITLE_COLOR: rebeccapurple;
     --TEXT_COLOR: black;
-    --lINK_COLOR: #888;
+    --LINK_COLOR: #595959;
     --DATETIME_COLOR: #444;
     --CATEGORY_TECH_COLOR: darkgreen;
     --CATEGORY_REMOTE_WORK_COLOR: dodgerblue;

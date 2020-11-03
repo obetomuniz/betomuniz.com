@@ -32,7 +32,7 @@ const commonArticleStyles = css`
   }
 
   > a {
-    color: var(--lINK_COLOR);
+    color: var(--LINK_COLOR);
     text-decoration: underline;
     font-weight: bold;
   }
