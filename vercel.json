@@ -1,0 +1,54 @@
+{
+  "redirects": [
+    {
+      "source": "/telegram",
+      "destination": "https://t.me/obetomuniz",
+      "statusCode": 301
+    },
+    {
+      "source": "/newsletter",
+      "destination": "https://landing.mailerlite.com/webforms/landing/y9t5l3",
+      "statusCode": 301
+    },
+    {
+      "source": "/youtube",
+      "destination": "https://www.youtube.com/c/betomuniz",
+      "statusCode": 301
+    },
+    {
+      "source": "/instagram",
+      "destination": "https://www.instagram.com/obetomuniz",
+      "statusCode": 301
+    },
+    {
+      "source": "/github",
+      "destination": "https://github.com/obetomuniz",
+      "statusCode": 301
+    },
+    {
+      "source": "/linkedin",
+      "destination": "https://www.linkedin.com/in/obetomuniz",
+      "statusCode": 301
+    },
+    {
+      "source": "/tiktok",
+      "destination": "https://www.tiktok.com/@obetomuniz",
+      "statusCode": 301
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/obetomuniz",
+      "statusCode": 301
+    },
+    {
+      "source": "/twitch",
+      "destination": "https://www.twitch.tv/obetomuniz",
+      "statusCode": 301
+    },
+    {
+      "source": "/facebook",
+      "destination": "https://www.facebook.com/obetomuniz",
+      "statusCode": 301
+    }
+  ]
+}
