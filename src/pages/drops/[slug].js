@@ -27,7 +27,16 @@ const DropPage = (props) => {
   const {
     page: {
       content,
-      data: { title, subtitle, description, keywords, publish_date, featured },
+      data: {
+        title,
+        subtitle,
+        description,
+        keywords,
+        publish_date,
+        featured,
+        prev_link,
+        next_link,
+      },
     },
     slug,
   } = props;
