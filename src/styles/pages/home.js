@@ -16,11 +16,16 @@ export const About = styled.main`
   text-align: center;
   width: 550px;
   margin: var(--HORIZONTAL_MARGIN) auto 0;
+  strong {
+    font-weight: bold;
+  }
+
   p {
-    font-size: ${rem("18px")};
-    line-height: ${rem("44px")};
+    font-size: 1.684rem;
+    line-height: 3rem;
 
     &:first-child {
+      margin-bottom: ${rem("25px")};
       &:first-letter {
         font-size: ${rem("32px")};
       }
@@ -35,7 +40,7 @@ export const About = styled.main`
     width: 100%;
 
     p {
-      font-size: ${rem("16px")};
+      font-size: 1.056rem;
       line-height: ${rem("30px")};
     }
   }
