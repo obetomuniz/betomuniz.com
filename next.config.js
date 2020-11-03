@@ -12,7 +12,7 @@ module.exports = withImages({
   async headers() {
     return [
       {
-        source: "/:path*",
+        source: "/",
         headers: [
           {
             key: "X-Content-Type-Options",
