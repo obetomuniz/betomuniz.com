@@ -20,6 +20,7 @@ const DEFAULT_HEADERS = [
 ];
 
 module.exports = withImages({
+  poweredByHeader: false,
   webpack(config) {
     config.module.rules.push({
       test: /\.md$/,
