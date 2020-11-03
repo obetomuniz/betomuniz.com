@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Container, A, Category } from "./ui";
 
 const SimpleFeedItem = ({ data }) => {
@@ -17,9 +16,9 @@ const SimpleFeedItem = ({ data }) => {
       <Category color={`--CATEGORY_${category.toUpperCase()}_COLOR`}>
         {category.replace("_", " ")}
       </Category>
-      <Link href={`/drops/${slug}`} as={`/drops/${slug}`} title={customTitle}>
-        <A>{customTitle}</A>
-      </Link>
+      <A href={`/drops/${slug}`} title={customTitle}>
+        {customTitle}
+      </A>
     </Container>
   );
 };
