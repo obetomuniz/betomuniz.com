@@ -30,7 +30,8 @@ const Head = ({
           rel="preload"
           as="script"
         />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
+        <link href="https://www.google-analytics.com" rel="preconnect" />
+        <link href="https://www.googletagmanager.com" rel="preconnect" />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${google_analytics_id}`}
