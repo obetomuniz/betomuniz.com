@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+# dev
+/public/sitemap.xml
+/public/rss.xml
+
 # next.js
 /.next/
 /src/.next/
