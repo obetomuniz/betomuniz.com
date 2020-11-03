@@ -2,83 +2,83 @@
 label: Drop
 hide_body: false
 fields:
-  - name: draft
-    type: boolean
-    label: Draft
-    default: true
-  - name: title
-    type: text
-    config:
-      required: true
-      min: 1
-      max: 60
-    label: Title
-  - name: subtitle
-    type: text
-    config:
-      required: false
-      min: 1
-      max: 60
-    label: Subtitle
-  - name: description
-    type: textarea
-    default: ""
-    config:
-      required: true
-      wysiwyg: false
-      schema:
-        format: markdown
-      max: 155
-      min: 1
-    label: Description
-  - name: date
-    type: datetime
-    label: Publish Date
-    description: ""
-    config:
-      required: true
-      date_format: DD/MM/YYYY
-      time_format: ""
-      display_utc: true
-      export_format: YYYY-MM-DD h:mm A ZZ
-    default: now
-  - name: featured
-    type: file
-    config:
-      maxSize: 64
-    label: Featured
-  - name: keywords
-    type: tag_list
-    default: []
-    label: Keywords
-    description: Up to 5
-  - name: category
-    type: select
-    default: tech
-    config:
-      required: true
-      options:
-        - tech
-        - dev_lifestyle
-        - remote_work
-        - community
-      source:
-        type: simple
-        section:
-        file:
-        path:
-    label: Category
-  - name: language
-    type: select
-    default: pt
-    config:
-      required: false
-      options:
-        - pt
-        - en
-      source:
-        type: simple
-        section:
-        file:
-        path:
-    label: Language
+- name: draft
+  type: boolean
+  label: Draft
+  default: true
+- name: title
+  type: text
+  config:
+    required: true
+    min: 1
+    max: 60
+  label: Title
+- name: subtitle
+  type: text
+  config:
+    required: false
+    min: 0
+    max: 60
+  label: Subtitle
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 155
+    min: 1
+  label: Description
+- name: date
+  type: datetime
+  label: Publish Date
+  description: ''
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: ''
+    display_utc: true
+    export_format: YYYY-MM-DD h:mm A ZZ
+  default: now
+- name: featured
+  type: file
+  config:
+    maxSize: 64
+  label: Featured
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
+  description: Up to 5
+- name: category
+  type: select
+  default: tech
+  config:
+    required: true
+    options:
+    - tech
+    - dev_lifestyle
+    - remote_work
+    - community
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: language
+  type: select
+  default: pt
+  config:
+    required: false
+    options:
+    - pt
+    - en
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Language
