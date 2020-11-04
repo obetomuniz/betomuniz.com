@@ -84,3 +84,4 @@ fields:
   label: Language
 pages:
 - src/content/drops/facedetector-api.md
+- src/content/drops/textdetector-api.md
