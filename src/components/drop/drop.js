@@ -28,7 +28,12 @@ const renderers = {
     }
 
     return (
-      <SyntaxHighlighter style={dracula} language={language} children={value} />
+      <SyntaxHighlighter
+        style={dracula}
+        language={language}
+        children={value}
+        data-language={language}
+      />
     );
   },
   link: (props) => <A {...props} />,
