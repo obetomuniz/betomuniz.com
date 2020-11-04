@@ -28,10 +28,10 @@ const faceDetector = new FaceDetector({
 const faces = await faceDetector.detect(bitmapImg);
 ```
 
-🎚 Atualmente a **FaceDetection API** permite priorizar velocidade ao invés de precisão e também configurar o número máximo de rostos a serem identificados para otimizar a performance com base nos objetivos de cada aplicação.
+🎚 Atualmente a **FaceDetection API** permite priorizar velocidade e configurar o número máximo de rostos para otimizar a performance com base nos objetivos de cada aplicação.
 
-**🕶 Essa API não substitui algoritmos de reconhecimneto facial**, mas facilita a implementação deles entre outros, como sistemas de _tagging_ em fotos, sistemas de _cropping_ automático baseados em rostos, sistema de _overlay_ para desenhar e muito mais.
+**🕶 Essa API não substitui algoritmos de reconhecimneto facial**, mas facilita a implementação deles entre outros, como sistemas de _tagging_, sistemas de _cropping_ automático, sistema de _overlay_ para desenhos, etc
 
-**💡 Ainda é necessário o uso com polyfills**, como o [face-api.js](https://justadudewhohacks.github.io/face-api.js/docs/index.html "face-api.js") ou ativando no chrome com a flag `chrome://flags/#enable-experimental-web-platform-features`.
+**💡 Ainda é necessário o uso com polyfills**, como o [face-api.js](https://justadudewhohacks.github.io/face-api.js/docs/index.html "face-api.js") ou ativando no chrome via `chrome://flags/#enable-experimental-web-platform-features`.
 
 🤯 Incrivel, né?
