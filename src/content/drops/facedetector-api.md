@@ -34,4 +34,4 @@ const faces = await faceDetector.detect(bitmapImg);
 
 **💡 Ainda é necessário o uso com polyfills**, como o [face-api.js](https://justadudewhohacks.github.io/face-api.js/docs/index.html "face-api.js") ou ativando no chrome via `chrome://flags/#enable-experimental-web-platform-features`.
 
-🤯 Incrivel, né?
+🤯 Incrível, né?
