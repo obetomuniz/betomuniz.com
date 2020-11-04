@@ -82,3 +82,5 @@ fields:
       file: 
       path: 
   label: Language
+pages:
+- src/content/drops/facedetector-api.md
