@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2020-11-05 11:11 PM -0200
 keywords:
 - face detection api
