@@ -10,7 +10,7 @@ category: tech
 language: pt
 title: Otimizando Acessibilidade Web com :focus-visible
 subtitle: ''
-description: Neste drop explico como funciona a nova pseudo-classe :focus-visible
+description: Neste drop explico como funciona a nova pseudo-class ":focus-visible"
   no CSS e mostro como ela nos ajuda a melhorar acessibilidade web.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604944964/Titulo_Image_jbgemd.jpg
 
