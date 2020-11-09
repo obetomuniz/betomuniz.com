@@ -33,8 +33,6 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604954687/
 
 🆕 **Suspense API** para carregamento condicional de components
 
-[blog.logrocket.com/new-features-in-vue-3-and-how-to-use-them-2](https://blog.logrocket.com/new-features-in-vue-3-and-how-to-use-them-2/)
-
 #### FFmpeg.wasm
 
 **FFmpeg** é um popular framework no mundo do processamento de imagem e vídeo que recentemente **recebeu portabilidade para WebAssembly**.
@@ -42,8 +40,6 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604954687/
 **Agora é possível aplicar as funções da ferramenta diretamente do browser** para conversão de formatos, cropping, redimensionamento e muito mais. E melhor: **Sem fazer upload para nenhum lugar**.
 
 **E apesar de ainda ser lenta** nesse novo conexto a FFmpeg.wasm, **é uma questão de tempo, suporte e otimizações para alcançar os níveis de performance da sua versão original**.
-
-[jeromewu.github.io/ffmpeg-wasm-a-pure-webassembly-javascript-port-of-ffmpeg](https://jeromewu.github.io/ffmpeg-wasm-a-pure-webassembly-javascript-port-of-ffmpeg/)
 
 #### Deno 1.5
 
@@ -60,5 +56,3 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604954687/
 ⚡️ Ativação de checagem _strict_ do TypeScript
 
 ⚡️ Novas regras adicionadas ao `deno lint`
-
-[deno.land/posts/v1.5](https://deno.land/posts/v1.5)
