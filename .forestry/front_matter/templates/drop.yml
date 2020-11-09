@@ -84,4 +84,5 @@ fields:
   label: Language
 pages:
 - src/content/drops/facedetector-api.md
+- src/content/drops/otimizando-acessibilidade-web-com-focus-visible.md
 - src/content/drops/textdetector-api.md
