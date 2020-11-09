@@ -33,6 +33,8 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604954687/
 
 🆕 **Suspense API** para carregamento condicional de components
 
+---
+
 #### FFmpeg.wasm
 
 **FFmpeg** é um popular framework no mundo do processamento de imagem e vídeo que recentemente **recebeu portabilidade para WebAssembly**.
@@ -40,6 +42,8 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604954687/
 **Agora é possível aplicar as funções da ferramenta diretamente do browser** para conversão de formatos, cropping, redimensionamento e muito mais. E melhor: **Sem fazer upload para nenhum lugar**.
 
 **E apesar de ainda ser lenta** nesse novo conexto a FFmpeg.wasm, **é uma questão de tempo, suporte e otimizações para alcançar os níveis de performance da sua versão original**.
+
+---
 
 #### Deno 1.5
 
