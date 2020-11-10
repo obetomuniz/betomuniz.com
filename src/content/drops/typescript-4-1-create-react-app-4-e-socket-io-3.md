@@ -1,62 +1,59 @@
 ---
 draft: true
-date: 2020-11-18 6:41 PM -0200
+date: 2020-11-25 6:41 PM -0200
 keywords:
-- vuejs
-- ffmpeg
-- deno
-- webassembly
-- wasm
+- typescript
+- socket.io
+- create react app
+- cra
 category: tech
 language: pt
-title: TypeScript 4.1, Socket.io 3 e Create React App 4
+title: TypeScript 4.1, Create React App 4 e Socket.io 3
 subtitle: ''
-description: Novidades sobre Vue 3, FFmpeg.wasm e Deno 1.5
-featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604954687/capa_goxe6j.jpg
+description: Novidades sobre TypeScript 4.1, Create React App 4 e Socket.io 3
+featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1605030897/news_g9gmbf.jpg
 
 ---
-#### Vue 3 é anunciado
+#### TypeScript 4.1
 
-🆕 **Escrito com TypeScript** visando performance
+👉 Suporte para **Template Literal em String Literal Types**
 
-🆕 **55% mais** rápido e **54% menos** uso de memória
+👉 Introdução de **Key Remapping** para tipos mapeados em objetos ou índices arbitrários.
 
-🆕 **Tree-shaking** para bundles menores
+👉 Suporte de recursão em **Tipos Condicionais**
 
-🆕 **Composition API** para composições otimizadas e dinâmicas de componentes
+👉 Novo modo `--noUncheckedIndexedAccess` para verificar potenciais propriedades ou índices indefinidos.
 
-🆕 **Teleport API** para suporte nativo de portals
+👉 `checkJs` automaticamente ativa `allowJs`
 
-🆕 **Fragments** para evitar a elementos desnecessários no DOM
+👉 Em editores, suporte da tag `@see` do **JSDoc**.
 
-🆕 **Suporte à JSX**
+***
 
-🆕 **Suspense API** para carregamento condicional de components
+#### Create React App 4
 
----
+⚛️ Introduziu suporte experimental ao `react-refresh` para substituir `react-hot-loader`
 
-#### FFmpeg.wasm
+⚛️ Suporte ao **React 17** e **novo modelo de JSX**
 
-**FFmpeg** é um popular framework no mundo do processamento de imagem e vídeo que recentemente **recebeu portabilidade para WebAssembly**.
+⚛️ **Suporte ao TypeScript 4**
 
-**Agora é possível aplicar as funções da ferramenta diretamente do browser** para conversão de formatos, cropping, redimensionamento e muito mais. E melhor: **Sem fazer upload para nenhum lugar**.
+⚛️ **Suporte ao ESLint 7** com novas regras para Jest e React Testing Library
 
-**E apesar de ainda ser lenta** nesse novo conexto a FFmpeg.wasm, **é uma questão de tempo, suporte e otimizações para alcançar os níveis de performance da sua versão original**.
+⚛️ **Melhorias para PWAs** entregáveis
 
----
+⚛️ Suporte à **Web Vitals**
 
-#### Deno 1.5
+***
 
-⚡️ **3x mais** velocidade para type checking
+#### Socket.io 3
 
-⚡️ **15x mais** velocidade se usado com `--no-check`
+⚡️ Suporte à ES6 `module export`
 
-⚡️ **Otimização do tree-shaking** para bundles menores
+⚡️ Removeu `Server#set()`, `Socket#rooms`.
 
-⚡️ Introdução das API `alert`, `confirm`, and `prompt` em conformidade com as respectivas Web APIs
+⚡️ Removeu opção `origins` para promover `cors`
 
-⚡️ Melhoria na experiência de uso do REPL
+⚡️ Otimizações no bundle de produção
 
-⚡️ Ativação de checagem _strict_ do TypeScript
-
-⚡️ Novas regras adicionadas ao `deno lint`
+⚡️ Agora `Socket#join()` e `Socket#leave()` são síncronos e não recebem mais argumento de callback.
