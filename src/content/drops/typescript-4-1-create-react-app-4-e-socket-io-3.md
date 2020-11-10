@@ -18,15 +18,15 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1605030897/
 
 👉 Suporte para **Template Literal em String Literal Types**
 
-👉 Introdução de **Key Remapping** para tipos mapeados em objetos ou índices arbitrários.
+👉 Introdução de **Key Remapping** para tipos mapeados em objetos ou índices arbitrários
 
-👉 Suporte de recursão em **Tipos Condicionais**
+👉 Suporte de **Recursão em** **Tipos Condicionais**
 
-👉 Novo modo `--noUncheckedIndexedAccess` para verificar potenciais propriedades ou índices indefinidos.
+👉 Novo modo `--noUncheckedIndexedAccess` para verificar potenciais propriedades ou índices indefinidos
 
 👉 `checkJs` automaticamente ativa `allowJs`
 
-👉 Em editores, suporte da tag `@see` do **JSDoc**.
+👉 Em editores, suporte da tag `@see` do **JSDoc**
 
 ***
 
@@ -50,10 +50,10 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1605030897/
 
 ⚡️ Suporte à ES6 `module export`
 
-⚡️ Removeu `Server#set()`, `Socket#rooms`.
+⚡️ Removeu `Server#set()` e `Socket#rooms`
 
 ⚡️ Removeu opção `origins` para promover `cors`
 
-⚡️ Otimizações no bundle de produção
+⚡️ Otimizações no tamanho do bundle de produção
 
-⚡️ Agora `Socket#join()` e `Socket#leave()` são síncronos e não recebem mais argumento de callback.
+⚡️ Agora `Socket#join()` e `Socket#leave()` são síncronos e não recebem mais argumento de callback
