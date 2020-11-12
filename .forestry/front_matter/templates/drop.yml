@@ -85,6 +85,7 @@ fields:
 pages:
 - src/content/drops/como-funciona-a-propriedade-css-font-display.md
 - src/content/drops/facedetector-api.md
+- src/content/drops/o-que-sao-iife-ou-funcoes-imediatas-no-javascript.md
 - src/content/drops/otimizando-acessibilidade-web-com-focus-visible.md
 - src/content/drops/textdetector-api.md
 - src/content/drops/typescript-4-1-create-react-app-4-e-socket-io-3.md
