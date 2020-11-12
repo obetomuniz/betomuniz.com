@@ -5,7 +5,6 @@ keywords:
 - standardjs
 - javascript
 - headless cms
-- curso de blockchain
 category: tech
 language: pt
 title: StandardJS 16 e Headless CMS em Destaque
