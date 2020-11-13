@@ -21,7 +21,7 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1605238826/
 
 😆 `null` é um tipo de atribuição de variável, tal como, números, strings, objetos entre outros, porém com a finalidade de **DEFINIR** explicitamente uma variável com valor vazio/nulo (🤦‍).
 
-😊 `null` e **`undefined`** são valores primitivos no JavaScript, tal como String, Number, etc.
+😊 `null` e `undefined` são valores primitivos no JavaScript, tal como String, Number, etc.
 
 😎 `null` e `undefined` são considerados **_falsy_**, assim como `NaN`, `“”` (string vazia) entre outros, ou seja, são falsos quando em contextos booleanos.Porém não são estritamente iguais, ou seja, `null` NÃO é igual a `undefined`.
 
