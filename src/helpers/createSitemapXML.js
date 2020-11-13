@@ -1,3 +1,12 @@
+import { format, parse } from "date-fns";
+
+const formatSitemapXMLDate = (date) => {
+  return format(
+    parse(date, "yyyy-MM-dd h:mm a xxxx", new Date()),
+    "yyyy-MM-dd'T'HH:mm:ss.SSSxxx"
+  );
+};
+
 const staticSitemapItems = () => `
     <url>
         <loc>https://betomuniz.com/</loc>
@@ -17,7 +26,7 @@ const createSitemapXMLItem = ({ slug, date }) => `
         <loc>https://betomuniz.com/drops/${slug}</loc>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
-        <lastmod>${date}</lastmod>
+        <lastmod>${formatSitemapXMLDate(date)}</lastmod>
     </url>`;
 
 const createSitemapXML = (items) => `<?xml version="1.0" encoding="UTF-8"?>
