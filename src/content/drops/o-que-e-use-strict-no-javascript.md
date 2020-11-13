@@ -7,7 +7,7 @@ keywords:
   - ecmascript
 category: tech
 language: pt
-title: O que é "use strict" no JavaScript?
+title: 'O que é "use strict" no JavaScript?'
 subtitle:
 description: 'Neste drop falo sobre como funciona e o porque o "use strict"
   existe no JavaScript.'
