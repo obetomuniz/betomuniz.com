@@ -85,6 +85,7 @@ fields:
 pages:
 - src/content/drops/como-funciona-a-propriedade-css-font-display.md
 - src/content/drops/facedetector-api.md
+- src/content/drops/null-vs-undefined-e-referenceerror-no-javascript.md
 - src/content/drops/o-que-sao-iife-ou-funcoes-imediatas-no-javascript.md
 - src/content/drops/otimizando-acessibilidade-web-com-focus-visible.md
 - src/content/drops/standardjs-16-e-headless-cms-em-destaque.md
