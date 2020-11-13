@@ -23,6 +23,6 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1605238826/
 
 😊 `null` e `undefined` são valores primitivos no JavaScript, tal como String, Number, etc.
 
-😎 `null` e `undefined` são considerados **_falsy_**, assim como `NaN`, `“”` (string vazia) entre outros, ou seja, são falsos quando em contextos booleanos.Porém não são estritamente iguais, ou seja, `null` NÃO é igual a `undefined`.
+😎 `null` e `undefined` são considerados **_falsy_**, assim como `NaN`, `“”` (string vazia) entre outros, ou seja, são falsos quando em contextos booleanos. Porém não são estritamente iguais, ou seja, `null` NÃO é igual a `undefined`.
 
 🤩 Toda função no JavaScript retorna `undefined` por padrão, exceto se o mesmo for explicitamente declarado com `return`.
