@@ -7,7 +7,7 @@ keywords:
   - programação
 category: community
 language: pt
-title: '"Você já ouviu falar do Minas Dev?"'
+title: "'Você já ouviu falar do Minas Dev?'"
 subtitle:
 description: "Conheça um pouco mais do Minas Dev e suas futuras iniciativas."
 featured:

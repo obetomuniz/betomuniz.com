@@ -7,15 +7,15 @@ keywords:
   - ecmascript
 category: tech
 language: pt
-title: 'O que é "use strict" no JavaScript?'
+title: 'O que é 'use strict' no JavaScript?'
 subtitle:
-description: 'Neste drop falo sobre como funciona e o porque o "use strict"
+description: 'Neste drop falo sobre como funciona e o porque o 'use strict'
   existe no JavaScript.'
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1601858476/Titulo_Image_Site_xuyidf.jpg
 draft: false
 audiencecall: Ei gente, blz?
 informaldesc: >-
-  💡 No *Drop* de hoje falei sobre o funcionamento do recurso `"use strict"`
+  💡 No *Drop* de hoje falei sobre o funcionamento do recurso `'use strict'`
   dentro do contexto do JavaScript. Ficou bem bacana 😋
 
 

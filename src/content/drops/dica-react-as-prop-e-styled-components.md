@@ -1,6 +1,6 @@
 ---
 title: Dica React
-subtitle: '"as" prop e styled-components'
+subtitle: "'as' prop e styled-components"
 description: Neste drop dou uma dica bem útil para aplicar reusabilidade em
   nossos projetos através da biblioteca styled-components. Confere lá.
 date: 2020-07-17 2:17 AM +0000
