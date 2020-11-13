@@ -1,6 +1,6 @@
 ---
 draft: true
-date: 2020-11-13 1:27 AM -0200
+date: 2020-12-09 1:27 AM -0200
 keywords:
 - javascript
 - 'null'
@@ -12,7 +12,7 @@ title: Null vs Undefined (e ReferenceError) no JavaScript
 subtitle: ''
 description: Neste drop falo sobre o comportamento das declarações primitivas "null",
   "undefined " e ReferenceError no JavaScript
-featured: ''
+featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1605238826/Titulo_m6afut.jpg
 
 ---
 😀 **ReferenceError** é um tipo de erro que retorna **“{nome da variável} is not defined”** quando uma variável é invocada, mas ainda não foi declarada
