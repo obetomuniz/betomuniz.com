@@ -7,10 +7,9 @@ keywords:
   - ecmascript
 category: tech
 language: pt
-title: 'O que é 'use strict' no JavaScript?'
-subtitle:
-description: 'Neste drop falo sobre como funciona e o porque o 'use strict'
-  existe no JavaScript.'
+title: "O que é 'use strict' no JavaScript?"
+subtitle: ""
+description: "Neste drop falo sobre como funciona e o porque o 'use strict' existe no JavaScript."
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1601858476/Titulo_Image_Site_xuyidf.jpg
 draft: false
 audiencecall: Ei gente, blz?
