@@ -33,7 +33,7 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604954687/
 
 🆕 **Suspense API** para carregamento condicional de components
 
----
+***
 
 #### FFmpeg.wasm
 
@@ -41,9 +41,9 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604954687/
 
 **Agora é possível aplicar as funções da ferramenta diretamente do browser** para conversão de formatos, cropping, redimensionamento e muito mais. E melhor: **Sem fazer upload para nenhum lugar**.
 
-**E apesar de ainda ser lenta** nesse novo conexto a FFmpeg.wasm, **é uma questão de tempo, suporte e otimizações para alcançar os níveis de performance da sua versão original**.
+**E apesar de ainda ser lenta** nesse novo contexto, **é uma questão de tempo, suporte e otimizações para que essa ferramenta alcance os níveis de performance da sua versão original**.
 
----
+***
 
 #### Deno 1.5
 
@@ -57,6 +57,6 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1604954687/
 
 ⚡️ Melhoria na experiência de uso do REPL
 
-⚡️ Ativação de checagem _strict_ do TypeScript
+⚡️ Suporte a checagem em modo _strict_ do TypeScript
 
 ⚡️ Novas regras adicionadas ao `deno lint`
