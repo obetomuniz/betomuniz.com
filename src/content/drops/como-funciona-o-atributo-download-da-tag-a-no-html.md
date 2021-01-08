@@ -14,7 +14,7 @@ description: Neste drop falo sobre o atributo "download" suportado pela tag <a> 
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1610126267/Titulo_Image_grtcse.jpg
 
 ---
-⏬ O atributo `download` da tag `<a>` do HTML instrui ao browser qque o recurso definido no atributo `href`, o meso deve ser baixado e não navegável.
+⏬ O atributo `download` da tag `<a>` do HTML instrui ao browser que o recurso definido no atributo `href` deve ser baixado e não navegável.
 
 👍 Somente URLs de mesma origem de domínio ou schemas `blob:` e `data:` declarados no `href` são suportadas.
 
