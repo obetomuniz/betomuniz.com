@@ -21,3 +21,9 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1610126267/
 📝 O atributo `download` pode ser informado com ou sem valor. Quando informado com valor, este será o nome do arquivo a ser baixado.
 
 😗 O atributo `download` é suportado por praticamente todos os browsers atuais, menos o IE11.
+
+```html
+<a href="..." download="image.png">
+  Baixar Imagem
+</a>
+```
