@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2020-12-04 12:37 AM -0200
 keywords:
 - iife
