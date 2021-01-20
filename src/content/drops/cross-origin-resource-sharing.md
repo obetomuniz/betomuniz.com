@@ -11,7 +11,7 @@ language: pt
 title: Cross-Origin Resource Sharing
 subtitle: ''
 description: Neste drop abordo Cross-Origin Resource Sharing (CORS) falando sobre
-  eu funcionamento e uso.
+  seu funcionamento e uso.
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611168076/1_ywmnne.jpg
 
 ---
