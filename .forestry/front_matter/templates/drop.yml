@@ -85,6 +85,7 @@ fields:
 pages:
 - src/content/drops/como-funciona-a-propriedade-css-font-display.md
 - src/content/drops/como-funciona-o-atributo-download-da-tag-a-no-html.md
+- src/content/drops/cross-origin-read-blocking.md
 - src/content/drops/cross-origin-resource-sharing.md
 - src/content/drops/facedetector-api.md
 - src/content/drops/null-vs-undefined-e-referenceerror-no-javascript.md
