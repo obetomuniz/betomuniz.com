@@ -1,14 +1,18 @@
 ---
 draft: true
 date: 2021-01-21 5:06 PM -0200
-keywords: []
+keywords:
+- corp
+- cybersec
+- meltdown
+- spectre
 category: tech
 language: pt
 title: Cross-Origin Resource Policy
 subtitle: ''
 description: Neste drop explico como funciona o mecanismo Cross-Origin Resource Policy
   e como ele complementa a especificação CORB para deixar sua aplicação web segura.
-featured: ''
+featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611256416/1_ayi8bg.jpg
 
 ---
 **🛎 Cross-Origin Resource Policy** ou **CORP** é um mecanismo complementar  
