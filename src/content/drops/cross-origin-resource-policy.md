@@ -12,7 +12,7 @@ title: Cross-Origin Resource Policy
 subtitle: ''
 description: Neste drop explico como funciona o mecanismo Cross-Origin Resource Policy
   e como ele complementa a especificação CORB para deixar sua aplicação web segura.
-featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611256416/1_ayi8bg.jpg
+featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611256726/1_au8kwx.jpg
 
 ---
 **🛎 Cross-Origin Resource Policy** ou **CORP** é um mecanismo complementar  
