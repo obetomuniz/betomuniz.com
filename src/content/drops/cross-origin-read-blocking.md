@@ -13,7 +13,7 @@ title: Cross-Origin Read Blocking
 subtitle: ''
 description: 'Neste drop falo sobre as mecânicas relacionadas ao Cross-Origin Read
   Blocking, um recurso muito útil contra alguns ataques maliciosos na web '
-featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611255266/1_tbynfp.jpg
+featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611255900/1_xfbnzz.jpg
 
 ---
 🔐 Por definição, **Cross-Origin Read Blocking** valida requisições do browser antes mesmo de serem requisitadas no servidor. Tudo isso utilizando o _MIME type_ da requisição como regra de validação.
