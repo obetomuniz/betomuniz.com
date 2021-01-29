@@ -12,7 +12,7 @@ title: Propriedade aspect-ratio no CSS
 subtitle: ''
 description: Neste drop dou detalhes sobre a propriedade CSS aspect-ratio, seu propósito
   e também dicas de uso.
-featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611948159/Titulo_Image_i03i3b.jpg
+featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611949389/1_q2cbu2.jpg
 
 ---
 ⚡️ A nova propriedade CSS `aspect-ratio` introduz a **todos** os elementos no HTML a possibilidade de dimensionamento automático.
