@@ -37,4 +37,8 @@ featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611949389/
 
 🤩 Agora até mesmo a tag `<div>`  pode apresentar esse tipo comportamento de auto dimensionamento.
 
-📣 Além disso, a nova propriedade CSS `aspect-ratio`  facilita a criação de interfaces responsivas, dinâmicas e inclusive a adoção de boas práticas no uso de imagens na web, pois permite redimensionar precisamente uma imagem baseada na taxa de proporção original dela, para assim melhorar a experiência do usuário e até métricas de performance no [_Lighthouse_ ao não adotar imagens desproporcionais](https://developers.google.com/web/updates/2017/10/lighthouse#aspect).
+📣 Além disso, a nova propriedade CSS `aspect-ratio`  facilita a criação de interfaces responsivas
+
+👍 E também adoção de boas práticas no uso de imagens na web, pois permite redimensionar precisamente uma imagem baseada na taxa de proporção original dela, assim como otimiza as métricas de performance no [_Lighthouse_ ao não adotar imagens desproporcionais](https://developers.google.com/web/updates/2017/10/lighthouse#aspect).
+
+⚡️ O suporte atual é fornecido no Chrome 88, e o Safari também já disse que irá implementar logo. Firefox e Edge vão na mesma direção do Safari.
