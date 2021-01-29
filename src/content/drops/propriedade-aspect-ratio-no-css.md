@@ -15,7 +15,7 @@ description: Neste drop dou detalhes sobre a propriedade CSS aspect-ratio, seu p
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1611948159/Titulo_Image_i03i3b.jpg
 
 ---
-⚡️ A nova propriedade CSS `aspect-ratio` introduz a _todos_ os elementos no HTML a possibilidade de dimensionamento automático.
+⚡️ A nova propriedade CSS `aspect-ratio` introduz a **todos** os elementos no HTML a possibilidade de dimensionamento automático.
 
 ```css
 .square { aspect-ratio: 1 / 1; }
