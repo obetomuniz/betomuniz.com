@@ -21,6 +21,7 @@ const Newsletter = ({ label }) => {
           type="email"
           name="member[email]"
           placeholder={textLabel}
+          required
         />
         <Button type="submit">CADASTRAR</Button>
       </Form>
