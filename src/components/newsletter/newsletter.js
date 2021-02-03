@@ -1,49 +1,29 @@
-import { useState, useCallback } from "react";
-
-import { Container, Form, Input, Button, SubmittedMessage } from "./ui";
+import { Container, Form, Input, Button } from "./ui";
 
 const Newsletter = ({ label }) => {
   const textLabel = label || "Cadastre seu email e receba meus conteúdos";
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [email, setEmail] = useState("");
-  const handleOnSubmit = useCallback(
-    async (event) => {
-      event.preventDefault();
-      if (email) {
-        await fetch(
-          "https://hook.integromat.com/cohe83p5inxqalyax5do0wr2w59alg5y",
-          {
-            method: "post",
-            body: email,
-          }
-        );
-        setIsSubmitted(true);
-      }
-    },
-    [email]
-  );
 
   return (
     <Container>
-      {!isSubmitted ? (
-        <Form method="post" novalidate>
-          <label className={"sro"} htmlFor="email-newsletter-input">
-            {textLabel}
-          </label>
-          <Input
-            id="email-newsletter-input"
-            type="email"
-            name="EMAIL"
-            placeholder={textLabel}
-            onChange={({ target: { value } }) => setEmail(value)}
-          />
-          <Button type="button" onClick={handleOnSubmit}>
-            CADASTRAR
-          </Button>
-        </Form>
-      ) : (
-        <SubmittedMessage>Cadastro realizado com sucesso!</SubmittedMessage>
-      )}
+      <Form
+        action="https://www.getrevue.co/profile/obetomuniz/add_subscriber"
+        method="post"
+        id="revue-form"
+        name="revue-form"
+        target="_blank"
+        novalidate
+      >
+        <label className={"sro"} htmlFor="email-newsletter-input">
+          {textLabel}
+        </label>
+        <Input
+          id="email-newsletter-input"
+          type="email"
+          name="member[email]"
+          placeholder={textLabel}
+        />
+        <Button type="submit">CADASTRAR</Button>
+      </Form>
     </Container>
   );
 };
