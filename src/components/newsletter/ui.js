@@ -73,7 +73,7 @@ export const Button = styled.button`
     background-color: var(--SECONDARY_COLOR);
   }
   @media screen and (max-width: 550px) {
-    width: calc(100% - 5px);
+    width: calc(100% - 20px);
     height: 40px;
     margin: 0 auto;
     border-radius: 5px;
