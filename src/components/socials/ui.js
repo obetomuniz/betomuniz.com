@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { rem } from "polished";
+import { rem, rgba } from "polished";
 
 export const Container = styled.ul`
   display: flex;
@@ -58,7 +58,7 @@ export const SocialsItem = styled.li`
     color: ${({ color }) => `var(${color})`};
     transition: all 100ms linear;
     border-radius: 100%;
-    box-shadow: 2px 2px 0 1px var(--BLACK_SHADOW_COLOR);
+    box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.25)};
     &:hover {
       color: var(--SECONDARY_COLOR);
     }

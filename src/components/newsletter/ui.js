@@ -24,8 +24,8 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   background-color: transparent;
   color: var(--PRIMARY_COLOR);
   font-size: ${rem("16px")};
@@ -50,7 +50,7 @@ export const Input = styled.input`
   }
   @media screen and (max-width: 550px) {
     margin: 0 10px 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: none;
   }
 `;
@@ -63,8 +63,8 @@ export const Button = styled.button`
   line-height: 0;
   display: block;
   cursor: pointer;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   color: var(--WHITE_COLOR);
   font-weight: 600;
   font-size: ${rem("16px")};
@@ -73,10 +73,10 @@ export const Button = styled.button`
     background-color: var(--SECONDARY_COLOR);
   }
   @media screen and (max-width: 550px) {
-    width: calc(100% - 20px);
+    width: calc(100% - 5px);
     height: 40px;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: none;
   }
 `;

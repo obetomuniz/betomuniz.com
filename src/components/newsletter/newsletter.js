@@ -3,7 +3,7 @@ import { useState, useCallback } from "react";
 import { Container, Form, Input, Button, SubmittedMessage } from "./ui";
 
 const Newsletter = ({ label }) => {
-  const textLabel = label || "Receba meus conteúdos no email";
+  const textLabel = label || "Cadastre seu email e receba meus conteúdos";
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [email, setEmail] = useState("");
   const handleOnSubmit = useCallback(

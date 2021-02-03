@@ -54,7 +54,6 @@ const commonArticleStyles = css`
 `;
 
 export const Article = styled.article`
-  border: ${rem("1px")} solid var(--BORDER_COLOR);
   border-radius: ${rem("5px")};
   padding: var(--LINE_BREAK_SPACE) var(--LINE_BREAK_SPACE) 0
     var(--LINE_BREAK_SPACE);

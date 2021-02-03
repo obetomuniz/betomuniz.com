@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { rem, rgba } from "polished";
 
 export const Container = styled.header`
   margin: var(--HORIZONTAL_MARGIN) auto 0;
@@ -25,6 +26,7 @@ export const Photo = styled.a`
   border-radius: 100%;
   position: relative;
   cursor: pointer;
+  box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.25)};
 `;
 
 export const PhotoImage = styled.img`

@@ -1,7 +1,7 @@
 import TelegramIcon from "../../assets/vectors/icon-telegram.svg";
 import YouTubeIcon from "../../assets/vectors/icon-youtube.svg";
 import InstagramIcon from "../../assets/vectors/icon-instagram.svg";
-import TwitchIcon from "../../assets/vectors/icon-twitch.svg";
+import TwitterIcon from "../../assets/vectors/icon-twitter.svg";
 
 import { Container, SocialsItem, SocialsItemLink } from "./ui";
 
@@ -27,14 +27,14 @@ const Socials = () => (
         <InstagramIcon />
       </SocialsItemLink>
     </SocialsItem>
-    <SocialsItem color="--TWITCH_COLOR">
+    <SocialsItem color="--TWITTER_COLOR">
       <SocialsItemLink
-        title="Beto Muniz Twitch"
-        href="https://www.twitch.tv/obetomuniz"
+        title="Beto Muniz Twitter"
+        href="https://twitter.com/obetomuniz"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <TwitchIcon />
+        <TwitterIcon />
       </SocialsItemLink>
     </SocialsItem>
     <SocialsItem color="--TELEGRAM_COLOR">

@@ -49,6 +49,11 @@
       "source": "/facebook",
       "destination": "https://www.facebook.com/obetomuniz",
       "statusCode": 301
+    },
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/9V6xTgvWht",
+      "statusCode": 301
     }
   ]
 }

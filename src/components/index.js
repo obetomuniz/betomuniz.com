@@ -10,6 +10,7 @@ import SimpleFeedItem from "./simple-feed-item/simple-feed-item";
 import Drop from "./drop/drop";
 import DropCTACard from "./drop-cta-card/drop-cta-card";
 import DropNav from "./drop-nav/drop-nav";
+import MyLink from "./my-link/my-link";
 
 export {
   Head,
@@ -24,4 +25,5 @@ export {
   Drop,
   DropCTACard,
   DropNav,
+  MyLink,
 };

@@ -1,21 +1,17 @@
 import styled from "styled-components";
 import { rem, rgba } from "polished";
 
-export const SocialsContainer = styled.div`
-  width: 550px;
-  margin: var(--HORIZONTAL_MARGIN) auto;
-  display: flex;
-  justify-content: center;
-
-  @media screen and (max-width: 550px) {
-    width: 100%;
-  }
-`;
-
 export const Container = styled.main`
   width: 550px;
+  margin-top: var(--HORIZONTAL_MARGIN);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: calc(var(--HORIZONTAL_MARGIN) / 3);
 
   @media screen and (max-width: 550px) {
+    grid-gap: calc(var(--HORIZONTAL_MARGIN) / 2.5);
+    grid-template-columns: 1fr;
     width: 100%;
   }
 `;

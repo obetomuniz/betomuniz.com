@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { rem } from "polished";
+import { rem, rgba } from "polished";
 
 export const Container = styled.section`
   border-radius: ${rem("5px")};
@@ -7,6 +7,7 @@ export const Container = styled.section`
   padding: ${rem("30px")};
   margin-top: var(--HORIZONTAL_MARGIN);
   text-align: center;
+  box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.2)};
 
   @media screen and (max-width: 550px) {
     padding: ${rem("14px")};
@@ -17,6 +18,7 @@ export const Text = styled.p`
   color: var(--WHITE_COLOR);
   font-size: ${rem("19px")};
   display: block;
+  text-shadow: 0 0 15px ${rgba("#000", 0.8)};
 
   a {
     color: var(--WHITE_COLOR);

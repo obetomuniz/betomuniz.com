@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { rem } from "polished";
+import { rem, rgba } from "polished";
 
 export const Container = styled.div`
   display: flex;
   padding: ${rem("8px")} 2%;
-  border-bottom: 1px solid var(--PRIMARY_COLOR);
+  box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.2)};
   background-color: var(--WHITE_COLOR);
   z-index: 2;
   position: sticky;

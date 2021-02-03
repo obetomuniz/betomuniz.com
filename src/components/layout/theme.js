@@ -19,9 +19,12 @@ export default createGlobalStyle`
     --BACKGROUND_CODE_TEXT_COLOR: #eee;
     --TWITTER_COLOR: #1da1f2;
     --LINKEDIN_COLOR: #0077b5;
+    --DISCORD_COLOR: #7289da;
     --TELEGRAM_COLOR: #32afed;
     --TWITCH_COLOR: #a970ff;
+    --GITHUB_COLOR: #24292e;
     --INSTAGRAM_COLOR: #c13584;
+    --FACEBOOK_COLOR: #3b5998;
     --YOUTUBE_COLOR: red;
     --PURPLE_NEON_COLOR: blueviolet;
     --WHITE_COLOR: white;
