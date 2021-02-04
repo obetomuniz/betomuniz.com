@@ -1,7 +1,7 @@
 import { Container, Form, Input, Button } from "./ui";
 
 const Newsletter = ({ label }) => {
-  const textLabel = label || "Cadastre seu email e receba meus conteúdos";
+  const textLabel = label || "Cadastre seu email e receba minha newsletter";
 
   return (
     <Container>
