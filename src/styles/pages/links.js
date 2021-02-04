@@ -15,6 +15,39 @@ export const Container = styled.main`
     width: 100%;
   }
 `;
+export const About = styled.main`
+  text-align: center;
+  width: 550px;
+  margin: var(--HORIZONTAL_MARGIN) auto 0;
+
+  strong {
+    font-weight: bold;
+  }
+
+  p {
+    font-size: ${rem("24px")};
+    line-height: ${rem("42px")};
+
+    &:first-child {
+      &:first-letter {
+        font-size: ${rem("32px")};
+      }
+    }
+  }
+
+  a {
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 100%;
+
+    p {
+      font-size: 4vw;
+      line-height: ${rem("30px")};
+    }
+  }
+`;
 
 export const StickyContainer = styled.div`
   position: sticky;

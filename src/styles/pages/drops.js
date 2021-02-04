@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { rem } from "polished";
+import { rem, rgba } from "polished";
 
 export const SocialsContainer = styled.div`
   width: 550px;
@@ -26,7 +26,7 @@ export const StickyContainer = styled.div`
   width: 100%;
   padding: ${rem("20px")} 0;
   background-color: var(--WHITE_COLOR);
-  border-top: 1px solid var(--PRIMARY_COLOR);
+  box-shadow: 0 0 ${rem("50px")} ${rem("1px")} ${rgba("#000", 0.15)};
 
   @media screen and (max-width: 550px) {
     padding: ${rem("15px")} 0;

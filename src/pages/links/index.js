@@ -1,8 +1,10 @@
 import { useRef } from "react";
 import matter from "gray-matter";
+import ReactMarkdown from "react-markdown/with-html";
 
 import {
   Container,
+  About,
   StickyContainer,
   NewsletterContainer,
 } from "../../styles/pages/links";
@@ -94,7 +96,7 @@ const LINK_LIST = [
 
 const Links = (props) => {
   const {
-    page: { title, description, keywords, canonical },
+    page: { title, description, keywords, canonical, content },
   } = props;
   const miniHeaderRef = useRef(null);
 
@@ -110,6 +112,9 @@ const Links = (props) => {
       />
 
       <Layout ref={miniHeaderRef} showPhoto>
+        <About>
+          <ReactMarkdown allowDangerousHtml children={content} />
+        </About>
         <Container>
           {LINK_LIST.map((link, index) => (
             <MyLink key={`link-${index}`} {...link} />

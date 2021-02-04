@@ -25,7 +25,7 @@ export const About = styled.main`
     line-height: 3rem;
 
     &:first-child {
-      margin-bottom: ${rem("25px")};
+      /* margin-bottom: ${rem("25px")}; */
       &:first-letter {
         font-size: ${rem("32px")};
       }

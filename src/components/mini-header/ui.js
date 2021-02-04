@@ -36,10 +36,10 @@ export const Photo = styled.a`
   position: relative;
   cursor: pointer;
   margin-top: -1px;
+  box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.25)};
 
   @media screen and (max-width: 550px) {
     margin-top: 0;
-    box-shadow: none;
   }
 `;
 
@@ -64,6 +64,7 @@ export const ShareButton = styled.button`
   margin: -1px auto 0;
   font-family: var(--FONT_FAMILY);
   font-size: ${rem("12px")};
+  box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.2)};
 
   &:hover {
     background-color: var(--SECONDARY_COLOR);
@@ -72,7 +73,6 @@ export const ShareButton = styled.button`
   @media screen and (max-width: 550px) {
     font-size: ${rem("10px")};
     margin: 0 auto;
-    box-shadow: none;
   }
 `;
 
@@ -98,13 +98,9 @@ export const SocialsItem = styled.li`
     color: ${({ color }) => `var(${color})`};
     transition: all 100ms linear;
     border-radius: 100%;
-    box-shadow: 0 0 0 1px var(--SECONDARY_COLOR);
+    box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.2)};
     &:hover {
       color: var(--SECONDARY_COLOR);
-    }
-
-    @media screen and (max-width: 550px) {
-      box-shadow: none;
     }
   }
 

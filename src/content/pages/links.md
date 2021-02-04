@@ -10,5 +10,5 @@ keywords:
 title: Links
 description: Beto Muniz presence in the Digital World
 canonical: https://betomuniz.com/links
-content: ""
+content: Beto Muniz is a **Front-End Engineer**, <br/>**Open Source Contributor** & **Content Creator**.
 ---
