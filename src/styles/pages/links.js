@@ -9,7 +9,7 @@ export const Container = styled.main`
   grid-template-rows: auto;
   grid-gap: calc(var(--HORIZONTAL_MARGIN) / 3);
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     grid-gap: calc(var(--HORIZONTAL_MARGIN) / 2.5);
     grid-template-columns: 1fr;
     width: 100%;
@@ -39,7 +39,7 @@ export const About = styled.main`
     font-weight: bold;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
 
     p {
@@ -57,7 +57,7 @@ export const StickyContainer = styled.div`
   background-color: var(--WHITE_COLOR);
   box-shadow: 0 0 ${rem("50px")} ${rem("1px")} ${rgba("#000", 0.15)};
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     padding: ${rem("15px")} 0;
     width: 100%;
   }
@@ -67,7 +67,7 @@ export const NewsletterContainer = styled.div`
   width: 550px;
   margin: 0 auto;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
   }
 `;

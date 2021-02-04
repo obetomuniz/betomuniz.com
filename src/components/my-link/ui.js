@@ -20,7 +20,7 @@ export const Container = styled.a`
     transform: scale3d(1, 1, 1);
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     padding: ${rem("18px")};
     font-size: ${rem("16px")};
 

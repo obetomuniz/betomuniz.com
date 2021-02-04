@@ -23,7 +23,7 @@ export const InnerContainer = styled.div`
   justify-content: space-between;
   position: relative;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
   }
 `;
@@ -38,7 +38,7 @@ export const Photo = styled.a`
   margin-top: -1px;
   box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.25)};
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     margin-top: 0;
   }
 `;
@@ -70,7 +70,7 @@ export const ShareButton = styled.button`
     background-color: var(--SECONDARY_COLOR);
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     font-size: ${rem("10px")};
     margin: 0 auto;
   }
@@ -104,7 +104,7 @@ export const SocialsItem = styled.li`
     }
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     margin-top: 0;
   }
 `;

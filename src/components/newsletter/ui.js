@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: row;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     flex-direction: column;
     width: 100%;
   }
@@ -18,7 +18,7 @@ export const Form = styled.form`
   justify-content: center;
   flex-direction: row;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     flex-direction: column;
   }
 `;
@@ -50,7 +50,7 @@ export const Input = styled.input`
   :-moz-placeholder {
     color: var(--SECONDARY_COLOR);
   }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     margin: 0 ${rem("20px")} ${rem("10px")};
   }
 `;
@@ -73,7 +73,7 @@ export const Button = styled.button`
   &:hover {
     background-color: var(--SECONDARY_COLOR);
   }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: calc(100% - ${rem("40px")});
     height: ${rem("40px")};
     margin: 0 auto;
@@ -86,7 +86,7 @@ export const SubmittedMessage = styled.p`
   padding: ${rem("10px")};
   height: ${rem("40px")};
   text-align: center;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     font-size: 0.9rem;
     margin-bottom: ${rem("10px")};
   }

@@ -21,7 +21,7 @@ export const Container = styled.a`
     fill: var(--PRIMARY_COLOR);
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: ${rem("40px")};
     height: ${rem("40px")};
   }

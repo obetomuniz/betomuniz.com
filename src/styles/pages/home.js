@@ -7,7 +7,7 @@ export const SocialsContainer = styled.div`
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
   }
 `;
@@ -36,7 +36,7 @@ export const About = styled.main`
     font-weight: bold;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
 
     p {
@@ -50,7 +50,7 @@ export const NewsletterContainer = styled.div`
   width: 550px;
   margin: 0 auto var(--HORIZONTAL_MARGIN);
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
   }
 `;

@@ -9,7 +9,7 @@ export const Container = styled.li`
     margin-top: 0;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     margin: 1.2rem 0 0;
   }
 `;
@@ -19,7 +19,7 @@ export const Category = styled.p`
   font-size: ${rem("14px")};
   line-height: ${rem("20px")};
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     font-size: ${rem("12px")};
     line-height: ${rem("20px")};
   }
@@ -39,7 +39,7 @@ export const A = styled.a`
     text-decoration: underline;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     font-size: ${rem("20px")};
     line-height: ${rem("28px")};
   }

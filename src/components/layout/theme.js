@@ -42,7 +42,7 @@ export default createGlobalStyle`
     --FONT_FAMILY_INLINE_CODE: medium-content-sans-serif-font, "Courier New", serif;
     --LINE_BREAK_SPACE: ${rem("25px")};
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
       --LINE_BREAK_SPACE: ${rem("15px")};
       --HORIZONTAL_MARGIN: 3rem;
     }

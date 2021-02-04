@@ -8,7 +8,7 @@ export const Container = styled.header`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
     padding: 0 4%;
   }

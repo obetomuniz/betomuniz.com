@@ -10,7 +10,7 @@ export const Title = styled.h1`
   font-weight: 700;
   margin-bottom: calc(var(--HORIZONTAL_MARGIN) / 3.5);
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     font-size: ${rem("38px")};
     line-height: ${rem("46px")};
   }
@@ -21,7 +21,7 @@ export const Subtitle = styled.span`
   font-size: ${rem("28px")};
   line-height: ${rem("54px")};
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     font-size: ${rem("18px")};
   }
 `;
@@ -66,7 +66,7 @@ export const Article = styled.article`
     font-weight: 700;
     margin: 0 0 var(--LINE_BREAK_SPACE) 0;
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
       font-size: ${rem("24px")};
       line-height: ${rem("36px")};
     }
@@ -78,7 +78,7 @@ export const Article = styled.article`
     font-weight: 700;
     margin: 0 0 var(--LINE_BREAK_SPACE) 0;
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
       font-size: ${rem("18px")};
       line-height: ${rem("28px")};
     }
@@ -90,7 +90,7 @@ export const Article = styled.article`
     font-weight: 700;
     margin: 0 0 var(--LINE_BREAK_SPACE) 0;
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
       font-size: ${rem("16px")};
       line-height: ${rem("28px")};
     }
@@ -102,7 +102,7 @@ export const Article = styled.article`
     font-weight: 700;
     margin: 0 0 var(--LINE_BREAK_SPACE) 0;
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
       font-size: ${rem("14px")};
       line-height: ${rem("20px")};
     }
@@ -114,7 +114,7 @@ export const Article = styled.article`
     font-weight: 700;
     margin: 0 0 var(--LINE_BREAK_SPACE) 0;
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
       font-size: ${rem("14px")};
       line-height: ${rem("20px")};
     }
@@ -129,7 +129,7 @@ export const Article = styled.article`
 
     ${commonArticleStyles}
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
       font-size: ${rem("14px")};
       line-height: ${rem("20px")};
     }
@@ -176,7 +176,7 @@ export const Article = styled.article`
     border-radius: ${rem("5px")} !important;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     border: 0;
     border-top: ${rem("1px")} solid var(--BORDER_COLOR);
     border-bottom: ${rem("1px")} solid var(--BORDER_COLOR);

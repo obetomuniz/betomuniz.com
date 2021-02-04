@@ -46,7 +46,7 @@ export const NormalizedStyles = createGlobalStyle`
 export const Container = styled.div`
   margin: 0 auto var(--HORIZONTAL_MARGIN);
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
     padding: 0 4%;
   }

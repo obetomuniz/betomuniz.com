@@ -9,7 +9,7 @@ export const Container = styled.section`
   text-align: center;
   box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.2)};
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     padding: ${rem("14px")};
   }
 `;
@@ -26,7 +26,7 @@ export const Text = styled.p`
     font-weight: bold;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     font-size: ${rem("15px")};
   }
 `;
