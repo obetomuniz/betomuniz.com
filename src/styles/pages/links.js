@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { rem, rgba } from "polished";
 
-export const Container = styled.main`
+export const Container = styled.section`
   width: 550px;
-  margin-top: var(--HORIZONTAL_MARGIN);
+  margin: var(--HORIZONTAL_MARGIN) auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -46,6 +46,25 @@ export const About = styled.main`
       font-size: 4vw;
       line-height: ${rem("30px")};
     }
+  }
+`;
+
+export const VideoContainer = styled.div`
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin: var(--HORIZONTAL_MARGIN) auto 0;
+  border-radius: ${rem("10px")};
+  overflow: hidden;
+  box-shadow: 0 0 ${rem("30px")} ${rem("1px")} ${rgba("#000", 0.25)};
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 `;
 

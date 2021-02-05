@@ -7,6 +7,7 @@ import {
   About,
   StickyContainer,
   NewsletterContainer,
+  VideoContainer,
 } from "../../styles/pages/links";
 import { createTitle } from "../../helpers";
 import { Head, Layout, Newsletter, MyLink } from "../../components";
@@ -19,6 +20,7 @@ const LINK_LIST = [
     },
     text: "YouTube",
     href: "https://www.youtube.com/c/betomuniz",
+    pin: true,
   },
   {
     theme: {
@@ -27,6 +29,7 @@ const LINK_LIST = [
     },
     text: "Instagram",
     href: "https://www.instagram.com/obetomuniz/",
+    pin: true,
   },
   {
     theme: {
@@ -43,6 +46,7 @@ const LINK_LIST = [
     },
     text: "Telegram",
     href: "https://t.me/obetomuniz",
+    pin: true,
   },
   {
     theme: {
@@ -96,7 +100,7 @@ const LINK_LIST = [
 
 const Links = (props) => {
   const {
-    page: { title, description, keywords, canonical, content },
+    page: { title, description, keywords, canonical, content, video },
   } = props;
   const miniHeaderRef = useRef(null);
 
@@ -120,6 +124,19 @@ const Links = (props) => {
             <MyLink key={`link-${index}`} {...link} />
           ))}
         </Container>
+        {video && (
+          <VideoContainer>
+            <iframe
+              width="560"
+              height="315"
+              src={`https://www.youtube.com/embed/${video}`}
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            />
+          </VideoContainer>
+        )}
       </Layout>
 
       <StickyContainer>
