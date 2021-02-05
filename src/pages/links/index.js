@@ -127,6 +127,7 @@ const Links = (props) => {
         {video && (
           <VideoContainer>
             <iframe
+              title="Video from my YouTube Channel"
               width="560"
               height="315"
               src={`https://www.youtube.com/embed/${video}`}
