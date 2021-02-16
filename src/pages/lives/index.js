@@ -38,7 +38,7 @@ const LINK_LIST = [
       textAlt: true,
     },
     text: "Adicionar no Google Calendar",
-    href: `https://www.google.com/calendar/render?action=TEMPLATE&text=Beto+On-The-Line+%231%3A+Talk+sobre+Next.js%2C+Futuro+dos+Meus+Conte%C3%BAdos+e+Perguntas+Frequentes&details=Fala+galera%21%0A%0AEsse+%C3%A9+o+Beto+On-The-Line+%E2%88%92+Evento+em+formato+Live+na+Twitch+e+no+YouTube+do+Beto+Muniz+para+falar+sobre+Desenvolvimento+Web.%0A%0APara+participar+atrav%C3%A9s+do+YouTube%2C+acesse%3A%0A%0A%E2%9A%A1%EF%B8%8F+https%3A%2F%2Fwww.youtube.com%2Fc%2Fbetomuniz%0A%0APara+participar+atrav%C3%A9s+da+Twitch%2C+acesse%3A%0A%0A%F0%9F%A6%84+https%3A%2F%2Fwww.twitch.tv%2Fobetomuniz%0A%0AD%C3%AA+seu+RVSP+%F0%9F%91%8D+no+Twitch+e%2Fou+YouTube%2C+e+participe.%0A%0ANos+vemos+por+l%C3%A1.%0A%0A%5B+%5D%27s%0A%0ABeto+Muniz.&location=YouTube+e+Twitch+%28Links+Na+Descri%C3%A7%C3%A3o%29&dates=20210216T223000Z%2F20210217T003000Z`,
+    href: `https://betomuniz.com/add-to-calendar`,
     altPin: true,
   },
   {

@@ -12,9 +12,15 @@
     },
     {
       "source": "/on-the-line",
-      "destination": "https://betomuniz.com/lives/",
+      "destination": "https://bit.ly/2ZlMH1X",
       "statusCode": 301
     },
+    {
+      "source": "/add-to-calendar",
+      "destination": "https://bit.ly/3u5xlNm",
+      "statusCode": 301
+    },
+
     {
       "source": "/youtube",
       "destination": "https://www.youtube.com/c/betomuniz",
