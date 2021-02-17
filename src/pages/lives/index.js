@@ -31,16 +31,16 @@ const LINK_LIST = [
     href: "https://www.youtube.com/c/betomuniz",
     pin: true,
   },
-  {
-    theme: {
-      color: `BLACK_COLOR`,
-      bg: `WHITE_COLOR`,
-      textAlt: true,
-    },
-    text: "Adicionar no Google Calendar",
-    href: `https://betomuniz.com/add-to-calendar`,
-    altPin: true,
-  },
+  // {
+  //   theme: {
+  //     color: `BLACK_COLOR`,
+  //     bg: `WHITE_COLOR`,
+  //     textAlt: true,
+  //   },
+  //   text: "Adicionar no Google Calendar",
+  //   href: `https://betomuniz.com/add-to-calendar`,
+  //   altPin: true,
+  // },
   {
     theme: {
       color: `WHITE_COLOR`,
@@ -49,15 +49,15 @@ const LINK_LIST = [
     text: "Telegram",
     href: "https://t.me/obetomuniz",
   },
-  // {
-  //   theme: {
-  //     color: `WHITE_COLOR`,
-  //     bg: `INSTAGRAM_COLOR`,
-  //   },
-  //   text: "Instagram",
-  //   href: "https://www.instagram.com/obetomuniz/",
-  //   pin: true,
-  // },
+  {
+    theme: {
+      color: `WHITE_COLOR`,
+      bg: `INSTAGRAM_COLOR`,
+    },
+    text: "Instagram",
+    href: "https://www.instagram.com/obetomuniz/",
+    pin: true,
+  },
 ];
 
 const Lives = (props) => {
