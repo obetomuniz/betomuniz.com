@@ -59,14 +59,6 @@ const LINK_LIST = [
   {
     theme: {
       color: `WHITE_COLOR`,
-      bg: `DISCORD_COLOR`,
-    },
-    text: "Discord",
-    href: "https://beto.im/discord",
-  },
-  {
-    theme: {
-      color: `WHITE_COLOR`,
       bg: `LINKEDIN_COLOR`,
     },
     text: "LinkedIn",
@@ -87,14 +79,6 @@ const LINK_LIST = [
     },
     text: "GitHub",
     href: "https://github.com/obetomuniz",
-  },
-  {
-    theme: {
-      color: `WHITE_COLOR`,
-      bg: `FACEBOOK_COLOR`,
-    },
-    text: "Facebook",
-    href: "https://facebook.com/obetomuniz",
   },
 ];
 
