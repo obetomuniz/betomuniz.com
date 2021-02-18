@@ -25,15 +25,6 @@ const LINK_LIST = [
   {
     theme: {
       color: `WHITE_COLOR`,
-      bg: `INSTAGRAM_COLOR`,
-    },
-    text: "Instagram",
-    href: "https://www.instagram.com/obetomuniz/",
-    pin: true,
-  },
-  {
-    theme: {
-      color: `WHITE_COLOR`,
       bg: `TWITTER_COLOR`,
     },
     text: "Twitter",
@@ -55,6 +46,15 @@ const LINK_LIST = [
     },
     text: "Twitch",
     href: "https://www.twitch.tv/obetomuniz",
+  },
+  {
+    theme: {
+      color: `WHITE_COLOR`,
+      bg: `INSTAGRAM_COLOR`,
+    },
+    text: "Instagram",
+    href: "https://www.instagram.com/obetomuniz/",
+    pin: true,
   },
   {
     theme: {
