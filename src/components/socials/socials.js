@@ -18,12 +18,7 @@ const Socials = () => (
       </SocialsItemLink>
     </SocialsItem>
     <SocialsItem color="--BLACK_COLOR">
-      <SocialsItemLink
-        title="Beto Muniz's YouTube Channel"
-        href="/drops"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <SocialsItemLink title="Beto Muniz's Content Drops" href="/drops">
         <DropsIcon />
       </SocialsItemLink>
     </SocialsItem>
