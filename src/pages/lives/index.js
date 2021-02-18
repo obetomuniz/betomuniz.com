@@ -49,15 +49,15 @@ const LINK_LIST = [
     text: "Telegram",
     href: "https://t.me/obetomuniz",
   },
-  {
-    theme: {
-      color: `WHITE_COLOR`,
-      bg: `INSTAGRAM_COLOR`,
-    },
-    text: "Instagram",
-    href: "https://www.instagram.com/obetomuniz/",
-    pin: true,
-  },
+  // {
+  //   theme: {
+  //     color: `WHITE_COLOR`,
+  //     bg: `INSTAGRAM_COLOR`,
+  //   },
+  //   text: "Instagram",
+  //   href: "https://www.instagram.com/obetomuniz/",
+  //   pin: true,
+  // },
 ];
 
 const Lives = (props) => {
