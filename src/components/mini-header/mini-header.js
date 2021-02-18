@@ -5,7 +5,6 @@ import { gravatar } from "../../metadata/site.json";
 
 import TelegramIcon from "../../assets/vectors/icon-telegram.svg";
 import YouTubeIcon from "../../assets/vectors/icon-youtube.svg";
-import InstagramIcon from "../../assets/vectors/icon-instagram.svg";
 import TwitterIcon from "../../assets/vectors/icon-twitter.svg";
 
 import {
@@ -80,16 +79,6 @@ const MiniHeader = ({ scrollRef, shareData }) => {
               rel="noopener noreferrer"
             >
               <YouTubeIcon />
-            </SocialsItemLink>
-          </SocialsItem>
-          <SocialsItem color="--INSTAGRAM_COLOR">
-            <SocialsItemLink
-              title="Beto Muniz Instagram"
-              href="https://instagram.com/obetomuniz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <InstagramIcon />
             </SocialsItemLink>
           </SocialsItem>
           <SocialsItem color="--TWITTER_COLOR">
