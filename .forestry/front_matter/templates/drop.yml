@@ -92,6 +92,7 @@ pages:
 - src/content/drops/null-vs-undefined-e-referenceerror-no-javascript.md
 - src/content/drops/o-que-sao-iife-ou-funcoes-imediatas-no-javascript.md
 - src/content/drops/otimizando-acessibilidade-web-com-focus-visible.md
+- src/content/drops/padrao-prpl-explicado.md
 - src/content/drops/propriedade-aspect-ratio-no-css.md
 - src/content/drops/standardjs-16-e-headless-cms-em-destaque.md
 - src/content/drops/textdetector-api.md
