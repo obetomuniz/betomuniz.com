@@ -1,10 +1,10 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const NormalizedStyles = createGlobalStyle`
-  html{background-color: var(--BACKGROUND_COLOR);}
+  html{background-color: var(--WHITE);}
   *,:after,:before{box-sizing:inherit}html{box-sizing:border-box}
-  *::-moz-selection {color: var(--BACKGROUND_COLOR);background: var(--PURPLE_NEON_COLOR);}
-  *::selection {color: var(--BACKGROUND_COLOR);background: var(--PURPLE_NEON_COLOR);}
+  *::-moz-selection {color: var(--WHITE);background: var(--ELETRIC_VIOLET);}
+  *::selection {color: var(--WHITE);background: var(--ELETRIC_VIOLET);}
   html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
   article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
   ol,ul{list-style:none}
@@ -21,8 +21,8 @@ export const NormalizedStyles = createGlobalStyle`
   body{
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--BACKGROUND_COLOR);
-    font-family: var(--FONT_FAMILY);
+    background-color: var(--WHITE);
+    font-family: var(--FONT_FAMILY_SANS);
   }
   #__next {
     display: flex;
@@ -44,7 +44,7 @@ export const NormalizedStyles = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  margin: 0 auto var(--HORIZONTAL_MARGIN);
+  margin: 0 auto;
 
   @media screen and (max-width: 600px) {
     width: 100%;

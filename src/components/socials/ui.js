@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { rem, rgba } from "polished";
+import styled from 'styled-components';
+import { rem, rgba } from 'polished';
 
 export const Container = styled.ul`
   display: flex;
@@ -7,10 +7,10 @@ export const Container = styled.ul`
 `;
 
 export const SocialsItem = styled.li`
-  width: ${rem("56px")};
-  height: ${rem("56px")};
-  padding: ${rem("5px")};
-  margin: 0 ${rem("12px")};
+  width: ${rem('56px')};
+  height: ${rem('56px')};
+  padding: ${rem('5px')};
+  margin: 0 ${rem('12px')};
   border-radius: 100%;
 
   svg {
@@ -22,10 +22,16 @@ export const SocialsItem = styled.li`
     color: ${({ color }) => `var(${color})`};
     transition: all 100ms linear;
     border-radius: 100%;
-    box-shadow: 0 0 ${rem("30px")} ${rem("5px")} ${rgba("#000", 0.25)};
+    box-shadow: 0 0 ${rem('30px')} ${rem('5px')} ${rgba('#000', 0.25)};
     &:hover {
-      color: var(--SECONDARY_COLOR);
+      color: var(--ELETRIC_VIOLET);
     }
+  }
+
+  @media screen and (max-width: 600px) {
+    width: ${rem('42px')};
+    height: ${rem('42px')};
+    margin: 0 ${rem('8px')};
   }
 `;
 

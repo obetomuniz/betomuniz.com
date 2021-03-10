@@ -1,84 +1,66 @@
-import { useRef } from "react";
-import matter from "gray-matter";
-import ReactMarkdown from "react-markdown/with-html";
+import { useRef } from 'react';
+import matter from 'gray-matter';
+import ReactMarkdown from 'react-markdown/with-html';
 
 import {
   Container,
   About,
   StickyContainer,
   NewsletterContainer,
-  VideoContainer,
-} from "../../styles/pages/links";
-import { createTitle } from "../../helpers";
-import { Head, Layout, Newsletter, MyLink } from "../../components";
+} from '../../styles/pages/links';
+import { createTitle } from '../../helpers';
+import { Head, Layout, Newsletter, MyLink } from '../../components';
 
 const LINK_LIST = [
   {
     theme: {
-      color: `WHITE_COLOR`,
-      bg: `YOUTUBE_COLOR`,
+      color: `WHITE`,
+      bg: `TWITTER`,
     },
-    text: "YouTube",
-    href: "https://www.youtube.com/c/betomuniz",
+    text: 'Twitter',
+    href: 'https://twitter.com/obetomuniz',
+  },
+  {
+    theme: {
+      color: `WHITE`,
+      bg: `BLACK`,
+    },
+    text: 'DEV.to',
+    href: 'https://dev.to/obetomuniz',
+  },
+  {
+    theme: {
+      color: `WHITE`,
+      bg: `TELEGRAM`,
+    },
+    text: 'Telegram',
+    href: 'https://t.me/obetomuniz',
     pin: true,
   },
   {
     theme: {
-      color: `WHITE_COLOR`,
-      bg: `TWITTER_COLOR`,
+      color: `WHITE`,
+      bg: `GITHUB`,
     },
-    text: "Twitter",
-    href: "https://twitter.com/obetomuniz",
+    text: 'GitHub',
+    href: 'https://github.com/obetomuniz',
   },
   {
     theme: {
-      color: `WHITE_COLOR`,
-      bg: `TELEGRAM_COLOR`,
+      color: `WHITE`,
+      bg: `INSTAGRAM`,
     },
-    text: "Telegram",
-    href: "https://t.me/obetomuniz",
+    text: 'Instagram',
+    href: 'https://www.instagram.com/obetomuniz/',
     pin: true,
   },
   {
     theme: {
-      color: `WHITE_COLOR`,
-      bg: `TWITCH_COLOR`,
+      color: `WHITE`,
+      bg: `LINKEDIN`,
     },
-    text: "Twitch",
-    href: "https://www.twitch.tv/obetomuniz",
-  },
-  {
-    theme: {
-      color: `WHITE_COLOR`,
-      bg: `INSTAGRAM_COLOR`,
-    },
-    text: "Instagram",
-    href: "https://www.instagram.com/obetomuniz/",
-    pin: true,
-  },
-  {
-    theme: {
-      color: `WHITE_COLOR`,
-      bg: `LINKEDIN_COLOR`,
-    },
-    text: "LinkedIn",
-    href: "https://www.linkedin.com/in/obetomuniz",
-  },
-  {
-    theme: {
-      color: `WHITE_COLOR`,
-      bg: `BLACK_COLOR`,
-    },
-    text: "DEV.to",
-    href: "https://dev.to/obetomuniz",
-  },
-  {
-    theme: {
-      color: `WHITE_COLOR`,
-      bg: `GITHUB_COLOR`,
-    },
-    text: "GitHub",
-    href: "https://github.com/obetomuniz",
+    text: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/obetomuniz',
   },
 ];
 
@@ -108,20 +90,6 @@ const Links = (props) => {
             <MyLink key={`link-${index}`} {...link} />
           ))}
         </Container>
-        {video && (
-          <VideoContainer>
-            <iframe
-              title="Video from my YouTube Channel"
-              width="560"
-              height="315"
-              src={`https://www.youtube.com/embed/${video}`}
-              frameborder="0"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              loading="lazy"
-            />
-          </VideoContainer>
-        )}
       </Layout>
 
       <StickyContainer>

@@ -1,6 +1,4 @@
-import createTitle from "./createTitle";
-import createRSS from "./createRSS";
-import createSitemapXML from "./createSitemapXML";
-import getAuthorDetails from "./getAuthorDetails";
+import createTitle from './createTitle';
+import createSitemapXML from './createSitemapXML';
 
-export { createSitemapXML, createRSS, createTitle, getAuthorDetails };
+export { createSitemapXML, createTitle };

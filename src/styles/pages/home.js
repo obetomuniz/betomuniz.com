@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { rem } from "polished";
+import styled from 'styled-components';
+import { rem } from 'polished';
 
 export const SocialsContainer = styled.div`
   width: 550px;
@@ -25,9 +25,9 @@ export const About = styled.main`
     line-height: 3rem;
 
     &:first-child {
-      /* margin-bottom: ${rem("25px")}; */
+      /* margin-bottom: ${rem('25px')}; */
       &:first-letter {
-        font-size: ${rem("32px")};
+        font-size: ${rem('32px')};
       }
     }
   }
@@ -41,14 +41,38 @@ export const About = styled.main`
 
     p {
       font-size: 1.056rem;
-      line-height: ${rem("30px")};
+      line-height: ${rem('30px')};
     }
   }
 `;
 
+export const SectionTitle = styled.h2`
+  color: var(--REBECCA_PURPLE);
+  font-size: ${rem('42px')};
+  font-weight: 700;
+`;
+
 export const NewsletterContainer = styled.div`
   width: 550px;
-  margin: 0 auto var(--HORIZONTAL_MARGIN);
+  margin: var(--HORIZONTAL_MARGIN) auto 0;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+`;
+
+export const ProjectsContainer = styled.div`
+  width: 550px;
+  margin: var(--HORIZONTAL_MARGIN) auto 0;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+`;
+
+export const FooterContainer = styled.div`
+  width: 550px;
+  margin: var(--HORIZONTAL_MARGIN) auto 0;
 
   @media screen and (max-width: 600px) {
     width: 100%;

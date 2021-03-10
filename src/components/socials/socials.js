@@ -1,28 +1,14 @@
-import TelegramIcon from "../../assets/vectors/icon-telegram.svg";
-import YouTubeIcon from "../../assets/vectors/icon-youtube.svg";
-import DropsIcon from "../../assets/vectors/icon-drops.svg";
-import TwitterIcon from "../../assets/vectors/icon-twitter.svg";
+import TelegramIcon from '../../assets/vectors/icon-telegram.svg';
+import DEVtoIcon from '../../assets/vectors/icon-devto.svg';
+import GitHubIcon from '../../assets/vectors/icon-github-2.svg';
+import TwitterIcon from '../../assets/vectors/icon-twitter.svg';
+import InstagramIcon from '../../assets/vectors/icon-instagram.svg';
 
-import { Container, SocialsItem, SocialsItemLink } from "./ui";
+import { Container, SocialsItem, SocialsItemLink } from './ui';
 
 const Socials = () => (
   <Container>
-    <SocialsItem color="--YOUTUBE_COLOR">
-      <SocialsItemLink
-        title="Beto Muniz's YouTube Channel"
-        href="https://www.youtube.com/c/betomuniz"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <YouTubeIcon />
-      </SocialsItemLink>
-    </SocialsItem>
-    <SocialsItem color="--BLACK_COLOR">
-      <SocialsItemLink title="Beto Muniz's Content Drops" href="/drops">
-        <DropsIcon />
-      </SocialsItemLink>
-    </SocialsItem>
-    <SocialsItem color="--TWITTER_COLOR">
+    <SocialsItem color="--TWITTER">
       <SocialsItemLink
         title="Beto Muniz's Twitter Profile"
         href="https://twitter.com/obetomuniz"
@@ -32,7 +18,18 @@ const Socials = () => (
         <TwitterIcon />
       </SocialsItemLink>
     </SocialsItem>
-    <SocialsItem color="--TELEGRAM_COLOR">
+
+    <SocialsItem color="--BLACK">
+      <SocialsItemLink
+        title="Beto Muniz's DEV.to Profile"
+        href="https://dev.to/obetomuniz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <DEVtoIcon />
+      </SocialsItemLink>
+    </SocialsItem>
+    <SocialsItem color="--TELEGRAM">
       <SocialsItemLink
         title="Beto Muniz's Telegram Channel"
         href="https://t.me/obetomuniz"
@@ -40,6 +37,26 @@ const Socials = () => (
         rel="noopener noreferrer"
       >
         <TelegramIcon />
+      </SocialsItemLink>
+    </SocialsItem>
+    <SocialsItem color="--GITHUB">
+      <SocialsItemLink
+        title="Beto Muniz's GitHub Profile"
+        href="https://github.com/obetomuniz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <GitHubIcon />
+      </SocialsItemLink>
+    </SocialsItem>
+    <SocialsItem color="--INSTAGRAM">
+      <SocialsItemLink
+        title="Beto Muniz's Telegram Channel"
+        href="https://instagram.com/obetomuniz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <InstagramIcon />
       </SocialsItemLink>
     </SocialsItem>
   </Container>

@@ -1,7 +1,7 @@
-import { Container, Form, Input, Button } from "./ui";
+import { Container, Form, Input, Button } from './ui';
 
 const Newsletter = ({ label }) => {
-  const textLabel = label || "Cadastre seu email e receba minha newsletter";
+  const textLabel = label || 'Subscribe to my newsletter to receive updates';
 
   return (
     <Container>
@@ -13,7 +13,7 @@ const Newsletter = ({ label }) => {
         target="_blank"
         novalidate
       >
-        <label className={"sro"} htmlFor="email-newsletter-input">
+        <label className={'sro'} htmlFor="email-newsletter-input">
           {textLabel}
         </label>
         <Input
@@ -23,7 +23,7 @@ const Newsletter = ({ label }) => {
           placeholder={textLabel}
           required
         />
-        <Button type="submit">CADASTRAR</Button>
+        <Button type="submit">SUBSCRIBE</Button>
       </Form>
     </Container>
   );

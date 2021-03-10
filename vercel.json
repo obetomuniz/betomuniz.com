@@ -16,17 +16,6 @@
       "statusCode": 301
     },
     {
-      "source": "/add-to-calendar",
-      "destination": "",
-      "statusCode": 301
-    },
-
-    {
-      "source": "/youtube",
-      "destination": "https://www.youtube.com/c/betomuniz",
-      "statusCode": 301
-    },
-    {
       "source": "/instagram",
       "destination": "https://www.instagram.com/obetomuniz",
       "statusCode": 301
@@ -52,19 +41,9 @@
       "statusCode": 301
     },
     {
-      "source": "/twitch",
-      "destination": "https://www.twitch.tv/obetomuniz",
-      "statusCode": 301
-    },
-    {
       "source": "/facebook",
       "destination": "https://www.facebook.com/obetomuniz",
       "statusCode": 301
-    },
-    {
-      "source": "/discord",
-      "destination": "https://discord.gg/9V6xTgvWht",
-      "permanent": true
     }
   ]
 }

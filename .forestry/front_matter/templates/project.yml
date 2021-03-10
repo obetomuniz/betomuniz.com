@@ -1,0 +1,46 @@
+---
+label: Project
+hide_body: true
+fields:
+  - name: featured
+    type: file
+    config:
+      required: true
+      maxSize: 64
+    label: Featured
+  - name: name
+    type: text
+    config:
+      required: true
+      min: 1
+      max: 60
+    label: Name
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+      min: 1
+      max: 155
+    label: Description
+  - name: link
+    type: text
+    config:
+      required: true
+    label: Link
+  - name: date
+    type: datetime
+    label: Publish Date
+    description: ''
+    config:
+      required: true
+      date_format: DD/MM/YYYY
+      time_format: ''
+      display_utc: true
+      export_format: YYYY-MM-DD h:mm A ZZ
+pages:
+  - src/content/projects/protocolo-alterado.md
+  - src/content/projects/seu-job-tech.md

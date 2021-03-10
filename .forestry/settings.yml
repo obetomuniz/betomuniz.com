@@ -2,40 +2,37 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
-- type: heading
-  label: Content
-- type: directory
-  path: src/content/drops
-  label: Drops
-  create: documents
-  match: "**/*"
-  templates:
-  - drop
-- type: document
-  path: src/content/pages/home.md
-  label: Home Page
-- type: document
-  path: src/content/pages/drops.md
-  label: Drops Page
-- type: heading
-  label: Config
-- type: document
-  path: src/metadata/site.json
-  label: Site
-- type: document
-  path: src/metadata/theme.json
-  label: Theme
+  - type: heading
+    label: Content
+  - type: directory
+    path: src/content/projects
+    label: Projects
+    create: documents
+    match: '**/*'
+    templates:
+      - project
+  - type: document
+    path: src/content/pages/home.md
+    label: Home Page
+  - type: heading
+    label: Config
+  - type: document
+    path: src/metadata/site.json
+    label: Site
+  - type: document
+    path: src/metadata/theme.json
+    label: Theme
 upload_dir: ''
 public_path: https://res.cloudinary.com/beto-muniz/image/upload/f_auto
 front_matter_path: ''
-use_front_matter_path: 
-file_template: ":filename:"
+use_front_matter_path:
+file_template: ':filename:'
 build:
   preview_output_directory: out
   install_dependencies_command: npm install
   preview_docker_image: forestryio/node:12
-  mount_path: "/srv"
-  working_dir: "/srv"
+  mount_path: '/srv'
+  working_dir: '/srv'
   instant_preview_command: npm run deploy

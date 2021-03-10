@@ -1,9 +1,9 @@
-import { Container, Text, PulseDot, PulseDotAlt } from "./ui";
+import { Container, Text, PulseDot, PulseDotAlt } from './ui';
 
 const MyLink = ({
-  href = "",
-  text = "",
-  theme = { color: "WHITE_COLOR", bg: "PRIMARY_COLOR", textShadow: false },
+  href = '',
+  text = '',
+  theme = { color: 'WHITE', bg: 'REBECCA_PURPLE', textShadow: false },
   pin = false,
   altPin = false,
 }) => {

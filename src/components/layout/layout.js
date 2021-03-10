@@ -1,11 +1,18 @@
-import { forwardRef } from "react";
-import { Header, Footer } from "..";
+import { forwardRef } from 'react';
+import { Header, Footer } from '..';
 
-import Theme from "./theme";
-import { NormalizedStyles, Container } from "./ui";
+import Theme from './theme';
+import { NormalizedStyles, Container } from './ui';
 
 const Layout = (
-  { children, containerAs = "div", socials, bottomNewsletter, hideHeader },
+  {
+    children,
+    containerAs = 'div',
+    socials,
+    bottomNewsletter,
+    hideHeader,
+    hideFooter,
+  },
   ref
 ) => (
   <>
@@ -16,7 +23,7 @@ const Layout = (
       {children}
     </Container>
     {bottomNewsletter && bottomNewsletter()}
-    <Footer />
+    {!hideFooter && <Footer />}
   </>
 );
 
