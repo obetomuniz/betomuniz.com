@@ -2,42 +2,42 @@
 label: Landing Page
 hide_body: true
 fields:
-  - name: title
-    type: text
-    config:
-      required: true
-      min: 1
-      max: 60
-    label: Title
-  - name: description
-    type: textarea
-    default: ''
-    config:
-      required: true
-      wysiwyg: false
-      schema:
-        format: markdown
-      min: 1
-      max: 155
-    label: Description
-  - name: content
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Content
-  - name: keywords
-    type: tag_list
-    default: []
-    label: Keywords
-    description: Up to 5
-  - name: canonical
-    type: text
-    config:
-      required: false
-    label: Canonical
+- name: title
+  type: text
+  config:
+    required: true
+    min: 1
+    max: 60
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    min: 1
+    max: 155
+  label: Description
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
+  description: Up to 5
+- name: canonical
+  type: text
+  config:
+    required: false
+  label: Canonical
 pages:
-  - src/content/pages/home.md
+- src/content/pages/home.md
