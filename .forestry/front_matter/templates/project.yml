@@ -41,6 +41,7 @@ fields:
     min: 0
     step: 1
 pages:
+- src/content/projects/autocomplete-semantic-web.md
 - src/content/projects/listtta.md
 - src/content/projects/minas-dev.md
 - src/content/projects/protocolo-alterado.md
