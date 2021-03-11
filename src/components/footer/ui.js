@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { rem } from "polished";
+import styled from 'styled-components';
+import { rem } from 'polished';
 
 export const Container = styled.footer`
   margin: 0 auto;
@@ -15,12 +15,14 @@ export const Container = styled.footer`
 `;
 
 export const Copyright = styled.small`
-  font-size: ${rem("12px")};
+  font-size: ${rem('12px')};
+  font-family: var(--FONT_FAMILY_SERIF);
+
   a {
     font-weight: bold;
   }
 
   @media screen and (max-width: 600px) {
-    font-size: ${rem("10px")};
+    font-size: ${rem('10px')};
   }
 `;

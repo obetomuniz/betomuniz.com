@@ -4,7 +4,6 @@ import ReactMarkdown from 'react-markdown/with-html';
 
 import {
   SocialsContainer,
-  About,
   NewsletterContainer,
   ProjectsContainer,
   FooterContainer,
@@ -14,6 +13,7 @@ import {
   Head,
   Socials,
   Layout,
+  About,
   Newsletter,
   ProjectList,
   Footer,

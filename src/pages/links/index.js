@@ -4,12 +4,11 @@ import ReactMarkdown from 'react-markdown/with-html';
 
 import {
   Container,
-  About,
   StickyContainer,
   NewsletterContainer,
 } from '../../styles/pages/links';
 import { createTitle } from '../../helpers';
-import { Head, Layout, Newsletter, MyLink } from '../../components';
+import { Head, Layout, About, Newsletter, MyLink } from '../../components';
 
 const LINK_LIST = [
   {

@@ -45,6 +45,7 @@ export const Desc = styled.p`
   margin: calc(var(--HORIZONTAL_MARGIN) / 5) auto;
   font-size: ${rem('16px')};
   line-height: ${rem('24px')};
+  font-family: var(--FONT_FAMILY_SERIF);
 
   @media screen and (max-width: 600px) {
     font-size: ${rem('14px')};
@@ -56,7 +57,17 @@ export const CTA = styled.a`
   color: var(--ELETRIC_VIOLET);
   font-weight: 100;
   font-size: ${rem('12px')};
-  text-decoration: underline;
+  text-decoration: none;
   display: inline-block;
   text-shadow: 0 0 10px ${rgba('#000', 0.3)};
+
+  &:after {
+    text-decoration: none;
+    content: '⎘';
+    font-size: ${rem('20px')};
+    margin: 0 0 0 ${rem('6px')};
+    position: relative;
+    top: ${rem('2px')};
+    text-shadow: 0 0 ${rem('10px')} rgb(0 0 0 / 30%);
+  }
 `;

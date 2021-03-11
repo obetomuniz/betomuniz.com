@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { rem, rgba } from 'polished';
 
 export const Container = styled.section`
-  width: 550px;
+  width: ${rem('550px')};
   margin: var(--HORIZONTAL_MARGIN) auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -13,39 +13,6 @@ export const Container = styled.section`
     grid-gap: calc(var(--HORIZONTAL_MARGIN) / 2.5);
     grid-template-columns: 1fr;
     width: 100%;
-  }
-`;
-export const About = styled.main`
-  text-align: center;
-  width: 550px;
-  margin: var(--HORIZONTAL_MARGIN) auto 0;
-
-  strong {
-    font-weight: bold;
-  }
-
-  p {
-    font-size: ${rem('24px')};
-    line-height: ${rem('42px')};
-
-    &:first-child {
-      &:first-letter {
-        font-size: ${rem('32px')};
-      }
-    }
-  }
-
-  a {
-    font-weight: bold;
-  }
-
-  @media screen and (max-width: 600px) {
-    width: 100%;
-
-    p {
-      font-size: 4vw;
-      line-height: ${rem('30px')};
-    }
   }
 `;
 
@@ -83,10 +50,11 @@ export const StickyContainer = styled.div`
 `;
 
 export const NewsletterContainer = styled.div`
-  width: 550px;
+  width: ${rem('550px')};
   margin: 0 auto;
 
   @media screen and (max-width: 600px) {
     width: 100%;
+    padding: 0 4%;
   }
 `;

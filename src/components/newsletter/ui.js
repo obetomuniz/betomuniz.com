@@ -52,6 +52,19 @@ export const Input = styled.input`
   }
   @media screen and (max-width: 600px) {
     margin: 0 0 ${rem('10px')};
+
+    ::-webkit-input-placeholder {
+      font-size: min(${rem('16px')}, 3.8vw);
+    }
+    ::-moz-placeholder {
+      font-size: min(${rem('16px')}, 3.8vw);
+    }
+    :-ms-input-placeholder {
+      font-size: min(${rem('16px')}, 3.8vw);
+    }
+    :-moz-placeholder {
+      font-size: min(${rem('16px')}, 3.8vw);
+    }
   }
 `;
 

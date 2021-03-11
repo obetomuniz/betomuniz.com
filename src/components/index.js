@@ -7,6 +7,7 @@ import Newsletter from './newsletter/newsletter';
 import ProjectList from './project-list/project-list';
 import Project from './project/project';
 import MyLink from './my-link/my-link';
+import About from './about/about';
 
 export {
   Head,
@@ -18,4 +19,5 @@ export {
   ProjectList,
   Project,
   MyLink,
+  About,
 };

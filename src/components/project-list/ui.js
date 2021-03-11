@@ -1,12 +1,32 @@
 import styled from 'styled-components';
-import { rem, rgba } from 'polished';
+import { rem } from 'polished';
 
 export const Title = styled.h2`
-  font-family: var(--FONT_FAMILY_SANS);
+  font-family: var(--FONT_FAMILY_SERIF);
   color: var(--ELETRIC_VIOLET);
   font-size: ${rem('42px')};
   font-weight: 700;
   text-decoration: underline;
+
+  &:before {
+    display: inline-block;
+    text-decoration: none;
+    font-size: ${rem('21px')};
+    content: '#';
+    font-family: var(--FONT_FAMILY_SANS);
+    margin: 0 ${rem('12px')} 0 0;
+    position: relative;
+    text-shadow: 0 0 ${rem('10px')} rgb(0 0 0 / 30%);
+    opacity: 0.2;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: ${rem('28px')};
+
+    &:before {
+      font-size: ${rem('14px')};
+    }
+  }
 `;
 
 export const List = styled.ul``;
