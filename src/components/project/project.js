@@ -12,7 +12,7 @@ const Project = ({ data }) => {
         <Name>{name}</Name>
         <Desc>{description}</Desc>
         <CTA
-          title={`${name}`}
+          title={`Learn More about ${name}`}
           href={link}
           target="_blank"
           rel="noopener noreferrer"

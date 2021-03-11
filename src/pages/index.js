@@ -68,8 +68,7 @@ export async function getStaticProps() {
   const pageContent = await import(`../content/pages/home.md`);
   const page = matter(pageContent.default).data;
   const projectFiles = glob.sync(`${PROJECTS_PATH}/**/*.md`);
-
-  let projects = await Promise.all(
+  const projects = await Promise.all(
     projectFiles.map(async (projectFile) => {
       const projectFilename = projectFile
         .replace(`${PROJECTS_PATH}/`, '')
@@ -78,9 +77,10 @@ export async function getStaticProps() {
       return matter(project.default).data;
     })
   );
+  const projectsOrdered = projects.sort((a, b) => a.position - b.position);
 
   return {
-    props: { page, projects },
+    props: { page, projects: projectsOrdered },
   };
 }
 

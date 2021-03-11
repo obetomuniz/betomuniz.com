@@ -1,9 +1,9 @@
 ---
 featured: https://res.cloudinary.com/beto-muniz/image/upload/f_auto/v1615490850/minasdev-logo_1_yhr7rx.png
 name: Minas Dev
-description: "Minas Dev is a local community in \U0001F1E7\U0001F1F7 for software
+description:
+  "Minas Dev is a local community in \U0001F1E7\U0001F1F7 for software
   engineers that I am Co-founder and Leader."
 link: https://minasdev.org
-date: 2021-03-10 9:00 PM -0300
-
+position: 3
 ---
