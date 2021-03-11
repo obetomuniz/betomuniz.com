@@ -2,45 +2,46 @@
 label: Project
 hide_body: true
 fields:
-  - name: featured
-    type: file
-    config:
-      required: true
-      maxSize: 64
-    label: Featured
-  - name: name
-    type: text
-    config:
-      required: true
-      min: 1
-      max: 60
-    label: Name
-  - name: description
-    type: textarea
-    default: ''
-    config:
-      required: true
-      wysiwyg: false
-      schema:
-        format: markdown
-      min: 1
-      max: 155
-    label: Description
-  - name: link
-    type: text
-    config:
-      required: true
-    label: Link
-  - name: position
-    type: number
-    label: Position
-    description: ''
-    default: 1000
-    config:
-      required: true
-      min: 0
-      step: 1
+- name: featured
+  type: file
+  config:
+    required: true
+    maxSize: 64
+  label: Featured
+- name: name
+  type: text
+  config:
+    required: true
+    min: 1
+    max: 60
+  label: Name
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    min: 1
+    max: 155
+  label: Description
+- name: link
+  type: text
+  config:
+    required: true
+  label: Link
+- name: position
+  type: number
+  label: Position
+  description: ''
+  default: 1000
+  config:
+    required: true
+    min: 0
+    step: 1
 pages:
-  - src/content/projects/minas-dev.md
-  - src/content/projects/protocolo-alterado.md
-  - src/content/projects/seu-job-tech.md
+- src/content/projects/listtta.md
+- src/content/projects/minas-dev.md
+- src/content/projects/protocolo-alterado.md
+- src/content/projects/seu-job-tech.md
