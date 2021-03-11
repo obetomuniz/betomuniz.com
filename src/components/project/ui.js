@@ -31,6 +31,7 @@ export const Name = styled.h3`
   font-weight: 700;
   font-size: ${rem('24px')};
   line-height: ${rem('30px')};
+  text-shadow: 0 0 15px ${rgba('#000', 0.3)};
 
   @media screen and (max-width: 600px) {
     font-size: ${rem('20px')};
@@ -57,4 +58,5 @@ export const CTA = styled.a`
   font-size: ${rem('12px')};
   text-decoration: underline;
   display: inline-block;
+  text-shadow: 0 0 10px ${rgba('#000', 0.3)};
 `;

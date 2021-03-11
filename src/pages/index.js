@@ -7,7 +7,6 @@ import {
   About,
   NewsletterContainer,
   ProjectsContainer,
-  SectionTitle,
   FooterContainer,
 } from '../styles/pages/home';
 import { createTitle } from '../helpers';
@@ -53,8 +52,6 @@ const Home = (props) => {
         </NewsletterContainer>
 
         <ProjectsContainer>
-          <SectionTitle>Projects</SectionTitle>
-
           <ProjectList data={projects} />
         </ProjectsContainer>
 

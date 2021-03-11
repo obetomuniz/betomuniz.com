@@ -46,12 +46,6 @@ export const About = styled.main`
   }
 `;
 
-export const SectionTitle = styled.h2`
-  color: var(--REBECCA_PURPLE);
-  font-size: ${rem('42px')};
-  font-weight: 700;
-`;
-
 export const NewsletterContainer = styled.div`
   width: 550px;
   margin: var(--HORIZONTAL_MARGIN) auto 0;
