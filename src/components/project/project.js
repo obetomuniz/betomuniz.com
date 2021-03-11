@@ -17,7 +17,7 @@ const Project = ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn More
+          Learn More<span className="sro"> about {name}</span>
         </CTA>
       </Infos>
     </Container>
