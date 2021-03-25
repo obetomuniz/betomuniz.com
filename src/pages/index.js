@@ -1,3 +1,4 @@
+import fs from 'fs';
 import glob from 'glob';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown/with-html';
@@ -9,7 +10,7 @@ import {
   DropsContainer,
   FooterContainer,
 } from '../styles/pages/home';
-import { createTitle, getDEVTOArticles } from '../helpers';
+import { createSitemapXML, createTitle, getDEVTOArticles } from '../helpers';
 import {
   Head,
   Socials,
@@ -73,7 +74,7 @@ const Home = (props) => {
 export async function getStaticProps() {
   const PROJECTS_PATH = `src/content/projects`;
   const pageContent = await import(`../content/pages/home.md`);
-  const DEVTOArticles = await getDEVTOArticles();
+  const drops = await getDEVTOArticles();
   const page = matter(pageContent.default).data;
   const projectFiles = glob.sync(`${PROJECTS_PATH}/**/*.md`);
   const projects = await Promise.all(
@@ -87,8 +88,11 @@ export async function getStaticProps() {
   );
   const projectsOrdered = projects.sort((a, b) => a.position - b.position);
 
+  // Create Sitemap XML
+  fs.writeFileSync('./public/sitemap.xml', createSitemapXML({ drops }));
+
   return {
-    props: { page, projects: projectsOrdered, drops: DEVTOArticles },
+    props: { page, projects: projectsOrdered, drops },
   };
 }
 
