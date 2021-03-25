@@ -4,7 +4,7 @@ import { Title, List } from './ui';
 const ProjectList = ({ data }) => {
   return (
     <>
-      <Title>My Projects</Title>
+      <Title>Creating...</Title>
 
       <List>
         {data.map((item, idx) => (

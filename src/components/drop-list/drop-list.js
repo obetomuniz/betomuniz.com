@@ -4,7 +4,7 @@ import { Title, List } from './ui';
 const DropList = ({ data }) => {
   return (
     <>
-      <Title>Content Drops</Title>
+      <Title>Writing...</Title>
 
       <List>
         {data.map((item, idx) => (
