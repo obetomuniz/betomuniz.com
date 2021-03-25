@@ -25,38 +25,6 @@ const Head = ({
         />
         <link rel="icon" href="/icons/favicon.ico" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-        {/* <link
-          href={`https://www.googletagmanager.com/gtag/js?id=${google_analytics_id}`}
-          rel="preload"
-          as="script"
-        />
-        <link href="https://www.google-analytics.com" rel="preconnect" />
-        <link href="https://www.googletagmanager.com" rel="preconnect" />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${google_analytics_id}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${google_analytics_id}');
-        `,
-          }}
-        /> */}
-        <link
-          href="https://cdn.usefathom.com/script.js"
-          rel="preload"
-          as="script"
-        />
-        <link href="https://cdn.usefathom.com" rel="preconnect" />
-        <script
-          src="https://cdn.usefathom.com/script.js"
-          data-site="PPASAJWQ"
-          defer
-        ></script>
 
         <link
           href="https://plausible.io/js/plausible.js"
