@@ -12,7 +12,7 @@ export const SocialsContainer = styled.div`
   }
 `;
 
-export const NewsletterContainer = styled.div`
+export const NewsletterContainer = styled.section`
   width: ${rem('550px')};
   margin: var(--HORIZONTAL_MARGIN) auto 0;
 
@@ -21,7 +21,16 @@ export const NewsletterContainer = styled.div`
   }
 `;
 
-export const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled.section`
+  width: ${rem('550px')};
+  margin: var(--HORIZONTAL_MARGIN) auto 0;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+`;
+
+export const DropsContainer = styled.section`
   width: ${rem('550px')};
   margin: var(--HORIZONTAL_MARGIN) auto 0;
 

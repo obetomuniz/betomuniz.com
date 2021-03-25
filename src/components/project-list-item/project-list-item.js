@@ -1,6 +1,6 @@
 import { Container, Thumb, Infos, Name, Desc, CTA } from './ui';
 
-const Project = ({ data }) => {
+const ProjectListItem = ({ data }) => {
   const { featured, name, description, link } = data;
 
   return (
@@ -24,4 +24,4 @@ const Project = ({ data }) => {
   );
 };
 
-export default Project;
+export default ProjectListItem;

@@ -1,4 +1,4 @@
-import { Project } from '..';
+import { ProjectListItem } from '..';
 import { Title, List } from './ui';
 
 const ProjectList = ({ data }) => {
@@ -8,7 +8,7 @@ const ProjectList = ({ data }) => {
 
       <List>
         {data.map((item, idx) => (
-          <Project key={`project-${idx}`} data={item} />
+          <ProjectListItem key={`project-${idx}`} data={item} />
         ))}
       </List>
     </>

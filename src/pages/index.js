@@ -6,9 +6,10 @@ import {
   SocialsContainer,
   NewsletterContainer,
   ProjectsContainer,
+  DropsContainer,
   FooterContainer,
 } from '../styles/pages/home';
-import { createTitle } from '../helpers';
+import { createTitle, getDEVTOArticles } from '../helpers';
 import {
   Head,
   Socials,
@@ -16,6 +17,7 @@ import {
   About,
   Newsletter,
   ProjectList,
+  DropList,
   Footer,
 } from '../components';
 
@@ -23,6 +25,7 @@ const Home = (props) => {
   const {
     page: { title, description, keywords, canonical, content },
     projects,
+    drops,
   } = props;
 
   const socials = () => (
@@ -55,6 +58,10 @@ const Home = (props) => {
           <ProjectList data={projects} />
         </ProjectsContainer>
 
+        <DropsContainer>
+          <DropList data={drops} />
+        </DropsContainer>
+
         <FooterContainer>
           <Footer />
         </FooterContainer>
@@ -66,6 +73,7 @@ const Home = (props) => {
 export async function getStaticProps() {
   const PROJECTS_PATH = `src/content/projects`;
   const pageContent = await import(`../content/pages/home.md`);
+  const DEVTOArticles = await getDEVTOArticles();
   const page = matter(pageContent.default).data;
   const projectFiles = glob.sync(`${PROJECTS_PATH}/**/*.md`);
   const projects = await Promise.all(
@@ -80,7 +88,7 @@ export async function getStaticProps() {
   const projectsOrdered = projects.sort((a, b) => a.position - b.position);
 
   return {
-    props: { page, projects: projectsOrdered },
+    props: { page, projects: projectsOrdered, drops: DEVTOArticles },
   };
 }
 

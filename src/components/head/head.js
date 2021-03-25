@@ -10,6 +10,7 @@ const Head = ({
   title,
   description,
   url,
+  canonical,
   keywords,
   og,
   thumbnail,
@@ -51,7 +52,7 @@ const Head = ({
       <NextSeo
         title={title}
         description={description}
-        canonical={url}
+        canonical={canonical}
         keywords={keywords.join(', ')}
         openGraph={{
           url,

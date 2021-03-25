@@ -1,21 +1,22 @@
-const withImages = require("next-images");
+require('dotenv-safe').config();
+const withImages = require('next-images');
 
 const DEFAULT_HEADERS = [
   {
-    key: "X-Content-Type-Options",
-    value: "nosniff",
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
   },
   {
-    key: "X-Frame-Options",
-    value: "DENY",
+    key: 'X-Frame-Options',
+    value: 'DENY',
   },
   {
-    key: "X-XSS-Protection",
-    value: "1; mode=block",
+    key: 'X-XSS-Protection',
+    value: '1; mode=block',
   },
   {
-    key: "Referrer-Policy",
-    value: "same-origin",
+    key: 'Referrer-Policy',
+    value: 'same-origin',
   },
 ];
 
@@ -24,7 +25,7 @@ module.exports = withImages({
   webpack(config) {
     config.module.rules.push({
       test: /\.md$/,
-      use: "raw-loader",
+      use: 'raw-loader',
     });
     return config;
   },
@@ -32,13 +33,16 @@ module.exports = withImages({
   async headers() {
     return [
       {
-        source: "/",
+        source: '/',
         headers: [...DEFAULT_HEADERS],
       },
       {
-        source: "/:path*",
+        source: '/:path*',
         headers: [...DEFAULT_HEADERS],
       },
     ];
+  },
+  env: {
+    DEVTO_API_KEY: process.env.DEVTO_API_KEY,
   },
 });
