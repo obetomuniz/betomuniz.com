@@ -1,5 +1,5 @@
-import { Container, Photo, PhotoImage } from "./ui";
-import { gravatar } from "../../metadata/site.json";
+import { Container, Photo, PhotoImage } from './ui';
+import siteConfigs from '../../metadata/site.json';
 
 const Header = ({ children }) => {
   return (
@@ -8,7 +8,7 @@ const Header = ({ children }) => {
         <PhotoImage
           loading="lazy"
           alt="Beto Muniz"
-          src={gravatar}
+          src={siteConfigs.gravatar}
           width="80"
           height="80"
         />

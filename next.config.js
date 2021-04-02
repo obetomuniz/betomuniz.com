@@ -21,6 +21,9 @@ const DEFAULT_HEADERS = [
 ];
 
 module.exports = withImages({
+  future: {
+    webpack5: true,
+  },
   poweredByHeader: false,
   webpack(config) {
     config.module.rules.push({

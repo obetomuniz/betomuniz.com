@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 
-import { gravatar } from '../../metadata/site.json';
+import siteConfigs from '../../metadata/site.json';
 
 import TelegramIcon from '../../assets/vectors/icon-telegram.svg';
 import TwitterIcon from '../../assets/vectors/icon-twitter.svg';
@@ -60,7 +60,7 @@ const MiniHeader = ({ scrollRef, shareData }) => {
             <PhotoImage
               loading="lazy"
               alt="Beto Muniz"
-              src={gravatar}
+              src={siteConfigs.gravatar}
               width="80"
               height="80"
             />

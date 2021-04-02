@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 import { formatISO, parse } from 'date-fns';
 
 import { getDEVTOArticles, getDEVTOArticleBySlug } from '../../helpers';
-import { site_name } from '../../metadata/site.json';
+import siteConfigs from '../../metadata/site.json';
 
 import {
   StickyContainer,
@@ -65,8 +65,8 @@ const DropPage = (props) => {
         images={[featured]}
         datePublished={formatISO(dateNormalized)}
         dateModified={formatISO(dateNormalized)}
-        authorName={[site_name]}
-        publisherName={site_name}
+        authorName={[siteConfigs.site_name]}
+        publisherName={siteConfigs.site_name}
         publisherLogo="https://betomuniz.com/site-thumb.jpg"
         description={description}
       />

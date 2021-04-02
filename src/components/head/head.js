@@ -1,10 +1,6 @@
 import NextHead from 'next/head';
 import { NextSeo } from 'next-seo';
-import {
-  site_name,
-  site_username,
-  google_analytics_id,
-} from '.././../metadata/site.json';
+import siteConfigs from '.././../metadata/site.json';
 
 const Head = ({
   title,
@@ -63,18 +59,18 @@ const Head = ({
           images: [
             { url: thumbnail || 'https://betomuniz.com/site-thumb.jpg' },
           ],
-          site_name,
+          site_name: siteConfigs.site_name,
           profile: {
-            firstName: site_name.split(' ')[0],
-            lastName: site_name.split(' ')[1],
-            username: site_username,
+            firstName: siteConfigs.site_name.split(' ')[0],
+            lastName: siteConfigs.site_name.split(' ')[1],
+            username: siteConfigs.site_username,
             gender: 'male',
           },
           ...og,
         }}
         twitter={{
-          handle: `@${site_username}`,
-          site: `@${site_username}`,
+          handle: `@${siteConfigs.site_username}`,
+          site: `@${siteConfigs.site_username}`,
           cardType: 'summary_large_image',
         }}
         additionalMetaTags={[
