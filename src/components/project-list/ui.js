@@ -5,7 +5,7 @@ export const Title = styled.h2`
   font-family: var(--FONT_FAMILY_SERIF);
   color: var(--ELETRIC_VIOLET);
   font-size: ${rem('42px')};
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   text-decoration: underline;
 

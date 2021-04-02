@@ -6,7 +6,7 @@ export const Title = styled.h2`
   color: var(--ELETRIC_VIOLET);
   font-size: ${rem('42px')};
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   text-decoration: underline;
   margin: var(--HORIZONTAL_MARGIN) auto;
 
