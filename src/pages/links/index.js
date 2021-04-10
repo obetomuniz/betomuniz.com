@@ -17,6 +17,7 @@ const LINK_LIST = [
       bg: `TWITTER`,
     },
     text: 'Twitter',
+    pin: true,
     href: 'https://twitter.com/obetomuniz',
   },
   {
@@ -43,15 +44,6 @@ const LINK_LIST = [
     },
     text: 'GitHub',
     href: 'https://github.com/obetomuniz',
-  },
-  {
-    theme: {
-      color: `WHITE`,
-      bg: `INSTAGRAM`,
-    },
-    text: 'Instagram',
-    href: 'https://www.instagram.com/obetomuniz/',
-    pin: true,
   },
   {
     theme: {

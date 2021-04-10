@@ -1,8 +1,5 @@
 ---
 keywords:
-  - youtube
-  - instagram
-  - twitch
   - telegram
   - twitter
   - linkedin

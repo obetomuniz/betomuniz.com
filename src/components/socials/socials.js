@@ -2,7 +2,7 @@ import TelegramIcon from '../../assets/vectors/icon-telegram.svg';
 import DEVtoIcon from '../../assets/vectors/icon-devto.svg';
 import GitHubIcon from '../../assets/vectors/icon-github-2.svg';
 import TwitterIcon from '../../assets/vectors/icon-twitter.svg';
-import InstagramIcon from '../../assets/vectors/icon-instagram.svg';
+import LinkedInIcon from '../../assets/vectors/icon-linkedin.svg';
 
 import { Container, SocialsItem, SocialsItemLink } from './ui';
 
@@ -49,14 +49,14 @@ const Socials = () => (
         <GitHubIcon />
       </SocialsItemLink>
     </SocialsItem>
-    <SocialsItem color="--INSTAGRAM">
+    <SocialsItem color="--LINKEDIN">
       <SocialsItemLink
         title="Beto Muniz's Telegram Channel"
-        href="https://instagram.com/obetomuniz"
+        href="https://linkedin.com/in/obetomuniz"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <InstagramIcon />
+        <LinkedInIcon />
       </SocialsItemLink>
     </SocialsItem>
   </Container>
