@@ -58,6 +58,7 @@ const DropPage = (props) => {
         canonical={canonical_url}
         keywords={keywords}
         thumbnail={featured}
+        monetize
       />
       <ArticleJsonLd
         url={url}

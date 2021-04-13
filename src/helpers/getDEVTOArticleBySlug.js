@@ -3,7 +3,8 @@ const getDEVTOArticleBySlug = async (slug) => {
     return await fetch(`https://dev.to/api/articles/obetomuniz/${slug}`, {
       headers: {
         'api-key': process.env.DEVTO_API_KEY,
-        'User-Agent': `Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36`,
+        Accept: 'application/json, text/plain, */*',
+        'User-Agent': '*',
       },
     }).then((res) => res.json());
   } catch (err) {

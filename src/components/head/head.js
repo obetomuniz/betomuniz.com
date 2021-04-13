@@ -11,6 +11,7 @@ const Head = ({
   og,
   thumbnail,
   children,
+  monetize = false,
 }) => {
   return (
     <>
@@ -43,6 +44,11 @@ const Head = ({
           title="Beto Muniz's RSS"
           href="https://betomuniz.com/rss.xml"
         />
+
+        {monetize && (
+          <meta name="monetization" content="$ilp.uphold.com/GQn93bg4Mz2Z" />
+        )}
+
         {children}
       </NextHead>
       <NextSeo
