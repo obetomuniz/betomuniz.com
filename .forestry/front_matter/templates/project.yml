@@ -2,46 +2,6 @@
 label: Project
 hide_body: true
 fields:
-<<<<<<< HEAD
-  - name: featured
-    type: file
-    config:
-      required: true
-      maxSize: 64
-    label: Featured
-  - name: name
-    type: text
-    config:
-      required: true
-      min: 1
-      max: 280
-    label: Name
-  - name: description
-    type: textarea
-    default: ''
-    config:
-      required: true
-      wysiwyg: false
-      schema:
-        format: markdown
-      min: 1
-      max: 280
-    label: Description
-  - name: link
-    type: text
-    config:
-      required: true
-    label: Link
-  - name: position
-    type: number
-    label: Position
-    description: ''
-    default: 1000
-    config:
-      required: true
-      min: 0
-      step: 1
-=======
 - name: featured
   type: file
   config:
@@ -80,7 +40,6 @@ fields:
     required: true
     min: 0
     step: 1
->>>>>>> 920d8dc82888ef9f2e929d468a9a611f4aa11f1e
 pages:
 - src/content/projects/autocomplete-semantic-web.md
 - src/content/projects/listtta.md
